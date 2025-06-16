@@ -1,0 +1,363 @@
+---
+title: "Quanta"
+format: html
+---
+
+General theory for this section
+
+> In 1900 Max Planck proposed that radiation was emitted not in a continuous stream of energy but in bundles of energy that he called quanta. In fact we now believe that all energy is quantised. Planck even related the energy of a quantum to its frequency by the formula:
+>
+> Energy (E) = h x frequency (f)
+>
+> where h is a constant known as Planck's constant. This constant can now be measured in school, and its value is 6.626 x 10 ^34^ Js.
+
+## Basic Theory
+
+### Wave-Particle Duality
+
+-   **Light** exhibits both wave and particle properties:
+    -   **Wave**: interference, diffraction
+    -   **Particle**: photoelectric effect
+-   **Matter** (like electrons) also shows wave-like behaviour (e.g., electron diffraction).
+
+**de Broglie wavelength:** $$
+\lambda = \frac{h}{p} = \frac{h}{mv}
+$$ Where: - $\lambda$ = wavelength (m) - $h$ = Planck's constant ($6.63 \times 10^{-34}$ Js) - $p$ = momentum (kg·m/s)
+
+### The Photoelectric Effect
+
+-   When light of sufficient frequency shines on a metal, electrons are emitted from its surface.
+
+**Einstein’s photoelectric equation:** $$
+hf = \phi + KE_{\text{max}}
+$$ Where: - $h$ = Planck’s constant\
+- $f$ = frequency of incident light\
+- $\phi$ = work function (minimum energy needed to liberate an electron)\
+- $KE_{\text{max}}$ = maximum kinetic energy of emitted electrons
+
+**Threshold frequency:** $$
+f_{\text{min}} = \frac{\phi}{h}
+$$
+
+### Evidence for Photons
+
+-   No photoelectrons emitted below the **threshold frequency**, regardless of intensity.
+-   Photoelectron emission is **instantaneous** if $f > f_{\text{min}}$.
+-   Increasing intensity increases **number** of photoelectrons, not their energy.
+-   Only explained if light is made of **quantised photons**: $E = hf$
+
+### Energy Levels and Spectra
+
+-   Electrons in atoms occupy **discrete energy levels**.
+
+-   Electrons absorb/emits **quanta** of energy to jump between levels: $$
+    \Delta E = hf
+    $$
+
+-   **Emission spectra**: coloured lines on black background → electrons falling to lower levels.
+
+-   **Absorption spectra**: dark lines on coloured background → electrons absorbing photons.
+
+### Electron Diffraction
+
+-   Evidence that particles (e.g., electrons) behave as waves:
+    -   Electrons diffracted by thin graphite or crystal lattice
+    -   Shows interference patterns like light
+-   Diffraction angle increases when:
+    -   **Electron speed is lower** (larger wavelength)
+    -   **Crystal spacing** is similar to wavelength
+
+### Quantum Ideas Summary Table
+
++------------------------+-------------------+-------------------------------+
+| Quantity               | Symbol            | Formula                       |
++========================+===================+===============================+
+| Planck’s constant      | $h$               | $6.63 \times 10^{-34}$ Js     |
++------------------------+-------------------+-------------------------------+
+| Photon energy          | $E$               | $E = hf$                      |
++------------------------+-------------------+-------------------------------+
+| de Broglie wavelength  | $\lambda$         | $\lambda = \frac{h}{p}$       |
++------------------------+-------------------+-------------------------------+
+| Photoelectric equation | —                 | $hf = \phi + KE_{\text{max}}$ |
++------------------------+-------------------+-------------------------------+
+| Max kinetic energy     | $KE_{\text{max}}$ | $KE = \frac{1}{2}mv^2$        |
++------------------------+-------------------+-------------------------------+
+
+### Key Experiments
+
+-   **Photoelectric effect** → photon model of light
+-   **Electron diffraction** → wave nature of matter
+-   **Line spectra** → quantised energy levels
+
+### Applications
+
+-   **Photocells**, **solar panels**
+-   **Electron microscopes**
+-   **Lasers** (based on stimulated emission)
+-   **Quantum computing** and cryptography (future tech)
+
++---------------------------------------------+---------------------------------+
+| 1.  Flight of stairs and the quantum theory | 5.  Quantum rainfall            |
+|                                             |                                 |
+| 2.  Quantum theory and milk                 | 6.  Electron waves in atoms     |
+|                                             |                                 |
+| 3.  When the quantum theory is effective    | 7.  Quantum theory of radiation |
+|                                             |                                 |
+| 4.  Gamma radiation and the quantum theory  |                                 |
++=============================================+=================================+
+|                                             |                                 |
++---------------------------------------------+---------------------------------+
+
+## Stories to enritch
+
+### Planck’s Quantum Leap
+
+In 1900, Max Planck was trying to solve the puzzle of blackbody radiation—why heated objects emitted light with strange intensity patterns. He proposed that energy was emitted in discrete “quanta” rather than continuously. This radical idea launched quantum physics, overturning classical assumptions.
+
+Reflection: How did imagining energy in packets change physics forever?
+
+### Einstein’s Photoelectric Puzzle
+
+In 1905, Einstein explained how light could eject electrons from metals only if it had enough energy per “particle” (photon). This showed light behaves both as waves and particles, a cornerstone of quantum theory. His insight won the Nobel Prize and challenged the wave-only view of light.
+
+Reflection: How can light be both a wave and a particle?
+
+### Schrödinger’s Cat: Alive, Dead, and Both
+
+Erwin Schrödinger imagined a cat sealed in a box with a quantum-triggered poison mechanism. According to quantum theory, until observed, the cat is in a superposition—both alive and dead simultaneously. This thought experiment highlighted the weirdness of quantum measurement.
+
+Reflection: What does superposition mean for our everyday reality?
+
+### Heisenberg’s Uncertainty Principle: Limits of Knowing
+
+Werner Heisenberg discovered there’s a fundamental limit to how precisely we can know both position and momentum of a particle at once. This uncertainty isn’t due to measurement flaws but a core property of nature. It changed how scientists think about reality and measurement.
+
+Reflection: What does it mean that nature has built-in uncertainty?
+
+### The Double-Slit Experiment: Light’s Strange Behavior
+
+When light (or electrons) pass through two slits, they create an interference pattern—like waves—yet behave like particles hitting the screen individually. This baffled physicists and revealed the dual nature of matter and light. It remains a central mystery and demonstration in quantum physics.
+
+Reflection: How can particles create wave-like patterns?
+
+### Bohr’s Model and the Quantum Jump
+
+Niels Bohr proposed that electrons orbit atoms only in certain fixed energy levels and “jump” between them by absorbing or emitting precise energy packets. This explained atomic spectra and introduced quantized energy states. His model was the first step toward modern quantum mechanics.
+
+Reflection: Why do electrons only occupy certain energy levels?
+
+### The Quantum Revolution in Computing
+
+In the late 20th century, scientists realized that quantum bits (qubits) could exist in superpositions, allowing quantum computers to process information in fundamentally new ways. This could revolutionize technology, breaking classical computational limits.
+
+Reflection: How could quantum physics change computers forever?
+
+### The Strange World of Entanglement: Spooky Action at a Distance
+
+Einstein called it “spooky action”—particles linked so that measuring one instantly determines the state of the other, no matter the distance. This entanglement defies classical ideas about locality and challenges our understanding of causality. Experiments confirm entanglement and drive quantum cryptography.
+
+Reflection: What does entanglement say about the connectedness of the universe?
+
+### The Birth of Quantum Mechanics in a Café
+
+Legend has it that in 1925, Werner Heisenberg worked in a small Danish café, formulating matrix mechanics—one of the earliest quantum theories—while scribbling on napkins. This humble setting birthed a mathematical framework explaining atomic behavior.
+
+Reflection: How can a casual setting lead to revolutionary science?
+
+## Practical work and Demos
+
+### Flight of stairs and the quantum theory
+
+One of the basic results of the quantum theory is that some energy states are not allowed. Because of the very small value of Planck's constant (6.6x10 ^34^ Js) we do not usually observe this discontinuity. However we could compare it to a flight of stairs down which a man and an ant are travelling. The steps are effectively classical to the man - he seems to travel down with an uninterrupted energy change - but they are of a quantum nature to the ant. It all depends on your scale of observation.
+
+### Quantum theory and milk
+
+A man wants exactly a pint of milk. He can get it either by filling a bottle from a tap or by catching a carton as it comes off a conveyor belt. Filling the bottle from the tap represents the classical nature of Physics while using the discrete cartons represents the quantum idea. Notice that with the quantum analogy he may get a quantum (carton) immediately the belt is switched on or have to wait for some time for a carton to arrive. However when it does he will still get the whole carton at once. With the classical theory he gets milk as soon as the tap is turned on, but the rate of flow may be small, and he may not get a pint as quickly as he does by the quantum method!
+
+> Age range: 16-18
+
+### When the quantum theory becomes effective
+
+This analogy attempts to show when the quantum theory would be observable in everyday life - a consequence of the value of Planck's constant being very large, i.e. close to one. Imagine a soccer player trying to score a goal through a slot in a defensive wall. In normal life he would expect to be able to hit any part of the goal simply by changing his shooting position. However, if he finds that there are some places the ball cannot get to no matter where he stands, then that^l^ s when he has entered the realm of quantum soccer!
+
+Quantum
+
+### Gamma radiation and the quantum theory
+
+Revise the work done in earlier years on gamma radiation. Emphasise that it is part of the electromagnetic spectrum and therefore propagated as waves.
+
+To show the quantum nature of this radiation use a gamma source and a Geiger counter connected to a loudspeaker via a ratemeter. Adjust the distance of the Geiger counter from the source so that the incident radiation is of low intensity. The students can hear the individual clicks as each photon arrives at the counter, showing the quantum nature of the radiation.
+
+> For details of the use of radioactive sources please see page 259.
+>
+> Age range: 16-19
+>
+> Apparatus required: •Gamma source •Geiger counter •Ratemeter •Loudspeaker •Leads
+
+### Quantum rainfall
+
+Imagine that you are walking through a shower of rain. At the end of your walk you know that you will be wet. However, you do not get all the water at once! During the walk raindrops fall on you in a chaotic way, and you cannot predict when the next raindrop is going to hit you. The final result is that you are wet, but this is due to many raindrops.
+
+These raindrops are analogous to the quanta in the quantum theory of radiation. The wetness represents the classical theory of radiation.
+
+> standing waves
+
+vibration
+
+generator
+
+### Electron waves in orbits
+
+From Schrodinger's wave equation we can imagine the electron as existing as a wave that fits round an orbit a given number of times.
+
+In other words 21tr = nX where X is the electron wavelength, n is an integer and r is the radius of the orbit. A simulation of this idea is as follows. A ring of stiff wire should be fitted on top of a vibration generator - I use a loop about 15 - 20 cm in diameter. By adjusting the frequency of oscillation of the vibration generator, standing waves can be produced in the wire ring analogous to electron waves in the orbits of atoms. Multiple rings are impressive.
+
+\(b\) An extension of this experiment shows the differing wavelengths further out from the nucleus. Two pieces of cord - one light and one heavy - are tied together. One end is fixed to a retort stand, and the other is attached to a vibration generator. When you switch on the generator, standing waves are produced in the cords. The frequency is the same in both, but the wavelength differs since the speed of the waves in the two cords is different.
+
+> Age range: 16-18
+>
+> Apparatus required: •Vibration generator ^o^ Loop of stiff wire •Signal generator •Retort stands •Pieces of cord
+
+### The quantum theory of radiation
+
+Every time an electron falls from one energy level in an atom to another it emits a small 'bundle' of energy called a photon. The bigger the energy drop, the higher the frequency of the electromagnetic radiation.
+
+The brightness of the source of light depends on the number of these photons emitted per second. The greater the number of photons, the brighter the light.
+
+Each photon has a tiny energy and a 100 W lamp will emit roughly 100 million million million photons every second! Although they travel at the speed of light (300 000 km/s) they are so tiny that we don't feel them hitting us. However, the radiation pressure from the impact of many millions upon millions of photons does have an effect on the tail of a comet, helping to keep it pointing away from the Sun.
+
+> Upper energy level
+
+------------------------------------------------------------------------
+
+```         
+                                                     Large
+```
+
+------------------------------------------------------------------------
+
+> Small energy drop --- low energy drop --- high frequency radiation frequency radiation
+>
+> Lower energy level
+
+### Quantum space
+
+Quantum space is the space where quantum effects predominate and can be thought of as a sort of granularity of space. The size of the 'granules' is determined by what is known as the Planck length.
+
+This is the scale at which classical ideas about gravity and space-time cease to be valid, and quantum effects dominate. This is the 'quantum of length', the smallest measurement of length with any meaning. Its value is determined by the equation:
+
+Planck length = IJ\[G x h/27tc^3^J It has a value of 1.61 x 10 ^35^ m
+
+> (G is the universal constant of gravitation, h Planck's constant and c the speed of light in free space)
+
+It is unlikely that the granularity of space will be observed except by the emission of bursts of high energy gamma radiation passing through from cosmological objects such as quasars.
+
+ELECTRON PHYSICS!
+
+> General theory for this section:
+>
+> All materials consist of atoms. These atoms contain shells of orbiting electrons. In metals some of these electrons become detached from the atoms and "wander" through the material at high speed - they are known as free electrons. There are some 10^28^ of these free electrons per cubic metre in a metal such as copper, but only 10 22 in a semiconductor at room temperature. The charge on one electron is ---1.6x10 ^19^ C.
+
+1.  Car parks and energy levels\]{.underline} The behaviour of electrons and holes in a semiconductor can be shown by considering cars in a multi-storey car park. The cars represent the electrons and the empty parking spaces the positive holes. Cars can move between parking levels in the car park if there are empty spaces, in the same way as electrons move between energy levels if there are empty holes. If the car park is nearly full of cars it is nearly empty as far as the holes are concerned - holes can therefore move freely within it!
+
+This only really works as an analogy if all the cars are identical --- such as a car park full of minis. The inability of the drivers to decide where to park is analogous to the random motion of the electrons!
+
+> Age range: 16-18
+
+### Atom model
+
+A set of polystyrene balls mounted on wires can be used to show the arrangement of electrons in atoms and the transitions between energy levels. Make a rectangular wooden framework, and fix horizontal wires at the correct spacing to represent the energy levels. The polystyrene balls are threaded on vertical wires and can be made to slide along these wires to simulate transitions between one energy level and another.
+
+Age range: 16-18 Apparatus required: •Atom model as described
+
+Electron physics
+
+### Floating in mid air
+
+The allowed energy states within an atom can be compared with levels on which you could stand in a room. If a person were to be seen apparently floating in mid air you would look for the wires - they would only be stable in that energy state for a fraction of a second. This can be compared with the electron transitions within the atom.
+
+### Energy levels and the escalator
+
+The top steps of an escalator are rather like the energy levels in a hydrogen atom, they get closer together just as the energy levels get closer together as you get nearer the ionisation level. This means that as you ascend the escalator you make smaller and smaller energy transitions between successive steps. The analogy is really only good if the escalator is stationary.
+
+### Hills and pits in the photoelectric effect
+
+The fact that free electrons are held within a metal in a sort of energy pit or potential well can be compared to people in a glass sided hole - they cannot get out unless they jump out in one go. They cannot go half way and hang in mid air, waiting for another burst of energy.
+
+This is similar to the idea of the quantum of radiation liberating free electrons in photoelectric emission. The electrons have to climb a potential hill to reach a collector, and those with insufficient energy cannot do so. Therefore photoelectrons emitted by radiation with a low frequency will be unable to reach a collector if a negative potential is applied to it while those emitted by radiation of a higher frequency will be able to do so.
+
+While at London University I took part in a sponsored walk from London to Brighton. Arriving in the outskirts of Brighton, I found that the finish was up a hill into a park. Like the electrons I just about had enough energy left for that final climb.
+
+### Diode and the depletion laver
+
+I use the idea of a mass of girls and boys in a playground to represent a piece of n type semiconductor joined to a piece of p type - in other words a p-n junction. Initially the children are tightly packed together with all the boys in one half of the playground and all the girls in the other. Interesting things only happen at the join, or close to it. A movement of children will take place - eventually preventing any further movement. Children far from the join are not affected. This is an analogy for the movement of holes and electrons near the join between two pieces of p and n type semiconductor.
+
+> Electron
+
+### Photoelectric effect
+
+In the photoelectric effect quanta of light fall on a surface and liberate free electrons from the surface. This liberation is instantaneous if the frequency of the incoming radiation is high enough.
+
+The photoelectric effect, the quantum nature of radiation and the energies of quanta of different types of radiation can all be demonstrated using ping-pong balls, a billiard ball and a coconut shy. Professor Russell Stannard suggested the original version of this experiment on a splendid Open University video. A small boy tries to dislodge a coconut by throwing a pingpong ball at it. No luck - the ping-pong ball has too little energy! He then tries a whole bowl of ping-pong balls but the coconut still stays put! Along comes the professor with a pistol and fires one bullet at the coconut - it is instantaneously knocked off its support. This simulates the effect of infrared and ultraviolet radiation on a metal surface. The ping-pong balls represent low energy infra-red, while the bullet takes the place of high-energy ultraviolet. I suggest using a billiard ball in the lab these days rather than a bullet.
+
+If you can get hold of a copy of the original video do watch it carefully. They apparently had a lot of trouble setting it up. See if you can spot where their particular simulation breaks down!
+
+### Photoelectric effect - zinc plate
+
+Fix a cleaned (vital to remove oxide) zinc plate to a gold leaf electroscope. Charge it using an EHT supply by touching the plate briefly with the positive or negative lead to show the effects of the sign of the original charge.
+
+Then try to discharge it with light from a light bulb, a laser (careful) and a u.v. lamp (careful). No discharge occurs if the plate was originally positive - if any electrons are emitted they are immediately attracted back to the surface.
+
+With an initial negative charge only the high-energy ultraviolet quanta will discharge the electroscope, causing the leaf to fall. Refer to the TV camera tube which is sensitive to visible light.
+
+> Age range: 16-18
+>
+> Apparatus required: •Gold leaf electroscope ^o^TV camera if possible 'Zinc plate attachment
+>
+> •Ultraviolet light
+>
+> •El-IT supply limited to 5 mA or less 'Laser •Light bulb
+
+Electron physics
+
+> Intensity (I)
+
+### Whales and X ray spectra
+
+Have you never thought that the X ray spectrum of a material looks like a multiple spouting whale!?
+
+Maybe it should be thought of as just an aid to your memory of its shape.
+
+Wavelength (X)
+
+### Maltese cross
+
+An interesting extension of the traditional Maltese cross tube is to demonstrate the tube, but do not connect the cross to the EHT supply. A much fuzzier image of the cross will be formed on the screen. Electrons emitted by the cathode collide with and stick to the cross. This gives the cross a negative charge which repels the electron beam, so giving the shadow of the cross a rather distorted and lumpy appearance. This makes a good demonstration of charge repulsion.
+
+5000
+
+> Age range: 14-18
+>
+> Apparatus required: •Maltese cross tube in holder
+>
+> •EHT power supply limited to 5 mA or less •Low voltage power supply ^o^ Leads
+
+### Thermionic emission
+
+A hot resistance wire held near the cap of a charged electroscope will cause it to discharge, whether it is charged positively or negatively. This is due to the ionisation of the air around it by the electrons emitted from the wire.
+
+Mount a piece of resistance wire horizontally between two clamps so that it passes about a millimetre over the cap of a gold electroscope. Charge the electroscope using a polythene rod.
+
+Now pass a large current (around 4A) through the wire, being careful to tension the wire as you increase the current so that it does not sag on to the electroscope cap. The electroscope will discharge.
+
+> Age range: 15-18
+>
+> Apparatus required: •Gold leaf electroscope and means of charging it ('polythene rod and duster)
+>
+> •Length of resistance wire •Low voltage power supply (0-5A) •Two retort stands, bosses and clamps
+
+### Fish and thermionic emission
+
+Use the idea of a fishpond full of swimming fish as an analogy to explain what is happening inside the cathode of a thermionic valve. Some of the fish will jump out of the water only to fall back - there is a continual jumping out and falling back - a true dynamic equilibrium. This can be compared with the random motion of electrons within a hot metal - some of them gain enough energy to leave the metal surface briefly.
+
+All the fish are the same, so you can't tell which fish is in the water and which in the air. In just the same way free electrons in a metal can give a dynamic equilibrium when the metal is heated - they are continually leaving and reentering the surface. The attraction of the anode could be represented by a worm lowered in, and the heating of the cathode could be compared with a shark in the water making the fishes swim around more violently!

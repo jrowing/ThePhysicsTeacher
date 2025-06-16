@@ -1,0 +1,534 @@
+---
+title: "Fluids"
+format: html
+---
+
+## Basic Theory
+
+### What is a Fluid?
+
+-   A fluid is a substance that can **flow** and **take the shape of its container**.
+-   Includes **liquids** and **gases**.
+
+### Density ($\rho$)
+
+-   Mass per unit volume: $$
+    \rho = \frac{m}{V}
+    $$ Where:
+-   $\rho$ = density (kg/m³)
+-   $m$ = mass (kg)
+-   $V$ = volume (m³)
+
+### Pressure ($P$) in Fluids
+
+-   Force per unit area: $$
+    P = \frac{F}{A}
+    $$
+-   Units: pascal (Pa), where $1\,\text{Pa} = 1\,\text{N/m}^2$.
+-   Pressure acts **equally in all directions** at a point inside a fluid.
+
+### Atmospheric Pressure
+
+-   Pressure exerted by the weight of the air above: $$
+    P_{\text{atm}} \approx 1.01 \times 10^5 \,\text{Pa}
+    $$
+
+### Pressure Variation with Depth
+
+-   Pressure increases with depth in a fluid: $$
+    P = P_0 + \rho g h
+    $$ Where:
+-   $P_0$ = pressure at the surface (often atmospheric pressure)
+-   $\rho$ = fluid density
+-   $g$ = acceleration due to gravity ($9.8\,\text{m/s}^2$)
+-   $h$ = depth below surface
+
+### Upthrust (Buoyant Force)
+
+-   An object submerged in a fluid experiences an **upward force** equal to the weight of fluid displaced: $$
+    F_{\text{upthrust}} = \rho_{\text{fluid}} g V_{\text{displaced}}
+    $$
+
+### Archimedes’ Principle
+
+-   The buoyant force on a body immersed in a fluid equals the weight of the fluid displaced.
+
+### Pascal’s Principle
+
+-   Pressure applied to an enclosed fluid is transmitted **undiminished** throughout the fluid.
+-   Basis of hydraulic systems.
+
+### Continuity Equation (for incompressible fluids)
+
+-   Conservation of mass flow rate: $$
+    A_1 v_1 = A_2 v_2
+    $$ Where:
+-   $A$ = cross-sectional area
+-   $v$ = fluid velocity
+
+### Bernoulli’s Equation (Conservation of Energy)
+
+For steady, incompressible, non-viscous flow along a streamline: $$
+P + \frac{1}{2} \rho v^2 + \rho g h = \text{constant}
+$$ Where: - $P$ = pressure - $\rho$ = density - $v$ = flow speed - $h$ = height above reference
+
+### Viscosity
+
+-   A measure of a fluid’s **resistance to flow**.
+-   Causes drag and dissipates energy.
+
+### Reynolds Number (Dimensionless)
+
+-   Used to predict flow type (laminar or turbulent): $$
+    Re = \frac{\rho v L}{\mu}
+    $$ Where:
+-   $\rho$ = fluid density
+-   $v$ = velocity
+-   $L$ = characteristic length
+-   $\mu$ = dynamic viscosity
+
+### Summary Table
+
++----------------------+------------+---------------------------------------------------------+------------------------+
+| Quantity             | Symbol     | Formula                                                 | Notes                  |
++======================+============+=========================================================+========================+
+| Density              | $\rho$     | $\rho = \frac{m}{V}$                                    | kg/m³                  |
++----------------------+------------+---------------------------------------------------------+------------------------+
+| Pressure             | $P$        | $P = \frac{F}{A}$                                       | Pa                     |
++----------------------+------------+---------------------------------------------------------+------------------------+
+| Pressure with depth  | $P$        | $P = P_0 + \rho g h$                                    | Fluid at depth $h$     |
++----------------------+------------+---------------------------------------------------------+------------------------+
+| Upthrust             | $F_u$      | $F_u = \rho g V$                                        | Buoyant force          |
++----------------------+------------+---------------------------------------------------------+------------------------+
+| Continuity equation  | \-         | $A_1 v_1 = A_2 v_2$                                     | Incompressible flow    |
++----------------------+------------+---------------------------------------------------------+------------------------+
+| Bernoulli’s equation | \-         | $P + \frac{1}{2} \rho v^2 + \rho g h = \text{constant}$ | Conservation of energy |
++----------------------+------------+---------------------------------------------------------+------------------------+
+
+SURFACE TENSION
+
+General theory for this section;
+
+> Surface tension is known to be due to intermolecular attractions in the liquid surface and these forces produce a skin effect on the surface. The forces between individual pairs of molecules are very small, and so in a definition of the surface tension we consider the effect of a large number of molecules in a line in the surface.
+>
+> Think about a line of unit length drawn in the surface of the liquid and think of the forces acting on the molecules in that line. Clearly the forces will act in all directions in the surface but we will consider only those components of force acting at right angles to the line. The force on the whole line is the sum of all the forces on the individual molecules. Notice that any given molecule is in equilibrium due to equal and opposite forces acting on it. This force per unit length is called the surface tension of the liquid.
+>
+> Pressure difference across a curved liquid-air surface of radius R = 2T/R where T is the surface tension of the liquid.
+
+## Stories to enritch
+
+### Archimedes and the Golden Crown
+
+The story goes that Archimedes was asked to determine whether a crown made for King Hiero II was pure gold, without damaging it. While stepping into a full bathtub, he noticed the water spilling over. He realised that the volume of water displaced equals the volume of the object submerged. Overjoyed, he reportedly ran through the streets shouting “Eureka!” Using this principle, Archimedes could compare the density of the crown to that of pure gold by measuring water displacement.
+
+Think about it: How does buoyancy help detect fraud in materials? Why is volume displacement a key idea in fluids?
+
+### Torricelli and the First Barometer
+
+In the 1640s, Evangelista Torricelli experimented with mercury-filled tubes and noticed that the mercury would fall and stabilize at a certain height. He concluded that air pressure was holding the mercury up—proving that air has weight. This was the first barometer and the beginning of atmospheric pressure science. Torricelli’s work also supported the idea that a vacuum could exist, which was still controversial at the time.
+
+Think about it: How did Torricelli’s experiment challenge beliefs about vacuums? Why was using mercury important?
+
+### Pascal and the Power of Pressure
+
+Blaise Pascal explored how pressure in a fluid is transmitted equally in all directions. He showed that if you apply a force to a confined fluid, it acts at all points in the fluid. This became Pascal’s Principle and is used today in hydraulic systems like car brakes and lifts. He even conducted experiments with barrels and tubes to show how a small force at one point could break open a barrel by pressure multiplication.
+
+Think about it: What’s the connection between Pascal’s law and real-world machines? Why do fluids transmit pressure so effectively?
+
+### Bernoulli and the Paradox of Flight
+
+Daniel Bernoulli found that faster-moving fluids have lower pressure. This became Bernoulli’s Principle, and it explains why an airplane wing can generate lift: air moves faster over the curved top surface, reducing pressure and lifting the wing. Originally developed to understand fluid flow in pipes, Bernoulli’s ideas unexpectedly became essential to flight.
+
+Think about it: Why does speed reduce pressure in a fluid? How do engineers use Bernoulli’s principle in everyday devices?
+
+### The Sinking of the Vasa
+
+In 1628, Sweden launched a grand warship, the Vasa. Despite being heavily armed, it sank just minutes into its maiden voyage. One major factor was poor understanding of fluid stability and buoyancy: the ship’s centre of mass was too high, and its hull design didn’t provide enough displacement to counteract the top-heavy weight. The failure taught valuable lessons about ship design and stability in fluids.
+
+Think about it: What role did fluid forces play in the Vasa’s sinking? How could modern physics have prevented this disaster?
+
+### The Sticky Flow of Honey: Viscosity in Action
+
+Viscosity is a fluid’s resistance to flow. Honey flows much more slowly than water because of stronger internal friction. Engineers and food scientists need to consider viscosity in product design, pipe systems, and even chocolate coating. Sir Isaac Newton was one of the first to define the relationship between shear force and flow in a fluid—still used today to classify “Newtonian” fluids.
+
+Think about it: Why is viscosity important in industrial and biological systems? What happens when fluids don’t behave like Newton expected?
+
+### The Leidenfrost Effect
+
+When you drip water onto a very hot surface, it sometimes floats and skates around without boiling away instantly. This is the Leidenfrost effect. A thin layer of steam forms between the droplet and the hot plate, insulating it and making it hover. It defies intuition: the water lasts longer at hotter temperatures—because it’s levitating on its own vapor.
+
+Think about it: Why does the steam layer slow down heat transfer? How might this effect be useful in real applications?
+
+### The Dam That Spoke Pressure
+
+The Hoover Dam holds back a colossal volume of water. But water pressure at the base isn’t just due to volume—it depends on depth. This is why dams are thickest at the bottom. Students are often surprised to learn that it doesn’t matter how wide the water is—just how deep.
+
+Think about it: How does this relate to Pascal’s law? What would happen if dams were built too thin at the bottom?
+
+### The Curious Case of Blood Flow
+
+Blood is a fluid, and studying how it moves through vessels is a major field called hemodynamics. Poiseuille's law describes the flow rate through a tube, and it shows that a small decrease in the radius of a blood vessel causes a large decrease in flow rate—something critical in medicine. Doctors use fluid physics to understand blood pressure, aneurysms, and heart function.
+
+Think about it: Why is flow rate so sensitive to blood vessel diameter? How does fluid mechanics help diagnose disease?
+
+### Liquid Mirrors and Spinning Buckets
+
+Place a bucket of water on a rotating platform and spin it. The water surface curves into a paraboloid. Why? Because of the balance between gravity and centripetal force. Some large telescopes even use liquid mirrors made from rotating mercury, creating perfect parabolic shapes without any grinding or polishing.
+
+Think about it: Why does rotation shape a fluid surface? What are the advantages of using liquids in high-precision optics?
+
+## Practical work and Demos
+
++----------------------------------------------+---------------------------------+
+| 1.  Wax on a kitchen sieve                   | 10. Floating a needle           |
+|                                              |                                 |
+| 2.  Surface tension - glass blocks and water | 11. Glass, coin and credit card |
+|                                              |                                 |
+| 3.  Capillary rise and perpetual motion      | 12. Beer glass and handkerchief |
+|                                              |                                 |
+| 4.  Surface tension and soap solution        | 13. The double bubble           |
+|                                              |                                 |
+| 5.  Giant bubble recipe                      | 14. Camphor boat                |
+|                                              |                                 |
+| 6.  Boat and surface tension                 | 15. Diameter of a molecule      |
+|                                              |                                 |
+| 7.  Simulated water drops                    | 16. An air bubble in free fall  |
+|                                              |                                 |
+| 8.  Rotating dish                            | 17. How full is a glass?        |
+|                                              |                                 |
+| 9.  Soap bubbles                             | 18. Strength of a soap film     |
++==============================================+=================================+
+|                                              |                                 |
++----------------------------------------------+---------------------------------+
+
+### Wax on a kitchen sieve
+
+This is a very good demonstration of surface tension. Immerse the sieve very briefly in hot wax to get a thin coating on the wires. Then pour water into the sieve - due to surface tension the water will not pass through the greasy holes. The angle of contact between the water and the wires has been increased to more than 90^0^ and so the water will not wet the wires.
+
+> The wax is best melted in a water bath rather than by direct heat. If heated directly great care is needed to prevent ignition of the liquid wax or vapour.
+>
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Kitchen sieve •Wax •Suitable container in which to heat the wax!
+
+### Surface tension - glass block with water in between
+
+Take two glass blocks and put a few drops of water on the surface of one of them and then press the two blocks together taking care to spread out the water film over the whole of the intervening surface. The very thin layer of water between the blocks gives a large pressure difference across the curved surface of the water between them and makes it very difficult to pull them apart.
+
+> Theory:
+>
+> Pressure difference = 2T/r where T is the surface tension of water and r is the radius of curvature of the water surface.
+>
+> 11-18 depending on treatment
+>
+> •Two rectangular glass or acrylic blocks •Water
+
+Surface tension
+
+### Capillary rise and perpetual motion
+
+You could try to demonstrate perpetual motion by taking a capillary tube and dipping one end into water with the top bent over so that the open end of the tube is less than the height of the capillary rise in the tube. The idea is that water rises up the tube by capillary action, and the open end allows water to fall on to a small paddle wheel. It won't work of course because at the end of the tube the water surface becomes convex, so preventing any water leaving the tube - a pity!
+
+### Surface tension and soap solution
+
+The effect of soap or meths on the surface tension of water can be shown very easily by this simple experiment. Cover the bottom of a tray with a thin layer of coloured water (a mm or so). Touch the water surface with a glass rod dipped in meths or soap solution. The water springs away leaving the bottom of the tray dry.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Tray •Water 'Soap solution or meths
+
+### Giant bubble recipe
+
+A number of experiments concerning bubbles are more impressive if a "strengthened" solution is used. To make these giant bubbles and sheets of soap film the following recipe is suggested. You can not only blow big bubbles (diameter over 30 cm) but also make wonderful soap films on a frame made from four plastic straws that can be made to oscillate, demonstrating slow SHM.
+
+> Age range: 11- 18 depending on treatment
+>
+> Apparatus required: •You will need to make a mixture of 100 ml of bubble bath, 400 ml of tap water (this may be a little too much), 200 ml of gelozone (available from health food shops) and 50 ml of glycerine.
+
+### Boat and surface tension
+
+Take a rectangular plant tray and fill it with clean water. Find a light aluminium food tray that is almost as wide as the plant tray and float it on the water. Touch the water surface behind the boat with a finger moistened with a little soap solution. The boat should be pulled along the tank by the greater surface tension of the water in front of it.
+
+> Theory:
+>
+> Net accelerating force on the front of the boat = LT where L is the length of the front of the food tray and T is the surface tension of the water.
+>
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: 'Plant tray •Rectangular aluminium food tray •Water •Soap solution
+
+### Simulated water drops
+
+The shape of water drops can be simulated by fitting a thin rubber sheet to a ring clamp (diameter about 10 cm) and then filling the sheet with water - the rubber becomes distended giving the shape of a water drop.
+
+> Surtace tension
+
+### Rotating dish
+
+A splendid soap film can be formed on a crystallising dish which, as it is spun on a rotating table, will give different thicknesses of soap film (thinner near the centre and thicker towards the edges) and therefore produce different colours due to interference within the film. Use the improved giant bubble recipe and view the result with a TV camera if available.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Crystallising dish •Rotating table and suitable power supply ^o^ Blu tack \@ •Soap solution ^o^ TV camera (optional) \### Soap bubbles
+
+Soap bubbles have a number of uses in school Physics. They can be used in experiments on surface tension, in a simulation of Millikan's experiment, for the estimate of the size of a molecule as well as for interference effects. The beautiful colours in the films are due to the path differences for different colours of light.
+
+An upper limit of the size of the soap molecule can be gained from the fact that a soap film or a soap bubble goes black when it is about to break. They are then so thin (less than one wavelength of light) that the only path difference is due to the phase shift of on reflection at one face and none because of interference due to their thickness.
+
+Age range: 11-18 Apparatus required: 'Bubble solution •Blower
+
+### Floating a needle
+
+The ability of a water surface to support small objects such as insects can be demonstrated by using this experiment with a needle. Rest the needle on a piece of filter paper and then lower them gently so that they float on the surface of water in a beaker. The filter paper eventually becomes waterlogged and then sinks leaving the needle floating. Adding soap will make the needle sink as it reduces the surface tension of the liquid. An alternative version is to try floating a razor blade.
+
+> Theory:
+>
+> The water surface is depressed so that the needle is held up by the two surface tension forces (2LTcos A where L is the length of the needle and A is the angle that the water surface makes with the vertical where the needle rests on it). Weight of needle (mg) = 2TLcos A.
+>
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Filter paper (the more absorbent the better) ^O^ A needle ^O^A razor blade
+
+### Glass coin and credit card
+
+Fill a glass to the brim with water. Put a credit card on the surface and then place a coin on the overhanging section of the card. The surface tension will hold the card on to the water.
+
+> Age range: 16-18 Apparatus required: •Glass •Water •Credit card •Coin
+
+Surface tension
+
+### Beer glass and handkerchief
+
+Push a handkerchief into an empty beer glass and then half fill the glass with water (or beer!)
+
+\(a\) (b) (c) (d)
+
+The water stays in the glass because of surface tension effects within the layer of water touching the handkerchief.
+
+> Age range: 11-19
+>
+> Apparatus required: •Beer glass •Handkerchief •Plate •Rubber band •Water (or beer)
+
+### The double bubble
+
+The pressure difference in different sized bubbles can be shown by the following experiment. Join a length of glass tubing to each side of the top of a T piece junction using a short length of rubber tubing with a tube clip over it. Blow a different sized bubble on each of the two ends of the T piece of glass tubing in turn, closing the clip to seal off the bubble. When both bubbles are blown open the clips to join the two but sealing off the arrangement from the air with a third clip at the base of the T piece. The big bubble gets bigger and so less curved while the small bubble gets smaller and so more sharply curved - the pressure equalises as the curvature of the two spherical surfaces becomes the same.
+
+> Theory:
+>
+> Pressure difference across the curved surface of a soap bubble = 4T/r where T is the surface tension of the bubble liquid and r is the radius of the bubble.
+>
+> Age range: 11-18 depending on treatment Apparatus required: •T piece •Glass tubing 'Rubber tubing •Three tube clips •Soap solution
+
+### Camphor boat
+
+This experiment shows the lowering of the surface tension of water by a piece of camphor (a drop of soap solution will work equally well in its place). A small piece of camphor is put in a notch at the back of a piece of thick card shaped as a boat and floating on water. As the camphor dissolves, the greater surface tension of the water at the front of the boat pulls it along.
+
+> Age range: 11-13
+>
+> Apparatus required: •Camphor granules or Soap solution •Cardboard •Water in a sink or tank
+>
+> Surface tension
+
+### Diameter of a molecule
+
+The traditional oil drop experiment. Firstly you need a shallow tray filled with clean water the cleanliness of the surface may be achieved by pulling a pair of waxed rods apart over the surface starting at the centre. A light dusting of lycopodium power is now sprinkled on the surface. A drop of oil is formed on a wire and its diameter (2r) measured. A TV camera used here instead of a travelling microscope makes life a lot easier.
+
+This drop is now placed on the water surface - it spreads out and the diameter (2R) of the resulting disc of oil formed on the water is measured. The thickness of the film (h) can then be calculated and the diameter of an oil molecule cannot be greater than this.
+
+> Theory:
+>
+> Volume of oil film (TtR^2^h) = volume of oil drop (4/3(ar^3^) Therefore h = 4/3(r^3^/R^2^)
+>
+> Age range: 11-13
+>
+> Apparatus required: •Tray •Water 'Powder •Oil •Wire holder •TV camera or travelling microscope or a scale graduated in half mm •Waxed rods •Ruler
+
+### An air bubble in free fall
+
+Take a small plastic bottle (preferably flat sided to avoid distortion), fill it about three quarters full of water and screw the top back on.
+
+Now throw it gently upwards and observe what happens to the air as the bottle falls towards the ground (catch it before it hits it!) You will see that the air forms a roughly spherical bubble in the centre of the water.
+
+> Theory: The air and the water are both in free fall. As it falls the air bubble tries to adopt the volume with the smallest surface area, in other words a sphere. (l am grateful to Randel for this idea.)
+
+Age: 14-18 Apparatus required: •Small flat sided plastic bottle •Water
+
+### How full is a glass?
+
+The effect of a convex meniscus can be shown by this simple experiment. Get one of the pupils to fill a glass with water. Now show that you can put in quite a bit more water, or some lead shot, without it overflowing - the convex meniscus keeps the water in place.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: 'Glass 'Water •Sand or lead shot
+
+### Strength of a soap film
+
+Soap films will 'put up with' a lot of rough treatment before they break. You can push a wet finger or a wet knife through a soap film, but a dry object will burst it. Most surprising is that a stream of water will pass through a soap film and the film will still be there.
+
+> Age range: 11-18
+>
+> Apparatus required: •Soap solution •Wire frame •Water
+
+### Fluid flow - ink and glycerol
+
+Fill a measuring cylinder or gas jar with glycerol and put a thin layer (a few mm) of blue ink on the top. Drop a ball bearing into the jar. As it falls some of the ink is collected by it and the streamlines round the falling ball are clearly visible as it moves downwards. With care the ink can be pipetted up again so making the glycerol reusable!
+
+> Age range: 14-18
+>
+> Apparatus required: •Tall measuring jar •Glycerol •Ink •Pipette 'Ball bearing
+
+### Viscosity and falling dust
+
+Relate the viscosity of the air to the speed of fall of light and heavy rain, builders' dust falling slowly in a room and the fall out after the Chernobyl disaster across Europe. Heavy rain hurts more than light rain - the droplets are not only bigger but also fall faster. (61tnrv = mg = 4/3ar^3^pg). Calculate the rate of fall of the different particle sizes. Try it with styrocell beads in water. Basically we are looking for the terminal velocity of the particles.
+
+### Stokes' Law
+
+The effect of viscous drag on a sphere can be investigated by dropping ball bearings through glycerol. Alternatively you can watch bubbles rising through a fizzy drink, syrup or glycerol.
+
+> Theory:
+>
+> When the balls (radius r) are falling at their terminal velocity (v) through a fluid of coefficient of viscosity rl the drag due to the viscous effect of the fluid is equal to the difference between their weight (mg) and the upthrust (U) mg - U = 6Ttqrv
+>
+> Age range: 15-18
+>
+> Apparatus required: •Tall measuring cylinder •Glycerol 'Stop clock
+
+### Fluid flow in tubes
+
+Compare the viscosities of a number of different liquids by allowing them to flow down through glass tubes. It has been suggested that you could make a clock from a tin of syrup graduated by how long it takes the syrup to run out!
+
+> Age range: 14-18
+>
+> Apparatus required: •Various liquids --- water, syrup, glycerol ^o^Tin with a hole in the bottom •Glass tubes of various diameters •Stop clock •Filter funnel 'Rubber bung with a hole in the centre for attaching the glass tube to the filter funnel •Short length of rubber tubing •Tube clip
+
+### Balancing balls
+
+Balance a polystyrene ball or a table tennis ball on top of a vertical jet of water from the tap or a vertical jet of air from an air blower. The first one is messier! With the air jet it is possible to bend the jet at quite an angle with the vertical - showing that it is not simply the upward force of the jet that keeps the ball up. Try a balloon on the air jet! A hairdryer acts as a good air blower.
+
+> Theory:
+>
+> The rapidly moving stream of air forms a lower pressure region that keeps the balls within it.
+>
+> Age range: 14-16
+>
+> Apparatus required: •Air jet •Retort stand and clamp •Various polystyrene balls •Table tennis ball
+>
+> •Light rubber ball •Beach ball
+
+### The physics of the frisbee
+
+Use one of these to show fluid flow and pressure decrease in the fast moving stream of air over the frisbee. Simply throw the frisbee and talk about the way it moves.
+
+### Styrocell beads in a snowstorm
+
+A further demonstration of viscous drag can be made by pouring some styrocell beads into a jar full of water, putting on the lid and then turning the jar upside down. The beads fall slowly due to the viscosity of the water (Stokes' Law) and simulate a fairly good snowstorm. (Christmas fun !)
+
+> Age range: 11-14
+>
+> Apparatus required: 'Styrocell beads •Jar with screw top lid (the taller the better - plastic bottle will do)
+>
+> •Water
+
+### Throwing a ruler - Bernoulli
+
+Throw a 30 cm ruler by holding it in the centre horizontally and then flipping it about its long axis. The resulting spinning motion should make it curve up or down. Compare this motion with top and bottom spin of a table tennis ball.
+
+Age range: 13-16 Apparatus required: ^0^ 30 cm ruler
+
+Fluid flow Viscosity
+
+### Ball in funnel
+
+Another simple demonstration of the lowering of pressure in fastmoving air streams is to put a table tennis ball on to the bench and place a glass funnel over it. Attach the funnel to an air blower and switch on the airflow. The ball will be pushed up into the funnel and the rush of fast-moving air between the ball and the funnel creates a pressure difference and holds the ball in the funnel despite the fact that the funnel is held upside down!
+
+> Age range: 15-18
+>
+> Apparatus required: •Air blower •Table tennis ball •Glass funnel 'Rubber tubing
+
+### Moving a ball in the air
+
+The bending of the path in air of a spinning table tennis ball, tennis ball, cricket ball or rounders ball can be shown very clearly by the following experiment. Put a polystyrene ball or a table tennis ball into a cardboard tube with one end covered and with an internal diameter just a little greater than that of the ball itself.
+
+Holding the tube by one end, swing it smartly so that the ball is thrown out. The side of tube will give the ball a spin about a vertical axis and it should curve across the lab. Deflections of at least a metre in a distance of ten metres can easily be obtained. It is even better outside where you can throw it faster. Using a polystyrene ball and covering the inside of the tube with sandpaper works well.
+
+> Theory:
+>
+> As the spinning ball moves through the air the flow of air past it will be more rapid on one side than on the other. This creates a difference in pressure between the two sides of the ball and so the ball moves into the area of lower pressure.
+>
+> Age range: 14-18
+>
+> Apparatus required: 'Polystyrene ball or table tennis ball •Cardboard tube about 70 cm long
+
+### Cotton reel and card
+
+Put a pin through a card and put this in the tube in the centre of a cotton reel. Blow through the other end of the cotton reel. The fast moving layer of air emerging between the cotton reel and the card creates low pressure, and this pressure difference holds the card on to the reel.
+
+Age range: 14-18 Apparatus required: •Cotton reel •Cardboard •Long (2 cm) pin
+
+### Table tennis balls in egg cups
+
+Blowing across the top of a table tennis ball which is resting in an egg cup is a very simple way of showing the reduction in pressure in a moving fluid.
+
+Put a table tennis ball in an egg cup. Place another egg cup nearby and ask someone if they can transfer the table tennis ball to the other egg cup without touching it. The art is to blow sharply across the top of the ball. The lower pressure in the air stream draws the ball into the airflow where it will be given a sideways force which will move it into the other cup.
+
+A certain amount of practice is needed.
+
+> Apparatus required:
+>
+> •Table tennis balls •Egg cups
+>
+> •Puff!
+
+### Blowing between two sheets of paper
+
+One of the simplest demonstrations of reduced pressure due to fast-moving air is simply to hold two sheets of paper vertically, one in each hand, and then to blow down through the gap between them. The lowering of the pressure in the moving air (Bernoulli Effect) explains why they are drawn together.
+
+> Theory:
+>
+> When a fluid is in motion the pressure within the fluid varies with the velocity of the fluid if the flow is streamlined. This pressure variation is a consequence of Bernoulli's theorem proposed in 1740. This states that:
+>
+> The pressure within a fast-moving fluid is lower than that in a similar fluid at rest or moving slowly.
+>
+> This effect can also be seen when two tall heavy lorries travel along rapidly side by side and are drawn together. The same effect has also been experienced at sea between two ships. This also explains the vibration of the reed in an oboe; the fast moving air stream between the two reeds causes lower pressure between them and so forces them together. Changes in this pressure cause the reeds to vibrate.
+>
+> The shape of the cross-section of an aircraft wing is designed so that the velocity of the air above the wing is greater than that below it. A region of low pressure is therefore created above the wing and so the aircraft experiences an upward force known as lift. Racing cars have inverted aerofoils so that the force is downwards, thus increasing the force between the car and the road
+>
+> Age range: 13-16
+>
+> Apparatus required: •Two sheets of paper
+
+Fluid flow Viscosity
+
+### Terminal velocity and mass
+
+The effect of mass on terminal velocity can be investigated using a number of cup cake paper cases. These are dropped singly or nested in groups of two, three, four and so on. The outer shape of one or more cups is almost the same and so the only variable is mass. You can drop them from the same height and time how long they take to reach the ground or alternatively experiment with different heights until each combination of cup cases reaches the ground at the same time.
+
+I am very grateful to Donald Simanek for the initial idea for this experiment.
+
+> Theory:
+>
+> When a body is falling at its terminal velocity the vertical forces on it are balanced and so drag force (F) = weight of body = mg. It is usually assumed that when a body is moving through a fluid such as air the drag force (F) on it is proportional to the velocity of the body squared (v^2^).
+>
+> Therefore: F = mg = kv , but if the body is falling at its terminal velocity it will be moving with constant velocity and so to find the distance (d) that it falls in a time t we can use the simple equation: d = Vt
+>
+> Therefore: d =!
+>
+> So if dl is the distance fallen in a time t by one cup case (mass = 1) and d3 the distance fallen in a time t by three nested cup case (mass=3) then: d3/d1 = 1/3 = 1.732. So if we want to have the cup cases hitting the ground at the same time we must drop them from different heights --- in the ratio of the square root of their masses.
+
+> If we drop them from the same height, the ratio of the times taken for one and three cup cases to reach the ground is:
+
+t1/t3 = = 1/4/3 = 0.58
+
+Age range: 11-19 Apparatus required: •Paper cake cups •Ruler •Stopwatch
+
+### Paper glider
+
+To make the paper glider you need an isosceles right angled triangle of paper. The long edge is then bent over twice --- each bend being about 0.3 cm wide. This is then bent round in a circle to join the two pointed ends forming a shape rather like a bishop's mitre. The end is then bent upwards to give the shape shown in the photograph. If you hold the paper near to the bent up tail and then let it go it will float across the room covering a distance of many metres.
+
+There are many possibilities for investigating the range with different types of paper, size of bend, and angle and size of the "tail". Older students can study the fluid flow through the glider.
+
+> Many thanks to Ian for this idea.
+
+Age range: 7-18 Apparatus required: •Triangle of paper 'Ruler •Stopwatch
+
+4 40

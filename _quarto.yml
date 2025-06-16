@@ -1,0 +1,92 @@
+project:
+  type: book
+
+book:
+  downloads: [pdf]
+  title: "The Physics Teacher"
+  author: "Joe Rowing"
+  date: "5/22/2025"
+  page-footer:
+    background: light
+    left: "Copyright 2025, Joe Rowing" 
+    right: 
+      - icon: github
+        href: https://github.com/jrowing
+      - icon: megaphone 
+        href: https://bsky.app/profile/jrowing.com
+      - icon: file-earmark
+        href: https://www.jrowing.com
+  chapters:
+    - part: "Introductions"
+      chapters:
+       - index.qmd
+       - PhyPhox.qmd
+       - PhET.qmd
+    - part: "The Basics"
+      chapters:
+        - BasicPhysics.qmd
+        - WorkEnergyPower.qmd
+    - part: "Mechanics"
+      chapters:
+        - CircularMotion.qmd
+        - ForcesNewton.qmd
+        - Friction.qmd
+        - Inertia.qmd
+        - Momentum.qmd
+        - Fluids.qmd
+        - Statics.qmd
+        - MiscMechanics.qmd
+    - part: "The Earth and Beyond"
+      chapters:
+        - Astronomy.qmd
+    - part: "Electricity"
+      chapters:       
+        - Capacitors.qmd
+        - CurrentElectricity.qmd
+        - Elasticity.qmd
+        - Electromagnetism.qmd
+    - part: "Fields"
+      chapters: 
+        - Electrostatics.qmd
+        - Gravity.qmd
+    - part: "Thermal Physics"
+      chapters:    
+        - GasLaws.qmd
+        - ThermalPhysics.qmd
+    - part: "Waves & Optics"
+      chapters:
+        - optics.qmd
+        - VibrationsWaves.qmd
+    - part: "Nuclear & Quantum"
+      chapters:        
+        - NuclearPhysics.qmd
+        - Quanta.qmd
+        - Radioactivity.qmd
+  appendices:  
+    - MoreResources.qmd
+#    - intro.qmd
+#    - summary.qmd
+#    - references.qmd
+
+  navbar:
+    right:
+      - text: "Buy Me a Coffee"
+        href: https://buymeacoffee.com/jrowing
+        target: _blank   # optional, opens link in new tab
+
+bibliography: references.bib
+
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    number-depth: 3
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    number-depth: 3
+    documentclass: scrreprt
+
+editor: visual
+

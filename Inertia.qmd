@@ -1,0 +1,201 @@
+---
+title: "Inertia"
+format: html
+---
+
+## Basic Theory
+
+### Definition of Inertia
+
+-   **Inertia** is the property of an object to **resist changes in its state of motion** (whether at rest or moving at constant velocity).
+-   The more mass an object has, the greater its inertia.
+
+### Mass as a Measure of Inertia
+
+-   Mass ($m$) quantifies inertia.
+-   Objects with larger mass require **greater force** to change their velocity.
+
+### Newton’s First Law (Law of Inertia)
+
+-   An object will remain at rest or move with constant velocity unless acted upon by a **net external force**.
+-   This is the fundamental principle describing inertia.
+
+### Relationship to Newton’s Second Law
+
+Newton’s second law shows inertia mathematically: $$
+F = ma
+$$ - For a given force $F$, acceleration $a$ is inversely proportional to mass $m$. - Larger $m$ → smaller $a$ → more resistance to change.
+
+### Moment of Inertia (Rotational Inertia)
+
+-   Inertia applies to rotational motion as well.
+-   **Moment of inertia (**$I$) is the rotational equivalent of mass.
+-   It depends on mass distribution relative to the axis of rotation.
+
+For point masses: $$
+I = \sum m_i r_i^2
+$$ Where: - $m_i$ = mass of each particle - $r_i$ = distance from rotation axis
+
+### Examples of Inertia
+
+-   A stationary ball remains still unless pushed.
+-   A moving car keeps moving at constant speed unless brakes are applied.
+-   Heavier objects resist acceleration or deceleration more than lighter ones.
+-   Spinning figure skater pulls arms in to reduce moment of inertia and spin faster.
+
+### Applications and Implications
+
+-   Seatbelts and airbags help overcome inertia to stop passengers safely.
+-   Designing stable vehicles involves managing inertia.
+-   Sports techniques use inertia (e.g., golf swings, cycling).
+
+### Summary
+
++-------------------------+------------------------------------------------+
+| Concept                 | Description                                    |
++=========================+================================================+
+| Inertia                 | Resistance to change in motion                 |
++-------------------------+------------------------------------------------+
+| Mass ($m$)              | Measure of linear inertia                      |
++-------------------------+------------------------------------------------+
+| Moment of inertia ($I$) | Measure of rotational inertia                  |
++-------------------------+------------------------------------------------+
+| Newton’s 1st Law        | Object stays in uniform motion unless acted on |
++-------------------------+------------------------------------------------+
+
+> The inertia of an object can be described as its reluctance to change the way it is moving. Bodies with 
+high inertia (large mass) are difficult to move and stop. The Apollo astronauts found their own inertia a problem when walking on the Moon. The lower gravitational pull meant lower friction between their feet and the ground, so it was more difficult for them to overcome their inertia and stop. Heavy objects "floating" in orbiting spacecraft are similarly difficult to control.
+
++--------------------------------------------+---------------------------------------+
+| 1.  Inertia --- large mass and two threads | 6.  Wig wag--- or the inertia balance |
+|                                            |                                       |
+| 2.  Helium-filled balloon                  | 7.  Water on an umbrella              |
+|                                            |                                       |
+| 3.  Inertia - car, tea set and blocks      | 8.  Inertia of a rod                  |
+|                                            |                                       |
+| 4.  Coin/card and beaker                   | 9.  The bicycle wheel gyroscope       |
+|                                            |                                       |
+| 5.  Inertia and the linear air track       | 10. Inertia powered car               |
++============================================+=======================================+
+|                                            |                                       |
++--------------------------------------------+---------------------------------------+
+
+##### 1. Inertia- large mass and two threads
+
+Tape two 1 kg masses together and suspend them from a rigid support such as a beam using a piece of cotton. Then tie a second piece of cotton to the bottom mass. A sharp pull will break the lower piece of cotton while a gradual pull will break the top one. This demonstrates the effect of the inertia of the masses.
+
+> Theory:
+>
+> When the bottom thread is pulled gently the tension in it is T while that in the top thread is T+Mg where M is the total mass of the two 1 kg masses. As the pull is gradually increased clearly the top piece of cotton will reach its breaking stress first. However, if the lower thread is jerked sharply the inertia of the masses prevents them moving before the cotton breaks. Ft = Mu and if t is small then F is large.
+>
+> Age range: 14-18
+>
+> Apparatus required: •Two 1 kg masses •Tape •Rigid support such as a beam 'Weak cotton - strong enough to support 2 kg but not much more!
+
+##### 63
+
+###### 2. Helium-filled balloon
+
+Get a helium filled-balloon of the kind used for parties. Tie it to a 1 kg mass on the back seat of your car and then drive around.
+
+Get a friend to go with you to observe the direction of motion of the balloon as you accelerate, brake and corner. It will move in the direction opposite to what you expect. This is a really fascinating demonstration which could be videoed for class use. Get your pupils to try and explain why it moves the way it does!
+
+Maybe take one on a school trip in a coach or get the pupils to try it for themselves.
+
+Age range: 11-18 Apparatus required: •Helium-filled balloon
+
+###### 3. Inertia - car tea set and blocks
+
+Another two simple demonstrations of inertia.
+
+(a) Get an inertia-powered car running and then place it on a thin piece of cardboard that is lying on some styrocell beads. The car hardly moves while the card is moved backwards rapidly. An example of Newton's Second and Third Laws.
+
+(b) Place a silk scarf on the bench and arrange a toy tea set on it. It is more impressive if some of the cups are full of water. Now pull the scarf out from underneath. The tea set should remain where it is. Trying it with light plastic toy cups and then with real ones demonstrates the effect of mass on inertia. Light ones have much less inertia and therefore move much more easily.
+
+(c) Put a stack of three wooden blocks on the bench, one on top of the other. Give one of the middle blocks a sharp blow with a hammer. It should move out, allowing the upper block to drop vertically onto the lower one. It does not moving horizontally much because of its inertia.
+
+(d) Use a stack of four light plastic waste bins with plastic trays in between them, the lower one standing on a silk cloth. Pull out the cloth without the pile falling over.
+
+> Age range: 11-13
+>
+> Apparatus required: •Inertia-powered car •Card •Styrocell beads •Plastic tea set •China cup •Milk bottle
+
+###### Coin/card and beaker
+
+This is a simple demonstration of inertia. A card with a coin on it is put on the top of a beaker. If you flick the card off sharply the coin falls into the beaker. The inertia of the coin makes it reluctant to move and the frictional forces between the coin and the card are too small to get it moving horizontally before it falls into the beaker.
+
+Age range: 11-14 Apparatus required: •Coin •Card •Beaker
+
+###### 5. Inertia and the linear air track
+
+An interesting extension to experiment three is to use a linear air track mounted on wheels! I use two old dynamics trolleys. Use a reasonably heavy rider (say 400 g) and a two-metre long linear air track. Put the rider on the track, turn up the air supply so that it floats and then pull the track itself --- I use a weight hanging over a pulley. The inertia of the rider and the very low friction between it and the track will keep it motionless while the track moves under it! Make sure that you stop the air track before it falls off the bench, and have somebody to control the air hose!
+
+> Age range: 13 --- 18
+>
+> Apparatus required: •Linear air track •Rider 'Pulley •Two small wheeled trolleys such as dynamics trolleys •Air supply •Thread •Mass
+
+###### 6. Wig wag --- or the inertia balance
+
+This is a classic experiment to compare the inertia of different masses. The apparatus is shown in the diagram. The tray fixed to two whippy metal strips is clamped to the bench and then displaced and allowed to oscillate - the frequency of oscillation can then be found.
+
+A 1 kg mass is now placed in one of the holes and the resulting frequency found. The procedure is repeated for up to three masses.
+
+As you would expect, the frequency goes down as the mass is increased - but is this due to the weight of the masses or their mass? An effective way of showing this is to repeat the experiment with one of the masses, but suspend it by a thread so that it is hanging in the hole rather than resting on the base of the tray.
+
+You should find that the oscillation period is unaltered, showing that it is the mass that governs the vibration rate and not the weight. In other words the frequency would be the same in an orbiting spacecraft or on the surface of the Moon as it was on the Earth. This makes it very useful as a timing device for astronauts. \> \> Apparatus required: •Wig wag and cylinders 'G clamp •Stop clock •Retort stand •Thread
+
+###### Water on an umbrella
+
+This is a simple demonstration of inertia. Simply get an umbrella and sprinkle some water on it - you need a really waterproof surface to make this work well. (If your umbrella is old, try and get it re-proofed or else smear the surface with a little oil.) Now close the umbrella sharply - the water stays where it is due to inertia and so the umbrella comes away much drier.
+
+This is rather like a stationary car being hit from behind. The passengers remain where they are and the car moves off.
+
+###### 8. Inertia of a rod
+
+> This should only be done as a demonstration with the teacher, and all present, wearing eye protection and being protected by safety screens.
+
+\(a\) The Victorians were fond of a parlour demonstration that used inertia --- although this one is not simply dependent on that. A 1.50 m dowel rod was balanced with its two ends resting on wine glasses. (See Figure 1)
+
+The trick is to break the dowel rod by hitting it in the centre with a broom handle without breaking the wine glasses. It is a good idea to start the experiment by using a rod with a diameter of about three quarters of a centimetre. (See Figure 2)
+
+When the wooden rod is hit in the centre with the broom handle the shock waves travel outwards towards the two ends and the wine glasses.
+
+This is just like the shock waves from an earthquake spreading out through the Earth's crust. If the rod is long enough they don't have time to reach the wine glasses before the wooden rod shatters.
+
+However if the rod is short enough the shock waves reach the wine glasses before the rod breaks and the wine glasses fall over. (See Figure 3)
+
+> The variation described below is much less hazardous and just as impressive!
+
+\(b\) As a safer variation of this, hang a dowel between two chairs by a piece of cotton at each end. Now hit it in the centre with a broom handle so that it will break without the threads breaking. The time of action of the force on the wood is short and it snaps before the force is transmitted along to the thread at both ends. The natural frequency of vibration of the rod is also lower for longer rods.
+
+(The dowel may be hung from a support rod or directly from the two chairs.)
+
+Two retort stands clamped to two benches could be used instead of the two chairs. \> \> Age range: 11-18 depending on treatment Apparatus required: \> \> •Wooden dowel rod (various diameters) •Broom handle ^o^Two lengths of cotton •Two chairs
+
+###### 9. Rotational inertia - the bicycle wheel gyroscope
+
+There are some very impressive demonstrations of the inertia of rotating objects. One of the most simple and yet effective methods is to use a large gyroscope such as a small bike wheel that has had two wooden handles fitted to either side of the axle.
+
+Get someone to hold the handles, wind a length of string round the axle, and then, using a strong pull, set the wheel spinning. Then ask them to hold it by just one handle and then change the direction in which the axle is pointing. It is very difficult because of the torque needed to alter the angular momentum of the wheel.
+
+A number of fascinating experiments can be performed with this heavy gyroscope:
+
+(a) get the pupils to try to pass it round the class while it is rotating, using only one hand each, and then ask them to abruptly change the axis of rotation
+
+(b) get them to stand on a rotating table placed on the floor, hand them the spinning wheel with its axis horizontal and then ask them to turn the axis vertical
+
+(c) suspend the spinning wheel by only one side of its axle, precession and nutation will result
+
+(d) mount this spinning wheel in a case and get a pupil to carry it round the lab
+
+> Beware of fingers being caught in the spinning spokes, or the wheel being dropped whilst being passed. Careful supervision is needed.
+>
+> Age range: 13-18 depending on treatment
+>
+> Apparatus required: •Rotating table •Bicycle wheel gyroscope •Length of cord
+
+###### 10. Inertia-powered car
+
+Every school should have an inertia-powered car --- often wrongly called a friction-powered car. The energy is stored in a flywheel within the car which can be clearly seen in the car in the photograph. This is 'powered up' by rubbing the wheels on the floor --- this is where friction is used. This energy can then be used to drive the wheels so that the car moves.
+
+Age range: 7-14 Apparatus required: •Inertia-powered car

@@ -1,0 +1,273 @@
+---
+title: "NuclearPhysics"
+format: html
+---
+
+## Basic Theory
+
+### Nuclear Notation
+
+A nucleus is represented as: $$
+ {}^A_Z\text{X}
+ $$ Where: - $A$ = mass number (number of nucleons = protons + neutrons) - $Z$ = atomic number (number of protons) - $\text{X}$ = chemical symbol
+
+**Neutron number:** $N = A - Z$
+
+### Nuclear Forces
+
+-   **Strong nuclear force** holds nucleons together:
+    -   Attractive at \~1–3 fm
+        -   Repulsive below \~0.5 fm (to prevent collapse)
+-   Overcomes **electrostatic repulsion** between protons
+
+### Mass-Energy Equivalence
+
+**Einstein’s equation:** $$
+ E = mc^2
+ $$ Where: - $E$ = energy (J) - $m$ = mass (kg) - $c$ = speed of light ($3.0 \times 10^8$ m/s)
+
+### Mass Defect and Binding Energy
+
+**Mass defect**: Difference between the mass of separated nucleons and the mass of the nucleus. **Binding energy**: Energy required to break a nucleus into its constituent nucleons.
+
+$$
+ E_b = \Delta m \cdot c^2
+ $$
+
+**Binding energy per nucleon** = $\frac{E_b}{A}$
+
+-   Indicates stability of nucleus
+-   Peaks at iron (${}^{56}\text{Fe}$)
+
+### Radioactive Decay
+
+#### Types:
+
+-   **Alpha (**$\alpha$): Helium nucleus ${}^4_2\text{He}$
+-   **Beta-minus (**$\beta^-$): Neutron $\rightarrow$ proton + electron + antineutrino
+-   **Beta-plus (**$\beta^+$): Proton $\rightarrow$ neutron + positron + neutrino
+-   **Gamma (**$\gamma$): High-energy photon; often emitted after $\alpha$ or $\beta$ decay
+
+#### Example equations:
+
+Alpha: $$
+ {}^{238}_{92}\text{U} \rightarrow {}^{234}_{90}\text{Th} + {}^4_2\text{He}
+ $$
+
+Beta-minus: $$
+ {}^{14}_6\text{C} \rightarrow {}^{14}_7\text{N} + \beta^- + \bar{\nu}_e
+ $$
+
+Beta-plus: $$
+ {}^{11}_6\text{C} \rightarrow {}^{11}_5\text{B} + \beta^+ + \nu_e
+ $$
+
+### Exponential Decay
+
+Number of undecayed nuclei: $$
+ N(t) = N_0 e^{-\lambda t}
+ $$
+
+Activity: $$
+ A(t) = A_0 e^{-\lambda t}
+ $$
+
+Decay constant and half-life: $$
+ T_{1/2} = \frac{\ln 2}{\lambda}
+ $$
+
+### Nuclear Reactions
+
+-   **Fission**: Heavy nucleus splits into smaller ones, releasing energy
+-   **Fusion**: Light nuclei combine to form a heavier nucleus, releasing energy
+
+Example (fusion in stars): $$
+ {}^2_1\text{H} + {}^3_1\text{H} \rightarrow {}^4_2\text{He} + n + \text{energy}
+ $$
+
+Fission example (uranium-235): $$
+ {}^{235}_{92}\text{U} + n \rightarrow {}^{144}_{56}\text{Ba} + {}^{89}_{36}\text{Kr} + 3n + \text{energy}
+ $$
+
+### Binding Energy Curve
+
+-   Graph of binding energy per nucleon vs. mass number
+-   Explains why:
+    -   **Fusion** releases energy for $A < 56$
+    -   **Fission** releases energy for $A > 56$
+
+### Detecting Radiation
+
+-   **Geiger-Müller tube**
+-   **Cloud chamber**
+-   **Photographic film**
+-   Background radiation must be accounted for
+
+### Applications of Nuclear Physics
+
+-   **Medical**: PET scans, cancer radiotherapy
+-   **Energy**: Nuclear reactors (fission), fusion research
+-   **Dating**: Carbon-14 dating
+-   **Industrial**: Tracers, thickness gauges
+
+### Safety and Shielding
+
+-   **Ionising radiation** damages tissue and DNA
+-   Safety measures:
+    -   Limit time exposed
+    -   Increase distance
+    -   Use shielding (e.g. lead, concrete)
+
+### 1. Simple atom analogy/model
+
+A simple way of remembering the relative sizes of the nucleus and the atom of hydrogen is to imagine that if the nucleus is represented by a ball 1 cm in diameter (say a marble) the orbiting electron would be 1 km away.
+
+The ratio of the diameter of the atom to that of the nucleus is about 1 to 100 000.
+
+> Theory
+>
+> The radius of a nucleus is given by the equation:
+>
+> r = roA^l^/^3^ where A is the nucleon number of the nucleus and ro is a constant (1.3x10 ^15^ m)
+
+### 2. Alpha particle scattering - two alternatives
+
+There are two simple alternatives to the commercially available "tin hat" apparatus to demonstrate alpha particle scattering by a nucleus.
+
+(a) Fix a rubber sucker to a glass sheet placed on an overhead projector. Now roll a ball bearing towards it. The disadvantage of this method is the relatively small size of the sucker.
+
+(b) Use a fixed circular magnet representing the nucleus, and then swing another small magnet towards it to represent the alpha particle (In this version it is important to keep a repulsion between the two magnets by using a suitable method of suspension.)
+
+> Age range: 14-18 Apparatus required: •Overhead projector •Ball bearings •Rubber sucker •Magnets
+
+### 3. Rutherford scattering - a permanent record
+
+A permanent record of the Rutherford scattering experiments can be obtained by using the tin hat simulation of the field but putting it on a piece of white paper resting on carbon paper. Draw a set of lines on the white paper to show the direction of incident ball bearings. Roll the ball bearings down a ramp, and the pressure on the carbon paper will give a permanent record of their tracks after "collision" with the "nucleus". (The ball bearings can be collected by surrounding the apparatus by a magnetic strip or simply just catching them!)
+
+> Age range: 14-18
+>
+> Apparatus required: •Tin hat apparatus •Ball bearings •White paper •Carbon paper •Flexible magnetic strip (optional)
+>
+> Nuclear
+
+### 4. Rutherford scattering
+
+Use a row of pins hidden inside a box to represent the nuclei of a set of atoms. Roll ball bearings into the box through a hole in one side, and observe where they come out. Get pupils to predict what sort of obstacles are in the box.
+
+### 5. Plum pudding model
+
+If we are going to use the special metal tin hat model to simulate the nuclear model of an atom, then we should show the alternative plum pudding simulation. Instead of the "tin hat" I have used a cymbal - the ball bearing will roll across the centre quite easily, showing reduced scattering by this type of atom. There is a deflection, but if the ball bearings are rolled from about half way up the little ramp no ball bearing ever suffers more than a 90 ^0^ deflection.
+
+> Theory
+>
+> The much lower electric field intensity of the plum pudding model is represented by the lower central height of the cymbal. The potential at the centre is also much smaller resulting in a smaller deflection by the incident alpha particles.
+
+Age range: 16-18 Apparatus required: •Cymbal •Ball bearings
+
+### Mouse traps and chain reactions
+
+(a) This lovely (although potentially painful) demonstration is a splendid simulation of a nuclear chain reaction. Set up a number of cocked mouse traps side by side in a rectangle (a dozen will work well) to represent uranium nuclei. Put a couple of polystyrene balls representing neutrons on each one.
+
+Throw in another polystyrene ball (neutron) to start the chain reaction. One mouse trap goes off - this sets off others and so on! A simulated chain reaction results.
+
+The balls are shot all over the lab (fast neutrons). Spacing out the mouse traps gives an idea of the shape of fuel rods and the way a chain reaction can fail.
+
+It works best if the mouse traps are placed on the lid of a cardboard box to give a good ^U^linkage" between one "fission" and another.
+
+(b) Alternative methods are to use a set of matches fixed upright in a block of wood - when you light one the others are set alight as the flame spreads through them like a forest fire. You could also knock down a set of dominoes by touching the first one and making it fall so that it collides with another and so on.
+
+> Age range: 16-18
+>
+> Apparatus required: •Mouse traps •Polystyrene balls •Block of wood with holes •Matches •Dominoes •Cardboard box
+
+Nuclear
+
+### 7. E20 note and ball - nuclear forces
+
+These two analogies are designed to explain the forces between sub-nuclear particles
+
+(a) A simulation of long-range electrostatic repulsive forces can be given by two people throwing a ball to each other, each one standing on a skateboard or wheeled trolley. The thrower recoils when they throw the ball, and the catcher recoils when they receive it. There is no limit to the range of the force as long as they throw hard enough.
+
+(b) The short-range strong nuclear force (only effective over distances less than about 10 ^15^ m) can be represented by the two people trying to throw a E20 note to each other. For a start there is no possibility of them throwing it to each other unless they are close together because of the large amount of air resistance; it will only work at short distances, but it is certainly attractive!
+
+> Theory
+>
+> Both these experiments are simulations of the exchange of force carriers when a force acts between two objects - a photon in the case of the electromagnetic force and a gluon in the case of the strong nuclear force.
+>
+> Ensure that a clear space is available. Control the ball throwing. Only pupils who know how to use a skate board should take part in experiment (a).
+
+Age range: 16-18 Apparatus required: ^o^ Two heavy balls •Two skateboards •Two notes
+
+### 8. Nuclear fusion analogy!
+
+The problem of the repulsion between two nuclei and the existence of a short-range nuclear force can be explained as follows.
+
+Imagine two people wearing large inflatable suits so that each appears to be standing in the centre of a balloon. The suits are so large that if they stand near each other they cannot hold hands. Only by the people running together at high speed will the suits be sufficiently squashed for them to be able to grasp each other's hand and so "fuse"!
+
+### 9. Strong nuclear force --- attraction and a boomerang
+
+To demonstrate the attractive nature of a force due to the interchange of virtual particles between protons, think of two people standing fairly close together on skateboards but facing away from each other. One throws a boomerang to the other. The boomerang curves round and is caught by the second person, so pushing the two people together.
+
+### 10. Nuclear collisions - watches
+
+To discover the composition of subatomic particles two particles are fired towards each other at high speed. An example of this is the Large Electron Positron Collider (LEP) at CERN in Geneva where electrons and positrons are made to collide head on in the giant accelerator. In a way this is rather a crude method. It is a bit like trying to find out what is in a watch by throwing two watches together and seeing what bits fly out. The big difference between the analogy and the subatomic particles is that in the nuclear collisions some bits that fly out were not there before the collision; they have been "made" by the conversion of energy to matter in the collision - certainly not true with the watches!
+
+> Nuclear
+
+#### 11. Accelerator models
+
+Here are two ideas to simulate the action of a particle accelerator where the particle gets a kick every time it passes between two accelerating electrodes, the first a synchrotron (constant radius) and the second a cyclotron.
+
+(a) Make a large circular orbit out of plastic curtain rail. Put a marble inside the ring touching the wall to represent the particle, and use an air blower to simulate the kick given by the electric field as the particle orbits the accelerator. If a small section of the track could be made to open, you can simulate the extraction of a charged particle from an accelerator by a magnetic field. A ball fixed to a thread might do as well - no accelerator walls. This simulates the operation of a synchrotron where the orbit radius is fixed and the confining magnetic field is made to increase as the particle's energy increases.
+
+(b) In the second method all you need is a ball suspended by a string from a post (sometimes used to train young children to play tennis) and a bat. Give the ball a push, so that it swings round the post, and every time it passes you give it a hit with the bat. The ball will gain energy on each orbit, move faster and so swing out further from the post.
+
+This simulates the operation of a cyclotron where the magnetic field is constant and the orbit radius increases as the particle's energy increases.
+
+Adding a horizontal string, fixed between the ball and the vertical central post, to the swing ball simulates synchrotron operation. As the ball is hit, its velocity increases, but the horizontal string prevents it from changing its orbit radius. However, as its gets faster the centripetal force in the string increases --- analogous to the increase in magnetic field in a synchrotron required to keep the particles in a constant orbit as they accelerate.
+
+> Age range: 16-18
+>
+> Apparatus required:
+
+(a) •Length of plastic curtain rail (at least 2m) •Air blower •Polystyrene balls or marbles
+
+(b) •Ball on string tied to the top of a fixed post •Extra string •Bat
+
+Nuclear
+
+#### 12. The bubble chamber
+
+This simple experiment is an excellent demonstration of how a bubble chamber works and can also be used to reinforce the idea of a cloud chamber. Pour out a gassy drink such as lemonade, and allow it to stand for a few minutes until no more bubbles rise. Then drop in a small amount of fine salt (or sand). This gives nuclei for bubbles to form on, and you will see clouds of bubbles begin to rise through the liquid. In a similar manner ions are formed in a bubble chamber when a radioactive particle passes through, and bubbles form on these. Bubble chambers are more effective than cloud chambers, as there are more atoms that can be ionised and hence more "nuclei" on which bubbles can form.
+
+> Age range: 16-18
+>
+> Apparatus required: •Can of fizzy drink •Glass beaker •Salt
+
+### 13. The power of the Sun
+
+The power of the Sun can be found by measuring the amount of energy falling on a small area of the Earth's surface every second.
+
+Use a blackened tin can containing a known mass of water. Shield the can from the sunlight, measure its temperature, and then put it out in the sun for a known length of time and measure the final temperature. The energy gained by the water can be calculated, and knowing the area exposed to the sunlight enables you to find the energy falling on a square metre of the Earth's surface per second --- this is known as the solar constant. From this you can calculate the power of the Sun (see below).
+
+> Theory:
+>
+> Take the solar constant to be 1370 Wm- at a distance equal to the radius (R) of the Earth's orbit. This means that a total amount of energy equal to 4TtR^2^ x1370 J is passing out from the Sun every second.
+>
+> Now the radius of the Earth's orbit is 1.5x10 ^11^ m and so the energy emitted by the Sun every second is:
+
+E = x1370 = J.
+
+> Using Einstein's mass-energy equation (E = mc ) you can calculate the mass of the Sun being converted into energy every second.
+>
+> Mass converted to energy = E/c2
+
+= 3.87x10^26^/9x10^16^ = kg
+
+= 4.3x10^6^ tonnes. Diagram not to scale
+
+> This means that the Sun is converting over four million tonnes of its mass into energy every second!
+>
+> Age range: 16-18 Apparatus required: •Blackened tin can •Ruler •Thermometer •Stopclock or watch
+
+253

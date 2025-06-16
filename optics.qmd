@@ -1,0 +1,1007 @@
+---
+title: "optics"
+format: html
+---
+
+## Basic Theory
+
+### Nature of Light
+
+-   **Light** is an electromagnetic wave: transverse, travels at speed $c = 3.0 \times 10^8$ m/s in a vacuum.
+-   Light shows **wave-like** behaviour (diffraction, interference) and **particle-like** behaviour (photoelectric effect).
+
+**Wave equation:** $$
+v = f \lambda
+$$ Where: - $v$ = wave speed - $f$ = frequency - $\lambda$ = wavelength
+
+### Reflection and Refraction
+
+#### Reflection:
+
+-   **Law of reflection**: angle of incidence = angle of reflection $$
+    \theta_i = \theta_r
+    $$
+
+#### Refraction:
+
+-   Occurs when light passes between media of different optical densities.
+
+**Snell’s Law:** $$
+n_1 \sin\theta_1 = n_2 \sin\theta_2
+$$ Where: - $n$ = refractive index - $\theta$ = angle to the normal
+
+**Refractive index (absolute):** $$
+n = \frac{c}{v}
+$$ Where: - $v$ = speed of light in the medium
+
+### Total Internal Reflection
+
+Occurs when: - Light travels from **higher** to **lower** refractive index - Angle of incidence \> **critical angle**
+
+**Critical angle:** $$
+\sin\theta_c = \frac{n_2}{n_1} \quad (n_1 > n_2)
+$$
+
+Used in **optical fibres** and **endoscopes**.
+
+### Lenses
+
+#### Converging lens (convex):
+
+-   Brings parallel rays to a **focus**
+-   Focal length ($f$) is **positive**
+
+#### Diverging lens (concave):
+
+-   Spreads out parallel rays
+-   Focal length ($f$) is **negative**
+
+**Lens formula:** $$
+\frac{1}{f} = \frac{1}{v} - \frac{1}{u}
+$$ Where: - $f$ = focal length - $v$ = image distance - $u$ = object distance\
+(sign convention: distances measured from the lens)
+
+**Magnification:** $$
+M = \frac{h_i}{h_o} = \frac{v}{u}
+$$ Where: - $h_i$ = image height - $h_o$ = object height
+
+### Ray Diagrams
+
+#### Converging lens:
+
+-   Rays parallel to axis go through **focus**
+-   Rays through centre of lens pass straight
+-   Rays through focus exit parallel
+
+#### Image characteristics:
+
+-   **Real** image: formed on opposite side of lens, can be projected
+-   **Virtual** image: appears on same side, cannot be projected
+
+### Diffraction
+
+-   Diffraction is the spreading of waves around obstacles or through slits.
+-   Most noticeable when slit width $\approx \lambda$
+
+### Young’s Double Slit Experiment
+
+Shows **interference**: bright and dark fringes formed due to path difference.
+
+**Fringe spacing:** $$
+w = \frac{\lambda D}{s}
+$$ Where: - $w$ = fringe spacing - $\lambda$ = wavelength of light - $D$ = distance to screen - $s$ = slit separation
+
+### Single Slit Diffraction
+
+-   Central maximum is the brightest and widest.
+-   Increasing slit width **narrows** the central fringe.
+-   Increasing wavelength **widens** the fringes.
+
+### Diffraction Grating
+
+**Grating equation:** $$
+n\lambda = d \sin\theta
+$$ Where: - $n$ = order number - $d$ = slit spacing (inverse of number of lines per metre) - $\theta$ = diffraction angle
+
+Higher order fringes are **further apart** for larger $\lambda$ or smaller $d$.
+
+### Applications of Optics
+
+-   **Lenses**: glasses, cameras, microscopes, telescopes
+-   **Interference**: anti-reflective coatings, holography
+-   **Fibre optics**: medical imaging, telecommunications
+-   **Diffraction gratings**: spectroscopy, wavelength measurement
+
+GENERAL OPTICS
+
+GENERAL OPTICS
+
+#### 1. Optics and the smoke box
+
+Shine light through a plate with holes in it into a glass-fronted box full of smoke. The path of the rays through various lenses placed in the box can easily be followed. Smoke can easily be made by burning a piece of sacking, rag or corrugated cardboard in a smoke generator available from beekeepers.
+
+> Age range: 13-16
+>
+> Apparatus required:
+>
+> •Smoke-tight box with one glass side •Smoke generator •Large (10 cm diameter) lenses
+
+##### 2. Sources of light demonstration lesson
+
+I have found this an attractive way of introducing the topic of optics. We "look" at a number of different sources of light such as the Sun, matches, a Bunsen flame, iron filings and magnesium in the flame, a sodium chloride stick in the flame, a glowing wire, an electric light bulb, a low energy discharge tube, gas discharge tubes (hydrogen, cadmium, sodium, neon, xenon, and helium), an LED, a laser and an ultra violet light. The different colours of the sources, the time for which they shine and the energy losses can all be considered.
+
+Impressive effects using ultraviolet light can be obtained from shining it on the following:
+
+Silly putty, washing powder, nails, stage make-up, luminous watches and toys, security pens.
+
+> Age range: 11-13
+>
+> Apparatus required: •Laser •Matches •Bunsen •Iron filings •Magnesium •Electric light bulb
+>
+> •Gas discharge tubes •Low energy lamp •LED •Ultraviolet light
+
+•1 /1 4
+
+#### 3. The camera obscura
+
+Small holes in shutters or blinds can give amazing views of outside scenes on the wall. It is really a pinhole camera on a very large scale. It is usually just the round disc of the Sun that can be seen, but actual views can sometimes be obtained. I have seen one formed through a small hole in a blind in a hotel room in Sorrento in Italy. An inverted image of a whole mountainside was formed on my bedroom wall as the sun "rose" over the hills near Vesuvius. Images of the Sun can often be seen in a wood where the sunlight reaches the ground after passing through small holes between overlapping leaves. The photograph shows this happening.
+
+> Age range: 11-13 Apparatus required: •Sunlight •Room with a fine hole in a blind
+
+#### 4. Distorted drawing
+
+Two interesting phenomena:
+
+(a) Reflection from a curved surface. Make a drawing of an object by looking at its reflection in a curved surface, such as a polished tin can, and then view the drawing the same way.
+
+(b) Make a distorted drawing so that it is only clear when viewed from an angle to the picture. A very good example of this is the skull in Holbein ^l^s painting 'The Ambassadors' which is in the National Gallery in London.
+
+#### 5. Absorption in glass - long pieces
+
+To demonstrate the absorption of light in glass get a series of 'off cuts' of different length from your local glazier. Shine light through the glass in the plane of the strip, and measure the change of intensity with length using a light dependent resistor (LDR). Use this to discuss the attenuation of light in glass fibres.
+
+> Age range: 14-18 depending on treatment
+>
+> Apparatus required: •Long strips of glass with rounded edges ^O^ LDR •Light source •Ohm meter
+
+#### 6. Metallised film - one wav mirrors
+
+This reflective film has a number of uses. The best source of it is in shops selling wrapping paper - they often have some in a variety of colours and I have even seen some with reflection diffraction gratings. In optics it makes a very good one-way mirror depending on which side is illuminated more strongly. When viewed from the highly illuminated side it looks like a mirror, but when viewed from the less well-illuminated side it is possible to see through it to the brightly lit area.
+
+It is also used by marathon runners to conserve heat after a race and so could also be part of the chapter on heat radiation experiments.
+
+Age range: 11-18 depending on treatment \> \> Apparatus required: •Sheet of metallised plastic •LDR for light transmission experiments
+
+#### 7. Object and Image
+
+To show lateral inversion in a plane mirror use a pair of model cars - one British and one Continental with their steering wheels on different sides. Reflect them in a plane mirror to show that they appear laterally inverted.
+
+#### 8. Variable power lens
+
+Use a plastic bag containing liquid, the curvature of which can be varied by squashing and stretching to simulate the way the muscles of the eye change the shape of the eye lens. Experiments will suggest the correct sort of radius of curvature to give you a reasonable focal length.
+
+> Theory:
+>
+> The focal length (f) of a lens with spherical surfaces of radius rl and r2 and of material of refractive index n placed in air is given by the equation:
+>
+> l/f= (n-l)\[l/rl + 1/r2\].
+>
+> A very large version of this can be made by using a piece of transparent plastic or rubber sheet stretched tightly over the rim of a bicycle wheel. Pouring water into the top makes the plastic sag and if a lamp is put below the sheet an image can be formed on the ceiling of the lab. The sheet needs to be thin enough to distend with a relatively small amount of water otherwise the focal length is too great for any room but a high hall - like a sports hall!
+>
+> Age range: 11- 18 depending on treatment Apparatus required:
+>
+> •Plastic bag •Bicycle wheel without spokes •Thin rubber sheet (as clear as possible) 'Lamp
+
+#### 9. The silvered bicycle reflector
+
+Get a clear plastic bicycle reflector made of pyramids of plastic, and silver paint one side (spraying it with aluminium paint is fine). Look into it - you see a completely black reflector. This is simply the reflection of your retina. Since each "hole" between the pyramids acts like a corner of a reflecting cube the light is simply reversed in direction. (l am grateful to Roy for this fascinating demonstration.)
+
+#### 10. Light reflection in a cube
+
+Note how light behaves when reflected from the inside of the corner of a cube. It is reversed in direction irrespective of the original direction of the incident ray of light. Three plane mirrors can easily be fixed together to give a right-angled corner. This explains why reflectors on bikes are made like this - the light from a car's headlamps is reflected back to the driver no matter from what angle it hits the reflector.
+
+#### 11. Bent pencil in water
+
+One of the simplest methods of showing refraction in a liquid is to put a pencil in a glass of water and look at it from the top. The effect of refraction is clearly seen. The pencil appears to be bent - the end of the pencil seeming much nearer the surface than it should be. This can be used to explain the difficulty of reaching into water to pick something out - your judgement of direction is impaired by the refraction.
+
+Age range: 11-13 Apparatus required: •Beaker of water •Pencil
+
+> Geometrical optics
+
+#### 12. Refractive index - TV camera
+
+Float an object in water in a flat-sided plastic tank, and view from outside with the TV camera placed so that it looks precisely along the water surface. Some of the block will be seen through the air and some through the water. The refractive index may be worked out by measuring the dimensions of the two views of the block from the TV screen. (Refractive index = Real depth (in this case in air)/Apparent depth (in this case through the water.)
+
+> Age range: 13-18 depending on treatment
+>
+> Apparatus required: •Rectangular plastic tank •TV camera •Wooden block to float in the tank
+
+#### 13. A floating image
+
+Wave a white stick in mid air at the focal plane of a slide projector. The image on the slide will appear to be hanging in space, demonstrating the persistence of vision of the human eye.
+
+#### 14. Christmas tree balls
+
+It is well known that the formulae for curved mirrors only apply if the reflecting surface is restricted to the centre of the mirror --- i.e. to rays close to the axis. A good example of the distortion produced if this condition is not fulfilled, and when there is a reflection from a large part of a spherical surface, can be seen by using the coloured balls used for Christmas tree decorations. Using a TV camera would show the effects to a large audience.
+
+Age range: 16-18 Apparatus required: •Christmas tree balls ^o^ TV camera if available
+
+#### 15. Defects of lenses
+
+Use a lens of large diameter (10 cm if possible) and plot the image position as the lens is rotated about a vertical axis with respect to the object.
+
+Age range: 16-18 Apparatus required: •Large lens with a diameter of at least 10 cm
+
+#### 16. Non-lateral inversion - mirrors at 90^0^
+
+If you look at the image across the join of two mirrors that have been placed at 90^0^ to each other you will not see any lateral inversion.
+
+> Age range: 11-16
+>
+> Apparatus required: •Two plane mirrors fixed at 90^0^ to each other •TV camera if available
+
+#### 17. Image position
+
+Mount a small plane mirror vertically on the bench with a board writer standing in front of it. (The board writers should be a cm or two higher than the mirror.) You will see the image of the board writer in the mirror. Move a second board writer behind the mirror until the top of it seems to coincide with the image of the first one from whatever direction it is viewed (There is no parallax between them.) The second board writer is now at the image position of the first.
+
+> Age range: 11-13 Apparatus required: •Plane mirror mounted vertically •Two board writers or pencils
+
+#### 18. Bending of wood - measurement with a light beam --- the optical lever
+
+Use an optical lever to detect the bending of a bench. This can be done by fixing a small mirror to the bench and then reflecting a beam of light from it so that a spot is formed on the wall. It works especially well if the scale is on the other side of the lab. Now lean on the bench. The beam of light is deflected through twice the angle of deflection of the table and the spot moves. This method can also be used to detect the bending of walls if someone leans on them or the deflection of some ceilings if somebody walks overhead. The use of a light beam as a pointer is especially good since it has "zero" mass.
+
+> Age range: 11-18 depending on treatment Apparatus required: •Plane mirror 'Fine beam of light
+>
+> •Ruler
+
+#### 19. Real and apparent depth - sidewavs block!
+
+This experiment uses the real and apparent depth principle in a simple way to determine the refractive index of a block. Lay a glass or acrylic block on its side on a sheet of paper, and look at the base of the block through one side. It is then easy to mark the apparent depth of the block by measuring the length of the shiny part on the sheet of paper under the block.
+
+> Theory: Refractive index of the glass block = Real depth/Apparent depth
+
+Age range: 11-13 Apparatus required: •Glass block •Sheet of paper •Pencil
+
+#### 20. Pinhole camera - 360^0^!
+
+It is simple to take a photograph with a pinhole camera by substituting the paper screen with a piece of photographic paper. However an interesting extension of this is to take an 'all round' photograph. Mount a toilet roll in the middle of a box with a pinhole in each of the four vertical faces of the box. In the dark room, or in a light proof bag, wrap photographic paper around the toilet roll tube.
+
+Expose the film outdoors by uncovering the holes for up to 30s in overcast conditions but around IOS in sunlight. Develop and print the paper, A 360 ^0^ picture should be obtained. A positive print can be formed by placing the negative print face downwards on the bench in the dark room (using only the safe light) on top of another sheet of photographic paper with its sensitive side uppermost. Then switch on the ordinary light for about 30 seconds and print as normal.
+
+> Age range: 11-13
+>
+> Apparatus required: •Pinhole camera with centre mounted cylinder •Photographic paper •Dark room and chemicals
+
+#### 21. Interesting refractive indices
+
+Some liquids have a refractive index almost equal to that of glass (about 1.5). Glass objects put in these liquids will seem to disappear.
+
+Glycerine n = 1.47, castor oil n = 1.48, xylene n = 1.51, bath and body works shower gel = 1.51
+
+> Dimethlybenzene (xylene) is flammable, harmful by inhalation and, in contact with the skin, will cause skin irritation so contact should be avoided.
+
+#### 22. Kaleidoscope
+
+Two mirrors in a tube. Put two slices of pre-cut mirror in a cardboard tube, which can be a toilet roll. (It might even be worth trying to make your own mirrors from cards and kitchen foil.) Paint the inside of the tube matt black.
+
+Fix the two mirrors together first along their long edges and then slide them into the tube.
+
+The cover with the viewing hole is then fixed on the top of the tube, leaving the 'bottom' of the tube open.
+
+A few small objects such as beads should be scattered on the paper and then viewed from above.
+
+You can buy one of these but it is a useful exercise for the children to make one.
+
+Alternatively use two strips of mirror and a strip of thick card or hardboard the same size as the mirror strips and bind them together in a triangular shape with an elastic band. You should first paint your piece of wood with matt black paint.
+
+Age range: 7-14 Apparatus required: •Two rectangular plane mirrors •Cardboard tube •Glue
+
+#### 23. Shadow films
+
+A really good and wide-ranging activity is to make a shadow film. There will be many skills involved --- painting the screens, designing and cutting out the characters, choosing the thickness of the paper for the screen, choosing the right light source, writing the script, mounting the characters and understanding why we need to hold the characters AGAINST the screen.
+
+The cut-out cardboard characters are fixed to thin dowel rods with either glue or a drawing
+
+pin.
+
+audience
+
+#### 24. Refraction and romance
+
+Imagine that a young couple are sitting at a table on a far off beach. He asks her to marry him and gives her a gold ring with a large mounted diamond. She does not immediately accept but drops the ring into her glass of water --- the diamond disappears, but she can still see the gold ring. She refuses his offer --- why?
+
+The 'diamond' is not diamond at all but glass. The refractive index of glass is similar to that of water and so the 'diamond' disappears. A real diamond has a refractive index that is very different from water and so would remain visible.
+
+If you can't get a diamond the following experiment is even better because the solid and liquid suggested have a much closer refractive index. You can just see the word PYREX in the third photograph.
+
+Get a flat sided plastic bottle and fill it with cooking oil. Float a pyrex test tube in the top. Then, using a thin wooden rod, push the tube down so that it fills with oil and sinks. It will disappear because the refractive index of pyrex and cooking oil are almost identical! (Clear baby oil also works well.)
+
+> Age range: 14-18 Apparatus required: •Flat sided plastic bottle •Cooking oil or clear baby oil •Pyrex test tube •Thin wooden rod
+
+#### 25. The Mirage machine
+
+This fascinating double mirror demonstrates the production of an image in space. You reach down to try and pick up the space shuttle, toy animal or car and find that although you can see it you can't touch it! The lower photo is a close up showing both the object (the smaller space shuttle) and its image (the larger space shuttle).
+
+Shine a fine beam of light from a torch on to the image. The image seems to be illuminated although there is 'nothing there'. The light actually goes through the image and is reflected back by the mirrors.
+
+> Theory and teaching notes
+>
+> What you actually see is the image of the object formed in space by the double curved interior of the mirror box. This real image appears to be sitting on the top of the box.
+
+Age range: 7-18 Apparatus required: •Mirage machine
+
+•oeu111eL1 upLIC\>
+
+TOTAL INTERNAL REFLECTION
+
+The following series of experiments deal with the critical angle and total internal reflection.
+
+> General theory for this section:
+>
+> When light meets the boundary between two transparent materials it will be refracted, but if it is travelling in the material with the greater refractive index and the angle of incidence is greater than the critical angle (c) it will be reflected back into the first material.
+>
+> The critical angle is defined by the equation n = l/sin c where n is the refractive index of the first medium. (This simplified equation assumes the second material to be air)
+
++-------------------------------------------+-----------------------------------------+
+| 26. Colour of tanned legs under water     | 32. Light along a water jet             |
+|                                           |                                         |
+| 27. Critical angle - semicircular block   | 33. Mirage                              |
+|                                           |                                         |
+| 28. Total internal reflection - TV camera | 34. Total internal reflection and soot! |
+|                                           |                                         |
+| 29. Cat's eyes                            | 35. Optical wave-guide - prism entry    |
+|                                           |                                         |
+| 30. Fibre optics                          | 36. The floating coin                   |
+|                                           |                                         |
+| 310 Corner of a glass block               | 37. Mirror in tank - refraction         |
++===========================================+=========================================+
+|                                           |                                         |
++-------------------------------------------+-----------------------------------------+
+
+#### 26. Colour of tanned legs under water
+
+Have you ever noticed why tanned legs look less tanned as they go from air to water? Is this a layer of air bubbles on them? The light is continually reflected internally within the water, making objects in it look brighter.
+
+#### 27. Critical angle - semicircular block
+
+Shine the light from a ray box or a laser into a semicircular block towards the centre of the flat side. It therefore enters at right angles to the curved side and so suffers no refraction at this point. Twist the block about the centre of the flat side so as to increase the angle of incidence of the light within the block with this side and so find the critical angle. Further increase will give total internal reflection.
+
+> Age range: 11-13
+>
+> Apparatus required: •Ray box •Semicircular perspex block
+
+#### 28. Total internal reflection and the TV camera
+
+Use a rectangular straight-sided plastic tank with some water in it (the one used for wave demonstrations is ideal). Point the camera upwards towards the underside of the water surface from outside of the tank. A splendid silvery surface can be seen.
+
+> Apparatus required: •Rectangular straight sided plastic box ^o^ TV camera •Laboratory jack •TV
+
+#### 29. Cats eyes
+
+This is an excellent example of total internal reflection. They are visible from all directions like the corner of a reflecting cube. This also explains how bicycle reflectors work. If the bike reflector was simply a flat mirror then the beam would only reflect into their eyes for one position of the car --- in fact you would only see the bike if it was directly in front of you. If the bike was to one side the reflection would not meet their eyes and the bike and rider would effectively disappear.
+
+However, real bike reflectors are not plane. The back of the reflector is made of a large number of small tetrahedrons set together so that there are dips in between, in the shape of a corner of a right angled cube.
+
+#### 30. Fibre optics
+
+Some uses of fibre optics - communications, endoscopy, security fences (you can't cut the optical fibre without the security guard knowing about it if they are watching a TV programme which has been transmitted down the fibre), lighting models. A torch or lamp using strands of glass or plastic is a simple and cheap way of demonstrating the use of fibre optics.
+
+#### Total internal reflection - corner of a glass block
+
+Use a beam of light from a ray box to show that you cannot get light to cross the corner of a right-angled glass block. Looking across it will simply show you the apparently silvered surface at the other face.
+
+The photograph of the fish tank in my dentist's waiting room shows the internal reflection in a fish tank clearly.
+
+#### 32. Light along a water jet
+
+This is a pretty example of total internal reflection. Get a piece of glass tube bent into a right angle to use as a water jet. Mount it in a clamp and attach it to a water tap by a length of rubber tubing. Set up a small lamp just behind the bend, and switch on both the flow of water and the lamp. The light will flow along the water path giving a gleaming patch where the water hits the base of the sink. It behaves just the same as the internal reflection along an optical fibre.
+
+Age range: 11-13 \> \> Apparatus required: •Light source •Clamp •Sink or bucket 'Water jet from L shaped glass tube
+
+#### 33. Mirage
+
+A good demonstration of a mirage can be obtained by burying a few (up to six) immersion heaters in a tray of sand. Switching these on will give a mirage in the hot air above the sand.
+
+> Age range: 11-16 Apparatus required: •Six low voltage immersion heaters •Six power supplies 'oeornetncal optics
+>
+> [34. Total internal reflection and soot!]{.underline}
+
+(a) This can be demonstrated by using a test tube immersed in water. The sides of the tube look silvery. A better and more controllable version is to use a glass tube. Put the tube in the water while holding your finger over the upper end to prevent the tube filling with water. It is full of air and so looks silvery just like the test tube, but when you take your finger off the water flows in and the silvery effect disappears.
+
+(b) A further example of total internal reflection can be shown by blackening an egg with soot from a candle flame. Immerse the egg in water - it looks silvery because of the thin film of air that is trapped within the soot, only to be seen to be black when it is lifted out.
+
+(c) An alternative demonstration is to use a table tennis ball and cover it with soot. When placed in water it will appear silvery due to the air film that clings to the soot giving total internal reflection.
+
+> Age range: 11-13
+>
+> Apparatus required: (a) •Beaker 'Test tube •Glass tube (b) 'Egg 'Beaker of water •Candle
+
+#### 35. Optical wave-guide - prism entry
+
+A prism fixed to the side of a plastic tube or piece of glass makes an easy way of demonstrating how light may be introduced into an optical wave-guide.
+
+#### 36. The floating coin
+
+Put a coin in the bottom of a bowl and fix a cardboard tube at an angle so that it points above the coin and so that the coin cannot be seen through it (alternatively direct a TV camera to view over the coin).
+
+> Now add water to the bowl - the coin will mysteriously float up into view due to the refraction of light as it emerges from the water into the air.
+>
+> Age range: 11 --- 13 Apparatus required: •Coin •Bowl •Cardboard tube and stand ^o^TV camera
+
+#### 37. Mirror in tank --- refraction and total internal reflection
+
+The following experiment is a good method of demonstrating both refraction and total internal reflection. You will need a rectangular tank with water in it to which some fluorescein has been added to make the light beams visible. Have a mirror held by a thread mounted under water in one end of a rectangular tank.
+
+A second mirror fixed above the tank enables you to direct a ray down onto the immersed mirror. The angle at which the ray of light hits the underneath of the water surface can easily be altered by pulling on the thread.
+
+Refraction at the air-water surface can be shown by using only the second mirror while both are required for total internal reflection.
+
+> Age range: 11-13
+>
+> Apparatus required: •Rectangular plastic tank •Two plane mirrors •Fluorescein •Fine beam of light from a high intensity light source or a laser
+>
+> •Thread •Water •Plasticine
+
+### DIFFRACTION
+
+> General theory for this section
+>
+> Diffraction is the bending of radiation around obstacles or through apertures. Diffraction can also occur when waves reflect from an uneven surface. The greater the wavelength, or the smaller the obstacle or aperture, the greater the diffraction.
+
+#### 1. CD and DVD diffraction
+
+(a) A CD will give a lovely diffraction pattern due to the tracks on it acting as a reflection diffraction grating. The same effects may be obtained from a peacock's wing, a dragonfly's wing and iridescent beetles. There is no colour at all - the peacock feathers split up white light to make the brilliant colours!
+
+(b) If you use a DVD the width of the diffraction pattern is increased. This occurs because the narrower tracks on the higher density DVD act as smaller obstacles and so give broader diffraction patterns. Take a piece of DVD or CD and use it to observe the spectral lines in the light from a fluorescent tube or the absorption lines in sunlight.
+
+(c) An extension of experiment I(b) is to use a laser with the CD placed on the bench. Direct the laser so that it hits the CD at grazing incidence. Take special care of beams that may be reflected in various directions.
+
+> Theory:
+>
+> X = dsin0, for a smaller grating spacing (d) the greater the value of the angle of diffraction 0 for a given wavelength (X)
+>
+> Age range: 14-18 depending on treatment Apparatus required:
+>
+> •CD or DVD •White light source such as the laboratory lights
+>
+> •Gas discharge tube •Laser
+
+> 2.  Fingers and
+
+Diffraction can be observed using nothing more than your fingers! Put two fingers together, hold them upright in front of your eyes and look at a light source through the small gap between them. Fine dark diffraction lines can be seen because of the light spreading due to diffraction in the narrow slit. It works best using a straight fluorescent tube.
+
+> depending on treatment
+>
+> Apparatus required: •Light source
+
+#### 3. Diffraction through fork prongs
+
+This is another very simple demonstration of diffraction, using the same principle as that described in experiment 2. Hold up a fork and look at a light through the prongs - dark diffraction lines can be seen in the spaces between the prongs. Rotate the fork parallel to the prongs to give an effectively smaller gap and so wider fringes.
+
+Age range: 15-18 Apparatus required: 'Fork
+
+#### 4. Acoustic diffraction grating
+
+An acoustic diffraction grating will show diffraction of sound. One of these can be made using a large cardboard tube with a row of 1 cm diameter holes running from end to end. Put a small loudspeaker at one end and adjust it to give a frequency of say 500 Hz. Now move a microphone along parallel to the tube and observe the rise and fall in sound intensity by looking at the microphone output on an oscilloscope.
+
+> Age range: 16-18
+>
+> Apparatus required: •Cardboard tube •Loudspeaker and amplifier •Microphone and oscilloscope
+
+#### 5. Diffraction with sound (1)
+
+Diffraction with sound waves can be shown easily by using a loudspeaker to produce a sound wave and then getting one of the students to align himself or herself behind another's head. The diffraction effects can then be observed by moving their own head from side to side. The sound waves spread round the obstacle (the pupil's head) and maxima and minima can be detected. Using a wavelength of about 10 cm (a frequency of 3 kHz) shows the diffraction round the head really well.
+
+Age range: 15-18 Apparatus required: •Pupils •Signal generator •Loudspeaker
+
+#### 6. Diffraction with sound (2)
+
+The diffraction of sound can also be shown by using the single slit technique. The slit is an aperture about 10 cm wide between two boards. Sound of frequency about 10 kHz is emitted by a loudspeaker placed behind the gap, and the diffraction can be observed by moving a microphone across in front of the gap. Feeding the output to an oscilloscope or meter can give a measure of intensity against position.
+
+> Age range: 16-18 Apparatus required: •Two boards •Loudspeaker •Signal generator •Oscilloscope Diffraction
+
+Misted-up glasses give good diffraction effects! I discovered this while trying to read a book in the bath with a cold pair of glasses. Viewing a light bulb through the fine mist of water vapour on the glasses showed coloured diffraction rings.
+
+The physics of condensation is also demonstrated here! Hot air can contain more moisture than cold air and so when someone puts on a pair of cold glasses in a hot bath the air near the glasses is cooled and some of the water vapour it contained condenses on the glasses. I have also noticed the effect in my car, which was left outside on a cold night after being used the previous day with the heater on. The air in the car had been warm and so could contain a reasonable amount of water vapour, but overnight it cooled, and this water condensed out onto the inside of the windscreen.
+
+Age range: 16-18 Apparatus required: •Glasses •Kettle
+
+#### 8. Reflection diffraction grating
+
+This simple experiment was suggested by a Physics degree practical examination. Students }were given a lamp, a filter and slit, a metal ruler graduated in half millimetres and a metre rule and asked to make an estimate of the wavelength of light. The idea is to lay the metal ruler on the bench and use it as a reflection diffraction grating. The effective size of the rulings can be calculated by knowing the angle at which the light hit the ruler. Diffraction images can be produced that rise vertically on the wall of the lab. Using a pen pointer laser here makes the experiment simpler.
+
+> Age range: 16-18
+>
+> Apparatus required: 'Sodium lamp ^0^ 30 cm Metal ruler •Metre ruler 'Pen pointer laser (optional)
+
+#### 9. Diffraction through tights
+
+This is a very good example of diffraction from an irregular obstacle giving circular diffraction rings. Take a section of the tights, stretch it between your hands and then view a small torch bulb through them. Lovely coloured diffraction rings can be observed due to the diffraction from the irregular weave of the tights of the light from a white light torch bulb. Moving the tights towards and away from your eyes helps to make the coloured rings more easily visible.
+
+Compare the effect with the regular diffraction pattern that you get from a clean, finely woven handkerchief. You can produce your own obstacles for this experiment by photographing a set of irregular dots (drawing shading film is ideal) and a set of regular dots.
+
+The negatives are then used with the light. The initial size of the pattern can be altered using a computer or a photocopier to scale the image.
+
+> Age range: 14-18 depending on treatment
+>
+> Apparatus required: 'Small torch bulb •Tights 'Handkerchief
+
+#### 10. Resolving power
+
+To show the resolving power of the human eye draw two dots about 2 mm apart on a sheet of paper stuck to the board. View them from various distances, calculate the angle subtended by them at the eye when they appear to merge into one, and also study the effect of dim light on the ability to resolve fine detail.
+
+In theory, as long as the light level is not too low you should do better in dim light because the resolving power of a circular aperture (your pupil) depends on its diameter, and in dim light the diameter of your pupil will be larger.
+
+Theory:
+
+The smallest angle (+) that can be resolved in light of wavelength by a circular aperture of diameter a is given by (t) = 1.22X/a
+
+Age range: 13-18 Apparatus required: •Two small dots drawn close together on a piece of paper
+
+#### 11. Scattering of light in 'wet' and 'dry' smoke
+
+This shows interesting scattering effects. The effect of moisture on the scattering of light in smoke can be simulated by introducing water vapour into a bell jar containing smoke. The smoke is blue in the dry air but white after introduction in the bell jar. The droplet size has been increased due to water vapour and so the scattering has been reduced.
+
+Theory
+
+The scattering of light by particles is inversely proportional to the particle size - smaller size gives greater scattering.
+
+#### 12. Diffraction and a fan
+
+A normal household fan can be used to demonstrate that sound is a wave motion. Set up a signal generator and a loudspeaker behind a household fan and turn on both the fan and the sound source.
+
+Put your head on the other side of the fan from the loudspeaker and listen to the sound.
+
+If the frequency of the sound source is varied, diffraction may be heard as the sound waves pass between the rotating blades of the fan. Depending on the speed of rotation of the fan there will more or less diffraction. When there is little diffraction the sound will be 'chopped up' into pulses, and you will hear a warbling sound. However, if there is considerable diffraction around the blades of the fan the sound that you hear will be almost continuous.
+
+Age range: 16-18 Apparatus required: •Signal generator •Loudspeaker •Fan
+
+### INTERFERENCE
+
+General theory for this section: \> \> When two groups of waves (called wave trains) meet and overlap they interfere with each other. The resulting amplitude will depend on the amplitudes of both the waves at that point. The photograph shows some waves overlapping in a fountain. \> \> To make things simple let's just consider two waves overlapping and assume that both the waves have the same amplitude. \> \> If the crest of one wave meets the crest of the other the waves are said to be in step (or in phase). The two sets of waves 'add together' and the resulting intensity will be large. This is known as constructive interference. \> \> If the crest of one wave meets the trough of the other they are said to be out of step (or out of phase). The two sets of waves cancel each other out and the resulting intensity will be zero. This is known as destructive interference. \> \> A phase change of It occurs at a reflection with an optically more dense boundary,e.g. air to glass.
+
+#### 1. Hologram
+
+Every Physics department should have at least one white light hologram for demonstration, I have collected a number of simple ones from cereal packets. Good ones can also be bought on their own.
+
+##### 2. Interference and distance measurement
+
+Use a pair of glass plates illuminated by sodium light to show the interference patterns due to the gap between the plates. Place the plates on top of each other on the bench and illuminate them from above with light from a sodium lamp. Irregular interference fringes can be seen due to the changing separation between the plates. Pressing on the top plate will alter these patterns, especially if the two plates are separated at one end by a piece of tissue paper. A tiny piece of grit between the plates will show circular interference rings. A TV camera is especially useful here to show the experiment to the whole class.
+
+> Theory:
+>
+> The path difference between light reflected at the lower surface of the upper plate and the upper surface of the lower plate is 2dn where d is the separation of the plates and n is the refractive index of the air.
+>
+> Age range: 16-18 Apparatus required: 'Sodium lamp •Two glass plates ^o^Tissue paper Interference
+
+##### 3. Interference with sound
+
+Interference with sound can be demonstrated by setting up two loud speakers connected to the same signal generator. Get the pupils to walk round the lab passing the speakers as they do so - a good interference pattern will be observed. They will notice that there are some places where the sound is loud and others where it is relatively soft. A wavelength of about 0.75 m (frequency 440 Hz) is quite good. Smaller wavelengths give good effects if you simply sit still and move your head from side to side. The experiment would be better outside, where the results would not be affected by reflection from the lab walls.
+
+An alternative is to detect the maxima and minima using a microphone that can be moved in front of the speakers on a long rod such as a metre rule. The output of the microphone can be fed through an amplifier to a CRO and the amplitude of the resulting trace measured.
+
+As an extension of this take two stereo speakers, reverse the phase of one and point them towards each other --- the bass tends to cancel.
+
+> Theory:
+>
+> If the path difference between the speakers and the student's ear is a whole number of wavelengths the waves will add up and the student will hear a maximum. If it is an odd number of half wavelengths destructive interference will take place and the sound will be much quieter.
+>
+> Age range: 14-18
+>
+> Apparatus required: •Signal generator •Two loud speakers •Microphone •Oscilloscope •Amplifier
+
+#### 4. Interference and butterflies' wings
+
+The beautiful colours on a butterfly's wings are due to the interference of light reflected from their surface. That these colours really are due to this effect can be shown by placing a few drops of a clear liquid such as acetone onto the wing surface. The liquid will fill up the gaps between the ridges on the scales and so change the colour. Viewing the wings with different colours of light also shows some interesting effects.
+
+The Christmas tree structure in the morpho group of butterfly wings is especially spectacular --- iridescent blue colours being formed. Do not kill a butterfly deliberately to use in this experiment.
+
+You might also try similar experiments using feathers - peacock's tail feathers are particularly good.
+
+> Propanone (acetone) is highly flammable, irritating when in contact with both the eyes and skin. Propanone vapour inhalation should be avoided. Eye protection should be worn.
+
+Age range: 16-18 Apparatus required: •Butterfly wing •Acetone and dropper •White light source
+
+> •Filters
+
+### POLARISATION
+
+General theory for this section:
+
+> A polarised wave is one where the vibrations are in one direction only. The human eye cannot distinguish between polarised and unpolarised light.
+>
+> Malus ^l^ Law: This is an equation that gives the intensity of light (l) transmitted by a piece of Polaroid:
+>
+> I = locos^2^ 0 where 0 is the angle between the planes of polarisation of the polariser and analyser.
+>
+> Brewster's Law: tan p = n where p is the polarising angle and n is the refractive index of the material. At this angle of incidence the reflected beam is completely plane polarised.
+>
+> Polarisation is a way of distinguishing between longitudinal and transverse waves - transverse waves can be polarised while longitudinal waves cannot.
+
+#### 1. Polaroid and Photoelastic stress with the Overhead Projector
+
+(a) To demonstrate the effect of polarisation two overlapping pieces of polaroid should be placed on the overhead projector. It only works using the type of projector where the light comes from underneath the transparency. Rotating one will show how the light intensity varies with angle and if this is measured with a light meter it is possible to get a verification of Malus ^l^ Law.
+
+(b) A beautiful extension to this is to put a piece of plastic bag or a clear plastic ruler or protractor between the two crossed polaroids to shows photoelastic stress. One piece of polaroid should be placed on the glass of the projector with the plastic ruler on top of it, and with the second piece of polaroid put on top of the ruler.
+
+The plastic rotates the plane of polarisation of the light and different wavelengths are rotated different amounts by the stressed areas of the plastic, giving beautiful coloured areas. A small cut in the plastic also shows localised stress patterns.!
+
+> Age range: 16-18
+>
+> Apparatus required: •Overhead projector •Two pieces of polaroid 'Plastic bag •Protractor and/or clear plastic ruler
+
+#### 2. Polarisation by reflection
+
+View the glare from desks or roads through either a piece of polaroid or a pair of polaroid sunglasses. Rotation of the polaroid will cut down the glare - hence the use of the polaroid glasses for driving. Reflection from a glass-fronted cupboard also shows the effect very well. The existence of a polarising angle (p) which for glass is about 57 ^0^ is easy to show. Use a TV camera if possible to show the effect to the whole class at once.
+
+> Age range: 16-18
+>
+> Apparatus required: •Polaroid sheets or polaroid sunglasses 'Glass fronted cupboard ^o^ TV camera if available
+
+#### 3. Polarisation of a TV signal
+
+It is easy to show the plane of polarisation of a TV signal by simply rotating the aerial. The outdoor type is the best with the rod and a number of half wave bars mounted across it. Are all the TV stations in your area polarised the same way and what would happen if they weren't?
+
+> Age range: 14-18
+>
+> Apparatus required: ^o^ TV set ^o^ TV aerial
+
+#### 4. Polarisation and a calculator
+
+The liquid crystal display on a calculator (or lap top computer) is polarised. This fact leads to yet another very impressive, yet simple demonstration. Put a piece of polaroid in front of the calculator screen and just rotate it until the display disappears. Using the TV camera to show the effect to a class is especially helpful.
+
+Age range: 14-18 Apparatus required: 'Calculator 'Piece of polaroid •TV camera if available
+
+#### 5. Rotation of the plane of polarisation
+
+An extension of experiment 1 is to use a flat piece of plastic on which is stuck a number of small pieces of clear adhesive tape. Some areas can be just one piece thick while others have pieces stuck one on top of the other. Some really nice patterns are observed on the OHP reminiscent of the crystal structure of a metal.
+
+> Age range: 16-19 Apparatus required: ^0^ 0HP •Clear adhesive tape ^o^Two pieces of polaroid •Scissors
+>
+> Flat piece of plastic
+
+#### 6. Sunset in milk in water
+
+Sunsets, the scattering of light by small particles and the polarisation of scattered light can all be demonstrated by the following two experiments.
+
+(a) Get a rectangular plastic tank and fill it about three-quarters full with water. Then add a few drops of milk. Mix the milk in, and then shine a light through it - a projector is ideal.
+
+Viewed from the opposite end the lamp looks red like a sunset while when looked at from the side it looks blue - tending to green. This difference in colour is due to the tiny fat particles in the milk scattering the light - blue is scattered more than red, so as you look through the tank, most of the blue has been scattered out, leaving red light. Testing the light scattered from the sides will show that it is also polarised!
+
+Don't add too much milk - a drop or two is enough to start with. This explains why the sky is blue (light scattered from the particles in the atmosphere and why the sunset is red - only the red is left after the light has passed through a large thickness of atmosphere, other colours having been scattered out). Superb sunsets have occurred after major volcanic eruptions.
+
+Polarisation
+
+Speculate what the colour of the sky would be on planets with denser atmospheres than that of the Earth.
+
+\(b\) Drops of Dettol (antiseptic liquid) also work well.
+
+I gather that the colour of the iris in the eye is due to scattering. Babies are usually born with blue-grey eyes - the molecules are not linked into large chains. As they grow up the chains join and so the scattering is reduced and the iris colour often turns to brown.
+
+> Theory:
+>
+> Scattering is proportional to the fourth power of the frequency.
+>
+> Age range: 16-18
+>
+> Apparatus required: 'Rectangular plastic tank •Projector •Polaroid sheets •Milk •Dropper
+>
+> Further information - The action of a polarizer and an analyser
+
+If the vibrations of a transverse wave are in one plane only then that wave is said to be planepolarised. (Longitudinal waves cannot be plane-polarised.)
+
+### MISCELLANEOUS WAVES, SOUND & Lieu-IT
+
+#### 1. Coloured flames
+
+Burn pages of a colour magazine to give coloured flames.
+
+> Cut samples from coloured pages and use tongs to hold these while they are burnt. Warn pupils not to inhale the smoke and/or fumes from the burning paper.
+>
+> Age range: 11-13
+>
+> Apparatus required: •Bunsen •Coloured magazine pages
+
+#### 2. Tape recorders in Physics
+
+A variable speed reel-to-reel tape recorder is useful for the demonstration of the change of pitch when the tape speed is changed. Recording a note at one speed and then doubling the tape speed will increase the pitch of the note and musicians may realise that it has in fact gone up by one octave. The reverse is true of course if you slow the tape down.
+
+Age range: 11-13 Apparatus required: •Variable speed tape recorder
+
+#### 3. Cross and spot for the blind spot
+
+Draw a cross and a spot on a piece of paper 12 cm apart. Hold the paper up with the cross in front of your left eye and about half a metre away. Look at the cross with the right eye while closing the left. If the paper is moved backwards and forwards a place will be found where the spot will disappear as the image of it is falling on the blind spot of the right eye.
+
+Age range: 11-14 Apparatus required: •Copy of the cross and dot --- retain the same separation
+
+#### Sodium lamp and Young's slits
+
+The classical double slits experiment may be performed using a set of double slits and a spectrometer. Mount a pair of double slits (separation about 0.8 mm and width about 0.2 mm) in a holder on the spectrometer table. Point the collimator at a sodium discharge lamp, remove the objective lens of the telescope and adjust the eyepiece. Good interference fringes should result. Compare this result with the experiment with a laser which shows large interference fringes across the lab! The laser fringes are sharper due to the monochromatic nature of the laser light and its greater coherence.
+
+> Pupils should be told not to look along the line of the laser beam, and care should be taken to ensure that beams cannot be reflected into the eye.
+>
+> Theory
+>
+> Width of the fringes = Xd/D where d is the distance between the slits, D is the distance of the slits from the fringes and the wavelength of the light.
+>
+> Age range: 16-18 Apparatus required: •Spectrometer ^o^ Sodium lamp ^o^ Laser
+
+##### 5. Painting a corridor
+
+The most reflective colour for painting a room/corridor can be investigated by using an LDR and various coloured sheets of paper. Light is simply shone on the paper and the intensity of the reflected (scattered) light measured using an LDR. For a more detailed investigation include the data sheets from RS components on the ORP12 which give the variation of resistance of the LDR with illumination measured in lux.
+
+> Age range: 14-18 depending on treatment
+>
+> Apparatus required: •LDR •Coloured paper 'Ohm meter •Power supply 'Lamp 'Leads
+
+###### 6. Grease spot photometer
+
+It is simple to measure the brightness of a lamp, or indeed the Sun, using the old-fashioned grease spot photometer. This is simply a spot of molten candle wax (or oil) dropped on to a piece of paper. If the illumination of the spot is the same on both sides then the spot virtually disappears. However, if it is not and you view the spot from the side where the illumination is greater the spot will look darker than the surrounding paper. Compare a candle with a 12 V bulb, varying the brightness of the bulb, and plot a graph of power against brightness. This traditional method avoids the calibration curve of the ORP12 LDR.
+
+An extension of this experiment is to write a message on a large sheet of paper using melting wax. Mount the paper vertically with a light behind it. As the intensity of the light on one side is increased or decreased the writing will appear and disappear.
+
+> Age range: 14-18
+>
+> Apparatus required: •Prepared grease spot on a sheet of white paper in a support •Light bulb •Candle 'Power supply 'Voltmeter and ammeter •Leads
+
+###### 7. Persistence of vision
+
+In a TV set the screen is scanned 25 times per second. The human eye is unable to detect any variation much faster than this due to persistence of vision. This can be demonstrated by using a card with a double thread fixed to each end and with a jumping horse on one side and a gate on the other. As the card is spun by tightening and slackening the threads it looks as if the horse is jumping the gate!
+
+> Age range: 7-13 Apparatus required: •Card with horse on one side and gate on the other •Thread
+
+##### 8. Absorption spectrum of sodium!
+
+Set up a sodium discharge lamp in line with a Bunsen burner and a white screen. Light the Bunsen and shine light from the discharge lamp onto the Bunsen flame (blue). On the screen you can see some convection shadows but little else. Now hold a stick of sodium chloride in the flame.
+
+A superb black shadow should be seen on the screen. Holding a wooden splint in the flame until it burns shows no shadow. The dark shadow produced when the sodium chloride stick is held in the flame is due to the sodium within it absorbing the photons of just the right energy from the light emitted by the sodium lamp. The bright flame is due to the emission of photons and the re-emission of the absorbed photons in all directions.
+
+> Age range: 16-18!
+>
+> Apparatus required: 'Sodium lamp •Stick of sodium chloride •Bunsen and board •Retort stand, boss and clamp
+
+##### 9. Laser model - hand
+
+The stimulated emission from a laser can be simulated as follows. Suspend a piece of card from a rod by two threads with a pendulum bob on the end. Get an electric fan and blow a jet of air at the card. Now move your other hand up and down in the air stream. If you get the frequency right the oscillations of the card will build up in just the same way as a beam of light along the axis of a laser increases in intensity as it reflects backwards and forwards between the ends of the tube.
+
+> Age range: 14-18
+>
+> Apparatus required: •Card •Small electric fan with plastic blades a hair dryer set to cool
+
+##### 10. Singing flames and beats
+
+Draw out a 1 cm glass tube to give a bore with a diameter of 0.5 mm. Connect it to a gas supply, light the gas emerging from the fine end of the tube, and put it in a glass tube of diameter 3.5 cm and 83 cm long. A loud noise results. Now try another with a length of tube one or two cm shorter. When both flames are lit, beats are produced between the different
+
+pitched notes.
+
+Age range: 16-18 Apparatus required: 'Glass tube •Bunsen!
+
+##### 11. Appearance of objects in different coloured light
+
+Coloured objects appear different colours when viewed with light of different wavelengths. This can be demonstrated by sticking three discs of coloured paper onto a board and then illuminating them with light from a projector. (Alternatively print out coloured words like those below). First use white light, and then green, red or blue filters.
+
+This can be done either by using prepared coloured slides or by simply holding pieces of acetate colour filters in front of the projector. Relate this effect to the difficulty of buying of clothes under artificial light. (If you have large pieces of film they can be mounted in card frames and placed on the overhead projector.)
+
+View the coloured writing prepared below through different coloured filters and see what colours you can see.
+
+# R[E]{.underline}D BLUE GREEN
+
+> Age range: 9-14 Apparatus required: •Coloured filters •Projector 'Sheet of paper with a disc of red, green and blue paper fixed to it
+
+## [12. Laser light and the 60 W bulb]{.underline}
+
+It is instructive to compare the intensity of illumination of these two lights as a source of potential danger to the eye. Consider the 60W light bulb. Assuming that all the electrical energy is converted to light and that it is all radiated uniformly then at a distance of 1 m from the bulb the power density is 4.8 Wrn-2 . Compare this with the laser. Although the power of a laser of the type used in schools is only 1 mw the area of the laser beam is some 2 mm2 remaining fairly constant with increasing distance and so giving a power density of 500 Wm -2, over a hundred times greater.
+
+## [13. Binocular vision]{.underline}
+
+The slightly different appearance of a view from your two eyes that gives us the perception of depth can be shown by this simple experiment. Put your two index fingers together and look past them into the distance. The ends seem to join together to make a finger sausage!
+
+> Age: 10-14
+
+## [14. A shadow photometer]{.underline}
+
+This is a method of comparing the brightness of two sources of light by using the "density" of the shadows that they give. A board marker pen is stood in front of a white screen and a lamp is set up to cast a shadow of the marker on the screen. A second lamp is placed by the first, so giving another shadow. The two lamps are equally bright when the two shadows are of equal depth and the two lamps are the same distance from the screen.
+
+> Age range: 16-18
+>
+> Apparatus required: •Board marker or pencil •Two lamps •Power supplies and meters •Leads
+
+## [15. Ribena lime]{.underline}
+
+Partly fill a clear straight-sided glass with a blackcurrant drink. Then gently pour a 1 cm thick layer of limejuice on to the top. After some time the green colour of the lime will have diffused into the red of the blackcurrant drink giving a spectrum effect from green to red.
+
+> Age range: 7-14 Apparatus required: •Straight sided glass •Blackcurrant drink •Lime juice
+
+## [16. Colour subtraction]{.underline}
+
+Three filters, one red, one green and one blue placed on an overhead projector and overlapped is an easy way to show the subtraction of colours.
+
+Age range: 11-13 Apparatus required: •Overhead projector •Colour filters!
+
+[18. Chaotic systems]{.underline}
+
+(a) Chaotic systems have a number of stable states and this can be shown by using a long flexible strip of metal rather like a giant hacksaw blade. This is mounted vertically and held at the base by a clamp. If the strip is pulled sideways it oscillates but always comes to rest in the vertical position. If a lump of plasticine is fixed to the top it now has three stable states - one vertical as before but now two more, one on either side of the vertical. You can never be sure in which of these states it will finally come to rest if disturbed from its original position. (Bristol University demonstration)
+
+(b) A further demonstration of chaos and the sensitive dependence of the outcome on the initial conditions is to suspend a steel ball bearing over two magnets. When it is swung the ball bearing exhibits a chaotic path and the point where it finally comes to rest depends critically on its point of release. Doing this experiment on an overhead projector makes the motion clearly visible to a class.
+
+> Age range: 16-18
+>
+> Apparatus required:
+>
+> •Long whippy piece of steel with a holder fixed to the top 'Ball bearings ^o^Thread •Overhead projector
+
+### 19. Phase angle!
+
+Mount a ball on a rotating table, and use a lamp to cast a shadow of the ball on a screen. (The lamp should be a long way from the table and the table relatively close to the screen.) Rotate the table and record the position of the ball and the angle through which the table has turned the zero could be taken when the shadow of the ball is either in the centre of its traverse or at one end. Plot a graph of the displacement of the shadow against the sine (or cosine) of the angle turned by the table.
+
+## 20. Ultraviolet experiments - safety considerations vital here
+
+Some very nice effects can be shown with ultraviolet light as long as the correct safety precautions are followed. Clean hair shows a greenish hue, teeth gleam, and fluorescein glows green. I have collected a set of other objects, mostly from gift shops - fluorescent T-shirts, silly putty, rocks (the correct wavelength of UV light is needed here), a star chart, security markers, an advent calendar and so om
+
+> Lamps emitting short-wave ultraviolet have clear quartz envelopes and must only be used when the eyes are screened by a sheet of glass. Lamps with dark glass envelopes pose a minimal hazard to the eyes, but exposure to all ultraviolet must be minimised because of the risk of melanoma.
+
+## 21. P and S waves simulation
+
+In an earthquake two forms of wave are transmitted through earth - the Primary or P wave (a longitudinal or push vibration) and the Secondary or S wave (a transverse or shaking vibration). The differing properties of these two types of vibration can be shown by the following experiment. Use a plastic beaker with tracing paper stuck round it and with a small bulb fixed on one side. Place a beaker of water inside, and observe the passage of light through the system.
+
+A bulb on one side represents the epicentre of the earthquake and the paths of light through the double beaker represent the paths of the P and S waves.
+
+### 22. Sensitive flames
+
+The effect of sound waves on a fine flame can be shown by this experiment. Draw a glass tube out from a diameter of 1 cm to a diameter of 1 mm. Connect it to the gas supply, and light the end of the tube - a long fine flame should be produced. This can now be used to investigate sound levels such as nodes and antinodes in standing waves. Modern versions use a sound level meter but are perhaps not so visually impressive.
+
+> Age range: 11-18
+>
+> Apparatus required: •Glass tube •Gas supply
+
+### 23. The eve
+
+The following series of simple experiments can be performed to study the physics of the eye. (a) The ability to resolve fine detail. Draw two dots about a millimetre apart on a piece of paper, Fix this to a wall, and see how far away pupils have to stand until they can only see it as one dot.
+
+(b) Look at newspaper pictures and actual photographs using a lens and compare the two. This book has been printed using dots but they are so fine that you can't separate them with a lens.
+
+\(c\) Help with a lens. See how the use of a lens enables you to read print very close up. (d) Optical illusions. Show some of these just for interest.
+
+### 24. Aberration of light - rain
+
+An analogy of the aberration of light can easily be demonstrated by walking through vertically falling rain under an umbrella. You are dry when you are standing still but you get wet when you move!
+
+## 25. Coloured shadows
+
+The addition of colours can be seen clearly if light from three ray boxes each containing a different coloured filter (red, blue or green) is shone on to a white sheet of paper. Varying the intensity of each will give any colour of the spectrum. Standing three board markers in the way gives three superb coloured shadows. Each individual shadow is the sum of the colours from only two of the ray boxes.
+
+> Age range: 11-13
+>
+> Apparatus required: 'Three board writers •Three ray boxes and power supplies ^o^ Three coloured filters
+
+### 26. Corrugated cardboard and wave motion
+
+Using a square of corrugated cardboard or plastic, which has been cut at an angle to the corrugations, gives two axes of sine waves. This can be used as an aid when teaching the wave equation y = Asin2Tc(ft - x/X)
+
+The wave like corrugated edge on one side of the square gives the x variation and the other right angles to it the t variation while the height at any point represents the y value or displacement of the wave.
+
+Theory:
+
+y = Asin2Tt(ft - x/X) one side gives varying t for fixed x (say x = O) y = Asin2Ttft and the other varying x for fixed t (say t = O) y = Asin21tx/X
+
+Age range: 16-18
+
+> Apparatus required: 'Sheet of corrugated plastic or cardboard (plastic is better - the corrugations can be bigger)
+
+### 27. Using a pinhole to help vou read without glasses
+
+An amazingly simple experiment but of great help to anyone who forgets their glasses! Make a pinhole, and look through it at print - you can read it without glasses! This works for both long and short-sighted people. An alternative version is to look through the small hole made between the tips of your first and second finger and the side of your thumb. The advantages of this method are that you always carry your fingers with you and that the size of the hole is variable,
+
+The phenomenon is explained by understanding that as the aperture is reduced the depth of focus is increased.
+
+> Age range: 7-19
+>
+> Apparatus required: 'Fingers
+
+### 28. Standing waves
+
+The effect of the length of a cord, rather than its tension, on the standing waves that can be produced on it can be shown very simply by this experiment. Fix the end of a string to an off centre hole in a wheel on an electric motor (or the top of a vibration generator). Hold the other end, but have it passing through a short length of plastic tube or bung to allow it to rotate freely. Switch on and move, your hand towards and away from the motor. Large standing waves result.
+
+> Theory:
+>
+> Frequency of the fundamental standing wave on a cord of length L, tension T and mass per unit length m is given by the equation f = so the frequency is inversely proportional to the length of the cord.
+>
+> Age range: 16-18
+>
+> Apparatus required: 'Cord •Motor and power supply or vibration generator and signal generator.
+
+### 29. Moiré fringes in a net curtain or night dress
+
+The overlapping of the fine weave of two net curtains or two layers of a fine night dress show good Moiré fringes. Interference can also be simulated by two transparent plastic discs with circles drawn on them placed on the overhead projector. (See also page 171).
+
+Age range: 16-18 Apparatus required: •Net curtain or night dress 'Overhead projector useful
+
+#### 30. Stroboscopic effect with a television
+
+A wonderful example of both the stroboscopic effect and the motion of waves on a stretched string can be obtained using a television and a rubber band. Switch on the television and if possible tune to static clear screen, or else connect a TV camera to the television and point the camera to a blank board. Now stretch the rubber band in front of the screen and pluck it, You will see waves travelling slowly along the band --- the scanning property of the television acts like a stroboscope. By suitable experimenting with the length and tension of the band the waves can be made almost stationary.
+
+I have tried both suspending a weight from the band and also using a screw thread to vary the tension.
+
+> Age range: 14-18
+>
+> Apparatus required: •Television 'Rubber band •Set of slotted masses •Retort stand 'TV camera if possible
+
+### 31. Apparent bending of a vibrating stick in a spectrum
+
+You can show the apparent bending of a stick (a pencil will do) when it is oscillated across a spectrum. As the stick is vibrated it appears to be bent. The effect only appears when the stick is illuminated by the coloured light. It is due to the persistence of vision of the eye in different regions of the spectrum. The cones take different times to reset when illuminated by different colours.
+
+> Age range: 14--- 19
+>
+> Apparatus required: •Device for producing a spectrum 'Stick or pencil
+
+### 32. Colour filters on the overhead projector
+
+Show disappearing writing by shining light through a filter on the overhead projector which is overlapping a transparency with writing on it. For example if a red filter is used beneath some red writing the writing should disappear if a suitable colour of red is used.
+
+### 33. Path of the Sun with a pinhole camera
+
+Set up a cylindrical pinhole camera with a piece of photographic paper taped inside it opposite the pinhole. Take the camera outside on a sunny day with the pinhole covered. Uncover the pinhole and leave the camera for a few hours. When the paper is developed a dark line will be seen showing the path of the Sun during the day.
+
+> Age range: 11-14
+>
+> Apparatus required: •Pinhole camera 'Photographic paper •Access to a dark room and chemicals
+
+## 35. Patterned glass and syrup
+
+Get a piece of patterned glass and mount it horizontally about 5 cm above some printed material such as a newspaper. When you look down the print will be distorted and you won't be able to read it. Now pour some golden syrup onto the top of the glass (l used a teaspoonful for the photo).
+
+Now you will able to read the text through the part of glass covered in syrup but still not through the glass on its own. The refractive index of syrup is similar to that of glass, so you are effectively ending up with a roughly parallel-sided block. Corn oil works as well, but it is rather runny.
+
+Age range: 11-18 depending on treatment Apparatus required: \> \> ^o^ Two strips of wood for mounting glass \> \> •Piece of patterned glass (off-cut, say 10 cm square) \> \> •Sheet of newspaper \> \> •A little golden syrup
+
+### 36. Mirror writing
+
+Test the skill of the pupils at drawing a line between the two lines of the double triangle, double rectangle and then the double star when you can only see them by reflection in a mirror.
+
+Arrangement of the apparatus.
+
+> mirror held vertically 'double shape' drawn on paper
+>
+> masking card
+
+The idea is to draw a line between the lines of the two shapes on a sheet of paper. The masking card is held in the way so that you can only see the point of your pencil and the two shapes by reflection in the mirror. The rectangle is difficult, the triangle is harder still and the star is really hard!
+
+> Age range: 5-14
+>
+> Apparatus required: 'Prepared shapes drawn on paper as shown 'Pencil 'Masking card •Plane mirror \### 37. Pepper's Ghost
+
+This is a very old experiment but great fun to do. It used to be used on stage to make a ghostly figure appear, but we can construct a modern 'school' version by making a candle appear to be burning inside a glass of water. In fact it is simply that the virtual image of the candle flame is at the same position as the water-filled beaker. The cleaner and bigger the glass sheet available for this the better. A suitably edged piece of window glass is ideal
+
+A wonderful example of this effect could be seen in the production of the stage show "Phantom of the Opera" where lighted candles appeared to rise from the stage. It was purely an illusion. I was told that the whole image was just a reflection from a mirror set off stage!
+
+beaker
+
+> Age range: 7-14
+>
+> Apparatus required: •Glass sheet (with rounded edges) •Candle •Beaker of water!
+
+### 38. Silhouettes
+
+Use a large sheet of lining paper and a projector or OHP to make silhouette pictures of members of the class. Draw round the shadow of their heads. Then have an 'identification parade' to try and guess who the people are. Once again, although the science is just the formation of shadows, there are all kinds of other skills involved in producing the silhouettes and then identifying them.
+
+Age range: 7-14 Apparatus required: •Cardboard •Scissors •Light source
+
+> 
+
+## 34
+
+This is a mirror that seems to be able to tell the difference between red and blue!
+
+Put cards one and two in front of the mirror and look at the reflection of the cards in the mirror. Now put the mirror alongside cards three and four, and see what they look like in the mirror. (See diagrams.)
+
+Can you work out what is happening? Think about the axes of symmetry of the different letters and numbers.
+
+(Many thanks to Colin for the idea for this experiment)
+
+> Apparatus required: 'Prepared cards as shown •Plane mirror
+
+### 40. Diffraction through a night dress
+
+A lovely example of diffraction can be seen through a night dress or a fine net curtain like the one shown in the photograph. (See also page 167)
+
+> Age range: 16-18

@@ -1,0 +1,312 @@
+---
+title: "Elasticity"
+format: html
+---
+
+## Basic Theory
+
+### Stress ($\sigma$)
+
+-   Force applied per unit cross-sectional area: $$
+    \sigma = \frac{F}{A}
+    $$ Where:
+-   $F$ = applied force (N)
+-   $A$ = cross-sectional area (m²)
+-   Units: Pascal (Pa)
+
+### Strain ($\varepsilon$)
+
+-   Measure of deformation (relative change in length): $$
+    \varepsilon = \frac{\Delta L}{L_0}
+    $$ Where:
+-   $\Delta L$ = change in length (m)
+-   $L_0$ = original length (m)
+-   Dimensionless (no units)
+
+### Young’s Modulus ($E$)
+
+-   Ratio of stress to strain in the linear (elastic) region: $$
+    E = \frac{\sigma}{\varepsilon} = \frac{F/A}{\Delta L / L_0}
+    $$
+-   Measure of stiffness of the material.
+-   Units: Pascal (Pa)
+
+### Hooke’s Law
+
+-   Within elastic limit, stress is proportional to strain: $$
+    \sigma \propto \varepsilon \quad \Rightarrow \quad \sigma = E \varepsilon
+    $$
+
+### Elastic Limit and Plastic Deformation
+
+-   **Elastic limit:** Maximum stress where material returns to original shape.
+-   Beyond this, **plastic deformation** occurs (permanent shape change).
+
+### Breaking Stress
+
+-   Stress at which material breaks or fractures.
+
+### Elastic Potential Energy
+
+-   Energy stored in a stretched or compressed material: $$
+    U = \frac{1}{2} F \Delta L = \frac{1}{2} \sigma \varepsilon V
+    $$ Where:
+-   $U$ = elastic potential energy (J)
+-   $V$ = volume of the material (m³)
+
+### Stress-Strain Graph
+
+-   **Gradient** = Young’s modulus $E$.
+-   Linear up to elastic limit.
+-   Yield point and fracture point indicate material behavior.
+
+### Summary Table
+
+| Quantity | Symbol | Formula | Units |
+|-----------------|---------------|-------------------------|---------------|
+| Stress | $\sigma$ | $\sigma = \frac{F}{A}$ | Pascal (Pa) |
+| Strain | $\varepsilon$ | $\varepsilon = \frac{\Delta L}{L_0}$ | Dimensionless |
+| Young’s Modulus | $E$ | $E = \frac{\sigma}{\varepsilon}$ | Pascal (Pa) |
+| Elastic Potential Energy | $U$ | $U = \frac{1}{2} F \Delta L$ | Joule (J) |
+
+> General theory for this section:
+>
+> An object obeys Hooke^l^s Law if the deformation is directly proportional to the applied force. For example this will apply to a piece of copper wire being stretched by small loads - the actual maximum load depends on the cross sectional area of the wire.
+>
+> The Young modulus (E) for a material is a measure of how much it will stretch. This is given by the equation E = FL/eA where e is the extension, L the original length, F the applied force and A the cross sectional area of the wire. For steel the Young modulus is 2x 10 ^11^ Pa.
+
+## Stories to enritch
+
+### Hooke’s Law: The Birth of Elasticity
+
+In 1660, Robert Hooke discovered a simple but powerful relationship: the force needed to stretch a spring is proportional to the extension—now known as Hooke’s Law. His famous phrase, “Ut tensio, sic vis” (“As the extension, so the force”), encapsulates this idea. This discovery laid the foundation for understanding elastic materials.
+
+Reflection: How did a simple spring reveal universal rules about stretching?
+
+### The Mystery of Rubber Bands: Why Do They Snap Back?
+
+Rubber behaves differently from metals; it can stretch a lot and still return to shape. Scientists learned this is due to the coiled polymer chains unravelling and recoiling, a concept that challenged classical elasticity theories and bridged physics with chemistry. Rubber’s elasticity is a window into molecular behavior.
+
+Reflection: What’s happening inside rubber when it’s stretched and released?
+
+### Galileo’s Early Experiments on Material Stretching
+
+Long before Hooke, Galileo studied how materials deform under load, observing how beams bend and break. His work foreshadowed elasticity concepts and structural engineering principles used today. Galileo connected physics to building safe structures.
+
+Reflection: How did early experiments lead to safer bridges and buildings?
+
+### The Elastic Limit and Material Failure
+
+Not all materials stretch forever. Scientists discovered materials have an elastic limit—the maximum stretch after which permanent deformation or breaking occurs. This insight is vital for engineering and safety. Knowing limits keeps structures safe under stress.
+
+Reflection: Why is it important to know how far materials can stretch?
+
+### From Steel to Spider Silk: Diverse Elastic Materials
+
+Different materials show a wide range of elastic behaviors—from stiff steel beams to flexible spider silk. Spider silk’s remarkable strength and elasticity inspire new materials science and biomimicry designs. Nature provides blueprints for advanced elastic materials.
+
+Reflection: What can engineers learn from nature’s elastic materials?
+
+### The Role of Elasticity in Musical Instruments
+
+Strings and membranes rely on elasticity to produce sound. The tension and stretching of guitar strings, drum skins, or piano wires govern pitch and tone, linking elasticity directly to music. Elasticity creates harmony and rhythm.
+
+Reflection: How does stretching a string change the music it makes?
+
+### Elasticity in Sports: The Science Behind Bouncing Balls
+
+Balls, from basketballs to tennis balls, rely on elastic collisions to bounce back after impact. Understanding elasticity helps improve sports equipment design for performance and safety. Elasticity powers the dynamics of play.
+
+Reflection: Why do some balls bounce better than others?
+
+### The Discovery of Young’s Modulus
+
+Thomas Young quantified elasticity with a constant measuring stiffness, now called Young’s modulus. It allows comparison of materials by how much they stretch under a given force. Young’s work made elasticity measurable and predictable.
+
+Reflection: How can one number describe how stiff a material is?
+
+### Elasticity and Human Biology: Tendons and Muscles
+
+Our bodies use elasticity in tendons and muscles to store and release energy during movement. This natural elasticity enhances efficiency and agility, inspiring prosthetics and robotics. Elasticity is essential for life’s motion.
+
+Reflection: How does elasticity make running and jumping easier?
+
+### The History of Stress-Strain Curves
+
+Plotting stress versus strain reveals material behavior under load—elastic, plastic, and breaking points. This tool revolutionized material science and engineering design. Stress-strain curves tell a material’s story.
+
+Reflection: What can a curve reveal about a material’s strength and flexibility?
+
+## Practical work and Demos
+
+### Uses of elasticity
+
+The following is a list of the applications of elasticity that I have found useful when introducing the topic: A bouncy castle, space hopper, elastic in clothes, bridges, trampolines, trainers, cricket bats, aircraft wings, your muscles, your skin, car bumpers, crash helmets, car and bike suspension and fishing line. Some mountain bikes actually have air suspension forks!
+
+### Bending of a beam
+
+As a practical example of bending and shear stresses bend a metre ruler in the laboratory by supporting it at either end and then loading it at its centre. Investigate the effect on the depression of changing both the load and the length of the beam.
+
+A rather nice extension of this uses a filament of glass drawn out from a glass rod, the filament being in the centre of two much fatter end sections. The rod should be held horizontally by its end and then the filament in the centre loaded with masses. A quite surprising deformation can be produced.
+
+> All present require eye protection and safety screens should be used. Dispose of the broken glass with care.
+>
+> Theory:
+>
+> The depression of the centre of the beam when it is loaded at its centre is proportional to the load and to the length of the beam cubed
+>
+> Age range: 16-18
+>
+> Apparatus required: •Slotted masses •String •Metre rule 'Two knife edges on bosses 'Retort stands
+>
+> •Ruler mounted vertically in base clamp •Glass rod with central filament section •Safety screen 'Goggles
+
+### The belly flop
+
+An idea of the very high compressibility modulus of water can be gained from talking about how painful it is to do a "belly flop" into a swimming pool. It^t^s actually only 100 times worse to launch yourself on to a slab of concrete if the water does not part to let you enter! Bulk modulus of concrete = 100 x10 ^11^ Pa Bulk modulus of water = Pa!
+
+> Age range: 16-18
+
+### Elasticity of glass
+
+The elastic nature of glass can be seen in old windows. The weight of the glass makes it "creep", the lower portion of the pane becoming fatter than that above it. Glass is much easier to break when it is scratched - the scratch provides an initial dislocation which then spreads easily when under stress.
+
+Glass fibre may be bent in a circle while a glass block can only suffer small angular deformation before it shatters. This is because of the difference in length between the two sides of the specimen small for the fibre but large for the block for a given angle of deformation.
+
+### Energy stored in a rubber band
+
+You may know that if a rubber band is stretched considerably, beyond its elastic limit, it will not return to its original length. This can be shown by adding masses to the lower end of the band and then removing them carefully - recording the corresponding extensions. I have found it better to cut the band into one straight length, giving greater extension for a given mass.
+
+#### Extension
+
+The non-recoverable energy absorbed by the rubber band may be worked out by finding the area of the hysteresis loop produced by the force-extension graph. It is instructive to calculate the velocity of projection of a paper pellet by a rubber band both with and without allowance for the energy that cannot be recovered. A very rough estimate of the energy stored in a rubber band can be gained by firing a ball upward from a rubber band stretched by a known amount. You should mention the effects of air resistance in both experiments.
+
+> Long stretched rubber bands can cause severe eye damage on 'fly-back'. Eye protection should be used.
+>
+> Theory:
+>
+> Non recoverable energy absorbed by the band = Force x Distance = area inside the hysteresis loop
+>
+> Age range: 14-18
+>
+> Apparatus required: •Rubber band •Slotted masses •Ruler 'Base clamp to hold the ruler vertical from the floor •Retort stand and clamp •Suitable clamp for holding the rubber band 'Safety spectacles
+
+### Shear stress
+
+This can be demonstrated in a number of ways, and it should be pointed out that it is this type of stress that is most likely to be encountered in machines and buildings.
+
+(a) You can show it clearly with a simple pack of playing cards. If the top card is slid sideways while being pressed down on the cards beneath the whole pack will exhibit shear. Don't use cards that are too slippery!
+
+(b) Make a sausage of plasticine and twist it at one end while holding the other end steady.
+
+(c) Clamp a metre rule to the desk and twist that.
+
+(d) Show how you can rotate your arm - mainly the wrist.
+
+> 16-18 •Pack of playing cards •Sausage of plasticine 'Ruler 'Arm
+
+Elasticity
+
+### Bungee jumping
+
+This can be simulated by using a long piece of elastic and a mass, doing the experiment over a stair well if possible. Elastic bought from a haberdasher's works well or you might try unraveling a piece of climbing rope. Can you get the length right so that the mass just stops before it hits the ground?
+
+Age range: 14-18 Apparatus required: •Long length of elastic •Masses
+
+### Elasticity of rubber when cooled
+
+Many of us will have seen, or heard about, the wonderful demonstrations of the change of elasticity of rubber when cooled in liquid nitrogen. However reasonable results can be obtained by using dry ice (solid carbon dioxide). Try cooling a piece of rubber tube in solid carbon dioxide for a minute or two and then hitting it with a hammer --- the rubber shows a marked change in its elasticity and will shatter under the impact. The change in elasticity of a squash ball and a rose petal when put in the solid carbon dioxide is also worth investigating.
+
+> Gauntlet style leather gloves and eye protection are needed when handling dry ice (solid carbon dioxide). Safety screens should be used to protect against flying fragments.
+>
+> Age range: 11-18
+>
+> Apparatus required: •Squash ball •Rubber tubing 'Flower petal •Hammer •Carbon dioxide cylinder and cloth
+
+### Stretching a sock or tights
+
+This experiment relates elasticity to something practical - clothes!
+
+Take some tights - one leg will do - and fix them to a clamp. Load the bottom end with weights and record the force and resulting extension. (Forces of up to 150 N are needed to give a reasonable extension.) Slowly remove the weights and record the extension as they are taken off. Tights are very good; they stretch a lot when loaded and also show a hysteresis effect which apparently disappears when they are washed!!
+
+> Age range: 14-18
+>
+> Apparatus required: ^o^ Tights (one leg will do!) 'Masses •Retort stand, boss and clamp •Ruler
+
+### Strength of paper and string
+
+This is an interesting couple of experiments to demonstrate the difference between the shape of a specimen and the way forces are applied to it.
+
+(a) Try and stand a sheet of paper on one end with a 100 g mass on top - the paper collapses. Now roll the paper into a tube - it will easily support the weight of the 100 g.
+
+(b) Hold a piece of string vertically with the 10 g mass tied to the top - let go and the mass falls as the string collapses. Now hold the string from the other end so that the mass is at the bottom - the string easily supports it.
+
+> Age range: 11-18 depending on follow up Apparatus required: •Paper ^0^ 100 g and 10 g masses 'String Elasticity
+
+### Elasticity of rubber molecules
+
+Stretch a piece of rubber until it becomes difficult. At this point the rubber molecules should have untangled themselves and be aligned along the direction of stress. You will now probably notice that the band looks a little paler and the surface texture may have changed. Now put a pin through the rubber and move the pin about a bit. The rubber will break apart along the line of stretch, which is also along the line of molecules, showing that there is a lower strength between molecular chains than along them.
+
+> Age range: 14-18
+>
+> Apparatus required: •Two clamps •Retort stands etc. •Large slotted masses (up to 5 kg) •Pin •TV camera if possible
+
+### Heating in stretched rubber
+
+Put a piece of balloon rubber between your lips and stretch it. As it is stretched you will notice an increase in temperature unlike what happens with a gas - expansion usually means cooling. Alternatively use a rubber band about 1 cm wide. Holding a length of a centimetre or so between your thumbs and forefingers, pull it sharply and then place it quickly against your top lip. The heating effect is very noticeable. Is it that the molecules in the rubber have become more ordered and so they give off heat energy - resulting in a cooling? Blu tack \@ works as well.
+
+A strip of rubber cut from a balloon is first stretched and then held against your forehead. This feels warm and when it is allowed to contract it cools down.
+
+Age range: 16-18 Apparatus required: •Rubber balloon •Rubber band ^o^ Blu tack \@ •Scissors
+
+### Whirling springs and Hooke ^l^s Law
+
+Fix a rubber bung to the end of a spring and spin it in either the vertical or horizontal plane. To measure the force you can use a spring balance fixed in the line with a string. Alternatively calculate the value by measuring the radius of orbit and the speed of rotation. Record the reading on a TV camera if possible for slow analysis later.
+
+> Age range: 16-18
+>
+> Apparatus required: •Helical spring •Rubber bung •Ruler •Stop clock •Spring balance •TV camera
+
+### Silly putty
+
+This is wonderful stuff and is available in many toyshops so if you see some - buy it! Stocks may not last. There are two different types:
+
+\(a\) this type glows in the dark especially after being irradiated with ultra violet (b) this type changes colour when it is heated.
+
+Both types have the same elastic properties. If a ball of it is held by one side it will creep (slowly sag), if dropped it will bounce, and if hit with a hammer it will shatter. Another example of the application of a large impulse is if you hold a piece in your hands and then pull it sharply. It will snap --- reminiscent of a severe muscle pull !
+
+> Eye protection should be worn and a safety screen used to protect against flying fragments. Short wave u.v lamps should only be used where direct radiation is screened from the eye by a sheet of glass or opaque material.
+>
+> 11-18
+>
+> •Silly putty •Hammer •Ultra violet lamp •Eye protection •Ultra violet goggles
+
+Elasticity
+
+### 15. Creatures and granite columns - leg strength, height and g
+
+(a) We are made the way we are because of the gravitational pull of our planet. What would the design of other creatures be on planets with widely differing g values? Animals living on planets with very high g values would be expected to have thick legs while those of similar mass that lived on small planets with low g values could be supported by spindly legs!
+
+While we are thinking about creature design, what about considering if animals would black out if they had a long neck and turned round too quickly.
+
+Bone is actually amazingly strong - the compressive breaking stress of solid bone being only about a third that of steel! Pa) A piece of chicken bone can be investigated to show this strength. Eye protection and a safety screen are essential to protect you from flying splinters. The bone is held vertically in a clamp and weights placed on the top of a small platform resting on the bone.
+
+> Eye protection and safety screen(s) will be needed to protect all present from flying fragments of bone.
+
+\(b\) Granite columns
+
+The maximum possible height of a granite column on Earth is around 7800m. Higher than this and it will shatter under its own weight.
+
+Simulate this by a column of damp sand. Put a tin lid on top and load this with masses until the sand column gives way. This should occur at the base. Another way of doing this is to use jelly. Make a tall jelly in a gas jar, measuring cylinder or glass tube. Pour it out vertically and see how much can be outside the support of the tube before it splits apart.
+
+> Theory:
+>
+> Breaking stress = hpg where h is the height of the column and p its density
+>
+> Age range: 16-18
+>
+> Apparatus required: •Sand •Water 'Masses ^o^ Tin lid 'Chicken bone 'Jelly •Safety goggles and safety screen
+
+### Electric strain gauge
+
+A simple model of an electric strain gauge can be made by an arrangement similar to that used for investigating the stretching of fishing line. Take a 2m length of resistance wire (such as nichrome) and clamp one end to the bench. Pass the other end over a pulley and hang a weight on the end. Measure the resistance between two points on the wire as far apart as possible either by using a sensitive ohmmeter or a voltmeter and a microammeter. (Do keep the current low --- you do not want any heating effect.) Now increase the load and a change in the resistance of the wire should result. \> If pupils do this they should be aware that the wire might get hot enough to burn their skin or ignite paper etc. \> \> Age range: 16-18 \> \> Apparatus required: 'Nichrome wire (2m) •Set of weights ^O^ G clamp 'Bench pulley 'Ruler \> \> •Ohmmeter or voltmeter and microammeter

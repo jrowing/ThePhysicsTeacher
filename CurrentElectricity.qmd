@@ -1,0 +1,411 @@
+---
+title: "CurrentElectricity"
+format: html
+---
+
+## Basic Theory
+
+#### Electric Charge ($q$)
+
+-   Fundamental property of matter causing electric forces.
+-   Measured in Coulombs (C).
+
+#### Electric Current ($I$)
+
+-   Rate of flow of electric charge: $$
+     I = \frac{Q}{t}
+     $$
+-   Unit: Ampere (A), where $1\,A = 1\,C/s$.
+
+#### Voltage (Potential Difference, $V$)
+
+-   Work done per unit charge to move charge between two points: $$
+     V = \frac{W}{Q}
+     $$
+-   Unit: Volt (V).
+
+#### Resistance ($R$)
+
+-   Opposition to the flow of electric current.
+-   Ohm’s Law relates voltage, current, and resistance: $$
+     V = IR
+     $$
+-   Unit: Ohm ($\Omega$).
+
+#### Ohm’s Law
+
+-   Current through a conductor is proportional to the voltage across it (at constant temperature).
+
+#### Electrical Power ($P$)
+
+-   Rate at which electrical energy is transferred: $$
+     P = VI = I^2 R = \frac{V^2}{R}
+     $$
+-   Unit: Watt (W).
+
+#### Series Circuits
+
+-   Current is the same through all components: $$
+     I_{\text{total}} = I_1 = I_2 = \cdots
+     $$
+-   Total voltage is sum of voltages: $$
+     V_{\text{total}} = V_1 + V_2 + \cdots
+     $$
+-   Total resistance: $$
+     R_{\text{total}} = R_1 + R_2 + \cdots
+     $$
+
+#### Parallel Circuits
+
+-   Voltage is the same across all branches: $$
+     V_{\text{total}} = V_1 = V_2 = \cdots
+     $$
+-   Total current is sum of branch currents: $$
+     I_{\text{total}} = I_1 + I_2 + \cdots
+     $$
+-   Total resistance: $$
+     \frac{1}{R_{\text{total}}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots
+     $$
+
+#### Electrical Energy ($E$)
+
+-   Energy transferred by current: $$
+     E = Pt = VI t
+     $$
+-   Unit: Joule (J).
+
+#### Conductors and Insulators
+
+-   Conductors allow free flow of electrons (e.g., metals).
+-   Insulators restrict electron flow (e.g., rubber, glass).
+
+#### Summary Table
+
++-------------+-------------+----------------------------------+----------------+
+| Quantity    | Symbol      | Formula                          | Units          |
++=============+=============+==================================+================+
+| Charge      | $q$         | —                                | Coulomb (C)    |
++-------------+-------------+----------------------------------+----------------+
+| Current     | $I$         | $I = \frac{Q}{t}$                | Ampere (A)     |
++-------------+-------------+----------------------------------+----------------+
+| Voltage     | $V$         | $V = \frac{W}{Q}$                | Volt (V)       |
++-------------+-------------+----------------------------------+----------------+
+| Resistance  | $R$         | $V = IR$                         | Ohm ($\Omega$) |
++-------------+-------------+----------------------------------+----------------+
+| Power       | $P$         | $P = VI = I^2 R = \frac{V^2}{R}$ | Watt (W)       |
++-------------+-------------+----------------------------------+----------------+
+| Energy      | $E$         | $E = VI t$                       | Joule (J)      |
++-------------+-------------+----------------------------------+----------------+
+
+## Stories to enritch
+
+### Volta and the Frog’s Legs
+
+**Topic:** Origin of the electric battery **Story:** Luigi Galvani observed frog legs twitching when touched with metal and concluded it was "animal electricity." Alessandro Volta disagreed and proved the metals themselves caused the current, leading to the invention of the Voltaic pile—the first true battery. **Discussion prompts:**
+
+-   Was Galvani wrong or partially right?
+-   How did Volta’s invention shape the modern world?
+
+### The War of the Currents: Edison vs Tesla
+
+**Topic:** AC vs DC current **Story:** Edison promoted direct current (DC), while Tesla championed alternating current (AC). Edison launched a campaign to discredit AC, including public animal electrocutions and the invention of the electric chair. Despite this, AC won due to its ability to transmit over long distances. **Discussion prompts:**
+
+-   Was Edison ethical?
+-   Why did AC become dominant?
+
+### The Tragic Genius of Nikola Tesla
+
+**Topic:** High voltage, resonance, wireless power **Story:** Tesla dreamed of delivering free, wireless electricity and built enormous coils to transmit power without wires. He ran out of funding and died alone and impoverished. Yet many of his ideas underpin modern systems like wireless charging and high-frequency electronics. **Discussion prompts:**
+
+-   Was Tesla ahead of his time?
+-   How do society and funding affect scientific progress?
+
+### Caroline Herschel and Early Batteries
+
+**Topic:** Scientific instruments and early research **Story:** Caroline Herschel, one of the first female astronomers, worked with early electrical equipment like Leyden jars. Her meticulous work in astronomy and use of scientific tools broke barriers for women in science. **Discussion prompts:**
+
+-   What challenges did women face in early science?
+-   How did electrical devices aid other scientific fields?
+
+### The Murder of Georg Ohm’s Reputation
+
+**Topic:** Ohm’s Law and resistance **Story:** Georg Ohm discovered the relationship between voltage, current, and resistance (V = IR), but his findings were ridiculed during his lifetime. Only after his death was his law widely accepted and celebrated. **Discussion prompts:**
+
+-   Why did the scientific community reject Ohm initially?
+-   What does this reveal about how science progresses?
+
+### The Longest Electrical Circuit: Telegraph Wires
+
+**Topic:** Long-distance current transmission **Story:** 19th-century telegraph systems used long copper wires stretching across countries. Engineers discovered problems with resistance and signal degradation, leading to developments in materials and circuit design. **Discussion prompts:**
+
+-   How do long wires affect current?
+-   What modern problems are similar?
+
+### The Accidental Discovery of the Electron
+
+**Topic:** Cathode rays and current flow **Story:** J.J. Thomson used a cathode ray tube to discover the electron, proving that atoms contained smaller, negatively charged particles. This work also demonstrated how current is carried in circuits. **Discussion prompts:**
+
+-   How does this relate to conventional vs electron flow?
+-   What instruments are based on cathode rays today?
+
+### The Electric Chair and Public Perception
+
+**Topic:** Voltage, danger, ethics **Story:** As part of his campaign against AC, Edison promoted its use in executions. The first use of the electric chair was horrifyingly botched, but it influenced public perception of electricity’s risks. **Discussion prompts:**
+
+-   Can science be used unethically?
+-   How do emotions influence public trust in technology?
+
+### The Baghdad Battery?
+
+**Topic:** Ancient electricity? **Story:** A 2000-year-old clay jar found near Baghdad may have been an early galvanic cell. Some believe it was used for electroplating; others dismiss the claim. Its purpose remains debated. **Discussion prompts:**
+
+-   What counts as scientific evidence?
+-   How would our view of history change if true?
+
+### Daniell Cell and the Stable Current
+
+**Topic:** Reliable sources of EMF **Story:** The Daniell cell improved on earlier batteries by producing a steady voltage over time. It played a key role in early telegraphy and laid the foundation for practical electric circuits. **Discussion prompts:**
+
+-   Why is a steady voltage important in circuits?
+-   What modern technologies rely on this principle?
+
+## Practical work and Demos
+
+### 1. The electron steeplechase!
+
+12. Repulsion of aluminium strips
+
+13. Making d.c and a.c visible
+
+14. Flow of charge
+
+15. Chicken and a closed circuit
+
+16. Parallel circuit - the bath analogy
+
+17. Bulbs in series
+
+18. A carbon resistor and heat
+
+19. The transistor switch
+
+20. Conduction in liquids
+
+21. The lemon battery
+
+22. Series circuit puzzle
+
+This analogy is designed to explain energy losses in a series circuit. Imagine that the electrons are running round a steeplechase course. As they go round they lose energy - on the track it would be by going over a barrier, in a circuit it might be by passing through a bulb. When they reach the end of the track, or circuit, they have low energy and must be given a further input of energy - say by a battery - before they can make another circuit.
+
+Two important rules about them - (i) they are not allowed to give up the race - the same number of electrons that leave the start must reach the finish (this emphasises the constancy of current at all points in a series circuit) and (ii) the velocity of the electrons remains unaltered. We assume that they do not lose much, if any, energy on the flat - this is analogous to the low energy loss in the connecting wires of a circuit due to their low resistance.
+
+### 2. Fusing currents in wires
+
+Find the current at which a wire will fuse, either by a steady increase or by the sudden application of a large current. Wire wool works quite well for this, although a piece of resistance wire stretched between two retort stands glowing bright yellow before it fuses is quite spectacular. For older students a consideration of the radiation emitted by the wire will lead to a study of Stefan's Law (Energy emitted by a "black body" at absolute temperature T = OAT^4^ where A is the surface area and is Stefan's constant). Factors such as the surface area of the wire and the ratio of fusing current to wire diameter could be investigated.
+
+> Age range: 11-16 or above for an individual investigation
+>
+> Apparatus required: •Wire wool •Resistance wire •Ammeter ^0^ 12V dc power supply (8A) 'Heat-resistant mat •Crocodile clips •Leads
+
+### 3. The human battery
+
+Place one hand on a copper sheet and the other hand on a zinc sheet and measure the potential difference between them. Voltages of about 0.7 V can be produced due to the electrochemical reaction between the two dissimilar metals and the moisture of your hands. As with the lie detector, try the effects of stress on the "volunteer"!
+
+> Age range: 14 ---18 Apparatus required: •Voltmeter •Zinc sheet 'Copper sheet •Leads •Crocodile clips
+
+### 4. Surge of current in a light bulb
+
+(a) Investigate the surge of current when a filament light bulb is switched on. It is worth mentioning that switching on is the time when it is most likely that the bulb will blow. The filament has a low resistance when cold, and therefore a large current flows, heating occurs rapidly, there is a large thermal expansion and the resulting thermal shock can break the filament.
+
+(b) The change of resistance of the filament of a bulb with temperature can be seen very easily as an extension to experiment 17. If the supply is adjusted to around 12 V and then switched on, the small bulb lights brilliantly. The current is large, since the 12V 36W bulb is still cold and its resistance is low. As it warms up - this takes a little less than a second - the resistance rises, the current falls and the small bulb's brightness decreases.
+
+> Theory:
+>
+> Resistance of a metal conductor increases with increasing temperature. As the temperature rises the thermal motion of the atoms within the metal impedes the motion of electrons through it, and so the resistance rises.
+>
+> Age range: 16-18
+>
+> Apparatus required: ^0^ 12 V bulb in suitable holder •Small torch bulb •12 V power supply
+
+### . Hot wire ammeter
+
+Suspend a taut piece of copper wire between two retort stands with its ends fixed to insulated terminals. Hang a 50 g mass from the centre to keep it in tension. Pass a current through it, and measure the depression of the mass. Plot a graph of depression against current. Note that this will work for both a.c and d.c.
+
+> Theory:
+>
+> As a current passes through the wire it will heat up and so expand. The weight hanging from its centre will cause it to sag.
+>
+> Age range: 13-16
+>
+> Apparatus required: •Copper wire 28 SWG ^o^ Two retort stands, bosses and clamps ^0^ 12V dc supply giving up to 8A •50g mass on metal hanger ^0^ 30 cm ruler in bench clamp ^o^ TV camera if possible
+
+### 6. Birds on high voltage wires
+
+Why is it that birds can sit on high voltage cables without danger? Of course, it is fine if they do not touch the ground or have one foot on the live cable and one on the neutral. When they are standing on a single cable they are quite safe, because the potential difference between their two feet is far too low to be dangerous.
+
+
+> current electricity
+
+### 7. Conductivity of glass
+
+This is a fascinating demonstration. Take two pieces of thick copper wire, wind one round each end of a soft glass rod, and connect the ends of the wires to a 240V mains power supply in series with a 100 W lamp. Switch on nothing happens, since the glass is an electrical insulator. Now heat the glass strongly with a Bunsen. As the glass becomes molten conduction occurs, and the light comes on.
+
+It is much more impressive with the mains where, once conduction has started, the heat of the current itself is often enough to maintain the current flow. Age range: 14-16 \> \> Apparatus required: \> \> •Variac transformer 'Soft glass rod •Bunsen burner •Two lengths of bare copper wire •Wooden clamp 'Crocodile clips •Heat-resistant mat ^0^ 100 W lamp in holder •Three insulated in-line connectors
+
+### 8. Parallel circuits
+
+Pupils are taught that the addition of a resistor to a circuit will decrease the flow of current and are therefore puzzled when told that two resistors in parallel draw a greater current from the supply than one of the resistors on its own. You can use the traffic analogy to explain this. The addition of a bypass round a town will actually increase the traffic flow on the major road. Similarly, another resistor in parallel with the first will allow more current to flow from the supply. (See also the bath plug analogy shown in experiment 16 on page 211.)
+
+### 9. Wolf whistling beaver
+
+I have a soft toy beaver bought in France. When you walk in front of it the beaver wolf whistles, but why? In its chest there is a small light sensor, which activates a circuit if the light level changes.
+
+What better way can there be to show the properties of such a sensor?
+
+> ( ^o^These used to be available in 2010 from Stock Foille, 16190
+>
+> Montmoreau, Charente, France. Cost about E15 including postage)
+
+### 10. Lie detector
+
+This experiment is a fun extension of resistance and simulates a lie detector or embarrassment meter! Wrap pieces of aluminium foil round two toilet rolls, or tape two sheets of foil to the bench.
+
+Connect a 1.5 V cell and a spot galvanometer in series with the foil, and then complete the circuit by getting one of the pupils to hold the toilet rolls. Now try and embarrass them. The conductivity of the skin changes, and as a result the reading on the spot galvanometer changes also. Quite often just sitting there can embarrass the volunteer - they know what secrets about them the rest of the class knows. Resistance between the two hands is of the order of 200 kQ.
+
+Be sensitive here - I never let anyone's private life get exposed to the others. The same effects occur if the volunteer is put under stress - try asking them some Physics questions!
+
+> Demonstration only. Never do this outside school supervision. Only use a 1.5 V cell and never connect it near to a pupil's head.
+>
+> Age range: 14-16
+>
+> Apparatus required: •Two cardboard tubes •Electrical tape •Aluminium foil •Spot galvanometer
+>
+> •1.5 V cell •Crocodile clips 'Leads
+
+### 11. Resistance - conducting putty
+
+Use this commercially available material to make different shaped specimens to demonstrate the effect of shape and size on the resistance of a specimen. Even series and parallel circuits can be moulded! Use a couple of metal discs (such as two coins) pressed on to either end of
+
+the specimen as a means of making electrical contact.
+
+> Age range: usually 16-18 Apparatus required:
+>
+> •Conducting putty ^0^ 12V dc power supply •Ammeter and voltmeter •Crocodile clips •Two metal discs •Leads •A high resistance digital ohmmeter can be used instead of the ammeter and voltmeter and power supply
+
+### 12. Repulsion of aluminium strips
+
+Two slack aluminium strips mounted vertically side by side can be used to show the forces between currents. Make sure that they cannot touch when a current is passed through them. A single folded strip will show 0 the repulsion of currents flowing in opposite directions - down one side and up the other.
+
+> Age range: 16-18
+>
+
+
+### 13. Making a.c and d.c visible
+
+Take a piece of thick blotting paper, and soak it with some thinly running paste of starch (or flour) mixed with potassium iodide. Allow it to dry, and then mount it on a metal base. Connect the base to one terminal of the supply using a crocodile clip. Run a probe connected to the other terminal of the supply along the paper surface. First use a dc supply and then an ac supply. The dc supply will give a continuous line while the ac will give a series of dashes. The action of the electricity releases iodine ions, which move towards the positive terminal where they react with the starch, giving a dark blue colour.
+
+> Age range: 14-18
+>
+> Apparatus required: •Blotting paper •Starch or flour •Probe • Low voltage (12V) Power supply
+>
+> •Potassium iodide crystals •Crocodile clips •Metal sheet 'Leads
+
+### 14. Flow of charge
+
+This experiment is designed to measure the drift velocity of ions in a liquid and gives you an idea of the drift velocity of electrons in a piece of metal when a potential difference is filter paper placed across its ends. Soak a rectangle of filter paper in
+
+> crvstal
+
+ammonium hydroxide solution, and lay it on a microscope slide. Place an optical pin across each end and clip them in place with crocodile clips.
+
+microscope slide Connect an HT supply with its output current limited to 5 mA across the pins, and place a potassium permanganate crystal in the centre of the paper. Apply a potential difference of 75 crocodile clip V between the crocodile clips and measure the time it takes for the purple colour to travel 1 cm. Doing the whole experiment on a plastic strip with a half millimetre scale marked on it helps, and using a TV camera to view the whole slide on a screen helps even more.
+
+> Theory:
+
+In a wire the current is given by the equation I = nAve where v is the drift velocity of the electrons, A the cross sectional area of the wire, n the number of electrons per metre cubed and e the electron charge. Similar values to v can be obtained by this drift velocity experiment. Values of a few mm a minute are common for potential differences of IOOV between electrodes some three or four cm apart.
+
+> Age range: 16-18
+>
+> Apparatus required: •HT power supply (50-100V) output limited to 5 mA •Crocodile clips •Two optical pins •Microscope slide •Filter paper •Millimetre scale •Stop clock •Potassium permanganate crystals
+>
+> •Ammonium hydroxide
+
+### 15. Chicken and a closed circuit
+
+How do you use a toy chicken to show children that you must have a complete circuit for electric current to flow? Hold the chicken in your hand. With any luck it will chirrup, but why? There is a battery in the chicken and in the base there are two contacts. If your hand is slightly moist it completes the circuit.
+
+### 16. Parallel circuit - the bath analogy
+
+Imagine a bath full of water but with two plugs and plugholes. The
+
+plughole allows water to fall into a tank where a pump pumps it back to the tap. Now turn on the tap and pump, and pull out one of the plugs. Water circulates round - the level of the water in the bath stays the same.
+
+Now pull out the other plug! To keep the water level in the bath the same the pump must work twice as hard the rate of flow of water from the tap is doubled, but the rate of flow of water from the first plughole is unaltered. This is a good analogy with a parallel circuit - the two plugholesPump representing the branches of theworks harder
+
+circuit, the pump replacing the battery, and the tap the wires before they branch. The height of the water in the bath is analogous to the potential in the circuit.
+
+### 17. Bulbs in series
+
+I always introduce the idea of voltage by comparing the drop in potential round a circuit containing a number of bulbs with the drop in potential energy down a flight of stairs with each stair representing one of the bulbs. From there I go on to show two experiments to demonstrate this.
+
+In the first one connect a 2.5 V torch bulb in series with a 12V 24W bulb. Steadily increase the potential difference across the circuit, and show that initially the small bulb does not blow. They both carry the same current but the greatest potential difference drop occurs across the large bulb.
+
+In the second experiment fifteen 2.5V torch bulbs are connected in series to 40V IA supply. They all light. The same current passes through each - the potential difference drop across each is roughly the same - about 2.5V.
+
+> Age range: 13-16
+>
+> Apparatus required:
+>
+> •Bulb 12V 24W •Fifteen torch bulbs 2.5V 0.25A •Ammeter 0-1A digital •Leads
+
+18. [A carbon resistor and heat - semiconductor or not?]{.underline}
+
+> The effect of raising the temperature of a carbon resistor can be investigated in the following way. Take a 10 MQ resistor, connect it to a high resistance ohmmeter, and mount it in a holder. Use a hair dryer to heat the resistor, and measure the resistance as the temperature changes. The resistance is first seen to fall and then rise again.
+
+Theory: At first the semiconducting nature of carbon is more important - more free electrons are created and the resistance falls. As the temperature gets greater the increased thermal motion gives a greater rise in the resistance - a minimum of resistance is reached, and then it starts to rise.
+
+Age range: 16-18
+
+Apparatus required: •Hair dryer •10 MQ resistor •Mount •High resistance ohmmeter •Leads
+
+### 19. \[The transistor switch\]
+
+> In a transistor a large collector current is controlled by allowing a very small current to flow through the base of the transistor. Analogies for this could be:
+
+(a) A policeman directing a queue of cars or
+
+(b) an attendant controlling a large queue of people at a football match or (c) a school helper controlling a lunch queue.
+
+<!-- -->
+
+20. [Conduction in liquids --- the need for ions]{.underline}
+
+> This experiment shows that ions are needed for electrical conduction in a liquid.
+>
+> Set up the circuit as shown in the diagram, and fill the beaker with distilled water. The lack of ions in the water will mean that the bulb does not light.
+>
+> Now slowly add the salt, stirring all the time. Eventually the bulb will light, and as more salt is added it will become brighter due to the higher concentration of sodium ions and chloride ions in the liquid.
+
+Age range: 11-14
+
+Apparatus required: •Beaker (250 ml will do) •Distilled (deionised) water •Leads •Two crocodile clips •Two pieces of copper to act as electrodes 'Battery or low voltage power supply •Suitable mounted light bulb 'Salt (sodium chloride) •Glass rod as a stirrer
+
+### 21. The lemon battery
+
+Put two dissimilar metal electrodes (for example copper and zinc) into a lemon. A potential difference of about 1V should be obtained between them. (Lemons usually give about 1.08 V and oranges 0.95 V.) This can either be detected by using a low voltage bulb (more impressive) or a digital voltmeter. I have not really been successful recently with lighting a bulb, but the voltmeter did show that there was something happening.
+
+A way of making this experiment more impressive is to use a set of lemons in series to trickle charge a capacitor. Then discharge this through an LED to give a flash of light like a camera flash.
+
+> Age range: 10-18 in slightly different forms
+>
+> Apparatus required: •Lemons •Electrodes of copper and zinc •Crocodile clips 'Low voltage bulb LED RS 586 447 •Capacitor 220 mF 25 V •dc voltmeter •Leads
+
+### 22. Series circuit puzzle
+
+Copy and cut out the following pieces and use them to demonstrate the correct connection of components in a series circuit.
+
+You will find that there is only one way in which they will fit together to produce a circuit with the two bulbs and two cells in series.
+
+You could devise a parallel version of this game as well.
+
+> Age range: 7-14 Apparatus required: •Card copies of the circuit elements

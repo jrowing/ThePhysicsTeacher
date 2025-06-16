@@ -1,0 +1,253 @@
+---
+title: "Capacitors"
+format: html
+---
+
+## General theory for this section
+
+### Definition
+
+-   **Capacitance** is the ability of a system to store electric charge per unit potential difference.
+-   A **capacitor** consists of two conductive plates separated by an insulator (dielectric).
+
+**Capacitance is defined as:** $$
+C = \frac{Q}{V}
+$$ Where:
+
+-   $C$ is capacitance (in farads, F)
+-   $Q$ is charge stored (in coulombs, C)
+-   $V$ is potential difference (in volts, V)
+
+### Units
+
+-   $1 \, \text{F} = 1 \, \text{C/V}$\
+-   Typical capacitors are in $\mu$F, nF, or pF due to large unit size.
+
+### Energy Stored in a Capacitor
+
+A charged capacitor stores energy in the electric field between the plates:
+
+$$
+E = \frac{1}{2} QV = \frac{1}{2} CV^2 = \frac{Q^2}{2C}
+$$
+
+### Capacitance of a Parallel Plate Capacitor
+
+For a parallel plate capacitor:
+
+$$
+C = \frac{\varepsilon_0 \varepsilon_r A}{d}
+$$
+
+Where:
+
+-   $\varepsilon_0$ = permittivity of free space ($8.85 \times 10^{-12} \, \text{F/m}$)
+-   $\varepsilon_r$ = relative permittivity (dimensionless)
+-   $A$ = area of the plates (m²)
+-   $d$ = separation between the plates (m)
+
+### Combining Capacitors
+
+#### In Parallel:
+
+-   Total capacitance **adds**: $$
+        C_{\text{total}} = C_1 + C_2 + \dots
+        $$
+
+-   Same voltage across each capacitor.
+
+#### In Series:
+
+-   **Reciprocal** of total capacitance: $$
+    \frac{1}{C_{\text{total}}} = \frac{1}{C_1} + \frac{1}{C_2} + \dots
+    $$
+-   Same charge on each capacitor.
+
+### Charging and Discharging (RC Circuits)
+
+For a capacitor in a circuit with resistance $R$:
+
+#### Charging:
+
+-   Voltage across capacitor: $$
+    V(t) = V_0 \left(1 - e^{-t/RC}\right)
+    $$
+-   Charge: $$
+    Q(t) = Q_0 \left(1 - e^{-t/RC}\right)
+    $$
+-   Current: $$
+    I(t) = \frac{V_0}{R} e^{-t/RC}
+    $$
+
+#### Discharging:
+
+-   Voltage and charge: $$
+    V(t) = V_0 e^{-t/RC}, \quad Q(t) = Q_0 e^{-t/RC}
+    $$
+-   Current: $$
+    I(t) = -\frac{V_0}{R} e^{-t/RC}
+    $$
+
+### Time Constant
+
+-   The **time constant** $\tau$ is given by: $$
+    \tau = RC
+    $$
+-   It represents the time taken for voltage or charge to fall to $\frac{1}{e} \approx 37\%$ of its initial value.
+
+### Applications of Capacitors
+
+-   **Energy storage** (e.g. camera flashes)
+-   **Timing circuits**
+-   **Smoothing** in power supplies
+-   **Filtering** in AC circuits
+
+## Stories to enritch
+
+### The Shocking Leyden Jar (1745) – The First Capacitor
+
+In the 18th century, Pieter van Musschenbroek of Leyden accidentally invented one of the first capacitors: the Leyden jar. He was experimenting with static electricity and stored charge in a glass jar lined with metal foil and filled with water.
+
+When he touched the wire leading into the jar, he received a massive shock — so intense, he wrote that he "would not take a second shock for the kingdom of France."
+
+This early capacitor could store and release electric charge — and it amazed scientists across Europe. It even became a party trick in salons!
+
+### Benjamin Franklin’s Electric Kiss
+
+Ben Franklin, fascinated by Leyden jars, used them in all kinds of experiments. In one infamous case, he proposed a romantic (and dangerous) experiment where a man and a woman stood on insulating blocks and exchanged a charged Leyden jar by kissing.
+
+It worked. The shock delivered through the kiss demonstrated how electric potential builds up and discharges — an early (and painful) demonstration of how capacitors release energy.
+
+### The Camera Flash
+
+Have you ever heard the high-pitched whine of an old camera charging before a flash? That sound is the capacitor charging up.
+
+When you press the shutter, the capacitor discharges all its energy in an instant to power the bright flash of light. It's a perfect example of how capacitors can store energy slowly and release it very quickly — useful in real-world tech.
+
+### Supercapacitors in Modern Cars
+
+Modern electric vehicles (like Teslas or buses in China) use supercapacitors to assist with regenerative braking. When the car brakes, kinetic energy is converted into electrical energy and stored instantly in a supercapacitor.
+
+Unlike batteries, which take time to charge and degrade over time, supercapacitors can charge and discharge very quickly and survive millions of cycles.
+
+This technology helps improve energy efficiency and reduce wear on batteries.
+
+### Capacitor Failures: The "Capacitor Plague" (2000s)
+
+In the early 2000s, millions of computers and electronics failed due to faulty capacitors made with stolen — but incorrect — electrolyte formulas.
+
+The capacitors would bulge, leak, or explode, taking motherboards and power supplies with them. Entire product lines were ruined, and manufacturers faced massive recalls.
+
+A small component — the humble capacitor — caused a major global electronics scandal.
+
+## Practical work and Demos
+
+### Capacitor and bucket of water
+
+This is a useful comparison between a charged capacitor and a bucket full of water. A hole at the bottom allows water to run out and represents the current in the circuit as the capacitor discharges, the size of the hole representing the resistance of the circuit.
+
++---------------------------------------------------------------------------------------+----------------------------------------------+
+| The depth water represents the p.d. (V)                                               | > The greater the height of the cylinder the |
++=======================================================================================+:=============================================+
+| > across the capacitor and the volume of the bucket represents the maximum charge (Q) | > greater the water pressure at the base.    |
++---------------------------------------------------------------------------------------+----------------------------------------------+
+
+of that can be stored by the capacitor when fully charged. You can see that in the same way that a certain volume of water can be stored in a low but wide bucket, a given amount of charge may be stored at high or low potential in two different size capacitors.
+
+Theory:
+
+Q = CV so for a fixed charge a large V means a small C, whereas a small V means a large C.
+
+The shaded area represents the charge. The
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Measuring cylinder,
+-   Irregular objects,
+-   Large beakers or eureka cans
+-   Water
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+Age range: 14-18 same charge is carried by two difference capacitors with different potential differences across their terminals.
+
+### Capacitor in a camera flash unit
+
+Refer to this as a practical use of capacitors. The energy stored in the capacitor due to the small charging current from the battery over a few tens of seconds is released as one large burst in a fraction of a second.
+
+> Age range: 16-18
+
+### Timing with a capacitor
+
+Connect a capacitor and a resistor in parallel with a low voltage d.c. supply. Switch on the dc supply and current will flow through the resistor continually but also charge the capacitor. In the supply circuit and the resistor circuit are two thin strips of aluminium foil.
+
+When the one in the supply circuit (1) is broken, the capacitor stops charging, and when the one in the resistor branch (2) is broken the capacitor stops discharging. Therefore the capacitor only discharges in the time between the breaking of the two strips. If this time is short then the current from the capacitor is roughly constant and so Q = It = CAE where AE is the drop in potential across the capacitor. But E = IR and so t = CAE.R/E. Useful for timing a bullet and falling objects as long as t is small. The validity of this could be checked by the pupils. The p.d across the capacitor should be measured with a digital voltmeter with a resistance of some MO.
+
+Age range: 16-18 Apparatus required: 'Capacitor •Aluminium foil •Low voltage dc supply
+
+> •Resistor •Stop clock •Digital voltmeter
+
+### The smoothing action of a capacitor
+
+A capacitor placed across the output of a rectifier unit will give a smoothing effect to the output. An analogy of this is to use a balloon to smooth the flow of water. Fix a tube to a water tap, and into this fit a T piece with a balloon hanging down from one branch of the T.
+
+As water flows through the tube the balloon will distend. As the flow decreases, the balloon will shrink - maintaining the output flow. If the flow increases the balloon expands, smoothing out the flow, and keeping the flow rate approximately constant. The expansion and contraction of the balloon is analogous to the charging and discharging of the capacitor.
+
+Age range: 15 --- 18 Apparatus required: 'Tap •Tubing ^0^ T piece •Balloon
+
+### The energy in a charged capacitor
+
+Set up the apparatus shown in the diagram. Charge the 10 mF capacitor to 30 V, and then discharge it through the heating coil. This coil should consist of 2 m of 32 s.w.g constantan wire. The temperature rise produced in the coil should be measured with a copper-constantan thermocouple. The effect on the temperature of a number of charges and discharges on the capacitor energy should be investigated.
+
+> 
+
+Age range: 16-18 \> \> Apparatus required: ^0^ 10 mFcapacitor •Spot galvanometer •Coil of wire \> \> ^0^ 0-30V d.c. power supply •Voltmeter \> \> •Switch \> \> •Digital temperature probe or copperconstantan thermocouple •Leads Large capacitors working at higher voltages should not be used because of the hazard of electric shock that they pose.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Measuring cylinder,
+-   Irregular objects,
+-   Large beakers or eureka cans
+-   Water
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::

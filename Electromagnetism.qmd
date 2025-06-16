@@ -1,0 +1,677 @@
+---
+title: "Electromagnetism"
+format: html
+---
+
+## Basic Theory
+
+### Electric Current ($I$)
+
+-   Flow of electric charge through a conductor.
+-   Defined as charge per unit time: $$
+    I = \frac{Q}{t}
+    $$
+-   Unit: Ampere (A), where $1\,A = 1\,C/s$.
+
+### Voltage (Potential Difference, $V$)
+
+-   Work done per unit charge to move charge between two points: $$
+    V = \frac{W}{Q}
+    $$
+-   Unit: Volt (V).
+
+### Resistance ($R$)
+
+-   Opposition to current flow in a conductor.
+-   Ohm’s Law relates voltage, current, and resistance: $$
+    V = IR
+    $$
+-   Unit: Ohm ($\Omega$).
+
+### Ohm’s Law
+
+-   Current through a conductor is proportional to voltage across it, provided temperature is constant.
+
+### Magnetic Fields ($\vec{B}$)
+
+-   A region where moving charges or magnetic materials experience a force.
+-   Unit: Tesla (T).
+
+### Magnetic Force on a Moving Charge
+
+-   A charge $q$ moving with velocity $\vec{v}$ in a magnetic field $\vec{B}$ experiences a force: $$
+    \vec{F} = q \vec{v} \times \vec{B}
+    $$
+-   Force is perpendicular to both $\vec{v}$ and $\vec{B}$.
+
+### Force on a Current-Carrying Wire
+
+-   A wire of length $L$ carrying current $I$ in a magnetic field $\vec{B}$ experiences force: $$
+    \vec{F} = I \vec{L} \times \vec{B}
+    $$
+
+### Electromagnetic Induction (Faraday’s Law)
+
+-   A changing magnetic flux through a circuit induces an emf ($\mathcal{E}$): $$
+    \mathcal{E} = -\frac{d\Phi_B}{dt}
+    $$ Where magnetic flux: $$
+    \Phi_B = \vec{B} \cdot \vec{A} = BA \cos \theta
+    $$
+
+### Lenz’s Law
+
+-   The induced emf creates a current whose magnetic field opposes the change in flux (negative sign in Faraday’s Law).
+
+### Transformers
+
+-   Use electromagnetic induction to change voltage.
+-   Voltage ratio related to turns ratio: $$
+    \frac{V_p}{V_s} = \frac{N_p}{N_s}
+    $$ Where:
+-   $V_p$, $V_s$ = primary and secondary voltages
+-   $N_p$, $N_s$ = number of turns in primary and secondary coils
+
+### Maxwell’s Equations (Conceptual Summary)
+
+-   Describe how electric and magnetic fields are generated and altered by charges and currents.
+-   Predict electromagnetic waves (light).
+
+### Summary Table
+
++-------------------------+---------------+---------------------------------------+----------------+
+| Quantity                | Symbol        | Formula                               | Units          |
++=========================+===============+=======================================+================+
+| Current                 | $I$           | $I = \frac{Q}{t}$                     | Ampere (A)     |
++-------------------------+---------------+---------------------------------------+----------------+
+| Voltage                 | $V$           | $V = \frac{W}{Q}$                     | Volt (V)       |
++-------------------------+---------------+---------------------------------------+----------------+
+| Resistance              | $R$           | $V = IR$                              | Ohm ($\Omega$) |
++-------------------------+---------------+---------------------------------------+----------------+
+| Magnetic Force (charge) | $\vec{F}$     | $\vec{F} = q \vec{v} \times \vec{B}$  | Newton (N)     |
++-------------------------+---------------+---------------------------------------+----------------+
+| Magnetic Force (wire)   | $\vec{F}$     | $\vec{F} = I \vec{L} \times \vec{B}$  | Newton (N)     |
++-------------------------+---------------+---------------------------------------+----------------+
+| Magnetic Flux           | $\Phi_B$      | $\Phi_B = B A \cos \theta$            | Weber (Wb)     |
++-------------------------+---------------+---------------------------------------+----------------+
+| Induced emf             | $\mathcal{E}$ | $\mathcal{E} = - \frac{d \Phi_B}{dt}$ | Volt (V)       |
++-------------------------+---------------+---------------------------------------+----------------+
+
+> General theory for this section:
+>
+> The Greeks discovered magnetism in about 600 BC. They noticed that a substance called lodestone had some strange properties. If a piece of lodestone is hung on a thread it will always point in the same direction. Lodestone - we now call it magnetite - is an oxide of iron, and it was the first known magnetic material. Lodestone will also attract other magnetic materials.
+>
+> Like poles repel and unlike poles attract. The force decreases with increasing separation. Common magnetic materials: iron, steel, cobalt, nickel.
+
++-------------------------------------------+------------------------------+
+| > 1\. Magnetic fields and tape recorders  | > 8\. Curie effect - iron    |
++:==========================================+:============================:+
+| > 2\. Magnets and a top pan balance       | > 9\. Magnetic force         |
++-------------------------------------------+------------------------------+
+| > 3\. Glass rods to hold floating magnets | > 10\. Magnetic theatre      |
++-------------------------------------------+------------------------------+
+| 4\. Magnetic field patterns               | > 11\. Magnetic fishing      |
++-------------------------------------------+------------------------------+
+| 5\. Indian rope trick                     | 12\. Executive magnetic toys |
++-------------------------------------------+------------------------------+
+| 6.  Three dimensional magnetic fields     | > 13\. Magnetic accelerator  |
+|                                           |                              |
+| 7.  Magnetic fields and credit cards      |                              |
++-------------------------------------------+------------------------------+
+
+## Stories to enritch
+
+### Oersted’s Accidental Discovery
+
+In 1820, during a lecture in Copenhagen, Hans Christian Oersted noticed something strange. While demonstrating a basic electric circuit, he saw that a nearby compass needle moved. At first, he thought it was a mistake. But repeated trials confirmed it: the electric current was affecting the magnetic compass. This was the first observed link between electricity and magnetism. Oersted had discovered that a current-carrying wire produces a magnetic field. His observation was not part of his original experiment—it was a surprise. And yet, this moment helped launch the field of electromagnetism.
+
+Think about it: How can accidental discoveries lead to major breakthroughs? Why did no one notice this effect before?
+
+### Faraday and the Spinning Magnet
+
+About a decade later, Michael Faraday, a self-taught English scientist, was asking a new question: if electricity could produce magnetism, could magnetism produce electricity? He experimented tirelessly with coils of wire and magnets. One day, he moved a magnet through a coil and saw a current on a galvanometer. He had discovered electromagnetic induction: that a changing magnetic field can induce a current in a wire. He went on to build the first simple electric generator by spinning a magnet inside a coil—what we now call a dynamo.
+
+Think about it: Why does movement matter in this process? What would the world be like without electromagnetic induction?
+
+### Faraday’s Journey from Bookbinder to Scientist
+
+Michael Faraday began life as a bookbinder’s apprentice. With no university education, he taught himself science by reading the very books he was binding. He wrote to Sir Humphry Davy asking for a job, and eventually became his assistant. Despite facing class prejudice and scientific snobbery, Faraday rose to become one of the most important experimental physicists in history. His work on electricity and magnetism laid the foundation for electromagnetism as a unified field. He also introduced the concept of "lines of force"—visualising magnetic and electric fields in space.
+
+Think about it: What does Faraday’s story tell us about access to science? How did visual thinking help him make breakthroughs?
+
+### The Rivalry Between Faraday and Davy
+
+At first, Sir Humphry Davy supported Faraday, but as Faraday's fame grew, tensions arose. Davy became jealous of his former assistant’s success and even tried to block him from joining scientific societies. Yet Faraday remained dedicated to his experiments, quietly building the basis of modern electromagnetism. He avoided fame, refused a knighthood, and valued clarity and humility in science.
+
+Think about it: How do personal rivalries affect scientific progress? Should scientific credit depend on status or contribution?
+
+### Maxwell’s Invisible Equations
+
+James Clerk Maxwell, a Scottish physicist and mathematician, took Faraday’s ideas and expressed them mathematically. His famous set of four equations unified electricity and magnetism into one theory—electromagnetism. Perhaps more astonishingly, they predicted the existence of electromagnetic waves: invisible ripples of electric and magnetic fields travelling through space. This was long before anyone had detected such waves. Maxwell's equations suggested that light itself is an electromagnetic wave, travelling at the speed of light.
+
+Think about it: How can mathematics reveal unseen truths about the universe? What does it mean that light is an electromagnetic wave?
+
+### Hertz Proves the Theory
+
+In the 1880s, Heinrich Hertz decided to test Maxwell’s predictions. Using a spark gap and a loop of wire, he generated and detected radio waves in his lab—the first time electromagnetic waves were created and observed. Hertz wasn’t interested in practical applications and believed his experiments had no commercial value. Ironically, his discovery became the basis for all modern wireless communication, from radios to smartphones.
+
+Think about it: Why is fundamental research important, even if it seems “useless” at the time? What would Hertz think of Wi-Fi?
+
+### Edison’s Dynamo and the Electrification of Cities
+
+As cities grew in the late 19th century, so did the demand for electric power. Thomas Edison built some of the first power stations using dynamos—large electric generators based on Faraday’s principle of electromagnetic induction. His Pearl Street Station in New York lit up hundreds of homes with incandescent bulbs. These machines converted mechanical energy into electrical energy on a large scale. Though Edison used direct current (DC), later developments favored alternating current (AC) for efficient transmission.
+
+Think about it: What engineering challenges did early power systems face? How do modern generators still rely on 19th-century physics?
+
+### The Electric Bell and the Power of Electromagnets
+
+One of the simplest and most enduring uses of electromagnets is the electric bell. When current flows through a coil, it magnetises an iron core. This pulls a metal striker toward a bell, breaking the circuit and allowing it to reset and repeat. This clever mechanism appears in doorbells, buzzers, and early telegraph sounders. It's a perfect example of turning electricity into mechanical motion.
+
+Think about it: Why is the electric bell such a useful teaching tool? What other devices use similar principles?
+
+### MRI: Electromagnetism in Medicine
+
+Modern medicine relies on electromagnetism in ways Faraday could never have imagined. Magnetic Resonance Imaging (MRI) uses powerful electromagnets and nuclear magnetic resonance to take detailed images of soft tissue inside the human body. MRI scanners align the hydrogen nuclei in water molecules with a magnetic field, then disturb them with radio waves. The signals emitted as the nuclei return to equilibrium are used to build an image.
+
+Think about it: How does understanding physics help improve healthcare? What role does electromagnetism play in other medical tools?
+
+### Containing the Sun: Tokamaks and Magnetic Confinement
+
+To create clean energy through nuclear fusion—the process that powers the sun—scientists use machines called tokamaks. These devices heat gas to millions of degrees, creating plasma. Because plasma is too hot to touch anything, it is contained using powerful magnetic fields. Coils around the tokamak create a magnetic "bottle" that prevents the plasma from touching the walls. Though commercial fusion remains a challenge, this is one of the most ambitious uses of electromagnetism in science.
+
+Think about it: Why are magnetic fields necessary for fusion? What future technologies might depend on better control of electromagnetism?
+
+## Practical work and Demos
+
+### Magnetic fields and tape recorders
+
+(a) Sound is stored on a magnetic tape as a pattern of tiny magnetic domains within the tape. This can be demonstrated clearly by showing the effect of a magnet on a recorded tape. Record some speech on a cassette tape, and then pass the cassette between the poles of a strong magnet. Now replay the tape - the magnetic pattern will have been altered, and the sound will be badly distorted or even completely erased. The tape can be used again afterwards. If you have a video recorder try this using videotape - some interesting effects on the picture when it is replayed will result.
+
+(b) For the second part of the experiment you will need a reel-to-reel tape recorder, some iron filings and a signal generator. Use the signal generator to record a 50 Hz sine wave signal on tape. Remove that section of tape from the tape recorder and sprinkle some fine iron filings on it. The filings will adhere to the tape - more strongly in places where the signal was strongest, i.e. at the troughs and peaks of the sine wave. Different wave shapes and different frequencies may be studied. Fast tape speeds will show the effects much more clearly, of course.
+
+(c) A simulation of the effects of tape recording using magnetic tape can be achieved using adhesive tape coated with fine iron powder.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Reel to reel tape recorder •Microphone •Strong magnet 'Blank tape •Iron filings •Signal generator or musical tube of variable pitch
+
+[2. Magnets and a top pan balance --- Newton's Third Law]{.underline} The forces between two magnets can easily be shown by mounting a magnet on a top pan balance and lowering another towards it - guided by glass rods. This is also a good example of Newton's Third Law.
+
+> Age range: 11-14
+>
+> Apparatus required: •Magnets •Suitable holder such as glass rods mounted vertically in a wooden block •Top pan balance
+
+Magnetism
+
+### Glass rods to hold floating magnets
+
+Glass rods mounted vertically in a wooden base are a good way of holding permanent magnets for magnetic levitation experiments. They are non-magnetic and there is little friction between them and the magnet.
+
+### Magnetic field patterns
+
+The magnetic field of a permanent magnet can be demonstrated by one of the following experiments:
+
+(a) Put a bar magnet on the glass of an overhead projector and cover it with a piece of acetate film. Sprinkle some iron filings on the film, and project the image on to a screen for class observation. The acetate sheet prevents the filings clinging to the magnet. Coils of wire mounted in plastic holders are commercially available to demonstrate electromagnetic fields.
+
+(b) Another way of making a permanent record of the magnetic field of a magnet is to do a similar experiment on photographic paper in the dark room with just the safe light on. Put a piece of photographic paper over the magnet, and, after sprinkling the iron filings on the paper to get a good field pattern, turn the main light on for a few seconds. Then develop and print the paper, and use the silhouette photos of the magnetic field patterns to retain the image.
+
+(c) This experiment is another way of producing a permanent record of the magnetic field of a magnet. Prepare some sheets of waxed paper by dipping them in molten wax. This is easy to do by having a tin of molten wax heated over a Bunsen. Lay the magnet on the bench and place a piece of waxed paper on it. Sprinkle some iron filings on to the paper until a good field pattern is seen. Now for the difficult part. Carefully lift the paper vertically off the magnet, keeping the paper horizontal, and melt the wax gently by passing it smoothly but quickly backwards and forwards through a clear blue Bunsen flame. Remove it from flame, and allow the wax to solidify, so giving a permanent field pattern. Finally fix it into a book using clear book covering film to preserve the pattern.
+
+With all three of these experiments, tapping the edge of the paper slightly (before melting the wax in (c)) helps to move the iron filings and so improve the pattern.
+
+> Age range: 11-13
+>
+> Apparatus required:
+
+(a) •Magnet •Iron filings •Overhead projector •Acetate sheet
+
+(b) 'Magnet •Iron filings •Photographic paper •Access to a dark room •Photographic chemicals (c) •Magnets •Iron filings 'Waxed paper •Bunsen
+
+### Indian rope trick
+
+Have a magnet concealed in a tube which is held in a clamp above a small steel screw that is fixed to the bench by a thread. The length of the thread should be a little more (a few centimetres) than the height of the magnet above the bench. The screw seems to rise into the air without support --- it is actually held up by the invisible magnet. You can pass your hand through the gap between the screw and the magnet to show no support - of course your hand does not affect the magnetic field. Then try it with a metal plate, first aluminium and then steel.
+
+> Age range: 11-13
+>
+> Apparatus required: •Screw •Thread •Magnet ^o^Tube to hide the magnet •Retort stand, boss and clamp
+
+### Three dimensional magnetic fields
+
+The three dimensional magnetic field of a magnet can be investigated by using a jelly. Make up the jelly in a clear mould, and then add the iron filings before it sets. Stir well, and then apply the field, or pour it into a mould which has a magnet in it, and allow the jelly to set! Various recipes are available! I am not really sure how long they keep without going mouldy! Maybe somebody could suggest an alternative material.
+
+> Age range: 11-13 Apparatus required: ^o^ Jelly •Magnet •Clear mould •Coil and power supply •Iron filings
+
+### Magnetic field and credit cards
+
+It is important to keep all credit cards and other magnetic cards away from magnets. I was on holiday, staying in the hotel in the photograph, and was wearing a pair of trousers which had a small pair of magnets as a fastener on the back pocket.
+
+I couldn't understand why the magnetic-card key to our room kept failing. My wife, she is not a physics teacher, then suggested it was because I was putting the card in my back pocket. I tested it with another card. She was right --- the magnets were corrupting the information on the card. So be careful!
+
+### Curie effect - iron
+
+The effect of heat on the ability of a bar to become magnetised can be studied using the Curie effect. Place a rod of iron on a tripod with a small magnet hanging from its end. Heat the rod strongly with a Bunsen flame - when the rod is hot enough the magnet will fall off. If you can spare the magnet, it is even better to heat the magnet itself. The motion of the magnetic domains is sufficient to destroy the overall magnetism of the magnet and prevent the rod being magnetised.
+
+> Demonstration only. Take care not to touch the very hot metal rod.
+>
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Iron bar •Magnet •Bunsen •Tripod •Heat-resistant mat
+
+### Magnetic force
+
+The forces between magnets can be demonstrated and indeed measured in the following way. Fix a ceramic magnet on the bench with one of its poles uppermost. Mount a hacksaw blade above this magnet, fixed down at one end and with a ceramic magnet fixed to the other so that it is above the magnet on the bench with like poles facing each other - the blade will curve upwards. Measurement of the amount of curvature, and a control experiment carried out by loading the blade with masses, can give you an idea of the forces between the magnets.
+
+> Age range: 11-13
+>
+> Apparatus required: ^o^ Two ceramic magnets
+>
+> •Hacksaw blade •Suitable clamp •Masses •Ruler
+
+Magnetism
+
+### Magnetic theatre
+
+A good way of introducing younger children to the uses of magnets is to make a 'magnetic theatre' similar to the one shown on the right. This is one where the characters are moved around the stage by a rod under the stage with a magnet fixed to it. The characters are mounted on bases containing a thin steel plate.
+
+An investigation of the strength of magnet needed and the thickness and material of the 'stage' will give a good understanding of the properties of magnets. The pupils can also construct the stage and write the script.
+
+> Age range: 7-11
+>
+> Apparatus required: •Small disc magnets •Steel plates (diameter about 1 cm) •Cardboard •Dowel rod
+
+### Magnetic fishing
+
+This is a simple 'toy' that can be used to introduce younger pupils to magnetism. A series of cardboard fish should be cut out of cardboard and a steel paper clip fixed to each one.
+
+Place the fish in a bucket, and try to 'catch' them using a small magnet on the end of a string tied to a length of dowel rod --- the fishing rod. If each fish has a 'score' written on it, this makes a fun game. The photograph shows my wife taking part in a game where you had to fish for film stars to raise money for our village film club.
+
+> Age range: 5-11
+>
+> Apparatus required: •Cardboard 'Thread •Dowel rod •Paper clips •Bucket •Scissors •Small magnets (not too strong)
+
+### Executive magnetic toys
+
+These are just good to look at, but every school should have one or two. They stimulate much discussion about the magnetic effects, the balancing of the parts and the low friction at the points of contact.
+
+Age range: 11-18 depending on treatment Apparatus required: ^o^ Executive magnetic toys
+
+### Magnetic accelerator
+
+A version of this fascinating 'device' can be made using ball bearings, disc magnets and plastic trunking. The first diagram shows a simple example of this. Enlarged views of the magnets and ball bearings alone are shown in the other four diagrams.
+
+> ball bearing
+
+trunking adhesive tape
+
+Ball bearing one is released and is attracted to magnet A. When it hits it its energy is transferred to ball bearing 3, which is free to move off, and so travels on at the same velocity as the impact velocity of ball bearing 1. This happens because it is further from the magnet than ball bearing 1 and so the attractive force on it is less than that on ball bearing 1. Ball bearing 3 is now attracted by magnet B and so accelerates, colliding with B with an increased velocity. The process now repeats itself with ball bearing 5 moving off to the left.
+
+The final ball bearing on the left of the first diagram will move off at high speed, the actual speed depending on the number and strength of the magnets.
+
+> Age range: 11-18 Apparatus required: •Four neodymium disc magnets •Nine ball bearings ^O^ A piece of plastic trunking •Adhesive tape
+
+### Electromagnetic forces - suspended coil
+
+The magnetic field produced when a current flows in a coil may be detected by hanging a light coil of wire from its connecting leads near a magnet. When a current is passed through the coil the force between the coil and the magnet will either attract or repel the coil, making it swing towards or away from the magnet depending on the direction of the current in the coil.
+
+> Age range: 13-16
+>
+> Apparatus required: •Coil of fine wire 'Low voltage (12V) power supply •Magnet in non-magnetic stand
+
+### Strength of an electromagnet
+
+A very simple method of estimating the strength of an electromagnet is to see how many steel paper clips it will support. Connect up an electromagnet, switch it on, and support a string of paper clips from the lower end. Varying the current will change the strength of the electromagnet, and this can be measured by the number of paper clips that can be supported. Check that the clips are not magnetised before starting the experiment!
+
+> Age range: 11-13 Apparatus required: •Electromagnet •Power supply •Leads •Ammeter •Paper clips
+
+### Faraday effect
+
+Shine a beam of light across the lab so that it passes through crossed polaroids at either end to cut off the light. Now put a strong permanent magnet (0.5 T) across the beam, and see if you can detect any change in the direction of polarisation. In other words, does any light now emerge from the second polaroid?
+
+> Age range: 16-18 Apparatus required: •Permanent magnet (0.5T) •Light source Electromagnetism
+
+### Forces between currents
+
+A way of demonstrating the force between currents is to use a small metal slinky spring. I have bought one that has a coil diameter of only 3 cm. Hang this up vertically with the lower end free, and pass a d.c current through it. The currents in adjacent loops of the spring are in the same direction and so the spring contracts - like currents attract. Placing a transparent plastic ruler in front of the coils enables the change in separation to be measured as the current in the coil is changed.
+
+Using a.c. can give some interesting resonance effects if the tension of the spring is varied by adding small masses to the lower end.
+
+> Theory:
+>
+> The force per unit length between two currents (Il and 12) in two infinitely long parallel straight wires separated by a distance d is given by the formula F = g01112/2nd. I know that our spring is far from being a straight wire, but at least you can get an idea of the possible forces involved.
+>
+> Age range: 16-18
+>
+> Apparatus required: •Small slinky spring diameter of coils about 3 cm •Retort stand boss and clamp •Fine copper wire for leads •Low voltage power supply (ac and dc) •Transparent plastic ruler •TV camera if possible •Light slotted masses (\<10g)
+
+### Model loudspeakers
+
+An impressive model loudspeaker can easily be made from paper, some insulated wire and four strong bar magnets. Make a large paper cone, cut a piece off the bottom and fix a short cylinder of paper to the cone in its place. Wind a coil of thin enamelled wire (say 20 turns) round the cylindrical projecting part. Place the cylindrical part over four bar magnets taped together standing vertically on the bench and with the same direction of polarity. Suspend the cone by thin elastic from three or more retort stands, connect the coil to a signal generator, and switch on.
+
+Using a low frequency voltage enables the oscillatory motion of the cone to be seen clearly.
+
+> Age range: 13-16 with further extension depending on treatment
+>
+> Apparatus required: •Paper •Insulated wire •Four strong bar magnets (about 8 cm long) ^o^ Thread
+>
+> •Low voltage a.c power supply or signal generator •Three retort stands •Adhesive tape
+
+### Force on a current in a magnetic field
+
+The following experiments are to demonstrate the force on a current in a magnetic field.
+
+(a) Suspend a light rod from two thin copper wires so that the rod hangs horizontally between the poles of an eclipse major magnet (a large U shaped magnet with a flux density between the poles of about 0.5 T) and is free to swing. The field of the magnet acts vertically across the rod. Pass a current through the wires and rod, and the rod should swing in and out of the field.
+
+(b) In the second experiment a slack strip of aluminium foil is pinned to a cork mat with a large strong (0.5 T) magnet standing over it so that the strip lies between the poles. Passing a current through the strip in the correct direction makes it rise from the mat - a clear demonstration of the force on a current in a magnetic field.
+
+(c) In the third experiment the force is measured using a top pan balance. Clamp a metal rod horizontally above a top pan balance so that it passes between the poles of a horseshoe magnet that is resting on the balance. Pass a current through the rod, and use the change in the reading on the balance to demonstrate the force on the rod due to the field. Making measurements of the current in the rod and the change in reading on the balance will enable you either to calculate the strength of the magnetic field or to verify the law of force on the rod.
+
+> Theory:
+>
+> Force on a current in a magnetic field = BIL where B is the magnetic flux density, I the current in the wire in amps and L the length of the conductor in the field.
+>
+> The strength of the large magnet that I use is about 0.5 T and that of the small magnadur magnets about
+>
+> 0.05 T.
+>
+> Age range: 14-18 depending on treatment Apparatus required:
+
+(a) •Light metal rod suspended by thin copper wires •Horseshoe magnet
+
+(b) •Strong horseshoe magnet •Aluminium foil strip pinned to a cork mat •Crocodile clips •Low voltage power supply
+
+(c) •Top pan balance •Stiff metal rod •Horseshoe magnet •Power supply
+
+### Magnetostriction
+
+Wind a long coil of wire round a metre long rod of iron. Fix one end rigidly in a clamp, and mount the other in a projector beam or rest it on an L shaped glass roller to which is fixed a small mirror. Pass a current of about 0.5A through the coil, and observe the motion of the reflected light beam or the movement of the shadow.
+
+> Theory:
+>
+> Magnetostriction is the dependence of the dimensions of a ferromagnetic specimen (iron rod) on the direction and intensity of its magnetisation.
+>
+> Age range: 16-19
+>
+> Apparatus required: ^O^ A metre-long rod of iron 'Projector •Glass roller •Small mirror ^o^ Low voltage power supply •Length of wire for making the coil
+
+921
+
+### The catapult field
+
+You can compare the force on a wire in a magnetic field to that of a stretched piece of elastic or the bed of a trampoline. For example, if you jump on to a trampoline there is a resultant vertical force that catapults you upwards --- at right angles to the trampoline. Since a similar motion is observed when a wire carrying a current is placed at right angles to a magnetic fi eld, the combined field produced by the wire and the magnet is often called the catapult field.
+
+> 
+
+You can show this easily by mounting two lengths of thick (say 24 SWG) bare copper wire between the poles of a strong U shaped magnet so that they are horizontal and parallel. Then place a third wire across them so that it rests on the two straight wires. Passing a current through the wires will make the loose wire slide along - indeed if the current is big enough (a few amps) the wire will shoot off the end.
+
+> Age range: 13-16
+>
+> Apparatus required:
+>
+> •Two straight lengths (10 cm or so) of stiff, clean copper wire •One short length of thinner copper wire
+>
+> •A high current, low voltage power supply •U shaped magnet
+
+### Filament oscillation
+
+This experiment demonstrates the force on a current in a magnetic field by showing the oscillation of a light bulb filament. Set up the apparatus shown in the diagram, with the light bulb between the poles of the U shaped magnet. Use a convex lens to focus the image of the filament on the screen.
+
+Connect the bulb to a low voltage a.c. supply, and switch on. The image of the filament will oscillate, showing the change of direction of the force on it during the a.c. cycle.
+
+> Age range: 14-19
+>
+> Apparatus required: •Filament light bulb in holder 'Low voltage ac power supply •Leads •U shaped magnet •Convex lens and holder •Screen
+
+### Simple electric motors
+
+This is a very simple and yet effective way of showing the force on a current in a magnetic field and for making a simple electric 'motor'. It is vital that the pupils are shown the diagram of the field (blue arrows), current (red arrow) and motion (black arrow) so that the effect can be properly explained.
+
+The current flows across the screw head and magnet, and a force is exerted so that the magnet and screw rotate about a vertical axis. You can check this using Fleming's left hand rule.
+
+(l am very grateful to Ian who first showed me this experiment)
+
+> Age range: 11-16
+>
+> Apparatus required:
+>
+> •Cylindrical neodymium magnet
+>
+> •Screw
+>
+> O AA cell
+>
+> •Length of insulated wire (bared at the ends)
+
+Electromagnets
+
+> A long straight coil of wire called a solenoid produces a magnetic field very much like that of a bar magnet. The shapes of some magnetic fields are shown in the diagrams below.
+>
+> The core of an electromagnet is made of iron because this is easy to magnetise and demagnetise. Steel would not be suitable, because it stays magnetised for much longer, and so the electromagnet could not be switched on and off easily.
+
+General theory for this section:
+
+> When a changing current flows in a coil, a varying potential difference is induced jn a nearby coil. The size of the induced potential difference depends on the number of turns of both coils and their linkage whether there is a soft iron core joining them. It is formed because of the varying magnetic field produced by the primary current, and this variation can also be produced by moving a permanent magnet near a coil.
+>
+> Currents are also induced in metal plates by moving a magnet near them - these are called eddy currents, and the magnetic field produced by them acts so as to reduce the original motion.
+
++----------------------------------------------+---------------------------------------------+
+| 1.  Eddy currents                            | 10. Transformers - the action of a choke    |
+|                                              |                                             |
+| 2.  Tape recorder simulation                 | 11. Falling magnet in a tube                |
+|                                              |                                             |
+| 3.  Electromagnetic brake                    | 12. Aluminium plate under a swinging magnet |
+|                                              |                                             |
+| 4.  Induction - light bulbs and coil a.c/d.c | 13. Detecting radiation                     |
+|                                              |                                             |
+| 5.  Magnets oscillating in a coil            | 14. Electromagnetic separator               |
+|                                              |                                             |
+| 6.  Jumping ring and solid carbon dioxide    | 15. Audio loop                              |
+|                                              |                                             |
+| 7.  Electromagnetic induction analogy        | 16. Frequency of the mains                  |
+|                                              |                                             |
+| 8.  Thickness measurement - inductance       | 17. Electromagnetic machine                 |
+|                                              |                                             |
+| 9.  LED and coil - electromagnetic induction | 18. Eddy currents and the linear air track  |
++==============================================+=============================================+
+|                                              |                                             |
++----------------------------------------------+---------------------------------------------+
+
+### Eddy currents
+
+This experiment is a very simple way of showing eddy current damping. Suspend a copper cylinder from a thread so that it hangs between the poles of a large permanent magnet (flux density about 0.5 T). Twist the thread so that it oscillates about a vertical axis when released. The motion of the cylinder shows considerable damping because of the eddy currents set up within it. Now repeat the experiment using a pile of small copper or brass coins taped together, the damping is now much less because the gaps between the coins only allow much reduced eddy currents to flow in the stack.
+
+> Age range: 16-18
+>
+> Apparatus required: •Pile of small copper coins •Copper cylinder •Thread 'Retort stand •Eclipse major magnet
+
+### Tape recorder simulation
+
+Induced voltages can be shown in this simple simulation of the action of the playback head in a tape recorder. Move a 3600 turn coil over a row of ceramic magnadur magnets placed flat down on the bench, with their poles alternately N - S face up with the coil connected to an amplifier and speaker or to an oscilloscope. As the coil moves, a changing voltage will be induced in it, and this can be detected by the speaker or oscilloscope.
+
+> Age range: 13-16
+>
+> Apparatus required: ^0^ 3600 turn coil •At least ten magnadur magnets •Speaker or oscilloscope
+>
+> •Amplifier
+
+### Electromagnetic brake
+
+Spinning a non-magnetic metal disc between a pair of magnadur magnets mounted vertically about 1 cm apart with opposite poles facing each other also shows eddy current damping. The disc can be made to spin in a vertical plane by tying a piece of cotton to the axle of the disc and passing it over a pulley to a weight that is free to fall. As the weight falls it accelerates continually without the magnets but reaches a terminal velocity when they are in place. Compare this with the air damping experiment.
+
+Age range: 16-18 Apparatus required: •Aluminium disc on horizontal axle •Cotton
+
+> •Pair of magnadur magnets on steel yoke
+
+### Induction - light bulbs and coil a.c/d.c
+
+The effect of self-induction of a coil in a circuit can be shown as follows:
+
+(a) Connect two bulbs in parallel to a low voltage d.c supply. In one branch connect a resistor in series with the bulb, and in the other connect a coil with an iron core, the coil having an identical resistance to that of the resistor. Switch on. The bulb in series with the coil takes longer to come on, demonstrating the inductive effects of the coil.
+
+(b) Put a bulb and a coil in series with first a low voltage d.c supply then a low voltage a.c supply. Notice the change in the brightness of the bulb due to the inductance effects of the coil with a.c.
+
+> Theory:
+>
+> Inductance of a coil (L) = go!1rN A/L length L, cross sectional area A and of N turns.
+>
+> A coil of length 5 cm, 2 cm square, with a steel core and of 1200 turns has a self-inductance of just under 30 Henrys. With an air core this reduces to 0.15 H. (150 mH). However, V = Ldi/dt, and so the time for the voltage across the 0.15H coil to rise to 0.2 A for a 2.5 V supply is 12 ms. For the time to be a second or more, the inductance must be 12.5 H.
+>
+> Age range: 16-18 Apparatus required: •Low voltage bulbs •Ammeter - both a.c and d.c •Coil •Low voltage ac/dc power supply
+
+### Magnets oscillating in a coil
+
+Suspend a magnet from a spring so that it hangs within a coil connected to an oscilloscope. Displace the magnet, and allow it to bob up and down. The resulting induced voltage can be studied. Notice the direction of the induced voltage compared with the direction of motion of the magnet.
+
+Ask the students whether or not they would expect to see eddy current damping in this demonstration.
+
+> Theory:
+>
+> Since the magnet oscillates in the coil, induced voltages will be produced - the size of the induced voltage being proportional to the speed of the magnet and therefore giving a good demonstration of simple harmonic motion.
+>
+> Age range: 16-18
+>
+> Apparatus required: 'Retort stand, boss and clamp •Magnet •Helical spring ^0^ 600 turn coil •Oscilloscope •Leads
+
+### Jumping ring and solid carbon dioxide
+
+(a) The repulsion between the magnetic fields produced by two electric currents can be shown by this experiment known as the jumping ring experiment. The core of a demountable transformer is opened, a mains coil (to be used as the primary) is connected to the a.c mains and an aluminium ring is used a secondary. The crosspiece is placed vertically on the arm round which the ring is slipped. Switching on the current shoots the ring into the air. As a problem for the older students, ask them what happens with a d.c supply.
+
+> Theory:
+>
+> Eddy currents induced in the ring form a magnetic field which is the same direction as that in the coil, and so the ring is repelled.
+>
+> The ring can be cooled by placing it in solid carbon dioxide. This increases the height risen by lowering the resistance of the ring and so increasing the size of the induced current in it.
+
+(b) An interesting extension to this experiment is to use a taller core round which to place the ring. The force on the ring acts for longer, and so the ring rises higher when the current is switched on. (A greater impulse Ft = mv).
+
+> Staff should be competent, or trained, in the use of a demountable transformer. Coils and connections should be designed so as to minimise the risk of electric shock. Dry ice should only be made using a 'siphon' type carbon dioxide cylinder with a 'Jebfreezer' attachment or a thick cloth bag. Eye protection is needed and leather gloves should be worn. Pupils must not handle dry ice.
+>
+> Age range: 15-18
+>
+> Apparatus required: •Demountable transformer •Aluminium ring 'Carbon dioxide cylinder •Mains coil 'Mains power source 'Additional laminated straight core section •Leather gloves!
+
+### Electromagnetic induction analogy
+
+I use the following analogy when attempting to explain the production of an e.m.f. by the cutting of magnetic field lines. Imagine a cornfield with the combine harvester cutting the corn stalks. The cutting is more effective when the cutting edge is at right angles to the corn stalks. This is an analogy with the cutting of magnetic flux by a wire - it is more effective, and so generates a greater potential when the wire is moving at right angles to the field direction.
+
+Theory:
+
+EMF generated = BLvsin0 where 0 is the angle between the wire and the field lines, L the length of the wire, v the velocity of the wire and B the magnetic flux density.
+
+### Thickness measurement - inductance
+
+The loss of energy when two parts of the core of a transformer are separated can be used as a sensitive means of measuring thickness and also as a demonstration of this energy loss. Basically it is simply an a.c. electromagnet with two coils separated from its steel "keeper" by a number of sheets of paper. After calibration with paper of known thickness the voltage recorded in the secondary from a fixed primary voltage is used to measure the thickness of a sheet of paper. (Thanks to Kate for this idea from her A level coursework.)
+
+> Age range: 16-18
+>
+> Apparatus required: •Demountable low voltage transformer with removable core •Sheets of paper •AC voltmeter •Low voltage ac power supply
+
+### LED and coil - electromagnetic induction
+
+The basic experiment for demonstrating electromagnetic induction using a light bulb or a meter is very difficult to show as the current produced is usually too small to give a good effect.
+
+The following simple apparatus using two LEDs will make the effects much more obvious. Connect the two LEDs in parallel with each other but facing opposite directions and in series with the coil.
+
+Move the magnet backwards and forwards in the coil, and observe that not only does one LED light up as the magnet is moved, but the LEDs light alternately when the direction of motion of the magnet is reversed. This needs a strong magnet, a large coil and low current LEDs.
+
+Age range: 14-18 Apparatus required: 'Two LEDs (one red one green) •Magnet •Coil •Leads
+
+### Transformers - the action of a choke
+
+Set up a low voltage transformer with a laminated core and a step down ratio of 2:1. Put a low voltage a.c ammeter in the primary circuit. With the secondary circuit open the reading on the ammeter is almost zero, it is acting as a choke - induced currents in the primary reduce the p.d across it to almost zero. If a d.c supply is used the reading is high. Putting successively more bulbs (in parallel) in the secondary circuit will increase the current in the primary. Try using a soft iron yoke to complete the circuit of the core, and observe the effect on the brightness of the lamps.
+
+> Age range: 16-18
+>
+> Apparatus required: 'Low voltage transformer 2:1 'Low voltage a.c. ammeter ^0^ 2.5 V bulbs 'Low voltage power supply a.c and d.c •Leads
+
+### Falling magnet in a tube
+
+If you have never seen this one before then be prepared for a treat. It is a most impressive example of induced currents and relies on the magnetic field produced by a falling magnet in a tube acting so as to oppose the motion of the magnet so slowing down its rate of fall. Hold a 2 m long copper tube vertically, and drop a strong magnet down the tube. It takes over five seconds, compared with approximately 0.75 s when the same magnet is dropped down a plastic tube of the same dimensions. If the tube is cooled the resistance of the copper falls, the induced current is greater, and the magnet falls even more slowly.
+
+Allowing the magnet to slide down the tube when it is inclined at an angle to the vertical is almost more impressive - it takes nearly thirty seconds to emerge depending on the angle of tilt of the tube!
+
+(l have used the second version with the older pupils in a discussion of Galileo's diluted gravity experiment and the components of vectors.)
+
+> Theory:
+>
+> Lenz's law: Induced emf (e) = minus the rate of change of flux in the circuit or the flux acts so as to oppose the change producing it. E = -dd)/dt Therefore the induced currents flowing round the tube produce a magnetic field along its axis, which slows down the rate of fall of the magnet.
+>
+> Age range: 15-18
+>
+> Apparatus required: •Cylindrical neodymium magnet •Copper tube 2m long if possible •Plastic tube 2 m long •Stop watch
+
+### Aluminium plate under a swinging magnet
+
+Suspend a bar magnet by a thread so that it hangs horizontally above an aluminium plate, and start the magnet swinging. It will soon come to rest because of the induced currents in the plate. This is a simple example of eddy current damping.
+
+> Age range: 16-18 Apparatus required: •Magnet •Thread •Metal plate •Retort stand, boss and clamp
+
+### Detecting radiation
+
+Use yourself as an aerial to detect mains frequency! Connect yourself to a cathode ray oscilloscope by holding a lead inserted into the Y INPUT socket. Put your other hand near to or around an insulated mains cable that has a current flowing through it. The cable connecting the CRO to the mains is an obvious choice. (Reaching up towards a fluorescent lamp also works). You will see an a.c trace of frequency 50 Hz on the oscilloscope screen.
+
+Age range: 15-18 Apparatus required: •Oscilloscope
+
+### separator
+
+A small-scale simulation of an o electromagnetic separator used to separate non-ferrous metals from other non metallic scrap can be shown by the following experiment. Place a thin piece of card on the top of one arm of a U shaped core of a low voltage a.c. electromagnet. Put a few scraps of aluminium foil on the card. When the current is turned on they will be ejected from the field because of the eddy currents within them - see the jumping ring experiment.
+
+> Age range: 16-18
+>
+> Apparatus required: 'Electromagnet 'Low voltage a.c. power supply •Aluminium scraps (foil) 'Piece of thin card
+
+### Audio loop
+
+A simulation of the audio systems provided in some theatres for the hard of hearing can be produced by connecting the output of a portable, battery-powered CD player to a wire which is placed round the walls of the lab. The resistance of the wire loop should be made similar to that of the recommended speakers for your tape recorder. If the tape recorder is then set running the sound output signal can be detected with a second small coil connected to an amplifier placed anywhere within the lab together with a pair of headphones.
+
+> Do not interfere with the output from mains devices in this way. Using a battery-powered device prevents hazardous contact being made.
+>
+> Age range: 16-18
+>
+> Apparatus required: 'Portable tape recorder or CD player •Coil •Headphones •Large length of wire
+
+### Electromagnetic machine
+
+This is a lovely old type of device for treating various ailments. A full list of the ailments is supplied inside the lid. I would not like to put the probes where it is suggested in order to cure some of the ailments!
+
+The machine consists of a coil rotating near the poles of a magnet and is provided with two brass electrodes. They have one in the History of Science Museum in Oxford - I have actually managed to buy a similar model but don't dare to hold the electrodes!
+
+As the coil rotates a voltage is induced in the coil.
+
+> If you have one of these machines DO NOT use it on the pupils
+>
+> Age range: 15-19
+
+### Frequency of the mains
+
+The induced current in a wire moving in a magnetic field can be used to make a measurement of the frequency of the mains. A wire is fixed to the bench at one end, and then over two glass prisms while the other end passes over a pulley and is attached to a set of slotted masses.(Values between 200g and 500g are needed for lengths of wire between about 30 cm and 50 cm.) A large U shaped magnet is placed so that the wire passes between its poles, the wire is connected to a low voltage 50 Hz supply, and a current of about 4A is passed through the wire. Adjusting the tension of the wire can set it into resonance when its fundamental frequency equals that of the supply.
+
+> Limit the current to prevent the wire get hot enough to burn the skin especially when making adjustments.
+>
+> For a stretched wire the fundamental frequency (f) is given by the equation: f = where T is the tension in the wire and m is its mass per unit length
+>
+> Age range: 16-18
+>
+> Apparatus required:
+>
+> 'Large magnet (Field strength = 0.2 T)
+>
+> •Wire ^O^ G clamp 'Bench pulley
+>
+> •Set of IOOg slotted masses •Ruler •Two glass prisms •Low voltage ac Power supply
+
+### Eddy currents and the linear air track
+
+An interesting variation on the theory of eddy currents can be carried out using the linear air track. Mount a large U shaped magnet over the track between two light gates so that a rider can pass beneath it. Mount one of the aluminium foil absorbers from the radioactivity kit on the rider so that the foil can pass between the poles of the magnet. Now accelerate the rider along the track with a constant force (by using a weight over a pulley). As the foil passes between the poles of the magnet, eddy currents will be induced in it and electromagnetic braking will result. Investigate the size of the eddy currents produced for different thicknesses of foil.
+
+> Theory:
+>
+> Since the eddy currents act to oppose the motion, they reduce the acceleration of the rider.
+>
+> The effect of different resistances, and therefore different eddy currents, can be found by changing the foil absorbers and measuring the resulting change in the velocity of the rider using the light gates.
+>
+> Age range: 16-18
+>
+> Apparatus required:
+>
+> •Linear air track •Absorbers set •Pulley
+>
+> •Weight ^o^Thread •Blu tack •Light gate •Large U shaped magnet

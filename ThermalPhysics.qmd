@@ -1,0 +1,1150 @@
+---
+title: "ThermalPhysics"
+format: html
+---
+
+## Basic Theory
+
+### Key Concepts
+
+-   **Internal Energy (**$U$): Total of kinetic and potential energy of particles in a system.
+-   **Thermal Energy:** Energy due to random motion of particles; part of internal energy.
+-   **Heat (**$Q$): Energy transferred due to temperature difference.
+-   **Temperature (**$T$): A measure of average kinetic energy of particles.
+
+### Specific Heat Capacity
+
+Amount of energy required to raise the temperature of 1 kg of a substance by 1°C (or 1 K).
+
+$$
+Q = mc\Delta T
+$$
+
+Where: - $Q$ = thermal energy transferred (J) - $m$ = mass (kg) - $c$ = specific heat capacity (J/kg·K) - $\Delta T$ = change in temperature (K or °C)
+
+### Specific Latent Heat
+
+Amount of energy required to change the state of 1 kg of a substance without a change in temperature.
+
+#### a) Latent heat of fusion (melting/freezing):
+
+$$
+Q = mL_f
+$$
+
+#### b) Latent heat of vaporisation (boiling/condensation):
+
+$$
+Q = mL_v
+$$
+
+Where: - $L_f$ or $L_v$ = specific latent heat (J/kg)
+
+### Methods of Heat Transfer
+
+#### a) **Conduction**
+
+-   Transfer through collisions of particles in solids.
+-   Thermal conductivity ($k$) determines rate of transfer: $$
+    \frac{Q}{t} = \frac{kA\Delta T}{d}
+    $$ Where $A$ = area, $d$ = thickness
+
+#### b) **Convection**
+
+-   Transfer through fluid motion (liquids/gases).
+-   Warmer, less dense regions rise; cooler, denser regions sink.
+
+#### c) **Radiation**
+
+-   Transfer via electromagnetic waves (usually infrared).
+-   No medium required.
+
+**Stefan-Boltzmann Law** (for blackbody radiation): $$
+P = \sigma A T^4
+$$ Where: - $P$ = power radiated (W) - $\sigma$ = Stefan-Boltzmann constant - $T$ = absolute temperature (K)
+
+### Ideal Gas Equation
+
+Relates pressure, volume and temperature of an ideal gas:
+
+$$
+pV = nRT
+$$
+
+Where: - $p$ = pressure (Pa) - $V$ = volume (m³) - $n$ = number of moles - $R$ = gas constant ($8.31\,\text{J/mol·K}$) - $T$ = absolute temperature (K)
+
+### Kinetic Theory of Gases
+
+-   Gas pressure arises from particles colliding with container walls.
+-   Average kinetic energy of a particle: $$
+    \langle E_k \rangle = \frac{3}{2} k T
+    $$ Where $k$ = Boltzmann constant ($1.38 \times 10^{-23}\,\text{J/K}$)
+
+### First Law of Thermodynamics
+
+Conservation of energy in thermal systems:
+
+$$
+\Delta U = Q - W
+$$
+
+Where: - $\Delta U$ = change in internal energy - $Q$ = heat added to the system - $W$ = work done **by** the system
+
+### Summary Table
+
+| Quantity                  | Formula                               | Units |
+|---------------------------|---------------------------------------|-------|
+| Heat (temp. change)       | $Q = mc\Delta T$                      | J     |
+| Heat (state change)       | $Q = mL$                              | J     |
+| Ideal Gas Law             | $pV = nRT$                            | Pa·m³ |
+| Avg. kinetic energy       | $\langle E_k \rangle = \frac{3}{2}kT$ | J     |
+| 1st Law of Thermodynamics | $\Delta U = Q - W$                    | J     |
+| Stefan–Boltzmann Law      | $P = \sigma A T^4$                    | W     |
+
+## Stories to enritch
+
+### The Caloric Theory and Its Fall
+
+In the 18th century, scientists believed in a fluid called “caloric” that flowed from hot to cold objects. This explained heat transfer but couldn’t explain certain phenomena, like why friction produces endless heat. Eventually, the caloric theory was replaced by the kinetic theory, marking a major scientific shift.
+
+Reflection: How do scientific theories evolve when new evidence challenges old ideas?
+
+### Rumford’s Cannon-Boring Experiment
+
+Benjamin Thompson (Count Rumford) noticed endless heat was generated while boring cannons, despite no loss of material. He argued heat wasn’t a fluid but caused by particle motion, hinting at the kinetic theory of heat. His work helped debunk the caloric theory.
+
+Reflection: How did practical observation lead to new ideas about heat?
+
+### Joule’s Mechanical Equivalent of Heat
+
+James Joule measured how much mechanical work was needed to produce a certain amount of heat. His precise experiments showed heat and work are interchangeable forms of energy, helping to establish the first law of thermodynamics. He quantified the relationship between mechanical energy and heat.
+
+Reflection: Why is it important that energy is conserved across different forms?
+
+### The Discovery of Absolute Zero
+
+Scientists noticed gases shrink as temperature decreases and theorized a lowest possible temperature where particles stop moving—absolute zero (0 K). This concept set a fundamental limit in thermal physics and inspired new temperature scales. Absolute zero marks the point of minimum thermal energy.
+
+Reflection: What does it mean for particles to have zero thermal motion?
+
+### Carnot’s Heat Engine and Efficiency
+
+Sadi Carnot imagined an idealized heat engine operating between two temperatures. His work laid the foundation for thermodynamics by defining maximum possible efficiency and the concept of entropy. This transformed heat engines and industrial power.
+
+Reflection: How does understanding heat flow help us design better engines?
+
+### The Strange Behavior of Superfluids
+
+At extremely low temperatures, helium behaves as a superfluid with zero viscosity, flowing without resistance. This discovery challenged classical ideas of fluids and opened new research into quantum thermal effects. Superfluids blur the line between classical and quantum thermal physics.
+
+Reflection: What surprises arise when matter is cooled to near absolute zero?
+
+### The Greenhouse Effect and Climate Science
+
+Scientists discovered that certain gases trap heat radiated from Earth’s surface, warming the planet—key to understanding climate change. Thermal physics principles explain how energy transfer in the atmosphere controls temperature. This links thermal physics to global environmental issues.
+
+Reflection: How does heat transfer affect our planet’s climate?
+
+### Fourier’s Heat Equation and Heat Flow
+
+Jean-Baptiste Fourier developed mathematical descriptions of heat conduction, showing how temperature changes spread through materials. His equation is fundamental to understanding thermal energy transfer in solids. Mathematics made heat predictable and calculable.
+
+Reflection: Why is modeling heat flow important in engineering and nature?
+
+### The Boltzmann Constant and Statistical Mechanics
+
+Ludwig Boltzmann connected temperature to the statistical behavior of particles. His work underpins how microscopic motions translate into macroscopic thermal properties like temperature and pressure. He bridged particle physics with classical thermodynamics.
+
+Reflection: How do countless tiny particles create the thermal world we observe?
+
+### The Evolution of Thermometers
+
+From mercury to digital sensors, the quest to measure temperature precisely has driven innovation. Early thermometers were crude, but advances allowed accurate measurement crucial to science, medicine, and daily life. Temperature measurement shapes our understanding of heat.
+
+Reflection: How does measuring thermal energy help us make better decisions?
+
+## Practical work and Demos
+
+EXPANSION OF SOLIDS AND LIQUIDS
+
+> General theory for this section
+>
+> When a material gets hot it expands this is because the molecules in it are moving about more vigorously and so need more room.
+>
+> As a solid is heated the molecules vibrate more violently and the solid expands in all directions. The longer it was to start with and the greater the temperature rise the more the solid expands. Different materials expand by different amounts for the same rise in temperature. The amount of expansion depends on:
+
+(a) what material it is
+
+(b) how big the temperature rise is
+
+(c) how long it was to start with
+
+> All liquids expand more than all solids. The volume of the liquid gets greater as it is heated. The greater the rise in temperature the more it expands. The actual change in shape of the liquid depends on the shape of the container that it is in.
+
+### 1. Expansion of metal
+
+Hold a long strip of aluminium cooking foil horizontally and tightly between two clamps. Heat it from beneath with some candles - significant sag can be produced. (Compare this with the hot wire ammeter.)
+
+A thought-provoking question is the washer problem. If you take a metal washer and heat it, does the hole in the centre get bigger or smaller? It gets larger, since all parts of the metal expand, but those parts nearest the centre expand least.
+
+Uses and effects of the expansion of solids:
+
+rivets, telephone wires, railway lines, buildings, bridges, clock pendulums, tarmac-filled gaps in concrete motorways.
+
+> Apparatus required:
+>
+> •Two retort stands, bosses and clamps 'Candles or Bunsens 'Strips of aluminium foil
+
+### 2. Jumping metal discs
+
+Bimetallic discs can be purchased from a number of firms advertising on the internet. If you press the silvery back convex face it clicks so that this face becomes the inner or concave face. This configuration is unstable and it returns to the original shape. However, if the disc is warmed by rubbing it between your fingers or putting it in hot water it will remain stable in the new shape for a while. If it is now left on a flat surface it flexes and jumps in the air as it cooled down. The discs are bimetallic in structure --- one face being nickel and the other stainless steel. Age range: 11-18 Apparatus required: Bimetallic discs solids liquids
+
+### 3. Iron rod in projector - expansion of metals
+
+A very simple way to demonstrate the expansion of metals is to put a steel rod in a projector beam (brass or copper will do as well, of course). A rod of about 50 cm in length and with a diameter of about 0.75 cm works well although the size is not critical. You will need the old type of projector, and the end of the rod should be placed where the slide carrier was. The projector is switched on so that it projects a magnified shadow of the rod on to a screen a few metres away. Make a mark on the screen at the end of the shadow. Heat the rod, and watch it expand by observing the movement of the end of the shadow.
+
+> Ensure that the end of the rod being heated in the Bunsen flame is to one side of the slide carrier to avoid damaging the projector body or shattering of the lenses.
+
+This can be used as a simple demonstration or, if more detail is needed, measurements can be made of the magnification of the projector (width of shadow/width of rod) and a guess made at the average temperature rise of the rod to give the coefficient of linear expansion of the metal. Also show that when the rod cools down it will return to its original length - make sure nobody knocks into the bench!
+
+Steel rod Shadow of rod
+
+> Theory:
+>
+> Expansion of a metal bar of length L heated by 0 ^o^c = Lao where u is the coefficient of linear expansion of the metal (about 10 ^5 o^c ^I^ for most metals)
+>
+> Age range: 11-13 or 16 with measurements and calculations
+>
+> Apparatus required: •Projector •Metal rod •Retort stand and clamp 'Ruler
+>
+> •Bunsen
+
+### 4. Expansion of a liquid
+
+Take a round-bottomed flask and fill it to the brim with coloured water. Take a 1-2 m long piece of capillary tubing, push one end into a rubber bung and push the bung into the top of the flask. Observe the expansion of the liquid when the flask is heated. If you watch carefully it is interesting to see that initially the level of the liquid falls. The glass expands first, but since it is a bad conductor of heat it takes a while for the heat to pass through to the liquid, raise its temperature and so cause it to expand.
+
+> Age range: 11-13
+>
+> Apparatus required: •Round-bottomed flask and bung with hole •Capillary tubing
+>
+> 'Bung 'Bunsen ^o^ Tripod •Retort stand, boss and clamp 'Heat-resistant mat
+
+### 5. The expansion and contraction of glass
+
+In a desert the temperature at night falls rapidly as the sun goes down --- the outside of the rocks cool, and since the inside is still warm (and large) the outer layers attempt to contract but are prevented from doing so by the inner part of the rock beneath them and so flake off. This can be shown by experiments with hot glass and cold water.
+
+(a) Heat a glass rod in a Bunsen flame, and then plunge it into a beaker of cold water the glass shatters
+
+(b) Heat a glass marble in a Bunsen flame using a pair of tongs and then drop it into a beaker of cold water --- the marble shatters. It falls below the water surface before shattering!
+
+> Use safety screens to protect both teacher and pupils. The teacher should also wear goggles, and use a leather glove to hold the glass rod. The shattered glass should be disposed of carefully.
+>
+> Age range: 11-14
+>
+> Apparatus: •Glass rod •Beaker of cold water •Safety screen and goggles •Marbles •Tongs •Bunsen
+
+[6.]{.underline}
+
+[Expansion]{.underline}
+
+[of]{.underline}
+
+[a]{.underline}
+
+[solid]{.underline}
+
+[rod]{.underline}
+
+Use half a drinking straw to make a pointer. Set up the apparatus as shown above with the scale behind the pointer. Record the position of the end of the straw pointer against the scale. Heat the rod with the Bunsen burner and observe what happens to the pointer. Record the position of the pointer on your scale after a few minutes heating.
+
+By the movement of the pointer you can see that the rod has expanded.
+
+To get a rough idea of how much it has expanded you will need to find out the circumference of your needle and measure the amount of rotation. The diameter of the needle will probably be about 3mm, but you will have to measure it.
+
+> Age range: 11-14
+>
+> Apparatus required: •Metal rod (one from a retort stand would be suitable) •Scissors ^o^ lkg mass
+>
+> •Bunsen burner and two heat-resistant mats 'Retort stand, boss and clamp ^O^ G clamp •Needle •Straw
+>
+> •Wood block •Piece of card for making a scale •Protractor •Micrometer screw gauge
+
+solids liquids
+
+### 7. Bi-metallic strip - heating and cooling
+
+A bi-metallic strip made of two metals welded together is an excellent way of demonstrating the different coefficients of thermal expansion of different metals. It will bend when heated with the metal that expands the most (brass in the case of a brass-iron strip) on the outside of the curve. An alternative demonstration with the bi-metallic strip is to put it in a fridge (or in a cooling mixture of ice and water). The strip will bend with the brass layer on the inside, showing that brass also contracts more than iron. Point out that it is the change of temperaturethat matters.
+
+> Age range: 11-13
+>
+> Apparatus required: ^0^ Bi-metallic strip in holder or a pair of tongs
+>
+> •Bunsen
+
+### 8. Interesting temperatures
+
+The diagram shows some interesting temperatures from absolute zero at -273 ^o^c to 6000 ^o^c --- the temperature of the surface of the Sun.A useful exercise with younger pupils would be to make a large map of the world and mark on the hottest and coldest temperatures at different places.
+
+> Theory note:
+>
+> !Absolute zero is ---273.15^0^C. This is the coldest that it is possible to get. It is the temperature at which all molecular motion stops --- the entropy reaches its minimum value. The temperature scale starting at absolute zero is called the Kelvin scale of temperature. O^O^C = 273 K, 100^0^C = 373 K.
+>
+> Age range: 7-18
+
+## CONDUCTION OF HEAT
+
+General theory for this section:
+
+Hot
+
+energy
+
+molecular
+
+> Conduction occurs by the transfer of energy through a material by the collisions of molecules. In metals conduction is further increased by the free electrons carrying energy from places of high temperature to those at a lower temperature.
+>
+> Atom (or molecule)
+
+### 1. Espresso coffee/or beer - conduction in foam
+
+My wife and I were sitting on Waterloo station about to drink a cup of really frothy espresso coffee when she looked at the foam on the top and said, "l suppose that helps to keep it hot!"
+
+Indeed, the thick layer of foam on a cup of espresso coffee helps to insulate the liquid below it! There is a considerable amount of air in the foam, which makes an insulating blanket.
+
+An extension of this would be to investigate the cooling of the same mass of frothy coffee and non-frothy coffee - both starting from the same initial temperature in the same sized beakers.
+
+> Age range: 11-13
+>
+> Apparatus required: •Frothy coffee •Non-frothy coffee! •Beakers •Thermometers
+
+[2.]{.underline}
+
+[Sweaters]{.underline}
+
+As
+
+a
+
+demonstration
+
+to
+
+put
+
+pullovers,
+
+more
+
+You
+
+could
+
+the
+
+layers
+
+Age
+
+range:
+
+Apparatus
+
+•..-unuucuutl neat
+
+### 3. Thermal conductivity of water
+
+The poor thermal conductivity of water can be shown by putting a piece of ice in the bottom of a test tube and holding it in place with a piece of copper gauze wedged above it in the tube. Fill the rest of the test tube with water and heat it at the top until it boils. Due to the poor conductivity of water the ice at the bottom remains solid even though the water is boiling at
+
+Age range: 11-13 \> \> Apparatus required: 'Piece of ice 'Test tube •Water •Bunsen 'Tongs •Heat resistant mat •Metal gauze
+
+### 4. Baked Alaska
+
+This tasty dessert shows the insulation effects of the air within the meringue. As the meringue cooks the air pockets within it form an insulating blanket and the ice cream within it does not get hot enough to melt as long as the cooking is fairly rapid.
+
+### 5. Thermochromic paint for conductivity
+
+This specialist paint can be used to paint different metal rods in a variation of the simple conductivity experiment. In the simple experiment two rods of different metals are held in a Bunsen flame and their conductivity is compared by the pupils seeing which one they have to put down first before it gets too hot. This one has the highest thermal conductivity. To avoid burns simply paint the rods with the thermochromic paint, hold them in a non-conducting (wooden) clamp, and watch the change in colour of the paint.
+
+> Show pupils how to deal with minor burns by using running cold water for a few minutes.
+
+Another version is to use heat sensitive paper. The paper will turn blue as it gets hot. Place a piece of the heat sensitive paper on a tripod; the rods from the earlier experiment can then simply be rested on it while their other ends are heated with a roaring Bunsen flame. The rateat which the paper in contact with the rods turns blue gives a good comparison of their thermal conductivity.
+
+Age range: 11-13 \> \> Apparatus required: •Conductivity rods kit (rods of brass, aluminium, copper, iron, zinc and glass) \> \> •Bunsen •Tripod •Heat-resistant mats (2) •Thermochromic paint •Heat sensitive paper
+
+### 6. Line of pupils - conduction
+
+This analogy shows conduction along a solid rod. The transfer of energy occurs by the vibration of molecules. Each molecule stays where it is and simply vibrates - it is the energy that is transferred down the rod. Ask the pupils to stand in a line and link arms. Then shake the line at one end. The vibration of the pupil at the end is transmitted along the line until the one at the other end is moving. Don't shake them so hard that they fall over! This simple demonstration refers to a non-metal solid. The ingenious teacher might be able to devise a way of showing conduction in a metal where much of the energy transfer is due to free electrons. If you are really brave take the group of pupils to the gym or sports hall and get them to kick a large number of footballs about --- not recommended in the Physics laboratory!
+
+Conduction of heat
+
+#### 7. Conductivity of air
+
+Hold your hands carefully on either side of a roaring Bunsen flame - you feel virtually no heat since the transfer of heat from the flame to your hands in this position is only due to the conduction of heat through the air. This demonstrates very simply that air is a very poor conductor of heat. It feels much hotter if they are held above the flame, showing the principles of convection - air expands when it is heated, its density goes down and so the hot air rises!
+
+> Candle flames may be less hazardous. Show pupils how to deal with minor burns by using running cold water for a few minutes.
+
+Age range: 11-13 Apparatus required: 'Bunsen or candle •Heat resistant
+
+### 8. Lifting up a flame and copper gauze on chip pan - conduction in gauze
+
+This experiment clearly shows the high thermal conductivity of copper and also the need for gas to be at a sufficiently high temperature before it will burn. Light a Bunsen and hold a piece of copper gauze over the outlet and resting on top of the Bunsen tube - the flame burns through it. Then gently lift the gauze - the flame comes up with it, burning above the gauze and leaving an area of un-burnt cooler gases below it. The heat is conducted away from the gauze and into your hands, leaving the gases below the gauze too cold to catch fire. As long as you don't hold on too long you can support the gauze with your hands.
+
+It
+
+is
+
+a
+
+very
+
+good
+
+demonstration
+
+of
+
+how
+
+the
+
+traditional
+
+> Age range: 11-13
+>
+> Apparatus required: •Bunsen or candle •Piece of copper gauze 'Heat resistant mat
+
+#### Insulation
+
+The insulating properties of asbestos are described in a nineteenth-century Physics textbook written in French by Ganot in 1850. Apparently, by using a layer of asbestos in their hands men could "lift red-hot iron balls without inconvenience"! Clearly they did not know of the dangers of asbestos then.
+
+Heat resistant tiles --- Apollo 10
+
+> Conduction of heat
+
+### 10. Wooden rod and copper tube
+
+This is a very good demonstration of differing thermal conductivities. The apparatus consists of a copper tube, one end of which fits tightly round a wooden rod. A piece of paper is wrapped tightly around the join of the wood and the copper, and the paper over the join is heated gently in a Bunsen using a clear blue flame. The rod should be rotated during heating to stop the paper catching fire. The paper will blacken over the poorly conducting wood while staying undamaged over the better conducting copper.
+
+A very good comparison between the conductivities of two materials can be made by wa Iking in bare feet on a carpet and then on a tiled floor. Although both are at the same temperature it feels colder on the tiled floor since the tiles are a better conductor than the carpet and so heat energy is transferred from your feet to the floor.
+
+Age range: 11-13 Apparatus required: •Bunsen •Heat resistant mat •Composite wood/copper rod
+
+> [11. Good and bad conductors of heat energy]{.underline} Good conductors:
+
+Copper Heating appliances, boilers, fire tubes in steam engines, tip of soldering iron Aluminium Cooking utensils
+
+Iron/Steel Shaped into fins to give a large surface area for cooling in air-cooled engines
+
+### 12. Melting ice cubes
+
+Take two tiles of identical dimensions, one metal and one wood, both painted matt black to look the same and both at room temperature. Get a student to come out and touch both tiles and say which feels colder (the metal one). Don't let them hold the tile. Now take two ice cubes of the same size, and put one on each tile, inside a rubber ring to catch the drips. Ask the students which will melt more rapidly. The ice cube on the metal tile melts extraordinarily fast - almost all gone in about a minute.
+
+> Theory:
+>
+> The metal is the better conductor; hence it feels colder but conducts heat from the surroundings to the ice cube, so melting it faster.
+
+Age range: 11-16 Apparatus required: • Two matt black painted tiles •Two ice cubes
+
+### CONVECTION
+
+General theory for this section
+
+This section deals with convection currents in fluid. These may be either liquids or gases.
+
+Most people remember the phrase ^I^l-lot air rises', but why does it?
+
+Convection currents occur because a fluid expands when it is heated. This expansion reduces its density so the low-density fluid will rise through that of higher density. Convection is therefore caused by the movement of the more energetic molecules from one place to another.
+
+#### 1. Christmas table decoration
+
+This uses a lovely wooden table decoration that is widely available. Around the base is a set of candles and at the top is a wooden rotor with a series of large angled blades. The rotor is fixed to a rotor to which figures and animals are attached. Hot air rising from the set of candles turns the rotor that rotates the whole display. Would it work in a gravity-free environment?
+
+Apparatus required: •Table decoration and candles 'Matches
+
+#### Convection: a cardboard serpent
+
+Cut a paper, card or foil snake-like coil and suspend it by a thread above a light bulb. The rising hot air will rotate the coil giving a simple but effective demonstration of convection in a gas. Heat energy expands the air, thus lowering its density; this lower density air then rises. Age range: 11 -14
+
+Apparatus required: •Paper serpent ^o^Thread 'Stand •Light bulb in a holder ocard.
+
+(l have found that a circle of card about 5 cm across cut into a spiral works well if you cut it into a spiral with arms about 1.5 wide leaving a disc In the middle to attach the thread.)
+
+#### 3. Heat loss from young animals: the effect of surface area
+
+We used to estimate the surface area of a small mammal by wrapping it in a paper tube maybe not suitable these days but we can still compare the surface area to mass ratio for young and old animals. You can extend this to the calculation of surface area to mass ratio. For example a !sphere has the smallest surface area to mass ratio for a given volume.
+
+A set of wooden blocks can be made into a tall thin person or a short fat one - the tall thin one has the greatest surface area and would therefore lose heat most rapidly from the surface. The surface area of a pupil can be found approximately by wrapping them in sheets of newspaper,
+
+Try boiling some potatoes and measuring how rapidly they cool, some being cut into small pieces. The smaller ones have the greatest surface mass ratio and so cool the quickest.
+
+> convection
+
+##### 4. Convection in a flame
+
+The convection currents in a flame can be seen by casting a shadow of it on a screen. Candles and a Bunsen with a blue non-roaring flame work well if you use a projector to show the movement of the low density air above the flame.
+
+> Age range: 11-16
+>
+> Apparatus required: •Bunsen •Heat-resistant mat •Projector.
+
+##### 5. Convection currents
+
+Convection currents in liquids can be easily shown with potassium permanganate crystals in water. You can do this in a beaker of water or use the special rectangular test tube available from the manufacturers.
+
+Simply drop some crystals into the water near to one side of the beaker, They will fall to the bottom, but if the beaker is now heated at the base on the opposite side the colour will be drawn across and rise up that side.
+
+If you use the rectangular tube, drop a few crystals in the top and then heat one bottom corner. The crystals dissolve and the colour moves round the tube, showing the convection currents in the water. 'Catching' the moving colour by moving the Bunsen enables you to change its direction.
+
+A suspension of aluminium paint in water is an alternative technique and more long-lasting, because with the potassium permanganate the water simply turns pink after a while and no convection can be observed.
+
+> Potassium manganate (VII) is harmful, and skin contact should be avoided. The solution is low hazard.
+>
+> Age range: 11 -14
+>
+> Apparatus required: •Beaker or rectangular test tube •Bunsen •Potassium permanganate crystals •Heat-resistant mat.
+
+##### 6. Falling candle
+
+This intriguing demonstration shows what happens when the effects of convection are 'cancelled out'. A candle is fitted to the inside base of a tin; the candle is now lit, and the tin is dropped. The tin should be big enough to provide enough oxygen, but the flame still goes out.
+
+> Theory: Since the can and candle are in free fall, one of the conditions for convection does not apply - that is, although the hot waste gases in the candle flame have expanded they do not rise away from the flame since they and the flame are both falling. This means that there is no convection in the can. The candle therefore tries to burn in its own waste products and fails. Helen Sharman tells of how she had to sleep in a draught from a fan in the Russian spacecraft so that she didn't suffocate in her own exhaled breath. Michael Foale had a similar experience in Mir.
+>
+> Age range: 11-14
+>
+> Apparatus required: 'Tin can •Candle •Matches 'Protection for the floor (a piece of old carpet) Convection [7. Convection in the high chimney and the double chimney]{.underline} (a) This experiment shows the effect of convection in a high chimney. Use a tall metal tube to show the convection currents in a chimney. (l use a piece of metal pipe about 1.5 m long and some 10 cm in diameter.) A Bunsen burner (or a candle) should be placed at the bottom of the chimney and if small pieces of paper are introduced into the flame they will be shot out of the top of the chimney by the rising air currents. It always reminds me of when I put our first Christmas tree on to the fire in our flat at the bottom of a four storey block! The convection currents were enormous, and it 'went up like a torch' - not to be recommended! (b) Another nice demonstration uses the commercially available double chimney - simply a glass-fronted box with two glass chimneys in the top with a candle below one of them. If the candle is lit convection is created; hot air rises out of one side and draws cold air in at the other. A smouldering taper held over the chimney without the candle will show the smoke being drawn down into that side and ejected at the other by the hot air currents.
+
+A further variation of this is to put a candle on the bench, light it and lower a large glass tube (0.5 m long and at least 5 cm in diameter) down over the candle so that it touches the bench. The candle soon goes out due to lack of oxygen. Repeat the experiment, but this time lower a metal plate down the centre of the tube so that it hangs over the candle flame. The flame stays alight; hot gases escape up one side of the plate and fresh air is drawn down the other.
+
+> Age range: 11-14
+>
+> Apparatus required: •Metal chimney •Retort stand, boss and clamp •Double chimney apparatus •Candles •Bunsen •Matches.
+
+###### 8. Convection in the home
+
+The following list gives you some idea of where convection is important in the home: Cooking in hot water
+
+Christmas decorations ---a candle under a mobile
+
+Convector heater --- hot air rises through the heater
+
+Central heating boiler
+
+Immersion heater at the bottom of a hot water tank
+
+Kettle with the element at the bottom
+
+Cold air convecting off the outside of windows
+
+Air movement in cavity walls before putting foam insulation in Radiators --- they work by air convection and not by radiation
+
+Chimney to an open fire or a boiler
+
+Chest freezer --- it does not matter too much if you open the top for a little while because the colder air will sink to the bottom of the freezer.
+
+> Convection
+
+##### 9. Convection and a tea bag
+
+This is a fun experiment to demonstrate convection especially if you use the EIO note! Take a rectangular tea bag, cut off the end with the string, unfold it, and remove the tea. Shape the bag into a cylinder and stand it on a sheet of paper on the bench (a heat resistant mat underneath the paper is not really necessary but might be a good idea the first time you try this).
+
+Set light to the top of the bag and wait.
+
+The flame will burn downwards, sending a fine stream of ash into the air. As the flame nears the paper the tea bag continues burning, but by this time the upward convection current is sufficient to draw the last remnants of the bag upwards and they simply float away, leaving the ! paper untouched.
+
+Replacing the sheet of paper with a EIO note makes the demonstration even more exciting but if you do so it is at your own risk!
+
+> Age range: 11- Adult
+>
+> Apparatus needed: 'Tea bag •Matches •Heat resistant mat 'Sheet of paper 'EIO note --- OPTIONAL!
+
+##### 10. A lava lamp
+
+This is a commercial lamp. As it warms up the material in the liquid rises and falls, showing beautiful convection currents as its density changes. Thus is rather like Galileo's thermometer in some ways. (See Density, Upthrust and Archimedes, experiment 9.)
+
+> Apparatus required: •Lava lamp
+
+##### 11. Three candles
+
+Set up the three candles on a beehive shelf over water. The candles should be of significantly different lengths.
+
+Light all three candles, cover them with a large beaker, and wait to see which goes out first.
+
+.
+
+> Theory
+>
+> Although the emitted carbon dioxide is heavier than air when it is at the same temperature it is also hotter in this experiment and so convection currents take it to the top of the beaker so putting out the tallest candle first.
+>
+> Age range: 11-14
+>
+> Apparatus required: ^o^ Three candles •Beehive shelf •Dish •Large beaker •Matches
+
+### HEAT RADIATION
+
+> General theory for this section:
+>
+> The range of infra-red radiation is from roughly 750 nm to 10 000 nm (7.5x10-7 m to 10-5 m or one hundredth of a millimetre). Long wave heat radiation will not pass through glass. Hot metal objects will start to glow when they reach a temperature of around 500 ^0^C.
+>
+> Black surfaces emit and absorb heat radiation better than shiny white ones. Shiny surfaces are the best reflectors.
+
+> Distribution of energy Ex
+
+1.  Radiation - aluminium tape
+
+2.  TV and stereo remote controller
+
+3.  Greenhouse effect
+
+4.  Crookes ^t^ Radiometer
+
+> 5, Thermoscope - radiation detector!
+>
+> 6, Radiation and thermometers
+
+7.  Absorption of radiation
+
+8.  Heat radiation
+
+500 1000 wavelength (X) nm
+
+#### 1. Radiation - aluminium tape
+
+Take a 1 m length of aluminium tape, a strip of aluminium foil will do, and blacken both sides of it except for a length of 5 cm in the centre. Pass a current through it - you will probably need up to 8A. Although initially the blackened sections will give off some smoke this is just due to the soot. Eventually the shiny section will become red hot and melt - showing that it does not radiate so well and so its temperature rises.
+
+> Demonstration only. Do not allow the pupils to do this.
+
+Age range: 11-13 Apparatus required: •Low voltage power supply •Clamps and crocodile clips
+
+> •Long strip of aluminium foil blackened with soot
+
+#### 2. Infra-red radiation - the TV(stereo remote controller
+
+In the TV remote control device we have an ideal focused beam of infra red radiation, This can be used to study:
+
+(a) the absorption of infra red by glass and plastic!
+
+(b) the reflection of infra red from flat and rough surfaces
+
+(c) the diffraction of infra red through a narrow slit --- it is left for the reader to decide what would be a "narrow slit" for infra red radiation! The best detector that I know for infr-red is a small TV camera. Connect the camera to a colour TV receiver and point the TV remote controller towards it, focussing the camera to give a clear image on the screen. Now press any of the buttons on the remote controller. Although you cannot see any radiation emitted by the controller the camera will pick up the infrared and a bright flash will appear on the TV screen! My eighteen-year-old students have queried the colour of this light!
+
+> Age range: 15-18
+>
+> Apparatus required:
+>
+> •TV remote controller •Glass 'Plastic •Metal sheet 'Narrow slit 'TV camera and television!
+
+> Heat radiation
+
+##### 3. Greenhouse effect
+
+For this simulation you need a clear plastic sandwich box, two thermometers and a sunny day. Place one thermometer in the box and the other in the sun on the ground outside it, preferably sheltered from draughts. Leave them for an hour and observe the effects on the thermometers. (The rise in temperature is partly due to the inability of the trapped air to escape by convection.)
+
+> Theory:
+>
+> The greenhouse effect occurs because the radiation emitted by the Sun (with a surface temperature of 6000 ^0^C) has a spread of wavelengths which peak in intensity at around 500 nm, and this radiation can penetrate clouds of methane, water vapour, carbon dioxide, nitrous oxide and CFCs in the atmosphere. However, when the solar radiation falls on the ground it only raises its temperature to around 20 ^0^C. The radiation emitted from an object at this temperature has a peak of around 12 mm (12000 nm) and this longer wavelength cannot penetrate the gaseous clouds, or in this case the plastic. The air below therefore heats up!
+>
+> Age range: 10-16
+>
+> Apparatus required: •Sandwich box •Two thermometers.
+>
+> (You might need a radiant heater if there is no Sun)
+
+####Crookes^t^ Radiometer
+
+This is an excellent piece of apparatus for demonstrating that dull black surfaces absorb heat radiation better than shiny ones. The glass bulb is filled with low pressure air and as radiation falls on the vanes the black surfaces absorb more radiation than the silvered ones, the air near them heats up expands and so pushes the vanes round.
+
+Try placing a sheet of glass or a beaker of water between the heat source (a small electric fire, candle, light bulb or Bunsen burner) and the radiometer and investigate the effect of these materials on the transmitted infra-red radiation.
+
+> Age range: 11-13
+>
+> Apparatus required: •Crookes' radiometer 'Heat source •Glass •Beaker of water
+
+##### 5. Thermoscope - radiation detector
+
+This is made from two glass bulbs - round flasks will do - joined by glass and rubber tubing and partly filled with water. One flask is blackened, the other is silvered with aluminium paint, and a lamp is placed in between them. Due to the different amounts of absorption of radiation by the two flasks one gains more heat energy than the other, the vapour pressure inside the black one increases more rapidly and water moves along the glass tube from the black to the shiny bulb. You used to be able to buy them with ether inside, and this works much better because of the volatile nature of ether, but it is not safe to make one up in the lab because thexethylene (ether) is extremely flammable, its heavy vapour spreads rapidly and may be ignited by a flame or spark some distance away.
+
+radiation
+
+#### 6. Radiation and thermometers
+
+The different amount of absorption of heat radiation by different surfaces can be studied using the following simple experiment. Take two thermometers, blacken the bulb of one of them with soot or black paint and then place them both in boiling water. When the temperatures of both has reached 100 ^o^c (or as near as possible depending on the boiling point of water that day) take them out quickly and fix them in clamps in the air. Observe the rate of cooling. The blackened one will cool much more rapidly, showing that black surfaces emit heat better than shiny ones. The absorption of heat by black surfaces is very obvious when walking round a swimming pool on tiles. The darker-coloured ones absorb more heat energy from the Sun and so get hotter - they can be too hot to step on in bare feet!!
+
+> Age range: 11-16 Apparatus required:
+>
+> ^o^Two thermometers - one blackened with soot or black paint •Retort stands, bosses and clamps
+>
+> •Boiling water
+
+#### 7. Absorption of radiation
+
+This experiment shows that different coloured surfaces absorb heat radiation at different rates.
+
+Take four equal sized plastic beakers, and fill them with the same amount of coffee (liquid) but of different concentrations from very strong to very weak. Allow them to reach room temperature and then put them out in the Sun. (Use an infra red heater if it is a cloudy day!)
+
+Use a thermometer to record the rise in temperature of each beaker as time passes. The very concentrated (darker) solution should rise in temperature faster than the weaker one.
+
+> Age range: 11-16
+>
+> Apparatus required: •Coffee 'Plastic beakers •Thermometer Infra red lamp (optional)
+
+##### 8. Heat radiation ---things to talk about
+
+1.  Radiators in houses are actually convector heaters. They do not actually radiate very well; but they ought to be painted black.
+
+> Car radiators usually are a dark colour so that they can get rid of the heat efficiently.
+
+2.  Aluminium foil is sometimes put behind radiators to reflect the heat out into the room.
+
+3.  A vacuum flask has shiny surfaces on the vacuum side to prevent heat loss.
+
+4.  White clothes are worn in summer as they reflect the heat better than dark ones.
+
+5.  The reflector behind an electric fire should be kept clean so that it will reflect the heat well.
+
+6.  Spacecraft have shiny surfaces to reflect the radiation from the Sun.
+
+7.  Highly polished teapots will keep hot longer as their surfaces do not give out heat so well.
+
+8.  White-washed buildings will keep cooler in hot weather than darker ones.
+
+## HEAT ENERGY
+
+General theory for this section:
+
+> When heat energy is applied to an object its temperature rises.
+>
+> Heat energy = mass (m) x specific heat capacity (c) x change in temperature (9)
+>
+> (Energy is in joules, mass is in kg, temperature in ^o^c and specific heat capacity in Jkg ^IO^C ^1^) When a substance changes its state, energy is needed to do this.
+>
+> Specific latent heat of vaporisation (heat needed to change 1 kg of the liquid into vapour)
+>
+> Specific latent heat of fusion is the heat energy needed to change the state of 1 kg of solid into a liquid Using an electrical heater: Energy input = Power x time = Vlt = (V^2^/R)t
+>
+> SPECIFIC HEAT CAPACITY
+
+> SPECIFIC HEAT CAPACITY
+
+### 1. Power of a Bunsen burner
+
+This experiment acts as a useful introduction to work on specific heat capacity. Heat a known amount of water (say about 1.5 kg) in an aluminium saucepan for a known time (three to five minutes), and measure the temperature rise. Knowing the amount of energy delivered in a certain time, you can then work out the power of the Bunsen burner. Assume that the specific heat capacities of the water and material of the container are known. The powers that my pupils obtained ranged from 0.3 to 0.5 kW depending on the type of Bunsen and the time of heating, since they did not allow for heat loss.
+
+> Theory:
+>
+> Energy supplied by Bunsen = Power x time = \[(mass of water x specific heat capacity of water) + (mass of container x specific heat capacity of container)\] x temperature rise
+>
+> Age range: 13-16
+>
+> Apparatus required: •Bunsen •Aluminium saucepan •Stop clock •Balance
+>
+> Eye protection required. Make sure that the container being heated is small enough to remain stable on the tripod.
+>
+> [2. When do you add the milk?]{.underline}
+
+This is the classic cooling experiment. You have a hot cup of coffee and a given amount of cool milk. The problem is to decide when to add the milk so that the resulting mixture will reach a given lower temperature the quickest.
+
+> Theory
+>
+> According to Newton's law of cooling the rate of loss of heat from an object is directly proportional to the temperature difference between it and its surroundings, so the higher the temperature the faster the coffee will cool. Adding milk will immediately reduce the temperature so it is better to allow the coffee to stand for a little while before adding the milk, thus utilising the rapid rate of cooling when the temperature difference is high.
+>
+> Age range: 11 - 18 depending on treatment
+>
+> Apparatus required: •Beaker of hot water •Beaker of cold water •Thermometer •Stop clock
+
+### 3. The most effective immersion heater
+
+Use different types and dimensions of wire to heat up about 75 g of water in a 100 ml beaker of water. Using a constant voltage, you can show that the low resistance wires, i.e. wires that are short and thick, are the best heaters. This makes a very good piece of investigative practical work.
+
+> Theory:
+>
+> Power of heater = VI = V^2^/R so for a given voltage the output power is directly proportional to the current, and so inversely proportional to the resistance, wires with low resistance giving more power than those of high resistance. Resistivity (p) = RA/L and so Power = V^2^A/Lp. So the energy output in a time t is V At/Lp. This is equal to mc0 and so the rise in temperature (0) is V^2^At/Lpmc, where m is the mass of water, p the resistivity of the wire and c the specific heat capacity of water.
+
+Age range: 14-16 Apparatus required: •Ammeter •Voltmeter
+
+> •Wires of different types and diameters •Beaker •Leads •12V Power supply
+
+### 4. Heat energy in a flame
+
+Students often have difficulty separating the ideas of heat energy and temperature and this experiment is designed to help! Compare the energy in a candle flame with the energy in a hot bath. Put out a match flame with wet fingers, and then try putting your hand into a bucket of hot water. Although the flame is much hotter than the bucket of water (its temperature is about 800^0^C compared with the 60 ^0^C of the water in the bucket) the energy content is much less. Your hand warms up a little and the flame cools, and since your hand is so much more massive than the flame there is little temperature rise.
+
+> Extinguish the flame quickly with wet fingers. Do not allow the pupils to try it.
+>
+> Theory:
+>
+> Assume the flame has a mass of a milligram, a specific heat capacity of 2000 Jkg ^1^ K ^1^ and a temperature of 820 ^o^c the heat energy emitted when it cools to room temperature is just less than 2 J. A bucket of 4 kg of hot water initially at 60^0^C will release 672 kJ when it cools to room temperature!
+
+Age range: 11-16 Apparatus required: •Candle •Bucket of hot water (60^0^C) •Stop clock
+
+### 5. Energy in a candle
+
+An estimate of the heat energy given off by a candle can be made by the following experiment. Use the candle to heat about 250 g of water in an aluminium can, measure the rise in temperature, and hence work out the energy given off by the length of candle burned. Then by measuring the length of a whole candle work out the energy produced by a whole candle, and finally the comparative cost of a kWh of energy produced by using either the candle or the mains electricity to drive a heater. The mains electricity is cheaper, by a factor of up to ten!
+
+> Specific heat of water is 4200 Jkg ^IO^C ^1^ and that of aluminium 1000 Jkg ^IO^C
+
+Age range: 14-16 Apparatus required: •Candle 'Calorimeter 'Aluminium foil •Balance
+
+### 6. Steamed pudding and specific heat capacity!
+
+This experiment is designed to test the statement that the jam in a steamed pudding is always hotter than the pudding. Actually cook a steamed pudding in its tin by heating it in a saucepan of boiling water in the lab. Use thermometers to measure the temperature of the pudding and jam. They both start off at the same temperature (roughly 100 ^o^c) when heating ceases but after a minute there could be as much as a 10 ^o^c difference between their temperatures. In fact in one experiment after getting the pudding out onto a plate and putting the thermometers in place the jam registered 70 ^o^c and the centre of the pudding 55 ^0^C. The difference in temperature is due to the much higher specific heat capacity of jam which therefore cools much more slowly. Opening the can at the wrong end can be disastrous and demonstrates the pressure effect of gases - blowing out scalding jam across the lab! An extension of this experiment could be to measure the specific heat of jam by heating a known mass of jam with an immersion heater. Note - jam puddings are better than syrup ones.
+
+Age range: 14-16 Apparatus required: •Tinned steamed pudding ^o^ Two thermometers
+
+> •Saucepan •Tripod •Bunsen burner •Heat resistant mat!
+
+MELTING, BOILING AND EVAPORATION
+
+### 7. Latent heat - kettle
+
+The specific latent heat of water can be measured very simply using a shiny electric kettle standing on a top pan balance. Fill the kettle with water, stand it on the balance, and bring it to the boil. When it is boiling vigorously take the reading of the balance - continue boiling for a measured time (say 3 minutes) and record the new balance reading at the end of that time (remove or open the lid to disable the cut-out). The difference between the two readings is the mass of water turned to steam in that time. Knowing the power of your kettle enables you to calculate the specific latent heat of vaporisation of water. A shiny kettle reduces heat loss, and good results have been gained by this method. A 1.5 kW kettle turns about 40 g of water into steam at 100 ^o^c per minute,
+
+Age range: 14-16 Apparatus required: 'Shiny kettle of known wattage 'Stop clock •Top pan balance
+
+### 8. Milk bottle top in cold weather
+
+A bottle of milk left out on the doorstep on a freezing cold morning soon freezes - the frozen milk pushing up the cap. You can simulate this by tightly fitting a piece of aluminium foil over a milk bottle full of water and putting it in the freezer. (A rubber band helps to keep it in place). The piece of foil will bulge upwards on freezing.
+
+> Age range: 11-13
+>
+> Apparatus required: •Milk bottle •Aluminium foil •Rubber band or electrical tape •Access to a freezer
+
+### 9. Floating ice cube
+
+Float a pure water ice cube in a beaker of water with a paper scale fixed to the outside. Allow the ice to melt, and see if the water level goes down when the ice melts. There should be no change in level - the ice displaces its own weight of water, and so when it melts the water it forms should take up exactly the same volume as the water it displaced. Try it in brine (salty water). What would you expect to happen now? What about the change in sea levels when the polar ice caps melt? Is there a difference between the effect of the Arctic and the Antarctic? There is, since the Arctic ice is floating while the Antarctic ice is on a land mass.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Ice block •Beaker of water (parallel-sided plastic container if possible) •Ruler ^o^ TV camera (optional)
+
+### 10. Evaporation
+
+This experiment is a simple demonstration of cooling by evaporation. Put a small drop of perfume or surgical spirit BP on the skin. As the liquid evaporates, it takes heat energy from the hand and so you feel cold. This would also work by putting the liquid on a thermometer or a thermometer probe, but is perhaps not so memorable.
+
+Age range: 11-15 Apparatus required: •Perfume •Surgical spirit BP •Thermometer (optional)
+
+### Regelation and the ice block
+
+Make a shoebox sized ice block. Rest it between two stools on a couple of paper towels. Hang two 1 kg masses over it on a copper wire. The wire cuts into the block, but the ice then re-freezes over the top of it. This clearly demonstrates the lowering of the melting point of water when the pressure on it is increased. If the experiment is repeated with the two masses hanging on a string instead of the copper wire it won't work - the conductivity of the string is not great enough to carry away the latent heat of fusion of the ice. Refer this to the ice skater skating on water, not on ice, and the motion of glaciers --- the melt water between the ice and the rock.
+
+> Age range: 13-15
+>
+> Apparatus required: •Block of ice •Two Ikg masses •Copper wire •Tray to catch the melted water •Two lab stools as supports
+
+neat
+
+energy
+
+> Age range: 13-15
+>
+> Apparatus required: •Water 'Bunsen 'Retort stand and clamp 'Safety screen 'Tray 'Round-bottomed flask with bung, tube and thermometer fitted
+
+#### 13. Boiling under reduced pressure - an alternative method
+
+A simpler method of demonstrating the boiling of water at low temperature is to draw some water at a temperature of about 50 - 60 ^0^ C into a syringe so that about 20% of the volume of the syringe is filled. Then when the syringe is expanded rapidly the water boils under reduced pressure.
+
+Age range: 13-15 Apparatus required: •Syringe 'Hot water
+
+### 14. The freezing mixture
+
+Really low temperatures can be obtained by adding salt to ice, since the freezing point of the ice/salt mixture is lower than that of ice, and so the mixture will be a liquid at the normal freezing point of water. (Temperatures of -IO^O^C are easy to obtain.) Refer to the use of salt on pavements in cold weather. The salt lowers the temperature at which the water/salt mixture freezes, and so at the temperature of the surrounding air the water still remains a liquid.
+
+Age range: 11-15 Apparatus required: •Beaker 'Ice 'Salt
+
+#### Volume change solid to gas
+
+The change of volume when a solid turns into a gas can be shown by using a small plastic film holder. Put some solid carbon dioxide into the holder, put the lid on, and place the holder upside down on the bench. Put a transparent plastic sheet around it for safety, and wait. The solid sublimes (turns directly from a solid to a gas). The increase in volume of the carbon dioxide increases the pressure within the film holder. This blows the lid off the holder, shooting the holder into the air.
+
+> Age range: 14-16 Apparatus required: 'Plastic film holder 'Cylindrical plastic sheet screen •Solid carbon dioxide (dry ice) These holders may be difficult to obtain --- any small plastic pot with a lid will do.
+
+#### 16. Change of volume of freezing water - cast iron flask
+
+A cast iron flask is filled with cold water and the lid screwed on tightly. The flask should then be put in a plastic beaker filled with a freezing mixture (alternate layers of crushed ice and salt) (see experiment 14). After a while (some minutes) a crack should be heard. The flask has broken due to the increase in volume of the water as it freezes - hence the need for a plastic beaker. Relate this to the problem of burst pipes in the winter. This is also worth doing using a small plastic bottle which has been filled to the brim with water. It could be left in the freezer from one lesson to the next if you can't get one that will fit in the freezing mixture in a beaker.
+
+Age range: 11-13 Apparatus required: •Plastic beaker •Cast iron flask •Freezing mixture
+
+#### 17. Change of volume of melting ice - burette
+
+Fill a conical flask with melting ice. Put a bung in the top with a burette in it. The burette should be partly filled with light oil. As all the ice melts and a decrease in volume occurs, the level of the oil in the burette should fall. Alternatively the flask could initially be filled with pure water and then placed in a freezing mixture, and the resulting expansion measured as the water freezes. Plastic bottles full of milk expand when they are kept in a freezer.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Burette •Oil •Freezing mixture •Conical flask •Bung
+
+#### 18. A home made air cooling system
+
+This is simply a way of cooling down the air in a room during very hot weather. Take two or three large plastic drinks bottles, and fill them about nine tenths full with water. Put the tops on, and put the bottles in the freezer until the water has frozen and the ice formed has reached the temperature of the freezer (about ---ICC).
+
+warm
+
+Remove the bottles, and put them in front of an ordinary air fan. Turn on the fan, and you will get a stream of really cold air so cooling the room. The ice takes a surprisingly longfrom the freezer
+
+bottles of ice time to melt even on a hot day.
+
+> Age range: 11-18
+>
+> ^0^ 3 large plastic bottles •Access to a freezer •Air fan blower
+>
+> Heat energy
+
+#### 19. Fish in a freezing pond
+
+Diagrams of the fate of fish due to the freezing of ice emphasise the importance of the relative densities of ice and water. Since ice is less dense than water at O ^O^C the ice floats; the water with the greatest density - that at 4^0^C - will sink to the bottom. It's a good job, otherwise the oceans would freeze up from the bottom upwards, seriously reducing the amount of sea water!
+
+#### 20. Lagging and heat loss
+
+In all the problems that we have looked at so far we have assumed that no heat is lost to the surroundings, but this is not true. There will always be some heat loss, and the heat energy that we put into the water that we are heating is always going to be a bit less than we think, and so the rise in temperature in a certain time will also be less. Lagging the object will help, and the following graph shows the effect of doing this. The graph also shows how the graph levels off when the water boils.
+
+(A similar graph for heating a metal block with a heater also levels off but in this case it would show the block melting and not boiling).
+
+> Temperature
+>
+> Time
+
+## THERMAL EFFECTS AND MOLECULES
+
+> General theory for this section:
+>
+> The temperature of a gas depends on the kinetic energy of its molecules.
+
+> Kinetic energy of a molecule = \[3/2\]kT where R is the molar gas constant = 8.3 mol ^1^ K ^I^ and k is! Boltzmann's constant = JK
+
+### 1. Brownian motion and the luminous elephant
+
+The smoke cell experiment where particles of smoke are seen to exhibit a juddering motionwhen viewed under a microscope is an excellent way of showing the random motion of air molecules. The kinetic theory model containing ball bearings in a cylinder that can be vibrated is a useful simulation of this behaviour. Increased vibration simulates an increase in temperature as the ball bearings move faster. There are also various analogies that can be used to demonstrate this effect. Here is one!
+
+Imagine an elephant (representing a smoke particle) painted with luminous paint in a darkened sports hall. Also in the hall are a large number of children (representing the air molecules). They are dressed in black so that they are invisible when an observer looks into the sports hall through a skylight in the roof. The children are now told to run around; they do so, colliding with each other, the walls and the luminous elephant.
+
+What does the observer see? Simply a luminous elephant juddering about as it is being knocked from side to side by some invisible force.
+
+### 2. Diffusion in a jelly
+
+Make a yellow jelly in a dish, and allow it to set. Very carefully pour on another jelly - this time a red one. Set the second jelly quickly in the fridge before it has time to melt the first one. Observe the join between the two jellies after some days. A flow of colour should be seen around the join, showing a diffusion of the particles of each jelly.
+
+> Apparatus required: 'Jellies •Crystallising dish
+
+### 3. Random walk
+
+The random nature of gas molecule motion can be shown by using isometric graph paper and a dice. The six-sided dice represents the six possible directions of motion in a three dimensional world. The isometric paper has six possible directions from any intersection on its surface and can be used to represent random walk. Rather like the motion of a drunk in the crowd!
+
+Age range: 14-16 'Isometric graph paper 'Dice
+
+> I nermal errects ana IV101ecwes
+
+### 4. Porous pot and diffusion
+
+The different rates of diffusion of gas and air can be shown by using a porous pot. Put a bung into the top of the pot with a tube in it, and fill the pot with gas from the gas tap. Upturn the pot so that the tube goes into water in a beaker. The gas diffuses out through the pot quicker than the heavier air diffuses in, and water rises up the tube.
+
+Alternatively hold a glass beaker over the porous pot and fill the beaker with gas. Bubbles of gas now come out through the water.
+
+> Theory:
+>
+> Graham's Law states that the rate of diffusion of a gas is inversely proportional to the square root of its density. Heavier gases will diffuse more slowly than light ones.
+
+Age range: 11-13 Apparatus required: •Porous pot •Beaker 'Bung and tube 'Beaker of water
+
+> 
+
+### 5. Kinetic theory directly
+
+This can be shown directly by the oscillation of a small mirror made of aluminjum foil suspended by a fine thread in a bell jar. Observe the collisions of the molecules of air with the mirror by using a light beam directed across the lab - it works better at low pressures \<10 mm of mercury (\<10^3^ Pa or less than 1/100 of normal atmospheric pressure).
+
+> Age range: 11-18
+>
+> Apparatus required: 'Bell jar 'Vacuum pump 'Small mirror or piece of rigid aluminium foil 'Fine thread •Light beam (laser pin pointer)
+
+### 6. Silent kinetic theory
+
+Simply sprinkling some camphor particles on to the surface of some water in a glass dish resting on an overhead projector can simulate the random motion of particles in a gas. The camphor dissolves irregularly, and the result is that the particles rush around randomly - just like the molecules in a gas. As more dissolves, the motion slows down, giving a fair simulation of a gas cooling.
+
+Age range: 11-13 Apparatus required: 'Overhead projector 'Camphor crystals 'Dish of water
+
+### 7. Mixing alcohol and water
+
+This simple experiment gives an idea of the gaps between molecules. Take 100 ml of water in a 250 ml measuring cylinder and add exactly 100 ml of alcohol to it. The resulting volume is only about 195 ml. The molecules have intermingled, filling up the gaps between each other. Adding sugar to water is another example.
+
+> Age range: 11 --- 13 Apparatus required: ^0^ 200 ml measuring cylinder •100 ml measuring cylinder •Alcohol •Water
+
+Thermal effects and Molecules [8. Diffusion in gases]{.underline}
+
+Three possible demonstrations
+
+(a) Open a bottle of perfume at the front of the lab and ask the class to record when they begin to smell it!
+
+(b) There is also the classic experiment with concentrated ammonia and hydrochloric acid placed on plugs of cotton wool at opposite ends of a glass tube. After a while a white ring forms in the tube due to the interaction of the two chemicals. The differing masses of the molecules means that they diffuse through the air in the tube at different rates, and so the white ring formed in a tube when they meet will not be in the centre.
+
+hydrochloric
+
+> Concentrated ammonia is corrosive, and the gas is toxic. Eye protection is needed, skin contact should be avoided, and the gas should not be inhaled. Concentrated hydrochloric acid should be treated in a similar way.
+
+(c) Simply opening the two bottles close to each other will show the diffusion, "smoke" coming from the bottle of ammonia after a while.
+
+> Age range: 11-13
+>
+> Apparatus required: •Bottle of perfume •Concentrated solutions of ammonia and hydrochloric acid 'Metre-long glass tube •Cotton wool ^o^ Two retort stands, bosses and clamps •Dropping pipettes •Two protective saucers
+
+### 9. A simulated damp proof course
+
+Many of us know how important a damp proof course is in preventing water entering our houses. You can make a simple simulation of this by building two walls of sugar cubes in a tray with a piece of plastic in one wall between the first and second layers of cubes. Now pour some coloured water into the tray and watch the diffusion of coloured liquid up the two walls and the effect of the plastic layer "damp proof course".
+
+Age range: 11 -1 3 'Sugar cubes •Coloured water 'Tray
+
+## MISCELLANEOUS HEAT
+
+### 1. At what temperature does paper burn
+
+Using a suitable thermocouple temperature probe, try and repeat the idea of the old film "Fahrenheit 451" to find out at what temperature paper burns. This is best done outside the lab or in a fume cupboard!
+
+Age range: 11-14 Apparatus needed: •Temperature probe •Paper •Metal plate
+
+### 2. Galileo's thermometer
+
+This is a rather expensive (some E40 upwards) but beautiful use and demonstration of the effect of temperature on liquid density and flotation. A series of glass spheres are immersed in a liquid of density very similar to that of the spheres. They each contain different amounts of air and have small metal tags of differing mass hanging from the bottom and so rise and fall as the temperature changes. More spheres are at the top of the cylinder when it is cold - the density of the liquid is high and gives more upthrust. As the liquid heats up so the upthrust on the spheres decreases, and they begin to sink to the bottom.
+
+### 3. Galileo's thermometer again
+
+It is possible to produce a home-made version of Galileo's thermometer with Christmas tree balls loaded with plasticine. Balls about 1 cm in diameter work best for this.
+
+> Age range: 11-14 Apparatus required: •Tall beaker •Christmas tree balls •Plasticine •Bunsen burner •Heat-resistant mat •Tripod and gauze
+
+### 4. Heat end vibrations --- iron rod on solid carbon dioxide
+
+Rest one end of an iron rod on a piece of dry ice (solid carbon dioxide), the other end on a table. Jar it a little - the rod emits a high-pitched vibration. I have seen a similar effect in a baking tray with gravy in it placed on a cooker ring, although in this case the frequency of vibration was too low to hear.
+
+### 5. Boiling water in a paper bag
+
+Water can be boiled in a paper bag - but why doesn't the paper burn? This is also easy to demonstrate using a paper cup --- the water in the cup keeps the temperature of the paper below that required for ignition.
+
+> Age range: 11 --- 13 Apparatus required: •Bunsen burner •Paper cup and paper bag •Heat resistant mat
+
+Miscellaneous Heat
+
+### 6. Effect of heat on a rubber band
+
+A long rubber band with a mass on the end is hung in a tall beaker of water. The taller the beaker, the longer the rubber band or piece of elastic, and the more of it immersed in the water the better. The water is then heated, and the change in length of the band (it shrinks) is measured. A way of getting the longest piece of rubber under the water is to use a large glass tube with a rubber bung in the lower end heated in a water bath - the water bath being a tall one-litre beaker. The temperature of the water near the rubber band is found by hanging a thermometer down the large glass tube.
+
+> Age range: 16-18
+>
+> Apparatus required: •Long thin rubber band •Glass tube (diameter 5 cm length 0.5 m) •Tall beaker •Bung •Bunsen burner •Tripod •Heat-resistant mat
+
+#### Clouds in a bell jar
+
+Clouds can be formed in a bell jar if the air inside it is allowed to expand adiabatically. Take a bell jar and put 1 cm of water in the bottom and then blow into the bell jar. The air inside is compressed, and as it expands you might expect to see clouds due to the adiabatic expansion and subsequent cooling - but none form. To get the cloud, you need a little pollution to give nuclei on which the water can condense. This can be provided in the form of smoke. If a little is puffed into the jar, clouds immediately form. (You can warm the jar to encourage evaporation.)
+
+Another way of getting the clouds after blowing into a flask is to drop a smouldering match in to give the nuclei and thence produce a cloud.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Bell jar •Rubber tube •Smoke generator
+
+### 8. Red noses - thermal effects
+
+The plastic red noses from various years of Comic Relief in England show wonderful thermal effects, the plastic changing from red to yellow or red to pink when they are put in hot water. You can also get various plastic animals that will do the same. I have some model dinosaurs that change from brown to green when heated and even a couple of small plastic dogs that have a red poorly paw when put in a beaker of icy water. Rubbing the paw with your finger to "make it better" warms the paw, and the red mark disappears!
+
+### 9. Stretching a cooled elastic band
+
+The effect of a change of temperature of a rubber band can also be investigated using a cooling experiment. Hang up a rubber band, and then stretch it using slotted masses suspended from the lower end. Cool sections of the band using a freezer spray, and observe the widths of the warm and cool sections. I have been told that when your lips are compressed in a kiss they actually cool, but I leave it to your ingenuity to devise an experiment to show this!
+
+> Age range: 15-18
+>
+> Apparatus required: •Rubber band •Slotted masses •Freezer spray •Retort stand, boss and clamp
+>
+> IVIlsce11d11euus neat
+
+### 10. Silt meter
+
+This experiment is a simulation of river pollution. Each group has a large beaker of water to which they add drops of milk. They place a low voltage bulb on one side of the beaker and observe the transmission of light through the liquid - detecting the intensity with a Light Dependent Resistor (LDR). As more milk is added, and it doesn't need much, the intensity of the transmitted light falls, simulating the effect of a polluted river. The milk is less messy than mud. This has been found to be a good assessed practical investigation and could be extended by asking the pupils to estimate the concentration of milk in an unknown sample, using their calibration graph from the first part of the experiment.
+
+> Age range: 14-16
+>
+> Apparatus required: •Light dependent resistor and ohm meter •Calibration graph •Beaker of water •Milk and dropper 'Low voltage power supply •Bulb •Leads
+
+### 11. Elephants' ears and cooling
+
+A good example of the effect of area on the cooling of a body can be shown by using three cups: one with no ears, one with ears and the third with the ears folded down. Make the ears out of aluminium foil. Fill them all with boiling water, and measure the rate of cooling. The fins on an air-cooled engine are a good example of area cooling in practice. Painting the 'ears' black makes the experiment even more effective.
+
+A dinosaur known as a dimetrodon had a sail on its back and used to stand facing north-south in the early morning so that the rising sun would warm up the blood in the sail, enabling it to get going for the day.
+
+An Arctic fox has small ears while a desert fox has much larger ears. Apart from being good for hearing, the large ears will lose heat effectively.
+
+> Age range: 10-13
+>
+> Apparatus required: •Three cups or mugs
+>
+> •Aluminium foil •Thermometers ^o^ Hot water
+
+### 12. Polystyrene
+
+This material is yet another example of the effect of a poor thermal conductor like a carpet. If you walk on a carpet in bare feet it feels warm, but if you step off on to a tiled floor it feels much colder, although the temperature of the floor and carpet are the same. Similarly a piece of polystyrene feels warm to the touch although being at the same temperature as other objects in the lab. However, a large piece of metal initially at the same temperature as the polystyrene will feel colder to the touch.
+
+> Theory:
+>
+> Both these facts can be explained by realising that the tiles and the metal conduct heat energy away from your body, leaving your hands or feet cooler. A quantitative experiment to demonstrate this can be done by placing identical beakers of water on a slab of polystyrene and metal and measuring their rate of cooling.
+>
+> Age range: 11-13
+>
+> Apparatus required: •Slab of polystyrene foam •Large slab of metal the same size as the polystyrene if possible •Thermometers •Beakers •Stopclock
+
+Miscellaneous Heat
+
+### 13. Entropy increase
+
+Entropy or disorder must always increase! This can be shown by running a video of a pile of falling blocks backwards. Since entropy always increases, you can tell if the film is running forwards or not by the increase of disorder that results if no external human influences act. You can refer this to the ultimate fate of the Universe - a smeared out warmth is the likely final state rather than discrete hot spots.
+
+### 14. Absolute zero
+
+You may know that one of the laws of thermodynamics is that absolute zero (-273.15 ^0^C) can never be reached. In fact it gets more and more difficult to remove energy as the temperature gets lower - the energy steps become smaller and smaller. It is rather like going down a neverending escalator - the steps on the escalator also get smaller and smaller towards the bottom, and in the case of the reducing temperature they go on doing this for ever.
+
+### 15. A good huddle
+
+To show the effect of groups of animals keeping warm, prepare seven or eight test tubes - all containing the same amount of water. Place them in a water bath (this could be just a large beaker of water), heat them to the same temperature, and then remove them, leaving one on its own and the others in a group. Record the temperature of each test tube with time - the one on its own will cool down much quicker than those in the huddle since it has a much greater surface area to volume ratio. An interesting extension of this experiment is to investigate the effect of mass and surface area on the rate of cooling using balloons filled with hot water. Measure their temperature with a thermometer probe placed inside them, and experiment with:
+
+(a) different sized spherical balloons
+
+(b) spherical balloons and sausage shaped balloons of the same mass
+
+(c) spherical balloons of the same size and mass, but one suspended in air and the other suspended in a bucket of water at room temperature
+
+> Age range: 11-13
+>
+> Apparatus required: •Test tubes with little or no flange at the top •Water bath •Thermometers
+>
+> •Suitable method of holding a group of test tubes •Various balloons •Bucket •Thermometer probe
+
+### 16. Mechanical energy - Heat energy conversion
+
+A couple of suggestions to show the conversion of mechanical energy to heat energy are: (a) Saw through an insulated bolt, and let the pieces fall into a plastic beaker of water - of course the hacksaw gets hot as well!
+
+\(b\) Hammer a piece of lead and then measure the temperature rise with a thermistor
+
+> Age range: 14-16 Apparatus required: •Lead ^o^ Hammer •Hacksaw •Plastic beaker of water •Bolt
+
+### 17. Hot air balloon - candle
+
+Try making a hot air balloon from a large plastic bag such as a bin liner and then try "flying" it by putting it over a hair dryer. The hair dryer has no naked flame and the experiment is therefore safer and easier to control. Keep the lower end open with a ring of wire.
+
+Age: 7-14 Apparatus required: 'Large plastic bag (bin liner) 'Wire •Hair dryer
+
+> Miscellaneous Heat
+
+### 18. Floating bubbles
+
+The following experiment is a fascinating demonstration of the insulating properties of a gas (in this case steam). Place a metal plate about 10 cm in diameter and 0.5 cm thick on a gas burner (better than a Bunsen, as the whole plate gets heated). Heat the plate strongly, and then drop a small droplet of water onto it. The water evaporates immediately. However, when the plate reaches about 200^0^C, the water evaporates so rapidly from the lower surface that the resulting steam insulates the upper part of the droplet and it does not evaporate. When this state is reached more water can be added, so increasing the size of the droplet, which now "floats" on the insulating layer of steam. Discs of water up to 2 cm in diameter can be produced.
+
+> Age range: 11-18
+>
+> Apparatus required: •Gas burner 'Dropper •Metal plate ^o^TV camera if available
+
+### 19. Dipping bird
+
+This wonderful old toy can still be bought. It rests on the side of a glass and dips its head into the cold water. As the liquid inside its body evaporates it forces liquid up the neck, altering the balance of the bird, which then dips its head into the water.
+
+If the head is not wetted then a very instructive version of the experiment occurs. The bird tends not to drink but placing a saucer of hot water beneath its bottom will heat up the liquid sufficiently to increase the rate of evaporation and make it start rocking. Energy is provided by the hot water --- you don't get something for nothing!
+
+Also try it with meths in the glass instead of water.
+
+> Age range: 11-18 depending on treatment Apparatus required: •Dipping bird •Wine glass
+>
+> •Water •Saucer ^0^ Meths
+
+### 20. Heat-sensitive mat - liquid crystals
+
+This mat with a layer of liquid crystals below a transparent top is available from gift shops. Some lovely coloured effects are produced when a mug of hot drink is put on it, or when you just lay your hand on it. The colours that you get when they put their hands on the mat can give some idea of the temperature of various pupils' hands.

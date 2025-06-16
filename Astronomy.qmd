@@ -1,0 +1,653 @@
+---
+title: "Astronomy"
+format: html
+---
+
+## Basic Astronomy Theory
+
+### Key Definitions
+
+-   **Astronomy** is the scientific study of celestial objects, space, and the physical universe as a whole.
+-   **Astrophysics** applies the laws of physics to explain astronomical observations.
+
+### Celestial Objects
+
+-   **Stars**: Massive, luminous balls of plasma undergoing nuclear fusion.
+-   **Planets**: Objects orbiting a star, spherical due to gravity, and have cleared their orbit.
+-   **Moons**: Natural satellites orbiting planets.
+-   **Asteroids** and **Comets**: Small Solar System bodies; comets contain ice and dust.
+-   **Galaxies**: Massive systems of stars, gas, dust, and dark matter bound by gravity.
+
+### The Solar System
+
+-   The **Sun** is a main sequence star.
+-   **Inner planets** (Mercury to Mars) are rocky.
+-   **Outer planets** (Jupiter to Neptune) are gas/ice giants.
+-   Orbits are **elliptical**: governed by **Kepler’s Laws**.
+
+### Kepler’s Laws of Planetary Motion
+
+1.  **First Law (Elliptical Orbits)**: Planets move in ellipses with the Sun at one focus.
+2.  **Second Law (Equal Areas)**: A line joining a planet to the Sun sweeps out equal areas in equal times.
+3.  **Third Law (Harmonic Law)**: $$
+    \frac{r^3}{T^2} = \text{constant}
+    $$ where $r$ is the semi-major axis and $T$ is the orbital period.
+
+### Newton’s Law of Gravitation
+
+The gravitational force between two masses is: $$
+F = \frac{G m_1 m_2}{r^2}
+$$
+
+-   Where $G$ is the gravitational constant: $6.674 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2$
+-   $F$ is always attractive and acts along the line joining the masses.
+
+### Orbits and Circular Motion
+
+For a body in circular orbit around a mass $M$:
+
+-   Orbital speed: $v = \sqrt{\frac{GM}{r}}$
+
+-   Orbital period: $T = \frac{2\pi r}{v} = 2\pi \sqrt{\frac{r^3}{GM}}$
+
+### Light and Observation
+
+-   **Spectroscopy** is used to determine a star’s composition and motion.
+-   **Redshift** occurs when objects move away, shifting spectral lines to longer wavelengths: $$
+    z = \frac{\lambda_{\text{obs}} - \lambda_{\text{rest}}}{\lambda_{\text{rest}}}
+    $$
+-   The **Doppler effect** allows us to measure radial velocity: $$
+    \frac{\Delta \lambda}{\lambda} = \frac{v}{c}
+    $$
+
+### The Expanding Universe
+
+-   **Hubble’s Law**: Galaxies recede with velocity proportional to distance: $$
+    v = H_0 d
+    $$ where $H_0$ is the Hubble constant.
+
+-   Evidence for the **Big Bang** includes:
+
+    -   Redshift of galaxies
+    -   Cosmic microwave background radiation (CMB)
+    -   Abundance of light elements (H, He)
+
+### Life Cycle of Stars
+
+-   **Low mass stars**: Nebula → Protostar → Main sequence → Red giant → White dwarf
+-   **High mass stars**: Nebula → Protostar → Main sequence → Supergiant → Supernova → Neutron star / Black hole
+
+### Units and Distances
+
+| Quantity | Symbol | Units | Typical Value |
+|-----------------|-----------------|-----------------|---------------------|
+| Astronomical Unit | AU | $1.5 \times 10^{11}$ m | Earth-Sun distance |
+| Light-year | ly | $\approx 9.46 \times 10^{15}$ m | Distance light travels in one year |
+| Parsec | pc | $\approx 3.26$ ly | Used in measuring stellar distances |
+
+## Stories to enritch
+
+### I suppose you think there was a The "Big Bang"?
+
+The name "Big Bang" was given to the theory by British astronomer Fred Hoyle in 1949. He used the term during a BBC radio broadcast to describe the theory that the universe originated from a state of high density and temperature and expanded rapidly. Hoyle, a proponent of the steady-state theory, used the term to mock the expansionist theory of Georges Lemaître. Despite its origin, the term stuck and became the widely accepted name for the theory that the universe began in a state of extreme density and temperature.
+
+### Mary Somerville
+
+Mary Somerville (1780–1872) was a pioneering Scottish scientist, writer, and polymath whose work helped lay the foundation for modern science communication and significantly advanced the roles of women in science.
+
+#### Early Life and Education
+
+Born in Jedburgh, Scotland, she grew up in a time when formal education for girls was extremely limited. Mostly self-taught, she studied mathematics in secret as a young woman, often reading by candlelight and teaching herself using borrowed books, including Euclid’s Elements and Newton’s Principia. \#### Scientific Contributions Her first major breakthrough came with her translation and extensive explanatory commentary of Laplace’s Mécanique Céleste, published in 1831 as The Mechanism of the Heavens. It made advanced celestial mechanics accessible to English readers and was used as a textbook at Cambridge for many years. In 1834, she published On the Connexion of the Physical Sciences, a sweeping synthesis of astronomy, physics, chemistry, and geology that was widely read and influential. This book helped inspire the concept of science as an interconnected whole and reportedly influenced the coinage of the term “scientist” (by William Whewell). She later published Physical Geography (1848), one of the first comprehensive texts on the subject, and Molecular and Microscopic Science (1869).
+
+#### Recognition and Legacy
+
+Somerville was elected one of the first two female honorary members of the Royal Astronomical Society in 1835 (along with Caroline Herschel). She received a government pension for her scientific work, and her books were translated into many languages. In her later years, she became an advocate for women’s education and suffrage. Somerville College, Oxford, founded in 1879, was named in her honour. She appears on the Royal Bank of Scotland £10 note, issued in 2017, as a symbol of intellectual achievement and gender equality. \#### Personal Life She married twice and had children; her second husband, William Somerville, was supportive of her scientific work and helped her network within the scientific community. She was known for her modesty, curiosity, and deep religious faith, which she saw as compatible with scientific inquiry. She was so principled that Mary and her brother refused sugar in their tea in protest at the slave trade.
+
+### Grote Reber
+
+#### Early Life & Career
+
+Born in Wheaton, Illinois, Reber earned a degree in electrical engineering from the Illinois Institute of Technology in 1933. He initially worked for companies like Radio Corporation of America (RCA) and had a strong interest in amateur radio. \#### Pioneer of Radio Astronomy
+
+In the early 1930s, Karl Jansky had detected radio waves from the Milky Way while working for Bell Labs. But the scientific community showed little interest. Reber picked up the torch. Without institutional backing, he built the first purpose-built radio telescope in his backyard in 1937—a 9-meter (31-foot) parabolic dish. Breakthrough Work Reber mapped the sky at radio wavelengths, making the first radio-frequency sky maps. He confirmed Jansky's discovery and extended it, showing that the strongest radio sources were in the direction of the Milky Way’s center. His observations laid the groundwork for radio astronomy as a legitimate scientific discipline.
+
+#### Legacy and Later Life
+
+Reber published many scientific papers in the 1940s, often working independently. His work led to the realization that the universe could be studied not just in visible light but in radio waves, opening up discoveries like pulsars, quasars, and the cosmic microwave background. He moved to Tasmania, Australia, in the 1950s to study low-frequency radio waves, which are blocked by the Earth’s ionosphere in most parts of the world. Reber remained a passionate and unconventional scientist until his death in 2002 at age 90.
+
+### "White Dielectric Material"
+
+Robert Penzias and Arno Wilson were interested in measuring the intensity of radiation from a supernova remnant and went aboutsetting up a horn antenna with a device to filter out noise by comparing the collected signal against a cold load, a Dewar of liquid helium at 4.2K. They were surprised to detect a microwave signal across all areas of the sky. In looking for sources of the noise they evicted some pigeons from the telescope and cleaned off what Penzias described as a ‘white dielectric material’ left by the birds...
+
+The cleaning, however, failed to eliminate the noise from the signal and in 1978 they were awarded the Nobel prize for their part in the discovery of the cosmic microwave background radiation.
+
+### In space, nobody can hear you snore...
+
+That's not at all true, unless you slept outside but Astronauts on the International Space Station do have to sleep by a ventilator. The microgravity on the spacecraft means exhaled carbon dioxide does not move away from a sleeping astronaut and, without air circulation, they could suffocate in a bubble of their own carbon dioxide.
+
+### Green stars...
+
+For a star to emit most radiation in the green wavelength it would require a surface temperature of around 6000 K. But it would then also emit similar amounts of blue and red light resulting in a white or pale-yellow colour, like the Sun. So there cannot be any green stars.
+
+### Listen to the stars
+
+Dr Wanda Diaz Merced, has developed an approach to turning astronomical data into auditory signals, known as sonificiation. It’s well worth listening to her TED talk: https://www.ted.com/talks/wanda_diaz_merced_how_a_blind_astronomer_found_a_way_to_hear_the_stars
+
+### Vera Rubin and the Case of the Missing Mass
+
+When Vera Rubin measured the speeds of stars orbiting galaxies, she expected stars farther out to move more slowly (like planets in the Solar System). But they didn’t—they moved at the same speed, defying Newton’s laws.
+
+This wasn’t a mistake. Rubin had uncovered the first convincing evidence for dark matter—a mysterious, invisible substance that makes up most of the universe. Rubin didn’t get a Nobel Prize for this work, though many think she should have, sparking important conversations about recognition of women in science.
+
+### When the Universe was dark! 300 000 to one billion years after the Big Bang
+
+As the universe cooled down after the Big Bang a point was reached where the temperature was such that the emitted radiation was in the infra-red - in other words there was no visible light. The Universe became dark.
+
+This was to remain the state until the first stars fused their first hydrogen and this was to happen about one billion years later!
+
+### The Star That Blinked – Tabby’s Star
+
+Astronomers using the Kepler Space Telescope found a star, KIC 8462852 (aka Tabby’s Star), with bizarre dips in brightness—sometimes dropping up to 20% or more, which is far too much to be caused by planets.
+
+Wild theories emerged, including the infamous “alien megastructure” hypothesis. The truth is still unclear—probably dust clouds or fragments from broken-up objects—but the mystery drew public imagination.
+
+### The Voyager Golden Record
+
+NASA’s Voyager spacecraft carried a golden phonograph record, containing sounds and images from Earth—including greetings in 55 languages, music from Bach to Chuck Berry, and sounds of a baby crying and whales singing.
+
+It was meant as a message to any intelligent life that might find it.
+
+## Practical work and Demos
+
+### Toilet Paper Solar System
+
+Purpose: Understand the vast distances between planets. How: Use a toilet roll (or a long strip of paper) to mark scaled distances between planets. Note: On this scale most of the planets are too small to see (and draw) – so we’ve cheated and made them 100 times larger than they should be. Earth and Moon are only a few cm apart on the same scale that puts Neptune several meters away.
+
+If the sun is a 60 cm beach ball then...
+
+| Planet  | Diameter | Colour                      | Number of Sheets from Sun |
+|---------|----------|-----------------------------|---------------------------|
+| Mercury | 2 mm     | Brown                       | 2                         |
+| Venus   | 5 mm     | White                       | 3.5                       |
+| Earth   | 5 mm     | Blue and green              | 5                         |
+| Mars    | 3mm      | Red                         | 7.5                       |
+| Jupiter | 62mm     | Brown stripes with red spot | 26                        |
+| Saturn  | 50mm     | Brown with rings            | 47.5                      |
+| Uranus  | 20mm     | Light blue                  | 95                        |
+| Neptune | 20mm     | Dark blue                   | 149                       |
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   60cm Beach ball
+-   Toilet Roll
+-   Card
+-   Scissors
+-   Colouring pens
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Volcanoes and heat energy
+
+Although most craters on the Moon and the planets are thought to have been created by meteor impact, some will have been formed by volcanic activity. You can use a saucepan full of custard or porridge being heated to demonstrate the "breakthrough of internal magma"! The air escaping from beneath the surface when they are heated gives a very good simulation of volcanic activity.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Pan
+-   Stove
+-   Custard
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Rotation period of the Moon
+
+This simple demonstration shows why it is that the Moon always presents the same face towards the Earth. Two pupils are needed to demonstrate this. One pupil is used to represent the Earth, the other to represent the Moon. One pupil stands still while the second pupil faces inwards and then moves round the first, making one rotation as they orbit the "Earth" once. You will notice that the "Moon" always faces the "Earth". The cause of this is the eccentricity in the shape of the moon.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Three students
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Build a comet
+
+Comets are cosmic snowballs of frozen gases, rock and dust, roughly the size of a small town. When a comet's orbit brings it close to the sun, it heats up and spews dust and gases into a giant glowing head larger than most planets. The dust and gases form a tail that stretches away from the sun for millions of kilometers.
+
+Line the bowl with a plastic bag. Add to the lined bowl: water, dirt, corn starch, syrup, vinegar and alcohol. As you do this, explain that comets have lots of ice and water. In our comet model, dirt represents the dust, minerals and water found in comets; corn starch helps hold the model together; the syrup are organic materials and give the comet a dark appearance; vinegar represents amino acids in a comet and the alcohol represents methanol found in comets. Do not add too much alcohol as it has an antifreeze effect. Mix ingredients and stir in the dry ice. Once all of the dry ice is in the bowl, pick up the sides of the bag and use them to form the mixture into a large clump. Add more water as needed. The mixture will start to thicken as the dry ice freezes the water. You can feel the clump forming through the plastic bag. If the mixture does not hold together, add more water. Once you see you have a clump, take it out of the bag and show it to students. At this time, measure the mass of the comet (this can be done using a basic kitchen scale, or on a simple balance if you do not have a triple-beam balance or some other measuring device). Record your data. You should see gas jets coming off the comet. Repeat the mass measurement in five-minute increments. If your model falls apart, it’s OK. Comets frequently disintegrate as they come closer to the sun! For added effect, have students take turns holding the torch and hairdryer close together and pointing at the comet. The flashlight represents the sun and the dryer is the solar wind. You should see the jets moving away as the heat from the dryer pushes the gas away.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   2.5 Kilogrammes of dry ice - finely crushed
+-   Insulated container to hold the dry ice
+-   Thick gloves to handle the dry ice (welding gloves are ideal)
+-   Goggles
+-   Mallet to crush the dry ice
+-   Large plastic bowl
+-   Towel or pillowcase (it will get very dirty)
+-   Several large plastic garbage bags - 12 gallons or larger, heavy strength
+-   Flat tray
+-   1 liter of water
+-   About 2 cups of dirt (clean out twigs and little pebbles)
+-   1 tablespoon or less of corn starch
+-   1 tablespoon or less of dark corn syrup or soda
+-   1 tablespoon or less of vinegar
+-   1 tablespoon or less of alcohol (wine is good and can replace the dirt)
+-   Hairdryer
+-   Torch
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**A note on safety**
+
+-   Make sure you wear the heavy gloves to avoid cold burns.
+
+-   Work in a well-ventilated area and avoid storing dry ice in confined spaces or airtight containers.
+
+**Age range / Keystage**
+
+KS3: {{< fa star >}}
+
+KS4: {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Crater experiment
+
+This experiment is a simulation of meteor impact forming craters on a planet. The meteors are replaced by ball bearings or wooden balls, and a tray of sand replaces the planet surface.
+
+The projectiles are dropped from a known height into the sand and the loss of potential energy is related to the crater size. We measured the diameter, depth, wall height and general shape of the craters and also tried oblique impacts by rolling the ball bearings down a tube. Dampening the sand gives a way of investigating different types of planetary surface.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Trays
+-   Marbles
+-   Calipers/rulers
+-   Tube
+-   Sand/flour
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Model lunar craters
+
+To highlight the way that we can infer information about the moon - and to dispel misconceptions like the "face on mars" we can make our own craters and subsequent shadows. Have students make a clay model of a lunar crater and use a torch to simulate the Sun. A torch can be mounted on a retort stand, and then raised and lowered to see the effects of the altitude of the "Sun" on the lengths of shadows on the "lunar" surface.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Plasticine
+-   Torch for oblique lighting
+-   Ruler to measure shadows
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Expansion of the Universe
+
+Here are three possible analogies of the expansion of the universe.
+
+(a) A balloon with dots marked on it to represent the galaxies. As the balloon is blown up all the "galaxies" recede from each other.
+
+(b) Draw a wave on a latex exercise band. As the "universe" is stretched, so does the wavelength of the background radiation...
+
+(c) Thread three or four large polystyrene balls on to a length of elastic, one end of which is fixed to a hook on the wall or a secure retort stand. Now pull the free end of the elastic - all the balls separate from each other.
+
+The point about all these analogies is that they make their own space as they expand. Similarly, before the universe began to expand there was no space! Actually there was no time either both space and time were "created" at the start of the universe.
+
+### Some simple Observational Astronomy
+
+-   Diameter of the projected image of the Sun to show the varying distance of the Earth from the Sun during a year
+-   A sundial
+-   Star trails using a camera and an exposure of an hour or more
+-   Star pictures using a camera with an exposure of five minutes
+-   Sunspots using a projected image of the Sun
+-   Length of a shadow at noon at two points on the Earth's surface lying on a north-south line can be used to measure the size of the Earth (after Eratosthenes).
+
+::: {.callout-warning title="Danger!"}
+Never look directly at the sun ***especially*** through a telescope, binoculars or other lens.
+
+Solar filters are available for events like eclipses however I do not recommend their use in schools. It is better to view a projected image of the Sun when studying sunspots or a solar eclipse. If you can use a smart telescope like the seestar S50 or S30 that's even better!
+
+https://store.seestar.com/products/seestar-s50
+:::
+
+### Seasons tubes
+
+Use solid rods of yellow foam rubber to represent the sunlight. Cut off the ends at angles that are equal to that of the Sun at the zenith in mid-winter and mid-summer.
+
+In Taunton in mid-winter the maximum angle that the Sun reaches above the horizon is 16 ^0^ while in mid-summer it is 61 ^0^ . The area over which the same 'tube' of sunlight is spread is clearly shown by the angled ends of the foam rubber cylinders.
+
+The seasons occur because of the different area of the Earth's surface over which the sunlight spreads at different times of the year. Use a projector to represent the Sun, a board that can be rotated representing the surface of the Earth to show this change of area, and an LDR to measure the change in light intensity. As the area on which a certain amount of sunlight falls is larger in winter, it is therefore colder.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Three students
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
+
+### The minimum age of the Universe
+
+A minimum age for the Universe can be suggested by considering the elements that exist today. In ordinary stars fusion occurs, building up elements as heavy as iron 56 but no further they are not hot enough. Heavier elements are formed in the enormous explosions of supernovae, where the temperatures reached are much greater than those in a normal star. Therefore the Universe must be at least old enough for these supernovae to have formed and exploded, in order to give us the abundance of heavy elements necessary for the Universe to be as we know it today!
+
+### Astronomical distances - simplified
+
+If we represent the distance from the Earth to the Sun as one unit, then the scale of the solar system can be simplified as follows:
+
+| Sun to: | Scale factor |
+|---------|--------------|
+| Mercury | 1/3          |
+| Venus   | 2/3          |
+| Earth   | 1            |
+| Mars    | 1.5          |
+| Jupiter | 5            |
+| Saturn  | 10           |
+| Uranus  | 20           |
+| Neptune | 30           |
+| Pluto   | 40           |
+
+The size of the Universe is best considered by expressing distance in terms of the time it would take light to travel that distance at 300 000 km per second:
+
+| Distance                                 | Travel Time          |
+|------------------------------------------|----------------------|
+| Earth - Sun                              | 8 minutes            |
+| Across the solar system                  | 11 hours             |
+| To the nearest star                      | 4 years              |
+| Across the galaxy                        | 100 000 years        |
+| From our galaxy to the next              | 1 million years      |
+| To the "edge" of the observable Universe | 13 700 million years |
+
+N.B these times are approximate (!).
+
+### Sundial
+
+1.  Prepare the Base Cut a circle from the cardboard or use a full A4 sheet. This will be your dial.
+
+2.  Mark the Centre Use a ruler to find and mark the center of the dial. This is where your gnomon (straw/pencil) will stand.
+
+3.  Set the Gnomon Angle Your gnomon must tilt at an angle equal to your local latitude (e.g., 51° if you're in London).
+
+Use a protractor to measure this angle from the base. Tape or glue the straw so it points north and leans back at the correct angle from vertical. Make sure the gnomon points parallel to Earth’s axis—this is crucial! 4. Face the Sundial North Place your sundial outside on a flat surface with the gnomon pointing true north. Use a compass to align it. For accuracy: Correct for magnetic declination if needed (in the UK it’s small, \<5°). 5. Mark the Hour Lines Each hour, check where the shadow falls. Mark a small line on the dial and label it (e.g. "10am", "11am"...).
+
+Best to start just before solar noon and go into the afternoon. You can also calculate hour angles and draw them using geometry (see extension below).
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment** - Sturdy cardboard or thick paper (A4 or larger) - Drinking straw or sharpened pencil (to be the gnomon) - Protractor - Ruler - Compass (for direction, or use a smartphone compass app) - Glue or tape - Scissors - Optional: watch or clock for calibration
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+## A note on telescopes
+
+There is a lot to be said for doing observational astronomy with traditional telescopes - the manual handling and the set-up are all part of the hobby. For sheer practicality and getting to the images however It's hard to beat the new generation of electronic telescopes. Of the field of options, the SeeStar S50 is a clear winner in the features/cost tradeoff. The SeeStar S50 is a compact, smart, all-in-one astronomical imaging telescope that brings modern astrophotography and observation into the classroom or field without the steep learning curve of traditional telescopes.
+
+Unlike conventional telescopes, the SeeStar S50 features automated alignment, tracking, and image stacking, all controlled via an intuitive app interface. This means students spend more time observing and analysing than fiddling with mounts, focus, or celestial coordinates. Its built-in GoTo system lets students select targets—from planets to nebulae—with ease, and the live image stacking produces clearer images over time, demonstrating the real-world application of signal-to-noise ratios and photon detection.
+
+The real pedagogical strength of the S50 lies in its data output and integration possibilities. Students can capture their own high-resolution FITS or JPEG files and analyse them using free astronomy tools like FITS Liberator or AstroImageJ. For more advanced classes, this opens doors to authentic scientific practices—students can measure variable star brightness, investigate the motion of Jupiter's moons, or even carry out basic spectroscopy using clip-on diffraction gratings or affordable Star Analyser filters. By attaching a simple transmission grating to the front of the aperture or camera, students can record spectra of bright stars or emission lines from planetary nebulae, leading to discussions about atomic transitions, redshift, and the composition of stars.
+
+#### Astronomy with the SeeStar S50 Smart Telescope
+
+##### Educational Goals and Learning Outcomes
+
+Students will learn to operate a SeeStar S50 smart telescope to capture real astronomical data. They will plan and image targets (stars, planets, nebulae, Moon, Sun), measure star brightness (photometry), and record basic spectra using a clip-on diffraction grating. By the end of these activities, students will understand how telescope aperture and distance affect brightness (the inverse-square law ), how photon (shot) noise limits measurement precision, and how atomic energy levels produce absorption or emission lines in spectra.
+
+Key skills include using astronomy software for planning and analysis, taking and calibrating images, doing aperture photometry, and identifying spectral lines.
+
+##### Getting Started: The SeeStar S50
+
+The SeeStar S50 is an all-in-one f/5 50 mm refractor (250 mm focal length) with built-in camera and controller. It includes filters (UV/IR cut, dark, narrowband) and can image deep-sky objects, landscapes, the Sun (with solar filter), or the Moon. The telescope has an ASIAIR-like app interface (SkyAtlas by ZWO) that lets the teacher align and select targets easily. In use, the teacher sets up the tripod and powers the S50; students then use the app to point and focus under supervision.
+
+##### Power on and align:
+
+Place the S50 on its tripod outdoors. Turn it on and connect your tablet/smartphone to its Wi-Fi. Launch the SkyAtlas app. If needed, do a quick star alignment following on-screen prompts.
+
+##### Select a target:
+
+Use the built-in database or sky map in the app to pick an object (e.g. Moon, planet, bright star, nebula). The telescope will slews and begins tracking automatically.
+
+##### Focus and exposure:
+
+Adjust focus via the electronic focuser in the app if stars are fuzzy. Set an appropriate exposure: bright objects (Moon, planets) require \<1 s, faint nebulae may need 5–20 s or more. (The S50 will often live-stack images automatically, or you can capture individual frames.) \##### Capture images: Take one or more exposures. Save images in FITS or JPEG format (the S50 records 1920×1080 pixels). FITS is preferred for analysis because it preserves raw data and metadata. The S50’s small aperture collects light over the 50mm area, so distant stars are faint. Remember the inverse-square law: as distance doubles, a star’s brightness falls to one-quarter. For example, a star twice as far away appears 4× dimmer. This law is why very faint stars need long exposures. By comparing images of objects at different distances or brightnesses, students see this law in action.
+
+##### Solar observations
+
+The safe solar imaging mode lets students study solar rotation or count sunspots. (Never look at the Sun without a proper filter!) These examples illustrate basic observing: students learn to focus, set exposure, and use stacking.
+
+##### Photometry: Measuring Star Brightness
+
+Photometry is the practice of measuring how bright stars or other objects appear. The steps below guide students through a basic photometry project (e.g. monitoring a variable star’s light curve): Choose a target and comparisons. Select a star of interest (for example, a known variable star or a bright reference star in a cluster). In the same field, identify one or two non-variable comparison stars of similar brightness (check catalogs or Stellarium for magnitudes). Acquire images. With the S50 tracking your target field, take a series of exposures. To reduce noise, it’s common to take many short exposures and combine them. For instance, one experienced observer uses 18 frames of 10s each (total 3min). Save the raw FITS images (turn off on-camera stacking if needed) so you can calibrate and analyze them.
+
+###### Calibrate images.
+
+(Optional at GCSE level, but good practice.) Take dark frames (same exposure with lens cap on) and bias/flat if possible to correct sensor artifacts. Many S50 users skip complex calibration because the camera output is “calibrated” by default, but at least subtracting darks can improve precision. Load images into analysis software. Free tools like AstroImageJ (AIJ) are ideal. Import the stacked or individual FITS images into AIJ (it can read FITS directly). Configure AIJ for photometry: set plate scale (≈4.87 arcsec/pixel for S50) and select photometry mode.
+
+###### Perform aperture photometry.
+
+In AIJ, click on the target star and comparison stars to place apertures. The program will sum the pixel counts (signal) within each aperture and subtract background. This yields instrumental magnitudes or fluxes for each star in each image. Compute differential magnitudes. Subtract the target’s magnitude from the comparison star(s) magnitude to get relative brightness. This removes sky transparency and many systematic effects. Plot a light curve. Create a time series of the target’s relative brightness. For a variable star, you should see it vary periodically or in a known pattern. Compare your light curve to published data (for example, AAVSO charts). Photometry connects to physics in several ways. The apparent brightness F of a star follows $F\propto L/r^2$ (with luminosity $L$ and distance $r$), and astronomers express brightness on a logarithmic magnitude scale. In practice, the S50’s color camera records counts in red, green, blue subpixels. Observers often use only the green channel (called “Tri-G” photometry) as a proxy for the standard Johnson V-band. Because of this, results are approximate magnitudes, but still useful for relative light curves. Another key concept is photon (shot) noise. The noise in counting photons follows Poisson statistics, so the uncertainty in the measured count $N$ is $\sqrt{N}$. Thus if you collect $10{,}000$ photons, the noise is about $100$ (SNR≈100). Stacking multiple frames increases $N$ and thus improves SNR (because $\mathrm{SNR}\approx\sqrt{N}$. In our example of 18×10s frames, stacking yields $\sim18$ times more signal than a single 10s frame, reducing relative noise. Experienced S50 users report they can reach stars as faint as \~16th magnitude from a suburban sky (Bortle 8) by stacking many exposures. In the quoted example, the observer stacked 18 images and used the green channel (“Tri-G”) to report magnitudes, covering \~6th–16th magnitude stars easily.
+
+From brighter sites, even fainter stars or asteroids can be tracked. This shows the S50 is capable of real scientific photometry when used carefully.
+
+Example student investigation: Measure the light curve of the eclipsing binary Algol. Plan to observe Algol over several hours, capturing images every few minutes. Use at least one nearby steady star as a comparison. Plot Algol’s brightness vs time and identify the characteristic dip during eclipse. Discuss how the measured drop in flux relates to the stars’ relative sizes and orbits.
+
+#### Basic Spectroscopy with a Diffraction Grating
+
+Spectroscopy spreads starlight into a rainbow of colors, revealing dark absorption lines or bright emission lines. With a simple objective grating (such as a Star Analyzer 100, \~100 lines/mm), the SeeStar S50 can do slitless spectroscopy. Here’s how students can try it:
+
+###### Attach a grating.
+
+Affix the diffraction grating (e.g. Star Analyzer 100) in front of the S50’s lens. This may require a special filter holder or DIY adapter. The grating should cover the entire aperture. (The teacher should ensure it fits securely.)
+
+###### Point at a bright target.
+
+Choose a bright star (Vega, Sirius, or even the Moon or Sun). For solar spectra, use the white-light solar filter in front of the grating or an Hα filter and look at an active region. For stars, a single exposure with the bright star will show a zero-order image (un-dispersed star) and the first-order spectrum offset to the side.
+
+###### Capture the spectrum.
+
+Expose long enough that the first-order spectrum shows a clear rainbow. (For very bright objects, use a shorter exposure.) Save the image (FITS is ideal). The spectrum appears as a line of color; dark absorption bands are visible against the continuum.
+
+###### Analyze the spectrum.
+
+Using software (e.g. the free VisualSpec or trial RSpec), open the image and select the first-order spectrum. Calibrate wavelengths by identifying known spectral lines (for example, sodium’s doublet at 589nm or hydrogen’s Hα line at 656nm) to set a pixel-to-nanometer scale. Alternatively, measure the pixel separation between known Fraunhofer lines.
+
+###### Identify elements.
+
+Look for characteristic lines: in stellar spectra, hydrogen Balmer lines (Hα 656.3 nm, Hβ 486.1 nm, Hγ 434.0 nm) often appear. The Sun’s spectrum shows dark Fraunhofer lines (e.g. Hα at 656nm, CaII H and K in violet) where solar atmospheric atoms absorb light. By matching observed lines to reference wavelengths, students can infer which elements are present.
+
+The physics behind this is that atoms absorb (or emit) specific wavelengths corresponding to electron transitions. For example, the hydrogen Balmer series produces visible lines (designated Hα, Hβ, etc.).
+
+Identifying these lines demonstrates quantum energy levels: each line’s wavelength matches a well-known transition in hydrogen, helium, calcium, etc. Example student investigation: After capturing the spectrum of a bright star, have students label at least three absorption lines using a textbook or online spectral atlas. For instance, if the star is of spectral type A (like Vega), its spectrum will show strong hydrogen Balmer lines (A-type stars are hydrogen-rich). Students can verify Hα, Hβ, etc., and discuss how this reveals the star’s classification. They could also observe how a neon or sodium lamp spectrum differs by comparing to reference charts (i.e. identify emission lines from a lamp as a check).
+
+##### Software and Data Analysis Tools
+
+To plan observations and analyze the data, we recommend these free or low-cost tools: Stellarium (free on PC; mobile paid): A planetarium program to visualize the sky at any time and location. It can help choose targets and their rise/set times. (Advanced users can even configure Stellarium to issue GoTo commands to the telescope via the S50’s ASCOM interface.) SkyAtlas (ZWO app, free): The tablet app used by the S50 for control. Students will use this on-device to take images. AstroImageJ (free): A Java-based image analysis package widely used for differential photometry. It reads FITS images, does aperture photometry, and generates light curves. Useful for the photometry steps above. FITS Liberator (free): A plugin for Photoshop/GIMP or standalone tool to convert FITS files to standard image formats (TIFF/PNG) for viewing or presentation. Students can use this to create colored images from raw data. Siril or Iris (free): Image stacking and processing software. After capturing multiple exposures, Siril can align and combine them to improve faint details (especially useful for deep-sky objects). VisualSpec (free) or RSpec (trial): For spectroscopy, VisualSpec is a free Windows tool to extract and calibrate spectra from images. RSpec is beginner-friendly but requires purchase beyond a 15-day trial. Either tool lets students plot intensity vs. wavelength from their S50 spectra. Astrospheric/Clear Outside/NightShift (free weather apps): Useful for planning observing sessions by checking cloud cover and transparency. Using these tools, students gain experience typical of modern observational astronomy – combining hands-on imaging with software analysis.
+
+#### Student Investigations and Experiments
+
+To reinforce learning, students can undertake the following projects: \##### Variable star light curves: Choose a known variable (e.g. Algol, Delta Scuti star, or Mira variable) and monitor it over weeks. Measure its changing brightness and determine its period. Compare with published light curves from AAVSO.
+
+##### Exoplanet transit observation:
+
+to detect the slight dip in brightness when a known exoplanet passes in front of its star (this requires precise photometry and good sky conditions, best done as a class project).
+
+##### Color-temperature relation:
+
+Image several stars of different spectral types (O, B, A, K, M). Use the color channels or RGB filter wheel to estimate their color indices (e.g. B–V) and relate to temperature.
+
+##### Inverse-square demonstration:
+
+In class or lab, students could place a lamp and photometer at different distances to verify $I\propto1/d^2$. While not using the telescope, this cements the concept that distant stars appear dimmer.
+
+##### Photon noise measurement:
+
+Have students take a series of images of a bright star and measure the star’s flux in each. Plot the mean flux vs. its standard deviation; verify that $\sigma\approx\sqrt{N}$ as predicted by shot noise.
+
+##### Spectral classification:
+
+After taking spectra of several stars, students can classify them by comparing their line patterns (e.g. presence/strength of hydrogen lines or Ca H&K lines). Discuss how this relates to stellar temperature and the Hertzsprung–Russell diagram.
+
+###### Lunar/planetary studies:
+
+Use the S50 to image the Moon or planets (e.g. phases of Venus, cloud belts on Jupiter). Students can measure crater sizes in Moon images using the known focal length and pixel scale, relating to geometry.
+
+Each project should include a clear question or hypothesis (e.g. “What is the period of this variable star?”) and use the S50 data to answer it, thereby achieving learning outcomes in data analysis and physics understanding.
+
+#### Underlying Physics Concepts
+
+Throughout these activities, the following physics principles apply:
+
+Inverse-Square Law: The intensity of light from a source falls off as the square of distance - This explains why faint stars require longer exposures.
+
+Light as Photons: Digital sensors count photons. Because light is quantized, the photon noise (shot noise) has standard deviation $\sqrt{N}$ (if $N$ photons are counted). This means that, for example, collecting 4× more photons (e.g. stacking four images) doubles the SNR, since $SNR \approx \sqrt{N}$.
+
+Optics of a Grating: A transmission diffraction grating disperses light by wavelength according to $d\sin\theta = m\lambda$ (where $d$ is grating spacing and $m$ the order). This spreads the star’s light into a spectrum so that different wavelengths appear at different angles (and thus positions on the image).
+
+Atomic Spectra: Atoms absorb and emit only specific wavelengths. In stellar spectra, absorption lines occur where elements in a star’s atmosphere absorb light. For example, the Fraunhofer lines in the solar spectrum are dark lines caused by such absorption. The hydrogen Balmer lines (Hα, Hβ, etc.) appear as distinct features at 656.3nm, 486.1nm, etc. Identifying these lines in S50 spectra shows students the connection between photon energy and atomic transitions.
+
+Magnitude System: Astronomical brightness is measured in magnitudes, a logarithmic scale: a difference of 1 magnitude corresponds to a factor of \~2.512 in brightness. Students should learn that a star 5 magnitudes fainter is 100× dimmer, and relate the flux measurements (from aperture sums) to relative magnitudes in light curves.
+
+By integrating practical observing with these physics concepts, students gain a deep understanding of how astronomers collect and interpret data.

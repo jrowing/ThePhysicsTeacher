@@ -1,0 +1,255 @@
+---
+title: "WorkEnergyPower"
+format: html
+---
+
+General theory for this section:
+
+## Work, Energy, and Power: Basic Theory
+
+### Work ($W$)
+
+-   Work is done when a force causes displacement: $$
+    W = F d \cos \theta
+    $$ Where:
+
+-   $F$ = applied force (N)
+
+-   $d$ = displacement (m)
+
+-   $\theta$ = angle between force and displacement
+
+-   Units: joules (J), where $1\,\text{J} = 1\,\text{N·m}$
+
+-   **No work is done** if there is:
+
+    -   No displacement
+    -   Force perpendicular to displacement (e.g. circular motion)
+
+### Energy
+
+-   **Energy** is the capacity to do work.
+
+#### Kinetic Energy ($E_k$)
+
+-   Energy of a moving object: $$
+    E_k = \frac{1}{2} m v^2
+    $$ Where $m$ is mass (kg) and $v$ is speed (m/s)
+
+#### Gravitational Potential Energy ($E_p$)
+
+-   Energy due to position in a gravitational field: $$
+    E_p = m g h
+    $$ Where $g = 9.8\,\text{m/s}^2$ (on Earth), $h$ is height (m)
+
+#### Elastic Potential Energy
+
+-   Stored in stretched/compressed springs: $$
+    E = \frac{1}{2} k x^2
+    $$ Where $k$ is spring constant (N/m), $x$ is extension/compression (m)
+
+### Conservation of Energy
+
+-   **Total energy is conserved** in a closed system: $$
+    \text{Total energy in} = \text{Total energy out}
+    $$
+-   Energy can be transformed (e.g. potential ↔ kinetic) but not created or destroyed.
+
+### Power ($P$)
+
+-   Power is the rate of doing work or transferring energy: $$
+    P = \frac{W}{t} = \frac{E}{t}
+    $$ Where:
+
+-   $W$ = work done (J)
+
+-   $t$ = time (s)
+
+-   Units: watts (W), where $1\,\text{W} = 1\,\text{J/s}$
+
+### Alternative expressions:
+
+-   If an object is moving at constant speed under constant force: $$
+    P = F v
+    $$
+
+### Efficiency
+
+-   A measure of how much input energy is usefully transferred: $$
+    \text{Efficiency} = \frac{\text{useful output energy}}{\text{input energy}} \times 100\%
+    $$
+
+### Summary Table
+
++--------------------------+---------------------------------------------------+----------------------+
+| Concept                  | Formula                                           | Units                |
++==========================+===================================================+======================+
+| Work                     | $W = F d \cos \theta$                             | joule (J)            |
++--------------------------+---------------------------------------------------+----------------------+
+| Kinetic Energy           | $E_k = \frac{1}{2} m v^2$                         | joule (J)            |
++--------------------------+---------------------------------------------------+----------------------+
+| Gravitational Potential  | $E_p = m g h$                                     | joule (J)            |
++--------------------------+---------------------------------------------------+----------------------+
+| Elastic Potential Energy | $E = \frac{1}{2} k x^2$                           | joule (J)            |
++--------------------------+---------------------------------------------------+----------------------+
+| Power                    | $P = \frac{E}{t}$ or $P = F v$                    | watt (W)             |
++--------------------------+---------------------------------------------------+----------------------+
+| Efficiency               | $\frac{\text{useful}}{\text{input}} \times 100\%$ | percent (%)          |
++--------------------------+---------------------------------------------------+----------------------+
+
+> Work done = energy changed from one form to another = Force x displacement Power = Energy transformed/Time taken
+
++-----------------------+-----------------------------------------+
+| > 1\. Cars and carpet | > 3\. Train sheets                      |
++:======================+=========================================+
+| 2\. Crumple zones     | > 4\. Power of a pupil running upstairs |
++-----------------------+-----------------------------------------+
+
+## Stories to enritch
+
+### Hero’s Steam Engine: The First Work Done by Steam
+
+In ancient Alexandria, Hero invented the aeolipile—a spinning sphere powered by steam jets. Though primitive, it converted heat energy into mechanical work, centuries before the Industrial Revolution. This early example showed how energy could be transformed and harnessed to do work.
+
+Reflection: How did early inventions show the potential of converting energy into motion?
+
+### James Watt and the Horsepower Revolution
+
+James Watt improved the steam engine in the 18th century and coined the term horsepower to describe engine power relative to draft horses. His work transformed energy from a natural force into a measurable quantity used in industry. This idea helped quantify how much work engines could do, fueling the Industrial Revolution.
+
+Reflection: Why was comparing engine output to horses an important step for engineering?
+
+### The Falling Weight: Joule’s Paddle Wheel Experiment
+
+James Prescott Joule carefully measured how much work was done by falling weights to stir water, observing temperature changes. This experiment linked mechanical work with heat energy, laying the foundation for the conservation of energy principle. It showed that energy could be transformed but not destroyed.
+
+Reflection: How did Joule’s experiments unite work and heat as forms of energy?
+
+### The Great Pyramids and Human Power
+
+Building the pyramids required enormous human work over decades. Ancient Egyptians harnessed human muscle power and simple machines to lift and move massive stones, showcasing how power—work done over time—limits what can be achieved. They had an intuitive grasp of energy and power long before formal physics.
+
+Reflection: How does limiting power affect the time needed to do large amounts of work?
+
+### Tesla’s Electrical Power Triumph
+
+Nikola Tesla’s development of alternating current (AC) systems made it possible to transmit electrical power efficiently over long distances. This changed how energy was distributed and used, powering entire cities. His work highlighted the importance of not just energy, but how much power could be delivered when needed.
+
+Reflection: How does power relate to the speed and intensity of energy delivery?
+
+### The Race for the World’s Fastest Engine
+
+In the 19th century, engineers competed to build faster engines, measured in power output. The Watt steam engine was revolutionary, but improving power density became key for locomotives and ships. This competition pushed advances in thermodynamics and mechanical design.
+
+Reflection: Why does increasing power output matter more than just total energy?
+
+### The Rocket That Needed More Power
+
+Rocket scientists realized that getting into space requires enormous power to overcome Earth’s gravity quickly enough. The Saturn V rocket produced millions of horsepower, delivering the work needed in seconds to escape Earth’s pull. Space travel made power and energy tangible on a cosmic scale.
+
+Reflection: How is power critical when work must be done in a very short time?
+
+### The Dilemma of the Light Bulb
+
+Thomas Edison’s invention wasn’t just about energy but how much power his bulbs used efficiently. Balancing energy input and useful light output was an early exercise in power management. It showed everyday technology depends on managing both energy and power.
+
+Reflection: How do we balance energy use and power output in daily life?
+
+### The Human Body: A Power Plant
+
+The average human at rest produces about 100 watts of power—roughly the same as a light bulb. But a sprinter can output over 1,000 watts in a short burst. Our bodies convert chemical energy from food into mechanical work and heat. Understanding this helped develop sports science and ergonomics.
+
+Reflection: How do different activities change the power your body can produce?
+
+### The Hoover Dam: Harnessing Work and Power
+
+The Hoover Dam converts the gravitational potential energy of water into electrical power. The height of the dam and flow rate determine how much work the falling water does and how much power the turbines produce. It’s a grand example of managing energy and power on an industrial scale.
+
+Reflection: How do height and flow rate combine to determine power output in hydroelectric plants?
+
+## Practical work and Demos
+
+### Cars and carpet
+
+This experiment may be used to measure the braking force of a toy car by allowing it to run down a hardboard ramp on to a piece of carpet. Measure the stopping distance (d) and hence find the braking force. This can be done by either measuring the loss of potential energy as it runs down the ramp and on to the carpet or finding the loss of kinetic energy by measuring its speed with a light gate as it reaches the carpet.
+
+I found braking forces of around
+
+distance
+
+\(s\)
+
+0.05N with the cars that I used. Compare this experiment with the use of escape lanes filled with gravel at the sides of steep hills.
+
+> Theory:
+>
+> For a car of mass m travelling down a ramp from a height h and reaching a speed v at the bottom:
+>
+> Loss of kinetic energy as it brakes to a stop on the carpet = Braking force (F) x Braking distance (d) Potential energy lost in travelling down the ramp = mgh
+>
+> If we assume that this is all converted to kinetic energy then mgh = Fd
+>
+> However, if we use the second method we can allow for energy lost on the ramp.
+>
+> Loss of kinetic energy (measured directly with a light gate) = % mv = Fd
+>
+> A graph of velocity squared against braking distance shows the dependence of kinetic energy on v and not simply v.
+>
+> Age range: 11-14
+>
+> Apparatus required: •Toy car •Piece of carpet (not too rough and about 0.5 m long)
+>
+> •Hardboard ramp (about 0.4 m long) •Ruler
+
+### Crumple zones
+
+Place the block under a cardboard tube with a gap slightly longer than the length of the cylinder and crumple zone. The crumble zone under test is fitted to the lower end of the cylinder. Drop the metal cylinder down the tube on to the block. When the crumple zone hits the concrete block it will deform and the amount (length) of deformation can be measured. Test the deformation with different crumple zones, all of which should be of the same initial length.
+
+> Theory: The speed (v) at which the cylinder (crumple zone) hits the floor (a solid block) can be found from v = (2gh) ^l^/^2^ where h is the high fallen and g is the acceleration due to gravity (10 m/s^2^).
+>
+> Age range: 14-16
+>
+> Apparatus required: •Heavy concrete block •Cardboard tube about 1.5m long ^e^ Metal cylinder with a diameter just less than that of the tube •Metre ruler 'Various 'crumple' zones
+
+### Train sheets
+
+This is a set of sheets devised to teach the topics of work, force and energy. It introduces the idea of the energy stored in a spring, the resistive forces opposing motion and the resulting stopping distances. We have three trains with one, two and three units of stored energy and these are run on three different surfaces having one, two and three units of frictional resistance. If the train with one unit of stored energy travels 30 m on a surface with one unit of resistive force before stopping, then the pupils are asked to work out how far all the trains would travel on all the surfaces.
+
+
+The end result is hopefully an understanding of the formula:
+
+Work done = Energy transferred = Resistive Force (F) x Distance travelled (d).
+
+Having a clockwork train for an actual demonstration helps!
+
+> Age range: 11-13
+>
+> Apparatus required: •Train sheets sample (Thanks to Pete and Phil for the idea)
+
++-------------+-------------+--------------------------+------------------+
+| Energy      | Force (F)   | > Distance travelled (d) | Force x Distance |
++:===========:+:===========:+:========================:+:================:+
+| > 1         | > 1         | > 30                     | > 30             |
++-------------+-------------+--------------------------+------------------+
+| > 2         | > 1         | > 60                     | > 60             |
++-------------+-------------+--------------------------+------------------+
+| 3           | 1           | > 90                     | > 90             |
++-------------+-------------+--------------------------+------------------+
+| > 1         | 2           | 15                       | 30               |
++-------------+-------------+--------------------------+------------------+
+| > 1         | 3           | > 10                     | 30               |
++-------------+-------------+--------------------------+------------------+
+
+### Power of a pupil running upstairs
+
+(a) This is a simple experiment to measure a pupil's power - they carry their own mass (themselves) up a known height. The pupils run up a flight of stairs of known height and measure the time that they take to do it. They then measure their own weight and so calculate the work done and the power that they developed. Carrying a rucksack loaded with books will increase their weight.
+
+(b) The power of their arms can be found by lifting a weight such as a bucket of sand.
+
+> Experiment (a): Only allow one pupil at a time to run up the stairs. Sensible footwear should be worn. Discourage over competitiveness which can lead to falls and injuries. Any student excused from P.E lesson is unlikely to be able to take part.
+>
+> Experiment (b): No pupil should lift a weight higher than their own shoulders. Warn of back damage here.
+>
+> Age range: 13-16
+>
+> Apparatus required: •Bathroom scales 'Flight of stairs •Stop watch •Measuring tape or ruler •Heavy mass such as a bucket of sand

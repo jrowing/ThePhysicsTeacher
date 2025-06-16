@@ -1,0 +1,344 @@
+---
+title: "Basic Physics"
+format: html
+---
+
+## General theory for this section
+
+Physics is the Study of How the Universe Works, Physics explores the fundamental rules that govern matter, energy, space, and time. It helps explain everything from falling apples to black holes.
+
+### SI Base Units
+
+| Quantity            | Symbol | Unit Name | Unit Symbol |
+|---------------------|--------|-----------|-------------|
+| Length              | $l$    | meter     | m           |
+| Mass                | $m$    | kilogram  | kg          |
+| Time                | $t$    | second    | s           |
+| Electric Current    | $I$    | ampere    | A           |
+| Temperature         | $T$    | kelvin    | K           |
+| Amount of Substance | $n$    | mole      | mol         |
+| Luminous Intensity  | $I_v$  | candela   | cd          |
+
+### Derived Units (Examples)
+
+| Quantity | Symbol | Unit Name | Formula/Definition                           |
+|----------|--------|-----------|----------------------------------------------|
+| Force    | $F$    | newton    | $1\,\mathrm{N} = 1\,\mathrm{kg \cdot m/s^2}$ |
+| Energy   | $E$    | joule     | $1\,\mathrm{J} = 1\,\mathrm{N \cdot m}$      |
+| Power    | $P$    | watt      | $1\,\mathrm{W} = 1\,\mathrm{J/s}$            |
+| Pressure | $P$    | pascal    | $1\,\mathrm{Pa} = 1\,\mathrm{N/m^2}$         |
+
+### Common SI Prefixes
+
+| Prefix | Symbol | Factor     | Example                |
+|--------|--------|------------|------------------------|
+| giga   | G      | $10^9$     | 1 GHz = $10^9$ Hz      |
+| mega   | M      | $10^6$     | 1 MW = $10^6$ W        |
+| kilo   | k      | $10^3$     | 1 km = $10^3$ m        |
+| centi  | c      | $10^{-2}$  | 1 cm = $10^{-2}$ m     |
+| milli  | m      | $10^{-3}$  | 1 ms = $10^{-3}$ s     |
+| micro  | $\mu$  | $10^{-6}$  | 1 $\mu$F = $10^{-6}$ F |
+| nano   | n      | $10^{-9}$  | 1 nm = $10^{-9}$ m     |
+| pico   | p      | $10^{-12}$ | 1 pF = $10^{-12}$ F    |
+
+### Unit Conversion
+
+-   To convert between units with prefixes, multiply or divide by the appropriate power of ten.
+-   Example: $5\,\mathrm{km} = 5 \times 10^3\,\mathrm{m} = 5000\,\mathrm{m}$
+
+### Summary Table
+
+| Quantity         | Symbol | Unit Symbol | Example with Prefix |
+|------------------|--------|-------------|---------------------|
+| Length           | $l$    | m           | 1 km = $10^3$ m     |
+| Mass             | $m$    | kg          | 1 mg = $10^{-6}$ kg |
+| Time             | $t$    | s           | 1 ms = $10^{-3}$ s  |
+| Electric Current | $I$    | A           | 1 mA = $10^{-3}$ A  |
+| Temperature      | $T$    | K           | —                   |
+| Energy           | $E$    | J           | 1 kJ = $10^3$ J     |
+
+## Stories to enritch
+
+### The Mars Climate Orbiter Crash
+
+In 1999, NASA lost a \$125 million spacecraft because of a simple mistake: one team used imperial units while the other used metric. A force calculated in pound-seconds was interpreted as newton-seconds. The result? The probe entered Mars' atmosphere at the wrong angle and was destroyed. It’s a dramatic reminder that units really do matter — in space, there are no second chances.
+
+### Fermi’s Paper Trick
+
+At the first nuclear test in 1945, physicist Enrico Fermi dropped pieces of paper as the shockwave hit. By estimating how far they moved, he calculated the energy of the explosion — within a factor of two of the actual value. With no instruments, just logic and estimation, he showed how powerful order-of-magnitude thinking can be.
+
+### Drag, Planes, and Pi
+
+Before computers or wind tunnels, scientists wanted to understand what affects drag on an object. Using only dimensional analysis, they figured out how drag must depend on speed, fluid density, and surface area. This led to the discovery of the Reynolds number — a key idea in fluid dynamics. It all came from playing with units and looking for dimensionless combinations.
+
+### Galileo Rolls the Ball
+
+Galileo rolled balls down a ramp and timed them with a water clock. He noticed the distance didn’t increase steadily — it grew faster and faster. He realized distance was proportional to time squared. It was one of the first steps toward understanding acceleration and laid the foundation for Newton’s laws — all from careful observation and simple timing.
+
+### Maxwell’s Speed of Light
+
+In the 1800s, James Clerk Maxwell found that the speed of electromagnetic waves could be calculated from two physical constants. When he worked it out, the speed matched that of light. Suddenly, light wasn’t just a mystery — it was a wave in electric and magnetic fields. Units helped reveal one of the most profound connections in physics.
+
+### How many tools does it take...
+
+... To change a lightbulb? Two if you are in the International Space Station (ISS). The ISS was built by an international consortium which fostered collaboration but also led to some practical quirks. The modules built by the United States are made using Imperial units and fasteners, whilst the European, Russian and Japanese modules use the metric versions. Both metric and imperial tools have to be available for the astronauts.
+
+### Banana equivalent dose
+
+A unit used to provide an everyday measure of radiation dose. A single banana produces an ionising radiation dose of around 0.1 μSv which has been set as the value of the banana equivalent dose. The ionising radiation dose given by a range of sources can be expressed in BEDs. A Dental X-ray has a dose of 50 Bananas.
+
+### The Smoot
+
+In 1958, Oliver R. Smoot, an MIT freshman, became an unlikely part of measurement history — and the basis of one of the most delightfully absurd units in physics: the smoot.
+
+As part of a fraternity prank, Smoot’s brothers decided to measure the length of the Harvard Bridge (between Boston and Cambridge) using Smoot himself as the ruler. They had him lie down on the sidewalk, mark his position, then repeat — all the way across the bridge.
+
+The final measurement? 364.4 smoots ± 1 ear.
+
+Yes — they even included an uncertainty estimate. The "ear" was the estimated margin of error based on Smoot's slight squirming or misalignment during the process.
+
+## Practical work and Demos
+
+### Estimates of quantities
+
+It is always important in Physics to have a rough idea of the values of quantities that you are attempting to measure. Introduce this idea by a set of intelligent guesses and fermi problems.
+
+Fermi problems are estimation challenges named after physicist Enrico Fermi, who was known for making good approximate calculations with little or no actual data. These problems involve breaking down complex questions into simpler parts, making reasonable assumptions, and using estimation and logic to arrive at an approximate answer.
+
+A classic example is: "How many piano tuners are there in Chicago?" To solve this, you’d estimate the population of Chicago, how many households might have pianos, how often they’re tuned, and how many tunings one person can do — then work your way to a rough answer.
+
+Fermi problems develop skills in:
+
+-   Critical thinking
+-   Problem decomposition
+-   Reasonable estimation
+-   Handling orders of magnitude
+-   They’re often used in science and engineering education to build confidence in tackling big or unfamiliar questions with limited data.
+
+Having a physical sense of measurements can be very advantageous - especially in preparation for practical examinations. Try getting the students to:
+
+-   guess the temperature of hot water (at about 50) in a bucket by feel
+-   time 30s with eyes closed by counting against the clock.
+-   the mass of a lump of stone (say 10 kg) or a building block by lifting it up
+-   the length of the lab just by looking at it
+-   the height of a tree outside
+-   the number of bricks in the wall of the lab
+
+### Dimensional analysis
+
+Dimensional analysis is a powerful method used in science and engineering to check equations, derive relationships, and convert between units. It’s based on the principle that physical quantities must be dimensionally consistent — meaning both sides of an equation must have the same basic units (such as mass \[M\], length \[L\], time \[T\], etc.).
+
+For example, speed has dimensions of length divided by time, $[LT^{-1}]$. If you’re given an equation involving speed, distance, and time, dimensional analysis can help you verify if it’s physically meaningful.
+
+Key uses of dimensional analysis include:
+
+-   Checking equations for consistency
+-   Deriving formulas when the exact relationship isn’t known
+-   Converting units (e.g. km/h to m/s)
+-   Estimating outcomes in physics problems
+
+It’s a valuable tool for spotting errors and making sense of unfamiliar problems using just the units involved.
+
+A classic This demonstration is designed to show the difference between quantities with different units and also dimensions. I use a collection of toy farm animals: pigs, sheep and cows.
+
+Take one or two pigs, a couple of sheep and a cow and ask - "How many are there?" The students should then reply with the question "How many what?"
+
+Can you add up cows and pigs? Not really. The whole point is that it is still just a mixture of animals! In the same way you cannot add metres and kilograms! I find it an amusing way of introducing students to the higher level course. Consider balancing equations. Use the animals to show that if you have two pigs (pig squared!) on one side of an equation then you must have two pigs on the other. Is a pig on its back "(\[pig\] -l)"!?
+
+Age range: 16 --- 18 Apparatus required: •Set of farm animals
+
+### Getting values for the sizes of small quantities
+
+The sizes of small measurements (mass or length) can best be found by measuring a large number of the objects and then dividing the result by the number of objects.
+
+For example:
+
+The thickness of a sheet of paper is best found by measuring the thickness of a number of sheets (or use a micrometer).
+
+The mass of a paper pellet can be found by finding the area of a sheet of paper and then finding the area of paper used to make the pellet.
+
+The mass of a single small ball bearing can be found by measuring the mass of a known large number of them. ::::::: {.callout-note collapse="true"} \## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Ream of paper
+-   Jar of marbles
+-   Rulers
+-   Top-pan balance
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+
+:::::::
+
+### Simple measurements in Physics
+
+As an introduction to measurement get the pupils to measure:
+
+-   the length of a microscope slide
+-   the distance between two holes in an A4 sheet
+-   the diagonal of a the A4 sheet and
+-   the diameter of a ball
+
+Prepare both large and small shapes on which to experiment.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Microscope slides
+-   A4 and A3 paper etc
+-   Rulers, vernier and micrometers
+-   Selection of different size balls
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Measuring Distance Accurately
+
+In the course of learning physics students need to learn the art of precision measurements. Use a variety of measuring instruments (Metre ruler, Vernier caliper, micrometer screw gauge) to measure small objects (e.g., pencil, bolt). The concepts of precision, scale reading, and significant figures are the aim. Demo: Measure the same object with ruler, caliper, and micrometer. Discuss zero error, precision and uncertainty, and when to use which tool.
+
+### Stopwatch Reaction Time
+
+Human reaction time is only accurate to about $\pm 0.3s$. You can explore this effectively with the ruler drop test. Drop a ruler and catch it to estimate reaction time.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Rulers
+-   Stopwatches
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Mass and Balance: Using a Top Pan Balance
+
+Another essential skill for students to learn is how to use an Electronic balance. The concepts of Mass, precision, taring and units (grams/kilograms) are all useful areas to explore. Zero error, resolution of the scale (±0.01 g etc).
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Selection of masses
+-   Top-pan balance
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Water Displacement for Volume
+
+Over 2,000 years ago, in ancient Greece, the king asked Archimedes to solve a problem: Was his new crown made of pure gold — or had the goldsmith cheated by mixing in cheaper metals?
+
+Archimedes thought hard, but couldn’t figure out how to test it without damaging the crown. One day, while lowering himself into a full bath, he noticed the water overflowed. At that moment, he realised:
+
+> An object displaces its own volume of water. He had found a way to measure the crown’s volume — without melting it.
+
+Excited, he jumped out of the bath and ran through the streets shouting:
+
+> “Eureka!” — “I have found it!”
+
+Using water displacement to find the volume of irregular objects is a fantastic opportunity to teach how to measure volume and parallax error etc.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Measuring cylinder,
+-   Irregular objects,
+-   Large beakers or eureka cans
+-   Water
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Error Bars on a Graph
+
+Particularly at a-level, the students need to be able to do simple linear regression and plot lines of maximum and minimum gradient. In order to do this use some Sample data (height vs time etc), graph paper/software. Uncertainty in data, graphing conventions Demo: Plot mean values with error bars from repeated trials. Discuss: What do error bars represent? How to interpret overlap.
+
+### Spring Extension (Hooke’s Law Intro)
+
+Materials: Spring, weights, metre rule, clamp stand Concepts: Linear relationships, measuring extension, calibration Demo: Add masses and measure spring extension. Discuss: Plotting data, linear fits, intercept, gradient with units.

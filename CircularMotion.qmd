@@ -1,0 +1,297 @@
+---
+title: "Circular Motion"
+format: html
+---
+
+## General theory for this section:
+
+### Definition
+
+Circular motion refers to the movement of an object along the circumference of a circle. It can be **uniform** (constant speed) or **non-uniform** (changing speed), but in both cases the **direction of motion changes continuously**, implying **acceleration**.
+
+### Key Quantities
+
+| Quantity | Symbol | Units | Description |
+|----------------|----------------|----------------|-------------------------|
+| Radius | $r$ | m | Distance from the center to the object |
+| Speed | $v$ | m/s | Magnitude of the velocity (scalar) |
+| Angular velocity | $\omega$ | rad/s | Rate of rotation: $\omega = \frac{d\theta}{dt}$ |
+| Frequency | $f$ | Hz | Revolutions per second: $f = \frac{1}{T}$ |
+| Period | $T$ | s | Time for one complete revolution |
+| Centripetal acceleration | $a_c$ | m/s² | Directed toward the center: $a_c = \frac{v^2}{r}$ |
+| Centripetal force | $F_c$ | N | Net force causing circular motion: $F_c = \frac{mv^2}{r}$ |
+
+### Key Relationships
+
+-   $v = \omega r$
+-   $a_c = \omega^2 r = \frac{v^2}{r}$
+-   $F_c = ma_c = m\omega^2 r = \frac{mv^2}{r}$
+
+### Direction of Vectors
+
+-   **Velocity** is **tangential** to the circle.
+-   **Acceleration** and **centripetal force** point **toward the center**.
+-   There is **no outward force** acting on the object (e.g., "centrifugal force" is a **fictitious** force in an inertial frame).
+
+### Examples
+
+-   A car turning around a bend
+-   A satellite orbiting Earth
+-   An electron moving in a magnetic field
+-   A mass on a string swung in a horizontal circle
+
+Centripetal force is the force that pulls or pushes an object from its straight-line path. It always acts towards the centre of a circle. The centrifugal force is the reaction of this force on the thing doing the pushing or pulling but not on the rotating object itself.
+
+$$
+\text{Centripetal force} = \frac{mv^{2}}{R}
+$$
+
+where: - $m$ is the mass of an object moving at a constant speed - $v$ is the tangential velocity - $R$ is the radius of the circle round a circle of radius R
+
+## Stories to enritch
+
+### Sputnik and the Start of Space Orbits (1957)
+
+When the Soviet Union launched Sputnik, the first artificial satellite, it stunned the world — and illustrated circular motion on a planetary scale.
+
+Sputnik stayed in orbit because it was moving sideways fast enough (about 8 km/s) that Earth's surface curved away beneath it as it "fell." It didn't need engines to stay up — just the right speed to balance gravity with inertia, a perfect case of centripetal motion. Circular motion wasn’t just theory anymore — it became the basis of satellite technology, GPS, and global communication.
+
+### The World’s Tallest Swing Ride
+
+The StarFlyer ride in Florida lifts passengers nearly 150 meters into the air and spins them around at over 70 km/h.
+
+Despite being "thrown outward," riders are actually being pulled inward by the tension in the cables — providing the centripetal force. If the cables broke, the rider wouldn’t fly outward — they'd follow a tangent path, showing Newton’s first law in action. It’s thrilling — and a real-life demonstration of circular motion and Newtonian mechanics.
+
+### The Spinning Space Station Idea (2001: A Space Odyssey)
+
+In the film 2001: A Space Odyssey, the rotating space station creates artificial gravity by spinning. This isn’t just science fiction — it's real physics.
+
+In a spinning ring, objects are forced against the outer wall by their inertia. The wall provides the centripetal force, which feels like gravity to the occupants. Engineers have seriously considered building rotating space habitats using this principle to help astronauts stay healthy in zero gravity.
+
+## Practical work and Demos
+
+### Model prop-powered plane on a thread
+
+circular motion The theory of a conical pendulum can be very clearly demonstrated by using a model battery-powered plane that hangs from a pivot by a thread, the pivot being able to rotate. The battery drives a large propeller at the back of the plane, making it fly in a circle of radius r at a constant speed. It is also a good simulation of the chairs in fairground rides.
+
+The faster the plane the bigger the angle (0) that the string makes with the vertical. Measurements of 0, v, m and r are easy to make, and so the experiment could be used to find the acceleration due to gravity (g). The only problem is that it's difficult to stop!
+
+Theory: \> \> For a plane of mass m \> \> Resolving vertically mg = T cos 0 \> \> Resolving horizontally mv^2^/r = Tsin 0 Therefore: tan 0 = v^2^/rg and so g = v^2^/\[rtan 0\] \> \> Age range: 16-18 \> \> Apparatus required: •Model plane on thread and suitable support •Stop clock •Ruler
+
+### The bath water and the plug hole
+
+Since this experiment can only be done at the place in the hemisphere where you live, the only hope of showing the differing direction of rotation in the different hemispheres is to get a video which shows the water going down the plug with the vortex rotating in opposite directions. What will be possible with a video link via the Internet! (This counter rotation in different hemispheres may now have been discounted as pure chance!)
+
+### Shape of rotating liquid surface
+
+The shape of a rotating liquid surface can be found using the following experiment. Mount a glass beaker securely at the centre of a rotating table. (One of the best methods is to make a hollow circular aperture in a piece of wood into which the beaker will just fit and screw or bolt this to the rotating table.) Put warm melted wax in the beaker and spin it. As the wax cools and solidifies, a permanent record of the shape of the rotating surface will be produced. Using water or oil or wallpaper paste will give a temporary record.
+
+An alternative version is to use a bowl of sugar. The shape of the surface can be retained as long as you don't spin it too fast!
+
+> Theory:
+>
+> Shape of the surface can be shown to be y = 0^2^x^2^/2g + C where o is the angular velocity and x the distance from the centre of rotation.
+>
+> Age range: 16-18
+>
+> Apparatus required: •Wax •Beaker 'Rotating table •Motor and drive belt •12V variable D.C. supply
+
+### Whirling bucket
+
+The classic centripetal force experiment. Put a little water in a plastic bucket --- get hold of bucket and then swing the bucket in a vertical circle. As long as the rate of rotation is great enough the water stays in the bucket! Slowing the rate of rotation can get the water to almost fall out at the top of the path, and you can usually hear it slopping around at this critical point. An empty five litre plastic paint tine with about a litre of water in it works well.
+
+Mention that the water and bucket experience a centripetal force, but that there is also a centrifugal force - this is the reaction on the pivot, in this case your hand. Many extensions of this are possible, such as swinging a tray loaded with beakers by four strings! Plastic beakers are safer, but glass ones have more inertia and so are more stable.
+
+> Theory
+>
+> The water and the bucket move in a vertical circle at a constant speed, and so although the centripetal force is constant the tension (T) in the string varies. It is greatest at the lowest point of the circle because of the differing contributions of gravity at different points of the circle.
+>
+> Centripetal force = mv^2^/r = T + mgcos0 where 0 is the angle that the string makes with the vertical, measured from the point where the bucket is at the top.
+>
+> Do not swing it too fast so that the handles of the bucket come off, and ensure that the bucket does not hit the floor at the lowest point of the circle. Do not use a metal bucket.
+>
+> Age range: 14-18
+>
+> Apparatus required: •Bucket •Water
+
+### Rotary water sprinkler
+
+Fix an inflated balloon to the water inlet nozzle of a rotary lawn sprinkler and allow the balloon to deflate. Use this not only to show circular motion but also to measure energy conversion. I prefer to block up the vertical outlet if the sprinkler has one so that air only emerges horizontally.
+
+### Rotating lawn sprinkler
+
+Use the lawn sprinkler again but this time fixed to a water tap. This is a good example of angular momentum. The momentum of the water leaving the sprinkler imparts an equal and opposite momentum to the central rotating head.
+
+### Tov cars and loop the loop
+
+Toy cars on a plastic track can be used to demonstrate a number of ideas in mechanics. If the track can be bent into a vertical circle then loop the loop experiments can be performed.
+
+> Theory:
+>
+> Centripetal force = mv^2^/r. This is provided by a combination of the reaction of the track (R) and the force of gravity (mg). At the top of the path the car can travel at its minimum speed since the centripetal force can be provided by gravity alone. mv^2^/r= R + mg
+>
+> The greatest reaction occurs at the bottom of the path where R = mv^2^/r + mg
+
+Age range: 16-18 Apparatus required: ^o^ Toy cars •Loop the loop track •Ruler
+
+### Boat in box
+
+Put a small toy boat or a fishing float in a plastic bowl of water and spin it on a turntable watch the motion of the boat or float as the spin rate is altered.
+
+> Age range: 14-16
+>
+> Apparatus required: •Boat or fishing float •Plastic bowl of water •Turntable •Motor •TV camera helps
+
+### Wall of death - fruit bowl and marmite lid
+
+This demonstration is a simulation of a motorcyclist on a wall of death at a fairground. Take a glass or plastic fruit bowl of diameter at least 30 cm to represent the Wall of Death and a lid of a jar to represent the motor cyclist (one from a Marmite jar works well). With a little practice the lid can be made to roll round the sides of the bowl on its edge and once moving can be kept going by a small oscillation of the bowl. It will roll round rapidly even though the sides of the bowl are kept vertical.
+
+Age range: 16-18 Apparatus required: 'Fruit bowl and marmite lid
+
+### Fairground rides
+
+(a) Ride one - loop the loop
+
+Using the loop the loop track with toy cars is a very good simulation of what happens in vertical fairground rides. The question is - how high up must you start the ride so that the cars just make the loop without falling off? It is difficult to demonstrate this exactly because of friction, but we can get an idea. Theoretically the car must start from a height which is 2.5 times the radius of the loop.
+
+> Theory:
+
+At the top of the loop a = v^2^/r = g if the car is not to fall off.
+
+> Therefore k.e at this height must be 1/2mv =1/2mrg. Potential energy = mg2r and so the total energy at the top of the loop is 2.5mrg. So if the car is to make the loop without falling off it must have had an initial potential energy of 2.5mrg and so must begin from a height of 2.5r above the base of the loop.
+
+(b) Ride Two - the swinging chairs
+
+What about the swinging chairs? These are chairs fixed to a central pillar by wires. As the rate of rotation is increased, so the chairs swing out further and further from the vertical. Do they all swing out the same amount?
+
+You can make a simple model of the chair ride at a fair with chairs made from bottle tops. Mount it in the centre of a rotating table and then spin the table using a motor. (Alternatively use a battery powered electric drill with a plywood disc attached.)
+
+It can be used to demonstrate the effect of different masses in the chairs by loading some with plasticine; you could make actual people shapes. The important thing is that the mass does not affect the angle of the strings to the vertical.
+
+Theory: -
+
+Consideration of the formula tano = v^2^/rg = r0^2^/g (where v is the linear velocity and o the angular velocity of the chairs) shows that all the chairs swing out the same amount regardless of their mass.
+
+0 is the angle that the string makes with the vertical, v the speed of rotation and r the radius of the circle.
+
+Age range: 16-18 Apparatus required: •Chairs model •Motor •Suitable power supply
+
+> •Rotating table or electric drill with a plywood disc attached ^O^ G clamps
+
+### Rounders bat on rotating table
+
+Stand on a rotating table and swing a rounders bat to show the effect of conservation of angular momentum. This is a more effective extension of trying to rotate yourself on a rotatable table where moving your arms in one direction causes your body to move in the other - both coming to rest at the same time. Standing on the table yourself and very gently throwing a kilogram sand bag is another effective demonstration.
+
+### The wire coat hanger and circular motion
+
+Pull open a wire coat hanger so that it forms a square. File the end of the hook flat and then bend the hook until it points towards the opposite corner of the square. Balance a Ip coin on the hook, put one finger in the corner of the square opposite the hook and then spin the coat hanger in a vertical circle - the coin stays in place! This is a very simple but excellent demonstration of centripetal force.
+
+The force of the hook on the penny always acts towards the centre of rotation. The present record is five Ip pieces stacked on top of each other.
+
+With only one penny balanced and with great care I have once even been able to bring the coat hanger to rest without the penny falling off. I am very grateful to the professor from the USA who first showed me this.
+
+> Age range: 14-18
+>
+> Apparatus required: •Wire coat hanger with filed end •Pile of small coins
+>
+> his is one of the finest experiments in the whole collection! It is impressive yet simple.
+
+### Rotating candle
+
+On a turntable put a candle shielded by a glass tube such as a jam jar the candle must be shorter than the height of the jar. Light the candle and rotate the turntable. Watch the flame! (A table with a diameter of 30 cm and a rotation rate of about 1 Hz is appropriate.)
+
+> Age range: 16-18
+>
+> Apparatus required: •Rotating table •Motor •Jam jar •Candle •Blu tack
+
+### Back seat of a car
+
+Who falls into whose lap as you go round corners? The person nearest the centre of the curve travels on in a straight line whereas the one on the outside of the curve is pushed round by the side of the car to meet them. So it appears that the person on the inside falls into the other one's lap. This is similar to the effect on the clothes in a spin drier.
+
+Notice that if the driver tries to corner too fast the car will roll outwards - the inner wheels leaving the ground first.
+
+### A simple centrifuge by whirling a container on string
+
+A simple centrifuge can be made by whirling a plastic bottle round your head on a piece of string. Use a mixture of water and sand to show the separation. Experimenting with other liquids such as syrup and wallpaper paste makes an interesting extension to this experiment.
+
+> Theory: For a mass m moving in a circle of radius r the centripetal force (F) = mv /r.
+>
+> Age range: 14-18
+>
+> Apparatus required: •Plastic bottle •String •Water •Wall paper paste 'Sand
+
+### Rotating jelly - circular motion
+
+The effects of centripetal forces on a rotating object can be shown impressively by making a circular jelly about 3 cm deep in a crystallising dish. When it is set empty it out carefully on to the centre of a polystyrene plate which is securely fixed to the centre of the plywood platform.
+
+Slowly increase the rate of spin of the table. The jelly will flatten.
+
+Further increasing the rate of spin will eventually make the jelly break up - the cohesive forces within it being less than the centripetal forces needed. It can be used to demonstrate why car tyres fly apart when they are spun too fast.
+
+I was told that if you used some of the old forms of tyre remoulds you should not travel at more than 50 mph so as to reduce the risk of the tyres breaking up!
+
+The jelly experiment also shows the shape of the liquid surface while rotating. It is useful to photograph it or take a video for later analysis.
+
+> Age range: 16-18 for real benefit Apparatus required:
+>
+> •Crystallising dish •Jelly •Polystyrene plate •Variable speed electric drill •Circular plywood platform with central bolt for fitting to the drill chuck
+
+### Cress seed and rotating table - g forces
+
+Can we demonstrate the effect of the g force on a cress seed growing on a rotating table? We would have to rotate them for a week to make them grow outwards.
+
+### Rotation of rigid bodies and moments of inertia
+
+It is instructive to investigate the effects of the moment of inertia with the following simple experiments:
+
+\(a\) use discs of equal mass but of different mass distribution as energy sources (b) look at the physics of inertia-powered toy cars and consider the full size version (c) investigate the rotation of a heavy bicycle wheel
+
+### Wall of death simulation
+
+Mount a vertical sided glass beaker or crystallising dish on the centre of a rotating table. (Use the electric drill and the plywood circle.) Set it spinning and carefully place a rubber eraser in it against the wall but not touching the bottom of the dish. The rubber "sticks" to the walls.
+
+> Age range: 16 --- 18
+>
+> Apparatus required:
+
+•Rotating table 'Glass dish •Safety screen •Adhesive (Blu Tack ) •Rubber eraser
+
+Llrcular mouon
+
+### The lariat
+
+A loop of string or rope is wrapped round a wooden cylinder (or a tin can) fixed to a motor so that it can be rotated about a horizontal axis. The loop can be nudged off the cylinder and continues to rotate.
+
+> Use a safety screen between you and the students, and wear eye protection.
+>
+> Age range: 15-18
+>
+> Apparatus required: •Loop of string or rope •Cylinder of wood or a tin can •Motor •Power supply 'Safety screen and eye protection
+>
+> Additional theory
+
+### Angular velocity
+
+> When an object is travelling in a circle it has an instantaneous linear velocity, but it also has an angular velocity (w). This is defined as the rate of change of angle with time and is usually expressed in radians per second.
+>
+> For a rotating body that is rigid such as a CD or a wheel the angular velocity is the same at all points on the body while the linear gets greater as the distance from the centre gets larger. However, if the body is not rigid, like soup in a bowl that is being spun round, the angular velocity changes.
+
+### Motion in a vertical circle
+
+> If an object is being swung round on a string in a vertical circle at a constant speed the centripetal force must be constant, but because its weight (mg) provides part of the centripetal force as it goes round the tension in the string will vary. Let the tension in the string be Tl at the bottom of the circle, T2 at the sides and T3 at the top.
+>
+> At the bottom of the circle:
+>
+> ^2^
+
+Tl - mg = mv/r so Tl = mv \[r + mg
+
+> At the sides of the circle:
+>
+> T2 = mv2/r
+>
+> At the top of the circle:
+>
+> ^2^
+
+T3+ mg = rnv/r so T3 = mv /r - mg

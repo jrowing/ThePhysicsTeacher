@@ -1,0 +1,268 @@
+---
+title: "Friction"
+format: html
+---
+
+## Basic Theory
+
+### What is Friction?
+
+-   Friction is the force that **opposes the relative motion** or tendency of motion between two surfaces in contact.
+-   It acts **parallel to the surfaces** and opposite to the direction of motion or impending motion.
+
+### Types of Friction
+
+-   **Static Friction (**$F_s$): Acts when surfaces are **not moving** relative to each other. It prevents motion.
+-   **Kinetic (Sliding) Friction (**$F_k$): Acts when surfaces **slide past each other**.
+-   **Rolling Friction:** Opposes motion when an object rolls over a surface (usually smaller than sliding friction).
+
+### Coefficient of Friction
+
+-   A dimensionless number representing the frictional properties of surfaces.
+-   Denoted by:
+    -   $\mu_s$ for static friction
+    -   $\mu_k$ for kinetic friction
+
+### Frictional Force Formula
+
+-   Maximum static friction force before motion starts: $$
+    F_s \leq \mu_s N
+    $$
+-   Kinetic friction force during sliding: $$
+    F_k = \mu_k N
+    $$ Where:
+-   $N$ = normal force (perpendicular force between surfaces)
+
+### Characteristics of Friction
+
+-   Friction depends on:
+    -   Nature of surfaces in contact (material, roughness)
+    -   Normal force $N$
+-   Friction is **independent of contact area** for solid surfaces.
+-   Friction converts kinetic energy into heat.
+
+### Effects of Friction
+
+-   Enables walking, driving, and gripping.
+-   Causes wear and tear.
+-   Causes energy loss in machines.
+
+### Overcoming Friction
+
+-   Lubrication reduces friction by adding a thin layer between surfaces.
+-   Using rollers or ball bearings reduces friction by converting sliding to rolling friction.
+
+### Example: Force Required to Move an Object
+
+If an object of weight $W$ rests on a horizontal surface:
+
+-   Normal force $N = W = mg$
+-   Minimum force $F$ to overcome static friction: $$
+    F = \mu_s N = \mu_s mg
+    $$
+
+### Summary Table
+
++-------------------------+----------------+----------------------+----------------------------------+
+| Quantity                | Symbol         | Formula              | Notes                            |
++=========================+================+======================+==================================+
+| Static friction force   | $F_s$          | $F_s \leq \mu_s N$   | Max value before motion starts   |
++-------------------------+----------------+----------------------+----------------------------------+
+| Kinetic friction force  | $F_k$          | $F_k = \mu_k N$      | During sliding motion            |
++-------------------------+----------------+----------------------+----------------------------------+
+| Coefficient of friction | $\mu_s, \mu_k$ | Dimensionless        | Depends on surfaces              |
++-------------------------+----------------+----------------------+----------------------------------+
+| Normal force            | $N$            | Depends on situation | Usually $N = mg$ on flat surface |
++-------------------------+----------------+----------------------+----------------------------------+
+
++----------------------------------------+-----------------------------------------------------+
+| > 1\. Glass fibre.                     | > 7\. Falling matchbox                              |
++:=======================================+:====================================================+
+| 2\. Styrocell beads                    | > 8\. Escalado                                      |
++----------------------------------------+-----------------------------------------------------+
+| 3\. Polystyrene ball falling in a tube | > 9\. Rolling dog food and baked bean cans          |
++----------------------------------------+-----------------------------------------------------+
+| 4\. Lowering friction with magnets     | 10\. Friction between books \|                      |
++----------------------------------------+-----------------------------------------------------+
+| 5.  Stick-slip motion                  | 11\. Friction and sliding cups                      |
+|                                        |                                                     |
+| 6.  Two simple hovercraft              |                                                     |
++----------------------------------------+-----------------------------------------------------+
+
+## Stories to enritch
+
+### The Tragedy on the Rails: The Tay Bridge Disaster (1879)
+
+One stormy night in Scotland, a passenger train attempted to cross the Tay Bridge. A violent gust struck, and the bridge collapsed beneath it. Investigators later found that oscillations and lack of lateral frictional damping in the bridge design had allowed the wind to amplify motion until the structure gave way. The disaster shocked Victorian engineers. The need to understand not just force, but friction and resistance within joints and tracks, became a central lesson in civil engineering.
+
+Reflection: How can a lack of internal friction—often seen as wasteful—be deadly?
+
+### The Match That Changed the World
+
+In 1826, John Walker invented the friction match—by accident. Stirring a mixture of chemicals with a stick, he noticed the dry blob at the end flared when scraped on stone. This wasn’t heat from fire—it was the mechanical friction of scraping. The invention allowed for easy fire-making for the first time in history. Friction, once a nuisance to be avoided, became a tool for ignition and survival.
+
+Reflection: How does this story show friction’s creative power?
+
+### The Ice of the Battle of Stalingrad
+
+During WWII, German tanks bogged down outside Stalingrad, partly because of brutal cold. The steel tank treads, designed for European mud, couldn’t grip the icy roads. Soviet engineers had reinforced their own equipment with roughened track pads and sandbags for added grip. The frictionless Russian winter became a weapon, turning mobility into paralysis.
+
+Reflection: How did control of friction shape the outcome of a battle?
+
+### The Apollo Moon Lander’s Unexpected Slide
+
+When the Apollo 11 lunar module touched down, engineers had assumed the Moon’s surface would provide moderate resistance. But it was finer than talcum powder—highly variable friction. Neil Armstrong reported a slight slide before coming to rest. This helped NASA redesign later landers to include broader, crushable landing pads, ensuring enough friction to avoid tipping or skidding.
+
+Reflection: What does friction mean in a place with no atmosphere or weather?
+
+### The Bobsledding Black Ice Mystery
+
+During the 1964 Winter Olympics, a favored bobsled team wiped out on a turn. The cause? Black ice—a barely visible glaze with drastically lower friction. Engineers began applying tiny etched grooves to the bobsled runners and modifying the track’s curvature to adjust normal force and maintain grip. Sports science embraced friction like never before—not to stop motion, but to keep it stable and predictable.
+
+Reflection: How can too little friction turn speed into danger?
+
+### Da Vinci’s Secret Notes on Friction
+
+Long before Newton, Leonardo da Vinci discovered fundamental laws of friction while sketching machines. He wrote (in mirrored script!) that the force of friction is proportional to the load and independent of contact area—ideas later attributed to Amontons. He even created diagrams of inclined planes and sliding blocks. But his findings weren’t published for centuries.
+
+Reflection: How might physics history have changed if da Vinci’s friction laws had been shared?
+
+### The Ancient Egyptian Sled and the Water Trick
+
+Wall paintings show Egyptians hauling giant statues on sleds. Archaeologists puzzled over how they moved such loads. Then, a modern experiment revealed: adding small amounts of water to the sand increased friction’s efficiency by reducing sand displacement and increasing cohesion—making the sled slide more easily. They weren’t just brute-forcing it. They had mastered frictional control.
+
+Reflection: How can more friction sometimes make things slide more easily?
+
+### The Skating Rink That Was Too Smooth
+
+In the early days of synthetic ice rinks, engineers crafted ultra-slick plastic surfaces. But skaters couldn’t control their movement. It turned out real ice works because of micro-friction and thin meltwater films that allow edge control. Designers had to roughen synthetic surfaces slightly and develop lubricant sprays to simulate the subtle friction of real skating.
+
+Reflection: What does this tell us about the balance between grip and glide?
+
+### The Mystery of the Climbing Gecko
+
+Geckos can walk across ceilings, and for years no one knew how. It wasn’t suction or glue—it was molecular friction. Tiny hairs on their feet use van der Waals forces to generate friction at the atomic scale. Engineers now study geckos to make biomimetic pads that let robots and humans stick to glass walls.
+
+Reflection: What if friction isn’t just a bulk property, but something that happens molecule by molecule?
+
+### The Violinist’s Rosin
+
+String players rub rosin onto their bows—not to reduce friction, but to create just the right amount. The bow must grip and release the string rapidly to make it vibrate. Too little friction, and there's no sound. Too much, and it scratches. Musicians become masters of microscopic friction control.
+
+Reflection: How do artists develop an intuitive sense of physics through practice?
+
+## Practical work and Demos
+
+### Glass fibre
+
+Many years ago I did a piece of research into the strength of glass fibre laminates. The problem was to measure how much friction there was between the glass fibres and the laminate itself. This could be found by measuring the friction as a piece of fibre was pulled over a section of laminate mounted on a rod. The amount of twist gave a measure of the frictional force.
+
+### Styrocell beads
+
+Friction - or the lack of it - can be demonstrated when a crystalljsing dish is slid along over some styrocell beads that have been poured into a tray. These beads are hard plastic spheres about a millimetre in diameter and so act like ball bearings. Spinning the dish makes a good demonstration and the whole experiment can be done in the base of a small ripple tank placed on an overhead projector to make it easily visible to the whole class.
+
+> Do not let the pupils take any of the beads away ---they are dangerous if spread on the floor.
+>
+> Age range: 14-18 Apparatus required: •Styrocell beads •Ripple tank •Tray •Glass beaker
+
+### Polystyrene ball falling in a tube
+
+Set up a vertical tube and drop a polystyrene ball into it. The diameter of the ball should be just a little smaller than the diameter of the tube. The ball falls really slowly due to air friction in the tube and it may be possible to get it to reach a terminal velocity where Weight = Drag!
+
+> Age range: 14-18
+>
+> Apparatus required: •Large diameter glass tube up to two metres long •Polystyrene balls of various diameters up to almost that of the internal diameter of the glass tube •Stop clock •Ruler
+
+### Lowering friction with magnets
+
+Take a bar magnet and mount it in a clamp with the poles vertically above each other. Take one or two clean ball bearings and attach them to the magnet so that they hang in a line from the lower end. Then attach a steel disc about 3 cm in diameter to the lower ball bearing. It should just be held on but not too tightly - if the attraction is too strong add another ball bearing. Blow on the side of the disc to set it rotating. Adjusting the number and size of the ball bearings and the mass of the disc will give a situation where the disc is only just supported and the friction between it and the lower ball bearing is then very low. An old account of this experiment suggests that the disc could be made to rotate for over fifteen minutes.
+
+> Age range: 11-13
+>
+> Apparatus required: •Retort stand and clamp •Two or three ball bearings (diameter about 0.8 mm depending on magnet strength) •Strong bar magnet •Steel disc
+
+### Stick-slip motion
+
+The stick-slip motion in friction is beautifully illustrated by the sliding woodpecker. This is a small wooden bird fixed to a bead by a short spring. The bead fits loosely over a vertical metal rod. When the bird is still it does not slide down but as soon as it is twanged it slips jerkily down the rod.
+
+> Theory/Explanation:
+>
+> The hole in the wooden bead is slightly bigger than the diameter of the metal rod. When the hole is vertical the bead slips down but as soon as it tilts, the bead "grips" the rod. The oscillatory motion of the bird on the spring alternately puts the hole upright and at an angle.
+>
+> Age range: 11-14
+>
+> Apparatus required: •Woodpecker toy (available from toy suppliers in England)
+
+### Two simple hovercraft
+
+\(a\) Balloon hovercraft
+
+Drill a hole through the centre of a circular disc of hardboard (disc diameter about 10 cm). Stick a rubber bung over the centre of the disc so that the hole in the bung coincides with the hole in the disc. Blow up a balloon and then fit it over the open end of the bung. Air rushes through the hole, and out the other side of the disc and this acts like a small hovercraft. (b) Tile hovercraft
+
+A simple hovercraft can be made really cheaply by using a computer-cooling fan fixed above a hole in a ceiling tile.
+
+> Age range: 11-13
+>
+> Apparatus required: •Balloon •Hardboard disc with a hole and tube •Ceiling tile •Computer cooling fan
+
+### Falling matchbox
+
+This fascinating short experiment shows you how energy is absorbed by friction. Take a match box---a big one is more impressive and you can leave the matches in it.
+
+Making sure that the box is closed (Photo 1), drop in on to a hard surface from a height of about 10cm. The matchbox will bounce and fall over.
+
+Now pull the drawer out slightly (Photo 2) and repeat the experiment. Once again the matchbox hits the table, but this time the drawer slides in a bit, absorbing some of the energy, and the matchbox should stay upright rather than bouncing.
+
+Age range: 14-18 1 2
+
+> Apparatus required: 'Hard surface
+>
+> •Matchbox full of matches
+
+61
+
+### Escalado
+
+There was a superb horse racing game called Escalado which worked on the stick-slip principle. The horses were lead and stood on a cloth track, one end of which was securely fixed to the table by a spring while the other was attached to a rod and ratchet. As the ratchet was turned by a handle the track was pulled forward slowly and then released - the spring pulling it back rapidly --- but the horses stayed where they were due to inertia. As a result they moved along the track at every rotation.
+
+Age range: 11-18 Apparatus required: •Escalado horse racing game
+
+### Rolling cans of dog food and baked beans
+
+Get two cans of equal mass --- one containing dog food (or cat food for cat lovers) and the other containing baked beans.
+
+Hold them side-by-side at the top of a ramp and then let them go at the same time asking the class which one will reach the bottom of the slope first.
+
+The can of dog food gets there first because the baked beans are moving within the other can, creating frictional forces which slow down the rate of rotation of that can and so making it roll slower.
+
+Then try two cans of fizzy drink but shake one first. See which one wins in this case.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Wooden ramp about 1.5 m long •Tins of dog food, baked beans and two of fizzy drink
+
+### Friction between books
+
+A very simple and yet impressive example of friction can be seen using two paper-backed books. It is best done with ones made from rougher poor quality paper.
+
+Hold the books with their open sides facing each other and carefully interleave the pages so that about half of one book extends into half the other as shown by the diagram.
+
+Then get two people to hold the books by their spines and try and pull them apart. There is so much friction between the pages that it is likely that the books will be damaged before they can be pulled apart --- so be careful!
+
+> Age range: 5-14
+>
+> Apparatus required: •Two paper-backed books
+
+### Friction and sliding cups
+
+The aim of this experiment is to give you an idea of the friction needed to slow things down.
+
+Take a small plastic pot and put some weights in it. Gently slide it across the floor of your classroom.
+
+Measure how far it has gone from where you let it go to where it stopped. Change the weights in the pot and try the experiment again.
+
+Some of you may have watched the curling in the Winter
+
+Olympics --- the stones they use behave in the same way as your pots on the floor.
+
+Age range: 7-11 Apparatus required: •Tape measure •Plastic cups •Masses

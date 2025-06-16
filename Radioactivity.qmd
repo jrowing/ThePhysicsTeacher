@@ -1,0 +1,273 @@
+---
+title: "Radioactivity"
+format: html
+---
+
+## Basic Theory
+
+### Atomic Structure
+
+-   The **nucleus** contains **protons** and **neutrons** (nucleons).
+-   **Protons**: positive charge (+1), **neutrons**: neutral.
+-   Electrons orbit the nucleus in shells.
+
+Notation for nuclides: $$
+{}^A_Z\text{X}
+$$ Where: - $A$ = mass number (nucleons = protons + neutrons)\
+- $Z$ = atomic number (number of protons)\
+- $\text{X}$ = chemical symbol
+
+### Types of Radiation
+
+| Type | Symbol | Description |
+|------------------------|----------------------|--------------------------|
+| **Alpha** | $\alpha$ or ${}^4_2\text{He}$ | 2 protons, 2 neutrons (helium nucleus); strongly ionising, weakly penetrating |
+| **Beta-minus** | $\beta^-$ | High-energy electron emitted when a neutron converts to a proton |
+| **Beta-plus** | $\beta^+$ | Positron emitted when a proton converts to a neutron |
+| **Gamma** | $\gamma$ | Electromagnetic wave; emitted from nucleus in an excited state; weakly ionising, highly penetrating |
+
+### Nuclear Equations
+
+-   **Alpha decay**: $$
+    {}^A_Z\text{X} \rightarrow {}^{A-4}_{Z-2}\text{Y} + {}^4_2\text{He}
+    $$
+
+-   **Beta-minus decay**: $$
+    {}^A_Z\text{X} \rightarrow {}^A_{Z+1}\text{Y} + \beta^- + \bar{\nu}_e
+    $$
+
+-   **Beta-plus decay**: $$
+    {}^A_Z\text{X} \rightarrow {}^A_{Z-1}\text{Y} + \beta^+ + \nu_e
+    $$
+
+-   **Gamma emission**: $$
+    {}^A_Z\text{X}^* \rightarrow {}^A_Z\text{X} + \gamma
+    $$
+
+### Activity and Decay
+
+-   **Activity** ($A$): Number of decays per second\
+    $$
+    A = \lambda N
+    $$ Where:
+    -   $A$ = activity (Bq)
+    -   $\lambda$ = decay constant (s⁻¹)
+    -   $N$ = number of undecayed nuclei
+-   **Exponential decay**: $$
+    N(t) = N_0 e^{-\lambda t}
+    $$ $$
+    A(t) = A_0 e^{-\lambda t}
+    $$
+
+### Half-life
+
+-   The **half-life** ($T_{1/2}$) is the time for half the radioactive nuclei to decay.
+
+Relationship to decay constant: $$
+T_{1/2} = \frac{\ln 2}{\lambda}
+$$
+
+### Measuring Radioactivity
+
+-   **Geiger-Müller tube** for detecting particles
+-   Background radiation must be subtracted from readings
+-   Units of radioactivity:
+    -   **Becquerel (Bq)**: 1 decay per second
+    -   **Sievert (Sv)**: measure of radiation dose/effect on body
+
+### Applications of Radioactivity
+
+-   **Medical**: PET scans, radiotherapy\
+-   **Industrial**: Thickness monitoring, tracers\
+-   **Carbon dating**: Using $^{14}$C to estimate age of organic material\
+-   **Smoke detectors**: Alpha particles from americium-241
+
+### Safety and Hazards
+
+-   **Ionising radiation** can damage DNA and living tissue
+-   Shielding:
+    -   Alpha: paper or skin
+    -   Beta: thin metal
+    -   Gamma: thick lead or concrete
+-   Use tongs, minimise exposure time, keep distance
+
+## Stories to enritch
+
+### Becquerel’s Accidental Discovery
+
+In 1896, Henri Becquerel was investigating phosphorescent materials and their ability to emit X-rays after exposure to sunlight. One cloudy day, without sunlight, he found that uranium salts still fogged photographic plates—unexpectedly revealing spontaneous radioactivity. This accidental discovery opened the door to an entirely new field of physics.
+
+Reflection: How did chance and curiosity combine to reveal something new about atoms?
+
+### Marie Curie’s Nobel-Winning Hunt
+
+Marie Curie and her husband Pierre painstakingly isolated radioactive elements from tons of pitchblende ore. She coined the term “radioactivity” and discovered two new elements: polonium and radium. Her relentless work not only advanced science but also highlighted the dangers of radiation exposure.
+
+Reflection: What sacrifices did early researchers make to understand radioactivity?
+
+### Rutherford’s Gold Foil Surprise
+
+Ernest Rutherford’s 1911 experiment firing alpha particles at thin gold foil led to a shocking discovery: most particles passed through, but some bounced back. This proved atoms have a tiny, dense nucleus—a monumental shift in atomic theory. His work showed radioactivity was a tool to probe the atom’s hidden structure.
+
+Reflection: How did radioactive particles help us “see” inside atoms?
+
+### The Radium Girls: A Tragic Lesson in Radiation Safety
+
+In the 1920s, factory workers painting watch dials with radium-based luminous paint suffered severe radiation poisoning due to unsafe handling. Known as the “Radium Girls,” their suffering led to major reforms in workplace safety and radiation protection standards. This dark chapter highlighted the real-world dangers of radioactivity.
+
+Reflection: Why is understanding radiation safety as important as the science itself?
+
+### The Manhattan Project: Power and Peril
+
+During World War II, the race to harness radioactive fission for weapons culminated in the Manhattan Project. Scientists split uranium and plutonium atoms to release enormous energy, creating the first atomic bombs. This fusion of science and politics forever changed global history.
+
+Reflection: How did radioactivity transform from a scientific curiosity into a geopolitical force?
+
+### The Mystery of Alpha, Beta, and Gamma Rays
+
+Early researchers classified radioactive emissions into three types: alpha (helium nuclei), beta (electrons), and gamma (high-energy photons). Understanding their different properties and penetrations helped develop radiation detection and protection. This classification clarified the complex nature of radioactive decay.
+
+Reflection: How do different types of radiation affect matter and living tissue?
+
+### Becquerel’s Photographic Plates: Invisible Rays Made Visible
+
+Becquerel’s photographic plates provided the first visual evidence of invisible radioactive emissions. By capturing these emissions on plates, scientists could analyze and measure the strength of radioactivity. This technology was crucial for early experiments.
+
+Reflection: How did making the invisible visible revolutionize science?
+
+### Marie Curie’s Legacy and the Radium Institute
+
+Marie Curie founded the Radium Institute in Paris to advance research and medical uses of radioactivity. Radium’s ability to destroy cancer cells pioneered radiation therapy, turning a dangerous phenomenon into a powerful treatment. Her vision connected science to human health.
+
+Reflection: How did radioactivity transition from mystery to medicine?
+
+### The Discovery of Nuclear Decay Chains
+
+Scientists realized radioactive elements decay through a series of steps, producing different daughter isotopes until reaching a stable state. This understanding allowed precise dating of rocks and fossils using radioactive decay chains. It opened the field of radiometric dating.
+
+Reflection: How does radioactivity serve as a clock for Earth’s history?
+
+### The Tragedy and Triumph of Radiation Exposure
+
+From Marie Curie’s suffering to radiation accidents like Chernobyl and Fukushima, radioactivity’s risks are real. Yet, strict protocols and monitoring have made radiation one of the safest tools in medicine and industry. Balancing benefits and hazards remains a continuing challenge.
+
+Reflection: What lessons does history teach us about respecting powerful natural forces?
+
+## Practical work and Demos
+
+#### Simple radioactive decay formula
+
+This was suggested by one of my Sixth Form students and seems a simple alternative to the normal decay formula \[N = Noe or A = Aoe ^It^\] \[Ao is the original activity of the source, A the activity after a time t and the disintegration constant (X = ln2/T where T is the half-life)\]. For very simple decay problems we use the fact that the activity will decrease by a factor of 2 in one half-life, 4 in two half-lives, 8 in three half-lives and so on. Why does the number of halflives have to be a whole number? Of course it doesn't - so let's call the number of half-lives that have passed n, where n is any number.
+
+The decay formula suggested is then A = Ao/2 ^n^ - it always works!
+
+> Age range: 16-18
+
+#### Radioactive decay - Rice grain method
+
+Fix a plastic bottle with the base removed to a vertical glass tube with a clip at the base. Fill the bottle with rice. Mount the bottle and tube in a clamp over a beaker on a top pan balance. Open the tap, and record the mass of rice in the beaker at different times. Plot a graph of mass against time as an analogue of radioactive decay. Will it work with sand?
+
+> Age range: 14-18
+>
+> Apparatus require: •Plastic bottle •Top pan balance •Stopwatch or stop clock •Clamp •Rice
+
+### Alpha radiation - tissue paper and cling film
+
+The absorption of alpha radiation can best be demonstrated with tissue paper, such as one sheet of a double paper handkerchief. Ordinary paper is rather thick and will stop much of the radiation. It is also worth trying it with very thin aluminium leaf! The alpha particles should go through.
+
+A piece of bacon is the closest thing that we can get to show the absorption of radiation by human flesh.
+
+Another material that can be used to test the penetration of alpha particles is a sample of cling film. The particles will pass through it.
+
+>
+> Age range: 16-18
+>
+> Apparatus required:
+>
+> •Tissue paper •Aluminium leaf •Geiger counter and display •Alpha source in holder •Cling film in holder Haatoactlve aecay
+
+### Half-life of water
+
+The drop in the level of water in a glass tube can be used as an analogy of radioactive decay. In just the same way as the activity of a source decreases as the number of radioactive nuclei decreases so the volume of water coming from the outlet at the bottom of the tube decreases as the height of water in the tube gets less.
+
+Use a vertical glass tube with a short length of capillary tubing fixed to the bottom of it using a length of rubber tubing. Close the rubber tube with a tube clip, and fill the large tube with water. Open the tube clip and allow the water to flow out through the capillary tube. Measure the height of the water against time, and plot a graph of height against time. It gives a very good analogy of radioactive decay!
+
+> Theory:
+
+N = Noe ^It^ or h = hoe-Ct
+
+> Age range: 15-18
+>
+> Apparatus required: 'Retort stand •Two bosses and two clamps
+>
+> •Stop watch •Ruler 'Glass tube o Rubber tube •Capillary tube
+>
+> •Tube clip
+
+### Half life - wooden or plastic blocks or dice
+
+This is a classic experiment that gives a very good analogy with radioactive decay. A large number (1000) of small wood (or plastic) blocks (side 1 cm) are given out to the class. Each block has one face coloured or marked with a dot (a set of dice would do but are rather expensive).
+
+Each group records the initial number of blocks and then throws them, taking out any that fall with the coloured side up. They then throw the ones left - i.e. those that fell with a plain side uppermost - and then repeat the process until they have none left. (Usually about 20 throws.)
+
+The data from the whole class is collected and a graph plotted of the number of blocks remaining after each throw. It helps to use a spreadsheet for the collection of results if a computer is available in the lab. The idea of the random way in which the blocks fall should be compared with the random nature of radioactive decay.
+
+I have extended this experiment to my older students. In this extension I use the spreadsheet to process my results and get a print-out of number of blocks (radioactive nuclei) (N) against throw (time). It is worth doing this after just one or two groups have thrown the blocks to show that as more and more blocks are added to the experiment the line becomes smoother.
+
+Radioactive decay
+
+Then draw tangents to the curve at know values of N and plot the rate of decay (dN/dt) against N - my class obtained a perfect straight line. This makes a very useful point for a discussion of the equation dN/dt = - RN.
+
+The computer works out In (N) and plots this against t. This will give a graph with a perfect straight line with a negative gradient.
+
+> Age range 15-16-18 (with the extra mathematics!)
+>
+> Apparatus required: •Six sided cubical wood blocks - one side coloured •Computer with spread sheet
+>
+> •Printer
+
+### The radioactive decay series
+
+Having been concerned by the mathematics of a source producing a daughter product which then decays itself into a stable isotope, I decided to modify the previous two experiments to demonstrate this. We have to adapt experiment six by using six sided dice (or blocks) for the initial radioactive material and then ones with a greater number of faces (say ten) for the daughter product.
+
+If you colour in more than one face it will also represent a different (shorter) half-life ---there is more chance of a coloured face falling uppermost.
+
+In the half-life of water experiment, the water from the first tube runs into a second tube with a narrower outlet.
+
+> Theory:
+>
+> For element B dNB/dt = XANA - XBNB dNB/dt + XBNB = XANoe-lit I
+
+Solving this gives: NB = No\[ae - be -Lit I\] where a = XA/(XB - IA) and b = -a
+
+> Age range: 16-18
+>
+> Apparatus required: •A large number of six sided and ten-sided dice
+>
+> •Two versions of the apparatus for experiment four with exit tubes of different diameters!
+>
+> RADIOACTIVE SOURCES
+
+The following safety precautions should ALWAYS be observed when using radioactive sources.
+
+1.  If you are under 16 years of age do not use the sources.
+
+2.  Never handle a source directly, always use tongs or tweezers.
+
+3.  Keep as far away from a source as possible.
+
+4.  Never open a sealed radioactive source.
+
+5.  Keep a record of the use of any radioactive source
+
+6.  Always return the source to its lead container after use.
+
+7.  Keep the sources locked away in a secure cupboard when not in use.
+
+8.  Report any accidents immediately.
+
+9.  Never point a source towards anyone, including yourself.
+
+10. Wherever radioactive materials are in use the symbol shown above should always be displayed to warn other people, since radioactivity is invisible.
+
+The definitive guide to using radioactive sources is CLEAPPS L93.

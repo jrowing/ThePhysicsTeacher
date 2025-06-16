@@ -1,0 +1,8 @@
+---
+title: "Buy Me a Coffee"
+format: html
+---
+
+Hi there! If you enjoy my work and want to support me in creating more helpful physics content, demos, and resources, please consider buying me a coffee. Every contribution helps me keep sharing ideas and inspiring curiosity. Thank you so much for your support! ☕✨
+
+https://buymeacoffee.com/jrowing

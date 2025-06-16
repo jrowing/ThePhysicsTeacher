@@ -1,0 +1,312 @@
+---
+title: "GasLaws"
+format: html
+---
+
+## Basic Theory
+
+### Pressure ($P$)
+
+-   Force per unit area exerted by gas molecules on the container walls.
+-   Units: pascal (Pa), where $1 \text{ Pa} = 1 \text{ N/m}^2$.
+
+### Volume ($V$)
+
+-   Space occupied by the gas.
+-   Units: cubic meters (m³) or litres (L).
+
+### Temperature ($T$)
+
+-   Measure of the average kinetic energy of gas particles.
+-   Always use **Kelvin (K)** for gas law calculations.
+-   Conversion: $T(K) = T(°C) + 273.15$.
+
+### Number of Moles ($n$)
+
+-   Amount of substance in moles.
+-   $1$ mole = $6.02 \times 10^{23}$ particles.
+
+### Boyle’s Law (Constant $T$, $n$)
+
+Pressure is inversely proportional to volume: $$
+P \propto \frac{1}{V} \quad \Rightarrow \quad P V = \text{constant}
+$$
+
+### Charles’s Law (Constant $P$, $n$)
+
+Volume is proportional to temperature: $$
+V \propto T \quad \Rightarrow \quad \frac{V}{T} = \text{constant}
+$$
+
+### Gay-Lussac’s Law (Constant $V$, $n$)
+
+Pressure is proportional to temperature: $$
+P \propto T \quad \Rightarrow \quad \frac{P}{T} = \text{constant}
+$$
+
+### Combined Gas Law (Constant $n$)
+
+Combines Boyle’s, Charles’s, and Gay-Lussac’s laws: $$
+\frac{P V}{T} = \text{constant}
+$$
+
+For initial and final states: $$
+\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}
+$$
+
+### Ideal Gas Law
+
+Relates pressure, volume, temperature, and moles: $$
+PV = nRT
+$$ Where: - $R = 8.31 \text{ J/mol·K}$ (ideal gas constant) - Applies well for ideal gases at moderate pressures and temperatures.
+
+### Kinetic Theory of Gases (Basic Points)
+
+-   Gas consists of many tiny particles in constant random motion.
+-   Collisions between particles and container walls are elastic.
+-   Pressure results from collisions of particles with container walls.
+-   Average kinetic energy of particles is proportional to temperature: $$
+    \frac{1}{2} m \overline{v^2} \propto T
+    $$
+
+### Root Mean Square Speed
+
+The average speed of gas molecules: $$
+v_{\text{rms}} = \sqrt{\frac{3RT}{M}}
+$$ Where: - $M$ = molar mass (kg/mol) - $R$ = gas constant - $T$ = temperature (K)
+
+### Diffusion and Effusion
+
+-   **Diffusion:** spreading of gas particles through a space.
+-   **Effusion:** gas particles passing through a tiny hole.
+
+Graham’s law relates rates of effusion/diffusion to molar mass: $$
+\frac{\text{rate}_1}{\text{rate}_2} = \sqrt{\frac{M_2}{M_1}}
+$$
+
+### Summary Table
+
+| Law              | Formula                           | Condition         |
+|------------------|-----------------------------------|-------------------|
+| Boyle’s law      | $P V = \text{constant}$           | $T$, $n$ constant |
+| Charles’s law    | $\frac{V}{T} = \text{constant}$   | $P$, $n$ constant |
+| Gay-Lussac’s law | $\frac{P}{T} = \text{constant}$   | $V$, $n$ constant |
+| Combined gas law | $\frac{P V}{T} = \text{constant}$ | $n$ constant      |
+| Ideal gas law    | $P V = n R T$                     | General case      |
+
+> General theory for this section:
+>
+> When a gas is compressed or expanded without its temperature changing (isothermal) the product of its pressure (P) and volume (V) is constant i.e. PIVI = P2V2. This is Boyle's Law.
+>
+> To keep the temperature constant, heat energy must be added during expansion and removed during compression.
+>
+> The equation that describes the behaviour of a gas under any change is the ideal gas equation:
+>
+> PV = nRT where n is the number of moles of the gas, R the gas constant and T the absolute temperature (T = 273 + temperature in centigrade)
+>
+> If the volume is kept constant the pressure of the gas is directly proportional to the absolute temperature, and if the pressure is kept constant the volume is directly proportional to the absolute temperature.
+
+1.  The expansion of air 5. Tin can above a Bunsen
+
+2.  Exploding balloon - heat 6. Expansion cooling
+
+3.  Soap film - expansion of air 7. The bicycle pump
+
+4.  Pop corn and expansion of a gas 8. Wine bottle and coin
+
+## Stories to enritch
+
+### The Sealed Fountain of Hero of Alexandria
+
+Around 60 AD, Hero of Alexandria built a strange device: a sealed globe partly filled with water, with tubes and nozzles. When heated, water spurted from the nozzles in a continuous arc. The device worked because of increased internal gas pressure from steam. Hero didn’t know about Boyle’s Law, but his fountain showed how heating a gas in a confined space builds pressure—a lesson rediscovered centuries later.
+
+Reflection: What might ancient engineers have thought about “invisible air” exerting force?
+
+### Torricelli and the 10-Metre Wall of Air
+
+In 1643, Evangelista Torricelli sealed a glass tube of mercury, inverted it, and plunged it into a dish. The mercury dropped slightly, leaving a vacuum at the top. The space wasn’t filled by air or water—it was empty. This shocked philosophers, many of whom believed nature abhorred a vacuum. But Torricelli concluded the weight of air—atmospheric pressure—was holding the mercury up. His tube became the world’s first barometer.
+
+Reflection: What was more radical: that air has weight, or that a vacuum could exist?
+
+### Boyle and the Bending Air
+
+Robert Boyle wanted to measure how gases behave when squeezed. In the 1660s, he used a U-shaped glass tube to trap a bubble of air with mercury. As he added more mercury, the volume of air decreased—predictably. He found that pressure multiplied by volume stays constant: Boyle’s Law. It was the first precise mathematical law for gases—laying the foundation for thermodynamics.
+
+Reflection: Why was Boyle’s careful measurement so revolutionary in an age of vague theories?
+
+### The Collapsing Can: Otto von Guericke’s Vacuum Spectacle
+
+In 1654, Otto von Guericke connected two giant hemispheres and pumped the air out. Thirty horses couldn’t pull them apart. In a later demo, he boiled water in a metal can, sealed it, and dunked it in cold water. The can crumpled instantly—a dramatic display of atmospheric pressure crushing a low-pressure system. These experiments shocked onlookers and proved that air, though invisible, was a powerful force.
+
+Reflection: What did these demos suggest about how gas pressure works on us every day?
+
+### The Tragic Balloon Race of 1875
+
+Three French scientists, determined to reach the highest point in the atmosphere, launched in a hydrogen balloon. As they climbed above 8,000 meters, the external pressure dropped, but they had no oxygen. Only one man survived. The others succumbed to hypoxia and decompression. Their deaths were a grim lesson in the relationship between pressure, gas availability, and survival.
+
+Reflection: How does decreasing pressure at high altitude affect the gases in our body?
+
+### Charles’s Flight and the Expanding Balloon
+
+In 1783, Jacques Charles launched a hydrogen balloon in Paris. As it rose, the gas expanded, stretching the fabric. He had to release gas through a valve to prevent it from bursting—a perfect demonstration of Charles’s Law (volume increases with temperature). His flight thrilled crowds and inspired future aviators to study gas laws seriously.
+
+Reflection: What would happen to a balloon in the vacuum of space?
+
+### The Deep-Sea Diver and the Bends
+
+Divers once noticed that those who surfaced too fast got terrible joint pain—or even died. The cause? Dissolved nitrogen in the blood forming bubbles as pressure dropped rapidly. This led to the discovery of Henry’s Law: the amount of gas dissolved in a liquid is proportional to pressure. Decompression stops were invented, saving thousands of lives.
+
+Reflection: How does pressure affect gases inside our own bodies?
+
+### The Tires That Saved a Nation
+
+During WWII, British planes used rubber tires reinforced with nitrogen gas. Why nitrogen? Because as the plane ascended, temperature and pressure dropped—and nitrogen was more stable than air, helping maintain tire pressure over wide ranges. Understanding Gay-Lussac’s Law (pressure ∝ temperature at constant volume) helped engineers keep pilots safe.
+
+Reflection: Why does your car's tire pressure warning light turn on in winter?
+
+### The Popcorn Effect in Space
+
+In space, unsealed foods can be dangerous. Astronauts once opened a packet of puffed rice that had been sealed at Earth pressure. It exploded into a cloud of cereal crumbs in the microgravity cabin. The low pressure in space caused the gas inside the packet to expand suddenly—Boyle’s Law again. NASA began adjusting packaging for pressure differences.
+
+Reflection: What happens when Earth-sealed containers are taken into low-pressure environments?
+
+### The Weather Balloon That Didn’t Return
+
+A 1950s weather balloon carrying instruments was launched high into the atmosphere. It was supposed to deflate and fall back—but as it rose, the internal gas expanded more than expected and burst the balloon. Instruments scattered across miles. This incident taught researchers to design flexible balloons with pressure relief valves, and highlighted the importance of combining all gas laws for flight prediction.
+
+Reflection: How can a better understanding of pressure and volume prevent costly mission failures?
+
+## Practical work and Demos
+
+### Expansion of gases - actually air. a mixture of gases
+
+The expansion of air can be used to make a simple yet accurate air thermometer. Take a large round-bottomed flask, and fill it about one third full with coloured water. Next fit a long (at least 1.5 m) glass tube into a rubber bung, so that the bung is about ten centimetres from one end. Push the bung firmly into the flask, making sure that the end dips into the water in the flask so that about two thirds of the flask is trapped air. Heat the flask either by using your hands or heating very gently with a Bunsen. The expansion of the air in the flask forces the coloured water up the tube.
+
+The heat of your hands is usually sufficient to show a large expansion, and it makes an interesting and sensitive comparison between the temperatures of various pupils' hands. Calibrating the apparatus enables it to be used as an actual thermometer.
+
+> Age range: 11-13
+>
+> Apparatus required: •Large round bottomed flask •Bunsen burner
+>
+> •Large bore capillary tube (to make the expansion easily visible)
+
+### Exploding balloon --- heat
+
+|                                                                        |
+|:-----------------------------------------------------------------------|
+| Wear eye protection and have the pupils sitting at least 2 m away. The |
+| balloon has to be held so high that a safety screen will not offer     |
+| protection.                                                            |
+
+------------------------------------------------------------------------
+
+> Blow up a balloon, close the open end by tying it up, and then heat it u gently above a Bunsen flame. Holding it well above the flame will prevent the rubber simply melting. The expanding air in the balloon will demonstrate the expansion of gases by bursting the balloon.
+
+Age range: 11-13 Apparatus required: •Balloon •Bunsen •Eye protection
+
+gases
+
+### Soap film --- expansion of air!
+
+An alternative method for demonstrating the expansion of air uses some delightfully simple apparatus. Use a large round-bottomed flask and make a soap film over the neck by dipping the neck into some strong soap solution.
+
+Warm the flask with your hands - the expansion of the air in the flask will give a good bubble on the end. Warming it over a Bunsen flame will make it happen quicker but it is then quite easy to pop the bubble. As the air cools, the bubble collapses back to a flat film. It helps to keep the flask in a fridge before starting the experiment.
+
+> Age range: 11-13
+>
+> Apparatus required: •Large round-bottomed flask •Soap solution
+
+### Popcorn and expansion of a gas
+
+|                                                                       |
+|:----------------------------------------------------------------------|
+| Any food prepared in the laboratory should not be eaten. If done in a |
+| food-technology room with cooking utensils the popcorn may be eaten.  |
+
+------------------------------------------------------------------------
+
+Use the expansion of popcorn to demonstrate the increase in the volume of air when it is heated. I usually make it in a tall one litre beaker covered by a saucer so that the children can see what is going on. Put enough oil in to just cover the base of the beaker, sprinkle in a layer of popcorn and then heat it gently over a Bunsen. The popcorn expands in a few minutes after reaching a sufficiently high temperature.
+
+> Age range: 11-13
+>
+> Apparatus required: •Popcorn (uncooked) 'Tall 1 litre beaker •Saucer to cover the beaker 'Cooking oil •Bunsen 'Tripod 'Gauze •Heat-resistant mat
+
+[5.]{.underline}
+
+[Tin]{.underline}
+
+[can]{.underline}
+
+The
+
+expansion
+
+impressively
+
+tightly
+
+fitting
+
+the
+
+tin.
+
+After
+
+the
+
+lid
+
+off.
+
+Tip
+
+\-
+
+a
+
+explosion,
+
+Age
+
+range:
+
+11-13
+
+> Apparatus required: •Metal tin with a tight fitting lid 'Bunsen •Safety screen
+>
+> •Tripod •Heat-resistant mat 'Eye protection
+
+### Expansion cooling
+
+The formation of ice round a gas cylinder when the gas escapes is a very good demonstration of cooling on expansion. A very impressive demonstration of this effect is to show the formation of dry ice as gas expands from a high-pressure carbon dioxide cylinder. Even the small carbon dioxide filled bulbs used in soda siphons will show this. They can be punctured with care using a compass point and show a marked cooling as the gas emerges. Some idea of the energy transfer on expansion can be gained by holding the bulb in a beaker of water, using a pair of wooden test tube tongs.
+
+> Dry ice should only be made using a 'siphon' type carbon dioxide cylinder with a 'Jebfreezer' attachment or a thick cloth bag. Eye protection is needed and leather gloves should be worn. Pupils must not handle dry ice.
+>
+> Age range: 11-16
+>
+> Apparatus required: •Carbon dioxide cylinder and cloth •Soda siphon bulb •Sharp point to puncture the bulb (a pair of compasses or dividers is ideal)
+
+### Bicycle pump - adiabatic and isothermal changes!
+
+The rapid compression (or expansion with the valve reversed) of the air in a bicycle pump shows adiabatic changes. Normal pumping heats up the air in the pump, while a rapid expansion shows cooling. A slow change allows heat transfer, and so there is no change of temperature - an isothermal change.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Bicycle pump •Thermometer or thermistor
+
+### Wine bottle and coin
+
+Get an empty wine bottle and put it in the fridge. When it is really cold remove it and put a coin on the top so that the hole is covered. (Moisten the coin first to get a good seal.)
+
+As the air in the bottle warms up it expands, so pushing the coin upwards --- a little air comes out, and the coin falls back on to the neck of the bottle. This process is then repeated, and you should hear a clicking noise as the coin rises and falls.
+
+An alternative is to put the bottle containing air at room temperature, with the coin on top, into a bowl of hot water. The same effect occurs. \> Age range: 11-14 \> \>Apparatus required: •Wine bottle •Coin 'Fridge, freezer or a bowl of hot water
+
+### Expansion and compression of air --- soap bubble indicator!
+
+Make a soap film across the end of a glass tube. Lower the tube into a beaker of water and watch the soap film expand so that it is curved. The further down you push the tube the more curved the film becomes, showing the increase in pressure at greater depths.
+
+> Age range: 11-14
+>
+> Apparatus required: •Soap solution •Water •Beaker •Glass tube

@@ -1,0 +1,556 @@
+---
+title: "Electrostatics"
+format: html
+---
+
+## Basic Theory
+
+### Electric Charge ($q$)
+
+-   Fundamental property causing electric forces.
+-   Two types: **positive** and **negative**.
+-   Unit: Coulomb (C).
+
+### Conservation of Charge
+
+-   Total electric charge is conserved in an isolated system.
+-   Charge can be transferred but not created or destroyed.
+
+### Coulomb’s Law
+
+-   The electrostatic force between two point charges $q_1$ and $q_2$ separated by distance $r$: $$
+    F = k_e \frac{|q_1 q_2|}{r^2}
+    $$ Where:
+-   $k_e = \frac{1}{4\pi \epsilon_0} \approx 8.99 \times 10^9 \,\text{N·m}^2/\text{C}^2$
+-   $\epsilon_0$ = permittivity of free space, $8.85 \times 10^{-12} \,\text{F/m}$
+-   Force is **attractive** if charges are opposite, **repulsive** if same sign.
+
+### Electric Field ($\vec{E}$)
+
+-   Defined as force per unit positive charge: $$
+    \vec{E} = \frac{\vec{F}}{q}
+    $$
+-   Units: newtons per coulomb (N/C) or volts per meter (V/m).
+-   Due to a point charge $Q$ at distance $r$: $$
+    E = k_e \frac{|Q|}{r^2}
+    $$
+
+### Electric Field Lines
+
+-   Represent direction and strength of the electric field.
+-   Lines start on positive charges and end on negative charges.
+-   Density of lines indicates field strength.
+
+### Electric Potential ($V$)
+
+-   Work done per unit charge to bring a positive test charge from infinity to a point in the field: $$
+    V = k_e \frac{Q}{r}
+    $$
+-   Units: volts (V), where $1\,\text{V} = 1\,\text{J/C}$.
+
+### Relationship between Electric Field and Potential
+
+-   Electric field is the negative gradient of the potential: $$
+    E = - \frac{dV}{dr}
+    $$
+
+### Capacitance ($C$)
+
+-   Ability of a system to store charge per unit potential difference: $$
+    C = \frac{Q}{V}
+    $$
+-   Unit: Farad (F).
+
+### Conductors and Insulators
+
+-   **Conductors:** Allow free movement of charges.
+-   **Insulators:** Charges are fixed in place.
+
+### Charging Methods
+
+-   **Friction:** Transfer of electrons by rubbing.
+-   **Conduction:** Direct contact with charged object.
+-   **Induction:** Rearrangement of charges without contact.
+
+### Summary Table
+
+| Quantity | Symbol | Formula | Units |
+|--------------|--------------|----------------------------|--------------|
+| Charge | $q$ | — | Coulomb (C) |
+| Coulomb’s force | $F$ | $F = k_e \frac{|q_1 q_2|}{r^2}$ | Newton (N) |
+| Electric field | $E$ | $E = \frac{F}{q} = k_e \frac{|Q|}{r^2}$ | N/C or V/m |
+| Electric potential | $V$ | $V = k_e \frac{Q}{r}$ | Volt (V) |
+| Capacitance | $C$ | $C = \frac{Q}{V}$ | Farad (F) |
+
+> General theory for this section:
+
+Radial electric field: Field intensity (E) at a distance r from a charge Q = 1/4TtEo\[Q/r^2^\]
+
+> Uniform field (i.e. that between two parallel plates, separation d and potential difference V): Field intensity = V/d
+>
+> Force between two charges (QI and Q2) = 1/4TtEo\[QIQ2/r \] Force on a charge (Q) in a uniform field = QE = QV/d
+
+## Stories to enritch
+
+### The Ancient Amber Mystery
+
+Long before anyone understood electricity, the ancient Greeks noticed a curious effect. Around 600 BCE, Thales of Miletus rubbed amber (fossilised tree resin) with fur and saw that it attracted light objects like feathers. The word "electricity" comes from the Greek word for amber—ēlektron. For centuries, this was seen as a magical property. No one knew what was really happening.
+
+Think about it: Why might this simple observation have gone unexplained for 2000 years? What changed to make real progress possible?
+
+### Gilbert and the Naming of Electric Forces
+
+In the 1600s, English physician William Gilbert wrote De Magnete, a groundbreaking study of magnetic and electric phenomena. He coined the term electricus to describe the attractive effects seen when materials like glass, sulfur, or amber were rubbed. Gilbert distinguished between magnetism and electricity—something no one had clearly done before.
+
+Think about it: How does naming and describing phenomena help science move forward? What would electrostatics be like without clear terminology?
+
+### The Sparks That Shocked Enlightenment Scientists
+
+During the 18th century, electrostatics became a fashionable field of study. Scientists and showmen across Europe built enormous machines to generate static charge by friction. They would spark objects, shock volunteers, and even set fire to spirits using static discharges. These demonstrations were thrilling—and painful.
+
+One of the most famous devices was the Leyden jar, an early capacitor that stored large amounts of charge. Accidental discharges could be dangerous, and yet curiosity drove experimentation.
+
+Think about it: Why was static electricity so compelling to early scientists and show audiences? How did devices like the Leyden jar help us understand energy storage?
+
+### Benjamin Franklin and the Kite Experiment
+
+In 1752, Benjamin Franklin conducted his famous experiment during a thunderstorm. He flew a kite with a metal key attached to the string. When lightning struck nearby, sparks jumped from the key—proving that lightning is an electrical phenomenon. Franklin proposed the concept of positive and negative charge and invented the lightning rod to protect buildings from strikes.
+
+Think about it: Was Franklin’s experiment brave or reckless? How did it change our view of nature?
+
+### Coulomb’s Torsion Balance
+
+In the late 1700s, Charles-Augustin de Coulomb built a delicate torsion balance to measure the forces between charged spheres. His experiments showed that the electrostatic force decreases with the square of the distance between charges. This became Coulomb’s Law, the electrostatic equivalent of Newton’s Law of Gravity.
+
+Think about it: Why was measuring tiny forces such a challenge? What makes Coulomb’s Law such a powerful model?
+
+### The Electric Boy of Paris
+
+In the early 1800s, reports spread of a boy in Paris who seemed to generate electric shocks from his body. He could allegedly light candles, spark metal, and repel feathers just by touch. Though some reports were exaggerated, static electricity from clothing, dry air, and friction likely contributed. This public fascination helped popularise electrostatics as a topic of mystery and science.
+
+Think about it: How can public interest in unusual stories help or harm science? What natural explanations might exist for such claims?
+
+### The Van de Graaff Generator and the Hair-Raising Effect
+
+In 1929, Robert Van de Graaff invented a machine that uses a moving belt to build up very high voltages. The Van de Graaff generator became famous for making people’s hair stand on end, and for creating dramatic sparks. It has also been used in serious research—for example, in particle accelerators.
+
+Think about it: Why does your hair stand up near a Van de Graaff generator? What do such devices reveal about how charge moves?
+
+### The Shocking Truth Behind Everyday Sparks
+
+Have you ever felt a shock when touching a doorknob or car door? That’s electrostatics in action. Static charge builds up as you walk on a carpet or slide across a seat. When you reach out, the charge equalises with a small but sharp spark. While harmless, the same principle can be dangerous in environments like fuel stations or computer chip factories.
+
+Think about it: Why do some materials store static charge better than others? How can we reduce the risks associated with static electricity?
+
+### Static on Mars: A Real Problem
+
+NASA engineers working on Mars rovers had to account for static electricity. Mars has a dry, dusty atmosphere that allows static charge to build up easily. This charge can interfere with electronics and even damage sensitive instruments. Engineers had to design discharge systems and grounding techniques to keep the rovers safe.
+
+Think about it: How do conditions on other planets affect basic physics? What design solutions help mitigate electrostatic effects?
+
+### The Photocopier and the Power of Charge
+
+Modern photocopiers use electrostatics in a clever way. A drum is given a uniform charge, then exposed to light reflected from the original image. Where light hits, the charge is lost. Toner particles, which are oppositely charged, stick to the remaining charged areas. The toner is then transferred to paper and fused with heat. It's a perfect application of charge attraction and repulsion.
+
+Think about it: How do real-world devices use electrostatic principles? Could you explain a photocopier’s working using only physics?
+
+## Practical work and Demos
+
+### Induction and repulsion in electrostatics
+
+A charged polythene rod is brought up to a metal rod that is fixed horizontally on an insulating stand. Touching the other end is a light ball hanging from a thread. As the charged rod is brought closer, the ball will swing away from the metal rod.
+
+> Age range: 11-18 Apparatus required:
+>
+> ^o^ EHT supply •Polythene rod and duster •Conducting ball on insulating thread 'Metal rod!
+
+### Plastic box smoke separator
+
+Two metal plates are mounted parallel to each other in a transparent plastic sandwich box. Blow some smoke into the box and close the lid. Use a Van de Graaff generator to apply a potential across the plates, and the smoke will clear immediately since the charged plates attract the small particles of smoke towards them. The effect of different potentials can easily be studied.
+
+> The EHT unit, with a current limit of 5 mA or less, and the Van de Graaff generator will both cause minor electric shocks which will be felt when the connections are handled. Staff should practice such demonstrations so that they know what to do and what to expect!
+>
+> Age range: 14-18
+>
+> Apparatus required: •Plastic box smoke separator 'Van de Graaff generator or EH T supply •Smoke generator
+
+### Electric fields
+
+Both the motion of a charge in an electric field and the forces between charges can be shown by mounting two metal plates vertically and some ten centimetres apart. Then suspend a table tennis ball (which has been coated with conducting paint) from a thread so that it hangs centrally between the plates. Apply a potential difference between the plates - something over 2 kV is needed. Pull the thread so that the ball touches one of the plates. The ball will then oscillate between the two charged plates, transferring charge from one plate to the other.
+
+A moving charge means a current flow, and this can be detected using a spot galvanometer since the actual currents are very small (\< 1 mA). A TV camera is a great help here to show the movement of the ball to the whole class - alternatively a shadow of the ball can be projected onto a screen.
+
+This experiment has a simple and effective extension. Use the two vertical plates connected to5 kV, and then drop a small piece of aluminium foil between them - it will oscillate backwards and forwards between them as it falls.
+
+> The EHT supply with an output current of 5 mA or less will still produce small but non-hazardous electric shocks if the connections are not handled correctly.
+>
+> Age range: 14-18
+>
+> Apparatus required:
+>
+> •Two metal plates with insulating handles ^o^ Two retort stands and bosses •Table tennis ball •Thread
+>
+> •EHT supply 'Foil
+
+### The charge on your body
+
+Use a d.c. amplifier or a pico coulomb meter to measure the charge of the human body! This demonstration is very dependent on what the students are wearing on their feet and what the floor is made of but it provokes some interesting discussion!
+
+Age range: 16-18 Apparatus required: •Pico coulomb meter 'Suitable output meter
+
+### Drawing pin on the Van de Graaff generator - dust/smoke collector
+
+Fix a drawing pin with its point facing upwards in the bottom of a perspex can on top of the  Van de Graaff generator, and blow some smoke into the can. Switch on the generator, and observe what happens. The discharge from the drawing pin point collects the smoke into a column. It is due to the concentration of charge at the point, and hence the large electric field there. This demonstration also works well without the can - simply using a pin mounted vertically on the dome.
+
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.
+>
+> Age range: 11-13
+>
+> Apparatus required: 'Van de Graaff generator 'Drawing pin in transparent perspex box 'Smoke
+
+### Some simple electrostatic demonstrations
+
+(a) Charged balloon sticking to the walls or ceiling
+
+(b) Taking off a jumper over a nylon blouse or shirt
+
+(c) Moving around under nylon sheets, wearing pyjamas or a night dress
+
+(d) Rubbing your shoes on a synthetic carpet and then touching an earthed metal pole
+
+Age
+
+range:
+
+Apparatus
+
+[7.]{.underline}
+
+[Bubbles]{.underline}
+
+This
+
+experiment
+
+induction
+
+soap
+
+bubbles
+
+Initially
+
+in
+
+the
+
+> Age range: 14-18
+>
+> Apparatus required: •Van de Graaff generator 'Bubble liquid and blower
+
+### A charged rod and its effect on water streams
+
+This next experiment is a beautiful, and to the pupils quite unexpected demonstratiom Turn on a tap and let a slow but continuous dribble of water fall vertically from it. Bring up a charged polythene rod close to this dribble and the water will be deflected towards it. The deflection is due to the polar molecules (positive at one end and negative at the other) which orient themselves so that they are attracted by the charged rod. A charged plastic comb will also work well and showing this with a TV camera is a help to make it visible to a large group.
+
+Age range: 11-18 Apparatus required: •Polythene rod 'Duster •Tap with fine outlet
+
+### Electric fields
+
+The apparatus shown in the diagram was home-made and has proved very useful for plotting electrostatic fields. A piece of conducting paper is placed over a piece of carbon paper on top of a sheet of white paper and is held in place by the two metal bars. A potential difference is placed across the two bars and using a probe made from an optical pin connected to a digital meter the shape of the field can be plotted. You can also trace the lines of equal potential. Screwing down the bolts in the centre of one or both of the bars enables the fields produced by point charges to be studied.
+
+> Age range: 16-18
+>
+> Apparatus required:
+>
+> •Electric fields apparatus
+>
+> •Optical pin •Carbon paper
+
+'Conducting paper
+
+> •Digital high resistance voltmeter ^o^ Low voltage dc power supply
+
+### Spark plug and the Van de Graaff generator
+
+Use a Van de Graaff generator to demonstrate the action of a spark plug. Attach the top of the spark plug to the top of the generator using a lead and clip, and earth the other contact. The spark plug will operate when the generator is turned on.
+
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.
+
+Age range: 14-18 Apparatus required: ^o^ Van de Graaff generator •Spark plug
+
+### Van de Graaff generator and a radio
+
+Use a radio to detect the sparks from a Van de Graaff generator by the electromagnetic pulse of radiation that they produce. Refer to the effects of lightning on radio and TV transmission. You will need to check the correct wave band to use. Computers may be adversely affected by nearby sparks from a Van de Graaff generator.
+
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.
+
+### Electric fields - the school dinner experiment
+
+(a) My rather unkind name for the electric field apparatus. You can make electric fields visible on an overhead projector by using a shallow, clear plastic dish of oil into which two electrodes are placed. Sprinkling semolina or fine grass seeds on the surface will show the field lines when the EHT supply (usually 5 kv and limited to 5 mA) is connected between the electrodes and switched on.
+
+The EHT supply should be limited to 5 mA or less
+
+(b) Use the classic electric field apparatus on the overhead projector, but put a metal ring between the electrodes to demonstrate that there is no field inside a hollow conductor.
+
+> Age range: (a) 14-18 (b) 16-18
+>
+> Apparatus required: •Electric fields apparatus 'Overhead projector ^O^ EHT supply 'Oil!
+>
+> 13\. More simple
+
+Make a paper flower with a metal foil cake case as its centre. Then charge it by touching it with a wire fixed to a plastic bottle that has been rubbed. The flow of charge between the bottle and the flower shows the connection between static and current electricity.
+
+Age range: 11-13 Apparatus required: •Plastic bottle •Metal foil cake case •Wire
+
+### Spark counter and ions from a flame
+
+Set up a spark counter with a p.d of 4 to 5 kV between the wire and the gauze so as to give a voltage not quite sufficient for sparking to take place. To demonstrate that a flame ionises the air, light a taper and blow the flame towards the gauze - sparking immediately results.
+
+Age
+
+range:
+
+14-18
+
+Apparatus
+
+required:
+
+•Spark
+
+counter
+
+•EHT
+
+supply
+
+limited
+
+•Insulated
+
+and
+
+### Van de Graaff and cotton wool to show field lines
+
+The field lines from a charged dome can be seen by fixing some cotton wool on top of the dome. A long haired wig on the large dome also looks impressive! The strands of hair all acquire the same charge and so repel each other.
+
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.
+
+tech
+
+### Watch glass electrostatic repulsion
+
+The forces between two charged rods can be shown by the following simple experiment. Balance a charged polythene rod on an inverted watch glass. Then bring up another charged rod towards it --- the first rod rotates on the watch glass, showing the repulsion between like charges. Attraction can be shown by bringing up a cellulose acetate rod.
+
+> Age range: 11-13
+>
+> Apparatus required: •Watch glass •Two polythene rods •Cellulose acetate rod •Duster
+
+### Electrostatic forces - balls and a top pan balance
+
+Measure the electrostatic force between two charged balls (or rods) - one fixed to a clamp, the other to a top pan balance. Mount the retort stand on a laboratory jack so that the separation of the balls may be altered.
+
+> Age range: 14-18
+>
+> Apparatus required: •Top pan balance reading to at least 0.01 g •Charged rods or balls •Laboratory jack
+
+### Electrostatic fields
+
+A very good demonstration of electric fields uses the macro Millikan apparatus, a pair of aluminium plates some 30 cm square and about 5 cm apart which were used as a large scale demonstration of Millikan's oil drop experiment. I have used this with little aluminium foil figures to show electric fields. An even better demonstration is to use figures made from tissue paper, they do not have the problem of being conducting and will rise and fall in the field if it is adjusted carefully. The special apparatus does not have to be used - two aluminium sheets with a p.d. of up to 5 kV between them works perfectly.
+
+This experiment will also work if pieces of puffed wheat are used in place of the pieces of paper in the space between two charged plates.
+
+Yet another alternative is to sprinkle a small amount of sugar (or flour) on to the lower plate.
+
+> The EHT supply should be limited to 5 mA or less.
+
+Connect the plates to an EHT supply and switch on. The sugar oscillates between the plates showing induced charge, then attraction and then discharge. Some practice will be needed to get the correct potential difference and plate separation - i.e. the electric field intensity.
+
+> Age range: 14-18
+>
+> Apparatus required: •Two metal plates mounted horizontally and separated by polythene spacers
+>
+> •EHT supply limited to 5 mA or less •Paper •Sugar •Puffed wheat •Flour
+
+### Statics and covering film
+
+The effects of static electricity can be demonstrated with cling film, book covering film or plastic document sleeves. Simply pulling the film off its backing paper will charge both the paper and the film. Testing the two parts with a gold leaf electroscope will show that they are oppositely charged. This can be an annoying property of some types of sticky tape.
+
+> Age range: 11-13
+>
+> Apparatus required: •Plastic document sleeve •Roll of book covering film •Cling film
+
+### Photocopier and Electrostatics
+
+This is a very simple demonstration of the behaviour of a photocopier. "Draw" a T shape on a polythene tile by rubbing along the shape with a duster to charge only that area. Now put the tile over a plate of semolina. The semolina will only be attracted to the charged T, shape in exactly the same way as carbon powder is attracted to the charged parts of the master drum in a photocopier. Use a coloured tile to make the semolina show up better, or use coloured spice powder on a white tile.
+
+Age range: 11-16 Apparatus required: •Semolina •Polythene tile •Duster
+
+### Electrostatics toys
+
+There are a number of lovely old electrostatics toys such as dancers on wires and the hunter with ducks. It is worth hunting round some antique shops to find examples of these.
+
+> As with all Physics toys, if you find one and can afford it then buy it --- you never know if you will ever see one again!
+
+### Soap bubbles and Millikan
+
+Set up a Van de Graaff generator with the high voltage dome connected to a metal tube held in an insulating clamp. To the lower end of this attach a length of rubber tubing. Cover the top of the tube with a soap film, and blow a soap bubble. Mount two metal plates horizontally and connect them either to an EHT supply, or to the Van de Graaff, and earth. Switch on the generator so that the bubble becomes charged. Switch off the generator. Now gently blow the bubble sideways into the gap between the charged plates. By adjusting the plates' separation or the potential difference between them (if connected to the EHT), or both, it should be possible to get the bubble to rise, fall or remain suspended in mid air - a useful demonstration of the Millikan experiment. In fact if the mass of the bubble is known we could actually measure the charge on it!
+
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.
+>
+> Age range: 16-18
+>
+> Apparatus required: •Two metal plates mounted horizontally and separated by polythene spacers •Soap bubble liquid •Metal tube •Rubber tubing
+>
+> •Van de Graaff generator or EHT supply limited to 5 mA or less
+
+### Electrostatic repulsion - various versions
+
+(a) Electrostatic repulsion can be shown by two strips of aluminium foil hanging from the same point and with the join connected to an EHT supply (or a Van de Graaff generator). They repel each other as the potential is increased, and they become more highly charged.
+
+|                                                                  |
+|:----------------------------------------------------------------:|
+| The Van de Graaff generator may give unexpected electric shocks. |
+|   Staff should be prepared for this. The EHT supply should be    |
+|                     limited to 5 mA or less.                     |
+
+------------------------------------------------------------------------
+
+(b) Yet another version
+
+Two charged plastic drinking straws are suspended with thread through them so that they hang horizontal and parallel. If they have opposite charge they will swing apart - a very simple demonstration of electrostatic repulsion. As an extension the forces between them can be worked out if you know the masses of the straws and the angle of the threads. A very approximate idea of the charges carried can then be found.
+
+> Age range: 14-18 Apparatus required: •Two strips of aluminium foil ^o^ EHT supply •Two drinking straws •Thread •Wooden or plastic clamp in stand
+
+### Point discharge
+
+(a) Show the effects of charge discharge from a point by using a sensitive flame.
+
+(b) The discharge from points can also be easily shown with the rotating windmill apparatus either mounted on the top of the large dome itself or on a stand. It helps considerably if the stand is placed on a polythene tile to prevent leakage.
+
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this. The EHT supply should be limited to 5 mA or less.
+>
+> Age range: 11-13
+>
+> Apparatus required: •Windmill of metal with pointed ends •El-IT supply limited to 5 mA or less or Van de
+>
+> Graaff generator
+
+Clet.-L1 PI lei
+
+### Fluorescent tube and the plasma globe
+
+This is a most impressive demonstration.
+
+Take an ordinary fluorescent tube, and hold it near the plasma globe. This is a globe filled with low-pressure gas that has a ball electrode at a potential of some 20 kV at its centre. Switch on the globe. To most people ^r^s amazement the tube lights even though it is not touching the globe. I have found that if one end of the fluorescent tube is a little less than 10 cm from the globe, but not touching it, the demonstration works well. Moving your hand along the tube will "wipe off" the discharge, since you are earthing the tube at that point.
+
+It shows the existence of an electric field round the globe - the potential difference between the two ends of the tube being sufficient to make it light.
+
+Age range: 14-18 Apparatus required: 'Plasma globe •Fluorescent tube
+
+### Ions in a flame and a flame probe for detecting electrostatic fields
+
+(a) Set up two vertical plates, and put a candle between them. Connect the plates to an EHT supply and a spot galvanometer. When the supply is turned on, the reading of the meter stays at zero - no current flows. However, when you light the candle two things happen. The reading of the galvanometer shoots up and the flame is dragged towards one of the plates. The current is due to the ionisation of the air between the plates. The ions in the flame itself make it distort. A TV camera pointed between the plates helps to make this visible to the whole class.
+
+Alternatively use a light source such as a projector to give a shadow of the flame on a screen. (b) A flame from a fine glass jet can be moved within the field. The deflection of the flame due to the movement of the ions within it shows the intensity of the field at that point. \> The EHT supply should be limited to 5 mA or less. \> \> Age range: 14-18 \> \> Apparatus required: •Two metal plates mounted on insulating holders 'EHT supply limited to 5 mA or less •Candle •Glass flame jet
+
+### Cars and electrostatics
+
+You may have noticed that you may get a shock when getting out of a car. Here are some (not so serious) suggestions as to how to prevent this happening!
+
+\(a\) Driving in Wellington boots and a wet suit. (c) Carrying a passenger to jump out first. (b) Throwing out an anchor before you get out. (d) Keeping the radio aerial up!
+
+Electrostatic phenomena
+
+### Pith ball on thread on a Van de Graaff generator
+
+Fix a pith ball to a thread, and then stick the other end of the thread to the top of the large dome of a Van de Graaff generator. When the generator is switched on the ball and dome acquire the same charge, and the repulsion between the ball and the dome will make the thread stand up vertically.
+
+|                                                                  \|
+| The Van de Graaff generator may give unexpected electric shocks. \|
+|                Staff should be prepared for this. \|
+
+> Age range: 11-13
+>
+> Apparatus required: •Van de Graaff generator •Pith ball •Thread 'Sticky tape
+
+### Paper and the Van de Graaff generator
+
+A very simple example of electrostatic repulsion is to tear up a sheet of paper into small pieces and put them on top on the large dome of a Van de Graaff generator. When the generator is turned on, the pieces of paper will fly off - they have all acquired the same charge as the dome and each other, and so will be repelled. On a good dry day they can fly almost a metre from the dome!
+
+(Puffed wheat or popcorn also work well if placed in a small plastic container on the top of the dome!)
+
+Age range: 11-13 Apparatus required: •Van de Graaff generator •Paper
+
+### Field in a hollow charged conductor
+
+Theory predicts that there is no field inside a hollow charged conductor.
+
+This is easily demonstrated by taking a gold leaf electroscope, standing it on an insulating tile and connecting the cap to the case. Then charge the top plate. You will notice that the leaf does not rise --- all the charge resides on the outside of the electroscope (plate and body), and there is no field within the case.
+
+> Theory:
+>
+> Electric field (E) is the negative of the potential gradient (-dV/dx). So if V is constant E = O.
+>
+> Age range: 16-18
+>
+> Apparatus required: •Gold leaf electroscope 'Method of charging (charged rod or EHT supply limited to
+>
+> 5 mA or less) 'Insulating tile 'TV camera to make the experiment visible to a large group
+
+> Electrostatic pnenomena
+
+### The phantom leg
+
+Take a fine-weave stocking and wedge a cardboard ring (cut from a storage tube) into the neck to keep it open. Charge the stocking by rubbing it with a balloon until the stocking expands as though it were filled by a "phantom leg". This is due to the like charges on all parts of the stocking repelling each other, so forcing the sides of the stocking apart. Alternatively connect it to a Van de Graaff generator!
+
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.
+
+Age range: 11 --- 13 Apparatus required: •Stocking - fine texture - low denier •Balloon
+
+### Barbie doll on a Van de Graaff generator
+
+If you are worried about the effects of static charge on your students and do not want to make their hair stand on end using a Van de Graaff generator, then try this experiment. Stand (or sit) a Barbie doll (or any other doll with long hair) on top of the Van de Graaff dome (you may need to fix it down). Turn on the machine, and watch the doll's hair rising!
+
+> Age range: 11-14
+>
+> Apparatus required: •Van de Graaff generator
+>
+> •Barbie doll (or alternative)
+>
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.
+
+Electrostatic phenomena
+
+### The Van de Graaff generator and a sheet of paper
+
+An interesting experiment using the Van de Graaff generator is to find out the maximum weight of a sheet of paper that it can support.
+
+Measure the mass of a number of sheets of paper and then calculate the mass/m ^2^ of the paper (A). ('Normal' photocopy paper usually has a mass of 80 g/m ^2^ .)
+
+Cut a sample of known area, and place it on the Van de Graaff dome. Switch the machine on, and see if it rises. Experiment with larger and larger pieces until the sheet is just held above the dome.
+
+|                                                                  |
+|:----------------------------------------------------------------:|
+| The Van de Graaff generator may give unexpected electric shocks. |
+|                Staff should be prepared for this.                |
+
+------------------------------------------------------------------------
+
+> Age range: 16-18
+>
+> Apparatus required: •Van de Graaff generator •Paper 'Balance
+
+### Metal cup cake cases and the Van de Graaff generator
+
+This is a lovely demonstration of the repulsive force between charges of the same sign. Put a pile of metal cup cake cases upside down on top of the large dome of a Van de Graaff generator and switch the machine on. As the charge builds up the top case will drift off --- the repulsion is just bigger than the weight of the case. This is then followed by the next one down and so on, giving a "rain" of cases.
+
+Alternatively a plastic bowl holding puffed wheat can be taped to the dome. The puffed wheat flies out when the machine is turned on!
+
+The photograph shows an interesting extension. I made a small hole in each of the holders and threaded a length of cotton through them. The lower end of the cotton was fixed to the Van de Graaff dome and the upper end to the ceiling.
+
+> Age range: 11-18 depending on treatment Apparatus required: • Van de Graaff generator
+>
+> •About ten cup cake holders
+>
+> The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.

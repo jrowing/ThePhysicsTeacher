@@ -1,0 +1,392 @@
+---
+title: "Momentum"
+format: html
+---
+
+## Basic Theory
+
+### Definition of Momentum
+
+**Momentum** is the product of mass and velocity: $$
+p = mv
+$$ Where: - $p$ = momentum (kg·m/s) - $m$ = mass (kg) - $v$ = velocity (m/s)
+
+Momentum is a **vector** — it has both magnitude and direction.
+
+### Newton’s Second Law (Momentum Form)
+
+Newton’s second law in terms of momentum: $$
+F = \frac{\Delta p}{\Delta t}
+$$ Where: - $F$ = resultant force (N) - $\Delta p$ = change in momentum - $\Delta t$ = time interval (s)
+
+### Impulse
+
+**Impulse** is the change in momentum: $$
+\text{Impulse} = F \Delta t = \Delta p
+$$
+
+Impulse is equal to the **area under a force–time graph**.
+
+Units: N·s (newton-seconds) or kg·m/s
+
+### Conservation of Momentum
+
+In a closed system (no external forces), **total momentum is conserved**: $$
+\sum p_{\text{before}} = \sum p_{\text{after}}
+$$
+
+#### Applies to:
+
+-   **Collisions**
+-   **Explosions**
+-   **Recoil events**
+
+### Types of Collisions
+
+#### Elastic Collision:
+
+-   Momentum conserved
+-   Kinetic energy conserved
+
+#### Inelastic Collision:
+
+-   Momentum conserved
+-   Kinetic energy **not** conserved (some converted to heat, sound, etc.)
+
+### Recoil
+
+When an object (e.g. a gun) fires a projectile: $$
+m_1 v_1 = -m_2 v_2
+$$
+
+Both the projectile and object recoil with equal and opposite momentum.
+
+### Momentum in Two Dimensions
+
+Momentum is conserved **in each direction separately** (horizontal and vertical).
+
+Use vector components: - Resolve each momentum into $x$ and $y$ directions. - Apply conservation law to each component: $$
+  \sum p_x^{\text{before}} = \sum p_x^{\text{after}}, \quad
+  \sum p_y^{\text{before}} = \sum p_y^{\text{after}}
+  $$
+
+### Centre of Mass and Momentum
+
+If no external force acts on a system, the **centre of mass** moves with constant velocity.
+
+### Applications of Momentum
+
+-   **Car safety**: Airbags, crumple zones increase time $\Delta t$ to reduce force.
+-   **Ballistics**: Calculating recoil and projectile motion.
+-   **Astrophysics**: Rocket propulsion, binary star systems.
+-   **Particle physics**: Detecting invisible particles using conservation of momentum.
+
+### Sample Problems
+
+1.  A 2 kg object moving at 3 m/s collides inelastically with a stationary 1 kg object.\
+    What is their final velocity?
+
+    **Solution:** $$
+    (2)(3) + (1)(0) = (2 + 1)v \Rightarrow v = 2 \text{ m/s}
+    $$
+
+2.  A 0.5 kg ball hits a wall at 10 m/s and bounces back at 8 m/s.\
+    What is the impulse?
+
+    $$
+    \Delta p = m(v_{\text{final}} - v_{\text{initial}}) = 0.5(-8 - 10) = -9 \text{ kg·m/s}
+    $$
+
+> Momentum = mass x velocity
+>
+> Momentum is conserved in all collisions whether they are elastic or not.
+
+> If an impulse (Force x time) is given to an object the object suffers a change of momentum e.g. Ft = mv - mu
+
++--------------------------------------------------------------------+----------------------------------------------+
+| > 1\. Elastic collisions                                           | > 14\. Stopping an escalator                 |
++:===================================================================+:=============================================+
+| > 2\. Newton's cradle                                              | > 15\. Crumpling zones in cars               |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 3\. Snooker and Newton's cradle                                  | > 16\. Collisions with marbles               |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 4\. Momentum in collisions                                       | > 17\. Sand falling on to a top pan balance  |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 5\. Momentum and snooker/football game                           | > 18\. Collisions                            |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 6\. Colliding power balls                                        | > 19\. Momentum in catching                  |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 7\. Pendulum on a trolley                                        | 20\. Throwing and jumping - momentum!\|      |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 8\. Smacking hands                                               | 21\. Angular momentum and the rotating table |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 9\. Kicking a football                                           | 22\. Speed of a cricket ball                 |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 10\. Toy gun on linear air track                                 | 23\. Force in a take-off or a bounce         |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 11\. The air rifle and momentum                                  | 24\. Eggs and a sheet                        |
++--------------------------------------------------------------------+----------------------------------------------+
+| > 12\. Helicopter details                                          | 25\. Throwing nothing                        |
++--------------------------------------------------------------------+----------------------------------------------+
+| 13. Momentum with suspended ball \| 26. Contracting rubber band \| |                                              |
++--------------------------------------------------------------------+----------------------------------------------+
+
+#### 1. Elastic collisions
+
+In an elastic collision no kinetic energy is lost, and this is very difficult to show in practice since elimination of friction is a problem. The ideal case can be approached by using two bar magnets. One magnet should be mounted horizontally in a block or held in a clamp. The second magnet is then suspended on four threads so that it is restricted to swing in one vertical plane and hangs with one pole facing the similar pole of the fixed magnet. It is then pulled out and released. It swings in towards the fixed magnet, is repelled and so swings back and forward and keeps going for ages. It is worth referring to the collisions between gas molecules in kinetic theory as being virtually perfect elastic collisions.
+
+> Age range: 15-18
+>
+> Apparatus required:
+>
+> •Two strong bar magnets •Thread •Wooden retort stand with two clamps and bosses
+
+#### 2. Newton's cradle
+
+A beautiful example of collisions - try pulling out a different number of balls each time and letting them swing back inwards. You will find that however many balls you pull back, up to four out of five, the same number will always swing out at the opposite end. Pulling one ball out from each end will give a ball bouncing in and out at either end.
+
+> Theory:
+>
+> At collision the impact is very nearly elastic and the momentum and energy of the swinging ball are transferred to the adjacent ball. This process is repeated along the line until the free ball at the end swings away.
+
+Age range: 13-18 Apparatus required: •Newton's cradle 'TV camera and video if possible
+
+#### 3. Snooker and Newton's cradle!
+
+A simple way of explaining Newton's cradle is to use snooker balls. Extend from just the two ball example where one ball stops and the other moves off (see experiment 5) to more and more balls. Each time it is only the end one that moves off (allowing for spin and friction, of course).
+
+Age range: 15-18 Apparatus required: •Snooker balls •Snooker table if possible!
+
+#### 4. Momentum in elastic and inelastic collisions
+
+Set up a block on the bench and hang a power ball from a thread so that it just touches the block. Pull it up and allow it to swing back. The rebound involves a direction change and hence a large change of momentum. This means a large force and so the block topples. Repeat with a ball of soft plasticine loaded to give the same mass. The block stays upright. This time the change of momentum is only half that of the rebounding ball.
+
+> Theory! Change of momentum = Ft, and so if the momentum change is large (for a given stopping time) the force Age range: 14--- 18 Apparatus required: 'Power ball 'Wooden block •Plasticine 'Thread 'Retort stand
+
+#### 5. Momentum and snooker/football game
+
+Use a snooker or billiards table to demonstrate momentum conservation. You don't need a real snooker table for this - just the balls and some simple form of cue on the lab bench. In some ways the sliding of the balls on the smooth bench surface may improve the result. Show that if a stationary ball is hit by a moving ball the first one moves off while the second one comes to rest. Also measure the angle between directions of travel of the two balls after an oblique collision - it really does come out to be about 90^0^ with balls of equal mass. This should be related to the collision between particles of equal mass in nuclear interactions. Mention the problem of spin. It works reasonably well if you undercut the strokes.
+
+Trick shots: it is possible to pot the last of a line of balls as long as the last two are set up in line with the pocket,
+
+Age range: 16-18
+
+> Apparatus required: •Snooker balls and snooker table if possible
+
+#### . Colliding power balls - dropped on top of each other
+
+This can be bought as a demonstration experiment but simply using two power balls, one large and one small, will do. Hold the balls above the ground with the small one resting on top of the large one. Now drop them so that they fall and hit the ground. The small one on top will leap off. It's even better with more balls. A needle in the lower ball with a thread through a hole in the top ball keeps the whole thing vertical. (Assume they both hit the ground at speed u.)
+
+I think I was told that twelve balls stacked on top of each other would theoretically put the top one into orbit, indeed escape from the solar system! This is not only a good example of momentum conservation but also of the distribution of energy in explosions.
+
+> Theory:
+>
+> In a collision or explosion the momentum before collision or explosion = the momentum after collision or explosion.
+>
+> So, as the large ball rebounds from the ground at velocity u the small ball hits it at relative velocity u+u. If the collision is perfectly elastic it rebounds with relative velocity u+u, but since the large ball is moving upward with a velocity u the actual vertical velocity of the small ball is u+2u = 3u. The height (h) reached is given by h = 9u^2^/g. (Assume that the mass of the large ball is much greater than that of the small one.)
+
+Age range: 14-18 Apparatus required: ^o^ Two power balls - one large and one small •Thread •Needle
+
+#### 7. Pendulum on a trolley - momentum conservation
+
+Hang a pendulum on a dynamics trolley or on the rider of a linear air track and observe its motion as the trolley moves along.
+
+> Age range: 16-18
+>
+> Apparatus required: •Linear air track 'Pendulum
+
+##### 8. Smacking hands
+
+This is a simple but good example of Newton's Third Law - when a force acts on a body an equal and opposite force acts on another body. I suggest that you ask a pair of pupils to do this. I once received a nasty blow by asking one of the girls to smack my hand - it really stung. Get one of them to put their hand out and hold it still while the other one smacks them. This is going to hurt me more than it hurts you! You can extend the idea further by asking the pupils what it would be like to punch the wall. The force on your knuckles would be the same as that on the wall but the resulting effects and damage would be quite different!
+
+Age range: 11-15 Apparatus required: •Two pupils and their hands!
+
+#### 9. Kicking a football
+
+This classic experiment is used to measure the momentum change of the football and hence the force used to kick it. A piece of aluminium foil is taped to the football and another piece is fixed to the shoe of the kicker. The foil on the foot is connected by a long lead to one of the start terminals of a scaler, while the other terminal is connected by another long lead to the foil on the ball. The ball is placed on the edge of the bench at a known height above the ground and kicked off horizontally, the scaler recording the time for which the foot was in contact with the ball and the connecting wires breaking as the ball moves off. The horizontal distance travelled is measured together with the time taken to hit the ground, and from this the horizontal speed of the ball is found.
+
+> Momentum, Collisions and Explosions
+
+From the values of mass (m), velocity (v) and time (t) the force used to kick the ball can be found. I have tried it outside with a hockey ball. This works fine if the wires are allowed to separate after the ball has moved a short distance and somebody hangs on to the scaler!
+
+> Theory:
+>
+> Horizontally: s = uT and Ft = mu Vertically: h = 1/2(gT^2^) where t is the time of contact between the foot and the ball and T is the time taken for the ball to reach the ground having fallen a height h and travelled horizontal distance s.
+>
+> Age range: 14-18
+>
+> Apparatus required: •Football •Scaler •Crocodile clips •Long leads •Aluminium foil 'Tape ^0^ 10m measuring tape
+
+#### 10. Toy gun on linear air track
+
+The recoil of a rifle can be demonstrated by using a toy gun firing a table tennis ball fitted to a trolley on a linear air track. The toy gun moves in one direction while the table tennis ball moves in the other.
+
+> Age range: 14-18
+>
+> Apparatus required: •Linear air track •Toy gun •Trolley on the air track •Table tennis balls
+
+#### 11. The air rifle and momentum
+
+> The rifle should be clamped to a baseboard and to the bench and means of catching the pellet should be found --- a box of polystyrene backed with a wooden board is suitable for this. This experiment must only be done in a laboratory by the teacher. Use a safety screen to shield the class from possible ricochets. All present should wear eye protection and be behind the gun when it is fired. A teacher unfamiliar with this procedure should receive training before demonstrating it to a class.
+
+(a) Fix two timing gates - simply a plastic frame with a strip of aluminium foil across the centre - a metre apart and connected to a scaler. Fire an air rifle pellet through the two gates so that it starts the timer when the first strip of aluminium foil is broken, and stops it when the second is broken. The time for the pellet to travel the one metre between the two pieces of foil is given directly and the speed of the bullet can easily be worked out.
+
+(b) Using the same mounted air rifle, fire a pellet into a block of plasticine mounted on a model railway truck on rails. The runway should be tilted to compensate for friction and the speed of the truck (V) after impact should be found by timing its first 20 cm of movement.
+
+> Theory:
+>
+> Knowing the mass of a pellet (m) and the mass of the truck and plasticine (M) the speed of the pellet can be found (mv + MV = O)
+
+> Age range: 14-18
+>
+> Apparatus required: •Mounted air rifle •Truck loaded with plasticine •Scaler •Ruler •Stopwatch
+
+#### 12. Helicopter details
+
+Use the actual details of a Lynx helicopter to consider momentum transfer. (Mass = 4500 kg, rotor diameter 12.8 m). Force = mg = pAv^2^ where p is the density of air, A is the area swept out by the rotors and v is the downward speed of the air. Other examples in this topic are fire hoses, moving walkways and the water from a propeller in a boat.
+
+#### 13. Momentum with suspended ball
+
+Place one ball bearing on the edge of the bench. Suspend a second one from a thread so that when it is allowed to swing it collides with the first one, knocking it off. The masses of the two ball bearings can be varied as can the height from which the second one swings. Use the horizontal distance travelled by the second ball bearing to calculate its velocity after impact and the heights of swing of the first to find its velocity before and after impact.
+
+> Theory:
+>
+> If the first ball (mass ml) falls a vertical distance h and has a horizontal velocity ul just before it hits the second ball and after collision, then % mul = mgh. If the second ball (mass m2) acquires a horizontal velocity V then mil-Il = mil-.12 + m2V
+>
+> Age range: 16-18
+>
+> Apparatus required: •Two ball bearings •Thread •Retort stand •Ruler or measuring tape
+
+#### 14. Stopping an escalator
+
+I was walking down a moving escalator outside the Pompidou centre in Paris when a little boy hit the stop button. The next step, which I had assumed would be moving away, was then dead still and I received a severe shock to my back! This painful story is a good example of why you should always bend your knees on landing after any sort of jump and why you cannot make a jump without bending your knees first - time is needed to give you the required impulse (Ft). For a given change of momentum a small stopping time (like on the escalator) means a large force.
+
+##### 15. Crumple zones in cars
+
+A useful if rather unpleasant example of the energy and momentum conservation laws. The photograph is of our car! The bodywork crumples, absorbing kinetic energy and increasing both the stopping time and the stopping distance, and so reducing the forces involved. The passenger compartment was undamaged.
+
+#### 16. Collisions with marbles
+
+Use marbles to investigate collisions. Give each pupil three, and ask them to investigate what happens when they are rolled together.
+
+Age range: 11-13 Apparatus: •Marbles
+
+#### 17. Sand falling on to a top pan balance
+
+The effect of the collision of a large number of particles such as gas molecules exerting a pressure or rain falling on to a roof can be simulated by using sand and a top pan balance. Put a plastic beaker on a top pan balance and pour a steady stream of sand into it from a known height. Record the reading of the balance while the sand is falling and also when no sand falls. Repeat the experiment with water falling into a beaker - both of these should show the effects of momentum change. Relate to the force and pressure on a roof in heavy rain (both flat and pitched).
+
+> Theory
+>
+> Force on balance due to stationary sand = mg
+>
+> Force on the balance due to a mass of sand m' that falls on to it every second with a velocity v and is brought to rest = m ^l^v
+
+Age range: 16-18 Apparatus required: •Sand •Plastic beaker •Top pan balance
+
+#### 18. Collisions
+
+The relative masses of the particles involved in a collision or explosion has an important bearing on what happens. Let's think of some elastic collisions.
+
+(a) If you throw a table tennis ball at a stationary train the train hardly moves and the ball will rebound with its velocity relative to the train reversed
+
+(b) If the train is moving, the train will move on with hardly any change to its velocity while the ball's velocity relative to the train will be reversed
+
+(c) If one ball hits a stationary ball of the same mass (as in snooker) the first ball comes to rest while the second moves off with the original velocity of the first
+
+(d) If one ball hits a stationary ball of rather greater mass (say ten times) the first ball will lose some of its kinetic energy, this energy being gained by the second ball
+
+This has an important bearing on the choice of moderator for a nuclear reactor. The neutrons must be slowed down by a moderator and those chosen have nuclei which are just a few times heavier than the neutrons themselves - such as deuterium or carbon.
+
+#### 19. Momentum in catching
+
+This simple demonstration emphasises the vector nature of momentum. Use a ball (soccer or netball) and throw it to a pupil. Get them first to catch it and throw it back and then to punch it backwards without catching it first. Ask them which require the biggest force - catching or punching it back. It should be clear that it is the latter, and that this gives the biggest change of momentum. This demonstration hopefully emphasises the velocity change from u to ---u, and so a greater change of momentum than simply stopping the ball.
+
+> Theory:
+>
+> Momentum change = mu - (-mu) = 2mu when punched back and momentum change = mu when caught
+
+Age range: 14-16 Apparatus required: •Netball or football
+
+#### 20. Throwing and jumping - momentum/inertia
+
+Give various examples of the importance of impulse when considering the time taken in kicking and catching. The longer the time during which the force can be applied, the further you can throw something, and the longer it takes you to bring the object to rest when you catch it by bringing back your hands, the smaller the force needed. The effect of the forces involved in cars crumpling in collisions should also be considered. Notice how long jumpers and high jumpers "sink" on their last stride before take-off to give time to apply an upward force.
+
+In racket sports the same ideas apply. Also in cricket the ball can be hit further by maintaining contact between the ball and the bat by "playing down the line" of the ball
+
+#### Angular momentum and the rotating table
+
+(a) Get someone to stand on a rotatable table placed on the floor holding a 1 kg sandbag. Ask them to throw the sandbag to you very carefully, starting with their arm held out to the side of their body. As the mass moves forwards they will move backwards, showing the vector nature of momentum.
+
+(b) Stand a pupil on the table with their arms outstretched and push one of their arms gently so that the table and pupil spin slowly. Then ask them to bring their arms inwards. As they do so their rate of spin increases - the distribution of mass has changed and to maintain their angular momentum their spin rate must go up.
+
+Age range: 13-16 Apparatus required: •Rotating table •1 kg mass
+
+##### 22. Speed of a cricket ball
+
+The speed of a cricket ball can be found using a variation of the rifle bullet experiment and it's much safer!
+
+Fill a cardboard box with loosely crumpled newspaper or bubble wrap. Measure the mass of the box and its contents (M) and also that of a cricket ball (m). Put the box on a smooth flat floor and throw the ball horizontally into the box.
+
+Measure the time that the box takes to recoil along the floor and the distance travelled before it comes to rest. From the distance and time work out the average speed of the box. Doubling this value will give you the speed (V) of the box and ball immediately after the ball hits it (assuming uniform deceleration on the floor).
+
+Using the law of conservation of momentum, the speed (v) of the cricket ball before impact can be found.
+
+> Theory: mv = (M+m)V
+>
+> Age range: 14-19
+>
+> Apparatus required: •Cricket ball •Rounders ball •Baseball or hockey ball •Cardboard box •Newspaper or bubble wrap
+
+l^i^vqomentum, collisions ana explosions
+
+##### 23. Force in a long jump take off or when a ball bounces
+
+In experiment 20 it was suggested that estimates could be made of forces involved in jumping. This can be done by fixing contacts to the jumper's feet and to the ground. Using this method try to estimate the large forces generated as the jumper "sinks" on the last stride. There is a very useful CD ROM called Multimedia Motion which enables measurements such as the time of contact between the foot and the ground to be taken from video clips. An alternative experiment is to find the force experienced by a ball when it bounces. This can be done by fixing a piece of aluminium foil to a ball and dropping it on to another piece so that it completes the circuit to a stop clock or scaler. Knowing the height from which it was dropped enables you to find the impact speed and so the momentum change and hence the force.
+
+The contact area can be found by placing sand paper under a piece of aluminium foil so that when the ball is dropped on it an imprint is made in the foil.
+
+> Theory:
+>
+> Force = change of momentum/time of contact = (mv-mu)/t
+>
+> Age range: 14-18
+>
+> Apparatus required: •CD ROM "Multimedia Motion" with computer
+
+##### 24. Eggs and a sheet
+
+The idea of a reduced force when the stopping time and stopping distance are large can be shown by throwing raw eggs at a sheet. Some pupils hold an ordinary bed sheet vertically, and then the teacher throws an egg at the sheet. The sheet will give a little and the egg will not break (until it rolls down and hits the ground). The 'long' stopping time as the egg hits the sheet gives a small retarding force.
+
+> Do not throw the egg too fast, and be careful not to hit the pupils. They will not 'give' as much as the sheet, and so the stopping force will be large!
+
+Age range: 14 --- 19 Apparatus required: •Sheet 'Eggs (raw)
+
+##### 25. Throwing nothing
+
+This seemingly odd title describes what could be a rather risky experiment, so do take care if you try it --- don't be too enthusiastic or you may hurt yourself.
+
+First of all get a heavy ball, go outside and throw it. It may be quite hard to throw it far, but your arm should feel fine. A large amount of the momentum of your arm is transferred to the ball and so the ball moves off at relatively high speed whereas your arm is left with a small amount of momentum so that it can easily be brought to rest by your arm muscles.
+
+Now do it again but this time without the ball! You would think that this is easy but it is this part of the experiment that could damage your muscles. Your arm has no ball to which to transfer the momentum and so the arm muscles have to work much harder to bring it to rest in the same distance.
+
+##### 26. Contracting rubber band
+
+This apparently simple experiment is both fascinating and thought provoking.
+
+Set up the apparatus as shown in Figure 1 with the rubber band stretched around the two nails and the piece of light card standing in front of nail A. The band should be under tension but not too tight.
+
+Now pull the band back from nail B (Figure 2). I have found that increasing the length of the band to almost double its length in Figure 1 works well.
+
+Now release the band (Figure 3) while holding the wooden block in place with the other hand (Alternatively clamp the block to the bench although I have not found this necessary.)
+
+You may not expect the result. The rubber band comes forward from nail A and the card is knocked over or even shot forwards.
+
+Two things need to be considered. Firstly, it takes a finite, but short time before the front end of the band 'knows' that the rear end has been released. Secondly, the centre of mass of the band moves forwards and so the whole band moves forwards. The speed at which the centre of mass moves is partly dependent on the speed with which the band can contract.
+
+A series of high speed photographs was taken of the experiment and this showed that the front end of the band only started to move forwards when the back end had collided with the rear nail.
+
+> Age range: 16-18
+>
+> Apparatus required: 'Two large nails hammered into a wooden block as shown 'Rubber band
+>
+> •Piece of card

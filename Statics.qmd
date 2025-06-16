@@ -1,0 +1,395 @@
+---
+title: "Statics"
+format: html
+---
+
+## Basic theory
+
+### Equilibrium of a Particle
+
+-   A particle is in equilibrium if the **net force** acting on it is zero: $$
+    \sum \vec{F} = 0
+    $$
+
+-   This means no acceleration; the particle is at rest or moving at constant velocity.
+
+### Equilibrium of a Rigid Body
+
+-   For a rigid body in equilibrium:
+    -   The net force is zero: $$
+        \sum \vec{F} = 0
+        $$
+    -   The net moment (torque) about any point is zero: $$
+        \sum \vec{M} = 0
+        $$
+
+### Moments (Torque)
+
+-   Moment about a point $O$ is the turning effect of a force: $$
+    M = F d
+    $$ Where:
+
+-   $F$ = magnitude of force (N)
+
+-   $d$ = perpendicular distance from point $O$ to the line of action of $F$ (m)
+
+-   Direction: clockwise or anticlockwise moments
+
+### Couple
+
+-   A couple consists of two equal and opposite forces whose lines of action do not coincide.
+-   Moment of a couple: $$
+    M = F \times d
+    $$ Where $d$ is the perpendicular distance between the forces.
+
+### Types of Forces in Statics
+
+-   **Tension:** Force that pulls/stretch (e.g. in a rope).
+-   **Compression:** Force that pushes/squeezes.
+-   **Normal reaction:** Perpendicular force exerted by a surface.
+-   **Friction:** Force resisting motion, parallel to the surface.
+
+### Conditions for Equilibrium Summary
+
+| Condition          | Vector Equation    | Explanation   |
+|--------------------|--------------------|---------------|
+| Force equilibrium  | $\sum \vec{F} = 0$ | No net force  |
+| Moment equilibrium | $\sum \vec{M} = 0$ | No net torque |
+
+### Resultant Force
+
+-   The single force which has the same effect as a system of forces.
+-   Calculated by vector addition of all forces: $$
+    \vec{R} = \sum \vec{F_i}
+    $$
+
+### Resolution of Forces
+
+-   Forces can be resolved into components, often horizontal ($x$) and vertical ($y$): $$
+    F_x = F \cos \theta \quad , \quad F_y = F \sin \theta
+    $$
+
+### Centre of Mass
+
+-   The point at which the entire weight of a body can be considered to act.
+-   Found by taking moments of weights or using geometric symmetry.
+
+### Summary Table
+
+| Concept | Formula/Condition | Notes |
+|------------------|---------------------------------|---------------------|
+| Force equilibrium | $\sum \vec{F} = 0$ | No acceleration |
+| Moment equilibrium | $\sum \vec{M} = 0$ | No rotation |
+| Moment | $M = F d$ | Turning effect of a force |
+| Couple moment | $M = F d$ | Two equal opposite forces |
+| Force components | $F_x = F \cos \theta$ , $F_y = F \sin \theta$ | Resolve forces into $x$, $y$ |
+
+> General theory for this section:
+>
+> The moment of a force is defined as the product of the force and the perpendicular distance from the line of action of the force to the pivot.
+>
+> When an object is balanced, the sum of the clockwise moments (those trying to turn it in a clockwise direction) is equal to the sum of the anticlockwise moments (those trying to turn it the opposite way). When an object is balanced, the vertical line from the centre of gravity passes through the point of balance and the object will topple over when this vertical line falls outside the base of the object.
+
+## Stories to enritch
+
+### Archimedes and the Lever
+
+Archimedes famously said, “Give me a place to stand, and I will move the Earth.” He discovered the law of the lever, showing how a small force applied at a longer distance can balance a larger force closer to the pivot. This principle laid the foundation for understanding equilibrium and mechanical advantage.
+
+Reflection: How did the lever change the way humans harness force?
+
+### The Bridge That Didn’t Fall: Early Engineering Marvels
+
+Ancient engineers designed stone arches and bridges that stood for centuries without modern materials. Their mastery of static equilibrium—balancing forces so structures remain at rest—was a triumph of practical statics. These structures show how understanding forces prevents collapse.
+
+Reflection: Why is balancing forces crucial in architecture and engineering?
+
+### Galileo’s Inclined Plane Experiments
+
+Galileo studied motion on inclined planes to understand forces and equilibrium. By carefully analyzing how objects rest or slide, he laid groundwork for the laws governing forces and moments. His insights bridged statics and dynamics in physics.
+
+Reflection: How can simple experiments reveal deep truths about forces at rest?
+
+### Leonardo da Vinci’s Studies of Forces
+
+Leonardo sketched machines, bridges, and human anatomy, analyzing force balance and tension. His notebooks contain early explorations of static forces and equilibrium, combining art and engineering. His work exemplifies how observation and creativity illuminate statics.
+
+Reflection: How does art contribute to understanding physical forces?
+
+### The Eiffel Tower: Statics in the Sky
+
+Gustave Eiffel’s design used wrought iron arranged to balance compressive and tensile forces efficiently, enabling the Tower to stand over 300 meters tall. It’s a modern marvel of static equilibrium under wind and gravity loads. This structure shows statics’ role in pushing architectural limits.
+
+Reflection: How do engineers ensure structures withstand static forces like weight and wind?
+
+### The Mystery of the Hanging Chain: Catenary Curves
+
+The shape of a hanging chain or cable forms a catenary curve, which is the ideal shape for arches under uniform load. Understanding this curve was key to designing stable arches and bridges. Statics explains why certain shapes support weight better.
+
+Reflection: Why do natural curves provide structural stability?
+
+### The Discovery of Stress and Strain
+
+Scientists realized that static forces produce internal stresses within materials. Understanding how materials deform under load—stress and strain—helped engineers predict failure and design safer structures. This connected external forces to internal material behavior.
+
+Reflection: How do materials respond internally to forces holding things still?
+
+### The Role of Statics in Space Engineering
+
+Statics is crucial in designing satellites and space stations, ensuring components stay balanced and forces remain controlled despite zero gravity. Static equilibrium principles guide docking, structural stability, and load distribution. Statics extends beyond Earth.
+
+Reflection: How do static forces matter in the weightless environment of space?
+
+### The Tower of Pisa and Static Instability
+
+The leaning tower’s tilt is a static equilibrium problem where uneven ground causes the center of mass to shift. Engineers have worked for decades to stabilize it without altering its famous lean. It’s a real-world lesson in static balance and instability.
+
+Reflection: What happens when static equilibrium is slightly disturbed?
+
+### The Origin of the Term “Statics”
+
+The word “statics” comes from the Greek “statikos,” meaning “causing to stand.” Early scientists formalized the study of forces keeping objects at rest, establishing a branch of mechanics focused on balance and support. Statics is about the art of staying still.
+
+Reflection: Why study forces that don’t cause motion?
+
+## Practical work and Demos
+
+#### 1. Balancing forks and a pivot mechanism
+
+(a) The position of the centre of gravity of a system is vital for its stability. Fix two forks together, prongs to prongs, stick a cocktail stick through between the prongs and then balance the arrangement on the edge of a glass. (It helps to tape the prongs of the forks together). Finally set fire to the end of the cocktail stick over the glass. The wood burns, eventually going out at the edge of the glass.( It helps to tape the ends of the forks together.)
+
+(b) A simple way of lowering the centre of gravity of a ruler when used for investigation of the law of moments is to use a rubber band to fix a ruler below a rod. The rod is then used as the pivot and is balanced on an aluminium yoke. This gets the centre of gravity below the point of suspension and makes balancing easier.
+
+> Age range: 11-14 Apparatus required: •Two forks •Cork •Glass
+>
+> •Ruler •Rubber band •Metal rod •Metal rod
+
+#### 2. Bottle top and door frame
+
+The enormous effect of leverage can be shown by taking the cap off a bottle by holding it in the gap between the door and the frame. (Take care not to damage the door or its frame!) It is worth giving some warnings about long levers giving too great an effect, such as the over tightening of both car wheel nuts and spark plugs with long-handled spanners! Trying to get them undone with a short arm spanner might prove impossible.
+
+Age range: 11-14 Apparatus required: •Bottle with removable cap •Door
+
+#### 3. Balancing a pencil and/or a snooker cue
+
+Why is it so much more difficult to balance a pencil than a snooker cue on your finger? This can be demonstrated by using a number of differently shaped rods - long, short, light, and heavy with a mass at the top or near the lower end - a pencil and a snooker cue. It is much easier to balance heavy rods or ones with a mass at the top such as a mop!
+
+The ease of balancing is simply to do with how sensitively you can adjust the position of the centre of mass - a small movement of your hand will produce a large angular acceleration in a light rod.
+
+> Age range: 11-14 or older depending on treatment
+>
+> Apparatus required: 'Rods of different types - snooker cue, broom, pencil, metre ruler, six inch nail
+
+#### 4. Mop and back muscles
+
+The following demonstration is a simulation of the enormous tension produced in the muscles of your back when you lean over. Tie a piece of string to the handle of a mop about a quarter of the way from the mop head. The head of the mop represents your head and the handle of the mop represents your spine. Drill a hole through the end of the handle furthest from the head and pivot it here, the head of the mop being at the top.
+
+Now try and support the mop as it tilts by holding the string at a small angle to the handle of the mop (l am told that back muscles make an angle of only 10 ^0^ with your spine!) The tension in the string represents the huge tension in your back muscles as you bend over. Bending at 45^0^ produces a tension of over double your own body weight!
+
+Holding something in your hands while you bend over into a car boot will increase the tension even further.
+
+> Theory:
+>
+> The tension in string (back muscles) T is given by the equation: Tsin A = mg cos 0 where A is the angle of the string with the mop (back muscles with the spine) and 0 is the angle that the mop handle (spine) makes with the horizontal. In the diagram the angle between the string and the mop has been exaggerated. The angle between your back muscles and your spine is less than 10^0^
+>
+> Age range: 16-18
+>
+> Apparatus required: •Mop •String •Newton meter •Metal rod for pivot •Retort stand and boss •G clamp
+
+#### 5. Action men and artists models in Physics
+
+The stability of the human body and the variable position of its centre of gravity can be studied using wooden artists' models, action men or even Barbie dolls. Their ability to stand, bend and balance on the flat, on trolleys and even on rotating tables is much easier to investigate than using real people who might get hurt!
+
+Age range: 11-14 Apparatus required: •Action man •Small wooden artists' model
+
+Moments Stat)lllty
+
+#### 6. Shopping trolley
+
+This is an interesting example of everyday balancing. The trolleys are extremely stable and make a good example for the discussion of moments; the handles are almost directly above the back wheels. Have you ever tried to tip one up by pushing downwards on the back? Even if you put your full weight on the handles the trolley will not tip over. Even better if you can actually borrow one and bring it into the lab!
+
+> Age range: 11-18 depending on treatment Apparatus required: •Shopping trolley!
+
+#### 7. Balances - wooden coat hangers
+
+Wooden coat hangers make good simple balance arms. The hooks can be supported on a metal pivot and the design of the coat hanger gets the centre of mass of the system well below the pivot. Even wire ones will do if the masses that you are using for the balancing are not too great. They will probably need adjusting with a little plasticine first to get them to balance on their own.
+
+Age range: 11-13 Apparatus required: •Coat hangers - wire or wooden
+
+#### 8. Vectors and a rope
+
+A very simple introduction to the importance of the directional nature of a force can be given by using a rope held horizontally and pulled tight by two strong pupils --- one pulling on either end. Now a relatively weak pupil should try to push down on the centre of the rope --- it is quite easy to move it down no matter how hard the other two pull.
+
+> Initially it is quite easy to push the rope downwards because of the directions of all the forces. The men are pulling horizontally and when the rope is pushed down only a very small fraction of their 'pull' is trying to prevent the rope from going downwards.
+
+However, it gets harder and harder the further down the centre of the rope gets. This is because of the increased vertical component of the tension in the rope that must be counteracted by a larger downward force in the centre.
+
+> Theory:
+>
+> Downward force = 2TsinA where T is the tension in the rope and A is the angle that the rope makes with the horizontal. Say T = 200 N and A = 10^0^, i.e. a two metre rope pushed down in its centre by about 15 cm. This requires a downward force at the centre of only 34 N.
+>
+> This is best done outside on the grass to avoid injury if the 'pullers' fall over.
+>
+> Age range: 16 --- 18
+>
+> Apparatus required: •Three students •About three metres of rope •Newton meter as an extension
+
+##### 10. Mobiles to demonstrate moments
+
+A lot of simple physics can be demonstrated with a child's mobile. It is instructive to design one both by trial and error and also by working out the moments required at each level. The ones with the more massive hanging objects tend to be better because they are more stable.
+
+> Age range: 11-13
+>
+> Apparatus required: •Objects to construct a mobile •Cardboard •Balance 'Stiff wire •Thread
+
+#### 11. Arm muscles and levers!
+
+A study of the lifting of weights by your arm is a good example of levers. The muscles of the forearm have a much greater tension in them than the weight you are lifting if the forearm is held horizontally. Get one of the pupils to try this by first holding the weight near their shoulder and then slowly extending their arm --- the torque (turning effect) gets greater.
+
+> Theory:
+>
+> The moment of a couple or torque = Force x perpendicular distance between the line of action of the two forces
+>
+> Age range: 11-14
+>
+> Apparatus required: •Forearm and masses - up to 5 kg is useful •Model forearm if possible
+
+#### 12. Centre of gravity of a pupil
+
+You can find the centre of gravity of a pupil by the following method using a strong wooden plank, some bathroom scales and a brick (or block of wood) the same height as the scales.
+
+lwornents btaolllty
+
+Put the plank down with one end on the block of wood or a brick and the other on the bathroom scales. Ask a pupil to lie on the plank with their heels over the pivot (brick). Record the reading of the scales. Take moments about the brick, having weighed the pupil first.
+
+> Theory:
+>
+> Reading on scales x distance of scales from pivot = Weight of pupil x distance of pupil's centre of gravity from the pivot + Weight of plank x distance of centre of gravity of plank from the pivot. The weight of the plank can be ignored if you record the increase in the scale reading when the pupil lies down.
+>
+> Age range: 11-16
+>
+> Apparatus required: •Plank (2m long) •Bathroom scales •Metre rule •Brick or wood block
+
+#### 13. Bear on bike
+
+There are many lovely toys that demonstrate why tight rope walkers puts out their arms to balance themselves or may even use a long pole. I have seen one of these in a toy shop in Venice. It was a model bear holding a balancing rod and riding a unicycle along a string. At either end of the rod were two wooden balls that dipped below the point where the wheel rested on the string, so that the centre of mass was below the point of balance. He moved quite easily along the string, being very well balanced by the rod.
+
+> Age range: 11-14 Apparatus required: •Bear on a unicycle or something similar •Taught string
+
+#### 14. Moments
+
+A very simple demonstration of the effect of distance on the turning effect of a force can be demonstrated using a door. Get a small pupil to close the door by pushing with one finger placed near the outer edge of the door while the teacher pushes with all their force on one hand very close to the hinge! The effect of the distance of a force from the pivot is clear - the pupil usually manages to push the door closed!
+
+With older pupils, get one of them to push the door such that their arm is at an acute angle with the door. It is much harder to open or close it. This emphasises the importance of the words "perpendicular distance" in the definition of the moment of a force.
+
+Age range: 11-13 or 16-18 depending on treatment Apparatus required: •Pupil and door
+
+#### 15. Using the centre of gravity to find the mass of a broom
+
+This simple experiment emphasises that it is not just the mass on either side of a balance point that determines whether an object will be balanced, but also how it is distributed.
+
+Hang up a broom by a string from roughly the centre of its handle so that the head will go down - the centre of mass of the broom being on the side nearest the broom head.
+
+Now, by loading the other end with masses (m) bring the broom into a horizontal position. Locate the centre of gravity of the broom by removing the masses and adjusting the position of the string so that the broom balances.
+
+> Theory:
+>
+> Force of weights x Distance of weights from pivot = Weight of broom x distance of centre of mass from pivot
+>
+> Age range: 13-15
+>
+> Apparatus required: •Retort stand and clamp •String •Broom •Slotted masses
+
+#### 16. The wooden spoon
+
+Get a wooden spoon. Balance it on your finger to find the centre of mass. Mark this point and then cut the spoon into two pieces by cutting through the centre of mass. Fix a small piece of dowel rod so that the pieces can be joined together again. This makes a very instructive demonstration when you ask pupils which side of the spoon has the greatest mass --- they invariably say that both pieces are the same since they balance at the centre of mass.
+
+Prove that they are not by measuring their mass with a balance.
+
+It is the moment of the forces on either side of the pivot that must balance so the 'bowl' of the spoon must be heavier than the handle because its centre of mass is closer to the pivot point on which the whole spoon was originally balanced.
+
+> Thin dowel rod
+>
+> Age range: 11-13
+>
+> Apparatus required: •Wooden spoon cut through its centre of mass and fitted with a dowel rod •Top pan balance
+
+#### 17. Rolling up hill
+
+An interesting demonstration of the turning effect of a force is to make a tin roll up hill! Use a large, flattish cake or biscuit tin (one with a diameter of 30 cm and depth of 8 cm or so works well) and fix a hidden mass (such as a lump of plasticine) inside one rim and then show the pupils that the tin can rolls up hill. Of course you will start it so that the mass is slightly to the uphill side of the vertical, and the tin will only roll up hill until the mass reaches the lowest point - hence the advantage of a fairly large tin. See how long it takes them to spot what is going on without getting hold of the tin!
+
+An alternative method is to use two large discs cut from thick sheets of polystyrene. A depression is made near their rims and a lump of plasticine wedged in it. The two discs are then stuck together - the loaded section being invisible!
+
+> Age range: 11-18 depending on the treatment
+>
+> Apparatus required: •Plank to act as a ramp 'Large tin with lid and lump of plasticine •Polystyrene lwoments btaolllty
+
+#### 18. Moving fingers on a long ruler
+
+This is a surprising demonstration of the effect of frictional forces and balancing. Balance a metre ruler or a broom handle on two fingers, the fingers being at different distances from the two ends. Then slide your fingers together - they always meet in the centre of the ruler as long as it is uniform - this is good for a discussion of moments.
+
+Of course, if the rod is not uniform, such as a snooker cue, the two fingers will meet at the centre of mass. (See the example about the polar bear on ice!) It may work better with two round pencils --- one held in each hand.
+
+> Theory:
+>
+> The greater the distance of a finger from the centre of mass of the ruler, the smaller the reaction on it, and so the smaller the frictional force. The ruler will then slide more easily over this finger than the other, which is nearer the centre of mass. This situation continues until they are at equal distances, when both fingers move together.
+
+Now try it with a 250g mass taped to one point of the ruler. This will move the centre of gravity of the ruler.
+
+> Apparatus required: •Metre ruler or other long uniform rod ^o^Two round pencils
+
+#### 19. Pile of leaning blocks!
+
+This demonstration looks at stability. Take some rectangular blocks, dominoes are ideal, and pile one on top of the other, setting each domino a little off centre compared with the one below it. How many can you pile up, and where is the centre of mass of the whole stack?
+
+> Theory
+>
+> A mathematical rule can be found to give the greatest overhang for a given number of blocks, each of length L. It can be shown that the N th block can have a maximum projection of L/(2N) relative to the block below. In other words the top, or first block can hang % its length over the second block, while the second block can hang % of its length over the third and so on. For a large number (N) of blocks the sum of the series is 0.5(0.5772 + In N).
+>
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •A number of dominoes or other suitable blocks 'Ruler!
+
+#### 20. Interesting balancing
+
+\(a\) Balance two beakers of water on a lever balance and then put your finger in one of them. What happens? Relate this to Archimedes and upthrust. You can do this by using one beaker and a top pan balance (see the section on Archimedes).
+
+(b) Put two pieces of taper in the end of a straw and, using a pin as a pivot, balance the arrangement. Now light the tapers - what happens? This can also be done with a candle which has been sharpened at top and bottom so that it can be lit at both ends while being pivoted in the middle. A fascinating rocking motion results.
+
+> Age range: 11-14
+>
+> Apparatus required: •Balance •Beaker of water 'Taper 'Straw 'Candle oPin and cork 'Retort stand, boss and clamp
+
+##### The heavy bottom toy
+
+> This toy can be used to demonstrate stability. It has a low centre of gravity and will always return to the vertical position if displaced.
+>
+> Age range: 7-11
+
+##### Moments using a CD and magnets
+
+This is a delightfully simple way of demonstrating the law of moments and how the turning effect depends on the perpendicular distance from the pivot to the line of action of the force.
+
+Take a CD and fix a grid scale to it as shown in the diagram. You will then need four small button magnets. These should be fitted in pairs either side of the CD and equal distances from the centre. Mount the CD and magnets on a horizontal axle (such as a glass rod or pencil) so that it balances.
+
+Now move one of the pairs of magnets vertically downwards. Although the distance of the magnets from the axle has increased, the perpendicular distance from the axle to the line of action of the weight of the magnets is unchanged and the CD remains balanced.
+
+> Age range: 11-16
+>
+> Apparatus required: •CD •Paper grid •Four button magnets •Retort stand and boss •Rod
+
+##### 23. The rolling spool
+
+Take a cardboard cable spool about 40 cm in diameter similar to that shown in the photographs and fix a length of string to the central shaft.
+
+First, set it up so that the string comes off the TOP of the shaft and try pulling the string. As you would expect you pull the spool towards you.
+
+Now arrange it so that the string comes off the BOTTOM of the shaft. It may surprise you to find that the spool still rolls towards you! In both the above cases the string must be pulled horizontally. The critical point is when the line of action of the force in the string passes through the line where the two sides of the spool touch the table.
+
+You may be able to prove this by considering moments about that point.
+
+> Age range: 16-19
+>
+> Apparatus required: •Cable spool •String •Adhesive tape
+>
+> (l am very grateful to Martin for the idea for this experiment.)

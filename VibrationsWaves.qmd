@@ -1,0 +1,1003 @@
+---
+title: "VibrationsWaves"
+format: html
+---
+
+## Basic Theory
+
+### Key Definitions
+
+-   **Oscillation:** Repetitive motion about an equilibrium position.
+-   **Wave:** A disturbance that transfers energy through a medium or space.
+
+### Types of Waves
+
+-   **Transverse Waves:** Particles vibrate **perpendicular** to wave direction (e.g. light, water waves).
+-   **Longitudinal Waves:** Particles vibrate **parallel** to wave direction (e.g. sound).
+
+### Wave Properties
+
++------------+-----------+-------------------------------------------------+-------------+
+| Property   | Symbol    | Definition                                      | Units       |
++============+===========+=================================================+=============+
+| Wavelength | $\lambda$ | Distance between two identical points on a wave | meters (m)  |
++------------+-----------+-------------------------------------------------+-------------+
+| Frequency  | $f$       | Number of oscillations per second               | hertz (Hz)  |
++------------+-----------+-------------------------------------------------+-------------+
+| Period     | $T$       | Time for one full oscillation                   | seconds (s) |
++------------+-----------+-------------------------------------------------+-------------+
+| Wave Speed | $v$       | Speed at which the wave travels                 | m/s         |
++------------+-----------+-------------------------------------------------+-------------+
+| Amplitude  | $A$       | Maximum displacement from equilibrium           | meters (m)  |
++------------+-----------+-------------------------------------------------+-------------+
+
+Relationship between wave speed, frequency and wavelength: $$
+v = f \lambda
+$$
+
+Relationship between period and frequency: $$
+T = \frac{1}{f}
+$$
+
+### Phase and Phase Difference
+
+-   **Phase** describes the position within an oscillation cycle.
+-   **Phase difference** is measured in degrees or radians:
+    -   $360^\circ = 2\pi\,\text{rad}$
+
+### Superposition
+
+-   When two or more waves meet, their displacements **add**:
+    -   **Constructive interference:** Waves in phase → larger amplitude.
+    -   **Destructive interference:** Waves out of phase → reduced or zero amplitude.
+
+### Reflection, Refraction, Diffraction
+
+-   **Reflection:** Wave bounces off a surface. Angle of incidence = angle of reflection.
+-   **Refraction:** Wave changes direction due to speed change at boundary.
+-   **Diffraction:** Spreading of waves when they pass through a gap or around an obstacle.
+
+### Standing (Stationary) Waves
+
+-   Formed by interference of two identical waves traveling in opposite directions.
+-   **Nodes:** Points of no displacement.
+-   **Antinodes:** Points of maximum displacement.
+
+Fundamental frequency of a string (fixed at both ends): $$
+f = \frac{1}{2L} \sqrt{\frac{T}{\mu}}
+$$ Where: - $L$ = length of string - $T$ = tension - $\mu$ = mass per unit length
+
+### Sound Waves
+
+-   Longitudinal waves caused by vibrating sources.
+-   Speed depends on medium (faster in solids, slower in gases).
+-   Humans hear \~20 Hz to \~20,000 Hz.
+
+### Summary Table
+
+| Quantity   | Symbol    | Formula           | Units |
+|------------|-----------|-------------------|-------|
+| Wave speed | $v$       | $v = f \lambda$   | m/s   |
+| Frequency  | $f$       | $f = \frac{1}{T}$ | Hz    |
+| Period     | $T$       | $T = \frac{1}{f}$ | s     |
+| Wavelength | $\lambda$ | —                 | m     |
+| Amplitude  | $A$       | —                 | m     |
+
+## Stories to enritch
+
+### Huygens’ Principle and the Wave Theory of Light
+
+In the 17th century, Christiaan Huygens proposed that every point on a wavefront acts as a source of secondary waves. This principle explained reflection, refraction, and diffraction of light as wave phenomena—challenging the earlier particle theories. His ideas laid the groundwork for understanding wave propagation.
+
+Reflection: How can light behave like ripples spreading on water?
+
+### Young’s Double-Slit Experiment: The Wave Nature of Light
+
+Thomas Young’s 1801 experiment showed light passing through two slits produces an interference pattern—bright and dark fringes—impossible to explain by particles alone. This was a crucial proof that light has wave properties.
+
+Reflection: Why does light create patterns like waves on a pond?
+
+### The Mystery of Sound Waves: From Vibrations to Hearing
+
+Ancient philosophers like Pythagoras linked sound to vibrations of strings and air. Over centuries, scientists revealed how waves travel through mediums, allowing us to hear and communicate. Understanding sound waves transformed music, language, and technology.
+
+Reflection: How do invisible vibrations become the sounds we hear?
+
+### The Discovery of Electromagnetic Waves
+
+In the 19th century, James Clerk Maxwell’s equations predicted waves of electric and magnetic fields traveling at light speed. Heinrich Hertz later experimentally demonstrated these waves, confirming that light is an electromagnetic wave. This unified electricity, magnetism, and optics.
+
+Reflection: What does it mean that light is both electric and magnetic?
+
+### Seismology: Waves Revealing Earth’s Interior
+
+Earthquakes produce seismic waves that travel through Earth’s layers. By studying their travel times and paths, scientists discovered Earth’s core and mantle structure. Waves became tools to “see” inside our planet. This revolutionized geology and disaster prediction.
+
+Reflection: How can waves help us explore places we can’t directly see?
+
+### The Doppler Effect: Changing Pitch and Color
+
+Christian Doppler explained why sound pitch changes when a source moves toward or away from an observer—like a passing ambulance siren. This effect also applies to light, helping astronomers measure star movements. It links wave frequency to motion.
+
+Reflection: Why does motion change the waves we detect?
+
+### Water Waves and Tsunamis: The Power of Waves in Nature
+
+Ocean waves carry energy across vast distances. Tsunamis, giant waves caused by underwater earthquakes, can travel thousands of miles, demonstrating the enormous energy carried by wave motion. Waves shape Earth’s environment and can be destructive.
+
+Reflection: What happens when waves carry energy across oceans?
+
+### The Quantum Wave: Matter’s Strange Behavior
+
+Quantum physics reveals particles like electrons behave as waves, described by wavefunctions. This idea, pioneered by de Broglie and Schrödinger, changed our understanding of matter and introduced probabilities into physics. Waves are fundamental to the microscopic world.
+
+Reflection: How can particles be waves at the same time?
+
+### The Invention of Radio: Harnessing Electromagnetic Waves
+
+In the late 19th century, inventors like Marconi used electromagnetic waves to send signals wirelessly across distances. This technology launched the era of radio, TV, and wireless communication. Wave physics enabled a global communication revolution.
+
+Reflection: How do waves carry information without wires?
+
+### Resonance and Natural Frequencies: When Waves Amplify
+
+Objects have natural frequencies at which they vibrate. When waves match these frequencies, resonance occurs, amplifying vibrations—sometimes with dramatic effects, like bridges collapsing or glass shattering. Understanding resonance is vital in engineering and music.
+
+Reflection: Why do some frequencies make things vibrate more strongly?
+
+## Practical work and Demos
+
+General theory for this section:
+
+> The RATE of vibration is called the FREQUENCY and is measured in HERTZ. A frequency of 1 Hz is a rate of vibration of ONE oscillation per second. To measure high frequencies we use kilohertz (kHz) (1 kHz = 1000 Hz) and megahertz (MHz). \[1 MHz = 1 000 000 Hz\].You may have met frequency scales before - on a piano or on a radio. The frequency of middle C is 256 Hz and that of FM radio about 100 MHz.
+>
+> Large, heavy or slack objects vibrate slowly and have a low frequency. Small, light or tight objects vibrate quickly and have a high frequency.
+
+### Skipping rope - only certain frequencies
+
+Two people stand opposite each other and try swinging a skipping rope, or wobbling a  stretched rubber tube. They will find that are only certain frequencies that are allowed. No matter how hard they try, not all frequencies are possible.
+
+The fundamental frequency and two additional harmonics are shown in the diagram. These harmonics are easier to produce if the rubber tube is moved in a slightly circular way - rather like actual skipping. (l have found the rubber tubing easier to control than the rope.)! 
+>
+> When the rope or cord vibrates with its fundamental frequency (the lowest) the length of the cord is  one half of one wavelength. For higher modes of oscillation the length is equal to a whole number of half wavelengths.
+>
+> Age range: 14-18 Apparatus required: 'Skipping rope •Rubber tubing (Bunsen burner tubing is fine) 
+
+### Standing waves on plates - the drum
+
+These can be studied using a metal plate fixed on the top of a vibration generator. (Even stiff card will do.) Sprinkle some dust on the plate and then vary the frequency of oscillation of the vibration generator. Standing wave patterns should be seen on the plate. With the vibration generator switched off some interesting sounds may be heard when a musical box is placed on the plate and set going. The plate will resonate at certain frequencies.
+
+> Age range: 16-18
+>
+> Apparatus required: •Drum or stretched membrane 'Vibration generator •Metal plate 'Dust or talcum powder •Musical box
+
+### Waves and refraction
+
+A useful way to explain the way light waves behave in reflection and refraction is to compare them to water waves. Water waves slow down as they pass from deep to shallow water and light waves slow down as they pass from air to glass. As waves move up a steadily sloping beach they slow down and their wavelength is reduced, the frequency of the waves remaining unaltered. If the angle of incidence is anything but zero (in other words if the waves hit the boundary at any angle to it other than a right angle) then the waves will bend - refract --- and their direction of travel will be changed. This is explained by realising that one side of the wave front hits the join before the other and so slows down first, causing a change of direction.
+
+Driving a car from sand on to a tarmac road at an angle gives exactly the same turning effect. This can be demonstrated by using a toy car running on to an area of sand on a perspex sheet. Total internal reflection can be seen!
+
+> Age range: 13-16 Apparatus required: •Toy car •Perspex sheet •Sand •Overhead projector (optional)
+
+### Standing waves
+
+A small-scale version of standing waves in sound can be performed using a piezoelectric buzzer and a microscope slide. Set up the buzzer facing the slide and move the slide towards it and away from it - recording the positions of the nodes and antinodes with a small microphone.
+
+> Age range: 14-18 Apparatus required: 'Piezoelectric buzzer •Microscope slide •Stands •Microphone
+
+### Wave motion
+
+The motion of a tuning fork and the sound waves produced by it can be observed using the following arrangement. Tape together three or four bar magnets all aligned the same way and put them in a coil of wire of around 3000 turns connected to a cathode ray oscilloscope.
+
+Now vibrate a tuning fork over the magnets. The fork becomes magnetised and so induces a potential in the coil which can be seen on the oscilloscope. Using a storage oscilloscope module will enable the waveform to be studied at leisure. The beats formed between two tuning forks of similar frequency may also be studied using this method by striking them and then holding them both over the magnets.
+
+> Age range: 16-18
+
+Apparatus required: 'Four strong bar magnets 'Tape
+
+> •Oscilloscope ^0^ 3000 turn coil •Leads
+>
+> V vavco
+
+### Phase changes
+
+To demonstrate the phase change that occurs on reflection of a wave use two ropes, one with its far end fixed to a post and the other with a free end - such as a ring sliding along a vertical rod like a retort stand. A pulse is sent along each rope and is reflected from the far end. The phase change of Tt only occurs on reflection from the fixed end; a crest is reflected back as a trough. This is not the case with the free end nor is it for a water wave hitting the side of a harbour wall - the particles of water are free to move up and down and so no phase change occurs here.
+
+Age range: 16-18 Apparatus required: •Ropes •Broom handles
+
+##### 7. Standing waves and a toothbrush
+
+This is a very simple method of demonstrating standing waves.
+
+Remove the brush part of an electric toothbrush and fix a length of light elastic thread to the metal vibrating rod. Fix the toothbrush in a retort stand (this gives it more stability than holding it in your hand) and then hold the other end of the elastic thread. It is even possible to buy toothbrushes with dual speeds.
+
+Pull the thread gently and then switch on the toothbrush. If you adjust the tension correctly you will produce standing waves on the elastic thread. Changing the tension will give different harmonics.
+
+This is a simple experiment that removes the need for an expensive vibration generator.
+
+> Age range: 11-16
+>
+> Apparatus required: •Electric toothbrush •Elastic thread •Retort stand boss and clamp (optional)
+
+##### 8. Melde with white elastic
+
+The standing waves on a string are very well demonstrated by using a piece of white elastic fixed to a vibration generator, looped over a pulley and attached to a mass to give it tension.
+
+The vibration generator is switched on and the elastic is then viewed with a stroboscope. It is easy to change the tension by adding more mass.
+
+> Theory: Frequency (f) =!where T is the tension of the elastic and m its mass per unit length.
+>
+> Stoboscopic lighting may induce photo-epilepsy in some individuals. Check that no-one present is affected in this way. If so they will need to leave the room.
+>
+> Age range: 14-18 Apparatus required: 'Vibration generator •White elastic 'Stroboscope •Slotted masses
+
+### Vibration
+
+The variation of pitch with vibrating mass can be clearly shown by the following simple experiment. Hold a ruler over the edge of the bench and twang it. The ruler vibrates, producing a note. The pitch of the note can be varied by sliding the ruler further on or off the bench.
+
+Changing from a wooden ruler to a plastic one demonstrates the dependence of thestiffness of the vibrating object on the note produced. This can be used as a simple demonstration of vibration, or for more advanced work, to investigate the equation of a vibrating cantilever using a metre ruler loaded with masses.
+
+Plotting log T against either log M or log L where M is the mass on the ruler, L is the length of the ruler protruding over the bench and T is the period of oscillation will enable the student to predict the equation of the motion.
+
+Age range: 13-16 Apparatus required: •Rulers of different thicknesses and materials
+
+### Standing waves on a vertical slinky 
+Hang a metal slinky spring from a beam and fix the lower end to a vibration generator. By adjustment of the frequency of the vibration generator very good standing waves may be set up in the slinky. It is helpful to mark the nodes with coloured tape.
+
+The frequency required is usually a few Hertz. As an extension try the experiment using a plastic slinky. Compare the frequencies needed to set up standing waves in the steel and the plastic.
+
+> Theory: The distance between nodes (points of no vibration) is one half a wavelength.
+>
+> Age range: 16-18
+>
+> Apparatus required: •Vibration generator •Signal generator
+>
+> •Slinky spring •Coloured sticky tape
+>
+
+### Speed of waves along a rope
+
+Mount two identical thick ropes side by side across the lab, one end of each rope fixed to the wall and the other hanging over a pulley with a mass on the end to tension the rope. Put a piece of folded card over each rope at the same distance from one end. Hit the ropes at the same point with a broom handle and observe the folded card. The rope with the greatest tension will carry the vibrations faster and the card on this rope will jump off first.
+
+> Theory
+>
+> Speed of waves along the rope = (T/m) ^1^/^2^ For a rope with a mass per unit length (m) = 0.1 kg and tension 50 N the speed = 22ms-1, for tension (T) = 20 N speed = 14 ms-1
+>
+> Age range: 16-18
+>
+> Apparatus required: •Two lengths of thick rope ^o^ Two pulleys Masses • Card • Broom handle
+
+### Standing waves and gas flames
+
+Another wonderful demonstration of standing waves uses the apparatus shown in the accompanying diagram. A metal pipe has a row of fine holes drilled along it and a small loudspeaker fitted to one end. The loudspeaker is connected to a signal generator. A gas supply is connected to the other end.
+
+loudspeaker
+
+Gas is passed into the tube and the gas coming out of the holes is lit. When the loudspeaker is turned on, a series of standing waves is formed in the pipe and their position and displacement are shown by the height of the flames along the tube. If a musical signal is applied to the speaker the waves will 'dance' !
+
+(l am grateful to Eilish who first showed me this experiment)
+
+> There must be no leaks, except through the flame holes and so the loudspeaker and gas supply tube are best permanently sealed to the tube. Gas pressure has to be carefully controlled to limit the flame height. Beware of a very hot tube even after the gas has been turned off. The tube should be checked for leaks before each use and must be flushed with gas for 20 seconds before ignition.
+>
+> This 'flushing' should be done with adequate ventilation to ensure no build up of gas in the room and before the pupils arrive.
+>
+> Age range: 16-19
+>
+> Apparatus required: •Metal pipe about 3 cm in diameter and 2 m long •Drill with 1.5 mm bit for the holes •Small loudspeaker and signal generator •Connector for the gas supply •Leads
+
+### An oscillating floating cylinder
+
+This is a fascinating experiment and I am grateful to Martin who first showed me this.
+
+Cut the top off a large plastic drinks bottle so that you have effectively a large beaker. Pierce two holes at opposite ends of a diameter, thread a loop of string through the holes and then fix this loop to a long helical spring. Half fill the 'bottle' with water. In the water float a plastic film canister --- loaded with sand so that it floats upright and painted to show the water level when it is floating at rest. (See diagram)
+
+What happens if we allow the 'beaker' to oscillate up and down on the spring?
+
+At the bottom of each oscillation will the canister:
+
+(a) always float with the same volume submerged as in the rest position?
+
+(b) float with less submerged --- higher in the water?
+
+(c) float with more submerged --- deeper in the water?
+
+It actually always floats with the same amount submerged.
+
+> Theory:
+>
+> The depth at which the wooden block or straw floats depends on both its weight (not its mass) and the upthrust on it. The upthrust depends on the weight of water displaced. Thus, as the acceleration of the jar and the block change, the weight of the block and the upthrust on it change 'in direct proportion to each other; as a result, the depth at which the block floats remains unchanged as the apparatus oscillates.
+>
+> Objects undergoing acceleration behave in the same way as they would in a gravitational field. As the jar and its contents oscillate, they have an acceleration which is due to both the constant gravitational field of the Earth and the varying acceleration due to the simple harmonic motion of the oscillation.
+>
+> As the jar moves upwards, its net acceleration is greater than that of the Earth's gravitational field and as it falls its acceleration is less than that of the Earth's field. On the downward part of the motion, it is as if the jar were on the Moon, where the gravitational acceleration is less than on Earth: 1.63 m/s2 about 16.7% that on Earth's surface.
+
+Oscillating the beaker on Earth is really only the same as changing the gravitational pull --- it is a good example of the equivalence of gravitational and inertial frames.
+
+> Age range: 16-19, adult
+>
+> Apparatus required:
+>
+> •Long helical spring ^0^ 2 litre plastic drinks bottle •String •Film canister with sand or plasticine •Water
+>
+> • Scissors or knife for cutting bottle •Straw loaded with plasticene as an alternative to the canister
+
+### DOPPLER EFFECT
+
+> General theory for this section:
+>
+> When a source of waves and an observer are moving towards or away from each other there is an observed change in frequency of the wave received by the observer. This change (Af) is given by the equation Af = fv/c where v is the relative velocity of source and observer, and c is the velocity of the waves.
+>
+> If the source is moving towards the observer the waves are "squashed up", so the wavelength is made smaller. The faster the source moves the more the waves are squashed. With sound this means that the pitch of the sound that you hear is increased, and with light the colour of the light that you see is shifted towards the blue end of the spectrum.
+>
+> If the source is moving away from the observer the waves are stretched out", and so the wavelength is made larger. The faster the source moves the more the waves are stretched. With sound this means that the pitch of the sound that you hear is decreased, and with light the colour of the light that you see is shifted towards the red end of the spectrum.
+>
+> The change in frequency is much more noticeable in sound than it is with light. This is because the speed of light is so much greater than the speed of sound.
+
+#### Doppler buzzer
+
+An easy way to show the Doppler Effect with sound is to use a whirling piezo electric buzzer. Connect a small buzzer to a battery or power supply by some long wires which should be taped securely to the buzzer, hold the battery in your hand and then swing the buzzer round your head. For wires a metre and a half long (or more) a really good Doppler effect is produced. You should ask the pupils whether they think that the person actually spinning the buzzer round will hear the Doppler Effect or whether the change of pitch is only audible to somebody else.
+
+It is also interesting to ask if it matters how close to someone you stand. Clearly it does - the nearer you are the more the interval between high and low pitch will be changed. Instead of the piezo-electric buzzer you can use a small speaker.
+
+You could also try using a mobile phone with a suitable ring tone held in your hand and swung round at arm's length --- it sounds like bagpipes!)
+
+> Theory:
+>
+> For an emitted frequency of 300 Hz and a rotation rate of two a second in a one metre radius circle the frequency shift is 11.5 Hz, a change of pitch of a little under a semitone at that frequency.
+>
+> A length of cord or string should be attached to the buzzer or loudspeaker so that, if a break does occur in the electrical connections, it cannot 'fly off and cause damage or injury.
+>
+> Age range: 16-19 Apparatus required: •Piezoelectric buzzer 'Power supply or battery pack •String •Two 2m leads •Electrical tape
+
+
+
+#### Doppler velocity with microwaves
+
+The frequency shift due to the reflection of a wave from a moving object (due to the Doppler Effect) is very easy to show using the 2.8 cm microwave apparatus. Set up the transmitter and receiver side by side, pointing the same way, with the receiver connected to an amplifier and speaker. Put a sheet of cardboard mounted vertically in a base clamp in front of the amplifier and receiver. Now move a sheet of metal backwards and forwards on the other side of the card. The Doppler shift is easily heard as a note from the loudspeaker.
+
+Swishing a metre ruler is especially effective. The faster the ruler moves the higher the pitch.
+
+It will work with just your hand and without the card if done in a lab with good reflections from the walls. The police radar speed trap frequency is apparently has the same frequency as that use in school microwave kits with wavelength (X) of 2.8 cm!
+
+If the output is connected through the amplifier to an oscilloscope a very much more sensitive demonstration results - any movement in front of the card gives a large trace on the screen. The actual shape of the trace can then be seen easily.
+
+Theory:
+
+> The microwave transmitter produces a beam of microwaves, some of which is reflected from the stationary sheet of card into the receiver while some passes through and is reflected back to the receiver from the moving object. The waves from the moving object suffer a Doppler shift - an increase in frequency if the object is moving towards the card and a decrease if it is moving away. The two signals are fed to the amplifier and the difference signal is what appears at the speaker. Frequency shift (Af) = 2fv/c
+>
+> Age range: 16-18
+>
+> Apparatus required: •2.8 cm microwave transmitter and receiver •Power supply •Loudspeaker
+>
+> •Amplifier unit ^o^ A4 cardboard sheet mounted vertically in a base clamp •Metre ruler and metal plate 'Oscilloscope
+
+#### The Doppler duck
+
+I use a clockwork duck with paddling feet to generate waves in a tank and to show the Doppler Effect. As the duck moves along, the ripples in front of it get compressed while those behind it are spread out - the longer the tank the better. I have often thought that a bath in the lab would be very useful!
+
+A TV camera mounted above the tank is especially helpful to show this effect to a large group.
+
+> Age range: 16-18
+>
+> Apparatus required:
+>
+> 'Water tank •TV camera
+>
+> •Clockwork plastic duck
+>
+> Doppler Effect
+
+#### Beats and the Doppler Effect!
+
+The Doppler change of pitch can be used to give beats between two signals. For the two sources two signal generators are needed, feeding outputs to two small speakers, one loudspeaker being mounted on a dynamics trolley (the rider on a linear air track is an alternative). If the frequencies of the two signal generators are adjusted to give beats, then by moving the dynamics trolley the beat frequency can be made to change. This is an exact simulation of the police radar speed trap and is a sound version of experiment 2.
+
+> Age range: 16-18
+>
+> Apparatus required: •Two small loudspeakers •Dynamics trolley or Linear air track •Leads •Two signal generators
+
+#### 5. Applications of the Doppler Effect
+
+1, Galactic red shift --- lines in the spectra of receding galaxies are shifted towards the red
+
+2, Plasma temperatures --- broadening of spectral lines from fast moving atoms
+
+3.  Doppler burglar alarm --- reflected signal from a moving object such as a person
+
+4.  Rotation of the Sun --- shift in frequency due to recession and approach of solar limbs
+
+5.  Radar speed trap --- shift in frequency of the reflected wave from a moving car
+
+6.  Speed of blood flow in the body --- shift in frequency of signal reflected from moving blood
+
+
+#### 7. The Moving Tuning Fork
+
+A very simple demonstration of the Doppler Effect is to use a tuning fork mounted on a small sounding box. You simply hold the box in your hand, strike the tuning fork and then move it towards or away from the class. They will easily be able to hear the change of pitch.
+
+Good musicians may be able to estimate the change of pitch and so a rough measurement of the speed of your arm could be made.
+
+> Age range: 14-18
+>
+> Apparatus required: •Mounted tuning fork •Striker
+
+
+
+### RESONANCE AND DAMPING
+
+> General theory for this section:
+Resonance
+
+> Any object, such a child's swing can be made to vibrate if it is given a push, but you find that if the frequency of the push has one particular value the amplitude of the oscillation of the swing builds up - this is known as resonance. Put another way, if the driving frequency is equal to the natural frequency of the oscillating system then resonance results.
+>
+> Damping
+>
+> There are two types of damping:
+
+(a) Internal - where the amplitude of oscillation of an object reduces due to internal forces
+
+(b) External - where the amplitude of oscillation of an object reduces due to external forces such as air or liquid
+
+> Either of these may produce light damping where the oscillations die away very slowly, critical damping where they die away fairly quickly in less than one oscillation or heavy damping where the object takes a long time to reach its equilibrium position without oscillating
+
+1\. Mechanical resonance - hacksaw blade 9. Tacoma Narrows Bridge
+
++----------------------------------+-------------------------------------------+
+| > 2\. Coupled pendulums - Barton | > 10\. Resonance - tambourines            |
++:=================================+:==========================================+
+| > 3\. Air damping                | > 11\. Resonance curves and damping       |
++----------------------------------+-------------------------------------------+
+| 4\. Resonance between buildings  | > 12\. Coupled pendulums - two SHM        |
++----------------------------------+-------------------------------------------+
+| 5\. Standing waves               | > 13\. Feedback                           |
++----------------------------------+-------------------------------------------+
+| > 6\. Resonance in a rod         | > 14\. Coupled oscillations and resonance |
++----------------------------------+-------------------------------------------+
+| 7.  Resonance and earthquakes    | 15\. Resonating plank                     |
+|                                  |                                           |
+| 8.  Resonance again              |                                           |
++----------------------------------+-------------------------------------------+
+
+#### 1. Mechanical resonance - hacksaw blade
+
+Mechanical resonance can be demonstrated very well by using a 30 cm long hacksaw blade mounted vertically in a base clamp. Oscillate it by using a vibration generator pressing against the lower part of the blade and load the top of the blade with a lump of plasticine. To get the different resonance frequencies alter the frequency of the vibration generator until the hacksaw blade makes large oscillations. Use two five-kilogram masses placed behind both the vibration generator and the clamp to keep the arrangement steady or clamp it all to the bench.
+
+Vary the mass of plasticine to give different resonant frequencies. Values in the 10 Hz to 20 Hz range are to be expected.
+
+Another variation of this resonance experiment is to mount the hacksaw blade horizontally directly on to the vibration generator. It then becomes rather like the ruler twanged over the edge of the bench.
+
+> Age range: 16-18
+>
+> Apparatus required: •Vibration generator •Signal generator •Hacksaw blade •Two large masses or G clamps •Two base clamps •Plasticine
+
+Resonance and Damping
+
+##### 2. Coupled pendulums --- Barton's pendulums
+
+Set up a series of light pendulums all suspended from the same tight string. Fix one heavy pendulum to the string - the same length as one of the light pendulums. Now displace the heavy pendulum. Resonance will occur between the heavy pendulum and the light pendulum of the same length. All the pendulums will move with phase differences between them and the heavy pendulum.
+
+The traditional pendulums are lead spheres and paper cones, but I have found that polystyrene balls are very suitable for the light pendulums.
+
+> Age range: 16-18
+>
+> Apparatus required:
+>
+> •Five light pendulums
+>
+> •One heavy pendulum
+>
+> •String
+>
+> •Two retort stands
+>
+> •Two G clamps
+
+#### 3. Air damping
+
+Suspend a mass from a spring. Fix a large cardboard disc above the mass. It is convenient to use the hanger from a set of slotted mass and have the disc resting on the base of the hanger with another mass on top to hold it in place. Pull the mass downwards and allow it to oscillate. You will need a spring with a spring constant that allows an initial amplitude of some 20 cm to show this effect well. As a demonstration a slinky spring works very well. The effects of air damping can then be easily investigated by measuring the decay in amplitude as time passes.
+
+For the older students a graph of the natural log of the amplitude against the number of oscillations enables the equation of the motion to be found, namely A = Aoe ^kn^
+
+A further investigation can be carried out using discs of different diameters.
+
+> Age range: 16-18
+>
+> Apparatus required: •Helical spring •Slotted masses •Cardboard disc about 30 cm in diameter •Ruler in a base clamp
+
+#### 4. Resonance between buildings
+
+I used to live in a house that was joined to my neighbours' by a garage. Each house had identical large open plan lounges. When he used his stereo in his lounge I could hear it loudly in mine. The sound was transmitted along the joining beams to my house. The transmission of the bass frequencies was particularly unpleasant, the low frequency booming resonating in the large volume of the room!
+
+#### 125
+
+##### 5. Standing waves
+
+As a demonstration of standing waves and resonance use a vibration generator mounted upside down connected to a signal generator. Hang a spring from it and attach a mass to the lower end of the spring. This arrangement enables the resonant frequency of the system to be altered easily by changing the suspended mass. The resonant frequency can be found by changing the frequency of the vibration generator and looking for the largest oscillation of the mass. The period can be compared with that given by the formula for the natural period of oscillation of a spring T = where e is the extension of the spring when a mass m is hung on it at rest.
+
+An alternative version of this experiment is to have the weight hanging from the spring that is then attached to a thread over a pulley coming up from the vibration generator, which is placed on the ground below it.
+
+> Age range: 16-18
+>
+> Apparatus required:
+>
+> 'Pulley •Vibration generator •Signal generator •Thread •Helical spring
+>
+> •Slotted masses and hanger •Retort stand and clamps
+
+######  Resonance in a rod
+
+Take a metal rod; one about a metre long and with a diameter of 0.5 cm is about right. Hold the rod in the centre with one hand and then stroke the rod with the thumb and forefinger of the other hand, having rubbed them with rosin. The rod will then "sing". To get a good resonance you will have to grip the rod quite tightly.
+
+The wavelength of the sound produced is half the length of the rod so if the rod is too short you won't be able to hear the sound.
+
+Age range: 13-18 Apparatus required: •Aluminium rod 1m long and 0.5 cm in diameter •Rosin
+
+##### 7. Resonance and earthquakes
+
+This experiment suggests two different methods of simulating the effect of an earthquake. (a) A set of dowel rods of different lengths (or hacksaw blades) topped with different amounts of plasticine is mounted in a board. The board can then be shaken to simulate an earthquake. Some of the rods will vibrate strongly (showing resonance) depending on the frequency of vibration of the board.
+
+\(b\) Stick a set of paper rings of different diameters on a card. The rings represent different sizes of buildings. Then shake the card. If you get the shaking frequency right one ring resonates. Varying the shaking frequency will make different rings resonate. Rings of card and aluminium foil can also be used to represent buildings made of different materials.
+
+> Age range: 14-18 Apparatus required: •Dowel rods •Plasticine •Board •Card •Paper •Aluminium foil Resonance and Damping
+
+###### 8. Resonance again
+
+A further example of resonance using the vibration generator is to suspend a spring from a retort stand. Hang a weight on it and fix another spring below the weight. Fix this spring to a vibration generator and switch on. Adjust the frequency of the vibration generator to give resonance.
+
+> Age range: 16-18
+>
+> Apparatus required: •Vibration generator 'Signal generator ^0^ 50g mass ^o^Two short helical springs (3 cm x 1 cm unextended) 'Retort stand, boss and clamp 'G clamps
+
+##### 9. Tacoma Narrows --- resonance in bridges
+
+This classic video clip of the collapse of this bridge is a must for all Physics departments. It shows the resonance collapse of the bridge due to the effect of high winds on the special structure of the bridge. Notice the man leaving his car. The millennium bridge across the Thames in London suffered badly from resonance effects when it was first opened and had to be stiffened to prevent it swaying,
+
+Resonance can be a problem to all suspension bridges. In fact when I used to go to secondary school part of the route was across a small suspension footbridge over the river Severn in Shrewsbury. If two or three of us went across together, a suitable heavy walking speed would get the bridge swinging. The local army cadets were told to fall out of step when crossing it! They didn't always obey orders!
+
+> Age range: 13-18
+
+###### 10. Resonance - tambourines
+
+Fix one tambourine by its rim in a clamp with its skin vertical and hang a light polystyrene ball so that the ball just touches the skin of the tambourine. Now hold a second identical tambourine parallel with the first and close to it, and strike this second tambourine. The resonance effect with the first should make the ball swing away from the skin.
+
+> Age range: 13-18
+>
+> Apparatus required: 'Polystyrene ball on thread ^o^Two tambourines 'Retort stand, boss and clamp
+
+##### 11. Resonance curves and damping
+
+The nature of sound that can be made by blowing across the top of a milk bottle or twanging a tuning fork makes a good demonstration of the relation between the damping of an oscillating system and the shape of its resonance curve. The milk bottle has a broad resonance curve but heavy damping. The tuning forks have a sharp resonance but light damping, and so the oscillations take a long while to decay. The decay of the sound can be measured with a microphone and a storage oscilloscope or with a computer sensor.
+
+> Age range: 16-18
+>
+> Apparatus required: 'Milk bottles ^o^Tuning fork mounted on a resonant box •Microphone •Storage oscilloscope or computer sensor
+>
+
+###### 12. Coupled pendulums - two SHM
+
+Suspend a filter funnel by four threads so that it is able to oscillate in two planes. Put your finger over the funnel outlet and fill the funnel with sand. Now oscillate it over a sheet of paper. The pattern formed shows SHM in two directions.
+
+> Age range: 14-18
+>
+> Apparatus required: •Filter funnel •Thread •Sand •Retort stand, bosses and clamps
+
+##### 13. Feedback
+
+Feedback is the phenomenon where part or all of the output of a system is fed back to the input and affects it. A simple demonstration of this is as follows and is an effect that many of us have heard from the public address system at sports days or while trying to set up a sound system for a concert or play. Put a microphone in front of a speaker driven by an amplifier. The slightest noise will produce the high-pitched whistle denoting feedback.
+
+There follows two analogies, one of positive feedback - where the feedback increases the output, and one of negative feedback - where the feedback decreases the output.
+
+Positive feedback: a snowball rolling down a hill - the bigger it is the bigger it gets.
+
+Negative feedback: a stream full of leaves or mud flowing through a narrow gap - the more leaves that get stuck the slower the water flows and the more leaves get stuck and so on.
+
+##### 14. Coupled oscillations and resonance --- the Wilberforce pendulum
+
+This device is simply a mass suspended by a spring. It has three modes of oscillation: (a) a swinging motion
+
+(b) a vertical oscillation along the axis of the spring
+
+(c) a twisting motion
+
+If these last two modes can be made to have the same fundamental frequency, energy can be transferred between them. The way of varying the torsional oscillations without varying the mass is to have a wooden disc with four bolts imbedded in it and projecting radially. On each of these is a nut, and if the nuts are moved in or out the moment of inertia of the disc is changed but not its mass.
+
+> Age range: 16-18
+>
+> Apparatus required: •Spring •Slotted masses •Wooden disc with four bolts and nuts fitted as described
+
+#### Resonating plank
+
+A man walks across a field carrying a long plank on his shoulder. At each step the plank flexes a little (a) and the ends move up and down. He then starts to trot and as a result the plank bounces up and down (b). At one particular speed resonance will occur between the motion of the man and the plank and the ends of the plank then oscillate with large amplitude.
+
+> 
+
+### SOUND
+
+> General theory for this section
+>
+> Sound waves travel through the air by the air molecules vibrating backwards and forwards. This 'backwards and forwards' motion of the molecules in a sound wave means that sound waves are LONGITUDINAL WAVES. The faster the vibration, the higher the pitch of the note, and the bigger the vibration the louder the note.
+>
+> On the Moon where there is almost no air, sound would not travel from one place to another. You could see an explosion but not hear it.
+
+
+#### 1. Wine glass
+
+Playing a wine glass makes an interesting introduction to sound and resonance. Partly fill a wine glass with water and moisten your finger with a little meths to get rid of any grease. Rub your finger round the rim of the glass to make it sing. (If you put wine in the glass you can moisten your finger in the wine.) The water writhes and shakes because of the vibrations which you can actually feel in your finger. (Don't press too hard --- you don't want to break the glass.)
+
+Good effects can be achieved if you apply a steady pressure between your finger and the glass, firmly enough to get the stick-slip motion needed to produce the sound but not enough to break the glass and cut yourself! Changing the amount of liquid in the glass gives a change in the pitch of the note. Glasses with differing amounts of liquid can be used to play a tune.
+
+> Age range: 11-13
+>
+> Apparatus required: •Wine glass •Meths (or a little violin or cello rosin)
+
+#### 2. Continually rising pitch that gets nowhere
+
+A wonderful demonstration of the physiology of the human ear is the technique of a continuously rising note which does not actually get anywhere. This strange sensation can be produced by introducing harmonics.
+
+#### 120
+
+##### 3. Sea shell amplification
+
+Listen to a sea shell. The rushing sound which seems to be like the sea is the result of the tiniest of sounds being amplified in the shell. These tiny sounds from around you cause resonance effects within the shell. This explains why different shells give sounds of a different pitch. The louder the noises around you the louder will be the sound of the 'sea' in the sea shell. Don ^l^t spoil the magic of the effect for the young by too much explanation!
+
+> Age range: 5-13
+>
+> Apparatus required: •Sea shell
+
+##### 4. Wood blocks - musical scale
+
+Cut up a series of hardwood blocks, with their dimensions as follows. All are of the same cross section 3 cm x 0.5 cm and their lengths should be 22.0 cm, 22.8 cm, 24.2 cm, 25.8 cm, 27.2 cm, 28.3 cm, 29.5 cm and 30.5 cm. Drop them one at a time onto a hard floor so that one end hits the floor slightly before the other. The effect is like a xylophone.
+
+Age range: 11 - 18 depending on treatment Apparatus required: •Wooden blocks cut to size
+
+##### 5. Playing a hose pipe
+
+The dependence of the length of a pipe on the fundamental pitch that it emits when played can be impressively demonstrated by this experiment. Fit a clarinet mouthpiece into one end of a hose pipe. Play an ascending scale by chopping off lengths of the pipe with a pair of loppers having first calculated the lengths required for a good scale and marked them on the hose pipe. As it gets shorter the fundamental frequency of the pipe gets higher and so up goes the pitch. It has one big disadvantage as a musical instrument for the twenty-first century - you can't go back down again unless you are very good at sticking pieces of hosepipe together!
+
+> Age range: 11-13
+>
+> Apparatus required: •Length of marked hose pipe
+>
+•Clarinet mouthpiece •Loppers
+
+##### 6. Playing a saw
+
+A good example of the effect of tension on the notes produced by a musical instrument can be obtained by playing an ordinary saw. Hold the saw between your knees, bend it into an S shape and then play the smooth edge with a bow! With luck and practice flexing the saw allows tunes to be played - I have managed part of Three Blind Mice!
+
+It is worth emphasising that there is no need for amplification - the large surface area of the saw means that a lot of air is set in motion and a loud and rather ethereal noise is produced.
+
+> Reduce the hazard of cuts from the saw teeth by sticking a length of thick carpet tape over them.
+>
+> Age range: 11-13![
+>
+> Apparatus required: 'Saw •Cello bow •Towel as protection for your legs •Rosin!
+
+##### 7. Sound transmission under water
+
+You can try this with a speaker in a glass funnel covered in cling film and a microphone in a plastic bag. Remember to insulate all the connecting leads.
+
+> Age range: 11-13
+>
+> Apparatus required: •Small speaker in a glass funnel •Thin plastic membrane •Tank of water
+>
+> •Microphone in plastic bag
+
+##### 8. Singing tube
+
+There are two methods of producing sounds from a simple tube.
+
+(a)One is just a plastic tube that you spin round your head, and the sound you get is formed in the same way as blowing across the open end of a milk bottle. As the tube moves, the rush of air across the open end gives a sound. Differing lengths resonate at differing frequencies.
+
+(b) The other one is more complex. Set up a glass or metal tube (about a metre long and with a diameter around 5 cm) vertically in a clamp. About 10 cm from the base fit a piece of copper gauze across the tube, and then heat the gauze strongly until it glows red-hot. Remove the flame. The tube should emit a loud singing note that lasts for some time. This is due to the expansion and contraction of the air in the tube as the copper cools down.
+
+It is important not to allow the tube to heat up much. If it does, the effect is much less strong as all the air in the tube becomes hot and the contraction effects are not so pronounced. For this reason a metal tube is better than a glass one because it can be cooled quickly and the heat can be conducted away through its walls. A cardboard tube will also work.
+
+An interesting extension is to use a cooling collar used for wine and wrap it round the tube. Moving this up and down will alter the pitch of the note emitted.
+
+> Theory:
+>
+> As the copper gauze cools, the air around it contracts sharply and a shock wave is set up in the tube, thus forcing the air within the tube into oscillation. Usually the fundamental note for the tube is produced (L = 1/2), but I have obtained harmonics (L = X). The position of the copper gauze is fairly important - no effects being produced if it is too close to the end of the tube.
+>
+>
+>
+> Age range: 11-18 depending on treatment.
+>
+> Apparatus required: (a) •Plastic tube (b) •Glass tube •Copper gauze •Bunsen 'Retort stand and clamp
+
+Extension experiments
+
+Use a metal tube with two layers of gauze inside. This version can be used as described, but it has the advantage that it can also be heated from the side to avoid melting the gauze.
+
+Both metal and glass tubes only work when they are held upright with the gauze at the bottom. Turbulence during heating and cooling sets up vibrations within the tube. Hot air rises so the gauze must be at the bottom of the tube.
+
+4 04
+
+##### 9. Increase in pitch as a bottle is filled
+
+The effect of the volume of a musical instrument on the pitch can be shown very easily by filling a bottle with water. As the water goes in, the air in the bottle is excited and a sound is produced. This sound increases in pitch as the bottle gets fuller, so there is less air to vibrate.
+
+> Age range: 11-13
+>
+> Apparatus required: 'Milk bottle and a supply of water
+>
+
+#### 10. Sharp and flat!]
+
+The tendency of wind instruments to go sharp when taken into a warm concert hall is also due to this effect, since the fundamental frequency of a pipe increases as the speed of sound in air increases, and this happens when the temperature of the air rises.
+
+Notice that the density of the gas has no effect on the sounds heard from stringed instruments.
+
+##### 11. Chicken resonance with rubbed string
+Take about 5 cm of cardboard tube (diameter also about 5 cm) and cover one end with stretched tracing paper. Fix a piece of thread through this. Make a chicken cut out that fits into the other end of the tube. Put rosin on your thumb and forefinger and gripping fairly tightly pull them down along the thread - a reasonable clucking and squawking sound can be made with practice! It is a very good example of resonance and amplification.
+
+If you are ever in Prague these are sold by the street sellers in the castle (2002).
+
+> Apparatus required: •Chicken made from cardboard tube and tracing paper •Rosin •Thread
+
+##### 12. Tea chest and washboard - music
+
+The skiffle groups from the 1950s used two simple pieces of apparatus to make sound - the tea chest bass and the washboard. Both make interesting demonstrations. The bass in simply an inverted tea chest with a broom handle fixed vertically to one side. A piece of string from the top of the broom handle to the centre of the tea chest makes the string of the instrument. Changes in pitch are obtained by bending the broom handle. There is plenty of resonance from the large volume of air in the tea chest.
+
+Rubbing a wooden plectrum across the ridges of a washboard produces a really good set of vibrations.
+
+> Age range: 11-13
+>
+> Apparatus required: ^o^ Tea chest •Broom handle •String 'Washboard
+
+##### 13. Dog whistle and dog
+
+It would be nice to be able to use a dog whistle and a real dog to see their reaction to the ultrasonic waves produced by a dog whistle.
+
+##### 14. Two tunes in the orchestra
+
+I have been told of a piece of classical music where two different parts of the orchestra play different tunes which when heard together sound like a third tune! I believe that there is a Haydn symphony where this effect can be heard.
+
+##### 15. Musical jars
+
+Fill a row of jars with different amounts of water and play a scale and then a tune. It gets better with practice! See experiment 1.
+
+##### 16. Velocity of sound - echo method
+
+The measurement of the speed of sound is easy to do using the echo method. Snap the clapper boards together outside in front of a distant building and record the time it takes for the echo to return. I use the school wall with a distance of nearly 200 m, giving a "there and back" distance of 400m. The advantage of this method is that it uses not only a larger distance for the sound to travel (giving a longer time interval which is easier to measure) but also eliminates wind errors.
+
+A minor additional detail - it also keeps all the class together in one place, both those doing the timing and the person using the clapper boards!
+
+The discussion of the result should lead on to mentioning that the temperature of the air also affects the speed of sound - it being faster in hot air since the molecules are moving faster.
+
+> Theory:
+>
+> Velocity of sound in a gas depends on the velocity of the molecules of that gas (v) since the sound waves are transmitted by the motion and collision of the gas molecules.
+>
+> This is given by the equation 1/2(mv^2^) = kT and so v = (3kT/m) ^1^/^2^ where k is the Boltzmann constant (1.38x10 ^23^ JIC^I^).
+>
+> Therefore the speed of sound in a gas depends on (i) the absolute temperature T and (ii) the mass of the individual molecules of that gas - in other words the type of gas.
+>
+> Sound waves therefore travel faster through a hot gas which has light molecules.
+>
+> Wear ear defenders.
+>
+> The use of a starting pistol that looks like a revolver is now prohibited in schools.
+>
+> Age range: 11-18
+>
+> Apparatus required: •Long measuring tape •Stop clocks •Clapper boards
+
+##### 17. Paper cup telephones
+
+Take two paper or plastic cups, and make a hole in the base of each. Then thread a 3 m long piece of cotton through the hole to join the two together, fixing the cotton to the base of the cups with tape. Now pull the thread taught, and speak into one of the cups, while someone else listens with their ear to the other one. The vibration of the air within the first cup is transmitted first to the cup and then to the thread. At the other end the vibration of the thread is passed to the second cup that then amplifies the sound. Try both changing the length and tension of the string and using wire instead of string.
+
+You can extend this to the idea of a loudspeaker by putting a large coffee tin on a vibration generator to amplify the sound produced by a signal generator or radio.
+
+If you cross the strings of two sets of paper cup telephones so that the strings touch, a multiple way conversation can be heard!
+
+> Age range: 11-13 Apparatus required: •Paper or plastic drinking cups or two small tins •Thread 'Coffee tin •Vibration generator •Radio
+
+##### 18. Difference tones
+
+The superposition of sound can be shown by using a referee^l^ s whistle with a hole on either side, or an old police whistle. (l have one from the 1940's given to me by my grandmother.) Blow into it and you will hear a note that is the combination of the tones from the two sides. My whistle gives a minor third output. Now bring your finger up to one of these holes to reduce the volume from that side, and finally to cut it out altogether - you will hear a change in the overall pitch.
+
+> Theory:
+>
+> Superposition of two simple harmonic motions = asin(2Ttf1t) and = asin(2Ttf2t) Final wave form: amplitude (y) =
+>
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: ^o^ Two-hole referee's whistle or police whistle
+
+##### 19. Reflection of sound
+
+You can demonstrate this using two large concave mirrors with a small speaker at the focus of one and a microphone at the focus of the other. The intensity received by the microphone is then shown using an amplifier and an oscilloscope. Alternatively just put your ears at the focus of the second mirror.
+
+Even simpler is to hold a large concave mirror up in front of you and move it inwards towards your face as you speak. When the distance between your mouth and the mirror is equal to the radius of curvature of the mirror a loud sound will be received by your ears.
+
+> Age range: 11-16
+>
+> Apparatus required: •Two large concave mirrors - diameter around 45 cm 'Microphone •Amplifier
+>
+> •Oscilloscope
+
+##### 20. Sound transmission under water (2)
+
+Lie in a bath, and tap the side of the bath under the water with either your feet or a piece of wood. Now turn on to your side so that one of your ears is below the water surface. The sound will be much louder in that ear. The greater density of water means that the molecular vibrations are transmitted much more effectively through it.
+
+> Age range: 11 - 15
+>
+> Apparatus required: •Bath •Water
+
+##### 21. Bell in bell jar
+
+To demonstrate that sound needs a medium through which to travel suspend a bell in a bell jar and then evacuate it using a vacuum pump. This has the disadvantage that the bell vibrates mechanically, sending vibrations along the connecting wires. Standing the bell jar base plate on a sheet of foam rubber helps to reduce vibrations through the bench.
+
+As an alternative use a piezo-electric buzzer suspended by threads and connected to a battery within the bell jar.
+
+It would be good if the experiment could be done in a vessel that could be evacuated simply by allowing water to run out.
+
+> Age range: 11 - 13
+>
+> Apparatus required:
+>
+> •Bell •Bell jar •Vacuum pump •Sheet of foam rubber •Piezo-electric buzzer •Wire and battery ^o^Thread
+>
+> Eye protection required. Only bell jars designed to be evacuated should be used. Ensure that there are no cracks or chips in the glass which could cause the jar to implode when evacuated. Safety screens should be used to protect those present.
+
+##### 22. Balloon guitar
+
+You can make a really good balloon guitar using some very simple materials. You need a balloon, a length of wood, two nails and a piece of string. Fix the string to each end of the wood using the nails so that the string is loose. Blow up the balloon, and push it under one end of the string as shown in the diagram. Now push down on the string to force it on to the wood.
+
+If you pluck the string a note can be made. Just push down here like a real guitar the shorter the string the higher the note, so moving your finger closer and closer to the balloon will give you higher and higher pitched sounds. The balloon acts like the tea chest in a string bass --- amplifying the sound.
+
+(Thanks to Sue for the idea for this experiment)
+
+> Age range: 11-14
+>
+> Apparatus required: •Balloon •Piece of wood •Two nails •String
+
+##### 23. The refraction of sound
+
+This can be clearly demonstrated using a signal generator, a balloon filled with carbon dioxide, a microphone and an oscilloscope. The balloon acts as a lens, focusing the sound.
+
+> Age range: 14-16
+>
+> Apparatus required: •Carbon dioxide cylinder •Balloon •Signal generator •Loudspeaker 'Microphone •Oscilloscope
+
+##### 24. Dominoes and sound transmission
+
+Dominoes can be used as an analogy to show that sound travels faster in a solid than in a liquid. Stand two lines of dominoes, one with the dominoes close together (this is the solid) and one with the dominoes further apart (this is the liquid). Knock over the first domino of each line, and watch the speed at which the 'pulse' travels down the two lines. It will move faster down the line with the dominoes close together. Sound travels faster in a solid than it does in a liquid.
+
+
+'Solid' 'Liquid'
+
+Age range: 11 --- 16 Apparatus required: •Set of dominoes
+
+##### 25. Playing a straw
+
+Flatten one end of a plastic straw. Cut the end as shown to make a mouthpiece --- and blow through this end. (It works better if the ^I^ mouthpiece' is a little behind your lips.) You should get an oboe-like note. (An oboe has a double reed rather like the two sides of the end of the You can now get a friend to cut pieces off the straw while you are blowing.
+
+As the straw gets shorter and shorter the pitch of the note will go up. Halving the length should increase the pitch by one octave.
+
+If you do a control experiment first using another straw you can mark the places to cut it and so play a scale. If you can find one straw that will slip over the first one you have a slider, and so tunes can be played by moving the slider in and out. You could make a slider out of a tube of paper.
+
+Age range: 11-14 Apparatus required: •Plastic straws •Scissors
+
+##### 26. Reflection of sound (2)
+
+Mount a piece of hardboard vertically and lay two cardboard tubes on the bench in front of it. 10cm diameter tubes that have been used for carpets are ideal. Put a clockwork watch or clockwork kitchen timer in one tube, and put your ear against the open end of the other tube. When the angles between the two tubes and the hardboard are the same you should hear a loud ticking proving, that the angle of incidence = angle of reflection for sound.
+
+Ear
+
+here
+
+> Age range: 11-14
+>
+> Apparatus required: •Two large diameter cardboard tubes 'Sheet of hardboard 'Protractor •Clockwork watch, clockwork 'egg timer' or small electric buzzer
+
+##### 27. Sound --- a set of simple experiments
+
+The following list is a set of simple experiments that demonstrate that sound is made by vibrating objects.
+
+They could be done as a circus for the pupils or by the teacher demonstrating them and asking the children to come up and try for themselves.
+
+1.  Put some small pieces of paper or rice grains on a drumhead and then hit the drum with your hand or a drumstick. The paper and the rice will vibrate (jump about).
+
+2.  Strike a cymbal, and then hold it close to your ear. If you touch the cymbal with your ear you can feel the vibrations.
+
+3.  Hit a cymbal, then get hold of the edge between your finger and thumb. You can feel the vibrations stop as you grip harder, and as they do the sound also stops.
+
+40 If you stop the cymbal vibrating by putting the edge of it against your chest the sound it makes will stop as well. Link this to the damping of sound by rooms with soft walls and the echoes made from the hard stone walls in churches.
+
+5.  Fill a shallow tray with water, and then touch the edge of the tray with a vibrating tuning fork. Waves can be seen moving across the water surface.
+
+6.  Play a comb ---you can feel the vibrations through your lips as you blow through the paper.
+
+7.  Hold a ruler down on the table with your hand so that it sticks out over the edge of the table, and then twang the ruler with your other hand. You can see the ruler vibrating, and as you make the ruler shorter you can hear the sound change. The shorter the ruler, the higher the pitch.
+
+8. Hold your hand in front of a powerful disco type speaker. You should be able to feel the vibrations in the air. If you have an old speaker with no covering lay it down with the cone facing upwards and put some small polystyrene balls in it. Now connect it to a radio or CD player and turn it on. Loud music or speech will make the balls jump around.
+
+9.  Put your hand against the body of a cello, double bass or a piano while it is being played. You can feel the vibrations in the wood.
+
+10. Twang a rubber band --- you can hear a sound and also see the band vibrating.
+
+11. Half fill a bowl of water, and touch the surface with a vibrating tuning fork. You will see water waves spreading out from the point of contact as the water surface vibrates.
+
+12. Take a two-litre plastic bottle full of water (or lemonade) and knock it with your knuckles about half way down. You will hear a sound but also see a lovely pattern of vibrations on the water surface.
+
+13. Hold a piece of thin card between your thumbs, and blow on its edge. You should be able to make a note and will be able to feel the vibrations in your thumbs.
+
+14. If anyone in the school has a brass instrument get them to play it. They feel the vibrations in their lips as they make a sound, Even just using the mouthpiece on its own is good enough.
+
+15. Get the children to walk away from a source of sound and stop when they can't hear it any 
+
+16. Whispering shows that quiet sounds are more difficult to hear than loud ones.
+
+17. Cover your ears with some kind of muffler or large headphones. If you get someone else to make a noise you won't be able to hear it.
+
+18. Tie two lengths of string to a metal cooker shelf grid. Make loops in the other ends of the string, put these round your index fingers and then put your fingers in your ears so that the grid hangs vertically. Get someone else to tap the grid with a ruler. You should hear a loud bell like sound. The sound waves are being transmitted along the strings directly to your ears.
+
+19. Put a small folded piece of paper on a violin, guitar or cello string, and then pluck or bow the string. The paper will jump about showing that the string is vibrating. You could always make a simple 'guitar' with two nails fixed into a piece of wood and with a rubber band stretched between them. Small pieces of paper bent over the band will jump off when the band is 'twanged'.
+
+##### 28. Making sounds louder - musical box and tin can
+
+> Try playing a small musical box on its own and then hold it against the base of an empty tin can. The sound is much louder because all the air in the tin can is vibrating as well rather than just that against the 'prongs' of the musical box.
+>
+>It might be worth actually fixing a musical box to the base of the tin with small bolts. It makes it much easier to hold.
+>
+> Putting the musical box on a table or a wood panelled wall also works very well. The whole table and panelling vibrates, giving a much louder sound. (Thanks to Ruth for this idea)
+>
+> Putting a glass with the open end against a wall and then putting your ear on the closed end will help you hear sounds through the wall!
+
+musical
+
+can
+
+Age range: 7 - 14
+
+Apparatus required: •Small musical box •Tin can •Glass
+
+##### 29. Musical notes
+
+> The frequencies of notes in music have a precise relationship with each other. It is these ratios between one note's frequency and the next that makes combinations of notes pleasant to listen to. Notice that if you increase the pitch by one octave the frequency doubles. Using a 'key note' we can build up the whole scale. The notes shown are part of the 'equally tempered
+
+scale'.
+
+> (Note: the frequencies shown on the keys are based on the musicians' scale with A = 440 Hz)
+
+##### 30. The sensitivity of your ears
+
+> Take two plastic ridged whirling tubes, and fix them together end to end with tape. Get one pupil to hold them so that the open ends are pressed to their ears. Another pupil then stands behind them, supporting the tube, and scratches along the ridges close to the join. Ask the first pupil which side of the join is being scratched.
+>
+> They will be able to tell, although the difference in distance from the scratched section is only about 3 cm and the difference in time for the sound to reach each ear is only about 0.0001 s.
+
+Age range: 7-14 Apparatus required: •Two plastic ridged whirling tubes 'Tape
+
+###### 31. Sound travelling through different materials
+
+This experiment is designed to show how well sounds travel through different materials and how some materials can be used to insulate us from unwanted sounds.
+
+The difficulty is not providing a sound source, that can be a radio, but finding a method of measuring the amount of sound being transmitted by the material. If the school has a sound level meter this would be an ideal measuring device. Sometimes these may be borrowed from local authority education departments.
+
+Alternatively we would have to use a microphone and a recording device that you can play back at a preset value.
+
+\(a\) Put the battery-powered radio in a cardboard box covered with thick polystyrene with one open side. Then cover this open side with different materials. Simply get the pupils to judge which covering absorbs the most sound or use the sound level meter.
+
+(b) Put your ear against a table. Another member of the class taps the table and you can hear the sound travel through the material of the table to your ear. Try this with different tables --- what about the stainless steel tables in the school kitchen? You could refer to sound proofing of buildings --- polystyrene foam or fibre glass.
+
+(c) Put a battery-powered radio in a sealed box, and immerse it in water. The radio can still be heard --- the sound has had to travel through the water to reach your ear. Talk to the children about whales and dolphins --- they transmit sound to each other through water.!
+
+\(d\) Wrap up a mobile phone, and listen to the sound of the ring tones with different types of wrapping and different numbers of layers.
+
+###### 32. Reverberation time in a concert hall
+
+The reverberation time gives an idea of the echoing nature of the room. It is the time taken for the sound level to fall to 10-6 of its original value (a drop of 60 dB). For symphonic music the best reverberation time is 2.0s; Symphony Hall in Boston, one of the finest concert halls in the world has a reverberation time of 1.8s with a full audience.
+
+Symphony Hall in Birmingham is probably even better. This hall has large doors set in the upper tiers of the hall which can be opened or closed --- so 'tuning' the hall to vary the reverberation time. When the doors are open the hall is more sound absorbent and when they are closed more sound is reflected so the reverberation time is longer.
+
+###### 33. Energy in a vibrating tuning fork
+
+When you tap a tuning fork to make a sound the vibrations in the fork
+
+> O
+
+are very small. However you can show that it is vibrating, and so contains energy, by using a small polystyrene ball. Suspend the ball by a thread and then lightly touch the ball with the vibrating tuning fork. It will swing away violently, clearly showing that the fork is vibrating.
+
+> Age range: 7-14
+>
+> Apparatus required: •Small (0.5 cm diameter) polystyrene ball 'Thread 'Support •Tuning fork

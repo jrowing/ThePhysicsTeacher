@@ -1,0 +1,649 @@
+---
+title: "MiscMechanics"
+format: html
+---
+
+### MISCELLANEOUS MECHANICS
+
+## Basic Theory
+
+### Scalars and Vectors
+
+-   **Scalars:** Quantities with magnitude only (e.g., speed, mass, time).
+-   **Vectors:** Quantities with magnitude and direction (e.g., velocity, displacement, force).
+
+### Displacement, Velocity, and Acceleration
+
+-   **Displacement (**$\vec{s}$): Vector from start to end point.
+-   **Velocity (**$\vec{v}$): Rate of change of displacement, $$
+    \vec{v} = \frac{d\vec{s}}{dt}
+    $$
+-   **Acceleration (**$\vec{a}$): Rate of change of velocity, $$
+    \vec{a} = \frac{d\vec{v}}{dt}
+    $$
+
+### Equations of Motion (Constant Acceleration)
+
+For one-dimensional motion: $$
+v = u + at
+$$ $$
+s = ut + \frac{1}{2}at^2
+$$ $$
+v^2 = u^2 + 2as
+$$
+
+Where: - $u$ = initial velocity - $v$ = final velocity - $a$ = acceleration - $t$ = time - $s$ = displacement
+
+### Forces and Newton’s Laws
+
+-   **First Law:** Object remains at rest or uniform velocity unless acted on by net force.
+-   **Second Law:** $F = ma$ (force equals mass times acceleration).
+-   **Third Law:** Every action has equal and opposite reaction.
+
+### Work, Energy, and Power
+
+-   **Work done (**$W$): $$
+    W = F d \cos \theta
+    $$
+-   **Kinetic Energy (KE):** $$
+    KE = \frac{1}{2} m v^2
+    $$
+-   **Potential Energy (PE):** $$
+    PE = mgh
+    $$
+-   **Power (**$P$): $$
+    P = \frac{W}{t}
+    $$
+
+### Conservation of Energy
+
+-   Total mechanical energy remains constant if only conservative forces act: $$
+    KE_i + PE_i = KE_f + PE_f
+    $$
+
+### Momentum and Impulse
+
+-   Momentum: $$
+    p = mv
+    $$
+-   Impulse: $$
+    J = F \Delta t = \Delta p
+    $$
+
+### Circular Motion
+
+-   Centripetal acceleration: $$
+    a_c = \frac{v^2}{r}
+    $$
+-   Centripetal force: $$
+    F_c = m a_c = \frac{mv^2}{r}
+    $$
+
+### Friction
+
+-   Force opposing motion.
+-   Maximum static friction: $$
+    F_{\text{max}} = \mu_s N
+    $$
+-   Kinetic friction: $$
+    F_k = \mu_k N
+    $$ Where:
+-   $\mu_s$ = coefficient of static friction
+-   $\mu_k$ = coefficient of kinetic friction
+-   $N$ = normal force
+
+### Elasticity and Hooke’s Law
+
+-   Force applied to a spring is proportional to extension (within elastic limit): $$
+    F = k x
+    $$ Where:
+-   $k$ = spring constant
+-   $x$ = extension
+
+### Moments and Equilibrium
+
+-   Moment (torque): $$
+    \tau = F d
+    $$ Where $d$ is perpendicular distance from pivot.
+
+-   Conditions for equilibrium:
+
+    -   Net force = 0
+    -   Net moment = 0
+
+### Simple Harmonic Motion (SHM)
+
+-   Displacement varies sinusoidally: $$
+    x = A \cos(\omega t + \phi)
+    $$
+-   Angular frequency: $$
+    \omega = 2\pi f = \sqrt{\frac{k}{m}}
+    $$
+
+### Summary Table
+
+| Concept             | Formula                       | Notes  |
+|---------------------|-------------------------------|--------|
+| Velocity            | $v = \frac{ds}{dt}$           | Vector |
+| Acceleration        | $a = \frac{dv}{dt}$           | Vector |
+| Newton’s Second Law | $F = ma$                      |        |
+| Work                | $W = F d \cos \theta$         |        |
+| Kinetic Energy      | $KE = \frac{1}{2} m v^2$      |        |
+| Potential Energy    | $PE = mgh$                    |        |
+| Momentum            | $p = mv$                      |        |
+| Impulse             | $J = F \Delta t$              |        |
+| Centripetal Force   | $F_c = \frac{mv^2}{r}$        |        |
+| Friction            | $F = \mu N$                   |        |
+| Hooke’s Law         | $F = k x$                     |        |
+| Moment (Torque)     | $\tau = F d$                  |        |
+| SHM                 | $x = A \cos(\omega t + \phi)$ |        |
+
+1.  Strength
+
+2.  Bi-filar suspension
+
+3.  Sycamore seed propeller
+
+4.  Unrolling a carpet - whiplash
+
+5.  Cotton reel tank
+
+6.  Energy in a balloon
+
+7.  Viscosity of air - oscillating table tennis ball
+
+8.  Satellite orbits
+
+9.  An interesting double pulley
+
+10. Boomerang
+
+11. Yo Yo
+
+12. Tops
+
+13. Party popper
+
+14. Planetary orbit
+
+15. Straw and potato
+
+16. Hoffnung ---the bucket of bricks
+
+17. Racing-car tyres - different kinds of rubber
+
+18. Lung volume
+
+19. Weight suspended from a wheel - SHM
+
+20. Creaking furniture - plastic cups
+
+21. Rollers
+
+22. Monkey and bananas
+
+23. The torsion balance
+
+24. Rotating soap film
+
+25. Ropes
+
+26. Propeller on a wooden stick
+
+#### 1. Strength
+
+27. Three coins
+
+28. Horseshoe and cocktail stick
+
+29. Toy divers
+
+30. Building bridges competitions
+
+31. A rubber sheet for gravitational fields
+
+32. Air brakes - trolley with card sail
+
+33. A simple clamp
+
+34. Simple pulley model
+
+35. Centre of percussion of an object
+
+36. Perpetual motion
+
+37. Hunter on ice
+
+38. Picking up objects - back to the wall
+
+39. Large balloon --- mass of air
+
+40. Keys and matchbox over a dowel
+
+41. Air brakes and a propeller
+
+42. Collisions - ball bearings
+
+43. Water diving - unstable equilibrium
+
+44. Efficiency of a bicycle
+
+45. Conservation of angular momentum
+
+46. The reflection of a power ball
+
+47. Air pressure and marshmallows
+
+48. Marble tracks
+
+49. Rolling double cone
+
+50. Whirlywings
+
+51. Human energy demands
+
+Squeeze a set of bathroom scales to find the strength of your hands. Don't lean on it.
+
+> Age range: 8-13
+>
+> Apparatus required: •Bathroom scales
+
+#### 2. Bi-filar suspension
+
+rod
+
+This is a useful oscillation experiment for students at higher level. A metal rod is suspended horizontally by a thread at each end and is made to oscillate in a horizontal plane by displacing one end.
+
+> Age range: 16-18
+>
+> Apparatus required: •Two retort stands •Thread 'Metal rod
+>
+> •Stop clock •Ruler
+
+#### 3. Sycamore seed propeller
+
+This is simply a plastic propeller on a short stick. It demonstrates the principle of a propeller very well. Spinning it the right way by moving it between the palms of your hands makes it fly across the lab.
+
+#### 4. Unrolling a carpet - whiplash
+
+A roll of carpet can be made to give a whiplash effect as you unroll it. It makes a useful introduction to the effects of whiplash of a head in car crashes, and hence the need for head rests in cars.
+
+rubber band through cotton reel
+
+#### Cotton reel tank
+
+This is a very old toy that can be made from a cotton reel, a slice of candle, an elastic band and a couple of matchsticks. A picture is shown in the diagram. It makes a useful example of energy conversion - stored energy in the rubber band is converted to kinetic energy in the cotton reel tank.
+
+> long
+
+Age range: 11-14 matchstick
+
+> Apparatus required: •Cotton reel •Match sticks (one long one) •Rubber band •Lolly stick
+
+#### 6. Energy in a balloon
+
+Work out the energy in a blown up balloon either by calculation or by the energy released and converted to kinetic energy on a linear air track. Or by how much it takes to pump it up. If you pop it, how much energy goes into the kinetic energy of the fragments and how much into the sound?
+
+What is the energy in a stretched rubber sheet? How much energy is stored in a gas when its volume and pressure change?
+
+> Age range: 11-18 depending on the treatment
+>
+> Apparatus required: •Balloons •Linear air track etc.
+
+#### 7. Viscosity of air with an oscillating table tennis ball
+
+The viscosity of air and its damping nature can be investigated by using a table tennis ball fixed to a length of thread and used as a pendulum.
+
+#### 8. Satellite orbits
+
+The idea of this experiment is to draw a scale diagram for a satellite in orbit 200 km above the Earth's surface (with 1 mm representing 2 km) - that is with an orbit radius of 6600 km, 3.3 m when scaled down. A section of orbit is drawn using a pencil fixed to a 3.3m length of string and the tangent to the arc is drawn at one point.
+
+The distance that the satellite would fall in 120 s is found using s = 1/2gt ^2^ (using t = 120 s and assuming that g is constant up to 200 km above the Earth's surface). The distance round the orbit where such a drop occurs is measured and then the fraction of a whole orbit is worked out. The time for one whole orbit can then be found.
+
+It is important for the students to realise that the only piece of data that turns this into a real value for the satellite orbit from just a large drawing is the value for g.
+
+> Age range: 15-18
+>
+> Apparatus •Pencil ^0^ 3.5 m of string •Large sheet of paper such a drawer lining paper •Metre ruler
+>
+> WI 13'vc11a11cvuo IvtcL11a111V\>
+
+#### 9. An interesting pair of pulleys
+
+This intriguing problem uses two single pulleys. The lower pulley has a thread hung over it with a 100g on one end and a 200g mass on the other. This pulley is attached via a second thread over a second and upper pulley, which is fixed to a retort stand, to a mass of 300 g (with a little plasticine added to compensate for the mass of the first pulley). Since the masses at the two ends of the thread over the upper pulley are equal, ask the students what happens when the masses are allowed to move. With the masses quoted here the large mass moves downwards with an acceleration of g/17.
+
+To demonstrate this it is better to start off with the small masses being almost equal, otherwise their acceleration is too great.
+
+> Theory:
+>
+> The theory for the general case is surprisingly complex. It can be shown that the large mass will descend if -(rm-rn2) \> O, which is never true, therefore al \< O.
+>
+> Using the values for the masses given above:
+>
+> Let the acceleration of the lower masses be +a and ---a and the acceleration of the 300g mass be A. For simplicity we will take g as 10 ms-2
+>
+> 300 gm mass: 3 - 2T= O.3A 200 gm mass: 2 -T = O.2(a-A) 100 gm mass: T - 1 = 0.1(a+A) From these three equations we can show that:
+>
+> A^Z^ 0.5/0.85 = 0.588 ms ^2^
+>
+> Remember that we have taken g = 10 ms-2, 10/17 = 0.588 so the acceleration is g/17. If you take g = 9.81 ms-2 the acceleration becomes 0.577 ms-2
+>
+> Age range: 16-18, the analysis being suitable for mathematicians taking Mechanics at A level
+>
+> Apparatus required: ^o^ Two single pulleys •Set of slotted masses with three hangers •Thread
+>
+> •Retort stand •Clamp •Nail •TV and video to record the motion for later analysis or three light gates
+
+#### 10. Boomerang
+
+It is not safe to throw a wooden boomerang inside the lab, but it makes a superb demonstration for the discussion of fluid flow when thrown outside. Hold it vertically with the concave side facing away from you. Polystyrene boomerangs can be used inside the school in a hall or gym.
+
+##### Yo Yo
+
+This is a good example of conservation of angular momentum and its transfer to linear momentum. The analysis of the motion is quite complex.
+
+#### 12. Tops
+
+These are just rather nice. They can be used to demonstrate rotational motion or energy conversions - many of them will either play a tune or turn upside down! The theory of the inverting top should provoke some useful discussion.
+
+#### 13. Party popper
+
+This is a good example of energy conversion - and is just a bit of fun! You can use one to demonstrate various types of energy conversion.
+
+#### 14. Planetary orbit
+
+Use a conical pendulum to simulate a planetary orbit or better still the decay of a satellite orbit when it encounters the friction of the upper atmosphere.
+
+The decay of an orbit can also be demonstrated by using a large glass funnel. The satellite is represented by a marble spiralling in - analogous to the action of a satellite being affected by air friction in the atmosphere.
+
+#### 15. Straw and potato
+
+Get a potato and cut it in half. Then try and push a plastic straw through one of the halves from the flat side. It's no good - the straw just bends. Now drive the straw sharply into the flat side of the potato - it should now go straight through. A shout as you drive the straw through usually wakes up a sleepy class!
+
+Age range: 13-18 depending on treatment Apparatus required: •Potato •Plastic straw
+
+#### 16. Hoffnung --- the bucket of bricks
+
+The recording of Gerald Hoffnung at the Oxford union has a wonderful account of a bricklayer. He has a bucket of bricks at the top of some scaffolding and tries to get it to the ground. The resulting account as the bucket, initially heavier than him so pulling him off the ground and then splitting open as it lands, spilling out the bricks is fascinating and hilarious. It makes superbly entertaining material for the resultant forces and pulleys section of any 16-19 course.
+
+#### 17. Racing-car Wres - different kinds of rubber
+
+On a dry racetrack racing cars use slick tyres. They are smooth and so before the start they are warmed up by using heated jackets and then by repeated swerves on the track to create heat from friction. This melts a small quantity of rubber and so they feel sticky to the touch. While the track stays dry this 'stickiness' gives them a good grip. Not so effective on a wet track!
+
+#### 18. Lung volume
+
+It is possible to get an estimate of your lung volume by blowing into water filled measuring cylinders that have been inverted over a tank of water. The amount of water blown out gives an approximate value for your lung volume.
+
+> Age range: 11-13
+>
+> Apparatus required: •Sink full of water •A number of large measuring cylinders or cans
+
+#### 19. Weight suspended from a wheel - SHM
+
+Suspend a weight by a long string from the rim of a bike wheel. Rotate the wheel and use the distance from the ground as a measure of the SHM. Measurements of the sideways movement of the weight are also worth taking.
+
+> Age range: 16-18
+>
+> Apparatus •Bicycle wheel mounted on an axle •Thread •Weight (such as a pendulum bob) Wilscellaneous Wiecnarucs
+
+#### 20. Creaking furniture - plastic cups
+
+This demonstrates the expansion and contraction of furniture at night as the house cools down. We do the reverse - a warming up. Get two plastic cups and glue them together in the fridge with their tops together. Take them from the fridge to the lab - they should warm up and creak as they expand!
+
+#### 21. Rollers
+
+This experiment involving rolling two cylinders down a plane, one with a heavy axle and one with a heavy rim (both the same total mass), can be used as either an interesting demonstration for the younger pupils to make them think, or as an analysis of moments of inertia for the older students. The can with a heavy centre accelerates faster than one with a heavy rim. Use tins loaded with extra mass at different points.
+
+> Theory:
+>
+> Moment of inertia of a solid cylinder (the heavy axle) = Mr^2^/2 where r is the radius of the axle Moment of inertia of the heavy rim = Mr where r is the radius of the can
+>
+> Age range: 13-18 depending on treatment
+>
+> Apparatus required: •Ramp •Two cans loaded one at the centre and one at the rim
+
+#### 22. Monkey and bananas
+
+A monkey hangs on to a weightless rope that is passing over a frictionless pulley. On the other end of the rope is a bunch of bananas of exactly the same mass as the monkey. What happens if the monkey begins to climb the rope towards the bananas?
+
+The bananas also move upwards with the same acceleration as the monkey. If the monkey now lets go of the rope both the bananas and the monkey fall - the distance between them remaining the same. If the monkey now grabs hold of the rope again - it may burn its hands they both come to rest.
+
+I am grateful to a colleague who suggested a further twist to this problem. What happens if the monkey reaches across and starts to eat the bananas?
+
+#### 23. The torsion balance
+
+A home-made torsion balance made by a wire stretched between two supports with a light rod such as a plastic straw fixed to it at right angles can be used as an accurate balance. (A clamp can be a useful way of tensioning the wire.) It can also be used to demonstrate an accurate method of force measurement or investigation of the shear modulus of a metal
+
+> Age range: 16-18
+>
+> Apparatus required: •Wire •Two retort stands bosses and clamps •G clamps •Light rod or plastic straw
+>
+> •Slotted masses (light)
+
+#### 24. Rotating soap film
+
+Use a tin can with a soap film across the end and with its axis horizontal so that the soap film is vertical. Fix the can to an electric drill and spin it. The film should be illuminated by a 100 W lamp from behind a translucent screen.
+
+Age range: 11-18 Apparatus required: •Soap solution •Electric drill •Tin can •Lamp •Screen
+
+#### 25. Ropes
+
+You are asked to remove two ropes from a warehouse. The problem is that the two ropes are suspended through two small holes in the ceiling. The idea is to cut down as much rope as possible - the holes are too small for you to get your hands through and the height of the holes above the ground is too great for you to jump down from there without serious injury!
+
+One possible solution: Climb up one rope - cut the other near the ceiling, tying the piece that you cut off to your rope near the top. Make a loop in the remaining piece of the other rope and then feed the cut off piece through it. Hold on to this piece and your rope together, and then cut your rope near the ceiling. Holding onto both ropes, slide down and then pull the double rope down through the loop!
+
+#### Propeller on a wooden stick
+
+This wonderfully simple toy is just a serrated edged stick of about lcm cross section, about 20 cm long and with a thin wooden propeller nailed to one end, but the Physics in it is fairly complex. Rub a small piece of dowel along one edge of the serrated part of the stick, and the propeller will rotate. Rubbing it along the other side can make the propeller rotate the other way.
+
+> Theory
+>
+> Elliptical standing waves are set up in the rod caused by the asymmetric vibrations due to the serrated edge.
+
+#### 27. Three coins
+
+The conservation of momentum and Newton's cradle can also be demonstrated by three coins on the table. Place two together, holding one down with your finger. Slide the third coin towards this coin so that a collision takes place. The third coin comes to rest while the first coin flies off.
+
+A larger scale version of this can be demonstrated in a game of croquet. Place two croquet balls in contact with each other and put your foot on top of one of them. Then strike this ball with the mallet --- the free ball moves off.
+
+#### Horseshoe and cocktail stick
+
+A cardboard horseshoe stands leaning against a cocktail stick as shown in the diagram. The problem is to pick up the horseshoe and the cocktail stick with just the other cocktail stick without touching anything with your hands except the second stick.
+
+One possible solution: Push the second stick between the inclined one and the horseshoe. Allow the horseshoe to fall forwards slightly so that the supporting stick protrudes below it, resting on the other stick. Then use this to pick up both the first cocktail stick and the horseshoe.
+
+> Age range: 11- Adult
+
+Apparatus •Cardboard horseshoe shape •Two cocktail sticks
+
+> Wilscelldneous lwecnantcs
+
+#### 29. Toy divers
+
+Some toyshops sell plastic toy divers which you can blow into via a tube to make them rise, or suck to make them sink. They are rather like variable Cartesian divers.
+
+#### 30. Building bridges competitions
+
+This is worth doing both for general interest and for a study of the structures sections of syllabuses. It is a useful way of getting the students to think about moments and vector analysis. Plastic straws are quite good. Fixing them together is a problem - we have even sewn them together with thread!
+
+#### 31. A rubber sheet for gravitational fields
+
+A rubber sheet fixed over an old bike wheel (with the spokes removed) makes a very good demonstration of a simulated gravitational field. The sheet should be fixed to the wheel by a piece of string tied tightly around the rim.
+
+A set of slotted weights hanging from the centre of the sheet allows you to simulate the change in mass of the central object (planet or star) very easily. Then just roll in a ball bearing (to represent an orbiting satellite or planet), and try to get it to move along a tangent to a circle about the central mass. Using a single heavy ball bearing in the centre rather than the slotted masses shows an effect on both the central mass and that approaching from the outside since the central mass moves because it is not so massive as the weights.
+
+The depression of the sheet as a heavy ball bearing rolls across it simulates the curvature of space formed by the gravitational field of a massive object.
+
+An alternative method is to use a large coffee tin with the bottom cut out and with one end covered with a sheet of cling film. The whole apparatus can then be placed on an OHP so that it can be seen by the whole class.
+
+> Age range: 16-18
+>
+> Apparatus required: •Bicycle wheel with the spokes removed ^o^Thin rubber sheet 'Set of slotted masses •Various ball bearings
+
+#### 32. Air brakes - trolley with card sail
+
+As an extension to the investigation of a toy car running down a ramp try using air brakes. Tie a piece of thread to the car and wrap the other end round a glass rod that stands in a test tube. Fix a piece of card (postcards are ideal) to the top of the rod to act as an air brake. As the car runs down the ramp the rod rotates, so rotating the card. Investigate the effect of different sized pieces of card on the acceleration of the car. Suggest plotting a graph of the square of the velocity after a given distance against the inverse of the area of the card.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Toy car •Cardboard •Timing mechanisms •Wooden board to act as a slope
+
+#### 33. A simple clamp
+
+We have used two small blocks of wood joined with a bolt and wing nut as holders for all sorts of small items they are especially useful for pendulum threads and hacksaw blades. The pressure on the item held can be altered by tightening or loosening the nut, so enabling a thread to be pulled through while still supporting a pendulum bob.
+
+#### 34. Simple pulley model
+
+An interesting and surprising example of the mechanical advantage of a pulley system can be shown by the following demonstration. Two rods are held parallel by two people (a couple of retort stand rods will do fine for this). A piece of string is tied to one and then looped a few times round both.
+
+If you hold the other end of the string you will be able to pull the rods together no matter how hard the people holding the rods try to prevent you. If there is little friction between the rods and the string, the more loops you can make the better it will work.
+
+You should see that the result is exactly analogous to a real pulley system with a large velocity ratio and hence a large mechanical advantage for a given efficiency.
+
+> Theory:
+
+For a pulley system Efficiency = Mechanical advantage/Velocity ratio
+
+> Age range: 11-16 depending on treatment
+>
+> Apparatus required: •Two pieces of broom handle, towel rail or retort stand rods •Smooth string
+
+#### 35. Centre of percussion of an object
+
+Suspend a 1 m ruler from the 5 cm mark on a matchstick. Hit it sharply with a hammer two thirds of the way down the ruler from the match. What happens?
+
+Try this at a variety of points and relate to the forces felt by games players in cricket, baseball and rounders.
+
+> Age range: 14-18
+>
+> Apparatus required: ^0^ 1m ruler •Retort stand, boss and clamp •Match stick •Hammer
+
+#### 36. Perpetual motion
+
+A disc of wood is mounted so that its centre is held by an axle in the wall of a tank of water, half the disc being in air and the other half in water. The side in the water experiences an upthrust. (We will assume that there is a perfect frictionless seal so that no water leaks out!) Why doesn't the disc rotate?
+
+#### 37. Hunter on ice
+
+This is an interesting example of equal and opposite forces. Imagine that you are standing on a frozen lake holding a rope, the other end of which is tied to a sleepy polar bear!
+
+You pull on the rope and if there is negligible friction you and the bear both move - as you would expect. Because of its greater mass the bear accelerates less rapidly than you do, but where do you meet? In fact it can be proved that if there is no friction you and the bear will always meet at the same place where mdl = Md2. Your mass is m and you move dl,• the bear, mass M, moves d2.
+
+#### 38. Picking up obiects with your back to the wall
+
+An interesting example of balancing and the centre of mass of the human body can be shown by getting a pupil to stand with their heels against a wall and then asking them to pick up an object placed say half a metre in front of them. This is not possible because of the position of the body's centre of mass. You cannot counterbalance the 'forward lean'.
+
+#### 39. Large balloon - mass of air
+
+Use a large rubber balloon - one that you can blow up to a diameter of over 30 cm - to measure the mass. (One with a volume about 0.03 m ^3^ contains about 36 g of air.) There may be a problem here, however. What about the change of pressure as the balloon is inflated?
+
+#### 40. Keys and matchbox over a dowel
+
+Tie a bunch of keys to one end of a length of thread and a matchbox to the other. Loop the thread over a piece of dowel rod fixed horizontally in a boss. Hold the matchbox so that it is on the same level as the dowel rod with the keys hanging vertically down wards. Let go. The keys fall and the matchbox swings down, but the thread wraps itself around the dowel rod.
+
+> Age range: 11-18 depending on treatment
+>
+> Apparatus required: •Retort stand and boss •Wooden dowel rod •Match box •Thread •Bunch of keys or 50g mass
+
+#### 41. Air brakes and a propeller
+
+A very good demonstration of air brakes is to make a windmill from a set of card vanes fixed in a cork which is then mounted over a glass tube with a closed end. This tube is fitted loosely on a glass rod. A thread wrapped round this is hung over a pulley and fixed to an accelerating mass or to a car on a ramp. Differing damping effects can be produced by changing the size of the vanes.
+
+> Age range: 11-15
+>
+> Apparatus required: 'Cork •Cardboard •Glass tube •Glass rod and pivot •Thread •Car •Ramp •Pulley
+
+#### 42. Collisions - ball bearings
+
+Use a magnet and two ball bearings - one large and one small. Roll them together towards the magnet with the large one in the lead. A 'magnetic gun' results. (See the magnetic accelerator)
+
+#### 43. Water divining - unstable equilibrium
+
+Is this really all it is - unstable twigs? A fascinating investigation could result here.
+
+#### 44. Efficiency of a bicycle
+
+Mount the bicycle upside down and by measuring the mechanical advantage and its velocity ratio work out the efficiency of the bike. The mechanical advantage is found by hanging a mass on one of the pedals while finding out the force applied at the rim of the wheel to counteract the weight of the mass using a Newton meter.
+
+The velocity ratio is calculated by measuring the distance moved by a point on the rim of the wheel for one rotation of the pedal.
+
+> Theory
+>
+> Efficiency of the bike = \[Mechanical advantage/Velocity ratio\] x 100
+>
+> Age range: 14-16
+>
+> Apparatus required: •Bicycle •Sets of large slotted masses •Newton meter •String •Retort stands and clamps
+
+#### 45. Conservation of angular momentum
+
+This can be demonstrated by a number of simple experiments.
+
+(a) Stand someone on a rotatable table with their arms outstretched. Give them a gentle push so that they start rotating and then ask them to pull their arms into their sides - the rate of spin increases since their moment of inertia has decreased, and the spin rate must get larger to conserve angular momentum. (It works even better if they hold a kilogram mass in each hand!)
+
+(b) Use a conical pendulum fixed to the top of a broomstick. The pendulum bob is given a push so that it begins to move in a circle, the string wrapping itself round the stick and the rotation rate increasing as the radius of the orbit gets less.
+
+(c) A cylinder is fixed to a string that is suspended from a beam. The cylinder is held on its side !and spun round. As it falls with its axis vertical the rate of spin increases.
+
+(d) Stand a pupil on the rotating table outside the laboratory and get them to throw a 1 kg sandbag. They will rotate in the opposite direction to that in which the sandbag is thrown.
+
+> Always stand the rotating table on the floor. Make sure that the sandbag is thrown gently, and that the rest of the class stand well back.
+>
+> Age range: 11-16 Apparatus required: •Rotating table ^0^ 1 kg sandbag 'Cylinder •String
+
+#### 46. The reflection of a power ball
+
+Find a hard floor and a flat topped table. Throw a power ball (without spinning it) so that it hits the floor just outside the table and then bounces up under the table and hits the underneath of the table top (see diagram).
+
+There is nothing unusual about this, but it is when the ball hits the underneath of the table top that something rather strange happens. Instead of reflecting off at the same angle the ball returns along its original path!
+
+This can be explained by thinking about the spin of the ball. When it hits the ground at an angle the frictional force between the ball and the ground makes the ball spin (as shown in the inset). As it hits the underneath of the tabletop it is this very spin coupled with another frictional force that returns the ball along its original path.
+
+Now try wetting the ball. This lowers the friction, reduces the spin and the ball bounces out at the far end of the table!
+
+This is a fascinating experiment on collisions. I have yet to experiment using different balls such as table tennis balls, hockey balls and tennis balls.
+
+> Age range: 16-19
+>
+> Apparatus required: •Flat topped table •Power ball •Hard floor
+>
+> [47. Air pressure and marshmallows.]{.underline}
+
+Put some cylindrical marshmallows in an empty wine bottle. Then use a 'vacuvin' and stopper to reduce the air pressure in the bottle. As you do so the marshmallows will expand because the air within them is at a greater pressure than the air in the bottle.When air is allowed back into the bottle by taking out the stopper they will 're-inflate'. This is a good example of the change in the volume of a gas with pressure.
+
+> Age range: 11-16
+>
+> Apparatus required: •Wine bottle •Vacuvin and stopper •Cylindrical marshmallows
+
+#### 48. Marble tracks
+
+There are a number of mechanics experiments where you will need to roll marbles down a track --- to investigate collisions, to measure g, to check the best shaped path to give the shortest transition time between two points and so on. Two possible tracks are:
+
+(a) a length of plastic tubing with an internal diameter a bit larger than a marble
+
+(b) a piece of plastic electrical trunking (either the base or the clip-on cover) ---the width of this could be either a bit bigger or a bit smaller than a marble depending on whether you want the marble to sit in the track or roll along the top
+
+Both these items can be bought really cheaply from most DIY shops.
+
+Age range: 11-19 Apparatus required: •Plastic tubing 'Electrical trunking 
+
+#### 49. Defying gravity --- a rolling double cone
+
+Make a double cone out of wood by fixing two funnels together 'face to face'. Make two slanted and tapering support ramps so that you have the arrangement shown in the diagram. When the double cone is put on the lower end of the ramp it seems to roll uphill --- apparently defying gravity.
+
+This can be explained by thinking about what is happening to the centre of gravity of the rolling double cone. At the bottom of the ramp the cone is supported near its centre and so its centre of gravity is high (See diagram 1). At the top of the ramp the cones are supported nearer their tops and so their centre of gravity is lower (See diagram 2). The double cone has actually rolled so that its centre of gravity is nearer the ground.
+
+> Age range: 11-18
+>
+> Apparatus required: 'Double cone •Ramp
+
+#### 50. Whirlywings
+
+These make a fascinating basis for an investigation for pupils and teachers of almost any age --- from six to sixty years of age! A whirlywing is simply a rectangular piece of paper or card. You hold it with the long side horizontal and with the plane of the whirlywing almost vertical and then drop it. As it falls it spins about its long axis.
+
+Investigations can include the effect of size, shape or material on the distance flown, the time of flight or the shape of the path. The aerodynamics of the whirlywing can be investigated by older students.
+
+Interested students might try making a revojet --- a plane with each wing a rotating whirlywing. I am grateful to Bob for this idea.
+
+> Age range: 6--- 60
+>
+> Apparatus required: •Rectangular piece of paper or card •Scissors •Ruler or tape 'Stopwatch
