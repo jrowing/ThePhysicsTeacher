@@ -1,6 +1,8 @@
 ---
 title: "Astronomy"
 format: html
+filters:
+  - diagram
 ---
 
 ## Basic Astronomy Theory
@@ -80,7 +82,7 @@ For a body in circular orbit around a mass $M$:
 ### Units and Distances
 
 | Quantity | Symbol | Units | Typical Value |
-|-----------------|-----------------|-----------------|---------------------|
+|-----------------|-----------------|-----------------|--------------------|
 | Astronomical Unit | AU | $1.5 \times 10^{11}$ m | Earth-Sun distance |
 | Light-year | ly | $\approx 9.46 \times 10^{15}$ m | Distance light travels in one year |
 | Parsec | pc | $\approx 3.26$ ly | Used in measuring stellar distances |
