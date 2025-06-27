@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>11&nbsp; Statics – The Physics Teacher</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./MiscMechanics.html" rel="next">
+<link href="./Fluids.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-604c3d4c4a4e540f9ea15e4aba1a9bab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Physics Teacher</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://buymeacoffee.com/jrowing" target="_blank"> 
+<span class="menu-text">Buy Me a Coffee</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./The-Physics-Teacher.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CircularMotion.html">Mechanics</a></li><li class="breadcrumb-item"><a href="./Statics.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introductions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhyPhox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Phy-Phox: Physics Phone Experiments</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhET.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PhET Interactive Simulations: Bringing Physics to Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Basics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BasicPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Physics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WorkEnergyPower.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mechanics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CircularMotion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ForcesNewton.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Inertia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Inertia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Momentum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Momentum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fluids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fluids</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Statics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MiscMechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Earth and Beyond</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Astronomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Astronomy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Electricity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Capacitors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CurrentElectricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">CurrentElectricity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electromagnetism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Electromagnetism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fields</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electrostatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Electrostatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Gravity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Thermal Physics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GasLaws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GasLaws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ThermalPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Waves &amp; Optics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./optics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./VibrationsWaves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">VibrationsWaves</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Nuclear &amp; Quantum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./NuclearPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NuclearPhysics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quanta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Quanta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Radioactivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Radioactivity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MoreResources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">MoreResources</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#basic-theory" id="toc-basic-theory" class="nav-link active" data-scroll-target="#basic-theory"><span class="header-section-number">11.1</span> Basic theory</a>
+  <ul>
+  <li><a href="#equilibrium-of-a-particle" id="toc-equilibrium-of-a-particle" class="nav-link" data-scroll-target="#equilibrium-of-a-particle"><span class="header-section-number">11.1.1</span> Equilibrium of a Particle</a></li>
+  <li><a href="#equilibrium-of-a-rigid-body" id="toc-equilibrium-of-a-rigid-body" class="nav-link" data-scroll-target="#equilibrium-of-a-rigid-body"><span class="header-section-number">11.1.2</span> Equilibrium of a Rigid Body</a></li>
+  <li><a href="#moments-torque" id="toc-moments-torque" class="nav-link" data-scroll-target="#moments-torque"><span class="header-section-number">11.1.3</span> Moments (Torque)</a></li>
+  <li><a href="#couple" id="toc-couple" class="nav-link" data-scroll-target="#couple"><span class="header-section-number">11.1.4</span> Couple</a></li>
+  <li><a href="#types-of-forces-in-statics" id="toc-types-of-forces-in-statics" class="nav-link" data-scroll-target="#types-of-forces-in-statics"><span class="header-section-number">11.1.5</span> Types of Forces in Statics</a></li>
+  <li><a href="#conditions-for-equilibrium-summary" id="toc-conditions-for-equilibrium-summary" class="nav-link" data-scroll-target="#conditions-for-equilibrium-summary"><span class="header-section-number">11.1.6</span> Conditions for Equilibrium Summary</a></li>
+  <li><a href="#resultant-force" id="toc-resultant-force" class="nav-link" data-scroll-target="#resultant-force"><span class="header-section-number">11.1.7</span> Resultant Force</a></li>
+  <li><a href="#resolution-of-forces" id="toc-resolution-of-forces" class="nav-link" data-scroll-target="#resolution-of-forces"><span class="header-section-number">11.1.8</span> Resolution of Forces</a></li>
+  <li><a href="#centre-of-mass" id="toc-centre-of-mass" class="nav-link" data-scroll-target="#centre-of-mass"><span class="header-section-number">11.1.9</span> Centre of Mass</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">11.1.10</span> Summary Table</a></li>
+  </ul></li>
+  <li><a href="#stories-to-enritch" id="toc-stories-to-enritch" class="nav-link" data-scroll-target="#stories-to-enritch"><span class="header-section-number">11.2</span> Stories to enritch</a>
+  <ul>
+  <li><a href="#archimedes-and-the-lever" id="toc-archimedes-and-the-lever" class="nav-link" data-scroll-target="#archimedes-and-the-lever"><span class="header-section-number">11.2.1</span> Archimedes and the Lever</a></li>
+  <li><a href="#the-bridge-that-didnt-fall-early-engineering-marvels" id="toc-the-bridge-that-didnt-fall-early-engineering-marvels" class="nav-link" data-scroll-target="#the-bridge-that-didnt-fall-early-engineering-marvels"><span class="header-section-number">11.2.2</span> The Bridge That Didn’t Fall: Early Engineering Marvels</a></li>
+  <li><a href="#galileos-inclined-plane-experiments" id="toc-galileos-inclined-plane-experiments" class="nav-link" data-scroll-target="#galileos-inclined-plane-experiments"><span class="header-section-number">11.2.3</span> Galileo’s Inclined Plane Experiments</a></li>
+  <li><a href="#leonardo-da-vincis-studies-of-forces" id="toc-leonardo-da-vincis-studies-of-forces" class="nav-link" data-scroll-target="#leonardo-da-vincis-studies-of-forces"><span class="header-section-number">11.2.4</span> Leonardo da Vinci’s Studies of Forces</a></li>
+  <li><a href="#the-eiffel-tower-statics-in-the-sky" id="toc-the-eiffel-tower-statics-in-the-sky" class="nav-link" data-scroll-target="#the-eiffel-tower-statics-in-the-sky"><span class="header-section-number">11.2.5</span> The Eiffel Tower: Statics in the Sky</a></li>
+  <li><a href="#the-discovery-of-stress-and-strain" id="toc-the-discovery-of-stress-and-strain" class="nav-link" data-scroll-target="#the-discovery-of-stress-and-strain"><span class="header-section-number">11.2.6</span> The Discovery of Stress and Strain</a></li>
+  <li><a href="#the-role-of-statics-in-space-engineering" id="toc-the-role-of-statics-in-space-engineering" class="nav-link" data-scroll-target="#the-role-of-statics-in-space-engineering"><span class="header-section-number">11.2.7</span> The Role of Statics in Space Engineering</a></li>
+  <li><a href="#the-tower-of-pisa-and-static-instability" id="toc-the-tower-of-pisa-and-static-instability" class="nav-link" data-scroll-target="#the-tower-of-pisa-and-static-instability"><span class="header-section-number">11.2.8</span> The Tower of Pisa and Static Instability</a></li>
+  <li><a href="#the-origin-of-the-term-statics" id="toc-the-origin-of-the-term-statics" class="nav-link" data-scroll-target="#the-origin-of-the-term-statics"><span class="header-section-number">11.2.9</span> The Origin of the Term “Statics”</a></li>
+  </ul></li>
+  <li><a href="#practical-work-and-demos" id="toc-practical-work-and-demos" class="nav-link" data-scroll-target="#practical-work-and-demos"><span class="header-section-number">11.3</span> Practical work and Demos</a>
+  <ul>
+  <li><a href="#balancing-forks-and-a-pivot-mechanism" id="toc-balancing-forks-and-a-pivot-mechanism" class="nav-link" data-scroll-target="#balancing-forks-and-a-pivot-mechanism">1. Balancing forks and a pivot mechanism</a></li>
+  <li><a href="#bottle-top-and-door-frame" id="toc-bottle-top-and-door-frame" class="nav-link" data-scroll-target="#bottle-top-and-door-frame">2. Bottle top and door frame</a></li>
+  <li><a href="#balancing-a-pencil-andor-a-snooker-cue" id="toc-balancing-a-pencil-andor-a-snooker-cue" class="nav-link" data-scroll-target="#balancing-a-pencil-andor-a-snooker-cue">3. Balancing a pencil and/or a snooker cue</a></li>
+  <li><a href="#mop-and-back-muscles" id="toc-mop-and-back-muscles" class="nav-link" data-scroll-target="#mop-and-back-muscles">4. Mop and back muscles</a></li>
+  <li><a href="#action-men-and-artists-models-in-physics" id="toc-action-men-and-artists-models-in-physics" class="nav-link" data-scroll-target="#action-men-and-artists-models-in-physics">5. Action men and artists models in Physics</a></li>
+  <li><a href="#shopping-trolley" id="toc-shopping-trolley" class="nav-link" data-scroll-target="#shopping-trolley">6. Shopping trolley</a></li>
+  <li><a href="#balances---wooden-coat-hangers" id="toc-balances---wooden-coat-hangers" class="nav-link" data-scroll-target="#balances---wooden-coat-hangers">7. Balances - wooden coat hangers</a></li>
+  <li><a href="#vectors-and-a-rope" id="toc-vectors-and-a-rope" class="nav-link" data-scroll-target="#vectors-and-a-rope">8. Vectors and a rope</a>
+  <ul>
+  <li><a href="#mobiles-to-demonstrate-moments" id="toc-mobiles-to-demonstrate-moments" class="nav-link" data-scroll-target="#mobiles-to-demonstrate-moments">10. Mobiles to demonstrate moments</a></li>
+  </ul></li>
+  <li><a href="#arm-muscles-and-levers" id="toc-arm-muscles-and-levers" class="nav-link" data-scroll-target="#arm-muscles-and-levers">11. Arm muscles and levers!</a></li>
+  <li><a href="#centre-of-gravity-of-a-pupil" id="toc-centre-of-gravity-of-a-pupil" class="nav-link" data-scroll-target="#centre-of-gravity-of-a-pupil">12. Centre of gravity of a pupil</a></li>
+  <li><a href="#bear-on-bike" id="toc-bear-on-bike" class="nav-link" data-scroll-target="#bear-on-bike">13. Bear on bike</a></li>
+  <li><a href="#moments" id="toc-moments" class="nav-link" data-scroll-target="#moments">14. Moments</a></li>
+  <li><a href="#using-the-centre-of-gravity-to-find-the-mass-of-a-broom" id="toc-using-the-centre-of-gravity-to-find-the-mass-of-a-broom" class="nav-link" data-scroll-target="#using-the-centre-of-gravity-to-find-the-mass-of-a-broom">15. Using the centre of gravity to find the mass of a broom</a></li>
+  <li><a href="#the-wooden-spoon" id="toc-the-wooden-spoon" class="nav-link" data-scroll-target="#the-wooden-spoon">16. The wooden spoon</a></li>
+  <li><a href="#rolling-up-hill" id="toc-rolling-up-hill" class="nav-link" data-scroll-target="#rolling-up-hill">17. Rolling up hill</a></li>
+  <li><a href="#moving-fingers-on-a-long-ruler" id="toc-moving-fingers-on-a-long-ruler" class="nav-link" data-scroll-target="#moving-fingers-on-a-long-ruler">18. Moving fingers on a long ruler</a></li>
+  <li><a href="#pile-of-leaning-blocks" id="toc-pile-of-leaning-blocks" class="nav-link" data-scroll-target="#pile-of-leaning-blocks">19. Pile of leaning blocks!</a></li>
+  <li><a href="#interesting-balancing" id="toc-interesting-balancing" class="nav-link" data-scroll-target="#interesting-balancing">20. Interesting balancing</a>
+  <ul>
+  <li><a href="#the-heavy-bottom-toy" id="toc-the-heavy-bottom-toy" class="nav-link" data-scroll-target="#the-heavy-bottom-toy">The heavy bottom toy</a></li>
+  <li><a href="#moments-using-a-cd-and-magnets" id="toc-moments-using-a-cd-and-magnets" class="nav-link" data-scroll-target="#moments-using-a-cd-and-magnets">Moments using a CD and magnets</a></li>
+  <li><a href="#the-rolling-spool" id="toc-the-rolling-spool" class="nav-link" data-scroll-target="#the-rolling-spool">23. The rolling spool</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CircularMotion.html">Mechanics</a></li><li class="breadcrumb-item"><a href="./Statics.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="basic-theory" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="basic-theory"><span class="header-section-number">11.1</span> Basic theory</h2>
+<section id="equilibrium-of-a-particle" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="equilibrium-of-a-particle"><span class="header-section-number">11.1.1</span> Equilibrium of a Particle</h3>
+<ul>
+<li><p>A particle is in equilibrium if the <strong>net force</strong> acting on it is zero: <span class="math display">\[
+\sum \vec{F} = 0
+\]</span></p></li>
+<li><p>This means no acceleration; the particle is at rest or moving at constant velocity.</p></li>
+</ul>
+</section>
+<section id="equilibrium-of-a-rigid-body" class="level3" data-number="11.1.2">
+<h3 data-number="11.1.2" class="anchored" data-anchor-id="equilibrium-of-a-rigid-body"><span class="header-section-number">11.1.2</span> Equilibrium of a Rigid Body</h3>
+<ul>
+<li>For a rigid body in equilibrium:
+<ul>
+<li>The net force is zero: <span class="math display">\[
+\sum \vec{F} = 0
+\]</span></li>
+<li>The net moment (torque) about any point is zero: <span class="math display">\[
+\sum \vec{M} = 0
+\]</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="moments-torque" class="level3" data-number="11.1.3">
+<h3 data-number="11.1.3" class="anchored" data-anchor-id="moments-torque"><span class="header-section-number">11.1.3</span> Moments (Torque)</h3>
+<ul>
+<li><p>Moment about a point <span class="math inline">\(O\)</span> is the turning effect of a force: <span class="math display">\[
+M = F d
+\]</span> Where:</p></li>
+<li><p><span class="math inline">\(F\)</span> = magnitude of force (N)</p></li>
+<li><p><span class="math inline">\(d\)</span> = perpendicular distance from point <span class="math inline">\(O\)</span> to the line of action of <span class="math inline">\(F\)</span> (m)</p></li>
+<li><p>Direction: clockwise or anticlockwise moments</p></li>
+</ul>
+</section>
+<section id="couple" class="level3" data-number="11.1.4">
+<h3 data-number="11.1.4" class="anchored" data-anchor-id="couple"><span class="header-section-number">11.1.4</span> Couple</h3>
+<ul>
+<li>A couple consists of two equal and opposite forces whose lines of action do not coincide.</li>
+<li>Moment of a couple: <span class="math display">\[
+M = F \times d
+\]</span> Where <span class="math inline">\(d\)</span> is the perpendicular distance between the forces.</li>
+</ul>
+</section>
+<section id="types-of-forces-in-statics" class="level3" data-number="11.1.5">
+<h3 data-number="11.1.5" class="anchored" data-anchor-id="types-of-forces-in-statics"><span class="header-section-number">11.1.5</span> Types of Forces in Statics</h3>
+<ul>
+<li><strong>Tension:</strong> Force that pulls/stretch (e.g.&nbsp;in a rope).</li>
+<li><strong>Compression:</strong> Force that pushes/squeezes.</li>
+<li><strong>Normal reaction:</strong> Perpendicular force exerted by a surface.</li>
+<li><strong>Friction:</strong> Force resisting motion, parallel to the surface.</li>
+</ul>
+</section>
+<section id="conditions-for-equilibrium-summary" class="level3" data-number="11.1.6">
+<h3 data-number="11.1.6" class="anchored" data-anchor-id="conditions-for-equilibrium-summary"><span class="header-section-number">11.1.6</span> Conditions for Equilibrium Summary</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Condition</th>
+<th>Vector Equation</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Force equilibrium</td>
+<td><span class="math inline">\(\sum \vec{F} = 0\)</span></td>
+<td>No net force</td>
+</tr>
+<tr class="even">
+<td>Moment equilibrium</td>
+<td><span class="math inline">\(\sum \vec{M} = 0\)</span></td>
+<td>No net torque</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="resultant-force" class="level3" data-number="11.1.7">
+<h3 data-number="11.1.7" class="anchored" data-anchor-id="resultant-force"><span class="header-section-number">11.1.7</span> Resultant Force</h3>
+<ul>
+<li>The single force which has the same effect as a system of forces.</li>
+<li>Calculated by vector addition of all forces: <span class="math display">\[
+\vec{R} = \sum \vec{F_i}
+\]</span></li>
+</ul>
+</section>
+<section id="resolution-of-forces" class="level3" data-number="11.1.8">
+<h3 data-number="11.1.8" class="anchored" data-anchor-id="resolution-of-forces"><span class="header-section-number">11.1.8</span> Resolution of Forces</h3>
+<ul>
+<li>Forces can be resolved into components, often horizontal (<span class="math inline">\(x\)</span>) and vertical (<span class="math inline">\(y\)</span>): <span class="math display">\[
+F_x = F \cos \theta \quad , \quad F_y = F \sin \theta
+\]</span></li>
+</ul>
+</section>
+<section id="centre-of-mass" class="level3" data-number="11.1.9">
+<h3 data-number="11.1.9" class="anchored" data-anchor-id="centre-of-mass"><span class="header-section-number">11.1.9</span> Centre of Mass</h3>
+<ul>
+<li>The point at which the entire weight of a body can be considered to act.</li>
+<li>Found by taking moments of weights or using geometric symmetry.</li>
+</ul>
+</section>
+<section id="summary-table" class="level3" data-number="11.1.10">
+<h3 data-number="11.1.10" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">11.1.10</span> Summary Table</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 45%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Formula/Condition</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Force equilibrium</td>
+<td><span class="math inline">\(\sum \vec{F} = 0\)</span></td>
+<td>No acceleration</td>
+</tr>
+<tr class="even">
+<td>Moment equilibrium</td>
+<td><span class="math inline">\(\sum \vec{M} = 0\)</span></td>
+<td>No rotation</td>
+</tr>
+<tr class="odd">
+<td>Moment</td>
+<td><span class="math inline">\(M = F d\)</span></td>
+<td>Turning effect of a force</td>
+</tr>
+<tr class="even">
+<td>Couple moment</td>
+<td><span class="math inline">\(M = F d\)</span></td>
+<td>Two equal opposite forces</td>
+</tr>
+<tr class="odd">
+<td>Force components</td>
+<td><span class="math inline">\(F_x = F \cos \theta\)</span> , <span class="math inline">\(F_y = F \sin \theta\)</span></td>
+<td>Resolve forces into <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p>General theory for this section:</p>
+<p>The moment of a force is defined as the product of the force and the perpendicular distance from the line of action of the force to the pivot.</p>
+<p>When an object is balanced, the sum of the clockwise moments (those trying to turn it in a clockwise direction) is equal to the sum of the anticlockwise moments (those trying to turn it the opposite way). When an object is balanced, the vertical line from the centre of gravity passes through the point of balance and the object will topple over when this vertical line falls outside the base of the object.</p>
+</blockquote>
+</section>
+</section>
+<section id="stories-to-enritch" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="stories-to-enritch"><span class="header-section-number">11.2</span> Stories to enritch</h2>
+<section id="archimedes-and-the-lever" class="level3" data-number="11.2.1">
+<h3 data-number="11.2.1" class="anchored" data-anchor-id="archimedes-and-the-lever"><span class="header-section-number">11.2.1</span> Archimedes and the Lever</h3>
+<p>Archimedes famously said, “Give me a place to stand, and I will move the Earth.” He discovered the law of the lever, showing how a small force applied at a longer distance can balance a larger force closer to the pivot. This principle laid the foundation for understanding equilibrium and mechanical advantage.</p>
+<p>Reflection: How did the lever change the way humans harness force?</p>
+</section>
+<section id="the-bridge-that-didnt-fall-early-engineering-marvels" class="level3" data-number="11.2.2">
+<h3 data-number="11.2.2" class="anchored" data-anchor-id="the-bridge-that-didnt-fall-early-engineering-marvels"><span class="header-section-number">11.2.2</span> The Bridge That Didn’t Fall: Early Engineering Marvels</h3>
+<p>Ancient engineers designed stone arches and bridges that stood for centuries without modern materials. Their mastery of static equilibrium—balancing forces so structures remain at rest—was a triumph of practical statics. These structures show how understanding forces prevents collapse.</p>
+<p>Reflection: Why is balancing forces crucial in architecture and engineering?</p>
+</section>
+<section id="galileos-inclined-plane-experiments" class="level3" data-number="11.2.3">
+<h3 data-number="11.2.3" class="anchored" data-anchor-id="galileos-inclined-plane-experiments"><span class="header-section-number">11.2.3</span> Galileo’s Inclined Plane Experiments</h3>
+<p>Galileo studied motion on inclined planes to understand forces and equilibrium. By carefully analyzing how objects rest or slide, he laid groundwork for the laws governing forces and moments. His insights bridged statics and dynamics in physics.</p>
+<p>Reflection: How can simple experiments reveal deep truths about forces at rest?</p>
+</section>
+<section id="leonardo-da-vincis-studies-of-forces" class="level3" data-number="11.2.4">
+<h3 data-number="11.2.4" class="anchored" data-anchor-id="leonardo-da-vincis-studies-of-forces"><span class="header-section-number">11.2.4</span> Leonardo da Vinci’s Studies of Forces</h3>
+<p>Leonardo sketched machines, bridges, and human anatomy, analyzing force balance and tension. His notebooks contain early explorations of static forces and equilibrium, combining art and engineering. His work exemplifies how observation and creativity illuminate statics.</p>
+<p>Reflection: How does art contribute to understanding physical forces?</p>
+</section>
+<section id="the-eiffel-tower-statics-in-the-sky" class="level3" data-number="11.2.5">
+<h3 data-number="11.2.5" class="anchored" data-anchor-id="the-eiffel-tower-statics-in-the-sky"><span class="header-section-number">11.2.5</span> The Eiffel Tower: Statics in the Sky</h3>
+<p>Gustave Eiffel’s design used wrought iron arranged to balance compressive and tensile forces efficiently, enabling the Tower to stand over 300 meters tall. It’s a modern marvel of static equilibrium under wind and gravity loads. This structure shows statics’ role in pushing architectural limits.</p>
+<p>Reflection: How do engineers ensure structures withstand static forces like weight and wind?</p>
+<p>###&nbsp;The Mystery of the Hanging Chain: Catenary Curves</p>
+<p>The shape of a hanging chain or cable forms a catenary curve, which is the ideal shape for arches under uniform load. Understanding this curve was key to designing stable arches and bridges. Statics explains why certain shapes support weight better.</p>
+<p>Reflection: Why do natural curves provide structural stability?</p>
+</section>
+<section id="the-discovery-of-stress-and-strain" class="level3" data-number="11.2.6">
+<h3 data-number="11.2.6" class="anchored" data-anchor-id="the-discovery-of-stress-and-strain"><span class="header-section-number">11.2.6</span> The Discovery of Stress and Strain</h3>
+<p>Scientists realized that static forces produce internal stresses within materials. Understanding how materials deform under load—stress and strain—helped engineers predict failure and design safer structures. This connected external forces to internal material behavior.</p>
+<p>Reflection: How do materials respond internally to forces holding things still?</p>
+</section>
+<section id="the-role-of-statics-in-space-engineering" class="level3" data-number="11.2.7">
+<h3 data-number="11.2.7" class="anchored" data-anchor-id="the-role-of-statics-in-space-engineering"><span class="header-section-number">11.2.7</span> The Role of Statics in Space Engineering</h3>
+<p>Statics is crucial in designing satellites and space stations, ensuring components stay balanced and forces remain controlled despite zero gravity. Static equilibrium principles guide docking, structural stability, and load distribution. Statics extends beyond Earth.</p>
+<p>Reflection: How do static forces matter in the weightless environment of space?</p>
+</section>
+<section id="the-tower-of-pisa-and-static-instability" class="level3" data-number="11.2.8">
+<h3 data-number="11.2.8" class="anchored" data-anchor-id="the-tower-of-pisa-and-static-instability"><span class="header-section-number">11.2.8</span> The Tower of Pisa and Static Instability</h3>
+<p>The leaning tower’s tilt is a static equilibrium problem where uneven ground causes the center of mass to shift. Engineers have worked for decades to stabilize it without altering its famous lean. It’s a real-world lesson in static balance and instability.</p>
+<p>Reflection: What happens when static equilibrium is slightly disturbed?</p>
+</section>
+<section id="the-origin-of-the-term-statics" class="level3" data-number="11.2.9">
+<h3 data-number="11.2.9" class="anchored" data-anchor-id="the-origin-of-the-term-statics"><span class="header-section-number">11.2.9</span> The Origin of the Term “Statics”</h3>
+<p>The word “statics” comes from the Greek “statikos,” meaning “causing to stand.” Early scientists formalized the study of forces keeping objects at rest, establishing a branch of mechanics focused on balance and support. Statics is about the art of staying still.</p>
+<p>Reflection: Why study forces that don’t cause motion?</p>
+</section>
+</section>
+<section id="practical-work-and-demos" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="practical-work-and-demos"><span class="header-section-number">11.3</span> Practical work and Demos</h2>
+<section id="balancing-forks-and-a-pivot-mechanism" class="level4">
+<h4 class="anchored" data-anchor-id="balancing-forks-and-a-pivot-mechanism">1. Balancing forks and a pivot mechanism</h4>
+<ol type="a">
+<li><p>The position of the centre of gravity of a system is vital for its stability. Fix two forks together, prongs to prongs, stick a cocktail stick through between the prongs and then balance the arrangement on the edge of a glass. (It helps to tape the prongs of the forks together). Finally set fire to the end of the cocktail stick over the glass. The wood burns, eventually going out at the edge of the glass.( It helps to tape the ends of the forks together.)</p></li>
+<li><p>A simple way of lowering the centre of gravity of a ruler when used for investigation of the law of moments is to use a rubber band to fix a ruler below a rod. The rod is then used as the pivot and is balanced on an aluminium yoke. This gets the centre of gravity below the point of suspension and makes balancing easier.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Age range: 11-14 Apparatus required: •Two forks •Cork •Glass</p>
+<p>•Ruler •Rubber band •Metal rod •Metal rod</p>
+</blockquote>
+</section>
+<section id="bottle-top-and-door-frame" class="level4">
+<h4 class="anchored" data-anchor-id="bottle-top-and-door-frame">2. Bottle top and door frame</h4>
+<p>The enormous effect of leverage can be shown by taking the cap off a bottle by holding it in the gap between the door and the frame. (Take care not to damage the door or its frame!) It is worth giving some warnings about long levers giving too great an effect, such as the over tightening of both car wheel nuts and spark plugs with long-handled spanners! Trying to get them undone with a short arm spanner might prove impossible.</p>
+<p>Age range: 11-14 Apparatus required: •Bottle with removable cap •Door</p>
+</section>
+<section id="balancing-a-pencil-andor-a-snooker-cue" class="level4">
+<h4 class="anchored" data-anchor-id="balancing-a-pencil-andor-a-snooker-cue">3. Balancing a pencil and/or a snooker cue</h4>
+<p>Why is it so much more difficult to balance a pencil than a snooker cue on your finger? This can be demonstrated by using a number of differently shaped rods - long, short, light, and heavy with a mass at the top or near the lower end - a pencil and a snooker cue. It is much easier to balance heavy rods or ones with a mass at the top such as a mop!</p>
+<p>The ease of balancing is simply to do with how sensitively you can adjust the position of the centre of mass - a small movement of your hand will produce a large angular acceleration in a light rod.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-14 or older depending on treatment</p>
+<p>Apparatus required: ’Rods of different types - snooker cue, broom, pencil, metre ruler, six inch nail</p>
+</blockquote>
+</section>
+<section id="mop-and-back-muscles" class="level4">
+<h4 class="anchored" data-anchor-id="mop-and-back-muscles">4. Mop and back muscles</h4>
+<p>The following demonstration is a simulation of the enormous tension produced in the muscles of your back when you lean over. Tie a piece of string to the handle of a mop about a quarter of the way from the mop head. The head of the mop represents your head and the handle of the mop represents your spine. Drill a hole through the end of the handle furthest from the head and pivot it here, the head of the mop being at the top.</p>
+<p>Now try and support the mop as it tilts by holding the string at a small angle to the handle of the mop (l am told that back muscles make an angle of only 10 <sup>0</sup> with your spine!) The tension in the string represents the huge tension in your back muscles as you bend over. Bending at 45<sup>0</sup> produces a tension of over double your own body weight!</p>
+<p>Holding something in your hands while you bend over into a car boot will increase the tension even further.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>The tension in string (back muscles) T is given by the equation: Tsin A = mg cos 0 where A is the angle of the string with the mop (back muscles with the spine) and 0 is the angle that the mop handle (spine) makes with the horizontal. In the diagram the angle between the string and the mop has been exaggerated. The angle between your back muscles and your spine is less than 10<sup>0</sup></p>
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Mop •String •Newton meter •Metal rod for pivot •Retort stand and boss •G clamp</p>
+</blockquote>
+</section>
+<section id="action-men-and-artists-models-in-physics" class="level4">
+<h4 class="anchored" data-anchor-id="action-men-and-artists-models-in-physics">5. Action men and artists models in Physics</h4>
+<p>The stability of the human body and the variable position of its centre of gravity can be studied using wooden artists’ models, action men or even Barbie dolls. Their ability to stand, bend and balance on the flat, on trolleys and even on rotating tables is much easier to investigate than using real people who might get hurt!</p>
+<p>Age range: 11-14 Apparatus required: •Action man •Small wooden artists’ model</p>
+<p>Moments Stat)lllty</p>
+</section>
+<section id="shopping-trolley" class="level4">
+<h4 class="anchored" data-anchor-id="shopping-trolley">6. Shopping trolley</h4>
+<p>This is an interesting example of everyday balancing. The trolleys are extremely stable and make a good example for the discussion of moments; the handles are almost directly above the back wheels. Have you ever tried to tip one up by pushing downwards on the back? Even if you put your full weight on the handles the trolley will not tip over. Even better if you can actually borrow one and bring it into the lab!</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment Apparatus required: •Shopping trolley!</p>
+</blockquote>
+</section>
+<section id="balances---wooden-coat-hangers" class="level4">
+<h4 class="anchored" data-anchor-id="balances---wooden-coat-hangers">7. Balances - wooden coat hangers</h4>
+<p>Wooden coat hangers make good simple balance arms. The hooks can be supported on a metal pivot and the design of the coat hanger gets the centre of mass of the system well below the pivot. Even wire ones will do if the masses that you are using for the balancing are not too great. They will probably need adjusting with a little plasticine first to get them to balance on their own.</p>
+<p>Age range: 11-13 Apparatus required: •Coat hangers - wire or wooden</p>
+</section>
+<section id="vectors-and-a-rope" class="level4">
+<h4 class="anchored" data-anchor-id="vectors-and-a-rope">8. Vectors and a rope</h4>
+<p>A very simple introduction to the importance of the directional nature of a force can be given by using a rope held horizontally and pulled tight by two strong pupils — one pulling on either end. Now a relatively weak pupil should try to push down on the centre of the rope — it is quite easy to move it down no matter how hard the other two pull.</p>
+<blockquote class="blockquote">
+<p>Initially it is quite easy to push the rope downwards because of the directions of all the forces. The men are pulling horizontally and when the rope is pushed down only a very small fraction of their ‘pull’ is trying to prevent the rope from going downwards.</p>
+</blockquote>
+<p>However, it gets harder and harder the further down the centre of the rope gets. This is because of the increased vertical component of the tension in the rope that must be counteracted by a larger downward force in the centre.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Downward force = 2TsinA where T is the tension in the rope and A is the angle that the rope makes with the horizontal. Say T = 200 N and A = 10<sup>0</sup>, i.e.&nbsp;a two metre rope pushed down in its centre by about 15 cm. This requires a downward force at the centre of only 34 N.</p>
+<p>This is best done outside on the grass to avoid injury if the ‘pullers’ fall over.</p>
+<p>Age range: 16 — 18</p>
+<p>Apparatus required: •Three students •About three metres of rope •Newton meter as an extension</p>
+</blockquote>
+<section id="mobiles-to-demonstrate-moments" class="level5">
+<h5 class="anchored" data-anchor-id="mobiles-to-demonstrate-moments">10. Mobiles to demonstrate moments</h5>
+<p>A lot of simple physics can be demonstrated with a child’s mobile. It is instructive to design one both by trial and error and also by working out the moments required at each level. The ones with the more massive hanging objects tend to be better because they are more stable.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Objects to construct a mobile •Cardboard •Balance ’Stiff wire •Thread</p>
+</blockquote>
+</section>
+</section>
+<section id="arm-muscles-and-levers" class="level4">
+<h4 class="anchored" data-anchor-id="arm-muscles-and-levers">11. Arm muscles and levers!</h4>
+<p>A study of the lifting of weights by your arm is a good example of levers. The muscles of the forearm have a much greater tension in them than the weight you are lifting if the forearm is held horizontally. Get one of the pupils to try this by first holding the weight near their shoulder and then slowly extending their arm — the torque (turning effect) gets greater.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>The moment of a couple or torque = Force x perpendicular distance between the line of action of the two forces</p>
+<p>Age range: 11-14</p>
+<p>Apparatus required: •Forearm and masses - up to 5 kg is useful •Model forearm if possible</p>
+</blockquote>
+</section>
+<section id="centre-of-gravity-of-a-pupil" class="level4">
+<h4 class="anchored" data-anchor-id="centre-of-gravity-of-a-pupil">12. Centre of gravity of a pupil</h4>
+<p>You can find the centre of gravity of a pupil by the following method using a strong wooden plank, some bathroom scales and a brick (or block of wood) the same height as the scales.</p>
+<p>lwornents btaolllty</p>
+<p>Put the plank down with one end on the block of wood or a brick and the other on the bathroom scales. Ask a pupil to lie on the plank with their heels over the pivot (brick). Record the reading of the scales. Take moments about the brick, having weighed the pupil first.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Reading on scales x distance of scales from pivot = Weight of pupil x distance of pupil’s centre of gravity from the pivot + Weight of plank x distance of centre of gravity of plank from the pivot. The weight of the plank can be ignored if you record the increase in the scale reading when the pupil lies down.</p>
+<p>Age range: 11-16</p>
+<p>Apparatus required: •Plank (2m long) •Bathroom scales •Metre rule •Brick or wood block</p>
+</blockquote>
+</section>
+<section id="bear-on-bike" class="level4">
+<h4 class="anchored" data-anchor-id="bear-on-bike">13. Bear on bike</h4>
+<p>There are many lovely toys that demonstrate why tight rope walkers puts out their arms to balance themselves or may even use a long pole. I have seen one of these in a toy shop in Venice. It was a model bear holding a balancing rod and riding a unicycle along a string. At either end of the rod were two wooden balls that dipped below the point where the wheel rested on the string, so that the centre of mass was below the point of balance. He moved quite easily along the string, being very well balanced by the rod.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-14 Apparatus required: •Bear on a unicycle or something similar •Taught string</p>
+</blockquote>
+</section>
+<section id="moments" class="level4">
+<h4 class="anchored" data-anchor-id="moments">14. Moments</h4>
+<p>A very simple demonstration of the effect of distance on the turning effect of a force can be demonstrated using a door. Get a small pupil to close the door by pushing with one finger placed near the outer edge of the door while the teacher pushes with all their force on one hand very close to the hinge! The effect of the distance of a force from the pivot is clear - the pupil usually manages to push the door closed!</p>
+<p>With older pupils, get one of them to push the door such that their arm is at an acute angle with the door. It is much harder to open or close it. This emphasises the importance of the words “perpendicular distance” in the definition of the moment of a force.</p>
+<p>Age range: 11-13 or 16-18 depending on treatment Apparatus required: •Pupil and door</p>
+</section>
+<section id="using-the-centre-of-gravity-to-find-the-mass-of-a-broom" class="level4">
+<h4 class="anchored" data-anchor-id="using-the-centre-of-gravity-to-find-the-mass-of-a-broom">15. Using the centre of gravity to find the mass of a broom</h4>
+<p>This simple experiment emphasises that it is not just the mass on either side of a balance point that determines whether an object will be balanced, but also how it is distributed.</p>
+<p>Hang up a broom by a string from roughly the centre of its handle so that the head will go down - the centre of mass of the broom being on the side nearest the broom head.</p>
+<p>Now, by loading the other end with masses (m) bring the broom into a horizontal position. Locate the centre of gravity of the broom by removing the masses and adjusting the position of the string so that the broom balances.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Force of weights x Distance of weights from pivot = Weight of broom x distance of centre of mass from pivot</p>
+<p>Age range: 13-15</p>
+<p>Apparatus required: •Retort stand and clamp •String •Broom •Slotted masses</p>
+</blockquote>
+</section>
+<section id="the-wooden-spoon" class="level4">
+<h4 class="anchored" data-anchor-id="the-wooden-spoon">16. The wooden spoon</h4>
+<p>Get a wooden spoon. Balance it on your finger to find the centre of mass. Mark this point and then cut the spoon into two pieces by cutting through the centre of mass. Fix a small piece of dowel rod so that the pieces can be joined together again. This makes a very instructive demonstration when you ask pupils which side of the spoon has the greatest mass — they invariably say that both pieces are the same since they balance at the centre of mass.</p>
+<p>Prove that they are not by measuring their mass with a balance.</p>
+<p>It is the moment of the forces on either side of the pivot that must balance so the ‘bowl’ of the spoon must be heavier than the handle because its centre of mass is closer to the pivot point on which the whole spoon was originally balanced.</p>
+<blockquote class="blockquote">
+<p>Thin dowel rod</p>
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Wooden spoon cut through its centre of mass and fitted with a dowel rod •Top pan balance</p>
+</blockquote>
+</section>
+<section id="rolling-up-hill" class="level4">
+<h4 class="anchored" data-anchor-id="rolling-up-hill">17. Rolling up hill</h4>
+<p>An interesting demonstration of the turning effect of a force is to make a tin roll up hill! Use a large, flattish cake or biscuit tin (one with a diameter of 30 cm and depth of 8 cm or so works well) and fix a hidden mass (such as a lump of plasticine) inside one rim and then show the pupils that the tin can rolls up hill. Of course you will start it so that the mass is slightly to the uphill side of the vertical, and the tin will only roll up hill until the mass reaches the lowest point - hence the advantage of a fairly large tin. See how long it takes them to spot what is going on without getting hold of the tin!</p>
+<p>An alternative method is to use two large discs cut from thick sheets of polystyrene. A depression is made near their rims and a lump of plasticine wedged in it. The two discs are then stuck together - the loaded section being invisible!</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on the treatment</p>
+<p>Apparatus required: •Plank to act as a ramp ’Large tin with lid and lump of plasticine •Polystyrene lwoments btaolllty</p>
+</blockquote>
+</section>
+<section id="moving-fingers-on-a-long-ruler" class="level4">
+<h4 class="anchored" data-anchor-id="moving-fingers-on-a-long-ruler">18. Moving fingers on a long ruler</h4>
+<p>This is a surprising demonstration of the effect of frictional forces and balancing. Balance a metre ruler or a broom handle on two fingers, the fingers being at different distances from the two ends. Then slide your fingers together - they always meet in the centre of the ruler as long as it is uniform - this is good for a discussion of moments.</p>
+<p>Of course, if the rod is not uniform, such as a snooker cue, the two fingers will meet at the centre of mass. (See the example about the polar bear on ice!) It may work better with two round pencils — one held in each hand.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>The greater the distance of a finger from the centre of mass of the ruler, the smaller the reaction on it, and so the smaller the frictional force. The ruler will then slide more easily over this finger than the other, which is nearer the centre of mass. This situation continues until they are at equal distances, when both fingers move together.</p>
+</blockquote>
+<p>Now try it with a 250g mass taped to one point of the ruler. This will move the centre of gravity of the ruler.</p>
+<blockquote class="blockquote">
+<p>Apparatus required: •Metre ruler or other long uniform rod <sup>o</sup>Two round pencils</p>
+</blockquote>
+</section>
+<section id="pile-of-leaning-blocks" class="level4">
+<h4 class="anchored" data-anchor-id="pile-of-leaning-blocks">19. Pile of leaning blocks!</h4>
+<p>This demonstration looks at stability. Take some rectangular blocks, dominoes are ideal, and pile one on top of the other, setting each domino a little off centre compared with the one below it. How many can you pile up, and where is the centre of mass of the whole stack?</p>
+<blockquote class="blockquote">
+<p>Theory</p>
+<p>A mathematical rule can be found to give the greatest overhang for a given number of blocks, each of length L. It can be shown that the N th block can have a maximum projection of L/(2N) relative to the block below. In other words the top, or first block can hang % its length over the second block, while the second block can hang % of its length over the third and so on. For a large number (N) of blocks the sum of the series is 0.5(0.5772 + In N).</p>
+<p>Age range: 11-18 depending on treatment</p>
+<p>Apparatus required: •A number of dominoes or other suitable blocks ’Ruler!</p>
+</blockquote>
+</section>
+<section id="interesting-balancing" class="level4">
+<h4 class="anchored" data-anchor-id="interesting-balancing">20. Interesting balancing</h4>
+<p>(a) Balance two beakers of water on a lever balance and then put your finger in one of them. What happens? Relate this to Archimedes and upthrust. You can do this by using one beaker and a top pan balance (see the section on Archimedes).</p>
+<ol start="2" type="a">
+<li>Put two pieces of taper in the end of a straw and, using a pin as a pivot, balance the arrangement. Now light the tapers - what happens? This can also be done with a candle which has been sharpened at top and bottom so that it can be lit at both ends while being pivoted in the middle. A fascinating rocking motion results.</li>
+</ol>
+<blockquote class="blockquote">
+<p>Age range: 11-14</p>
+<p>Apparatus required: •Balance •Beaker of water ’Taper ’Straw ’Candle oPin and cork ’Retort stand, boss and clamp</p>
+</blockquote>
+<section id="the-heavy-bottom-toy" class="level5">
+<h5 class="anchored" data-anchor-id="the-heavy-bottom-toy">The heavy bottom toy</h5>
+<blockquote class="blockquote">
+<p>This toy can be used to demonstrate stability. It has a low centre of gravity and will always return to the vertical position if displaced.</p>
+<p>Age range: 7-11</p>
+</blockquote>
+</section>
+<section id="moments-using-a-cd-and-magnets" class="level5">
+<h5 class="anchored" data-anchor-id="moments-using-a-cd-and-magnets">Moments using a CD and magnets</h5>
+<p>This is a delightfully simple way of demonstrating the law of moments and how the turning effect depends on the perpendicular distance from the pivot to the line of action of the force.</p>
+<p>Take a CD and fix a grid scale to it as shown in the diagram. You will then need four small button magnets. These should be fitted in pairs either side of the CD and equal distances from the centre. Mount the CD and magnets on a horizontal axle (such as a glass rod or pencil) so that it balances.</p>
+<p>Now move one of the pairs of magnets vertically downwards. Although the distance of the magnets from the axle has increased, the perpendicular distance from the axle to the line of action of the weight of the magnets is unchanged and the CD remains balanced.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-16</p>
+<p>Apparatus required: •CD •Paper grid •Four button magnets •Retort stand and boss •Rod</p>
+</blockquote>
+</section>
+<section id="the-rolling-spool" class="level5">
+<h5 class="anchored" data-anchor-id="the-rolling-spool">23. The rolling spool</h5>
+<p>Take a cardboard cable spool about 40 cm in diameter similar to that shown in the photographs and fix a length of string to the central shaft.</p>
+<p>First, set it up so that the string comes off the TOP of the shaft and try pulling the string. As you would expect you pull the spool towards you.</p>
+<p>Now arrange it so that the string comes off the BOTTOM of the shaft. It may surprise you to find that the spool still rolls towards you! In both the above cases the string must be pulled horizontally. The critical point is when the line of action of the force in the string passes through the line where the two sides of the spool touch the table.</p>
+<p>You may be able to prove this by considering moments about that point.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-19</p>
+<p>Apparatus required: •Cable spool •String •Adhesive tape</p>
+<p>(l am very grateful to Martin for the idea for this experiment.)</p>
+</blockquote>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Fluids.html" class="pagination-link" aria-label="Fluids">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fluids</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./MiscMechanics.html" class="pagination-link" aria-label="MiscMechanics">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2025, Joe Rowing</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jrowing">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/jrowing.com">
+      <i class="bi bi-megaphone" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.jrowing.com">
+      <i class="bi bi-file-earmark" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

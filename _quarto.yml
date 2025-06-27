@@ -44,7 +44,7 @@ book:
         - Capacitors.qmd
         - CurrentElectricity.qmd
         - Elasticity.qmd
-       - Electromagnetism.qmd
+        - Electromagnetism.qmd
     - part: "Fields"
       chapters: 
         - Electrostatics.qmd
