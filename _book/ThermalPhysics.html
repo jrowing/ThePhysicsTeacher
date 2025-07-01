@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>21&nbsp; ThermalPhysics – The Physics Teacher</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./optics.html" rel="next">
+<link href="./GasLaws.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-604c3d4c4a4e540f9ea15e4aba1a9bab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Physics Teacher</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://buymeacoffee.com/jrowing" target="_blank"> 
+<span class="menu-text">Buy Me a Coffee</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./The-Physics-Teacher.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./GasLaws.html">Thermal Physics</a></li><li class="breadcrumb-item"><a href="./ThermalPhysics.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introductions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liniver.com</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhyPhox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Phy-Phox: Physics Phone Experiments</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhET.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PhET Interactive Simulations: Bringing Physics to Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Basics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BasicPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Physics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WorkEnergyPower.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mechanics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CircularMotion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ForcesNewton.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Inertia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Inertia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Momentum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Momentum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fluids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fluids</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MiscMechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Earth and Beyond</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Astronomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Astronomy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Electricity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Capacitors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CurrentElectricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">CurrentElectricity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electromagnetism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Electromagnetism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fields</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electrostatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Electrostatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Gravity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Thermal Physics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GasLaws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GasLaws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ThermalPhysics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Waves &amp; Optics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./optics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./VibrationsWaves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">VibrationsWaves</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Nuclear &amp; Quantum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./NuclearPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NuclearPhysics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quanta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Quanta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Radioactivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Radioactivity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MoreResources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">MoreResources</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#basic-theory" id="toc-basic-theory" class="nav-link active" data-scroll-target="#basic-theory"><span class="header-section-number">21.1</span> Basic Theory</a>
+  <ul>
+  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts"><span class="header-section-number">21.1.1</span> Key Concepts</a></li>
+  <li><a href="#specific-heat-capacity" id="toc-specific-heat-capacity" class="nav-link" data-scroll-target="#specific-heat-capacity"><span class="header-section-number">21.1.2</span> Specific Heat Capacity</a></li>
+  <li><a href="#specific-latent-heat" id="toc-specific-latent-heat" class="nav-link" data-scroll-target="#specific-latent-heat"><span class="header-section-number">21.1.3</span> Specific Latent Heat</a>
+  <ul>
+  <li><a href="#a-latent-heat-of-fusion-meltingfreezing" id="toc-a-latent-heat-of-fusion-meltingfreezing" class="nav-link" data-scroll-target="#a-latent-heat-of-fusion-meltingfreezing">a) Latent heat of fusion (melting/freezing):</a></li>
+  <li><a href="#b-latent-heat-of-vaporisation-boilingcondensation" id="toc-b-latent-heat-of-vaporisation-boilingcondensation" class="nav-link" data-scroll-target="#b-latent-heat-of-vaporisation-boilingcondensation">b) Latent heat of vaporisation (boiling/condensation):</a></li>
+  </ul></li>
+  <li><a href="#methods-of-heat-transfer" id="toc-methods-of-heat-transfer" class="nav-link" data-scroll-target="#methods-of-heat-transfer"><span class="header-section-number">21.1.4</span> Methods of Heat Transfer</a>
+  <ul>
+  <li><a href="#a-conduction" id="toc-a-conduction" class="nav-link" data-scroll-target="#a-conduction">a) <strong>Conduction</strong></a></li>
+  <li><a href="#b-convection" id="toc-b-convection" class="nav-link" data-scroll-target="#b-convection">b) <strong>Convection</strong></a></li>
+  <li><a href="#c-radiation" id="toc-c-radiation" class="nav-link" data-scroll-target="#c-radiation">c) <strong>Radiation</strong></a></li>
+  </ul></li>
+  <li><a href="#ideal-gas-equation" id="toc-ideal-gas-equation" class="nav-link" data-scroll-target="#ideal-gas-equation"><span class="header-section-number">21.1.5</span> Ideal Gas Equation</a></li>
+  <li><a href="#kinetic-theory-of-gases" id="toc-kinetic-theory-of-gases" class="nav-link" data-scroll-target="#kinetic-theory-of-gases"><span class="header-section-number">21.1.6</span> Kinetic Theory of Gases</a></li>
+  <li><a href="#first-law-of-thermodynamics" id="toc-first-law-of-thermodynamics" class="nav-link" data-scroll-target="#first-law-of-thermodynamics"><span class="header-section-number">21.1.7</span> First Law of Thermodynamics</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">21.1.8</span> Summary Table</a></li>
+  </ul></li>
+  <li><a href="#stories-to-enritch" id="toc-stories-to-enritch" class="nav-link" data-scroll-target="#stories-to-enritch"><span class="header-section-number">21.2</span> Stories to enritch</a>
+  <ul>
+  <li><a href="#the-caloric-theory-and-its-fall" id="toc-the-caloric-theory-and-its-fall" class="nav-link" data-scroll-target="#the-caloric-theory-and-its-fall"><span class="header-section-number">21.2.1</span> The Caloric Theory and Its Fall</a></li>
+  <li><a href="#rumfords-cannon-boring-experiment" id="toc-rumfords-cannon-boring-experiment" class="nav-link" data-scroll-target="#rumfords-cannon-boring-experiment"><span class="header-section-number">21.2.2</span> Rumford’s Cannon-Boring Experiment</a></li>
+  <li><a href="#joules-mechanical-equivalent-of-heat" id="toc-joules-mechanical-equivalent-of-heat" class="nav-link" data-scroll-target="#joules-mechanical-equivalent-of-heat"><span class="header-section-number">21.2.3</span> Joule’s Mechanical Equivalent of Heat</a></li>
+  <li><a href="#the-discovery-of-absolute-zero" id="toc-the-discovery-of-absolute-zero" class="nav-link" data-scroll-target="#the-discovery-of-absolute-zero"><span class="header-section-number">21.2.4</span> The Discovery of Absolute Zero</a></li>
+  <li><a href="#carnots-heat-engine-and-efficiency" id="toc-carnots-heat-engine-and-efficiency" class="nav-link" data-scroll-target="#carnots-heat-engine-and-efficiency"><span class="header-section-number">21.2.5</span> Carnot’s Heat Engine and Efficiency</a></li>
+  <li><a href="#the-strange-behavior-of-superfluids" id="toc-the-strange-behavior-of-superfluids" class="nav-link" data-scroll-target="#the-strange-behavior-of-superfluids"><span class="header-section-number">21.2.6</span> The Strange Behavior of Superfluids</a></li>
+  <li><a href="#the-greenhouse-effect-and-climate-science" id="toc-the-greenhouse-effect-and-climate-science" class="nav-link" data-scroll-target="#the-greenhouse-effect-and-climate-science"><span class="header-section-number">21.2.7</span> The Greenhouse Effect and Climate Science</a></li>
+  <li><a href="#fouriers-heat-equation-and-heat-flow" id="toc-fouriers-heat-equation-and-heat-flow" class="nav-link" data-scroll-target="#fouriers-heat-equation-and-heat-flow"><span class="header-section-number">21.2.8</span> Fourier’s Heat Equation and Heat Flow</a></li>
+  <li><a href="#the-boltzmann-constant-and-statistical-mechanics" id="toc-the-boltzmann-constant-and-statistical-mechanics" class="nav-link" data-scroll-target="#the-boltzmann-constant-and-statistical-mechanics"><span class="header-section-number">21.2.9</span> The Boltzmann Constant and Statistical Mechanics</a></li>
+  <li><a href="#the-evolution-of-thermometers" id="toc-the-evolution-of-thermometers" class="nav-link" data-scroll-target="#the-evolution-of-thermometers"><span class="header-section-number">21.2.10</span> The Evolution of Thermometers</a></li>
+  </ul></li>
+  <li><a href="#practical-work-and-demos" id="toc-practical-work-and-demos" class="nav-link" data-scroll-target="#practical-work-and-demos"><span class="header-section-number">21.3</span> Practical work and Demos</a>
+  <ul>
+  <li><a href="#expansion-of-metal" id="toc-expansion-of-metal" class="nav-link" data-scroll-target="#expansion-of-metal"><span class="header-section-number">21.3.1</span> 1. Expansion of metal</a></li>
+  <li><a href="#jumping-metal-discs" id="toc-jumping-metal-discs" class="nav-link" data-scroll-target="#jumping-metal-discs"><span class="header-section-number">21.3.2</span> 2. Jumping metal discs</a></li>
+  <li><a href="#iron-rod-in-projector---expansion-of-metals" id="toc-iron-rod-in-projector---expansion-of-metals" class="nav-link" data-scroll-target="#iron-rod-in-projector---expansion-of-metals"><span class="header-section-number">21.3.3</span> 3. Iron rod in projector - expansion of metals</a></li>
+  <li><a href="#expansion-of-a-liquid" id="toc-expansion-of-a-liquid" class="nav-link" data-scroll-target="#expansion-of-a-liquid"><span class="header-section-number">21.3.4</span> 4. Expansion of a liquid</a></li>
+  <li><a href="#the-expansion-and-contraction-of-glass" id="toc-the-expansion-and-contraction-of-glass" class="nav-link" data-scroll-target="#the-expansion-and-contraction-of-glass"><span class="header-section-number">21.3.5</span> 5. The expansion and contraction of glass</a></li>
+  <li><a href="#bi-metallic-strip---heating-and-cooling" id="toc-bi-metallic-strip---heating-and-cooling" class="nav-link" data-scroll-target="#bi-metallic-strip---heating-and-cooling"><span class="header-section-number">21.3.6</span> 7. Bi-metallic strip - heating and cooling</a></li>
+  <li><a href="#interesting-temperatures" id="toc-interesting-temperatures" class="nav-link" data-scroll-target="#interesting-temperatures"><span class="header-section-number">21.3.7</span> 8. Interesting temperatures</a></li>
+  </ul></li>
+  <li><a href="#conduction-of-heat" id="toc-conduction-of-heat" class="nav-link" data-scroll-target="#conduction-of-heat"><span class="header-section-number">21.4</span> CONDUCTION OF HEAT</a>
+  <ul>
+  <li><a href="#espresso-coffeeor-beer---conduction-in-foam" id="toc-espresso-coffeeor-beer---conduction-in-foam" class="nav-link" data-scroll-target="#espresso-coffeeor-beer---conduction-in-foam"><span class="header-section-number">21.4.1</span> 1. Espresso coffee/or beer - conduction in foam</a></li>
+  <li><a href="#thermal-conductivity-of-water" id="toc-thermal-conductivity-of-water" class="nav-link" data-scroll-target="#thermal-conductivity-of-water"><span class="header-section-number">21.4.2</span> 3. Thermal conductivity of water</a></li>
+  <li><a href="#baked-alaska" id="toc-baked-alaska" class="nav-link" data-scroll-target="#baked-alaska"><span class="header-section-number">21.4.3</span> 4. Baked Alaska</a></li>
+  <li><a href="#thermochromic-paint-for-conductivity" id="toc-thermochromic-paint-for-conductivity" class="nav-link" data-scroll-target="#thermochromic-paint-for-conductivity"><span class="header-section-number">21.4.4</span> 5. Thermochromic paint for conductivity</a></li>
+  <li><a href="#line-of-pupils---conduction" id="toc-line-of-pupils---conduction" class="nav-link" data-scroll-target="#line-of-pupils---conduction"><span class="header-section-number">21.4.5</span> 6. Line of pupils - conduction</a>
+  <ul>
+  <li><a href="#conductivity-of-air" id="toc-conductivity-of-air" class="nav-link" data-scroll-target="#conductivity-of-air">7. Conductivity of air</a></li>
+  </ul></li>
+  <li><a href="#lifting-up-a-flame-and-copper-gauze-on-chip-pan---conduction-in-gauze" id="toc-lifting-up-a-flame-and-copper-gauze-on-chip-pan---conduction-in-gauze" class="nav-link" data-scroll-target="#lifting-up-a-flame-and-copper-gauze-on-chip-pan---conduction-in-gauze"><span class="header-section-number">21.4.6</span> 8. Lifting up a flame and copper gauze on chip pan - conduction in gauze</a>
+  <ul>
+  <li><a href="#insulation" id="toc-insulation" class="nav-link" data-scroll-target="#insulation">Insulation</a></li>
+  </ul></li>
+  <li><a href="#wooden-rod-and-copper-tube" id="toc-wooden-rod-and-copper-tube" class="nav-link" data-scroll-target="#wooden-rod-and-copper-tube"><span class="header-section-number">21.4.7</span> 10. Wooden rod and copper tube</a></li>
+  <li><a href="#melting-ice-cubes" id="toc-melting-ice-cubes" class="nav-link" data-scroll-target="#melting-ice-cubes"><span class="header-section-number">21.4.8</span> 12. Melting ice cubes</a></li>
+  <li><a href="#convection" id="toc-convection" class="nav-link" data-scroll-target="#convection"><span class="header-section-number">21.4.9</span> CONVECTION</a>
+  <ul>
+  <li><a href="#christmas-table-decoration" id="toc-christmas-table-decoration" class="nav-link" data-scroll-target="#christmas-table-decoration">1. Christmas table decoration</a></li>
+  <li><a href="#convection-a-cardboard-serpent" id="toc-convection-a-cardboard-serpent" class="nav-link" data-scroll-target="#convection-a-cardboard-serpent">Convection: a cardboard serpent</a></li>
+  <li><a href="#heat-loss-from-young-animals-the-effect-of-surface-area" id="toc-heat-loss-from-young-animals-the-effect-of-surface-area" class="nav-link" data-scroll-target="#heat-loss-from-young-animals-the-effect-of-surface-area">3. Heat loss from young animals: the effect of surface area</a>
+  <ul class="collapse">
+  <li><a href="#convection-in-a-flame" id="toc-convection-in-a-flame" class="nav-link" data-scroll-target="#convection-in-a-flame">4. Convection in a flame</a></li>
+  <li><a href="#convection-currents" id="toc-convection-currents" class="nav-link" data-scroll-target="#convection-currents">5. Convection currents</a></li>
+  <li><a href="#falling-candle" id="toc-falling-candle" class="nav-link" data-scroll-target="#falling-candle">6. Falling candle</a></li>
+  <li><a href="#convection-and-a-tea-bag" id="toc-convection-and-a-tea-bag" class="nav-link" data-scroll-target="#convection-and-a-tea-bag">9. Convection and a tea bag</a></li>
+  <li><a href="#a-lava-lamp" id="toc-a-lava-lamp" class="nav-link" data-scroll-target="#a-lava-lamp">10. A lava lamp</a></li>
+  <li><a href="#three-candles" id="toc-three-candles" class="nav-link" data-scroll-target="#three-candles">11. Three candles</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#heat-radiation" id="toc-heat-radiation" class="nav-link" data-scroll-target="#heat-radiation"><span class="header-section-number">21.4.10</span> HEAT RADIATION</a>
+  <ul>
+  <li><a href="#radiation---aluminium-tape" id="toc-radiation---aluminium-tape" class="nav-link" data-scroll-target="#radiation---aluminium-tape">1. Radiation - aluminium tape</a></li>
+  <li><a href="#infra-red-radiation---the-tvstereo-remote-controller" id="toc-infra-red-radiation---the-tvstereo-remote-controller" class="nav-link" data-scroll-target="#infra-red-radiation---the-tvstereo-remote-controller">2. Infra-red radiation - the TV(stereo remote controller</a>
+  <ul class="collapse">
+  <li><a href="#greenhouse-effect" id="toc-greenhouse-effect" class="nav-link" data-scroll-target="#greenhouse-effect">3. Greenhouse effect</a></li>
+  <li><a href="#thermoscope---radiation-detector" id="toc-thermoscope---radiation-detector" class="nav-link" data-scroll-target="#thermoscope---radiation-detector">5. Thermoscope - radiation detector</a></li>
+  </ul></li>
+  <li><a href="#radiation-and-thermometers" id="toc-radiation-and-thermometers" class="nav-link" data-scroll-target="#radiation-and-thermometers">6. Radiation and thermometers</a></li>
+  <li><a href="#absorption-of-radiation" id="toc-absorption-of-radiation" class="nav-link" data-scroll-target="#absorption-of-radiation">7. Absorption of radiation</a>
+  <ul class="collapse">
+  <li><a href="#heat-radiation-things-to-talk-about" id="toc-heat-radiation-things-to-talk-about" class="nav-link" data-scroll-target="#heat-radiation-things-to-talk-about">8. Heat radiation —things to talk about</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#heat-energy" id="toc-heat-energy" class="nav-link" data-scroll-target="#heat-energy"><span class="header-section-number">21.5</span> HEAT ENERGY</a>
+  <ul>
+  <li><a href="#power-of-a-bunsen-burner" id="toc-power-of-a-bunsen-burner" class="nav-link" data-scroll-target="#power-of-a-bunsen-burner"><span class="header-section-number">21.5.1</span> 1. Power of a Bunsen burner</a></li>
+  <li><a href="#the-most-effective-immersion-heater" id="toc-the-most-effective-immersion-heater" class="nav-link" data-scroll-target="#the-most-effective-immersion-heater"><span class="header-section-number">21.5.2</span> 3. The most effective immersion heater</a></li>
+  <li><a href="#heat-energy-in-a-flame" id="toc-heat-energy-in-a-flame" class="nav-link" data-scroll-target="#heat-energy-in-a-flame"><span class="header-section-number">21.5.3</span> 4. Heat energy in a flame</a></li>
+  <li><a href="#energy-in-a-candle" id="toc-energy-in-a-candle" class="nav-link" data-scroll-target="#energy-in-a-candle"><span class="header-section-number">21.5.4</span> 5. Energy in a candle</a></li>
+  <li><a href="#steamed-pudding-and-specific-heat-capacity" id="toc-steamed-pudding-and-specific-heat-capacity" class="nav-link" data-scroll-target="#steamed-pudding-and-specific-heat-capacity"><span class="header-section-number">21.5.5</span> 6. Steamed pudding and specific heat capacity!</a></li>
+  <li><a href="#latent-heat---kettle" id="toc-latent-heat---kettle" class="nav-link" data-scroll-target="#latent-heat---kettle"><span class="header-section-number">21.5.6</span> 7. Latent heat - kettle</a></li>
+  <li><a href="#milk-bottle-top-in-cold-weather" id="toc-milk-bottle-top-in-cold-weather" class="nav-link" data-scroll-target="#milk-bottle-top-in-cold-weather"><span class="header-section-number">21.5.7</span> 8. Milk bottle top in cold weather</a></li>
+  <li><a href="#floating-ice-cube" id="toc-floating-ice-cube" class="nav-link" data-scroll-target="#floating-ice-cube"><span class="header-section-number">21.5.8</span> 9. Floating ice cube</a></li>
+  <li><a href="#evaporation" id="toc-evaporation" class="nav-link" data-scroll-target="#evaporation"><span class="header-section-number">21.5.9</span> 10. Evaporation</a></li>
+  <li><a href="#regelation-and-the-ice-block" id="toc-regelation-and-the-ice-block" class="nav-link" data-scroll-target="#regelation-and-the-ice-block"><span class="header-section-number">21.5.10</span> Regelation and the ice block</a>
+  <ul>
+  <li><a href="#boiling-under-reduced-pressure---an-alternative-method" id="toc-boiling-under-reduced-pressure---an-alternative-method" class="nav-link" data-scroll-target="#boiling-under-reduced-pressure---an-alternative-method">13. Boiling under reduced pressure - an alternative method</a></li>
+  </ul></li>
+  <li><a href="#the-freezing-mixture" id="toc-the-freezing-mixture" class="nav-link" data-scroll-target="#the-freezing-mixture"><span class="header-section-number">21.5.11</span> 14. The freezing mixture</a>
+  <ul>
+  <li><a href="#volume-change-solid-to-gas" id="toc-volume-change-solid-to-gas" class="nav-link" data-scroll-target="#volume-change-solid-to-gas">Volume change solid to gas</a></li>
+  <li><a href="#change-of-volume-of-freezing-water---cast-iron-flask" id="toc-change-of-volume-of-freezing-water---cast-iron-flask" class="nav-link" data-scroll-target="#change-of-volume-of-freezing-water---cast-iron-flask">16. Change of volume of freezing water - cast iron flask</a></li>
+  <li><a href="#change-of-volume-of-melting-ice---burette" id="toc-change-of-volume-of-melting-ice---burette" class="nav-link" data-scroll-target="#change-of-volume-of-melting-ice---burette">17. Change of volume of melting ice - burette</a></li>
+  <li><a href="#a-home-made-air-cooling-system" id="toc-a-home-made-air-cooling-system" class="nav-link" data-scroll-target="#a-home-made-air-cooling-system">18. A home made air cooling system</a></li>
+  <li><a href="#fish-in-a-freezing-pond" id="toc-fish-in-a-freezing-pond" class="nav-link" data-scroll-target="#fish-in-a-freezing-pond">19. Fish in a freezing pond</a></li>
+  <li><a href="#lagging-and-heat-loss" id="toc-lagging-and-heat-loss" class="nav-link" data-scroll-target="#lagging-and-heat-loss">20. Lagging and heat loss</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#thermal-effects-and-molecules" id="toc-thermal-effects-and-molecules" class="nav-link" data-scroll-target="#thermal-effects-and-molecules"><span class="header-section-number">21.6</span> THERMAL EFFECTS AND MOLECULES</a>
+  <ul>
+  <li><a href="#brownian-motion-and-the-luminous-elephant" id="toc-brownian-motion-and-the-luminous-elephant" class="nav-link" data-scroll-target="#brownian-motion-and-the-luminous-elephant"><span class="header-section-number">21.6.1</span> 1. Brownian motion and the luminous elephant</a></li>
+  <li><a href="#diffusion-in-a-jelly" id="toc-diffusion-in-a-jelly" class="nav-link" data-scroll-target="#diffusion-in-a-jelly"><span class="header-section-number">21.6.2</span> 2. Diffusion in a jelly</a></li>
+  <li><a href="#random-walk" id="toc-random-walk" class="nav-link" data-scroll-target="#random-walk"><span class="header-section-number">21.6.3</span> 3. Random walk</a></li>
+  <li><a href="#porous-pot-and-diffusion" id="toc-porous-pot-and-diffusion" class="nav-link" data-scroll-target="#porous-pot-and-diffusion"><span class="header-section-number">21.6.4</span> 4. Porous pot and diffusion</a></li>
+  <li><a href="#kinetic-theory-directly" id="toc-kinetic-theory-directly" class="nav-link" data-scroll-target="#kinetic-theory-directly"><span class="header-section-number">21.6.5</span> 5. Kinetic theory directly</a></li>
+  <li><a href="#silent-kinetic-theory" id="toc-silent-kinetic-theory" class="nav-link" data-scroll-target="#silent-kinetic-theory"><span class="header-section-number">21.6.6</span> 6. Silent kinetic theory</a></li>
+  <li><a href="#mixing-alcohol-and-water" id="toc-mixing-alcohol-and-water" class="nav-link" data-scroll-target="#mixing-alcohol-and-water"><span class="header-section-number">21.6.7</span> 7. Mixing alcohol and water</a></li>
+  <li><a href="#a-simulated-damp-proof-course" id="toc-a-simulated-damp-proof-course" class="nav-link" data-scroll-target="#a-simulated-damp-proof-course"><span class="header-section-number">21.6.8</span> 9. A simulated damp proof course</a></li>
+  </ul></li>
+  <li><a href="#miscellaneous-heat" id="toc-miscellaneous-heat" class="nav-link" data-scroll-target="#miscellaneous-heat"><span class="header-section-number">21.7</span> MISCELLANEOUS HEAT</a>
+  <ul>
+  <li><a href="#at-what-temperature-does-paper-burn" id="toc-at-what-temperature-does-paper-burn" class="nav-link" data-scroll-target="#at-what-temperature-does-paper-burn"><span class="header-section-number">21.7.1</span> 1. At what temperature does paper burn</a></li>
+  <li><a href="#galileos-thermometer" id="toc-galileos-thermometer" class="nav-link" data-scroll-target="#galileos-thermometer"><span class="header-section-number">21.7.2</span> 2. Galileo’s thermometer</a></li>
+  <li><a href="#galileos-thermometer-again" id="toc-galileos-thermometer-again" class="nav-link" data-scroll-target="#galileos-thermometer-again"><span class="header-section-number">21.7.3</span> 3. Galileo’s thermometer again</a></li>
+  <li><a href="#heat-end-vibrations-iron-rod-on-solid-carbon-dioxide" id="toc-heat-end-vibrations-iron-rod-on-solid-carbon-dioxide" class="nav-link" data-scroll-target="#heat-end-vibrations-iron-rod-on-solid-carbon-dioxide"><span class="header-section-number">21.7.4</span> 4. Heat end vibrations — iron rod on solid carbon dioxide</a></li>
+  <li><a href="#boiling-water-in-a-paper-bag" id="toc-boiling-water-in-a-paper-bag" class="nav-link" data-scroll-target="#boiling-water-in-a-paper-bag"><span class="header-section-number">21.7.5</span> 5. Boiling water in a paper bag</a></li>
+  <li><a href="#effect-of-heat-on-a-rubber-band" id="toc-effect-of-heat-on-a-rubber-band" class="nav-link" data-scroll-target="#effect-of-heat-on-a-rubber-band"><span class="header-section-number">21.7.6</span> 6. Effect of heat on a rubber band</a>
+  <ul>
+  <li><a href="#clouds-in-a-bell-jar" id="toc-clouds-in-a-bell-jar" class="nav-link" data-scroll-target="#clouds-in-a-bell-jar">Clouds in a bell jar</a></li>
+  </ul></li>
+  <li><a href="#red-noses---thermal-effects" id="toc-red-noses---thermal-effects" class="nav-link" data-scroll-target="#red-noses---thermal-effects"><span class="header-section-number">21.7.7</span> 8. Red noses - thermal effects</a></li>
+  <li><a href="#stretching-a-cooled-elastic-band" id="toc-stretching-a-cooled-elastic-band" class="nav-link" data-scroll-target="#stretching-a-cooled-elastic-band"><span class="header-section-number">21.7.8</span> 9. Stretching a cooled elastic band</a></li>
+  <li><a href="#silt-meter" id="toc-silt-meter" class="nav-link" data-scroll-target="#silt-meter"><span class="header-section-number">21.7.9</span> 10. Silt meter</a></li>
+  <li><a href="#elephants-ears-and-cooling" id="toc-elephants-ears-and-cooling" class="nav-link" data-scroll-target="#elephants-ears-and-cooling"><span class="header-section-number">21.7.10</span> 11. Elephants’ ears and cooling</a></li>
+  <li><a href="#polystyrene" id="toc-polystyrene" class="nav-link" data-scroll-target="#polystyrene"><span class="header-section-number">21.7.11</span> 12. Polystyrene</a></li>
+  <li><a href="#entropy-increase" id="toc-entropy-increase" class="nav-link" data-scroll-target="#entropy-increase"><span class="header-section-number">21.7.12</span> 13. Entropy increase</a></li>
+  <li><a href="#absolute-zero" id="toc-absolute-zero" class="nav-link" data-scroll-target="#absolute-zero"><span class="header-section-number">21.7.13</span> 14. Absolute zero</a></li>
+  <li><a href="#a-good-huddle" id="toc-a-good-huddle" class="nav-link" data-scroll-target="#a-good-huddle"><span class="header-section-number">21.7.14</span> 15. A good huddle</a></li>
+  <li><a href="#mechanical-energy---heat-energy-conversion" id="toc-mechanical-energy---heat-energy-conversion" class="nav-link" data-scroll-target="#mechanical-energy---heat-energy-conversion"><span class="header-section-number">21.7.15</span> 16. Mechanical energy - Heat energy conversion</a></li>
+  <li><a href="#hot-air-balloon---candle" id="toc-hot-air-balloon---candle" class="nav-link" data-scroll-target="#hot-air-balloon---candle"><span class="header-section-number">21.7.16</span> 17. Hot air balloon - candle</a></li>
+  <li><a href="#floating-bubbles" id="toc-floating-bubbles" class="nav-link" data-scroll-target="#floating-bubbles"><span class="header-section-number">21.7.17</span> 18. Floating bubbles</a></li>
+  <li><a href="#dipping-bird" id="toc-dipping-bird" class="nav-link" data-scroll-target="#dipping-bird"><span class="header-section-number">21.7.18</span> 19. Dipping bird</a></li>
+  <li><a href="#heat-sensitive-mat---liquid-crystals" id="toc-heat-sensitive-mat---liquid-crystals" class="nav-link" data-scroll-target="#heat-sensitive-mat---liquid-crystals"><span class="header-section-number">21.7.19</span> 20. Heat-sensitive mat - liquid crystals</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./GasLaws.html">Thermal Physics</a></li><li class="breadcrumb-item"><a href="./ThermalPhysics.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="basic-theory" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="basic-theory"><span class="header-section-number">21.1</span> Basic Theory</h2>
+<section id="key-concepts" class="level3" data-number="21.1.1">
+<h3 data-number="21.1.1" class="anchored" data-anchor-id="key-concepts"><span class="header-section-number">21.1.1</span> Key Concepts</h3>
+<ul>
+<li><strong>Internal Energy (</strong><span class="math inline">\(U\)</span>): Total of kinetic and potential energy of particles in a system.</li>
+<li><strong>Thermal Energy:</strong> Energy due to random motion of particles; part of internal energy.</li>
+<li><strong>Heat (</strong><span class="math inline">\(Q\)</span>): Energy transferred due to temperature difference.</li>
+<li><strong>Temperature (</strong><span class="math inline">\(T\)</span>): A measure of average kinetic energy of particles.</li>
+</ul>
+</section>
+<section id="specific-heat-capacity" class="level3" data-number="21.1.2">
+<h3 data-number="21.1.2" class="anchored" data-anchor-id="specific-heat-capacity"><span class="header-section-number">21.1.2</span> Specific Heat Capacity</h3>
+<p>Amount of energy required to raise the temperature of 1 kg of a substance by 1°C (or 1 K).</p>
+<p><span class="math display">\[
+Q = mc\Delta T
+\]</span></p>
+<p>Where: - <span class="math inline">\(Q\)</span> = thermal energy transferred (J) - <span class="math inline">\(m\)</span> = mass (kg) - <span class="math inline">\(c\)</span> = specific heat capacity (J/kg·K) - <span class="math inline">\(\Delta T\)</span> = change in temperature (K or °C)</p>
+</section>
+<section id="specific-latent-heat" class="level3" data-number="21.1.3">
+<h3 data-number="21.1.3" class="anchored" data-anchor-id="specific-latent-heat"><span class="header-section-number">21.1.3</span> Specific Latent Heat</h3>
+<p>Amount of energy required to change the state of 1 kg of a substance without a change in temperature.</p>
+<section id="a-latent-heat-of-fusion-meltingfreezing" class="level4">
+<h4 class="anchored" data-anchor-id="a-latent-heat-of-fusion-meltingfreezing">a) Latent heat of fusion (melting/freezing):</h4>
+<p><span class="math display">\[
+Q = mL_f
+\]</span></p>
+</section>
+<section id="b-latent-heat-of-vaporisation-boilingcondensation" class="level4">
+<h4 class="anchored" data-anchor-id="b-latent-heat-of-vaporisation-boilingcondensation">b) Latent heat of vaporisation (boiling/condensation):</h4>
+<p><span class="math display">\[
+Q = mL_v
+\]</span></p>
+<p>Where: - <span class="math inline">\(L_f\)</span> or <span class="math inline">\(L_v\)</span> = specific latent heat (J/kg)</p>
+</section>
+</section>
+<section id="methods-of-heat-transfer" class="level3" data-number="21.1.4">
+<h3 data-number="21.1.4" class="anchored" data-anchor-id="methods-of-heat-transfer"><span class="header-section-number">21.1.4</span> Methods of Heat Transfer</h3>
+<section id="a-conduction" class="level4">
+<h4 class="anchored" data-anchor-id="a-conduction">a) <strong>Conduction</strong></h4>
+<ul>
+<li>Transfer through collisions of particles in solids.</li>
+<li>Thermal conductivity (<span class="math inline">\(k\)</span>) determines rate of transfer: <span class="math display">\[
+\frac{Q}{t} = \frac{kA\Delta T}{d}
+\]</span> Where <span class="math inline">\(A\)</span> = area, <span class="math inline">\(d\)</span> = thickness</li>
+</ul>
+</section>
+<section id="b-convection" class="level4">
+<h4 class="anchored" data-anchor-id="b-convection">b) <strong>Convection</strong></h4>
+<ul>
+<li>Transfer through fluid motion (liquids/gases).</li>
+<li>Warmer, less dense regions rise; cooler, denser regions sink.</li>
+</ul>
+</section>
+<section id="c-radiation" class="level4">
+<h4 class="anchored" data-anchor-id="c-radiation">c) <strong>Radiation</strong></h4>
+<ul>
+<li>Transfer via electromagnetic waves (usually infrared).</li>
+<li>No medium required.</li>
+</ul>
+<p><strong>Stefan-Boltzmann Law</strong> (for blackbody radiation): <span class="math display">\[
+P = \sigma A T^4
+\]</span> Where: - <span class="math inline">\(P\)</span> = power radiated (W) - <span class="math inline">\(\sigma\)</span> = Stefan-Boltzmann constant - <span class="math inline">\(T\)</span> = absolute temperature (K)</p>
+</section>
+</section>
+<section id="ideal-gas-equation" class="level3" data-number="21.1.5">
+<h3 data-number="21.1.5" class="anchored" data-anchor-id="ideal-gas-equation"><span class="header-section-number">21.1.5</span> Ideal Gas Equation</h3>
+<p>Relates pressure, volume and temperature of an ideal gas:</p>
+<p><span class="math display">\[
+pV = nRT
+\]</span></p>
+<p>Where: - <span class="math inline">\(p\)</span> = pressure (Pa) - <span class="math inline">\(V\)</span> = volume (m³) - <span class="math inline">\(n\)</span> = number of moles - <span class="math inline">\(R\)</span> = gas constant (<span class="math inline">\(8.31\,\text{J/mol·K}\)</span>) - <span class="math inline">\(T\)</span> = absolute temperature (K)</p>
+</section>
+<section id="kinetic-theory-of-gases" class="level3" data-number="21.1.6">
+<h3 data-number="21.1.6" class="anchored" data-anchor-id="kinetic-theory-of-gases"><span class="header-section-number">21.1.6</span> Kinetic Theory of Gases</h3>
+<ul>
+<li>Gas pressure arises from particles colliding with container walls.</li>
+<li>Average kinetic energy of a particle: <span class="math display">\[
+\langle E_k \rangle = \frac{3}{2} k T
+\]</span> Where <span class="math inline">\(k\)</span> = Boltzmann constant (<span class="math inline">\(1.38 \times 10^{-23}\,\text{J/K}\)</span>)</li>
+</ul>
+</section>
+<section id="first-law-of-thermodynamics" class="level3" data-number="21.1.7">
+<h3 data-number="21.1.7" class="anchored" data-anchor-id="first-law-of-thermodynamics"><span class="header-section-number">21.1.7</span> First Law of Thermodynamics</h3>
+<p>Conservation of energy in thermal systems:</p>
+<p><span class="math display">\[
+\Delta U = Q - W
+\]</span></p>
+<p>Where: - <span class="math inline">\(\Delta U\)</span> = change in internal energy - <span class="math inline">\(Q\)</span> = heat added to the system - <span class="math inline">\(W\)</span> = work done <strong>by</strong> the system</p>
+</section>
+<section id="summary-table" class="level3" data-number="21.1.8">
+<h3 data-number="21.1.8" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">21.1.8</span> Summary Table</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 53%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Formula</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Heat (temp. change)</td>
+<td><span class="math inline">\(Q = mc\Delta T\)</span></td>
+<td>J</td>
+</tr>
+<tr class="even">
+<td>Heat (state change)</td>
+<td><span class="math inline">\(Q = mL\)</span></td>
+<td>J</td>
+</tr>
+<tr class="odd">
+<td>Ideal Gas Law</td>
+<td><span class="math inline">\(pV = nRT\)</span></td>
+<td>Pa·m³</td>
+</tr>
+<tr class="even">
+<td>Avg. kinetic energy</td>
+<td><span class="math inline">\(\langle E_k \rangle = \frac{3}{2}kT\)</span></td>
+<td>J</td>
+</tr>
+<tr class="odd">
+<td>1st Law of Thermodynamics</td>
+<td><span class="math inline">\(\Delta U = Q - W\)</span></td>
+<td>J</td>
+</tr>
+<tr class="even">
+<td>Stefan–Boltzmann Law</td>
+<td><span class="math inline">\(P = \sigma A T^4\)</span></td>
+<td>W</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="stories-to-enritch" class="level2" data-number="21.2">
+<h2 data-number="21.2" class="anchored" data-anchor-id="stories-to-enritch"><span class="header-section-number">21.2</span> Stories to enritch</h2>
+<section id="the-caloric-theory-and-its-fall" class="level3" data-number="21.2.1">
+<h3 data-number="21.2.1" class="anchored" data-anchor-id="the-caloric-theory-and-its-fall"><span class="header-section-number">21.2.1</span> The Caloric Theory and Its Fall</h3>
+<p>In the 18th century, scientists believed in a fluid called “caloric” that flowed from hot to cold objects. This explained heat transfer but couldn’t explain certain phenomena, like why friction produces endless heat. Eventually, the caloric theory was replaced by the kinetic theory, marking a major scientific shift.</p>
+<p>Reflection: How do scientific theories evolve when new evidence challenges old ideas?</p>
+</section>
+<section id="rumfords-cannon-boring-experiment" class="level3" data-number="21.2.2">
+<h3 data-number="21.2.2" class="anchored" data-anchor-id="rumfords-cannon-boring-experiment"><span class="header-section-number">21.2.2</span> Rumford’s Cannon-Boring Experiment</h3>
+<p>Benjamin Thompson (Count Rumford) noticed endless heat was generated while boring cannons, despite no loss of material. He argued heat wasn’t a fluid but caused by particle motion, hinting at the kinetic theory of heat. His work helped debunk the caloric theory.</p>
+<p>Reflection: How did practical observation lead to new ideas about heat?</p>
+</section>
+<section id="joules-mechanical-equivalent-of-heat" class="level3" data-number="21.2.3">
+<h3 data-number="21.2.3" class="anchored" data-anchor-id="joules-mechanical-equivalent-of-heat"><span class="header-section-number">21.2.3</span> Joule’s Mechanical Equivalent of Heat</h3>
+<p>James Joule measured how much mechanical work was needed to produce a certain amount of heat. His precise experiments showed heat and work are interchangeable forms of energy, helping to establish the first law of thermodynamics. He quantified the relationship between mechanical energy and heat.</p>
+<p>Reflection: Why is it important that energy is conserved across different forms?</p>
+</section>
+<section id="the-discovery-of-absolute-zero" class="level3" data-number="21.2.4">
+<h3 data-number="21.2.4" class="anchored" data-anchor-id="the-discovery-of-absolute-zero"><span class="header-section-number">21.2.4</span> The Discovery of Absolute Zero</h3>
+<p>Scientists noticed gases shrink as temperature decreases and theorized a lowest possible temperature where particles stop moving—absolute zero (0 K). This concept set a fundamental limit in thermal physics and inspired new temperature scales. Absolute zero marks the point of minimum thermal energy.</p>
+<p>Reflection: What does it mean for particles to have zero thermal motion?</p>
+</section>
+<section id="carnots-heat-engine-and-efficiency" class="level3" data-number="21.2.5">
+<h3 data-number="21.2.5" class="anchored" data-anchor-id="carnots-heat-engine-and-efficiency"><span class="header-section-number">21.2.5</span> Carnot’s Heat Engine and Efficiency</h3>
+<p>Sadi Carnot imagined an idealized heat engine operating between two temperatures. His work laid the foundation for thermodynamics by defining maximum possible efficiency and the concept of entropy. This transformed heat engines and industrial power.</p>
+<p>Reflection: How does understanding heat flow help us design better engines?</p>
+</section>
+<section id="the-strange-behavior-of-superfluids" class="level3" data-number="21.2.6">
+<h3 data-number="21.2.6" class="anchored" data-anchor-id="the-strange-behavior-of-superfluids"><span class="header-section-number">21.2.6</span> The Strange Behavior of Superfluids</h3>
+<p>At extremely low temperatures, helium behaves as a superfluid with zero viscosity, flowing without resistance. This discovery challenged classical ideas of fluids and opened new research into quantum thermal effects. Superfluids blur the line between classical and quantum thermal physics.</p>
+<p>Reflection: What surprises arise when matter is cooled to near absolute zero?</p>
+</section>
+<section id="the-greenhouse-effect-and-climate-science" class="level3" data-number="21.2.7">
+<h3 data-number="21.2.7" class="anchored" data-anchor-id="the-greenhouse-effect-and-climate-science"><span class="header-section-number">21.2.7</span> The Greenhouse Effect and Climate Science</h3>
+<p>Scientists discovered that certain gases trap heat radiated from Earth’s surface, warming the planet—key to understanding climate change. Thermal physics principles explain how energy transfer in the atmosphere controls temperature. This links thermal physics to global environmental issues.</p>
+<p>Reflection: How does heat transfer affect our planet’s climate?</p>
+</section>
+<section id="fouriers-heat-equation-and-heat-flow" class="level3" data-number="21.2.8">
+<h3 data-number="21.2.8" class="anchored" data-anchor-id="fouriers-heat-equation-and-heat-flow"><span class="header-section-number">21.2.8</span> Fourier’s Heat Equation and Heat Flow</h3>
+<p>Jean-Baptiste Fourier developed mathematical descriptions of heat conduction, showing how temperature changes spread through materials. His equation is fundamental to understanding thermal energy transfer in solids. Mathematics made heat predictable and calculable.</p>
+<p>Reflection: Why is modeling heat flow important in engineering and nature?</p>
+</section>
+<section id="the-boltzmann-constant-and-statistical-mechanics" class="level3" data-number="21.2.9">
+<h3 data-number="21.2.9" class="anchored" data-anchor-id="the-boltzmann-constant-and-statistical-mechanics"><span class="header-section-number">21.2.9</span> The Boltzmann Constant and Statistical Mechanics</h3>
+<p>Ludwig Boltzmann connected temperature to the statistical behavior of particles. His work underpins how microscopic motions translate into macroscopic thermal properties like temperature and pressure. He bridged particle physics with classical thermodynamics.</p>
+<p>Reflection: How do countless tiny particles create the thermal world we observe?</p>
+</section>
+<section id="the-evolution-of-thermometers" class="level3" data-number="21.2.10">
+<h3 data-number="21.2.10" class="anchored" data-anchor-id="the-evolution-of-thermometers"><span class="header-section-number">21.2.10</span> The Evolution of Thermometers</h3>
+<p>From mercury to digital sensors, the quest to measure temperature precisely has driven innovation. Early thermometers were crude, but advances allowed accurate measurement crucial to science, medicine, and daily life. Temperature measurement shapes our understanding of heat.</p>
+<p>Reflection: How does measuring thermal energy help us make better decisions?</p>
+</section>
+</section>
+<section id="practical-work-and-demos" class="level2" data-number="21.3">
+<h2 data-number="21.3" class="anchored" data-anchor-id="practical-work-and-demos"><span class="header-section-number">21.3</span> Practical work and Demos</h2>
+<p>EXPANSION OF SOLIDS AND LIQUIDS</p>
+<blockquote class="blockquote">
+<p>General theory for this section</p>
+<p>When a material gets hot it expands this is because the molecules in it are moving about more vigorously and so need more room.</p>
+<p>As a solid is heated the molecules vibrate more violently and the solid expands in all directions. The longer it was to start with and the greater the temperature rise the more the solid expands. Different materials expand by different amounts for the same rise in temperature. The amount of expansion depends on:</p>
+</blockquote>
+<ol type="a">
+<li><p>what material it is</p></li>
+<li><p>how big the temperature rise is</p></li>
+<li><p>how long it was to start with</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>All liquids expand more than all solids. The volume of the liquid gets greater as it is heated. The greater the rise in temperature the more it expands. The actual change in shape of the liquid depends on the shape of the container that it is in.</p>
+</blockquote>
+<section id="expansion-of-metal" class="level3" data-number="21.3.1">
+<h3 data-number="21.3.1" class="anchored" data-anchor-id="expansion-of-metal"><span class="header-section-number">21.3.1</span> 1. Expansion of metal</h3>
+<p>Hold a long strip of aluminium cooking foil horizontally and tightly between two clamps. Heat it from beneath with some candles - significant sag can be produced. (Compare this with the hot wire ammeter.)</p>
+<p>A thought-provoking question is the washer problem. If you take a metal washer and heat it, does the hole in the centre get bigger or smaller? It gets larger, since all parts of the metal expand, but those parts nearest the centre expand least.</p>
+<p>Uses and effects of the expansion of solids:</p>
+<p>rivets, telephone wires, railway lines, buildings, bridges, clock pendulums, tarmac-filled gaps in concrete motorways.</p>
+<blockquote class="blockquote">
+<p>Apparatus required:</p>
+<p>•Two retort stands, bosses and clamps ’Candles or Bunsens ’Strips of aluminium foil</p>
+</blockquote>
+</section>
+<section id="jumping-metal-discs" class="level3" data-number="21.3.2">
+<h3 data-number="21.3.2" class="anchored" data-anchor-id="jumping-metal-discs"><span class="header-section-number">21.3.2</span> 2. Jumping metal discs</h3>
+<p>Bimetallic discs can be purchased from a number of firms advertising on the internet. If you press the silvery back convex face it clicks so that this face becomes the inner or concave face. This configuration is unstable and it returns to the original shape. However, if the disc is warmed by rubbing it between your fingers or putting it in hot water it will remain stable in the new shape for a while. If it is now left on a flat surface it flexes and jumps in the air as it cooled down. The discs are bimetallic in structure — one face being nickel and the other stainless steel. Age range: 11-18 Apparatus required: Bimetallic discs solids liquids</p>
+</section>
+<section id="iron-rod-in-projector---expansion-of-metals" class="level3" data-number="21.3.3">
+<h3 data-number="21.3.3" class="anchored" data-anchor-id="iron-rod-in-projector---expansion-of-metals"><span class="header-section-number">21.3.3</span> 3. Iron rod in projector - expansion of metals</h3>
+<p>A very simple way to demonstrate the expansion of metals is to put a steel rod in a projector beam (brass or copper will do as well, of course). A rod of about 50 cm in length and with a diameter of about 0.75 cm works well although the size is not critical. You will need the old type of projector, and the end of the rod should be placed where the slide carrier was. The projector is switched on so that it projects a magnified shadow of the rod on to a screen a few metres away. Make a mark on the screen at the end of the shadow. Heat the rod, and watch it expand by observing the movement of the end of the shadow.</p>
+<blockquote class="blockquote">
+<p>Ensure that the end of the rod being heated in the Bunsen flame is to one side of the slide carrier to avoid damaging the projector body or shattering of the lenses.</p>
+</blockquote>
+<p>This can be used as a simple demonstration or, if more detail is needed, measurements can be made of the magnification of the projector (width of shadow/width of rod) and a guess made at the average temperature rise of the rod to give the coefficient of linear expansion of the metal. Also show that when the rod cools down it will return to its original length - make sure nobody knocks into the bench!</p>
+<p>Steel rod Shadow of rod</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Expansion of a metal bar of length L heated by 0 <sup>o</sup>c = Lao where u is the coefficient of linear expansion of the metal (about 10 <sup>5&nbsp;o</sup>c <sup>I</sup> for most metals)</p>
+<p>Age range: 11-13 or 16 with measurements and calculations</p>
+<p>Apparatus required: •Projector •Metal rod •Retort stand and clamp ’Ruler</p>
+<p>•Bunsen</p>
+</blockquote>
+</section>
+<section id="expansion-of-a-liquid" class="level3" data-number="21.3.4">
+<h3 data-number="21.3.4" class="anchored" data-anchor-id="expansion-of-a-liquid"><span class="header-section-number">21.3.4</span> 4. Expansion of a liquid</h3>
+<p>Take a round-bottomed flask and fill it to the brim with coloured water. Take a 1-2 m long piece of capillary tubing, push one end into a rubber bung and push the bung into the top of the flask. Observe the expansion of the liquid when the flask is heated. If you watch carefully it is interesting to see that initially the level of the liquid falls. The glass expands first, but since it is a bad conductor of heat it takes a while for the heat to pass through to the liquid, raise its temperature and so cause it to expand.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Round-bottomed flask and bung with hole •Capillary tubing</p>
+<p>’Bung ’Bunsen <sup>o</sup> Tripod •Retort stand, boss and clamp ’Heat-resistant mat</p>
+</blockquote>
+</section>
+<section id="the-expansion-and-contraction-of-glass" class="level3" data-number="21.3.5">
+<h3 data-number="21.3.5" class="anchored" data-anchor-id="the-expansion-and-contraction-of-glass"><span class="header-section-number">21.3.5</span> 5. The expansion and contraction of glass</h3>
+<p>In a desert the temperature at night falls rapidly as the sun goes down — the outside of the rocks cool, and since the inside is still warm (and large) the outer layers attempt to contract but are prevented from doing so by the inner part of the rock beneath them and so flake off. This can be shown by experiments with hot glass and cold water.</p>
+<ol type="a">
+<li><p>Heat a glass rod in a Bunsen flame, and then plunge it into a beaker of cold water the glass shatters</p></li>
+<li><p>Heat a glass marble in a Bunsen flame using a pair of tongs and then drop it into a beaker of cold water — the marble shatters. It falls below the water surface before shattering!</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Use safety screens to protect both teacher and pupils. The teacher should also wear goggles, and use a leather glove to hold the glass rod. The shattered glass should be disposed of carefully.</p>
+<p>Age range: 11-14</p>
+<p>Apparatus: •Glass rod •Beaker of cold water •Safety screen and goggles •Marbles •Tongs •Bunsen</p>
+</blockquote>
+<p><u>6.</u></p>
+<p><u>Expansion</u></p>
+<p><u>of</u></p>
+<p><u>a</u></p>
+<p><u>solid</u></p>
+<p><u>rod</u></p>
+<p>Use half a drinking straw to make a pointer. Set up the apparatus as shown above with the scale behind the pointer. Record the position of the end of the straw pointer against the scale. Heat the rod with the Bunsen burner and observe what happens to the pointer. Record the position of the pointer on your scale after a few minutes heating.</p>
+<p>By the movement of the pointer you can see that the rod has expanded.</p>
+<p>To get a rough idea of how much it has expanded you will need to find out the circumference of your needle and measure the amount of rotation. The diameter of the needle will probably be about 3mm, but you will have to measure it.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-14</p>
+<p>Apparatus required: •Metal rod (one from a retort stand would be suitable) •Scissors <sup>o</sup> lkg mass</p>
+<p>•Bunsen burner and two heat-resistant mats ’Retort stand, boss and clamp <sup>O</sup> G clamp •Needle •Straw</p>
+<p>•Wood block •Piece of card for making a scale •Protractor •Micrometer screw gauge</p>
+</blockquote>
+<p>solids liquids</p>
+</section>
+<section id="bi-metallic-strip---heating-and-cooling" class="level3" data-number="21.3.6">
+<h3 data-number="21.3.6" class="anchored" data-anchor-id="bi-metallic-strip---heating-and-cooling"><span class="header-section-number">21.3.6</span> 7. Bi-metallic strip - heating and cooling</h3>
+<p>A bi-metallic strip made of two metals welded together is an excellent way of demonstrating the different coefficients of thermal expansion of different metals. It will bend when heated with the metal that expands the most (brass in the case of a brass-iron strip) on the outside of the curve. An alternative demonstration with the bi-metallic strip is to put it in a fridge (or in a cooling mixture of ice and water). The strip will bend with the brass layer on the inside, showing that brass also contracts more than iron. Point out that it is the change of temperaturethat matters.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: <sup>0</sup> Bi-metallic strip in holder or a pair of tongs</p>
+<p>•Bunsen</p>
+</blockquote>
+</section>
+<section id="interesting-temperatures" class="level3" data-number="21.3.7">
+<h3 data-number="21.3.7" class="anchored" data-anchor-id="interesting-temperatures"><span class="header-section-number">21.3.7</span> 8. Interesting temperatures</h3>
+<p>The diagram shows some interesting temperatures from absolute zero at -273 <sup>o</sup>c to 6000 <sup>o</sup>c — the temperature of the surface of the Sun.A useful exercise with younger pupils would be to make a large map of the world and mark on the hottest and coldest temperatures at different places.</p>
+<blockquote class="blockquote">
+<p>Theory note:</p>
+<p>!Absolute zero is —273.15<sup>0</sup>C. This is the coldest that it is possible to get. It is the temperature at which all molecular motion stops — the entropy reaches its minimum value. The temperature scale starting at absolute zero is called the Kelvin scale of temperature. O<sup>O</sup>C = 273 K, 100<sup>0</sup>C = 373 K.</p>
+<p>Age range: 7-18</p>
+</blockquote>
+</section>
+</section>
+<section id="conduction-of-heat" class="level2" data-number="21.4">
+<h2 data-number="21.4" class="anchored" data-anchor-id="conduction-of-heat"><span class="header-section-number">21.4</span> CONDUCTION OF HEAT</h2>
+<p>General theory for this section:</p>
+<p>Hot</p>
+<p>energy</p>
+<p>molecular</p>
+<blockquote class="blockquote">
+<p>Conduction occurs by the transfer of energy through a material by the collisions of molecules. In metals conduction is further increased by the free electrons carrying energy from places of high temperature to those at a lower temperature.</p>
+<p>Atom (or molecule)</p>
+</blockquote>
+<section id="espresso-coffeeor-beer---conduction-in-foam" class="level3" data-number="21.4.1">
+<h3 data-number="21.4.1" class="anchored" data-anchor-id="espresso-coffeeor-beer---conduction-in-foam"><span class="header-section-number">21.4.1</span> 1. Espresso coffee/or beer - conduction in foam</h3>
+<p>My wife and I were sitting on Waterloo station about to drink a cup of really frothy espresso coffee when she looked at the foam on the top and said, “l suppose that helps to keep it hot!”</p>
+<p>Indeed, the thick layer of foam on a cup of espresso coffee helps to insulate the liquid below it! There is a considerable amount of air in the foam, which makes an insulating blanket.</p>
+<p>An extension of this would be to investigate the cooling of the same mass of frothy coffee and non-frothy coffee - both starting from the same initial temperature in the same sized beakers.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Frothy coffee •Non-frothy coffee! •Beakers •Thermometers</p>
+</blockquote>
+<p><u>2.</u></p>
+<p><u>Sweaters</u></p>
+<p>As</p>
+<p>a</p>
+<p>demonstration</p>
+<p>to</p>
+<p>put</p>
+<p>pullovers,</p>
+<p>more</p>
+<p>You</p>
+<p>could</p>
+<p>the</p>
+<p>layers</p>
+<p>Age</p>
+<p>range:</p>
+<p>Apparatus</p>
+<p>•..-unuucuutl neat</p>
+</section>
+<section id="thermal-conductivity-of-water" class="level3" data-number="21.4.2">
+<h3 data-number="21.4.2" class="anchored" data-anchor-id="thermal-conductivity-of-water"><span class="header-section-number">21.4.2</span> 3. Thermal conductivity of water</h3>
+<p>The poor thermal conductivity of water can be shown by putting a piece of ice in the bottom of a test tube and holding it in place with a piece of copper gauze wedged above it in the tube. Fill the rest of the test tube with water and heat it at the top until it boils. Due to the poor conductivity of water the ice at the bottom remains solid even though the water is boiling at</p>
+<p>Age range: 11-13 &gt; &gt; Apparatus required: ’Piece of ice ’Test tube •Water •Bunsen ’Tongs •Heat resistant mat •Metal gauze</p>
+</section>
+<section id="baked-alaska" class="level3" data-number="21.4.3">
+<h3 data-number="21.4.3" class="anchored" data-anchor-id="baked-alaska"><span class="header-section-number">21.4.3</span> 4. Baked Alaska</h3>
+<p>This tasty dessert shows the insulation effects of the air within the meringue. As the meringue cooks the air pockets within it form an insulating blanket and the ice cream within it does not get hot enough to melt as long as the cooking is fairly rapid.</p>
+</section>
+<section id="thermochromic-paint-for-conductivity" class="level3" data-number="21.4.4">
+<h3 data-number="21.4.4" class="anchored" data-anchor-id="thermochromic-paint-for-conductivity"><span class="header-section-number">21.4.4</span> 5. Thermochromic paint for conductivity</h3>
+<p>This specialist paint can be used to paint different metal rods in a variation of the simple conductivity experiment. In the simple experiment two rods of different metals are held in a Bunsen flame and their conductivity is compared by the pupils seeing which one they have to put down first before it gets too hot. This one has the highest thermal conductivity. To avoid burns simply paint the rods with the thermochromic paint, hold them in a non-conducting (wooden) clamp, and watch the change in colour of the paint.</p>
+<blockquote class="blockquote">
+<p>Show pupils how to deal with minor burns by using running cold water for a few minutes.</p>
+</blockquote>
+<p>Another version is to use heat sensitive paper. The paper will turn blue as it gets hot. Place a piece of the heat sensitive paper on a tripod; the rods from the earlier experiment can then simply be rested on it while their other ends are heated with a roaring Bunsen flame. The rateat which the paper in contact with the rods turns blue gives a good comparison of their thermal conductivity.</p>
+<p>Age range: 11-13 &gt; &gt; Apparatus required: •Conductivity rods kit (rods of brass, aluminium, copper, iron, zinc and glass) &gt; &gt; •Bunsen •Tripod •Heat-resistant mats (2) •Thermochromic paint •Heat sensitive paper</p>
+</section>
+<section id="line-of-pupils---conduction" class="level3" data-number="21.4.5">
+<h3 data-number="21.4.5" class="anchored" data-anchor-id="line-of-pupils---conduction"><span class="header-section-number">21.4.5</span> 6. Line of pupils - conduction</h3>
+<p>This analogy shows conduction along a solid rod. The transfer of energy occurs by the vibration of molecules. Each molecule stays where it is and simply vibrates - it is the energy that is transferred down the rod. Ask the pupils to stand in a line and link arms. Then shake the line at one end. The vibration of the pupil at the end is transmitted along the line until the one at the other end is moving. Don’t shake them so hard that they fall over! This simple demonstration refers to a non-metal solid. The ingenious teacher might be able to devise a way of showing conduction in a metal where much of the energy transfer is due to free electrons. If you are really brave take the group of pupils to the gym or sports hall and get them to kick a large number of footballs about — not recommended in the Physics laboratory!</p>
+<p>Conduction of heat</p>
+<section id="conductivity-of-air" class="level4">
+<h4 class="anchored" data-anchor-id="conductivity-of-air">7. Conductivity of air</h4>
+<p>Hold your hands carefully on either side of a roaring Bunsen flame - you feel virtually no heat since the transfer of heat from the flame to your hands in this position is only due to the conduction of heat through the air. This demonstrates very simply that air is a very poor conductor of heat. It feels much hotter if they are held above the flame, showing the principles of convection - air expands when it is heated, its density goes down and so the hot air rises!</p>
+<blockquote class="blockquote">
+<p>Candle flames may be less hazardous. Show pupils how to deal with minor burns by using running cold water for a few minutes.</p>
+</blockquote>
+<p>Age range: 11-13 Apparatus required: ’Bunsen or candle •Heat resistant</p>
+</section>
+</section>
+<section id="lifting-up-a-flame-and-copper-gauze-on-chip-pan---conduction-in-gauze" class="level3" data-number="21.4.6">
+<h3 data-number="21.4.6" class="anchored" data-anchor-id="lifting-up-a-flame-and-copper-gauze-on-chip-pan---conduction-in-gauze"><span class="header-section-number">21.4.6</span> 8. Lifting up a flame and copper gauze on chip pan - conduction in gauze</h3>
+<p>This experiment clearly shows the high thermal conductivity of copper and also the need for gas to be at a sufficiently high temperature before it will burn. Light a Bunsen and hold a piece of copper gauze over the outlet and resting on top of the Bunsen tube - the flame burns through it. Then gently lift the gauze - the flame comes up with it, burning above the gauze and leaving an area of un-burnt cooler gases below it. The heat is conducted away from the gauze and into your hands, leaving the gases below the gauze too cold to catch fire. As long as you don’t hold on too long you can support the gauze with your hands.</p>
+<p>It</p>
+<p>is</p>
+<p>a</p>
+<p>very</p>
+<p>good</p>
+<p>demonstration</p>
+<p>of</p>
+<p>how</p>
+<p>the</p>
+<p>traditional</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Bunsen or candle •Piece of copper gauze ’Heat resistant mat</p>
+</blockquote>
+<section id="insulation" class="level4">
+<h4 class="anchored" data-anchor-id="insulation">Insulation</h4>
+<p>The insulating properties of asbestos are described in a nineteenth-century Physics textbook written in French by Ganot in 1850. Apparently, by using a layer of asbestos in their hands men could “lift red-hot iron balls without inconvenience”! Clearly they did not know of the dangers of asbestos then.</p>
+<p>Heat resistant tiles — Apollo 10</p>
+<blockquote class="blockquote">
+<p>Conduction of heat</p>
+</blockquote>
+</section>
+</section>
+<section id="wooden-rod-and-copper-tube" class="level3" data-number="21.4.7">
+<h3 data-number="21.4.7" class="anchored" data-anchor-id="wooden-rod-and-copper-tube"><span class="header-section-number">21.4.7</span> 10. Wooden rod and copper tube</h3>
+<p>This is a very good demonstration of differing thermal conductivities. The apparatus consists of a copper tube, one end of which fits tightly round a wooden rod. A piece of paper is wrapped tightly around the join of the wood and the copper, and the paper over the join is heated gently in a Bunsen using a clear blue flame. The rod should be rotated during heating to stop the paper catching fire. The paper will blacken over the poorly conducting wood while staying undamaged over the better conducting copper.</p>
+<p>A very good comparison between the conductivities of two materials can be made by wa Iking in bare feet on a carpet and then on a tiled floor. Although both are at the same temperature it feels colder on the tiled floor since the tiles are a better conductor than the carpet and so heat energy is transferred from your feet to the floor.</p>
+<p>Age range: 11-13 Apparatus required: •Bunsen •Heat resistant mat •Composite wood/copper rod</p>
+<blockquote class="blockquote">
+<p><u>11. Good and bad conductors of heat energy</u> Good conductors:</p>
+</blockquote>
+<p>Copper Heating appliances, boilers, fire tubes in steam engines, tip of soldering iron Aluminium Cooking utensils</p>
+<p>Iron/Steel Shaped into fins to give a large surface area for cooling in air-cooled engines</p>
+</section>
+<section id="melting-ice-cubes" class="level3" data-number="21.4.8">
+<h3 data-number="21.4.8" class="anchored" data-anchor-id="melting-ice-cubes"><span class="header-section-number">21.4.8</span> 12. Melting ice cubes</h3>
+<p>Take two tiles of identical dimensions, one metal and one wood, both painted matt black to look the same and both at room temperature. Get a student to come out and touch both tiles and say which feels colder (the metal one). Don’t let them hold the tile. Now take two ice cubes of the same size, and put one on each tile, inside a rubber ring to catch the drips. Ask the students which will melt more rapidly. The ice cube on the metal tile melts extraordinarily fast - almost all gone in about a minute.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>The metal is the better conductor; hence it feels colder but conducts heat from the surroundings to the ice cube, so melting it faster.</p>
+</blockquote>
+<p>Age range: 11-16 Apparatus required: • Two matt black painted tiles •Two ice cubes</p>
+</section>
+<section id="convection" class="level3" data-number="21.4.9">
+<h3 data-number="21.4.9" class="anchored" data-anchor-id="convection"><span class="header-section-number">21.4.9</span> CONVECTION</h3>
+<p>General theory for this section</p>
+<p>This section deals with convection currents in fluid. These may be either liquids or gases.</p>
+<p>Most people remember the phrase <sup>I</sup>l-lot air rises’, but why does it?</p>
+<p>Convection currents occur because a fluid expands when it is heated. This expansion reduces its density so the low-density fluid will rise through that of higher density. Convection is therefore caused by the movement of the more energetic molecules from one place to another.</p>
+<section id="christmas-table-decoration" class="level4">
+<h4 class="anchored" data-anchor-id="christmas-table-decoration">1. Christmas table decoration</h4>
+<p>This uses a lovely wooden table decoration that is widely available. Around the base is a set of candles and at the top is a wooden rotor with a series of large angled blades. The rotor is fixed to a rotor to which figures and animals are attached. Hot air rising from the set of candles turns the rotor that rotates the whole display. Would it work in a gravity-free environment?</p>
+<p>Apparatus required: •Table decoration and candles ’Matches</p>
+</section>
+<section id="convection-a-cardboard-serpent" class="level4">
+<h4 class="anchored" data-anchor-id="convection-a-cardboard-serpent">Convection: a cardboard serpent</h4>
+<p>Cut a paper, card or foil snake-like coil and suspend it by a thread above a light bulb. The rising hot air will rotate the coil giving a simple but effective demonstration of convection in a gas. Heat energy expands the air, thus lowering its density; this lower density air then rises. Age range: 11 -14</p>
+<p>Apparatus required: •Paper serpent <sup>o</sup>Thread ’Stand •Light bulb in a holder ocard.</p>
+<p>(l have found that a circle of card about 5 cm across cut into a spiral works well if you cut it into a spiral with arms about 1.5 wide leaving a disc In the middle to attach the thread.)</p>
+</section>
+<section id="heat-loss-from-young-animals-the-effect-of-surface-area" class="level4">
+<h4 class="anchored" data-anchor-id="heat-loss-from-young-animals-the-effect-of-surface-area">3. Heat loss from young animals: the effect of surface area</h4>
+<p>We used to estimate the surface area of a small mammal by wrapping it in a paper tube maybe not suitable these days but we can still compare the surface area to mass ratio for young and old animals. You can extend this to the calculation of surface area to mass ratio. For example a !sphere has the smallest surface area to mass ratio for a given volume.</p>
+<p>A set of wooden blocks can be made into a tall thin person or a short fat one - the tall thin one has the greatest surface area and would therefore lose heat most rapidly from the surface. The surface area of a pupil can be found approximately by wrapping them in sheets of newspaper,</p>
+<p>Try boiling some potatoes and measuring how rapidly they cool, some being cut into small pieces. The smaller ones have the greatest surface mass ratio and so cool the quickest.</p>
+<blockquote class="blockquote">
+<p>convection</p>
+</blockquote>
+<section id="convection-in-a-flame" class="level5">
+<h5 class="anchored" data-anchor-id="convection-in-a-flame">4. Convection in a flame</h5>
+<p>The convection currents in a flame can be seen by casting a shadow of it on a screen. Candles and a Bunsen with a blue non-roaring flame work well if you use a projector to show the movement of the low density air above the flame.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-16</p>
+<p>Apparatus required: •Bunsen •Heat-resistant mat •Projector.</p>
+</blockquote>
+</section>
+<section id="convection-currents" class="level5">
+<h5 class="anchored" data-anchor-id="convection-currents">5. Convection currents</h5>
+<p>Convection currents in liquids can be easily shown with potassium permanganate crystals in water. You can do this in a beaker of water or use the special rectangular test tube available from the manufacturers.</p>
+<p>Simply drop some crystals into the water near to one side of the beaker, They will fall to the bottom, but if the beaker is now heated at the base on the opposite side the colour will be drawn across and rise up that side.</p>
+<p>If you use the rectangular tube, drop a few crystals in the top and then heat one bottom corner. The crystals dissolve and the colour moves round the tube, showing the convection currents in the water. ‘Catching’ the moving colour by moving the Bunsen enables you to change its direction.</p>
+<p>A suspension of aluminium paint in water is an alternative technique and more long-lasting, because with the potassium permanganate the water simply turns pink after a while and no convection can be observed.</p>
+<blockquote class="blockquote">
+<p>Potassium manganate (VII) is harmful, and skin contact should be avoided. The solution is low hazard.</p>
+<p>Age range: 11 -14</p>
+<p>Apparatus required: •Beaker or rectangular test tube •Bunsen •Potassium permanganate crystals •Heat-resistant mat.</p>
+</blockquote>
+</section>
+<section id="falling-candle" class="level5">
+<h5 class="anchored" data-anchor-id="falling-candle">6. Falling candle</h5>
+<p>This intriguing demonstration shows what happens when the effects of convection are ‘cancelled out’. A candle is fitted to the inside base of a tin; the candle is now lit, and the tin is dropped. The tin should be big enough to provide enough oxygen, but the flame still goes out.</p>
+<blockquote class="blockquote">
+<p>Theory: Since the can and candle are in free fall, one of the conditions for convection does not apply - that is, although the hot waste gases in the candle flame have expanded they do not rise away from the flame since they and the flame are both falling. This means that there is no convection in the can. The candle therefore tries to burn in its own waste products and fails. Helen Sharman tells of how she had to sleep in a draught from a fan in the Russian spacecraft so that she didn’t suffocate in her own exhaled breath. Michael Foale had a similar experience in Mir.</p>
+<p>Age range: 11-14</p>
+<p>Apparatus required: ‘Tin can •Candle •Matches ’Protection for the floor (a piece of old carpet) Convection <u>7. Convection in the high chimney and the double chimney</u> (a) This experiment shows the effect of convection in a high chimney. Use a tall metal tube to show the convection currents in a chimney. (l use a piece of metal pipe about 1.5 m long and some 10 cm in diameter.) A Bunsen burner (or a candle) should be placed at the bottom of the chimney and if small pieces of paper are introduced into the flame they will be shot out of the top of the chimney by the rising air currents. It always reminds me of when I put our first Christmas tree on to the fire in our flat at the bottom of a four storey block! The convection currents were enormous, and it ’went up like a torch’ - not to be recommended! (b) Another nice demonstration uses the commercially available double chimney - simply a glass-fronted box with two glass chimneys in the top with a candle below one of them. If the candle is lit convection is created; hot air rises out of one side and draws cold air in at the other. A smouldering taper held over the chimney without the candle will show the smoke being drawn down into that side and ejected at the other by the hot air currents.</p>
+</blockquote>
+<p>A further variation of this is to put a candle on the bench, light it and lower a large glass tube (0.5 m long and at least 5 cm in diameter) down over the candle so that it touches the bench. The candle soon goes out due to lack of oxygen. Repeat the experiment, but this time lower a metal plate down the centre of the tube so that it hangs over the candle flame. The flame stays alight; hot gases escape up one side of the plate and fresh air is drawn down the other.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-14</p>
+<p>Apparatus required: •Metal chimney •Retort stand, boss and clamp •Double chimney apparatus •Candles •Bunsen •Matches.</p>
+</blockquote>
+<section id="convection-in-the-home" class="level6">
+<h6 class="anchored" data-anchor-id="convection-in-the-home">8. Convection in the home</h6>
+<p>The following list gives you some idea of where convection is important in the home: Cooking in hot water</p>
+<p>Christmas decorations —a candle under a mobile</p>
+<p>Convector heater — hot air rises through the heater</p>
+<p>Central heating boiler</p>
+<p>Immersion heater at the bottom of a hot water tank</p>
+<p>Kettle with the element at the bottom</p>
+<p>Cold air convecting off the outside of windows</p>
+<p>Air movement in cavity walls before putting foam insulation in Radiators — they work by air convection and not by radiation</p>
+<p>Chimney to an open fire or a boiler</p>
+<p>Chest freezer — it does not matter too much if you open the top for a little while because the colder air will sink to the bottom of the freezer.</p>
+<blockquote class="blockquote">
+<p>Convection</p>
+</blockquote>
+</section>
+</section>
+<section id="convection-and-a-tea-bag" class="level5">
+<h5 class="anchored" data-anchor-id="convection-and-a-tea-bag">9. Convection and a tea bag</h5>
+<p>This is a fun experiment to demonstrate convection especially if you use the EIO note! Take a rectangular tea bag, cut off the end with the string, unfold it, and remove the tea. Shape the bag into a cylinder and stand it on a sheet of paper on the bench (a heat resistant mat underneath the paper is not really necessary but might be a good idea the first time you try this).</p>
+<p>Set light to the top of the bag and wait.</p>
+<p>The flame will burn downwards, sending a fine stream of ash into the air. As the flame nears the paper the tea bag continues burning, but by this time the upward convection current is sufficient to draw the last remnants of the bag upwards and they simply float away, leaving the ! paper untouched.</p>
+<p>Replacing the sheet of paper with a EIO note makes the demonstration even more exciting but if you do so it is at your own risk!</p>
+<blockquote class="blockquote">
+<p>Age range: 11- Adult</p>
+<p>Apparatus needed: ’Tea bag •Matches •Heat resistant mat ’Sheet of paper ’EIO note — OPTIONAL!</p>
+</blockquote>
+</section>
+<section id="a-lava-lamp" class="level5">
+<h5 class="anchored" data-anchor-id="a-lava-lamp">10. A lava lamp</h5>
+<p>This is a commercial lamp. As it warms up the material in the liquid rises and falls, showing beautiful convection currents as its density changes. Thus is rather like Galileo’s thermometer in some ways. (See Density, Upthrust and Archimedes, experiment 9.)</p>
+<blockquote class="blockquote">
+<p>Apparatus required: •Lava lamp</p>
+</blockquote>
+</section>
+<section id="three-candles" class="level5">
+<h5 class="anchored" data-anchor-id="three-candles">11. Three candles</h5>
+<p>Set up the three candles on a beehive shelf over water. The candles should be of significantly different lengths.</p>
+<p>Light all three candles, cover them with a large beaker, and wait to see which goes out first.</p>
+<p>.</p>
+<blockquote class="blockquote">
+<p>Theory</p>
+<p>Although the emitted carbon dioxide is heavier than air when it is at the same temperature it is also hotter in this experiment and so convection currents take it to the top of the beaker so putting out the tallest candle first.</p>
+<p>Age range: 11-14</p>
+<p>Apparatus required: <sup>o</sup> Three candles •Beehive shelf •Dish •Large beaker •Matches</p>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="heat-radiation" class="level3" data-number="21.4.10">
+<h3 data-number="21.4.10" class="anchored" data-anchor-id="heat-radiation"><span class="header-section-number">21.4.10</span> HEAT RADIATION</h3>
+<blockquote class="blockquote">
+<p>General theory for this section:</p>
+<p>The range of infra-red radiation is from roughly 750 nm to 10 000 nm (7.5x10-7 m to 10-5 m or one hundredth of a millimetre). Long wave heat radiation will not pass through glass. Hot metal objects will start to glow when they reach a temperature of around 500 <sup>0</sup>C.</p>
+<p>Black surfaces emit and absorb heat radiation better than shiny white ones. Shiny surfaces are the best reflectors.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Distribution of energy Ex</p>
+</blockquote>
+<ol type="1">
+<li><p>Radiation - aluminium tape</p></li>
+<li><p>TV and stereo remote controller</p></li>
+<li><p>Greenhouse effect</p></li>
+<li><p>Crookes <sup>t</sup> Radiometer</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>5, Thermoscope - radiation detector!</p>
+<p>6, Radiation and thermometers</p>
+</blockquote>
+<ol start="7" type="1">
+<li><p>Absorption of radiation</p></li>
+<li><p>Heat radiation</p></li>
+</ol>
+<p>500 1000 wavelength (X) nm</p>
+<section id="radiation---aluminium-tape" class="level4">
+<h4 class="anchored" data-anchor-id="radiation---aluminium-tape">1. Radiation - aluminium tape</h4>
+<p>Take a 1 m length of aluminium tape, a strip of aluminium foil will do, and blacken both sides of it except for a length of 5 cm in the centre. Pass a current through it - you will probably need up to 8A. Although initially the blackened sections will give off some smoke this is just due to the soot. Eventually the shiny section will become red hot and melt - showing that it does not radiate so well and so its temperature rises.</p>
+<blockquote class="blockquote">
+<p>Demonstration only. Do not allow the pupils to do this.</p>
+</blockquote>
+<p>Age range: 11-13 Apparatus required: •Low voltage power supply •Clamps and crocodile clips</p>
+<blockquote class="blockquote">
+<p>•Long strip of aluminium foil blackened with soot</p>
+</blockquote>
+</section>
+<section id="infra-red-radiation---the-tvstereo-remote-controller" class="level4">
+<h4 class="anchored" data-anchor-id="infra-red-radiation---the-tvstereo-remote-controller">2. Infra-red radiation - the TV(stereo remote controller</h4>
+<p>In the TV remote control device we have an ideal focused beam of infra red radiation, This can be used to study:</p>
+<ol type="a">
+<li><p>the absorption of infra red by glass and plastic!</p></li>
+<li><p>the reflection of infra red from flat and rough surfaces</p></li>
+<li><p>the diffraction of infra red through a narrow slit — it is left for the reader to decide what would be a “narrow slit” for infra red radiation! The best detector that I know for infr-red is a small TV camera. Connect the camera to a colour TV receiver and point the TV remote controller towards it, focussing the camera to give a clear image on the screen. Now press any of the buttons on the remote controller. Although you cannot see any radiation emitted by the controller the camera will pick up the infrared and a bright flash will appear on the TV screen! My eighteen-year-old students have queried the colour of this light!</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Age range: 15-18</p>
+<p>Apparatus required:</p>
+<p>•TV remote controller •Glass ’Plastic •Metal sheet ’Narrow slit ’TV camera and television!</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Heat radiation</p>
+</blockquote>
+<section id="greenhouse-effect" class="level5">
+<h5 class="anchored" data-anchor-id="greenhouse-effect">3. Greenhouse effect</h5>
+<p>For this simulation you need a clear plastic sandwich box, two thermometers and a sunny day. Place one thermometer in the box and the other in the sun on the ground outside it, preferably sheltered from draughts. Leave them for an hour and observe the effects on the thermometers. (The rise in temperature is partly due to the inability of the trapped air to escape by convection.)</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>The greenhouse effect occurs because the radiation emitted by the Sun (with a surface temperature of 6000 <sup>0</sup>C) has a spread of wavelengths which peak in intensity at around 500 nm, and this radiation can penetrate clouds of methane, water vapour, carbon dioxide, nitrous oxide and CFCs in the atmosphere. However, when the solar radiation falls on the ground it only raises its temperature to around 20 <sup>0</sup>C. The radiation emitted from an object at this temperature has a peak of around 12 mm (12000 nm) and this longer wavelength cannot penetrate the gaseous clouds, or in this case the plastic. The air below therefore heats up!</p>
+<p>Age range: 10-16</p>
+<p>Apparatus required: •Sandwich box •Two thermometers.</p>
+<p>(You might need a radiant heater if there is no Sun)</p>
+</blockquote>
+<p>####Crookes<sup>t</sup> Radiometer</p>
+<p>This is an excellent piece of apparatus for demonstrating that dull black surfaces absorb heat radiation better than shiny ones. The glass bulb is filled with low pressure air and as radiation falls on the vanes the black surfaces absorb more radiation than the silvered ones, the air near them heats up expands and so pushes the vanes round.</p>
+<p>Try placing a sheet of glass or a beaker of water between the heat source (a small electric fire, candle, light bulb or Bunsen burner) and the radiometer and investigate the effect of these materials on the transmitted infra-red radiation.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Crookes’ radiometer ’Heat source •Glass •Beaker of water</p>
+</blockquote>
+</section>
+<section id="thermoscope---radiation-detector" class="level5">
+<h5 class="anchored" data-anchor-id="thermoscope---radiation-detector">5. Thermoscope - radiation detector</h5>
+<p>This is made from two glass bulbs - round flasks will do - joined by glass and rubber tubing and partly filled with water. One flask is blackened, the other is silvered with aluminium paint, and a lamp is placed in between them. Due to the different amounts of absorption of radiation by the two flasks one gains more heat energy than the other, the vapour pressure inside the black one increases more rapidly and water moves along the glass tube from the black to the shiny bulb. You used to be able to buy them with ether inside, and this works much better because of the volatile nature of ether, but it is not safe to make one up in the lab because thexethylene (ether) is extremely flammable, its heavy vapour spreads rapidly and may be ignited by a flame or spark some distance away.</p>
+<p>radiation</p>
+</section>
+</section>
+<section id="radiation-and-thermometers" class="level4">
+<h4 class="anchored" data-anchor-id="radiation-and-thermometers">6. Radiation and thermometers</h4>
+<p>The different amount of absorption of heat radiation by different surfaces can be studied using the following simple experiment. Take two thermometers, blacken the bulb of one of them with soot or black paint and then place them both in boiling water. When the temperatures of both has reached 100 <sup>o</sup>c (or as near as possible depending on the boiling point of water that day) take them out quickly and fix them in clamps in the air. Observe the rate of cooling. The blackened one will cool much more rapidly, showing that black surfaces emit heat better than shiny ones. The absorption of heat by black surfaces is very obvious when walking round a swimming pool on tiles. The darker-coloured ones absorb more heat energy from the Sun and so get hotter - they can be too hot to step on in bare feet!!</p>
+<blockquote class="blockquote">
+<p>Age range: 11-16 Apparatus required:</p>
+<p><sup>o</sup>Two thermometers - one blackened with soot or black paint •Retort stands, bosses and clamps</p>
+<p>•Boiling water</p>
+</blockquote>
+</section>
+<section id="absorption-of-radiation" class="level4">
+<h4 class="anchored" data-anchor-id="absorption-of-radiation">7. Absorption of radiation</h4>
+<p>This experiment shows that different coloured surfaces absorb heat radiation at different rates.</p>
+<p>Take four equal sized plastic beakers, and fill them with the same amount of coffee (liquid) but of different concentrations from very strong to very weak. Allow them to reach room temperature and then put them out in the Sun. (Use an infra red heater if it is a cloudy day!)</p>
+<p>Use a thermometer to record the rise in temperature of each beaker as time passes. The very concentrated (darker) solution should rise in temperature faster than the weaker one.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-16</p>
+<p>Apparatus required: •Coffee ’Plastic beakers •Thermometer Infra red lamp (optional)</p>
+</blockquote>
+<section id="heat-radiation-things-to-talk-about" class="level5">
+<h5 class="anchored" data-anchor-id="heat-radiation-things-to-talk-about">8. Heat radiation —things to talk about</h5>
+<ol type="1">
+<li>Radiators in houses are actually convector heaters. They do not actually radiate very well; but they ought to be painted black.</li>
+</ol>
+<blockquote class="blockquote">
+<p>Car radiators usually are a dark colour so that they can get rid of the heat efficiently.</p>
+</blockquote>
+<ol start="2" type="1">
+<li><p>Aluminium foil is sometimes put behind radiators to reflect the heat out into the room.</p></li>
+<li><p>A vacuum flask has shiny surfaces on the vacuum side to prevent heat loss.</p></li>
+<li><p>White clothes are worn in summer as they reflect the heat better than dark ones.</p></li>
+<li><p>The reflector behind an electric fire should be kept clean so that it will reflect the heat well.</p></li>
+<li><p>Spacecraft have shiny surfaces to reflect the radiation from the Sun.</p></li>
+<li><p>Highly polished teapots will keep hot longer as their surfaces do not give out heat so well.</p></li>
+<li><p>White-washed buildings will keep cooler in hot weather than darker ones.</p></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+<section id="heat-energy" class="level2" data-number="21.5">
+<h2 data-number="21.5" class="anchored" data-anchor-id="heat-energy"><span class="header-section-number">21.5</span> HEAT ENERGY</h2>
+<p>General theory for this section:</p>
+<blockquote class="blockquote">
+<p>When heat energy is applied to an object its temperature rises.</p>
+<p>Heat energy = mass (m) x specific heat capacity (c) x change in temperature (9)</p>
+<p>(Energy is in joules, mass is in kg, temperature in <sup>o</sup>c and specific heat capacity in Jkg <sup>IO</sup>C <sup>1</sup>) When a substance changes its state, energy is needed to do this.</p>
+<p>Specific latent heat of vaporisation (heat needed to change 1 kg of the liquid into vapour)</p>
+<p>Specific latent heat of fusion is the heat energy needed to change the state of 1 kg of solid into a liquid Using an electrical heater: Energy input = Power x time = Vlt = (V<sup>2</sup>/R)t</p>
+<p>SPECIFIC HEAT CAPACITY</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>SPECIFIC HEAT CAPACITY</p>
+</blockquote>
+<section id="power-of-a-bunsen-burner" class="level3" data-number="21.5.1">
+<h3 data-number="21.5.1" class="anchored" data-anchor-id="power-of-a-bunsen-burner"><span class="header-section-number">21.5.1</span> 1. Power of a Bunsen burner</h3>
+<p>This experiment acts as a useful introduction to work on specific heat capacity. Heat a known amount of water (say about 1.5 kg) in an aluminium saucepan for a known time (three to five minutes), and measure the temperature rise. Knowing the amount of energy delivered in a certain time, you can then work out the power of the Bunsen burner. Assume that the specific heat capacities of the water and material of the container are known. The powers that my pupils obtained ranged from 0.3 to 0.5 kW depending on the type of Bunsen and the time of heating, since they did not allow for heat loss.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Energy supplied by Bunsen = Power x time = [(mass of water x specific heat capacity of water) + (mass of container x specific heat capacity of container)] x temperature rise</p>
+<p>Age range: 13-16</p>
+<p>Apparatus required: •Bunsen •Aluminium saucepan •Stop clock •Balance</p>
+<p>Eye protection required. Make sure that the container being heated is small enough to remain stable on the tripod.</p>
+<p><u>2. When do you add the milk?</u></p>
+</blockquote>
+<p>This is the classic cooling experiment. You have a hot cup of coffee and a given amount of cool milk. The problem is to decide when to add the milk so that the resulting mixture will reach a given lower temperature the quickest.</p>
+<blockquote class="blockquote">
+<p>Theory</p>
+<p>According to Newton’s law of cooling the rate of loss of heat from an object is directly proportional to the temperature difference between it and its surroundings, so the higher the temperature the faster the coffee will cool. Adding milk will immediately reduce the temperature so it is better to allow the coffee to stand for a little while before adding the milk, thus utilising the rapid rate of cooling when the temperature difference is high.</p>
+<p>Age range: 11 - 18 depending on treatment</p>
+<p>Apparatus required: •Beaker of hot water •Beaker of cold water •Thermometer •Stop clock</p>
+</blockquote>
+</section>
+<section id="the-most-effective-immersion-heater" class="level3" data-number="21.5.2">
+<h3 data-number="21.5.2" class="anchored" data-anchor-id="the-most-effective-immersion-heater"><span class="header-section-number">21.5.2</span> 3. The most effective immersion heater</h3>
+<p>Use different types and dimensions of wire to heat up about 75 g of water in a 100 ml beaker of water. Using a constant voltage, you can show that the low resistance wires, i.e.&nbsp;wires that are short and thick, are the best heaters. This makes a very good piece of investigative practical work.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Power of heater = VI = V<sup>2</sup>/R so for a given voltage the output power is directly proportional to the current, and so inversely proportional to the resistance, wires with low resistance giving more power than those of high resistance. Resistivity (p) = RA/L and so Power = V<sup>2</sup>A/Lp. So the energy output in a time t is V At/Lp. This is equal to mc0 and so the rise in temperature (0) is V<sup>2</sup>At/Lpmc, where m is the mass of water, p the resistivity of the wire and c the specific heat capacity of water.</p>
+</blockquote>
+<p>Age range: 14-16 Apparatus required: •Ammeter •Voltmeter</p>
+<blockquote class="blockquote">
+<p>•Wires of different types and diameters •Beaker •Leads •12V Power supply</p>
+</blockquote>
+</section>
+<section id="heat-energy-in-a-flame" class="level3" data-number="21.5.3">
+<h3 data-number="21.5.3" class="anchored" data-anchor-id="heat-energy-in-a-flame"><span class="header-section-number">21.5.3</span> 4. Heat energy in a flame</h3>
+<p>Students often have difficulty separating the ideas of heat energy and temperature and this experiment is designed to help! Compare the energy in a candle flame with the energy in a hot bath. Put out a match flame with wet fingers, and then try putting your hand into a bucket of hot water. Although the flame is much hotter than the bucket of water (its temperature is about 800<sup>0</sup>C compared with the 60 <sup>0</sup>C of the water in the bucket) the energy content is much less. Your hand warms up a little and the flame cools, and since your hand is so much more massive than the flame there is little temperature rise.</p>
+<blockquote class="blockquote">
+<p>Extinguish the flame quickly with wet fingers. Do not allow the pupils to try it.</p>
+<p>Theory:</p>
+<p>Assume the flame has a mass of a milligram, a specific heat capacity of 2000 Jkg <sup>1</sup> K <sup>1</sup> and a temperature of 820 <sup>o</sup>c the heat energy emitted when it cools to room temperature is just less than 2 J. A bucket of 4 kg of hot water initially at 60<sup>0</sup>C will release 672 kJ when it cools to room temperature!</p>
+</blockquote>
+<p>Age range: 11-16 Apparatus required: •Candle •Bucket of hot water (60<sup>0</sup>C) •Stop clock</p>
+</section>
+<section id="energy-in-a-candle" class="level3" data-number="21.5.4">
+<h3 data-number="21.5.4" class="anchored" data-anchor-id="energy-in-a-candle"><span class="header-section-number">21.5.4</span> 5. Energy in a candle</h3>
+<p>An estimate of the heat energy given off by a candle can be made by the following experiment. Use the candle to heat about 250 g of water in an aluminium can, measure the rise in temperature, and hence work out the energy given off by the length of candle burned. Then by measuring the length of a whole candle work out the energy produced by a whole candle, and finally the comparative cost of a kWh of energy produced by using either the candle or the mains electricity to drive a heater. The mains electricity is cheaper, by a factor of up to ten!</p>
+<blockquote class="blockquote">
+<p>Specific heat of water is 4200 Jkg <sup>IO</sup>C <sup>1</sup> and that of aluminium 1000 Jkg <sup>IO</sup>C</p>
+</blockquote>
+<p>Age range: 14-16 Apparatus required: •Candle ’Calorimeter ’Aluminium foil •Balance</p>
+</section>
+<section id="steamed-pudding-and-specific-heat-capacity" class="level3" data-number="21.5.5">
+<h3 data-number="21.5.5" class="anchored" data-anchor-id="steamed-pudding-and-specific-heat-capacity"><span class="header-section-number">21.5.5</span> 6. Steamed pudding and specific heat capacity!</h3>
+<p>This experiment is designed to test the statement that the jam in a steamed pudding is always hotter than the pudding. Actually cook a steamed pudding in its tin by heating it in a saucepan of boiling water in the lab. Use thermometers to measure the temperature of the pudding and jam. They both start off at the same temperature (roughly 100 <sup>o</sup>c) when heating ceases but after a minute there could be as much as a 10 <sup>o</sup>c difference between their temperatures. In fact in one experiment after getting the pudding out onto a plate and putting the thermometers in place the jam registered 70 <sup>o</sup>c and the centre of the pudding 55 <sup>0</sup>C. The difference in temperature is due to the much higher specific heat capacity of jam which therefore cools much more slowly. Opening the can at the wrong end can be disastrous and demonstrates the pressure effect of gases - blowing out scalding jam across the lab! An extension of this experiment could be to measure the specific heat of jam by heating a known mass of jam with an immersion heater. Note - jam puddings are better than syrup ones.</p>
+<p>Age range: 14-16 Apparatus required: •Tinned steamed pudding <sup>o</sup> Two thermometers</p>
+<blockquote class="blockquote">
+<p>•Saucepan •Tripod •Bunsen burner •Heat resistant mat!</p>
+</blockquote>
+<p>MELTING, BOILING AND EVAPORATION</p>
+</section>
+<section id="latent-heat---kettle" class="level3" data-number="21.5.6">
+<h3 data-number="21.5.6" class="anchored" data-anchor-id="latent-heat---kettle"><span class="header-section-number">21.5.6</span> 7. Latent heat - kettle</h3>
+<p>The specific latent heat of water can be measured very simply using a shiny electric kettle standing on a top pan balance. Fill the kettle with water, stand it on the balance, and bring it to the boil. When it is boiling vigorously take the reading of the balance - continue boiling for a measured time (say 3 minutes) and record the new balance reading at the end of that time (remove or open the lid to disable the cut-out). The difference between the two readings is the mass of water turned to steam in that time. Knowing the power of your kettle enables you to calculate the specific latent heat of vaporisation of water. A shiny kettle reduces heat loss, and good results have been gained by this method. A 1.5 kW kettle turns about 40 g of water into steam at 100 <sup>o</sup>c per minute,</p>
+<p>Age range: 14-16 Apparatus required: ’Shiny kettle of known wattage ’Stop clock •Top pan balance</p>
+</section>
+<section id="milk-bottle-top-in-cold-weather" class="level3" data-number="21.5.7">
+<h3 data-number="21.5.7" class="anchored" data-anchor-id="milk-bottle-top-in-cold-weather"><span class="header-section-number">21.5.7</span> 8. Milk bottle top in cold weather</h3>
+<p>A bottle of milk left out on the doorstep on a freezing cold morning soon freezes - the frozen milk pushing up the cap. You can simulate this by tightly fitting a piece of aluminium foil over a milk bottle full of water and putting it in the freezer. (A rubber band helps to keep it in place). The piece of foil will bulge upwards on freezing.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Milk bottle •Aluminium foil •Rubber band or electrical tape •Access to a freezer</p>
+</blockquote>
+</section>
+<section id="floating-ice-cube" class="level3" data-number="21.5.8">
+<h3 data-number="21.5.8" class="anchored" data-anchor-id="floating-ice-cube"><span class="header-section-number">21.5.8</span> 9. Floating ice cube</h3>
+<p>Float a pure water ice cube in a beaker of water with a paper scale fixed to the outside. Allow the ice to melt, and see if the water level goes down when the ice melts. There should be no change in level - the ice displaces its own weight of water, and so when it melts the water it forms should take up exactly the same volume as the water it displaced. Try it in brine (salty water). What would you expect to happen now? What about the change in sea levels when the polar ice caps melt? Is there a difference between the effect of the Arctic and the Antarctic? There is, since the Arctic ice is floating while the Antarctic ice is on a land mass.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment</p>
+<p>Apparatus required: •Ice block •Beaker of water (parallel-sided plastic container if possible) •Ruler <sup>o</sup> TV camera (optional)</p>
+</blockquote>
+</section>
+<section id="evaporation" class="level3" data-number="21.5.9">
+<h3 data-number="21.5.9" class="anchored" data-anchor-id="evaporation"><span class="header-section-number">21.5.9</span> 10. Evaporation</h3>
+<p>This experiment is a simple demonstration of cooling by evaporation. Put a small drop of perfume or surgical spirit BP on the skin. As the liquid evaporates, it takes heat energy from the hand and so you feel cold. This would also work by putting the liquid on a thermometer or a thermometer probe, but is perhaps not so memorable.</p>
+<p>Age range: 11-15 Apparatus required: •Perfume •Surgical spirit BP •Thermometer (optional)</p>
+</section>
+<section id="regelation-and-the-ice-block" class="level3" data-number="21.5.10">
+<h3 data-number="21.5.10" class="anchored" data-anchor-id="regelation-and-the-ice-block"><span class="header-section-number">21.5.10</span> Regelation and the ice block</h3>
+<p>Make a shoebox sized ice block. Rest it between two stools on a couple of paper towels. Hang two 1 kg masses over it on a copper wire. The wire cuts into the block, but the ice then re-freezes over the top of it. This clearly demonstrates the lowering of the melting point of water when the pressure on it is increased. If the experiment is repeated with the two masses hanging on a string instead of the copper wire it won’t work - the conductivity of the string is not great enough to carry away the latent heat of fusion of the ice. Refer this to the ice skater skating on water, not on ice, and the motion of glaciers — the melt water between the ice and the rock.</p>
+<blockquote class="blockquote">
+<p>Age range: 13-15</p>
+<p>Apparatus required: •Block of ice •Two Ikg masses •Copper wire •Tray to catch the melted water •Two lab stools as supports</p>
+</blockquote>
+<p>neat</p>
+<p>energy</p>
+<blockquote class="blockquote">
+<p>Age range: 13-15</p>
+<p>Apparatus required: •Water ’Bunsen ’Retort stand and clamp ’Safety screen ’Tray ’Round-bottomed flask with bung, tube and thermometer fitted</p>
+</blockquote>
+<section id="boiling-under-reduced-pressure---an-alternative-method" class="level4">
+<h4 class="anchored" data-anchor-id="boiling-under-reduced-pressure---an-alternative-method">13. Boiling under reduced pressure - an alternative method</h4>
+<p>A simpler method of demonstrating the boiling of water at low temperature is to draw some water at a temperature of about 50 - 60 <sup>0</sup> C into a syringe so that about 20% of the volume of the syringe is filled. Then when the syringe is expanded rapidly the water boils under reduced pressure.</p>
+<p>Age range: 13-15 Apparatus required: •Syringe ’Hot water</p>
+</section>
+</section>
+<section id="the-freezing-mixture" class="level3" data-number="21.5.11">
+<h3 data-number="21.5.11" class="anchored" data-anchor-id="the-freezing-mixture"><span class="header-section-number">21.5.11</span> 14. The freezing mixture</h3>
+<p>Really low temperatures can be obtained by adding salt to ice, since the freezing point of the ice/salt mixture is lower than that of ice, and so the mixture will be a liquid at the normal freezing point of water. (Temperatures of -IO<sup>O</sup>C are easy to obtain.) Refer to the use of salt on pavements in cold weather. The salt lowers the temperature at which the water/salt mixture freezes, and so at the temperature of the surrounding air the water still remains a liquid.</p>
+<p>Age range: 11-15 Apparatus required: •Beaker ’Ice ’Salt</p>
+<section id="volume-change-solid-to-gas" class="level4">
+<h4 class="anchored" data-anchor-id="volume-change-solid-to-gas">Volume change solid to gas</h4>
+<p>The change of volume when a solid turns into a gas can be shown by using a small plastic film holder. Put some solid carbon dioxide into the holder, put the lid on, and place the holder upside down on the bench. Put a transparent plastic sheet around it for safety, and wait. The solid sublimes (turns directly from a solid to a gas). The increase in volume of the carbon dioxide increases the pressure within the film holder. This blows the lid off the holder, shooting the holder into the air.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-16 Apparatus required: ’Plastic film holder ’Cylindrical plastic sheet screen •Solid carbon dioxide (dry ice) These holders may be difficult to obtain — any small plastic pot with a lid will do.</p>
+</blockquote>
+</section>
+<section id="change-of-volume-of-freezing-water---cast-iron-flask" class="level4">
+<h4 class="anchored" data-anchor-id="change-of-volume-of-freezing-water---cast-iron-flask">16. Change of volume of freezing water - cast iron flask</h4>
+<p>A cast iron flask is filled with cold water and the lid screwed on tightly. The flask should then be put in a plastic beaker filled with a freezing mixture (alternate layers of crushed ice and salt) (see experiment 14). After a while (some minutes) a crack should be heard. The flask has broken due to the increase in volume of the water as it freezes - hence the need for a plastic beaker. Relate this to the problem of burst pipes in the winter. This is also worth doing using a small plastic bottle which has been filled to the brim with water. It could be left in the freezer from one lesson to the next if you can’t get one that will fit in the freezing mixture in a beaker.</p>
+<p>Age range: 11-13 Apparatus required: •Plastic beaker •Cast iron flask •Freezing mixture</p>
+</section>
+<section id="change-of-volume-of-melting-ice---burette" class="level4">
+<h4 class="anchored" data-anchor-id="change-of-volume-of-melting-ice---burette">17. Change of volume of melting ice - burette</h4>
+<p>Fill a conical flask with melting ice. Put a bung in the top with a burette in it. The burette should be partly filled with light oil. As all the ice melts and a decrease in volume occurs, the level of the oil in the burette should fall. Alternatively the flask could initially be filled with pure water and then placed in a freezing mixture, and the resulting expansion measured as the water freezes. Plastic bottles full of milk expand when they are kept in a freezer.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment</p>
+<p>Apparatus required: •Burette •Oil •Freezing mixture •Conical flask •Bung</p>
+</blockquote>
+</section>
+<section id="a-home-made-air-cooling-system" class="level4">
+<h4 class="anchored" data-anchor-id="a-home-made-air-cooling-system">18. A home made air cooling system</h4>
+<p>This is simply a way of cooling down the air in a room during very hot weather. Take two or three large plastic drinks bottles, and fill them about nine tenths full with water. Put the tops on, and put the bottles in the freezer until the water has frozen and the ice formed has reached the temperature of the freezer (about —ICC).</p>
+<p>warm</p>
+<p>Remove the bottles, and put them in front of an ordinary air fan. Turn on the fan, and you will get a stream of really cold air so cooling the room. The ice takes a surprisingly longfrom the freezer</p>
+<p>bottles of ice time to melt even on a hot day.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18</p>
+<p><sup>0</sup> 3 large plastic bottles •Access to a freezer •Air fan blower</p>
+<p>Heat energy</p>
+</blockquote>
+</section>
+<section id="fish-in-a-freezing-pond" class="level4">
+<h4 class="anchored" data-anchor-id="fish-in-a-freezing-pond">19. Fish in a freezing pond</h4>
+<p>Diagrams of the fate of fish due to the freezing of ice emphasise the importance of the relative densities of ice and water. Since ice is less dense than water at O <sup>O</sup>C the ice floats; the water with the greatest density - that at 4<sup>0</sup>C - will sink to the bottom. It’s a good job, otherwise the oceans would freeze up from the bottom upwards, seriously reducing the amount of sea water!</p>
+</section>
+<section id="lagging-and-heat-loss" class="level4">
+<h4 class="anchored" data-anchor-id="lagging-and-heat-loss">20. Lagging and heat loss</h4>
+<p>In all the problems that we have looked at so far we have assumed that no heat is lost to the surroundings, but this is not true. There will always be some heat loss, and the heat energy that we put into the water that we are heating is always going to be a bit less than we think, and so the rise in temperature in a certain time will also be less. Lagging the object will help, and the following graph shows the effect of doing this. The graph also shows how the graph levels off when the water boils.</p>
+<p>(A similar graph for heating a metal block with a heater also levels off but in this case it would show the block melting and not boiling).</p>
+<blockquote class="blockquote">
+<p>Temperature</p>
+<p>Time</p>
+</blockquote>
+</section>
+</section>
+</section>
+<section id="thermal-effects-and-molecules" class="level2" data-number="21.6">
+<h2 data-number="21.6" class="anchored" data-anchor-id="thermal-effects-and-molecules"><span class="header-section-number">21.6</span> THERMAL EFFECTS AND MOLECULES</h2>
+<blockquote class="blockquote">
+<p>General theory for this section:</p>
+<p>The temperature of a gas depends on the kinetic energy of its molecules.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Kinetic energy of a molecule = [3/2]kT where R is the molar gas constant = 8.3 mol <sup>1</sup> K <sup>I</sup> and k is! Boltzmann’s constant = JK</p>
+</blockquote>
+<section id="brownian-motion-and-the-luminous-elephant" class="level3" data-number="21.6.1">
+<h3 data-number="21.6.1" class="anchored" data-anchor-id="brownian-motion-and-the-luminous-elephant"><span class="header-section-number">21.6.1</span> 1. Brownian motion and the luminous elephant</h3>
+<p>The smoke cell experiment where particles of smoke are seen to exhibit a juddering motionwhen viewed under a microscope is an excellent way of showing the random motion of air molecules. The kinetic theory model containing ball bearings in a cylinder that can be vibrated is a useful simulation of this behaviour. Increased vibration simulates an increase in temperature as the ball bearings move faster. There are also various analogies that can be used to demonstrate this effect. Here is one!</p>
+<p>Imagine an elephant (representing a smoke particle) painted with luminous paint in a darkened sports hall. Also in the hall are a large number of children (representing the air molecules). They are dressed in black so that they are invisible when an observer looks into the sports hall through a skylight in the roof. The children are now told to run around; they do so, colliding with each other, the walls and the luminous elephant.</p>
+<p>What does the observer see? Simply a luminous elephant juddering about as it is being knocked from side to side by some invisible force.</p>
+</section>
+<section id="diffusion-in-a-jelly" class="level3" data-number="21.6.2">
+<h3 data-number="21.6.2" class="anchored" data-anchor-id="diffusion-in-a-jelly"><span class="header-section-number">21.6.2</span> 2. Diffusion in a jelly</h3>
+<p>Make a yellow jelly in a dish, and allow it to set. Very carefully pour on another jelly - this time a red one. Set the second jelly quickly in the fridge before it has time to melt the first one. Observe the join between the two jellies after some days. A flow of colour should be seen around the join, showing a diffusion of the particles of each jelly.</p>
+<blockquote class="blockquote">
+<p>Apparatus required: ’Jellies •Crystallising dish</p>
+</blockquote>
+</section>
+<section id="random-walk" class="level3" data-number="21.6.3">
+<h3 data-number="21.6.3" class="anchored" data-anchor-id="random-walk"><span class="header-section-number">21.6.3</span> 3. Random walk</h3>
+<p>The random nature of gas molecule motion can be shown by using isometric graph paper and a dice. The six-sided dice represents the six possible directions of motion in a three dimensional world. The isometric paper has six possible directions from any intersection on its surface and can be used to represent random walk. Rather like the motion of a drunk in the crowd!</p>
+<p>Age range: 14-16 ’Isometric graph paper ’Dice</p>
+<blockquote class="blockquote">
+<p>I nermal errects ana IV101ecwes</p>
+</blockquote>
+</section>
+<section id="porous-pot-and-diffusion" class="level3" data-number="21.6.4">
+<h3 data-number="21.6.4" class="anchored" data-anchor-id="porous-pot-and-diffusion"><span class="header-section-number">21.6.4</span> 4. Porous pot and diffusion</h3>
+<p>The different rates of diffusion of gas and air can be shown by using a porous pot. Put a bung into the top of the pot with a tube in it, and fill the pot with gas from the gas tap. Upturn the pot so that the tube goes into water in a beaker. The gas diffuses out through the pot quicker than the heavier air diffuses in, and water rises up the tube.</p>
+<p>Alternatively hold a glass beaker over the porous pot and fill the beaker with gas. Bubbles of gas now come out through the water.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Graham’s Law states that the rate of diffusion of a gas is inversely proportional to the square root of its density. Heavier gases will diffuse more slowly than light ones.</p>
+</blockquote>
+<p>Age range: 11-13 Apparatus required: •Porous pot •Beaker ’Bung and tube ’Beaker of water</p>
+<blockquote class="blockquote">
+
+</blockquote>
+</section>
+<section id="kinetic-theory-directly" class="level3" data-number="21.6.5">
+<h3 data-number="21.6.5" class="anchored" data-anchor-id="kinetic-theory-directly"><span class="header-section-number">21.6.5</span> 5. Kinetic theory directly</h3>
+<p>This can be shown directly by the oscillation of a small mirror made of aluminjum foil suspended by a fine thread in a bell jar. Observe the collisions of the molecules of air with the mirror by using a light beam directed across the lab - it works better at low pressures &lt;10 mm of mercury (&lt;10<sup>3</sup> Pa or less than 1/100 of normal atmospheric pressure).</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18</p>
+<p>Apparatus required: ’Bell jar ’Vacuum pump ’Small mirror or piece of rigid aluminium foil ’Fine thread •Light beam (laser pin pointer)</p>
+</blockquote>
+</section>
+<section id="silent-kinetic-theory" class="level3" data-number="21.6.6">
+<h3 data-number="21.6.6" class="anchored" data-anchor-id="silent-kinetic-theory"><span class="header-section-number">21.6.6</span> 6. Silent kinetic theory</h3>
+<p>Simply sprinkling some camphor particles on to the surface of some water in a glass dish resting on an overhead projector can simulate the random motion of particles in a gas. The camphor dissolves irregularly, and the result is that the particles rush around randomly - just like the molecules in a gas. As more dissolves, the motion slows down, giving a fair simulation of a gas cooling.</p>
+<p>Age range: 11-13 Apparatus required: ’Overhead projector ’Camphor crystals ’Dish of water</p>
+</section>
+<section id="mixing-alcohol-and-water" class="level3" data-number="21.6.7">
+<h3 data-number="21.6.7" class="anchored" data-anchor-id="mixing-alcohol-and-water"><span class="header-section-number">21.6.7</span> 7. Mixing alcohol and water</h3>
+<p>This simple experiment gives an idea of the gaps between molecules. Take 100 ml of water in a 250 ml measuring cylinder and add exactly 100 ml of alcohol to it. The resulting volume is only about 195 ml. The molecules have intermingled, filling up the gaps between each other. Adding sugar to water is another example.</p>
+<blockquote class="blockquote">
+<p>Age range: 11 — 13 Apparatus required: <sup>0</sup> 200 ml measuring cylinder •100 ml measuring cylinder •Alcohol •Water</p>
+</blockquote>
+<p>Thermal effects and Molecules <u>8. Diffusion in gases</u></p>
+<p>Three possible demonstrations</p>
+<ol type="a">
+<li><p>Open a bottle of perfume at the front of the lab and ask the class to record when they begin to smell it!</p></li>
+<li><p>There is also the classic experiment with concentrated ammonia and hydrochloric acid placed on plugs of cotton wool at opposite ends of a glass tube. After a while a white ring forms in the tube due to the interaction of the two chemicals. The differing masses of the molecules means that they diffuse through the air in the tube at different rates, and so the white ring formed in a tube when they meet will not be in the centre.</p></li>
+</ol>
+<p>hydrochloric</p>
+<blockquote class="blockquote">
+<p>Concentrated ammonia is corrosive, and the gas is toxic. Eye protection is needed, skin contact should be avoided, and the gas should not be inhaled. Concentrated hydrochloric acid should be treated in a similar way.</p>
+</blockquote>
+<ol start="3" type="a">
+<li>Simply opening the two bottles close to each other will show the diffusion, “smoke” coming from the bottle of ammonia after a while.</li>
+</ol>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Bottle of perfume •Concentrated solutions of ammonia and hydrochloric acid ’Metre-long glass tube •Cotton wool <sup>o</sup> Two retort stands, bosses and clamps •Dropping pipettes •Two protective saucers</p>
+</blockquote>
+</section>
+<section id="a-simulated-damp-proof-course" class="level3" data-number="21.6.8">
+<h3 data-number="21.6.8" class="anchored" data-anchor-id="a-simulated-damp-proof-course"><span class="header-section-number">21.6.8</span> 9. A simulated damp proof course</h3>
+<p>Many of us know how important a damp proof course is in preventing water entering our houses. You can make a simple simulation of this by building two walls of sugar cubes in a tray with a piece of plastic in one wall between the first and second layers of cubes. Now pour some coloured water into the tray and watch the diffusion of coloured liquid up the two walls and the effect of the plastic layer “damp proof course”.</p>
+<p>Age range: 11 -1 3 ’Sugar cubes •Coloured water ’Tray</p>
+</section>
+</section>
+<section id="miscellaneous-heat" class="level2" data-number="21.7">
+<h2 data-number="21.7" class="anchored" data-anchor-id="miscellaneous-heat"><span class="header-section-number">21.7</span> MISCELLANEOUS HEAT</h2>
+<section id="at-what-temperature-does-paper-burn" class="level3" data-number="21.7.1">
+<h3 data-number="21.7.1" class="anchored" data-anchor-id="at-what-temperature-does-paper-burn"><span class="header-section-number">21.7.1</span> 1. At what temperature does paper burn</h3>
+<p>Using a suitable thermocouple temperature probe, try and repeat the idea of the old film “Fahrenheit 451” to find out at what temperature paper burns. This is best done outside the lab or in a fume cupboard!</p>
+<p>Age range: 11-14 Apparatus needed: •Temperature probe •Paper •Metal plate</p>
+</section>
+<section id="galileos-thermometer" class="level3" data-number="21.7.2">
+<h3 data-number="21.7.2" class="anchored" data-anchor-id="galileos-thermometer"><span class="header-section-number">21.7.2</span> 2. Galileo’s thermometer</h3>
+<p>This is a rather expensive (some E40 upwards) but beautiful use and demonstration of the effect of temperature on liquid density and flotation. A series of glass spheres are immersed in a liquid of density very similar to that of the spheres. They each contain different amounts of air and have small metal tags of differing mass hanging from the bottom and so rise and fall as the temperature changes. More spheres are at the top of the cylinder when it is cold - the density of the liquid is high and gives more upthrust. As the liquid heats up so the upthrust on the spheres decreases, and they begin to sink to the bottom.</p>
+</section>
+<section id="galileos-thermometer-again" class="level3" data-number="21.7.3">
+<h3 data-number="21.7.3" class="anchored" data-anchor-id="galileos-thermometer-again"><span class="header-section-number">21.7.3</span> 3. Galileo’s thermometer again</h3>
+<p>It is possible to produce a home-made version of Galileo’s thermometer with Christmas tree balls loaded with plasticine. Balls about 1 cm in diameter work best for this.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-14 Apparatus required: •Tall beaker •Christmas tree balls •Plasticine •Bunsen burner •Heat-resistant mat •Tripod and gauze</p>
+</blockquote>
+</section>
+<section id="heat-end-vibrations-iron-rod-on-solid-carbon-dioxide" class="level3" data-number="21.7.4">
+<h3 data-number="21.7.4" class="anchored" data-anchor-id="heat-end-vibrations-iron-rod-on-solid-carbon-dioxide"><span class="header-section-number">21.7.4</span> 4. Heat end vibrations — iron rod on solid carbon dioxide</h3>
+<p>Rest one end of an iron rod on a piece of dry ice (solid carbon dioxide), the other end on a table. Jar it a little - the rod emits a high-pitched vibration. I have seen a similar effect in a baking tray with gravy in it placed on a cooker ring, although in this case the frequency of vibration was too low to hear.</p>
+</section>
+<section id="boiling-water-in-a-paper-bag" class="level3" data-number="21.7.5">
+<h3 data-number="21.7.5" class="anchored" data-anchor-id="boiling-water-in-a-paper-bag"><span class="header-section-number">21.7.5</span> 5. Boiling water in a paper bag</h3>
+<p>Water can be boiled in a paper bag - but why doesn’t the paper burn? This is also easy to demonstrate using a paper cup — the water in the cup keeps the temperature of the paper below that required for ignition.</p>
+<blockquote class="blockquote">
+<p>Age range: 11 — 13 Apparatus required: •Bunsen burner •Paper cup and paper bag •Heat resistant mat</p>
+</blockquote>
+<p>Miscellaneous Heat</p>
+</section>
+<section id="effect-of-heat-on-a-rubber-band" class="level3" data-number="21.7.6">
+<h3 data-number="21.7.6" class="anchored" data-anchor-id="effect-of-heat-on-a-rubber-band"><span class="header-section-number">21.7.6</span> 6. Effect of heat on a rubber band</h3>
+<p>A long rubber band with a mass on the end is hung in a tall beaker of water. The taller the beaker, the longer the rubber band or piece of elastic, and the more of it immersed in the water the better. The water is then heated, and the change in length of the band (it shrinks) is measured. A way of getting the longest piece of rubber under the water is to use a large glass tube with a rubber bung in the lower end heated in a water bath - the water bath being a tall one-litre beaker. The temperature of the water near the rubber band is found by hanging a thermometer down the large glass tube.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Long thin rubber band •Glass tube (diameter 5 cm length 0.5 m) •Tall beaker •Bung •Bunsen burner •Tripod •Heat-resistant mat</p>
+</blockquote>
+<section id="clouds-in-a-bell-jar" class="level4">
+<h4 class="anchored" data-anchor-id="clouds-in-a-bell-jar">Clouds in a bell jar</h4>
+<p>Clouds can be formed in a bell jar if the air inside it is allowed to expand adiabatically. Take a bell jar and put 1 cm of water in the bottom and then blow into the bell jar. The air inside is compressed, and as it expands you might expect to see clouds due to the adiabatic expansion and subsequent cooling - but none form. To get the cloud, you need a little pollution to give nuclei on which the water can condense. This can be provided in the form of smoke. If a little is puffed into the jar, clouds immediately form. (You can warm the jar to encourage evaporation.)</p>
+<p>Another way of getting the clouds after blowing into a flask is to drop a smouldering match in to give the nuclei and thence produce a cloud.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment</p>
+<p>Apparatus required: •Bell jar •Rubber tube •Smoke generator</p>
+</blockquote>
+</section>
+</section>
+<section id="red-noses---thermal-effects" class="level3" data-number="21.7.7">
+<h3 data-number="21.7.7" class="anchored" data-anchor-id="red-noses---thermal-effects"><span class="header-section-number">21.7.7</span> 8. Red noses - thermal effects</h3>
+<p>The plastic red noses from various years of Comic Relief in England show wonderful thermal effects, the plastic changing from red to yellow or red to pink when they are put in hot water. You can also get various plastic animals that will do the same. I have some model dinosaurs that change from brown to green when heated and even a couple of small plastic dogs that have a red poorly paw when put in a beaker of icy water. Rubbing the paw with your finger to “make it better” warms the paw, and the red mark disappears!</p>
+</section>
+<section id="stretching-a-cooled-elastic-band" class="level3" data-number="21.7.8">
+<h3 data-number="21.7.8" class="anchored" data-anchor-id="stretching-a-cooled-elastic-band"><span class="header-section-number">21.7.8</span> 9. Stretching a cooled elastic band</h3>
+<p>The effect of a change of temperature of a rubber band can also be investigated using a cooling experiment. Hang up a rubber band, and then stretch it using slotted masses suspended from the lower end. Cool sections of the band using a freezer spray, and observe the widths of the warm and cool sections. I have been told that when your lips are compressed in a kiss they actually cool, but I leave it to your ingenuity to devise an experiment to show this!</p>
+<blockquote class="blockquote">
+<p>Age range: 15-18</p>
+<p>Apparatus required: •Rubber band •Slotted masses •Freezer spray •Retort stand, boss and clamp</p>
+<p>IVIlsce11d11euus neat</p>
+</blockquote>
+</section>
+<section id="silt-meter" class="level3" data-number="21.7.9">
+<h3 data-number="21.7.9" class="anchored" data-anchor-id="silt-meter"><span class="header-section-number">21.7.9</span> 10. Silt meter</h3>
+<p>This experiment is a simulation of river pollution. Each group has a large beaker of water to which they add drops of milk. They place a low voltage bulb on one side of the beaker and observe the transmission of light through the liquid - detecting the intensity with a Light Dependent Resistor (LDR). As more milk is added, and it doesn’t need much, the intensity of the transmitted light falls, simulating the effect of a polluted river. The milk is less messy than mud. This has been found to be a good assessed practical investigation and could be extended by asking the pupils to estimate the concentration of milk in an unknown sample, using their calibration graph from the first part of the experiment.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-16</p>
+<p>Apparatus required: •Light dependent resistor and ohm meter •Calibration graph •Beaker of water •Milk and dropper ’Low voltage power supply •Bulb •Leads</p>
+</blockquote>
+</section>
+<section id="elephants-ears-and-cooling" class="level3" data-number="21.7.10">
+<h3 data-number="21.7.10" class="anchored" data-anchor-id="elephants-ears-and-cooling"><span class="header-section-number">21.7.10</span> 11. Elephants’ ears and cooling</h3>
+<p>A good example of the effect of area on the cooling of a body can be shown by using three cups: one with no ears, one with ears and the third with the ears folded down. Make the ears out of aluminium foil. Fill them all with boiling water, and measure the rate of cooling. The fins on an air-cooled engine are a good example of area cooling in practice. Painting the ‘ears’ black makes the experiment even more effective.</p>
+<p>A dinosaur known as a dimetrodon had a sail on its back and used to stand facing north-south in the early morning so that the rising sun would warm up the blood in the sail, enabling it to get going for the day.</p>
+<p>An Arctic fox has small ears while a desert fox has much larger ears. Apart from being good for hearing, the large ears will lose heat effectively.</p>
+<blockquote class="blockquote">
+<p>Age range: 10-13</p>
+<p>Apparatus required: •Three cups or mugs</p>
+<p>•Aluminium foil •Thermometers <sup>o</sup> Hot water</p>
+</blockquote>
+</section>
+<section id="polystyrene" class="level3" data-number="21.7.11">
+<h3 data-number="21.7.11" class="anchored" data-anchor-id="polystyrene"><span class="header-section-number">21.7.11</span> 12. Polystyrene</h3>
+<p>This material is yet another example of the effect of a poor thermal conductor like a carpet. If you walk on a carpet in bare feet it feels warm, but if you step off on to a tiled floor it feels much colder, although the temperature of the floor and carpet are the same. Similarly a piece of polystyrene feels warm to the touch although being at the same temperature as other objects in the lab. However, a large piece of metal initially at the same temperature as the polystyrene will feel colder to the touch.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Both these facts can be explained by realising that the tiles and the metal conduct heat energy away from your body, leaving your hands or feet cooler. A quantitative experiment to demonstrate this can be done by placing identical beakers of water on a slab of polystyrene and metal and measuring their rate of cooling.</p>
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Slab of polystyrene foam •Large slab of metal the same size as the polystyrene if possible •Thermometers •Beakers •Stopclock</p>
+</blockquote>
+<p>Miscellaneous Heat</p>
+</section>
+<section id="entropy-increase" class="level3" data-number="21.7.12">
+<h3 data-number="21.7.12" class="anchored" data-anchor-id="entropy-increase"><span class="header-section-number">21.7.12</span> 13. Entropy increase</h3>
+<p>Entropy or disorder must always increase! This can be shown by running a video of a pile of falling blocks backwards. Since entropy always increases, you can tell if the film is running forwards or not by the increase of disorder that results if no external human influences act. You can refer this to the ultimate fate of the Universe - a smeared out warmth is the likely final state rather than discrete hot spots.</p>
+</section>
+<section id="absolute-zero" class="level3" data-number="21.7.13">
+<h3 data-number="21.7.13" class="anchored" data-anchor-id="absolute-zero"><span class="header-section-number">21.7.13</span> 14. Absolute zero</h3>
+<p>You may know that one of the laws of thermodynamics is that absolute zero (-273.15 <sup>0</sup>C) can never be reached. In fact it gets more and more difficult to remove energy as the temperature gets lower - the energy steps become smaller and smaller. It is rather like going down a neverending escalator - the steps on the escalator also get smaller and smaller towards the bottom, and in the case of the reducing temperature they go on doing this for ever.</p>
+</section>
+<section id="a-good-huddle" class="level3" data-number="21.7.14">
+<h3 data-number="21.7.14" class="anchored" data-anchor-id="a-good-huddle"><span class="header-section-number">21.7.14</span> 15. A good huddle</h3>
+<p>To show the effect of groups of animals keeping warm, prepare seven or eight test tubes - all containing the same amount of water. Place them in a water bath (this could be just a large beaker of water), heat them to the same temperature, and then remove them, leaving one on its own and the others in a group. Record the temperature of each test tube with time - the one on its own will cool down much quicker than those in the huddle since it has a much greater surface area to volume ratio. An interesting extension of this experiment is to investigate the effect of mass and surface area on the rate of cooling using balloons filled with hot water. Measure their temperature with a thermometer probe placed inside them, and experiment with:</p>
+<ol type="a">
+<li><p>different sized spherical balloons</p></li>
+<li><p>spherical balloons and sausage shaped balloons of the same mass</p></li>
+<li><p>spherical balloons of the same size and mass, but one suspended in air and the other suspended in a bucket of water at room temperature</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Test tubes with little or no flange at the top •Water bath •Thermometers</p>
+<p>•Suitable method of holding a group of test tubes •Various balloons •Bucket •Thermometer probe</p>
+</blockquote>
+</section>
+<section id="mechanical-energy---heat-energy-conversion" class="level3" data-number="21.7.15">
+<h3 data-number="21.7.15" class="anchored" data-anchor-id="mechanical-energy---heat-energy-conversion"><span class="header-section-number">21.7.15</span> 16. Mechanical energy - Heat energy conversion</h3>
+<p>A couple of suggestions to show the conversion of mechanical energy to heat energy are: (a) Saw through an insulated bolt, and let the pieces fall into a plastic beaker of water - of course the hacksaw gets hot as well!</p>
+<p>(b) Hammer a piece of lead and then measure the temperature rise with a thermistor</p>
+<blockquote class="blockquote">
+<p>Age range: 14-16 Apparatus required: •Lead <sup>o</sup> Hammer •Hacksaw •Plastic beaker of water •Bolt</p>
+</blockquote>
+</section>
+<section id="hot-air-balloon---candle" class="level3" data-number="21.7.16">
+<h3 data-number="21.7.16" class="anchored" data-anchor-id="hot-air-balloon---candle"><span class="header-section-number">21.7.16</span> 17. Hot air balloon - candle</h3>
+<p>Try making a hot air balloon from a large plastic bag such as a bin liner and then try “flying” it by putting it over a hair dryer. The hair dryer has no naked flame and the experiment is therefore safer and easier to control. Keep the lower end open with a ring of wire.</p>
+<p>Age: 7-14 Apparatus required: ’Large plastic bag (bin liner) ’Wire •Hair dryer</p>
+<blockquote class="blockquote">
+<p>Miscellaneous Heat</p>
+</blockquote>
+</section>
+<section id="floating-bubbles" class="level3" data-number="21.7.17">
+<h3 data-number="21.7.17" class="anchored" data-anchor-id="floating-bubbles"><span class="header-section-number">21.7.17</span> 18. Floating bubbles</h3>
+<p>The following experiment is a fascinating demonstration of the insulating properties of a gas (in this case steam). Place a metal plate about 10 cm in diameter and 0.5 cm thick on a gas burner (better than a Bunsen, as the whole plate gets heated). Heat the plate strongly, and then drop a small droplet of water onto it. The water evaporates immediately. However, when the plate reaches about 200<sup>0</sup>C, the water evaporates so rapidly from the lower surface that the resulting steam insulates the upper part of the droplet and it does not evaporate. When this state is reached more water can be added, so increasing the size of the droplet, which now “floats” on the insulating layer of steam. Discs of water up to 2 cm in diameter can be produced.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18</p>
+<p>Apparatus required: •Gas burner ’Dropper •Metal plate <sup>o</sup>TV camera if available</p>
+</blockquote>
+</section>
+<section id="dipping-bird" class="level3" data-number="21.7.18">
+<h3 data-number="21.7.18" class="anchored" data-anchor-id="dipping-bird"><span class="header-section-number">21.7.18</span> 19. Dipping bird</h3>
+<p>This wonderful old toy can still be bought. It rests on the side of a glass and dips its head into the cold water. As the liquid inside its body evaporates it forces liquid up the neck, altering the balance of the bird, which then dips its head into the water.</p>
+<p>If the head is not wetted then a very instructive version of the experiment occurs. The bird tends not to drink but placing a saucer of hot water beneath its bottom will heat up the liquid sufficiently to increase the rate of evaporation and make it start rocking. Energy is provided by the hot water — you don’t get something for nothing!</p>
+<p>Also try it with meths in the glass instead of water.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment Apparatus required: •Dipping bird •Wine glass</p>
+<p>•Water •Saucer <sup>0</sup> Meths</p>
+</blockquote>
+</section>
+<section id="heat-sensitive-mat---liquid-crystals" class="level3" data-number="21.7.19">
+<h3 data-number="21.7.19" class="anchored" data-anchor-id="heat-sensitive-mat---liquid-crystals"><span class="header-section-number">21.7.19</span> 20. Heat-sensitive mat - liquid crystals</h3>
+<p>This mat with a layer of liquid crystals below a transparent top is available from gift shops. Some lovely coloured effects are produced when a mug of hot drink is put on it, or when you just lay your hand on it. The colours that you get when they put their hands on the mat can give some idea of the temperature of various pupils’ hands.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./GasLaws.html" class="pagination-link" aria-label="GasLaws">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GasLaws</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./optics.html" class="pagination-link" aria-label="optics">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2025, Joe Rowing</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jrowing">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/jrowing.com">
+      <i class="bi bi-megaphone" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.jrowing.com">
+      <i class="bi bi-file-earmark" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

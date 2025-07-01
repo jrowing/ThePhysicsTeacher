@@ -1,3 +1,7 @@
+# Liniver.com {.unnumbered}
+
+"Liniver" is a [Seselwa](https://en.wikipedia.org/wiki/Seychellois_Creole) word meaning "the universe". This site needed a short, physics related .com domain name and I think it rolls off the tongue nicely. It's also amusing to me to have an email address "...\@theuniverse.com".
+
 # Preface {.unnumbered}
 
 This collection of physics teaching demonstrations is a celebration of the creativity, rigour, and generosity that have long characterised the physics education community. These demos are not merely tricks or spectacles—they are carefully chosen moments of insight, capable of transforming a dry formula into an unforgettable experience.

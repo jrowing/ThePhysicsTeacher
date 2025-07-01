@@ -145,18 +145,17 @@ Mention that the water and bucket experience a centripetal force, but that there
 
 Note: Do not swing it so fast so that the handles of the bucket come off, you'll get soaking (guess how I know...) and ensure that the bucket does not hit the floor at the lowest point of the circle. For the sake of safety it's best not to use a metal bucket ot too much water.
 
+
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
-
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
  - Bucket (plastic)
  - Water
- 
-:::
 
+:::
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -179,15 +178,67 @@ This is a great toy for demonstrating some effects of rotation and Newtonian for
 
 ![Balloon Helicopter](images/clipboard-662388039.png){fig-align="center" width="50%"}
 
-The balloon is inflated, attached to the lid, and allowed to deflate pushing air through the straws. By angling the ends of the straws the toy spins - so it flies in a stable fashion - and the vertical component lifts the toy high in the air
+The balloon is inflated, attached to the lid, and allowed to deflate pushing air through the straws. By angling the ends of the straws the toy spins - so it flies in a stable fashion - and the vertical component lifts the toy high in the air.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Bucket (plastic)
+ - Water
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
 
 ### Fruit bowl "wall of death"
 
 {{< video https://www.youtube.com/watch?v=nQRFkgWuM40 >}}
 
-This demonstration is a simulation of a motorcyclist on a wall of death at a fairground. Take a glass or plastic fruit bowl of diameter at least 30 cm to represent the Wall of Death and a toy car to represent the motor cyclist. With a little practice the lid can be made to roll round the sides of the bowl and once moving can be kept going by a small oscillation of the bowl. It will roll round rapidly even though the sides of the bowl are kept vertical.
+This demonstration is a simulation of a motorcyclist on a wall of death at a fairground. Take a glass or plastic fruit bowl of diameter at least 30 cm to represent the Wall of Death and a toy car to represent the motor cyclist. With a little practice the car can be made to roll round the sides of the bowl and once moving can be kept going by a small oscillation of the bowl.
 
-Age range: 16-18 Apparatus required: 'Fruit bowl and marmite lid
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Mixing bowl (glass or clear plastic)
+ - Small toy car (micromachine) or ball-bearing
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
 
 ### Wine glass and grape
 
@@ -202,6 +253,32 @@ This is a classic bar-trick; You challenge someone to pick up a small object —
 -   As the grape comes under the glass and picks up speed, increase the circular speed of the glass. The grape stays inside the glass due to the inward centripetal force and the upward component of the reaction due to the shape of the glass.
 
 -   Once the grape is securely spinning inside the bowl of the glass, you can smoothly lift it off the table while still circling.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Wine glass
+ - Grape or marble
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
 
 ### The Chair-O-Plane
 
@@ -254,6 +331,32 @@ Note on safety:
  - if you're indoors, make sure the sparkler's are the indoor variant.
  - Make sure that nobody is in the plane of the sparkler's revolution, bits can break off travelling at quite a high speed.
  - Handle the used sparkler with care till cool and dispose of safely. 
+ 
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Cordless Drill
+ - Sparkler (indoor if doing indoors!)
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
 
 ### Spinning office chair
 
@@ -263,6 +366,33 @@ Sit on a rotating chair holding two heavy masses and spin slowly. Quickly draw y
 
 With a low-friction chair this can be extremely impressive. I like to back this up with video footage of ice-skaters spinning. Students can easily spot the manipulations of the distribution of mass when they know what to look for.
 
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Wheely chair or rotating platform
+ - Weights/dumbells
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
 ### The wire coat hanger and circular motion
 
 Pull open a wire coat hanger so that it forms a square. File the end of the hook flat and then bend the hook until it points towards the opposite corner of the square. Balance a Ip coin on the hook, put one finger in the corner of the square opposite the hook and then spin the coat hanger in a vertical circle - the coin stays in place! This is a very simple but excellent demonstration of centripetal force.
@@ -271,17 +401,67 @@ The force of the hook on the penny always acts towards the centre of rotation.
 
 With only a little practice you will be able to start and stop the spin at your leisure.
 
-> Age range: 14-18
->
-> Apparatus required: •Wire coat hanger with filed end •Pile of small coins
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Coathanger - the wire type
+ - File
+ - Pliers
+ - Coins
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
 
 ### Rotating candle
 
 On a turntable put a candle shielded by a glass tube such as a jam jar the candle must be shorter than the height of the jar. Light the candle and rotate the turntable. Watch the flame! (A table with a diameter of 30 cm and a rotation rate of about 1 Hz is appropriate.)
 
-> Age range: 16-18
->
-> Apparatus required: •Rotating table •Motor •Jam jar •Candle •Blu tack
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Turntable
+ - Candle
+ - Glass jar to sheild flame
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
 
 ### Rotating jelly - circular motion
 
@@ -293,9 +473,32 @@ Further increasing the rate of spin will eventually make the jelly break up - th
 
 The jelly experiment also shows the shape of the liquid surface while rotating. It is useful to photograph it or take a video for later analysis.
 
-> Age range: 16-18 for real benefit Apparatus required:
->
-> •Crystallizing dish •Jelly •Polystyrene plate •Variable speed electric drill •Circular plywood platform with central bolt for fitting to the drill chuck
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Wooden plate with bolt through central hole for mounting in drill
+ - Jelly mould
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
 
 ### Vertical circles
 
@@ -367,11 +570,37 @@ so
 $$
 v_{e} = \sqrt{5gr}$$
 
-Age range: 16-18 Apparatus required: ^o^ Toy cars •Loop the loop track •Ruler
-
 The illustration below shows the rare incident in 1997, when a rollercoaster got stuck in a middle of a loop, leaving riders stuck upside down. It was revealed later that a component of the launch system had broken, leading to the insufficient speed. Experts described the train’s stalling at the loop’s apex as a rare occurrence of perfect balance
 
 ![](images/clipboard-2447296851.png){fig-align="center" width="50%"}
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Toy car
+ - Plastic "Hotwheels" type track
+
+:::
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+
 
 
 

@@ -82,7 +82,7 @@ General theory for this section:
 ### Summary Table
 
 | Concept | Formula | Units |
-|-------------------|------------------------------------|-----------------|
+|----|----|----|
 | Work | $W = F d \cos \theta$ | joule (J) |
 | Kinetic Energy | $E_k = \frac{1}{2} m v^2$ | joule (J) |
 | Gravitational Potential | $E_p = m g h$ | joule (J) |

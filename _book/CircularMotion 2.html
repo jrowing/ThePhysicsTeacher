@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Circular Motion – The Physics Teacher</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ForcesNewton.html" rel="next">
+<link href="./WorkEnergyPower.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-604c3d4c4a4e540f9ea15e4aba1a9bab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Physics Teacher</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://buymeacoffee.com/jrowing" target="_blank"> 
+<span class="menu-text">Buy Me a Coffee</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./The-Physics-Teacher.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CircularMotion.html">Mechanics</a></li><li class="breadcrumb-item"><a href="./CircularMotion.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introductions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liniver.com</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhyPhox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Phy-Phox: Physics Phone Experiments</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhET.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PhET Interactive Simulations: Bringing Physics to Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Basics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BasicPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Physics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WorkEnergyPower.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mechanics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CircularMotion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ForcesNewton.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Inertia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Inertia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Momentum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Momentum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fluids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fluids</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MiscMechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Earth and Beyond</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Astronomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Astronomy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Electricity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Capacitors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CurrentElectricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">CurrentElectricity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electromagnetism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Electromagnetism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fields</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electrostatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Electrostatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Gravity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Thermal Physics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GasLaws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GasLaws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ThermalPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Waves &amp; Optics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./optics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./VibrationsWaves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">VibrationsWaves</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Nuclear &amp; Quantum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./NuclearPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NuclearPhysics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quanta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Quanta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Radioactivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Radioactivity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MoreResources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">MoreResources</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#general-theory-for-this-section" id="toc-general-theory-for-this-section" class="nav-link active" data-scroll-target="#general-theory-for-this-section"><span class="header-section-number">5.1</span> General theory for this section:</a>
+  <ul>
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition"><span class="header-section-number">5.1.1</span> Definition</a></li>
+  <li><a href="#key-quantities" id="toc-key-quantities" class="nav-link" data-scroll-target="#key-quantities"><span class="header-section-number">5.1.2</span> Key Quantities</a></li>
+  <li><a href="#key-relationships" id="toc-key-relationships" class="nav-link" data-scroll-target="#key-relationships"><span class="header-section-number">5.1.3</span> Key Relationships</a></li>
+  <li><a href="#direction-of-vectors" id="toc-direction-of-vectors" class="nav-link" data-scroll-target="#direction-of-vectors"><span class="header-section-number">5.1.4</span> Direction of Vectors</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">5.1.5</span> Examples</a></li>
+  </ul></li>
+  <li><a href="#stories-to-enritch" id="toc-stories-to-enritch" class="nav-link" data-scroll-target="#stories-to-enritch"><span class="header-section-number">5.2</span> Stories to enritch</a>
+  <ul>
+  <li><a href="#sputnik-and-the-start-of-space-orbits-1957" id="toc-sputnik-and-the-start-of-space-orbits-1957" class="nav-link" data-scroll-target="#sputnik-and-the-start-of-space-orbits-1957"><span class="header-section-number">5.2.1</span> Sputnik and the Start of Space Orbits (1957)</a></li>
+  <li><a href="#the-worlds-tallest-swing-ride" id="toc-the-worlds-tallest-swing-ride" class="nav-link" data-scroll-target="#the-worlds-tallest-swing-ride"><span class="header-section-number">5.2.2</span> The World’s Tallest Swing Ride</a></li>
+  <li><a href="#the-spinning-space-station-idea-2001-a-space-odyssey" id="toc-the-spinning-space-station-idea-2001-a-space-odyssey" class="nav-link" data-scroll-target="#the-spinning-space-station-idea-2001-a-space-odyssey"><span class="header-section-number">5.2.3</span> The Spinning Space Station Idea (2001: A Space Odyssey)</a></li>
+  </ul></li>
+  <li><a href="#practical-work-and-demos" id="toc-practical-work-and-demos" class="nav-link" data-scroll-target="#practical-work-and-demos"><span class="header-section-number">5.3</span> Practical work and Demos</a>
+  <ul>
+  <li><a href="#the-flying-pig" id="toc-the-flying-pig" class="nav-link" data-scroll-target="#the-flying-pig"><span class="header-section-number">5.3.1</span> The flying pig…</a></li>
+  <li><a href="#whirling-bucket" id="toc-whirling-bucket" class="nav-link" data-scroll-target="#whirling-bucket"><span class="header-section-number">5.3.2</span> Whirling bucket</a></li>
+  <li><a href="#balloon-helicopter" id="toc-balloon-helicopter" class="nav-link" data-scroll-target="#balloon-helicopter"><span class="header-section-number">5.3.3</span> Balloon Helicopter</a></li>
+  <li><a href="#fruit-bowl-wall-of-death" id="toc-fruit-bowl-wall-of-death" class="nav-link" data-scroll-target="#fruit-bowl-wall-of-death"><span class="header-section-number">5.3.4</span> Fruit bowl “wall of death”</a></li>
+  <li><a href="#wine-glass-and-grape" id="toc-wine-glass-and-grape" class="nav-link" data-scroll-target="#wine-glass-and-grape"><span class="header-section-number">5.3.5</span> Wine glass and grape</a></li>
+  <li><a href="#the-chair-o-plane" id="toc-the-chair-o-plane" class="nav-link" data-scroll-target="#the-chair-o-plane"><span class="header-section-number">5.3.6</span> The Chair-O-Plane</a></li>
+  <li><a href="#the-rotor" id="toc-the-rotor" class="nav-link" data-scroll-target="#the-rotor"><span class="header-section-number">5.3.7</span> The Rotor</a></li>
+  <li><a href="#sparkler-in-a-drill" id="toc-sparkler-in-a-drill" class="nav-link" data-scroll-target="#sparkler-in-a-drill"><span class="header-section-number">5.3.8</span> Sparkler in a drill</a></li>
+  <li><a href="#spinning-office-chair" id="toc-spinning-office-chair" class="nav-link" data-scroll-target="#spinning-office-chair"><span class="header-section-number">5.3.9</span> Spinning office chair</a></li>
+  <li><a href="#the-wire-coat-hanger-and-circular-motion" id="toc-the-wire-coat-hanger-and-circular-motion" class="nav-link" data-scroll-target="#the-wire-coat-hanger-and-circular-motion"><span class="header-section-number">5.3.10</span> The wire coat hanger and circular motion</a></li>
+  <li><a href="#rotating-candle" id="toc-rotating-candle" class="nav-link" data-scroll-target="#rotating-candle"><span class="header-section-number">5.3.11</span> Rotating candle</a></li>
+  <li><a href="#rotating-jelly---circular-motion" id="toc-rotating-jelly---circular-motion" class="nav-link" data-scroll-target="#rotating-jelly---circular-motion"><span class="header-section-number">5.3.12</span> Rotating jelly - circular motion</a></li>
+  <li><a href="#vertical-circles" id="toc-vertical-circles" class="nav-link" data-scroll-target="#vertical-circles"><span class="header-section-number">5.3.13</span> Vertical circles</a></li>
+  <li><a href="#toy-cars-loop-the-loop" id="toc-toy-cars-loop-the-loop" class="nav-link" data-scroll-target="#toy-cars-loop-the-loop"><span class="header-section-number">5.3.14</span> Toy cars, loop the loop</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CircularMotion.html">Mechanics</a></li><li class="breadcrumb-item"><a href="./CircularMotion.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="general-theory-for-this-section" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="general-theory-for-this-section"><span class="header-section-number">5.1</span> General theory for this section:</h2>
+<section id="definition" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="definition"><span class="header-section-number">5.1.1</span> Definition</h3>
+<p>Circular motion refers to the movement of an object along the circumference of a circle. It can be <strong>uniform</strong> (constant speed) or <strong>non-uniform</strong> (changing speed), but in both cases the <strong>direction of motion changes continuously</strong>, implying <strong>acceleration</strong>.</p>
+</section>
+<section id="key-quantities" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="key-quantities"><span class="header-section-number">5.1.2</span> Key Quantities</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Symbol</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Radius</td>
+<td><span class="math inline">\(r\)</span></td>
+<td>m</td>
+<td>Distance from the center to the object</td>
+</tr>
+<tr class="even">
+<td>Speed</td>
+<td><span class="math inline">\(v\)</span></td>
+<td>m/s</td>
+<td>Magnitude of the velocity (scalar)</td>
+</tr>
+<tr class="odd">
+<td>Angular velocity</td>
+<td><span class="math inline">\(\omega\)</span></td>
+<td>rad/s</td>
+<td>Rate of rotation: <span class="math inline">\(\omega = \frac{d\theta}{dt}\)</span></td>
+</tr>
+<tr class="even">
+<td>Frequency</td>
+<td><span class="math inline">\(f\)</span></td>
+<td>Hz</td>
+<td>Revolutions per second: <span class="math inline">\(f = \frac{1}{T}\)</span></td>
+</tr>
+<tr class="odd">
+<td>Period</td>
+<td><span class="math inline">\(T\)</span></td>
+<td>s</td>
+<td>Time for one complete revolution</td>
+</tr>
+<tr class="even">
+<td>Centripetal acceleration</td>
+<td><span class="math inline">\(a_c\)</span></td>
+<td>m/s²</td>
+<td>Directed toward the center: <span class="math inline">\(a_c = \frac{v^2}{r}\)</span></td>
+</tr>
+<tr class="odd">
+<td>Centripetal force</td>
+<td><span class="math inline">\(F_c\)</span></td>
+<td>N</td>
+<td>Net force causing circular motion: <span class="math inline">\(F_c = \frac{mv^2}{r}\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-relationships" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="key-relationships"><span class="header-section-number">5.1.3</span> Key Relationships</h3>
+<ul>
+<li><span class="math inline">\(v = \omega r\)</span></li>
+<li><span class="math inline">\(a_c = \omega^2 r = \frac{v^2}{r}\)</span></li>
+<li><span class="math inline">\(F_c = ma_c = m\omega^2 r = \frac{mv^2}{r}\)</span></li>
+</ul>
+</section>
+<section id="direction-of-vectors" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="direction-of-vectors"><span class="header-section-number">5.1.4</span> Direction of Vectors</h3>
+<ul>
+<li><strong>Velocity</strong> is <strong>tangential</strong> to the circle.</li>
+<li><strong>Acceleration</strong> and <strong>centripetal force</strong> point <strong>toward the center</strong>.</li>
+<li>There is <strong>no outward force</strong> acting on the object (e.g., “centrifugal force” is a <strong>fictitious</strong> force in an inertial frame).</li>
+</ul>
+</section>
+<section id="examples" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="examples"><span class="header-section-number">5.1.5</span> Examples</h3>
+<ul>
+<li>A car turning around a bend</li>
+<li>A satellite orbiting Earth</li>
+<li>An electron moving in a magnetic field</li>
+<li>A mass on a string swung in a horizontal circle</li>
+</ul>
+<p>Centripetal force is the force that pulls or pushes an object from its straight-line path. It always acts towards the centre of a circle. The centrifugal force is the reaction of this force on the thing doing the pushing or pulling but not on the rotating object itself.</p>
+<p><span class="math display">\[
+\text{Centripetal force} = \frac{mv^{2}}{R}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><p><span class="math inline">\(m\)</span> is the mass of an object moving at a constant speed</p></li>
+<li><p><span class="math inline">\(v\)</span> is the tangential velocity</p></li>
+<li><p><span class="math inline">\(R\)</span> is the radius of the circle round a circle of radius R</p></li>
+</ul>
+</section>
+</section>
+<section id="stories-to-enritch" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="stories-to-enritch"><span class="header-section-number">5.2</span> Stories to enritch</h2>
+<section id="sputnik-and-the-start-of-space-orbits-1957" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="sputnik-and-the-start-of-space-orbits-1957"><span class="header-section-number">5.2.1</span> Sputnik and the Start of Space Orbits (1957)</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1239140137.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<p>When the Soviet Union launched Sputnik, the first artificial satellite, it stunned the world — and illustrated circular motion on a planetary scale.</p>
+<p>Sputnik stayed in orbit because it was moving sideways fast enough (about 8 km/s) that Earth’s surface curved away beneath it as it “fell.” It didn’t need engines to stay up — just the right speed to balance gravity with inertia, a perfect case of centripetal motion. Circular motion wasn’t just theory anymore — it became the basis of satellite technology, GPS, and global communication.</p>
+</section>
+<section id="the-worlds-tallest-swing-ride" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="the-worlds-tallest-swing-ride"><span class="header-section-number">5.2.2</span> The World’s Tallest Swing Ride</h3>
+<p>The StarFlyer ride in Florida lifts passengers nearly 150 meters into the air and spins them around at over 70 km/h.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1365933620.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<p>Despite being “thrown outward,” riders are actually being pulled inward by the tension in the cables — providing the centripetal force. If the cables broke, the rider wouldn’t fly outward — they’d follow a tangent path, showing Newton’s first law in action. It’s thrilling — and a real-life demonstration of circular motion and Newtonian mechanics.</p>
+</section>
+<section id="the-spinning-space-station-idea-2001-a-space-odyssey" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="the-spinning-space-station-idea-2001-a-space-odyssey"><span class="header-section-number">5.2.3</span> The Spinning Space Station Idea (2001: A Space Odyssey)</h3>
+<p>In the film 2001: A Space Odyssey, the rotating space station creates artificial gravity by spinning. This isn’t just science fiction — it’s real physics.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/-jft1rvWQv0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>In a spinning ring, objects are forced against the outer wall by their inertia. The wall provides the centripetal force, which feels like gravity to the occupants. Engineers have seriously considered building rotating space habitats using this principle to help astronauts stay healthy in zero gravity.</p>
+</section>
+</section>
+<section id="practical-work-and-demos" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="practical-work-and-demos"><span class="header-section-number">5.3</span> Practical work and Demos</h2>
+<section id="the-flying-pig" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="the-flying-pig"><span class="header-section-number">5.3.1</span> The flying pig…</h3>
+<p>The theory of circular motion, or indeed, the conical pendulum can be demonstrated wonderfully with this ornithopter toy. The battery drives the mechanism causing the pig to fly in a circle of radius r at a constant speed. It is also a good simulation of the chairs in fairground rides.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4088213402.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+</figure>
+</div>
+<p>The faster the pig the bigger the angle (0) that the string makes with the vertical. Measurements of 0, v, m and r are easy to make, and so the experiment could be used to find the acceleration due to gravity (g).</p>
+<p>For a pig of mass <span class="math inline">\(m\)</span>, resolving vertically:</p>
+<p><span class="math display">\[ mg = T \cos \theta \]</span></p>
+<p>Resolving horizontally:</p>
+<p><span class="math display">\[\frac{mv^{2}}{r} = T \sin \theta\]</span> Therefore: <span class="math display">\[ \frac{mv^{2}}{r} \tan \theta = mg \]</span> and so</p>
+<p><span class="math display">\[g = \frac{v^{2}}{r} \tan \theta \]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Flying pig toy</li>
+<li>Stopwatch</li>
+<li>Ruler</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="whirling-bucket" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="whirling-bucket"><span class="header-section-number">5.3.2</span> Whirling bucket</h3>
+<p>The classic centripetal force experiment;</p>
+<ul>
+<li>Put a little water in a plastic bucket</li>
+<li>get hold of bucket and then swing the bucket in a vertical circle.</li>
+</ul>
+<p>As long as the rate of rotation is great enough the water stays in the bucket. Slowing the rate of rotation can get the water to almost fall out at the top of the path, and you can hear it slopping around at this critical point.</p>
+<p>Mention that the water and bucket experience a centripetal force, but that there is also a centrifugal force - this is the reaction on the pivot, in this case your hand. Many extensions of this are possible, such as swinging a tray loaded with beakers by four strings!</p>
+<p>Note: Do not swing it so fast so that the handles of the bucket come off, you’ll get soaking (guess how I know…) and ensure that the bucket does not hit the floor at the lowest point of the circle. For the sake of safety it’s best not to use a metal bucket ot too much water.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Bucket (plastic)</li>
+<li>Water</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="balloon-helicopter" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="balloon-helicopter"><span class="header-section-number">5.3.3</span> Balloon Helicopter</h3>
+<p>This is a great toy for demonstrating some effects of rotation and Newtonian forces that’s easy to make with a sports bottle lid and a few straws or cheaply purchased from most toy shops.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-662388039.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Balloon Helicopter</figcaption>
+</figure>
+</div>
+<p>The balloon is inflated, attached to the lid, and allowed to deflate pushing air through the straws. By angling the ends of the straws the toy spins - so it flies in a stable fashion - and the vertical component lifts the toy high in the air.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Bucket (plastic)</li>
+<li>Water</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="fruit-bowl-wall-of-death" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="fruit-bowl-wall-of-death"><span class="header-section-number">5.3.4</span> Fruit bowl “wall of death”</h3>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/nQRFkgWuM40" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>This demonstration is a simulation of a motorcyclist on a wall of death at a fairground. Take a glass or plastic fruit bowl of diameter at least 30 cm to represent the Wall of Death and a toy car to represent the motor cyclist. With a little practice the car can be made to roll round the sides of the bowl and once moving can be kept going by a small oscillation of the bowl.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Mixing bowl (glass or clear plastic)</li>
+<li>Small toy car (micromachine) or ball-bearing</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="wine-glass-and-grape" class="level3" data-number="5.3.5">
+<h3 data-number="5.3.5" class="anchored" data-anchor-id="wine-glass-and-grape"><span class="header-section-number">5.3.5</span> Wine glass and grape</h3>
+<p>This is a classic bar-trick; You challenge someone to pick up a small object — traditionally a grape, but sometimes a cherry or olive (I tend to use a marble in the lab) — from the table using only an empty wineglass <em>without</em> touching the grape directly with your hands or the rim of the glass.</p>
+<ul>
+<li><p>Place the grape on a smooth table.</p></li>
+<li><p>Hold the wineglass upside down so that the rim is very close to — but not touching — the grape.</p></li>
+<li><p>Start rotating the glass in small, smooth horizontal circles above and around the grape, gradually tightening the circles so that the grape begins to roll or slide toward the center under the glass.</p></li>
+<li><p>As the grape comes under the glass and picks up speed, increase the circular speed of the glass. The grape stays inside the glass due to the inward centripetal force and the upward component of the reaction due to the shape of the glass.</p></li>
+<li><p>Once the grape is securely spinning inside the bowl of the glass, you can smoothly lift it off the table while still circling.</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Wine glass</li>
+<li>Grape or marble</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-chair-o-plane" class="level3" data-number="5.3.6">
+<h3 data-number="5.3.6" class="anchored" data-anchor-id="the-chair-o-plane"><span class="header-section-number">5.3.6</span> The Chair-O-Plane</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2673387124.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<p>This fairground ride is more common/popular in the US but can also be found at the more traditional “steam fair” type events in the UK. It makes for a fantastic application of centripetal force and resolving vectors.</p>
+<p>Consider the vertical component of rider and chair:</p>
+<p><span class="math display">\[
+\text{Tension in wire} = \frac{mg}{\cos \theta}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+F_{centripetal} = \frac{mv^{2}}{r} = \text{Tension in the wire} \times \sin \theta
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(v\)</span> is the linear velocity</p></li>
+<li><p><span class="math inline">\(mg\)</span> is the mass of rider and chair</p></li>
+<li><p><span class="math inline">\(\theta\)</span> is the angle the chairs make to the vertical.</p></li>
+</ul>
+<p>This can be used to show that all the chairs swing out the same amount regardless of their mass. A model can be made easily with a disc and an electric drill.</p>
+</section>
+<section id="the-rotor" class="level3" data-number="5.3.7">
+<h3 data-number="5.3.7" class="anchored" data-anchor-id="the-rotor"><span class="header-section-number">5.3.7</span> The Rotor</h3>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/oHokBPq6PVo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>The rotor is another fantastic fairground ride for illustrating circular motion and friction - Very much like the wall of death.</p>
+</section>
+<section id="sparkler-in-a-drill" class="level3" data-number="5.3.8">
+<h3 data-number="5.3.8" class="anchored" data-anchor-id="sparkler-in-a-drill"><span class="header-section-number">5.3.8</span> Sparkler in a drill</h3>
+<p>Possibly the greatest demonstration in all of physics;</p>
+<ul>
+<li>Put sparkler in chuck of electric drill</li>
+<li>Light</li>
+<li>SPIN!</li>
+</ul>
+<p><img src="images/clipboard-487316712.png" class="img-fluid"></p>
+<p>Experiment with different rates of revolution for maximum effect. The hot bit of the sparkler will be seen to travel in a circle whilst those sparks that fly-off will be seen to follow a tangent into a parabolic arc. A wonderful demonstration of projectiles and circular motion.</p>
+<p>Note on safety:</p>
+<ul>
+<li>if you’re indoors, make sure the sparkler’s are the indoor variant.</li>
+<li>Make sure that nobody is in the plane of the sparkler’s revolution, bits can break off travelling at quite a high speed.</li>
+<li>Handle the used sparkler with care till cool and dispose of safely.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Cordless Drill</li>
+<li>Sparkler (indoor if doing indoors!)</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="spinning-office-chair" class="level3" data-number="5.3.9">
+<h3 data-number="5.3.9" class="anchored" data-anchor-id="spinning-office-chair"><span class="header-section-number">5.3.9</span> Spinning office chair</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1047970265.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<p>Sit on a rotating chair holding two heavy masses and spin slowly. Quickly draw your arms in to show the effect of conservation of angular momentum. Stretching out will slow you down again.</p>
+<p>With a low-friction chair this can be extremely impressive. I like to back this up with video footage of ice-skaters spinning. Students can easily spot the manipulations of the distribution of mass when they know what to look for.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Wheely chair or rotating platform</li>
+<li>Weights/dumbells</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-wire-coat-hanger-and-circular-motion" class="level3" data-number="5.3.10">
+<h3 data-number="5.3.10" class="anchored" data-anchor-id="the-wire-coat-hanger-and-circular-motion"><span class="header-section-number">5.3.10</span> The wire coat hanger and circular motion</h3>
+<p>Pull open a wire coat hanger so that it forms a square. File the end of the hook flat and then bend the hook until it points towards the opposite corner of the square. Balance a Ip coin on the hook, put one finger in the corner of the square opposite the hook and then spin the coat hanger in a vertical circle - the coin stays in place! This is a very simple but excellent demonstration of centripetal force.</p>
+<p>The force of the hook on the penny always acts towards the centre of rotation.</p>
+<p>With only a little practice you will be able to start and stop the spin at your leisure.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Coathanger - the wire type</li>
+<li>File</li>
+<li>Pliers</li>
+<li>Coins</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="rotating-candle" class="level3" data-number="5.3.11">
+<h3 data-number="5.3.11" class="anchored" data-anchor-id="rotating-candle"><span class="header-section-number">5.3.11</span> Rotating candle</h3>
+<p>On a turntable put a candle shielded by a glass tube such as a jam jar the candle must be shorter than the height of the jar. Light the candle and rotate the turntable. Watch the flame! (A table with a diameter of 30 cm and a rotation rate of about 1 Hz is appropriate.)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Turntable</li>
+<li>Candle</li>
+<li>Glass jar to sheild flame</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="rotating-jelly---circular-motion" class="level3" data-number="5.3.12">
+<h3 data-number="5.3.12" class="anchored" data-anchor-id="rotating-jelly---circular-motion"><span class="header-section-number">5.3.12</span> Rotating jelly - circular motion</h3>
+<p>The effects of centripetal forces on a rotating object can be shown impressively by making a circular jelly about 3 cm deep in a crystallising dish. When it is set empty it out carefully on to the centre of a polystyrene plate which is securely fixed to the centre of the plywood platform.</p>
+<p>Slowly increase the rate of spin of the table. The jelly will flatten.</p>
+<p>Further increasing the rate of spin will eventually make the jelly break up - the cohesive forces within it being less than the centripetal forces needed. It can be used to demonstrate why car tyres fly apart when they are spun too fast.</p>
+<p>The jelly experiment also shows the shape of the liquid surface while rotating. It is useful to photograph it or take a video for later analysis.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Wooden plate with bolt through central hole for mounting in drill</li>
+<li>Jelly mould</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="vertical-circles" class="level3" data-number="5.3.13">
+<h3 data-number="5.3.13" class="anchored" data-anchor-id="vertical-circles"><span class="header-section-number">5.3.13</span> Vertical circles</h3>
+<p>If a bung is being swung round on a string in a vertical circle at a constant speed the centripetal force must be constant, but because the object has weight (<span class="math inline">\(mg\)</span>), the string tension vaies.</p>
+<p>The tension provides part of the centripetal force as it goes round the top of the loop and provides a supporting force <em>and</em> the centripetal force at the bottom of the loop.</p>
+<p>At the bottom of the circle:</p>
+<p><span class="math display">\[ T_{string}  - mg = \frac{mv^{2}}{r}\]</span> So.. <span class="math display">\[T_{string}  = \frac{mv}{r} + mg \]</span></p>
+<p>At the sides of the circle: <span class="math display">\[ T_{string} = \frac{mv^{2}}{r}\]</span> At the top of the circle:</p>
+<p><span class="math display">\[ T_{string} + mg = mv^{2}/r \]</span></p>
+<p>so</p>
+<p><span class="math display">\[ T_{string}  = \frac{mv^{2}}{r} - mg \]</span> #### Bonus story:</p>
+<p>An outside loop is an aerobatic maneuver in which an aircraft flies a circular path with the canopy on the outside of the circle, as opposed to a normal or inside loop where the pilot stays on the inside of the circle. In a typical inside loop, positive G-forces push the pilot into the seat, but in an outside loop the pilot experiences negative G-forces that try to pull them out of the seat, placing immense strain on both the pilot’s body and the aircraft.</p>
+<p>The outside loop was first successfully performed in 1927 by American pilot Jimmy Doolittle, who flew a Curtiss P-1C Hawk biplane. At the time, many believed the stunt was impossible or suicidal due to the extreme negative G-forces involved, but Doolittle’s achievement marked a milestone in aviation history, proving both the strength of modern aircraft and the resilience of skilled pilots. Outside loops are particularly challenging because the negative G-forces, which can reach minus three to minus five G or more, can cause great discomfort, vision problems such as red-out, or even loss of consciousness.</p>
+<p>The aircraft itself must be strong enough to withstand these forces without structural failure, and the pilot must exert precise control to avoid dangerous spins or crashes. Today, outside loops are a standard element in aerobatic competitions and displays, but they remain a demanding test of both machine and pilot, showcasing advances in aircraft engineering and human endurance.</p>
+</section>
+<section id="toy-cars-loop-the-loop" class="level3" data-number="5.3.14">
+<h3 data-number="5.3.14" class="anchored" data-anchor-id="toy-cars-loop-the-loop"><span class="header-section-number">5.3.14</span> Toy cars, loop the loop</h3>
+<p>Toy cars on a plastic track can be used to demonstrate a number of ideas in mechanics. If the track can be bent into a vertical circle then loop the loop experiments can be performed.</p>
+<p>The problem of “will it make it round?” can be approached as follows:</p>
+<p>The Centripetal force is provided by a combination of the reaction of the track (R) and the force of gravity (mg). At the top of the path the car can travel at its minimum speed since the centripetal force can be provided by gravity alone.</p>
+<p>The minimum reaction occurs at the top of the path where:</p>
+<p><span class="math display">\[\frac{mv_{t}^{2}}{r} = mg \]</span> So <span class="math display">\[
+v_{t} = \sqrt{gr}
+\]</span> where: - <span class="math inline">\(r\)</span> is the radius of the loop. - <span class="math inline">\(v_t\)</span> is the velocity at the top of the loop.</p>
+<p>so far we have worked out the minimum speed that maintains contact with the loop. To work out the minimum entry speed (<span class="math inline">\(v_e\)</span>) we need to use conservation of energy:</p>
+<p>Assuming the car <em>just</em> makes it up a loop of height <span class="math inline">\(2r\)</span> (where <span class="math inline">\(r\)</span> is the radius of the loop), the gain in GPE is <span class="math inline">\(mgh\)</span> so the minimum speed is ;</p>
+<p><span class="math display">\[ mg \times 2r = 1/2mv_{e}^{2} + 1/2mv_{t}^{2}\]</span> substituting <span class="math inline">\(v_{t}^{2} = gr\)</span> <span class="math display">\[
+mg \times 2r = 1/2mv_{e}^{2} + 1/2mgr
+\]</span> Cancel <span class="math inline">\(m\)</span>;</p>
+<p><span class="math display">\[
+g \times 2r = 1/2v_{e}^{2} + 1/2gr
+\]</span></p>
+<p>so <span class="math display">\[
+v_{e} = \sqrt{5gr}\]</span></p>
+<p>The illustration below shows the rare incident in 1997, when a rollercoaster got stuck in a middle of a loop, leaving riders stuck upside down. It was revealed later that a component of the launch system had broken, leading to the insufficient speed. Experts described the train’s stalling at the loop’s apex as a rare occurrence of perfect balance</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2447296851.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Toy car</li>
+<li>Plastic “Hotwheels” type track</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./WorkEnergyPower.html" class="pagination-link" aria-label="Work, Energy, &amp; Power">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ForcesNewton.html" class="pagination-link" aria-label="Forces and Newton's Laws">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2025, Joe Rowing</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jrowing">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/jrowing.com">
+      <i class="bi bi-megaphone" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.jrowing.com">
+      <i class="bi bi-file-earmark" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

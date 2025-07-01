@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Friction – The Physics Teacher</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Inertia.html" rel="next">
+<link href="./ForcesNewton.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-604c3d4c4a4e540f9ea15e4aba1a9bab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Physics Teacher</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://buymeacoffee.com/jrowing" target="_blank"> 
+<span class="menu-text">Buy Me a Coffee</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./The-Physics-Teacher.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CircularMotion.html">Mechanics</a></li><li class="breadcrumb-item"><a href="./Friction.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introductions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liniver.com</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhyPhox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Phy-Phox: Physics Phone Experiments</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhET.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PhET Interactive Simulations: Bringing Physics to Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Basics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BasicPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Physics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WorkEnergyPower.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mechanics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CircularMotion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ForcesNewton.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Friction.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Inertia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Inertia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Momentum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Momentum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fluids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fluids</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MiscMechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Earth and Beyond</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Astronomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Astronomy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Electricity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Capacitors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CurrentElectricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">CurrentElectricity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electromagnetism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Electromagnetism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fields</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electrostatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Electrostatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Gravity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Thermal Physics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GasLaws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GasLaws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ThermalPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Waves &amp; Optics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./optics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./VibrationsWaves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">VibrationsWaves</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Nuclear &amp; Quantum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./NuclearPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NuclearPhysics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quanta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Quanta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Radioactivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Radioactivity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MoreResources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">MoreResources</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#basic-theory" id="toc-basic-theory" class="nav-link active" data-scroll-target="#basic-theory"><span class="header-section-number">7.1</span> Basic Theory</a>
+  <ul>
+  <li><a href="#what-is-friction" id="toc-what-is-friction" class="nav-link" data-scroll-target="#what-is-friction"><span class="header-section-number">7.1.1</span> What is Friction?</a></li>
+  <li><a href="#types-of-friction" id="toc-types-of-friction" class="nav-link" data-scroll-target="#types-of-friction"><span class="header-section-number">7.1.2</span> Types of Friction</a></li>
+  <li><a href="#coefficient-of-friction" id="toc-coefficient-of-friction" class="nav-link" data-scroll-target="#coefficient-of-friction"><span class="header-section-number">7.1.3</span> Coefficient of Friction</a></li>
+  <li><a href="#frictional-force-formula" id="toc-frictional-force-formula" class="nav-link" data-scroll-target="#frictional-force-formula"><span class="header-section-number">7.1.4</span> Frictional Force Formula</a></li>
+  <li><a href="#characteristics-of-friction" id="toc-characteristics-of-friction" class="nav-link" data-scroll-target="#characteristics-of-friction"><span class="header-section-number">7.1.5</span> Characteristics of Friction</a></li>
+  <li><a href="#effects-of-friction" id="toc-effects-of-friction" class="nav-link" data-scroll-target="#effects-of-friction"><span class="header-section-number">7.1.6</span> Effects of Friction</a></li>
+  <li><a href="#overcoming-friction" id="toc-overcoming-friction" class="nav-link" data-scroll-target="#overcoming-friction"><span class="header-section-number">7.1.7</span> Overcoming Friction</a></li>
+  <li><a href="#example-force-required-to-move-an-object" id="toc-example-force-required-to-move-an-object" class="nav-link" data-scroll-target="#example-force-required-to-move-an-object"><span class="header-section-number">7.1.8</span> Example: Force Required to Move an Object</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">7.1.9</span> Summary Table</a></li>
+  </ul></li>
+  <li><a href="#stories-to-enritch" id="toc-stories-to-enritch" class="nav-link" data-scroll-target="#stories-to-enritch"><span class="header-section-number">7.2</span> Stories to enritch</a>
+  <ul>
+  <li><a href="#the-tragedy-on-the-rails-the-tay-bridge-disaster-1879" id="toc-the-tragedy-on-the-rails-the-tay-bridge-disaster-1879" class="nav-link" data-scroll-target="#the-tragedy-on-the-rails-the-tay-bridge-disaster-1879"><span class="header-section-number">7.2.1</span> The Tragedy on the Rails: The Tay Bridge Disaster (1879)</a></li>
+  <li><a href="#the-match-that-changed-the-world" id="toc-the-match-that-changed-the-world" class="nav-link" data-scroll-target="#the-match-that-changed-the-world"><span class="header-section-number">7.2.2</span> The Match That Changed the World</a></li>
+  <li><a href="#the-ice-of-the-battle-of-stalingrad" id="toc-the-ice-of-the-battle-of-stalingrad" class="nav-link" data-scroll-target="#the-ice-of-the-battle-of-stalingrad"><span class="header-section-number">7.2.3</span> The Ice of the Battle of Stalingrad</a></li>
+  <li><a href="#the-apollo-moon-landers-unexpected-slide" id="toc-the-apollo-moon-landers-unexpected-slide" class="nav-link" data-scroll-target="#the-apollo-moon-landers-unexpected-slide"><span class="header-section-number">7.2.4</span> The Apollo Moon Lander’s Unexpected Slide</a></li>
+  <li><a href="#the-bobsledding-black-ice-mystery" id="toc-the-bobsledding-black-ice-mystery" class="nav-link" data-scroll-target="#the-bobsledding-black-ice-mystery"><span class="header-section-number">7.2.5</span> The Bobsledding Black Ice Mystery</a></li>
+  <li><a href="#da-vincis-secret-notes-on-friction" id="toc-da-vincis-secret-notes-on-friction" class="nav-link" data-scroll-target="#da-vincis-secret-notes-on-friction"><span class="header-section-number">7.2.6</span> Da Vinci’s Secret Notes on Friction</a></li>
+  <li><a href="#the-ancient-egyptian-sled-and-the-water-trick" id="toc-the-ancient-egyptian-sled-and-the-water-trick" class="nav-link" data-scroll-target="#the-ancient-egyptian-sled-and-the-water-trick"><span class="header-section-number">7.2.7</span> The Ancient Egyptian Sled and the Water Trick</a></li>
+  <li><a href="#the-skating-rink-that-was-too-smooth" id="toc-the-skating-rink-that-was-too-smooth" class="nav-link" data-scroll-target="#the-skating-rink-that-was-too-smooth"><span class="header-section-number">7.2.8</span> The Skating Rink That Was Too Smooth</a></li>
+  <li><a href="#the-mystery-of-the-climbing-gecko" id="toc-the-mystery-of-the-climbing-gecko" class="nav-link" data-scroll-target="#the-mystery-of-the-climbing-gecko"><span class="header-section-number">7.2.9</span> The Mystery of the Climbing Gecko</a></li>
+  <li><a href="#the-violinists-rosin" id="toc-the-violinists-rosin" class="nav-link" data-scroll-target="#the-violinists-rosin"><span class="header-section-number">7.2.10</span> The Violinist’s Rosin</a></li>
+  </ul></li>
+  <li><a href="#practical-work-and-demos" id="toc-practical-work-and-demos" class="nav-link" data-scroll-target="#practical-work-and-demos"><span class="header-section-number">7.3</span> Practical work and Demos</a>
+  <ul>
+  <li><a href="#glass-fibre" id="toc-glass-fibre" class="nav-link" data-scroll-target="#glass-fibre"><span class="header-section-number">7.3.1</span> Glass fibre</a></li>
+  <li><a href="#styrocell-beads" id="toc-styrocell-beads" class="nav-link" data-scroll-target="#styrocell-beads"><span class="header-section-number">7.3.2</span> Styrocell beads</a></li>
+  <li><a href="#polystyrene-ball-falling-in-a-tube" id="toc-polystyrene-ball-falling-in-a-tube" class="nav-link" data-scroll-target="#polystyrene-ball-falling-in-a-tube"><span class="header-section-number">7.3.3</span> Polystyrene ball falling in a tube</a></li>
+  <li><a href="#lowering-friction-with-magnets" id="toc-lowering-friction-with-magnets" class="nav-link" data-scroll-target="#lowering-friction-with-magnets"><span class="header-section-number">7.3.4</span> Lowering friction with magnets</a></li>
+  <li><a href="#stick-slip-motion" id="toc-stick-slip-motion" class="nav-link" data-scroll-target="#stick-slip-motion"><span class="header-section-number">7.3.5</span> Stick-slip motion</a></li>
+  <li><a href="#two-simple-hovercraft" id="toc-two-simple-hovercraft" class="nav-link" data-scroll-target="#two-simple-hovercraft"><span class="header-section-number">7.3.6</span> Two simple hovercraft</a></li>
+  <li><a href="#falling-matchbox" id="toc-falling-matchbox" class="nav-link" data-scroll-target="#falling-matchbox"><span class="header-section-number">7.3.7</span> Falling matchbox</a></li>
+  <li><a href="#escalado" id="toc-escalado" class="nav-link" data-scroll-target="#escalado"><span class="header-section-number">7.3.8</span> Escalado</a></li>
+  <li><a href="#rolling-cans-of-dog-food-and-baked-beans" id="toc-rolling-cans-of-dog-food-and-baked-beans" class="nav-link" data-scroll-target="#rolling-cans-of-dog-food-and-baked-beans"><span class="header-section-number">7.3.9</span> Rolling cans of dog food and baked beans</a></li>
+  <li><a href="#friction-between-books" id="toc-friction-between-books" class="nav-link" data-scroll-target="#friction-between-books"><span class="header-section-number">7.3.10</span> Friction between books</a></li>
+  <li><a href="#friction-and-sliding-cups" id="toc-friction-and-sliding-cups" class="nav-link" data-scroll-target="#friction-and-sliding-cups"><span class="header-section-number">7.3.11</span> Friction and sliding cups</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CircularMotion.html">Mechanics</a></li><li class="breadcrumb-item"><a href="./Friction.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="basic-theory" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="basic-theory"><span class="header-section-number">7.1</span> Basic Theory</h2>
+<section id="what-is-friction" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="what-is-friction"><span class="header-section-number">7.1.1</span> What is Friction?</h3>
+<ul>
+<li>Friction is the force that <strong>opposes the relative motion</strong> or tendency of motion between two surfaces in contact.</li>
+<li>It acts <strong>parallel to the surfaces</strong> and opposite to the direction of motion or impending motion.</li>
+</ul>
+</section>
+<section id="types-of-friction" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="types-of-friction"><span class="header-section-number">7.1.2</span> Types of Friction</h3>
+<ul>
+<li><strong>Static Friction (</strong><span class="math inline">\(F_s\)</span>): Acts when surfaces are <strong>not moving</strong> relative to each other. It prevents motion.</li>
+<li><strong>Kinetic (Sliding) Friction (</strong><span class="math inline">\(F_k\)</span>): Acts when surfaces <strong>slide past each other</strong>.</li>
+<li><strong>Rolling Friction:</strong> Opposes motion when an object rolls over a surface (usually smaller than sliding friction).</li>
+</ul>
+</section>
+<section id="coefficient-of-friction" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="coefficient-of-friction"><span class="header-section-number">7.1.3</span> Coefficient of Friction</h3>
+<ul>
+<li>A dimensionless number representing the frictional properties of surfaces.</li>
+<li>Denoted by:
+<ul>
+<li><span class="math inline">\(\mu_s\)</span> for static friction</li>
+<li><span class="math inline">\(\mu_k\)</span> for kinetic friction</li>
+</ul></li>
+</ul>
+</section>
+<section id="frictional-force-formula" class="level3" data-number="7.1.4">
+<h3 data-number="7.1.4" class="anchored" data-anchor-id="frictional-force-formula"><span class="header-section-number">7.1.4</span> Frictional Force Formula</h3>
+<ul>
+<li>Maximum static friction force before motion starts: <span class="math display">\[
+F_s \leq \mu_s N
+\]</span></li>
+<li>Kinetic friction force during sliding: <span class="math display">\[
+F_k = \mu_k N
+\]</span> Where:</li>
+<li><span class="math inline">\(N\)</span> = normal force (perpendicular force between surfaces)</li>
+</ul>
+</section>
+<section id="characteristics-of-friction" class="level3" data-number="7.1.5">
+<h3 data-number="7.1.5" class="anchored" data-anchor-id="characteristics-of-friction"><span class="header-section-number">7.1.5</span> Characteristics of Friction</h3>
+<ul>
+<li>Friction depends on:
+<ul>
+<li>Nature of surfaces in contact (material, roughness)</li>
+<li>Normal force <span class="math inline">\(N\)</span></li>
+</ul></li>
+<li>Friction is <strong>independent of contact area</strong> for solid surfaces.</li>
+<li>Friction converts kinetic energy into heat.</li>
+</ul>
+</section>
+<section id="effects-of-friction" class="level3" data-number="7.1.6">
+<h3 data-number="7.1.6" class="anchored" data-anchor-id="effects-of-friction"><span class="header-section-number">7.1.6</span> Effects of Friction</h3>
+<ul>
+<li>Enables walking, driving, and gripping.</li>
+<li>Causes wear and tear.</li>
+<li>Causes energy loss in machines.</li>
+</ul>
+</section>
+<section id="overcoming-friction" class="level3" data-number="7.1.7">
+<h3 data-number="7.1.7" class="anchored" data-anchor-id="overcoming-friction"><span class="header-section-number">7.1.7</span> Overcoming Friction</h3>
+<ul>
+<li>Lubrication reduces friction by adding a thin layer between surfaces.</li>
+<li>Using rollers or ball bearings reduces friction by converting sliding to rolling friction.</li>
+</ul>
+</section>
+<section id="example-force-required-to-move-an-object" class="level3" data-number="7.1.8">
+<h3 data-number="7.1.8" class="anchored" data-anchor-id="example-force-required-to-move-an-object"><span class="header-section-number">7.1.8</span> Example: Force Required to Move an Object</h3>
+<p>If an object of weight <span class="math inline">\(W\)</span> rests on a horizontal surface:</p>
+<ul>
+<li>Normal force <span class="math inline">\(N = W = mg\)</span></li>
+<li>Minimum force <span class="math inline">\(F\)</span> to overcome static friction: <span class="math display">\[
+F = \mu_s N = \mu_s mg
+\]</span></li>
+</ul>
+</section>
+<section id="summary-table" class="level3" data-number="7.1.9">
+<h3 data-number="7.1.9" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">7.1.9</span> Summary Table</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 16%">
+<col style="width: 22%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Symbol</th>
+<th>Formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Static friction force</td>
+<td><span class="math inline">\(F_s\)</span></td>
+<td><span class="math inline">\(F_s \leq \mu_s N\)</span></td>
+<td>Max value before motion starts</td>
+</tr>
+<tr class="even">
+<td>Kinetic friction force</td>
+<td><span class="math inline">\(F_k\)</span></td>
+<td><span class="math inline">\(F_k = \mu_k N\)</span></td>
+<td>During sliding motion</td>
+</tr>
+<tr class="odd">
+<td>Coefficient of friction</td>
+<td><span class="math inline">\(\mu_s, \mu_k\)</span></td>
+<td>Dimensionless</td>
+<td>Depends on surfaces</td>
+</tr>
+<tr class="even">
+<td>Normal force</td>
+<td><span class="math inline">\(N\)</span></td>
+<td>Depends on situation</td>
+<td>Usually <span class="math inline">\(N = mg\)</span> on flat surface</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><blockquote class="blockquote">
+<p>1. Glass fibre.</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote class="blockquote">
+<p>7. Falling matchbox</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2. Styrocell beads</td>
+<td style="text-align: left;"><blockquote class="blockquote">
+<p>8. Escalado</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3. Polystyrene ball falling in a tube</td>
+<td style="text-align: left;"><blockquote class="blockquote">
+<p>9. Rolling dog food and baked bean cans</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4. Lowering friction with magnets</td>
+<td style="text-align: left;">10. Friction between books |</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><ol start="5" type="1">
+<li><p>Stick-slip motion</p></li>
+<li><p>Two simple hovercraft</p></li>
+</ol></td>
+<td style="text-align: left;">11. Friction and sliding cups</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="stories-to-enritch" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="stories-to-enritch"><span class="header-section-number">7.2</span> Stories to enritch</h2>
+<section id="the-tragedy-on-the-rails-the-tay-bridge-disaster-1879" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="the-tragedy-on-the-rails-the-tay-bridge-disaster-1879"><span class="header-section-number">7.2.1</span> The Tragedy on the Rails: The Tay Bridge Disaster (1879)</h3>
+<p>One stormy night in Scotland, a passenger train attempted to cross the Tay Bridge. A violent gust struck, and the bridge collapsed beneath it. Investigators later found that oscillations and lack of lateral frictional damping in the bridge design had allowed the wind to amplify motion until the structure gave way. The disaster shocked Victorian engineers. The need to understand not just force, but friction and resistance within joints and tracks, became a central lesson in civil engineering.</p>
+<p>Reflection: How can a lack of internal friction—often seen as wasteful—be deadly?</p>
+</section>
+<section id="the-match-that-changed-the-world" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="the-match-that-changed-the-world"><span class="header-section-number">7.2.2</span> The Match That Changed the World</h3>
+<p>In 1826, John Walker invented the friction match—by accident. Stirring a mixture of chemicals with a stick, he noticed the dry blob at the end flared when scraped on stone. This wasn’t heat from fire—it was the mechanical friction of scraping. The invention allowed for easy fire-making for the first time in history. Friction, once a nuisance to be avoided, became a tool for ignition and survival.</p>
+<p>Reflection: How does this story show friction’s creative power?</p>
+</section>
+<section id="the-ice-of-the-battle-of-stalingrad" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="the-ice-of-the-battle-of-stalingrad"><span class="header-section-number">7.2.3</span> The Ice of the Battle of Stalingrad</h3>
+<p>During WWII, German tanks bogged down outside Stalingrad, partly because of brutal cold. The steel tank treads, designed for European mud, couldn’t grip the icy roads. Soviet engineers had reinforced their own equipment with roughened track pads and sandbags for added grip. The frictionless Russian winter became a weapon, turning mobility into paralysis.</p>
+<p>Reflection: How did control of friction shape the outcome of a battle?</p>
+</section>
+<section id="the-apollo-moon-landers-unexpected-slide" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="the-apollo-moon-landers-unexpected-slide"><span class="header-section-number">7.2.4</span> The Apollo Moon Lander’s Unexpected Slide</h3>
+<p>When the Apollo 11 lunar module touched down, engineers had assumed the Moon’s surface would provide moderate resistance. But it was finer than talcum powder—highly variable friction. Neil Armstrong reported a slight slide before coming to rest. This helped NASA redesign later landers to include broader, crushable landing pads, ensuring enough friction to avoid tipping or skidding.</p>
+<p>Reflection: What does friction mean in a place with no atmosphere or weather?</p>
+</section>
+<section id="the-bobsledding-black-ice-mystery" class="level3" data-number="7.2.5">
+<h3 data-number="7.2.5" class="anchored" data-anchor-id="the-bobsledding-black-ice-mystery"><span class="header-section-number">7.2.5</span> The Bobsledding Black Ice Mystery</h3>
+<p>During the 1964 Winter Olympics, a favored bobsled team wiped out on a turn. The cause? Black ice—a barely visible glaze with drastically lower friction. Engineers began applying tiny etched grooves to the bobsled runners and modifying the track’s curvature to adjust normal force and maintain grip. Sports science embraced friction like never before—not to stop motion, but to keep it stable and predictable.</p>
+<p>Reflection: How can too little friction turn speed into danger?</p>
+</section>
+<section id="da-vincis-secret-notes-on-friction" class="level3" data-number="7.2.6">
+<h3 data-number="7.2.6" class="anchored" data-anchor-id="da-vincis-secret-notes-on-friction"><span class="header-section-number">7.2.6</span> Da Vinci’s Secret Notes on Friction</h3>
+<p>Long before Newton, Leonardo da Vinci discovered fundamental laws of friction while sketching machines. He wrote (in mirrored script!) that the force of friction is proportional to the load and independent of contact area—ideas later attributed to Amontons. He even created diagrams of inclined planes and sliding blocks. But his findings weren’t published for centuries.</p>
+<p>Reflection: How might physics history have changed if da Vinci’s friction laws had been shared?</p>
+</section>
+<section id="the-ancient-egyptian-sled-and-the-water-trick" class="level3" data-number="7.2.7">
+<h3 data-number="7.2.7" class="anchored" data-anchor-id="the-ancient-egyptian-sled-and-the-water-trick"><span class="header-section-number">7.2.7</span> The Ancient Egyptian Sled and the Water Trick</h3>
+<p>Wall paintings show Egyptians hauling giant statues on sleds. Archaeologists puzzled over how they moved such loads. Then, a modern experiment revealed: adding small amounts of water to the sand increased friction’s efficiency by reducing sand displacement and increasing cohesion—making the sled slide more easily. They weren’t just brute-forcing it. They had mastered frictional control.</p>
+<p>Reflection: How can more friction sometimes make things slide more easily?</p>
+</section>
+<section id="the-skating-rink-that-was-too-smooth" class="level3" data-number="7.2.8">
+<h3 data-number="7.2.8" class="anchored" data-anchor-id="the-skating-rink-that-was-too-smooth"><span class="header-section-number">7.2.8</span> The Skating Rink That Was Too Smooth</h3>
+<p>In the early days of synthetic ice rinks, engineers crafted ultra-slick plastic surfaces. But skaters couldn’t control their movement. It turned out real ice works because of micro-friction and thin meltwater films that allow edge control. Designers had to roughen synthetic surfaces slightly and develop lubricant sprays to simulate the subtle friction of real skating.</p>
+<p>Reflection: What does this tell us about the balance between grip and glide?</p>
+</section>
+<section id="the-mystery-of-the-climbing-gecko" class="level3" data-number="7.2.9">
+<h3 data-number="7.2.9" class="anchored" data-anchor-id="the-mystery-of-the-climbing-gecko"><span class="header-section-number">7.2.9</span> The Mystery of the Climbing Gecko</h3>
+<p>Geckos can walk across ceilings, and for years no one knew how. It wasn’t suction or glue—it was molecular friction. Tiny hairs on their feet use van der Waals forces to generate friction at the atomic scale. Engineers now study geckos to make biomimetic pads that let robots and humans stick to glass walls.</p>
+<p>Reflection: What if friction isn’t just a bulk property, but something that happens molecule by molecule?</p>
+</section>
+<section id="the-violinists-rosin" class="level3" data-number="7.2.10">
+<h3 data-number="7.2.10" class="anchored" data-anchor-id="the-violinists-rosin"><span class="header-section-number">7.2.10</span> The Violinist’s Rosin</h3>
+<p>String players rub rosin onto their bows—not to reduce friction, but to create just the right amount. The bow must grip and release the string rapidly to make it vibrate. Too little friction, and there’s no sound. Too much, and it scratches. Musicians become masters of microscopic friction control.</p>
+<p>Reflection: How do artists develop an intuitive sense of physics through practice?</p>
+</section>
+</section>
+<section id="practical-work-and-demos" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="practical-work-and-demos"><span class="header-section-number">7.3</span> Practical work and Demos</h2>
+<section id="glass-fibre" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="glass-fibre"><span class="header-section-number">7.3.1</span> Glass fibre</h3>
+<p>Many years ago I did a piece of research into the strength of glass fibre laminates. The problem was to measure how much friction there was between the glass fibres and the laminate itself. This could be found by measuring the friction as a piece of fibre was pulled over a section of laminate mounted on a rod. The amount of twist gave a measure of the frictional force.</p>
+</section>
+<section id="styrocell-beads" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="styrocell-beads"><span class="header-section-number">7.3.2</span> Styrocell beads</h3>
+<p>Friction - or the lack of it - can be demonstrated when a crystalljsing dish is slid along over some styrocell beads that have been poured into a tray. These beads are hard plastic spheres about a millimetre in diameter and so act like ball bearings. Spinning the dish makes a good demonstration and the whole experiment can be done in the base of a small ripple tank placed on an overhead projector to make it easily visible to the whole class.</p>
+<blockquote class="blockquote">
+<p>Do not let the pupils take any of the beads away —they are dangerous if spread on the floor.</p>
+<p>Age range: 14-18 Apparatus required: •Styrocell beads •Ripple tank •Tray •Glass beaker</p>
+</blockquote>
+</section>
+<section id="polystyrene-ball-falling-in-a-tube" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="polystyrene-ball-falling-in-a-tube"><span class="header-section-number">7.3.3</span> Polystyrene ball falling in a tube</h3>
+<p>Set up a vertical tube and drop a polystyrene ball into it. The diameter of the ball should be just a little smaller than the diameter of the tube. The ball falls really slowly due to air friction in the tube and it may be possible to get it to reach a terminal velocity where Weight = Drag!</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18</p>
+<p>Apparatus required: •Large diameter glass tube up to two metres long •Polystyrene balls of various diameters up to almost that of the internal diameter of the glass tube •Stop clock •Ruler</p>
+</blockquote>
+</section>
+<section id="lowering-friction-with-magnets" class="level3" data-number="7.3.4">
+<h3 data-number="7.3.4" class="anchored" data-anchor-id="lowering-friction-with-magnets"><span class="header-section-number">7.3.4</span> Lowering friction with magnets</h3>
+<p>Take a bar magnet and mount it in a clamp with the poles vertically above each other. Take one or two clean ball bearings and attach them to the magnet so that they hang in a line from the lower end. Then attach a steel disc about 3 cm in diameter to the lower ball bearing. It should just be held on but not too tightly - if the attraction is too strong add another ball bearing. Blow on the side of the disc to set it rotating. Adjusting the number and size of the ball bearings and the mass of the disc will give a situation where the disc is only just supported and the friction between it and the lower ball bearing is then very low. An old account of this experiment suggests that the disc could be made to rotate for over fifteen minutes.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Retort stand and clamp •Two or three ball bearings (diameter about 0.8 mm depending on magnet strength) •Strong bar magnet •Steel disc</p>
+</blockquote>
+</section>
+<section id="stick-slip-motion" class="level3" data-number="7.3.5">
+<h3 data-number="7.3.5" class="anchored" data-anchor-id="stick-slip-motion"><span class="header-section-number">7.3.5</span> Stick-slip motion</h3>
+<p>The stick-slip motion in friction is beautifully illustrated by the sliding woodpecker. This is a small wooden bird fixed to a bead by a short spring. The bead fits loosely over a vertical metal rod. When the bird is still it does not slide down but as soon as it is twanged it slips jerkily down the rod.</p>
+<blockquote class="blockquote">
+<p>Theory/Explanation:</p>
+<p>The hole in the wooden bead is slightly bigger than the diameter of the metal rod. When the hole is vertical the bead slips down but as soon as it tilts, the bead “grips” the rod. The oscillatory motion of the bird on the spring alternately puts the hole upright and at an angle.</p>
+<p>Age range: 11-14</p>
+<p>Apparatus required: •Woodpecker toy (available from toy suppliers in England)</p>
+</blockquote>
+</section>
+<section id="two-simple-hovercraft" class="level3" data-number="7.3.6">
+<h3 data-number="7.3.6" class="anchored" data-anchor-id="two-simple-hovercraft"><span class="header-section-number">7.3.6</span> Two simple hovercraft</h3>
+<p>(a) Balloon hovercraft</p>
+<p>Drill a hole through the centre of a circular disc of hardboard (disc diameter about 10 cm). Stick a rubber bung over the centre of the disc so that the hole in the bung coincides with the hole in the disc. Blow up a balloon and then fit it over the open end of the bung. Air rushes through the hole, and out the other side of the disc and this acts like a small hovercraft. (b) Tile hovercraft</p>
+<p>A simple hovercraft can be made really cheaply by using a computer-cooling fan fixed above a hole in a ceiling tile.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Balloon •Hardboard disc with a hole and tube •Ceiling tile •Computer cooling fan</p>
+</blockquote>
+</section>
+<section id="falling-matchbox" class="level3" data-number="7.3.7">
+<h3 data-number="7.3.7" class="anchored" data-anchor-id="falling-matchbox"><span class="header-section-number">7.3.7</span> Falling matchbox</h3>
+<p>This fascinating short experiment shows you how energy is absorbed by friction. Take a match box—a big one is more impressive and you can leave the matches in it.</p>
+<p>Making sure that the box is closed (Photo 1), drop in on to a hard surface from a height of about 10cm. The matchbox will bounce and fall over.</p>
+<p>Now pull the drawer out slightly (Photo 2) and repeat the experiment. Once again the matchbox hits the table, but this time the drawer slides in a bit, absorbing some of the energy, and the matchbox should stay upright rather than bouncing.</p>
+<p>Age range: 14-18 1 2</p>
+<blockquote class="blockquote">
+<p>Apparatus required: ’Hard surface</p>
+<p>•Matchbox full of matches</p>
+</blockquote>
+<p>61</p>
+</section>
+<section id="escalado" class="level3" data-number="7.3.8">
+<h3 data-number="7.3.8" class="anchored" data-anchor-id="escalado"><span class="header-section-number">7.3.8</span> Escalado</h3>
+<p>There was a superb horse racing game called Escalado which worked on the stick-slip principle. The horses were lead and stood on a cloth track, one end of which was securely fixed to the table by a spring while the other was attached to a rod and ratchet. As the ratchet was turned by a handle the track was pulled forward slowly and then released - the spring pulling it back rapidly — but the horses stayed where they were due to inertia. As a result they moved along the track at every rotation.</p>
+<p>Age range: 11-18 Apparatus required: •Escalado horse racing game</p>
+</section>
+<section id="rolling-cans-of-dog-food-and-baked-beans" class="level3" data-number="7.3.9">
+<h3 data-number="7.3.9" class="anchored" data-anchor-id="rolling-cans-of-dog-food-and-baked-beans"><span class="header-section-number">7.3.9</span> Rolling cans of dog food and baked beans</h3>
+<p>Get two cans of equal mass — one containing dog food (or cat food for cat lovers) and the other containing baked beans.</p>
+<p>Hold them side-by-side at the top of a ramp and then let them go at the same time asking the class which one will reach the bottom of the slope first.</p>
+<p>The can of dog food gets there first because the baked beans are moving within the other can, creating frictional forces which slow down the rate of rotation of that can and so making it roll slower.</p>
+<p>Then try two cans of fizzy drink but shake one first. See which one wins in this case.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment</p>
+<p>Apparatus required: •Wooden ramp about 1.5 m long •Tins of dog food, baked beans and two of fizzy drink</p>
+</blockquote>
+</section>
+<section id="friction-between-books" class="level3" data-number="7.3.10">
+<h3 data-number="7.3.10" class="anchored" data-anchor-id="friction-between-books"><span class="header-section-number">7.3.10</span> Friction between books</h3>
+<p>A very simple and yet impressive example of friction can be seen using two paper-backed books. It is best done with ones made from rougher poor quality paper.</p>
+<p>Hold the books with their open sides facing each other and carefully interleave the pages so that about half of one book extends into half the other as shown by the diagram.</p>
+<p>Then get two people to hold the books by their spines and try and pull them apart. There is so much friction between the pages that it is likely that the books will be damaged before they can be pulled apart — so be careful!</p>
+<blockquote class="blockquote">
+<p>Age range: 5-14</p>
+<p>Apparatus required: •Two paper-backed books</p>
+</blockquote>
+</section>
+<section id="friction-and-sliding-cups" class="level3" data-number="7.3.11">
+<h3 data-number="7.3.11" class="anchored" data-anchor-id="friction-and-sliding-cups"><span class="header-section-number">7.3.11</span> Friction and sliding cups</h3>
+<p>The aim of this experiment is to give you an idea of the friction needed to slow things down.</p>
+<p>Take a small plastic pot and put some weights in it. Gently slide it across the floor of your classroom.</p>
+<p>Measure how far it has gone from where you let it go to where it stopped. Change the weights in the pot and try the experiment again.</p>
+<p>Some of you may have watched the curling in the Winter</p>
+<p>Olympics — the stones they use behave in the same way as your pots on the floor.</p>
+<p>Age range: 7-11 Apparatus required: •Tape measure •Plastic cups •Masses</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ForcesNewton.html" class="pagination-link" aria-label="Forces and Newton's Laws">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Inertia.html" class="pagination-link" aria-label="Inertia">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Inertia</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2025, Joe Rowing</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jrowing">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/jrowing.com">
+      <i class="bi bi-megaphone" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.jrowing.com">
+      <i class="bi bi-file-earmark" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

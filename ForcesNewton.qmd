@@ -63,47 +63,38 @@ format: html
 
 ## Stories to enritch
 
-Newton’s Apple: A Story of Stillness and Insight
+### Newton’s Apple: A Story of Stillness and Insight
 
-One evening during the 1660s, Isaac Newton sat alone at his family’s orchard in Woolsthorpe, England, while the country was gripped by plague. As the story goes, he saw an apple fall straight down from a tree. Rather than shrug and move on, he wondered: why always down? And if it could reach the ground, could gravity reach the Moon? This quiet question grew into a law that united falling apples with planetary orbits—proving that the force pulling objects to Earth also keeps the Moon in motion. Newton’s First Law formed the philosophical core: an object only changes motion if a force acts on it. Everything else flowed from there.
+The famous apple story is actually true, at least according to the Memoirs of Sir Isaac Newton’s Life, written by William Stukeley, an archaeologist and one of Newton’s first biographers. Stukeley records his conversation with Newton as follows:
 
-Reflection: How can stillness—watching something as ordinary as a falling apple—lead to a revolution in science?
+>“After dinner, the weather being warm, we went into the garden and drank tea, under the shade of some apple trees…he told me, he was just in the same situation, as when formerly, the notion of gravitation came into his mind. It was occasion’d by the fall of an apple, as he sat in contemplative mood. Why should that apple always descend perpendicularly to the ground, thought he to himself…”
 
-### The Duel of Descartes and Newton: Whose Motion Reigns?
+you can read the book, published in 1752 here:
 
-Before Newton’s fame, the great philosopher René Descartes believed motion was explained by vortexes of swirling matter filling space. Newton, in contrast, argued for empty space—a vacuum—where forces acted invisibly at a distance. This wasn’t just a technical disagreement. It was a fight for the very nature of reality. Newton’s formulation of the laws of motion and gravity shattered the need for “mechanical contact” and introduced invisible, mathematical forces. His Third Law, with its mysterious symmetry, described forces acting across space with no visible mechanism.
+https://ttp.royalsociety.org/ttp/ttp.html?id=1807da00-909a-4abf-b9c1-0279a08e4bf2&type=book&_ga=2.243449797.1115929948.1704188280-1209525634.1700154565&_gl=1*ixz8c9*_gcl_au*NDA1NjMzNzgxLjE3NTEzMTAwMzc.
 
-Reflection: Why might Descartes have rejected “action at a distance”? How did Newton’s laws require people to imagine the universe differently?
+Rather brilliantly, a piece of Newton’s apple tree was taken into space by British-born astronaut Piers Sellers as part of the 350 year celebrations.
+
 
 ### The Horse and Cart Debate That Divided Philosophers
 
 When Newton’s Third Law was proposed, critics raised a question: if a horse pulls on a cart, and the cart pulls back equally, how does anything move? This wasn’t just a joke—it sparked a genuine puzzle. The answer lies in the interaction with the ground: the horse pushes backward on the Earth, which pushes it forward. Newton’s Third Law is not a paradox, but a law of equal pairs, not cancellation. This insight became essential in understanding propulsion—whether walking, rowing, or spaceflight.
 
-Reflection: How can a misunderstanding of Newton’s Third Law lead to confusion in everyday reasoning?
+Reflection: How can a misunderstanding of Newton’s First and Third Law lead to confusion in everyday reasoning?
 
 ### The Duel of Masks and the Vacuum Chamber
 
 In 1654, Otto von Guericke, mayor of Magdeburg, staged a spectacle to demonstrate the force of air pressure and inertia. He created two large copper hemispheres, evacuated the air from within, and then hitched teams of horses to either side. Despite their efforts, the hemispheres could not be pulled apart. What amazed the public was not just the demonstration of pressure, but the indirect implication of Newton’s First Law: the air (or lack of it) was exerting a massive force, even though nothing visible was "pushing."
 
-Reflection: How did theatrical science help convey physical laws to a public that couldn’t see the forces involved?
+### The Nuclear Cannon
+
+One of the fastest moving man-made objects ever fired was not a specially designed projectile so much as a manhole cover. The 1957 Pascal-B nuclear test in Nevada was an underground nuclear detonation. The 900 kg steel plate that capped the well down to the explosive was blown off the top of a test shaft so rapidly that the high-speed camera footage of the incident captured the manhole cover in just one frame. Working from the framerate we conclude that the speed must have been more than 66 km/s. The plate was never found, and although the plate   exceeded Earth’s escape velocity, it is most likely to have been vaporised by compression heating on it's way through the atmosphere. 
+
 
 ## Practical work and Demos
 
-+------------------------------------+--------------------------------------+
-| 1.  Newton's Laws                  | 6.  The lift problem                 |
-|                                    |                                      |
-| 2.  Sling shot theory              | 7.  Simple experiments with forces   |
-|                                    |                                      |
-| 3.  Pushing and Newton's Third Law | 8.  Newton meters and a tug of war   |
-|                                    |                                      |
-| 4.  Newton's Third Law             | 9.  Linear air track and two pulleys |
-|                                    |                                      |
-| 5.  Knees bend on bathroom scales  | 10. Shopping bag and old lady        |
-+====================================+======================================+
-|                                    |                                      |
-+------------------------------------+--------------------------------------+
 
-### Newton's Laws
+### Newton's 2nd Law experiment
 
 A simple experiment for the verification of Newton's Second Law uses a small trolley which is accelerated along a friction-compensated track by a number of washers tied to a thread which is fixed to the trolley after passing over a pulley. A way of ensuring the constancy of mass when studying Newton's Laws is to transfer the washers from the trolley to the accelerating mass or vice versa. This is a useful tip when plotting graphs of acceleration against force. (The total mass of all objects accelerating is thus kept constant.)
 
@@ -117,7 +108,7 @@ Notice that there is a degree of circularity in this 'proof' as we take the acce
 >
 > Apparatus required: 'Trolley 'Runway •Bench pulley •Washers •Ruler and stop clock or light gate assembly and timer •Leads
 
-### Slin shot theory
+### Sling shot theory
 
 When a spacecraft approaches a planet that is moving through space the spacecraft experiences a sling shot effect due to the motion of the planet. As the spacecraft approaches the planet the gravitational attraction between them will increase the velocity of the spacecraft so that when it passes the planet it is moving with a greater velocity relative to the planet. Since the planet itself is also moving through space the absolute velocity of the spacecraft is also increased. The mass of the planet is enormous compared with that of the spacecraft and so the effect on the planet's motion is infinitesimal.
 
@@ -157,22 +148,17 @@ Think about people travelling in a lift in a high-rise building. They would like
 
 Use the Newton spring balances or Newton scales to find the force in Newtons needed to:
 
-+---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       | A.  Open a drawer \| L. Pull down the board projector screen \|                                                                                                      |
-|                                       | B.  Turn twenty pages of your text book \| M. Rip a piece of paper \|                                                                                                |
-|                                       | C.  Push a drawing pin into a piece of wood \| N. Pull apart two pieces of glued paper. \|                                                                           |
-|                                       | D.  Pull a small stool across the floor \| O. Open a door (see if you can find one without a door closer fitted) \|                                                  |
-|                                       | E.  Pull a wheeled chair across the room \| P. Stretch an elastic band \|                                                                                            |
-|                                       | F.  Pull some sellotape off its reel \| Q. Push two repelling magnets together \|                                                                                    |
-|                                       | G.  Throw a shuttlecock \| R. Use one magnet to pick up some paper clips --- see how far above them you can move the magnet before it cannot pick up a paper clip \| |
-|                                       | H.  Turn on a water tap \| \| \> Open a pair of scissors \| \| \|                                                                                                    |
-|                                       | I.  Open a pencil case \| \|                                                                                                                                         |
-|                                       | J.  Pull the top off a ball point pen \|                                                                                                                             |
-+=======================================+======================================================================================================================================================================+
-|                                       |                                                                                                                                                                      |
-+---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+ - Open a drawer
+ - Rip a piece of paper
+ - Push a drawing pin into a piece of wood 
+ - Pull a small stool across the floor 
+ - Open a door
+ - Pull a wheeled chair across the room
+ - Stretch an elastic band
+ - Pull some sellotape off its reel 
+ - Push two repelling magnets together
+ - Use one magnet to pick up some paper clips --- see how far above them you can move the magnet before it cannot pick up a paper clip 
 
-> (For younger children we need not measure the size of the forces at this stage ---just feel them acting.)
 
 ### Newton meters and a tug of war
 
