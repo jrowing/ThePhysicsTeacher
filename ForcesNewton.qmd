@@ -5,6 +5,17 @@ format: html
 
 ## Basic Theory
 
+The size of a force is measured in units called Newtons (N). You can get a rough idea of a force's size by thinking about the pull of the Earth on us.
+
+### Mass
+
+This is the amount of stuff (matter) in an object. It is measured in kilograms (kg) and is always the same wherever the object is. The only way to change the mass of something is to chip a bit off! (Ignoring relativistic effects of course.)
+
+### Weight
+
+The force of attraction of the Earth on us is our WEIGHT. The more massive we are the bigger is the force of attraction and the bigger is our weight. This also gives us a rough definition of the Newton.
+A Newton is the pull of the Earth on about 100 g. The pull of the Earth on 1 kg is about 10 N.
+
 ### Newton’s First Law (Law of Inertia)
 
 -   An object remains at rest or moves with constant velocity unless acted upon by a **net external force**.
@@ -35,46 +46,41 @@ format: html
 
 ### Summary Table
 
-+-------------+----------------------------------------------------+----------------------------------------------------------+
-| Law         | Statement                                          | Formula                                                  |
-+=============+====================================================+==========================================================+
-| First Law   | Object remains in uniform motion unless force acts | $\sum \vec{F} = 0 \Rightarrow \vec{v} = \text{constant}$ |
-+-------------+----------------------------------------------------+----------------------------------------------------------+
-| Second Law  | Force causes acceleration proportional to mass     | $\sum \vec{F} = m \vec{a}$                               |
-+-------------+----------------------------------------------------+----------------------------------------------------------+
-| Third Law   | Action and reaction forces are equal and opposite  | $\vec{F}_{\text{AB}} = -\vec{F}_{\text{BA}}$             |
-+-------------+----------------------------------------------------+----------------------------------------------------------+
+| Law | Statement | Formula |
+|-------------------|--------------------------|---------------------------|
+| First Law | Object remains in uniform motion unless force acts | $\sum \vec{F} = 0 \Rightarrow \vec{v} = \text{constant}$ |
+| Second Law | Force causes acceleration proportional to mass | $\sum \vec{F} = m \vec{a}$ |
+| Third Law | Action and reaction forces are equal and opposite | $\vec{F}_{\text{AB}} = -\vec{F}_{\text{BA}}$ |
 
-> To change the way an object is moving you need a force.
->
-> This force can either:
->
-> \(a\) speed up the object, like a sprinter at the start of a race (b) slow down the object, like a motorbike slowing down as it approaches a red traffic signal
->
-> \(c\) change the direction in which the object is moving, like a car turning a corner
->
-> Newton's three laws of motion may be summarised as follows:
+To change the way an object is moving you need a force.
+
+This force can either:
+
+-   speed up the object, like a sprinter at the start of a race or..
+-   slow down the object, like a motorbike slowing down as it approaches a red traffic signal or..
+-   change the direction in which the object is moving, like a car turning a corner
+
+Newton's three laws of motion may be summarised as follows:
 
 1.  A body remains at rest or in a state of uniform motion unless acted on by a force. What is still stays still and what is moving stays moving at a steady speed in a straight line unless a force acts on it.
 
-2.  The resultant force on a body causes an acceleration which depends on both the size of the force and the mass of the body, i.e. Force = Mass x Acceleration
+2.  The resultant force on a body causes an acceleration which depends on both the size of the force and the mass of the body, i.e. $\text{Force} = \text{Mass} \times  \text{Acceleration}$
 
 3.  If a force acts on one body an equal and opposite force acts on another body.
 
-## Stories to enritch
+## Stories to enrich
 
 ### Newton’s Apple: A Story of Stillness and Insight
 
 The famous apple story is actually true, at least according to the Memoirs of Sir Isaac Newton’s Life, written by William Stukeley, an archaeologist and one of Newton’s first biographers. Stukeley records his conversation with Newton as follows:
 
->“After dinner, the weather being warm, we went into the garden and drank tea, under the shade of some apple trees…he told me, he was just in the same situation, as when formerly, the notion of gravitation came into his mind. It was occasion’d by the fall of an apple, as he sat in contemplative mood. Why should that apple always descend perpendicularly to the ground, thought he to himself…”
+> “After dinner, the weather being warm, we went into the garden and drank tea, under the shade of some apple trees…he told me, he was just in the same situation, as when formerly, the notion of gravitation came into his mind. It was occasion’d by the fall of an apple, as he sat in contemplative mood. Why should that apple always descend perpendicularly to the ground, thought he to himself…”
 
 you can read the book, published in 1752 here:
 
-https://ttp.royalsociety.org/ttp/ttp.html?id=1807da00-909a-4abf-b9c1-0279a08e4bf2&type=book&_ga=2.243449797.1115929948.1704188280-1209525634.1700154565&_gl=1*ixz8c9*_gcl_au*NDA1NjMzNzgxLjE3NTEzMTAwMzc.
+[![](images/clipboard-3417108030.png){fig-align="center"}](https://ttp.royalsociety.org/ttp/ttp.html?id=1807da00-909a-4abf-b9c1-0279a08e4bf2&type=book&_ga=2.243449797.1115929948.1704188280-1209525634.1700154565&_gl=1ixz8c9_gcl_au*NDA1NjMzNzgxLjE3NTEzMTAwMzc.)
 
 Rather brilliantly, a piece of Newton’s apple tree was taken into space by British-born astronaut Piers Sellers as part of the 350 year celebrations.
-
 
 ### The Horse and Cart Debate That Divided Philosophers
 
@@ -86,93 +92,260 @@ Reflection: How can a misunderstanding of Newton’s First and Third Law lead to
 
 In 1654, Otto von Guericke, mayor of Magdeburg, staged a spectacle to demonstrate the force of air pressure and inertia. He created two large copper hemispheres, evacuated the air from within, and then hitched teams of horses to either side. Despite their efforts, the hemispheres could not be pulled apart. What amazed the public was not just the demonstration of pressure, but the indirect implication of Newton’s First Law: the air (or lack of it) was exerting a massive force, even though nothing visible was "pushing."
 
+![The original Magdeburg hemispheres.](images/clipboard-3414963400.png){fig-align="center" width="50%"}
+
 ### The Nuclear Cannon
 
-One of the fastest moving man-made objects ever fired was not a specially designed projectile so much as a manhole cover. The 1957 Pascal-B nuclear test in Nevada was an underground nuclear detonation. The 900 kg steel plate that capped the well down to the explosive was blown off the top of a test shaft so rapidly that the high-speed camera footage of the incident captured the manhole cover in just one frame. Working from the framerate we conclude that the speed must have been more than 66 km/s. The plate was never found, and although the plate   exceeded Earth’s escape velocity, it is most likely to have been vaporised by compression heating on it's way through the atmosphere. 
-
+One of the fastest moving man-made objects ever fired was not a specially designed projectile so much as a manhole cover. The 1957 Pascal-B nuclear test in Nevada was an underground nuclear detonation. The 900 kg steel plate that capped the well down to the explosive was blown off the top of a test shaft so rapidly that the high-speed camera footage of the incident captured the manhole cover in just one frame. Working from the framerate we conclude that the speed must have been more than 66 km/s. The plate was never found, and although the plate exceeded Earth’s escape velocity, it is most likely to have been vaporised by compression heating on it's way through the atmosphere.
 
 ## Practical work and Demos
 
-
 ### Newton's 2nd Law experiment
 
-A simple experiment for the verification of Newton's Second Law uses a small trolley which is accelerated along a friction-compensated track by a number of washers tied to a thread which is fixed to the trolley after passing over a pulley. A way of ensuring the constancy of mass when studying Newton's Laws is to transfer the washers from the trolley to the accelerating mass or vice versa. This is a useful tip when plotting graphs of acceleration against force. (The total mass of all objects accelerating is thus kept constant.)
+***The*** classic physics experiment is the N2 experiment in which a small trolley which is accelerated along a friction-compensated track by a number of small masses (washers are ideal) tied to a thread which is fixed to the trolley after passing over a pulley.The friction compensated track removes the effect of the work done against friction by the cart and is achieved by simply tilting the track until the cart, pushed lightly, continues to roll down the slope at steady speed.
 
-Notice that there is a degree of circularity in this 'proof' as we take the accelerating force as mg which is using the law that we are trying to verify.
+We usually use lightgates to measure the acceleration by measuring the difference in velocity at two points a measured time interval apart. You can also directly measure acceleration with lightgates or accelerometers (phyphox is great for this).
 
-> Theory:
->
-> Equation of motion: Accelerating force (F) = mg = Total mass x acceleration = (M+m)a where m is the mass of the washers accelerating the trolley and M is the total mass of the trolley and all the washers.
->
-> Age range: 14-16
->
-> Apparatus required: 'Trolley 'Runway •Bench pulley •Washers •Ruler and stop clock or light gate assembly and timer •Leads
+If you don't have any such technology available, or if you want to do it a bit differently you can time the trolley from a standing start over a known distance and then use: $$s = ut + 0.5 at^{2}$$
+
+where:
+
+-   $t$ is the time period measured
+-   $u$ is the initial velocity (0)
+-   $a$ is the acceleration to be calculated
+-   $s$ is the measured distance
+
+to calculate the average acceleration. Another variation with a speed only sensor would be to use: $$v^{2}=u^{2} + 2as$$
+
+where:
+
+-   $v$ is the final velocity measured
+-   $u$ is the initial velocity (0)
+-   $a$ is the acceleration to be calculated
+-   $s$ is the measured distance
+
+Despite being ***the*** experiment, an awful lot of students conduct it incorrectly. In order to get meaningful results it's important to ensure mass being accelerated is constant. This means it's critical to transfer the weights from the trolley to the accelerating mass or vice versa. In other words, when you plot graphs of acceleration against force The total mass of all objects accelerating is the constant gradient.
+
+One of the odd issues with this experiment that you can get round with modern technology is that we take the accelerating force as mg - using the very law that we are trying to verify. If you have accelerometer and force meter available you can measure the quantities directly. Plotting the values against each other should validate N2 although if you have a very able class you could use an elastic attachment from the force meter to the car and have some fun...
+
+Theory: $$ \text{Accelerating force (F)}  = mg = \text{ Total mass }\times \text{ acceleration} = (M+m)a$$ Where:
+
+-   $m$ is the mass of the accelerating mass acting on the trolley and
+-   $M$ is the total mass of the trolley and the accelerating mass.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Ramps
+-   Trolleys
+-   Small masses or washers
+-   Lightgates or stopwatches
+-   String
+-   Pulleys
+-   Wedge to make the ramp "friction compensated"
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
 
 ### Sling shot theory
 
 When a spacecraft approaches a planet that is moving through space the spacecraft experiences a sling shot effect due to the motion of the planet. As the spacecraft approaches the planet the gravitational attraction between them will increase the velocity of the spacecraft so that when it passes the planet it is moving with a greater velocity relative to the planet. Since the planet itself is also moving through space the absolute velocity of the spacecraft is also increased. The mass of the planet is enormous compared with that of the spacecraft and so the effect on the planet's motion is infinitesimal.
 
-### Pushing and Newton's Third Law
+You can demonstrate this neatly with the brilliant sim from PhET:
 
-This is a very simple example of Newton's Third Law. Get two pupils of similar size to stand facing each other. Tell them to raise their hands so that the pairs of hands are touching. Then tell one pupil to push the other over. They will both be pushed backwards. This example of Newton's Third Law confirms that when a force acts on one body an equal and opposite force acts on another body. Trying the same thing with both pupils on skateboards may be even more impressive.
+[![](images/clipboard-3285692418.png){fig-align="center"}](https://phet.colorado.edu/sims/html/my-solar-system/latest/my-solar-system_all.html)
 
-> Age range: 14-16
->
-> Apparatus required: •Two pupils •Maybe two skateboards as well
+### Skateboards and Newton's Third Law
 
-### Newton's Third Law
+A very simple and effective demonstration of Newton's Third Law. Stand two students of approximately equal mass on skateboards (you could make a pair of wheeled trolleys for the purpose). Tell them to raise their hands so that the pairs of hands are touching and push!. They will both be pushed backwards. Follow this up by giving each the end of a rope and asking them to reel the other in. With well maintained bearings in the trolleys/skateboards the pair should end up back in the starting place. This example of Newton's Third Law confirms that when a force acts on one body an equal and opposite force acts on another body.
 
-Mount a small bow on a dynamics trolley and fire a rubber tipped arrow from it. As the arrow goes forward the bow and frame accelerate backwards. This is an interesting and useful model with which to demonstrate both Newton's Third Law and the transfer of energy from that stored in the stretched bow string to the kinetic energy of the trolley and the arrow.
+![](images/clipboard-3427755575.png)
 
-> Age range: 14-18
->
-> Apparatus required: 'Dynamics trolley •Toy bow •Rubber tipped arrow
+If you have capable skateboarders or are confident yourself you can extend the demo by standing on the wheeled board and propelling it by throwing or catching heavy masses such as bowlingballs or sandbags.
 
-### Knees bend on bathroom scales
+::::::: {.callout-note collapse="true"}
+## Practical Info:
 
-You can observe some very interesting effects by standing on a set of bathroom scales and then watching the reading as you bend your knees. The reading goes down as you bend your knees but increases as you straighten your legs to accelerate yourself upwards to a standing position. An alternative version is to stand on the scales holding a pair of dumbbells in your hands and watch the reading as you raise and lower them.
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
 
-> Age range: 14-18
->
-> Apparatus required: 'Bathroom scales •Two dumbbells or weights on a bar
+-   Rope
+-   2 $\times$ Skateboard or sturdy wheeled trolley
+-   Willing students! - Joking aside, please take care with the trolleys, there's an obvious slip/fall hazzard here that needs managing
 
-Forces and Newton's Laws
+optional:
 
-### The lift problem
+-   Bowling ball/sandbag
+:::
 
-Make a table to discuss what happens to your mass, weight and reaction when you are in a lift that stays still, moves with constant velocity up or down, accelerates up or down or falls freely. Remember that as long as the gravitational field does not change, your weight does not alter it is only the reaction of the floor that may change if you accelerate up or down.
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
 
-Think about people travelling in a lift in a high-rise building. They would like to get to their destination floor as quickly as possible, but there clearly has to be a limit put on the lift's acceleration. Can you find out what this is?
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Jumping on bathroom scales
+
+A lovely way to segue into impulse from relatively static Newtonian physics is to use the tactile feedback from some bathroom scales. Students can easily predict the outcome of the display movements after a few moments play and you can quickly link this to the accelerations. The reading goes down as you bend your knees but increases as you straighten your legs to accelerate yourself upwards to a standing position. A much more sedate version has you standing on the scales holding a heavy mass and asking how the display will change as you lift and lower the mass.
+
+![](images/clipboard-3941722952.png){fig-align="center" width="50%"}
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Scales
+-   Phone/Video camera if you want to take video of the scale reading changing over the jump
+
+optional:
+
+-   Bowling ball/sandbag/weights
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### The lift
+
+If you have a lift in your building and something like Phyphox on a mobile then you can get some really good acceleration/weight data to show how acceleration and force are linked. You can build this into an excellent extension problem with the following:
+
+> You're involved in a new 1km tall high-rise building project. The people would like to get to their destination floor as quickly as possible. What's the fastest that the lift could convey people to the top floor without causing damage or causing the passengers to leave the floor of the lift carrige? What about from the top floor to the ground floor? Are they the same?
 
 ### Simple experiments with forces
 
 Use the Newton spring balances or Newton scales to find the force in Newtons needed to:
 
- - Open a drawer
- - Rip a piece of paper
- - Push a drawing pin into a piece of wood 
- - Pull a small stool across the floor 
- - Open a door
- - Pull a wheeled chair across the room
- - Stretch an elastic band
- - Pull some sellotape off its reel 
- - Push two repelling magnets together
- - Use one magnet to pick up some paper clips --- see how far above them you can move the magnet before it cannot pick up a paper clip 
+-   Open a drawer
+-   Rip a piece of paper
+-   Push a drawing pin into a piece of wood
+-   Pull a small stool across the floor
+-   Open a door
+-   Pull a wheeled chair across the room
+-   Stretch an elastic band
+-   Pull some sellotape off its reel
+-   Push two repelling magnets together
+-   Use one magnet to pick up some paper clips --- see how far above them you can move the magnet before it cannot pick up a paper clip
+
+![](images/clipboard-1830812909.png){fig-align="center" width="50%"}
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+- Forcemeters
+- String
+- Sticky tape
+- Selection of things to do
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
 
 
 ### Newton meters and a tug of war
 
-This example shows some misconceptions about the sizes of forces.
+There are many misconceptions about tension in ropes and the like that mainly boil down to getting the following wrong:
 
 Set up the two sets of apparatus as shown in the diagrams and ask the students what they think will be the readings on the Newton meters.
 
+![](images/clipboard-2605776983.png)
+
 The point is that they are all the same and read W --- the weight of ONE of the masses. (You need a lightweight Newton meter so that it does not affect the result significantly.)
 
-> Age range: 14-19
->
-> Apparatus required: •Three bench pulleys 'Three Newton meters ^o^Three masses of about Ikg each
->
-> •String or cord •Mounting point on a wall
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Three bench pulleys 
+ - 'Three Newton meters 
+ - Three masses of about 1kg each
+ - String or cord 
+ - Mounting point on a wall
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
+
+
 
 ### Linear air track and two pulleys
 
@@ -180,101 +353,322 @@ The effect of two unbalanced forces is very well demonstrated by having a trolle
 
 A simplified version is to use two dissimilar masses (M and m) hanging by a thread over two pulleys fixed to retort stands with a central mass held in mid air. If this mass is not too great the string will be more or less horizontal and the applied forces will then be horizontal also.
 
-> Theory:
->
-> The resultant accelerating force (F) is given by the equation: Accelerating force F = Mg - mg = (M+m)a
->
-> Age range: 16-18
->
-> Apparatus required: •Linear air track •Blower and trolley •Two pulleys •Two retort stands •Two sets of slotted masses
+Theory:
 
-### Shopping bag and old lady - acceleration
+The resultant accelerating force (F) is given by the equation: 
+$$\text{Accelerating force }F = Mg - mg = (M+m)a$$
+
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Linear air track or other low-friction track
+ - Blower and trolley or low friction car
+ - Two pulleys 
+ - Two retort stands 
+ - Two sets of slotted masses
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
+
+
+### Inertia Demos:
 
 Why is it that you can lift a shopping bag full of shopping slowly without a problem but if you lift it quickly the handles break? Think about what would happen if the lady in the diagram picked up her shopping bag quickly. The handles might break because they have to produce an acceleration as well as support the weight of the bag. This can easily be demonstrated by putting a heavy weight inside a plastic shopping bag and showing that it will just support the load, but that it breaks - usually at the bottom - when accelerated briskly upwards.
 
 Another example of this is the maximum acceleration allowed by a pilot of a rescue helicopter when lifting a stretcher from a hillside. Too great an acceleration will cause the supporting ropes to break.
 
-> Theory:
->
-> Force in handles = Weight of shopping + Force to accelerate the bag upwards. (F = mg + ma)
+Theory:
 
-Age range: 16-18 Apparatus required: •Two 5 kg masses •Plastic shopping bag
+Force in handles = Weight of shopping + Force to accelerate the bag upwards. 
+$$F = mg + ma$$
 
-> Forces, mass and weight
->
-> The size of a force is measured in units called NEWTONS (N). You can get a rough idea of a force's size by thinking about the pull of the Earth on us.
->
-> Mass
->
-> This is the amount of stuff (matter) in an object. It is measured in kilograms (kg) and is always the same wherever the object is. The only way to change the mass of something is to chip a bit off! (Ignoring relativistic effects of course.)
->
-> Weight
->
-> The force of attraction of the Earth on us is our WEIGHT. The more massive we are the bigger is the force of attraction and the bigger is our weight. This also gives us a rough definition of the Newton.
->
-> A Newton is the pull of the Earth on about 100 g. The pull of the Earth on 1 kg is about 10 N.
 
-# 
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Two 5 kg masses
+ - Plastic shopping bag
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}}
+:::
+::::::
+:::::::
+
+
+
+## 1st law & 3rd law pairs.
+
+A common misconception arises when people confuse Newton’s First Law with the action-reaction pairs described in Newton’s Third Law. Newton’s First Law states that an object remains at rest or in uniform motion unless acted on by a net external force, emphasizing how motion changes only when forces are unbalanced. In contrast, Newton’s Third Law states that for every action, there is an equal and opposite reaction — forces always come in pairs acting on different objects. The confusion often lies in thinking that these action-reaction forces cancel each other out and thus prevent motion, but this is incorrect because they act on separate bodies. For example, when you push a wall, the wall pushes back on you equally, but these forces act on different objects and do not cancel in the sense of preventing movement altogether; whether motion occurs depends on other forces acting on each object. Understanding that First Law forces sum on a single object while Third Law pairs act on different objects is key to resolving this confusion.
 
 ## Rockets
 
-General theory for this section
+The propulsion systems of rockets depend on the laws of momentum conservation and are well explained by the three newtonian laws. For a solid or liquid fuel rocket, the greater the velocity of the exhaust gases the greater is their momentum and hence the greater the momentum of the rocket.
 
-> The propulsion systems of rockets depend on the laws of momentum conservation. For a solid or liquid fuel rocket, the greater the velocity of the exhaust gases the greater is their momentum and hence the greater the momentum of the rocket.
->
-> The calculation of the velocity of a rocket some time after its launch is a difficult problem, since the mass of the rocket is constantly changing and therefore even with a constant thrust the acceleration will not be constant. The velocity of the rocket when its mass is M can be shown to be: Velocity of rocket (v) = u ---w In(M/M0) where u and MO are the initial velocity and mass of the rocket and w is the velocity of the exhaust gases relative to the rocket.
+When fuel burns in the rocket’s combustion chamber it creates hot, high-pressure gas made of billions of fast-moving particles. These particles zoom around randomly and collide with the chamber walls in all directions.Particles hit all the walls equally (left, right, top, bottom). Were these forces to balance, as they do perpendicular to the rocket, there'd be no resultant force/
 
-### Carbon dioxide rocket
+At the nozzle opening however, the gas particles escape out the nozzle at high speed. This means that there’s fewer collisions on the nozzle side’s wall compared to the front wall. This imbalance of pressure inside the chamber creates a net force pushing the rocket forward.
 
-The carbon dioxide rocket trolley is a superb piece of apparatus for the study of momentum. It is simply a 'sparklet' soda siphon bulb mounted horizontally on a small trolley. The side of the trolley is fixed to a piece of string that is looped round a retort stand on the floor. The idea is to use a pair of compasses with a short point to puncture the 'sparklet' bulb and allow the carbon dioxide gas to rush out, the reaction on the bulb making the trolley move off in the opposite direction - "orbiting" the retort stand at high speed!
+### Calculating Rocket Velocity with Changing Mass, Gravity, and Air Resistance
 
-The size of the hole is critical. If it is too big, the gas comes out rapidly and it is all over too soon; too small and the result is a rather pathetic movement. Measuring the rotation rate in a circle of known radius can give the average velocity of the trolley.
+Calculating the velocity of a rocket properly is mathematically demanding - Let’s take a very crude model as an example:
 
-Putting the trolley on a set of rails along the lab has produced some spectacular accelerations, but safety must be considered in case it leaves the track!
+-   Changing mass
+-   Gravity
+-   Air resistance (drag)
 
-> It is very important to mount the cylinder securely on the trolley and to ensure that the pupils stand at a safe distance from the experiment.
->
-> Age range: 14-18 depending on treatment Apparatus required:
->
-> •Carbon dioxide rocket trolley •Sparklet soda siphon bulbs •Pair of compasses or dividers •String
->
-> •Retort stand •Rulers •Stop clock
->
-> tsoce«ets
+#### 1. Ideal Rocket Equation (No Air Resistance)
+
+In space (no gravity, no air), we start with the **Tsiolkovsky Rocket Equation**:
+
+$$
+\Delta v = v_e \ln\left(\frac{m_0}{m_f}\right)
+$$
+
+where:
+
+-   $\Delta v$ = change in velocity\
+-   $v_e$ = exhaust velocity of the gases\
+-   $m_0$ = initial mass (rocket + fuel)\
+-   $m_f$ = final mass (after fuel burned)
+
+#### 2. Including Gravity
+
+If launching vertically near Earth, gravity subtracts velocity, note that this assumes that we dont stray far enough to consider Earth's gravitational field as anything other than uniform:
+
+$$
+v(t) = v_e \ln\left(\frac{m_0}{m(t)}\right) - g \, t
+$$
+
+where $g$ is the acceleration due to gravity (≈ 9.81 m/s²).
+
+#### 3. Air Resistance (Drag)
+
+Drag force is given by:
+
+$$
+F_{\text{drag}} = \frac{1}{2} \, \rho \, v^2 \, C_D \, A
+$$
+
+where:
+
+-   $\rho$ = air density\
+-   $v$ = rocket velocity\
+-   $C_D$ = drag coefficient (shape-dependent)\
+-   $A$ = cross-sectional area
+
+Drag reduces the rocket’s net acceleration:
+
+$$
+a = \frac{T - F_{\text{drag}} - m \, g}{m}
+$$
+
+where:
+
+-   $T$ = thrust force\
+-   $m$ = rocket mass at time $t$
+
+Since $m$ changes as fuel burns, we get a differential equation:
+
+$$
+m(t) \, \frac{dv}{dt}
+=
+T
+-
+\frac{1}{2} \, \rho \, v^2 \, C_D \, A
+-
+m(t) \, g
+$$
+
+#### 4. Full Differential Equation
+
+We can express the velocity change as:
+
+$$
+\boxed{
+\frac{dv}{dt}
+=
+\frac{T}{m(t)}
+-
+\frac{1}{2} \frac{\rho \, v^2 \, C_D \, A}{m(t)}
+-
+g
+}
+$$
+
+and:
+
+$$
+m(t) = m_0 - \dot{m} \cdot t
+$$
+
+where $\dot{m}$ is the mass flow rate (fuel used per second).
+
+Because drag depends on $v$, and $\rho$ changes with altitude, we usually solve this **numerically**.
 
 ### Water-powered rockets
 
-There are two types, and both provide excellent demonstrations:
+The best of the waterbottle rockets, luckily for impoverished departments, is a plastic drinks bottle with a set of fins and a valve.
 
-(a) A small plastic rocket that is filled with a little water, mounted on its pump mechanism and the air is pumped in. When sufficient air has been put in the rocket is launched - the high air pressure within the rocket ejects a stream of water and the rocket flies up.
+The launcher can be built very cheaply and easily - take a look here:
 
-(b) The second, and rather better version is simply a plastic drinks bottle with a set of fins and a valve - again air is pumped in, but this time the valve automatically releases the rocket when the pressure inside the bottle reaches a certain amount.
+http://www.uswaterrockets.com/construction\_&\_tutorials/cable_tie_release_mechanism/tutorial.htm
 
-> This must be done in the open air. Beware of where the spent rocket will fall, and make sure that the rocket is not launched horizontally.
->
-> Age range: 14-18 depending on treatment
->
-> Apparatus required: (a) 'Water rocket and pump mechanism
->
-> (b) •Plastic drinks bottle •Valve and fins assembly •Bicycle pump
+As well as demonstrating;
+
+-   Energy transfer
+-   Energy Stores
+-   Newton's 3 laws
+-   Momentum
+
+Just beware that this must be launched in the open air & there needs to be some consideration of where the spent rocket will fall.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   launch platform
+-   Plastic bottles
+-   Air pump
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
+### Fizzy tablet rockets
+
+A fantastic outreach activity or open-ended investigative task can be made from the use of a few effervescent vitamin C tablets and some film canisters. Unlike the above, this is entirely suited to indoor use. The use of a tray as a launch platform will keep the place tidy.
+
+Note that it might be tempting to use other "fizzy" tablets ***be careful*** and don't use painkillers or other things that might be misappropriated or trigger allergies.
+
+Blue-tack about a quater of a fizzy tablet to the inside of the lid. Partially fill the capsule with hot/cold water, mild acid etc. Gently(!) attach the lid and invert, retire a short distance.
+
+The temperature, volume and acidity of water (use lemon juice or simmilar for safety, the participants will get splashed!) all make excellent variables for an open-ended investigation.
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Film canister
+-   Vitamin C "Fizzy" tablets
+-   "Gratnell" type trays
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} 
+:::
+::::::
+:::::::
 
 ### The firework rocket - upside down!
 
-> This teacher demonstration should only be done in the open air using safety screens. All present should wear safety spectacles and should stand well back. Never use a rocket containing star shells.
+This teacher demonstration should only be done in the open air using safety screens. I have done this in a fume cabinet but you need to check that it is capable of dealing with the rapid flow of hot gas.
 
-Mount a small firework rocket, one without star shells, pointing downwards and held loosely in a tube in a clamp on the top of a cheap top pan balance reading to an accuracy of one gram.
+All present should wear safety spectacles and should stand well back. Never use a rocket containing an ejection charge.
 
-Light the rocket and stand well back behind the safety screen. The thrust of the rocket acts downwards and the reading on the top pan balance gives the thrust of the rocket during the firing. Use a TV camera if possible to record this for later analysis. The "toy" chemical rockets that are produced are sold with data sheets that give good force against time curves, and these can be used for analysis if you do not wish to do the rocket experiment yourselves!
+Mount a small estes-type rocket (I suggest "A" class), one without ejection charge, pointing downwards and held loosely in a tube (22mm plumbing pipe works well) in a clamp on the top of either a datalogging top pan balance or force sensor.
 
-Some safer alternatives would be to use a balloon, a soda siphon bulb or a plastic bottle containing dilute acid and chalk.
+Light the rocket and stand well back behind the safety screen. The thrust of the rocket acts downwards and the reading on the meter or balance gives the thrust of the rocket during the firing.
 
-> Age range: 16-18
->
-> Apparatus required:
->
-> •Firework rocket (small - without star shells) •Top pan balance •Small metal tin lid 'Piece of hardboard to protect balance 'Safety screen •Retort stand and two clamps 'Launch tube to hold rocket
+If you don't have a datalogging tool you can film the reading on the scale for manual analysis.
 
-Rockets
+With a little care you can produce a fantastic impulse graph:
+
+![](images/clipboard-1681133638.png)
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+-   Solid fuel rocket (A class & without ejection charge if possible)
+-   Top pan balance
+-   Small metal tin lid 'Piece of hardboard to protect balance 'Safety screen
+-   Retort stand and two clamps 'Launch tube to hold rocket
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
 
 ### Balloon rocket
 
@@ -290,12 +684,35 @@ I have found that it works better with a sausage shaped balloon.
 
 (c) The principle of action and reaction can be demonstrated by a variation of the balloon rocket. You will need two balloons - one with a short length of plastic tube (a centimetre or so) fitted in its neck. Now blow up the other balloon, close off its neck with a clip and fix it to the other end of the tube. Now open the clip. The inflated balloon does not fly around the lab - the emitted air produces a force on the other balloon which prevents it from moving.
 
-(d) Another demonstration of this principle is to take a plastic straw - one with a flexible section - and bend it into an L shape. Pivot the top and blow into it through a tube - the emitted air will make the straw turn. Now fit a small plastic bag or a piece of cling film over the end. No air escapes - there is a force on the bag and the straw does not turn.
 
-> Age range: 11-14
->
-> Apparatus required:
->
-> •Balloons - at least one sausage shaped one •Plastic straw •Tight wire mounting •Clothes peg
->
-> •Plastic tube 'Plastic straw
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+ - Balloons - at least one sausage shaped one 
+ - Plastic straw 
+ - Tight wire mounting 
+ - Clothes peg
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} 
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+

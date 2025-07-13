@@ -54,7 +54,7 @@ where:
 
 -   $R$ is the radius of the circle round a circle of radius R
 
-## Stories to enritch
+## Stories to enrich
 
 ### Sputnik and the Start of Space Orbits (1957)
 
@@ -92,17 +92,13 @@ The faster the pig the bigger the angle (0) that the string makes with the verti
 
 For a pig of mass $m$, resolving vertically:
 
-$$ mg = T \cos \theta $$ 
+$$ mg = T \cos \theta $$
 
-Resolving horizontally: 
+Resolving horizontally:
 
-$$\frac{mv^{2}}{r} = T \sin \theta$$ 
-Therefore: 
-$$ \frac{mv^{2}}{r} \tan \theta = mg $$
-and so 
+$$\frac{mv^{2}}{r} = T \sin \theta$$ Therefore: $$ \frac{mv^{2}}{r} \tan \theta = mg $$ and so
 
-$$g = \frac{v^{2}}{r} \tan \theta $$ 
-
+$$g = \frac{v^{2}}{r} \tan \theta $$
 
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
@@ -111,9 +107,9 @@ $$g = \frac{v^{2}}{r} \tan \theta $$
 ::: {.column width="45%"}
 **Equipment**
 
-- Flying pig toy
-- Stopwatch
-- Ruler
+-   Flying pig toy
+-   Stopwatch
+-   Ruler
 :::
 
 ::: {.column width="10%"}
@@ -123,9 +119,9 @@ $$g = \frac{v^{2}}{r} \tan \theta $$
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} 
+KS3: {{< fa star >}}
 
-KS4: {{< fa star >}} {{< fa star >}} 
+KS4: {{< fa star >}} {{< fa star >}}
 
 KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
 :::
@@ -136,26 +132,26 @@ KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
 The classic centripetal force experiment;
 
- - Put a little water in a plastic bucket 
- - get hold of bucket and then swing the bucket in a vertical circle. 
- 
-As long as the rate of rotation is great enough the water stays in the bucket. Slowing the rate of rotation can get the water to almost fall out at the top of the path, and you can hear it slopping around at this critical point. 
+-   Put a little water in a plastic bucket
+-   get hold of bucket and then swing the bucket in a vertical circle.
 
-Mention that the water and bucket experience a centripetal force, but that there is also a centrifugal force - this is the reaction on the pivot, in this case your hand. Many extensions of this are possible, such as swinging a tray loaded with beakers by four strings! 
+As long as the rate of rotation is great enough the water stays in the bucket. Slowing the rate of rotation can get the water to almost fall out at the top of the path, and you can hear it slopping around at this critical point.
+
+Mention that the water and bucket experience a centripetal force, but that there is also a centrifugal force - this is the reaction on the pivot, in this case your hand. Many extensions of this are possible, such as swinging a tray loaded with beakers by four strings!
 
 Note: Do not swing it so fast so that the handles of the bucket come off, you'll get soaking (guess how I know...) and ensure that the bucket does not hit the floor at the lowest point of the circle. For the sake of safety it's best not to use a metal bucket ot too much water.
 
-
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Bucket (plastic)
- - Water
-
+-   Bucket (plastic)
+-   Water
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -163,7 +159,7 @@ Note: Do not swing it so fast so that the handles of the bucket come off, you'll
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -182,14 +178,15 @@ The balloon is inflated, attached to the lid, and allowed to deflate pushing air
 
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Bucket (plastic)
- - Water
-
+-   Bucket (plastic)
+-   Water
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -197,7 +194,7 @@ The balloon is inflated, attached to the lid, and allowed to deflate pushing air
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -205,7 +202,6 @@ KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 :::
 ::::::
 :::::::
-
 
 ### Fruit bowl "wall of death"
 
@@ -215,14 +211,15 @@ This demonstration is a simulation of a motorcyclist on a wall of death at a fai
 
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Mixing bowl (glass or clear plastic)
- - Small toy car (micromachine) or ball-bearing
-
+-   Mixing bowl (glass or clear plastic)
+-   Small toy car (micromachine) or ball-bearing
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -230,7 +227,7 @@ This demonstration is a simulation of a motorcyclist on a wall of death at a fai
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -238,7 +235,6 @@ KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 :::
 ::::::
 :::::::
-
 
 ### Wine glass and grape
 
@@ -256,14 +252,15 @@ This is a classic bar-trick; You challenge someone to pick up a small object —
 
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Wine glass
- - Grape or marble
-
+-   Wine glass
+-   Grape or marble
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -271,7 +268,7 @@ This is a classic bar-trick; You challenge someone to pick up a small object —
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -318,9 +315,9 @@ The rotor is another fantastic fairground ride for illustrating circular motion 
 
 Possibly the greatest demonstration in all of physics;
 
- - Put sparkler in chuck of electric drill
- - Light
- - SPIN!
+-   Put sparkler in chuck of electric drill
+-   Light
+-   SPIN!
 
 ![](images/clipboard-487316712.png)
 
@@ -328,20 +325,21 @@ Experiment with different rates of revolution for maximum effect. The hot bit of
 
 Note on safety:
 
- - if you're indoors, make sure the sparkler's are the indoor variant.
- - Make sure that nobody is in the plane of the sparkler's revolution, bits can break off travelling at quite a high speed.
- - Handle the used sparkler with care till cool and dispose of safely. 
- 
+-   if you're indoors, make sure the sparkler's are the indoor variant.
+-   Make sure that nobody is in the plane of the sparkler's revolution, bits can break off travelling at quite a high speed.
+-   Handle the used sparkler with care till cool and dispose of safely.
+
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Cordless Drill
- - Sparkler (indoor if doing indoors!)
-
+-   Cordless Drill
+-   Sparkler (indoor if doing indoors!)
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -349,7 +347,7 @@ Note on safety:
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -366,17 +364,17 @@ Sit on a rotating chair holding two heavy masses and spin slowly. Quickly draw y
 
 With a low-friction chair this can be extremely impressive. I like to back this up with video footage of ice-skaters spinning. Students can easily spot the manipulations of the distribution of mass when they know what to look for.
 
-
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Wheely chair or rotating platform
- - Weights/dumbells
-
+-   Wheely chair or rotating platform
+-   Weights/dumbells
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -384,7 +382,7 @@ With a low-friction chair this can be extremely impressive. I like to back this 
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -401,19 +399,19 @@ The force of the hook on the penny always acts towards the centre of rotation.
 
 With only a little practice you will be able to start and stop the spin at your leisure.
 
-
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Coathanger - the wire type
- - File
- - Pliers
- - Coins
-
+-   Coathanger - the wire type
+-   File
+-   Pliers
+-   Coins
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -421,7 +419,7 @@ With only a little practice you will be able to start and stop the spin at your 
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -429,7 +427,6 @@ KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 :::
 ::::::
 :::::::
-
 
 ### Rotating candle
 
@@ -437,15 +434,16 @@ On a turntable put a candle shielded by a glass tube such as a jam jar the candl
 
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Turntable
- - Candle
- - Glass jar to sheild flame
-
+-   Turntable
+-   Candle
+-   Glass jar to sheild flame
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -453,7 +451,7 @@ On a turntable put a candle shielded by a glass tube such as a jam jar the candl
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -461,7 +459,6 @@ KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 :::
 ::::::
 :::::::
-
 
 ### Rotating jelly - circular motion
 
@@ -473,17 +470,17 @@ Further increasing the rate of spin will eventually make the jelly break up - th
 
 The jelly experiment also shows the shape of the liquid surface while rotating. It is useful to photograph it or take a video for later analysis.
 
-
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Wooden plate with bolt through central hole for mounting in drill
- - Jelly mould
-
+-   Wooden plate with bolt through central hole for mounting in drill
+-   Jelly mould
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -491,7 +488,7 @@ The jelly experiment also shows the shape of the liquid surface while rotating. 
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -504,31 +501,23 @@ KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
 If a bung is being swung round on a string in a vertical circle at a constant speed the centripetal force must be constant, but because the object has weight ($mg$), the string tension vaies.
 
-The tension provides part of the centripetal force as it goes round the top of the loop and provides a supporting force *and* the centripetal force at the bottom of the loop.  
+The tension provides part of the centripetal force as it goes round the top of the loop and provides a supporting force *and* the centripetal force at the bottom of the loop.
 
 At the bottom of the circle:
 
-$$ T_{string}  - mg = \frac{mv^{2}}{r}$$
-So..
-$$T_{string}  = \frac{mv}{r} + mg $$
+$$ T_{string}  - mg = \frac{mv^{2}}{r}$$ So.. $$T_{string}  = \frac{mv}{r} + mg $$
 
-At the sides of the circle:
-$$ T_{string} = \frac{mv^{2}}{r}$$
-At the top of the circle:
+At the sides of the circle: $$ T_{string} = \frac{mv^{2}}{r}$$ At the top of the circle:
 
 $$ T_{string} + mg = mv^{2}/r $$
 
+so
 
-so 
+$$ T_{string}  = \frac{mv^{2}}{r} - mg $$ \#### Bonus story:
 
-$$ T_{string}  = \frac{mv^{2}}{r} - mg $$
-#### Bonus story:
+An outside loop is an aerobatic maneuver in which an aircraft flies a circular path with the canopy on the outside of the circle, as opposed to a normal or inside loop where the pilot stays on the inside of the circle. In a typical inside loop, positive G-forces push the pilot into the seat, but in an outside loop the pilot experiences negative G-forces that try to pull them out of the seat, placing immense strain on both the pilot’s body and the aircraft.
 
-An outside loop is an aerobatic maneuver in which an aircraft flies a circular path with the canopy on the outside of the circle, as opposed to a normal or inside loop where the pilot stays on the inside of the circle. 
-In a typical inside loop, positive G-forces push the pilot into the seat, but in an outside loop the pilot experiences negative G-forces that try to pull them out of the seat, placing immense strain on both the pilot’s body and the aircraft. 
-
-The outside loop was first successfully performed in 1927 by American pilot Jimmy Doolittle, who flew a Curtiss P-1C Hawk biplane. 
-At the time, many believed the stunt was impossible or suicidal due to the extreme negative G-forces involved, but Doolittle’s achievement marked a milestone in aviation history, proving both the strength of modern aircraft and the resilience of skilled pilots. Outside loops are particularly challenging because the negative G-forces, which can reach minus three to minus five G or more, can cause great discomfort, vision problems such as red-out, or even loss of consciousness. 
+The outside loop was first successfully performed in 1927 by American pilot Jimmy Doolittle, who flew a Curtiss P-1C Hawk biplane. At the time, many believed the stunt was impossible or suicidal due to the extreme negative G-forces involved, but Doolittle’s achievement marked a milestone in aviation history, proving both the strength of modern aircraft and the resilience of skilled pilots. Outside loops are particularly challenging because the negative G-forces, which can reach minus three to minus five G or more, can cause great discomfort, vision problems such as red-out, or even loss of consciousness.
 
 The aircraft itself must be strong enough to withstand these forces without structural failure, and the pilot must exert precise control to avoid dangerous spins or crashes. Today, outside loops are a standard element in aerobatic competitions and displays, but they remain a demanding test of both machine and pilot, showcasing advances in aircraft engineering and human endurance.
 
@@ -538,36 +527,27 @@ Toy cars on a plastic track can be used to demonstrate a number of ideas in mech
 
 The problem of "will it make it round?" can be approached as follows:
 
-The Centripetal force is provided by a combination of the reaction of the track (R) and the force of gravity (mg). At the top of the path the car can travel at its minimum speed since the centripetal force can be provided by gravity alone. 
+The Centripetal force is provided by a combination of the reaction of the track (R) and the force of gravity (mg). At the top of the path the car can travel at its minimum speed since the centripetal force can be provided by gravity alone.
 
 The minimum reaction occurs at the top of the path where:
 
-$$\frac{mv_{t}^{2}}{r} = mg $$
-So
-$$
+$$\frac{mv_{t}^{2}}{r} = mg $$ So $$
 v_{t} = \sqrt{gr}
-$$
-where:
- - $r$ is the radius of the loop.
- - $v_t$ is the velocity at the top of the loop.
+$$ where: - $r$ is the radius of the loop. - $v_t$ is the velocity at the top of the loop.
 
 so far we have worked out the minimum speed that maintains contact with the loop. To work out the minimum entry speed ($v_e$) we need to use conservation of energy:
 
 Assuming the car *just* makes it up a loop of height $2r$ (where $r$ is the radius of the loop), the gain in GPE is $mgh$ so the minimum speed is ;
 
-$$ mg \times 2r = 1/2mv_{e}^{2} + 1/2mv_{t}^{2}$$
-substituting $v_{t}^{2} = gr$
-$$
+$$ mg \times 2r = 1/2mv_{e}^{2} + 1/2mv_{t}^{2}$$ substituting $v_{t}^{2} = gr$ $$
 mg \times 2r = 1/2mv_{e}^{2} + 1/2mgr
-$$
-Cancel $m$;
+$$ Cancel $m$;
 
 $$
 g \times 2r = 1/2v_{e}^{2} + 1/2gr
 $$
 
-so
-$$
+so $$
 v_{e} = \sqrt{5gr}$$
 
 The illustration below shows the rare incident in 1997, when a rollercoaster got stuck in a middle of a loop, leaving riders stuck upside down. It was revealed later that a component of the launch system had broken, leading to the insufficient speed. Experts described the train’s stalling at the loop’s apex as a rare occurrence of perfect balance
@@ -576,14 +556,15 @@ The illustration below shows the rare incident in 1997, when a rollercoaster got
 
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
+
 :::::: columns
 ::: {.column width="45%"}
 **Equipment**
 
- - Toy car
- - Plastic "Hotwheels" type track
-
+-   Toy car
+-   Plastic "Hotwheels" type track
 :::
+
 ::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
@@ -591,7 +572,7 @@ The illustration below shows the rare incident in 1997, when a rollercoaster got
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -599,8 +580,3 @@ KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 :::
 ::::::
 :::::::
-
-
-
-
-

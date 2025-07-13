@@ -159,63 +159,18 @@ Hold a pen lightly at arms-length - that's it!
 
 The gravitational force between the pen and the Earth is easily overcome, without any noticeable effort, by the electromagnetic interaction between your fingers and the surface of the pen. You can revisit this at A-level and show that the gravitational attraction between two protons is $\approx 10^{-36}$ times weaker than the electromagnetic force between them which is why electromagnetism dominates everyday life, while gravity dominates on astronomical scales (where objects are neutral and mass is enormous).
 
-::: callout-note
-## Equipment:
 
--   Pen
--   Hands
--   Earth(!)
-:::
-
-::: callout-tip
-## Age range / Keystage
-
-KS3: {{< fa star >}}
-
-KS4: {{< fa star >}}
-
-KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
-:::
 
 ### Groan Tube
 
 The groan tube is one of those fantastic toys that doubles as a physics demo. Turn it upside down and drop it mid-groan. The change in the sound as it goes down is an excellent way to show the constancy of vertical acceleration in free fall and also to demonstrate g forces. The groan stops in free fall and starts again when the high deceleration forces occur as it is caught.
 
-::: callout-note
-## Equipment:
 
--   Groan tube
-:::
-
-::: callout-tip
-## Age range / Keystage
-
-KS3: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
-
-KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}} {{< fa star >}}
-
-KS5: {{< fa star >}}
-:::
 
 ### Dropping Objects of Different Masses
 
 Drop a heavy and light object to show they fall at the same rate (air resistance aside).
 
-::: callout-note
-## Equipment:
-
--   Groan tube
-:::
-
-::: callout-tip
-## Age range / Keystage
-
-KS3: {{< fa star >}}{{\< fa star \>}}{{< fa star >}}{{\< fa star \>}}{{< fa star >}}
-
-KS4: {{< fa star >}}{{\< fa star \>}}{{< fa star >}}{{\< fa star \>}}
-
-KS5: {{< fa star >}}
-:::
 
 ### Coin and Paper Drop
 
@@ -225,55 +180,18 @@ Drop a coin with paper on top vs. separately to highlight air resistance.
 
 Classic Apollo 15 demonstration of free fall without air resistance.
 
-::: callout-note
-## Equipment:
 
--   Groan tube
-:::
-
-::: callout-tip
-## Age range / Keystage
-
-KS3: {{< fa star >}}{{\< fa star \>}}{{< fa star >}}{{\< fa star \>}}{{< fa star >}}
-
-KS4: {{< fa star >}}{{\< fa star \>}}{{< fa star >}}{{\< fa star \>}}
-
-KS5: {{< fa star >}}
-:::
 
 ### Dropped vs. Launched Ball
 
-Drop one ball while launching another horizontally—both hit the ground together. ::: callout-note \## Equipment:
+Drop one ball while launching another horizontally—both hit the ground together. 
 
--   Groan tube :::
 
-::: callout-tip
-## Age range / Keystage
-
-KS3: {{< fa star >}}{{\< fa star \>}}{{< fa star >}}{{\< fa star \>}}{{< fa star >}}
-
-KS4: {{< fa star >}}{{\< fa star \>}}{{< fa star >}}{{\< fa star \>}}
-
-KS5: {{< fa star >}}
-:::
 
 ### Inclined Plane with Trolley
 
 Measure acceleration of a trolley down a slope—gravitational component.
 
-::: callout-note \## Equipment:
-
--   Groan tube :::
-
-::: callout-tip
-## Age range / Keystage
-
-KS3: {{< fa star >}}{{\< fa star \>}}{{< fa star >}}{{\< fa star \>}}{{< fa star >}}
-
-KS4: {{< fa star >}}{{\< fa star \>}}{{< fa star >}}{{\< fa star \>}}
-
-KS5: {{< fa star >}}
-:::
 
 ### Fabric of space and time
 
@@ -449,7 +367,8 @@ Mount an electromagnet in a clamp about 0.5 m above the bench and mount a blowpi
 
 Switch on and hang a tin lid from the electromagnet making sure that the blowpipe is pointing at the centre of the tin. Blow sharply down the pipe and the marble will fly out, breaking the foil, and causing the tin lid to fall. The marble will fall at the same rate as the tin lid and should collide with it before hitting the bench.
 
-::: callout-note \## Equipment:
+::: callout-note 
+## Equipment:
 
 :::
 

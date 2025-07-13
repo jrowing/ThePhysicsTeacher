@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>22&nbsp; optics – The Physics Teacher</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./VibrationsWaves.html" rel="next">
+<link href="./ThermalPhysics.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-604c3d4c4a4e540f9ea15e4aba1a9bab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Physics Teacher</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://buymeacoffee.com/jrowing" target="_blank"> 
+<span class="menu-text">Buy Me a Coffee</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./The-Physics-Teacher.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./optics.html">Waves &amp; Optics</a></li><li class="breadcrumb-item"><a href="./optics.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introductions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liniver.com</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhyPhox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Phy-Phox: Physics Phone Experiments</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhET.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PhET Interactive Simulations: Bringing Physics to Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Basics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BasicPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Physics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WorkEnergyPower.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mechanics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CircularMotion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ForcesNewton.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Inertia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Inertia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Momentum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Momentum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fluids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fluids</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MiscMechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Earth and Beyond</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Astronomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Astronomy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Electricity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Capacitors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CurrentElectricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">CurrentElectricity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electromagnetism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Electromagnetism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fields</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electrostatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Electrostatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Gravity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Thermal Physics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GasLaws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GasLaws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ThermalPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Waves &amp; Optics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./optics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./VibrationsWaves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">VibrationsWaves</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Nuclear &amp; Quantum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./NuclearPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NuclearPhysics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quanta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Quanta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Radioactivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Radioactivity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MoreResources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">MoreResources</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#basic-theory" id="toc-basic-theory" class="nav-link active" data-scroll-target="#basic-theory"><span class="header-section-number">22.1</span> Basic Theory</a>
+  <ul>
+  <li><a href="#nature-of-light" id="toc-nature-of-light" class="nav-link" data-scroll-target="#nature-of-light"><span class="header-section-number">22.1.1</span> Nature of Light</a></li>
+  <li><a href="#reflection-and-refraction" id="toc-reflection-and-refraction" class="nav-link" data-scroll-target="#reflection-and-refraction"><span class="header-section-number">22.1.2</span> Reflection and Refraction</a>
+  <ul>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection:</a></li>
+  <li><a href="#refraction" id="toc-refraction" class="nav-link" data-scroll-target="#refraction">Refraction:</a></li>
+  </ul></li>
+  <li><a href="#total-internal-reflection" id="toc-total-internal-reflection" class="nav-link" data-scroll-target="#total-internal-reflection"><span class="header-section-number">22.1.3</span> Total Internal Reflection</a></li>
+  <li><a href="#lenses" id="toc-lenses" class="nav-link" data-scroll-target="#lenses"><span class="header-section-number">22.1.4</span> Lenses</a>
+  <ul>
+  <li><a href="#converging-lens-convex" id="toc-converging-lens-convex" class="nav-link" data-scroll-target="#converging-lens-convex">Converging lens (convex):</a></li>
+  <li><a href="#diverging-lens-concave" id="toc-diverging-lens-concave" class="nav-link" data-scroll-target="#diverging-lens-concave">Diverging lens (concave):</a></li>
+  </ul></li>
+  <li><a href="#ray-diagrams" id="toc-ray-diagrams" class="nav-link" data-scroll-target="#ray-diagrams"><span class="header-section-number">22.1.5</span> Ray Diagrams</a>
+  <ul>
+  <li><a href="#converging-lens" id="toc-converging-lens" class="nav-link" data-scroll-target="#converging-lens">Converging lens:</a></li>
+  <li><a href="#image-characteristics" id="toc-image-characteristics" class="nav-link" data-scroll-target="#image-characteristics">Image characteristics:</a></li>
+  </ul></li>
+  <li><a href="#diffraction" id="toc-diffraction" class="nav-link" data-scroll-target="#diffraction"><span class="header-section-number">22.1.6</span> Diffraction</a></li>
+  <li><a href="#youngs-double-slit-experiment" id="toc-youngs-double-slit-experiment" class="nav-link" data-scroll-target="#youngs-double-slit-experiment"><span class="header-section-number">22.1.7</span> Young’s Double Slit Experiment</a></li>
+  <li><a href="#single-slit-diffraction" id="toc-single-slit-diffraction" class="nav-link" data-scroll-target="#single-slit-diffraction"><span class="header-section-number">22.1.8</span> Single Slit Diffraction</a></li>
+  <li><a href="#diffraction-grating" id="toc-diffraction-grating" class="nav-link" data-scroll-target="#diffraction-grating"><span class="header-section-number">22.1.9</span> Diffraction Grating</a></li>
+  <li><a href="#applications-of-optics" id="toc-applications-of-optics" class="nav-link" data-scroll-target="#applications-of-optics"><span class="header-section-number">22.1.10</span> Applications of Optics</a>
+  <ul>
+  <li><a href="#optics-and-the-smoke-box" id="toc-optics-and-the-smoke-box" class="nav-link" data-scroll-target="#optics-and-the-smoke-box">1. Optics and the smoke box</a>
+  <ul class="collapse">
+  <li><a href="#sources-of-light-demonstration-lesson" id="toc-sources-of-light-demonstration-lesson" class="nav-link" data-scroll-target="#sources-of-light-demonstration-lesson">2. Sources of light demonstration lesson</a></li>
+  </ul></li>
+  <li><a href="#the-camera-obscura" id="toc-the-camera-obscura" class="nav-link" data-scroll-target="#the-camera-obscura">3. The camera obscura</a></li>
+  <li><a href="#distorted-drawing" id="toc-distorted-drawing" class="nav-link" data-scroll-target="#distorted-drawing">4. Distorted drawing</a></li>
+  <li><a href="#absorption-in-glass---long-pieces" id="toc-absorption-in-glass---long-pieces" class="nav-link" data-scroll-target="#absorption-in-glass---long-pieces">5. Absorption in glass - long pieces</a></li>
+  <li><a href="#metallised-film---one-wav-mirrors" id="toc-metallised-film---one-wav-mirrors" class="nav-link" data-scroll-target="#metallised-film---one-wav-mirrors">6. Metallised film - one wav mirrors</a></li>
+  <li><a href="#object-and-image" id="toc-object-and-image" class="nav-link" data-scroll-target="#object-and-image">7. Object and Image</a></li>
+  <li><a href="#variable-power-lens" id="toc-variable-power-lens" class="nav-link" data-scroll-target="#variable-power-lens">8. Variable power lens</a></li>
+  <li><a href="#the-silvered-bicycle-reflector" id="toc-the-silvered-bicycle-reflector" class="nav-link" data-scroll-target="#the-silvered-bicycle-reflector">9. The silvered bicycle reflector</a></li>
+  <li><a href="#light-reflection-in-a-cube" id="toc-light-reflection-in-a-cube" class="nav-link" data-scroll-target="#light-reflection-in-a-cube">10. Light reflection in a cube</a></li>
+  <li><a href="#bent-pencil-in-water" id="toc-bent-pencil-in-water" class="nav-link" data-scroll-target="#bent-pencil-in-water">11. Bent pencil in water</a></li>
+  <li><a href="#refractive-index---tv-camera" id="toc-refractive-index---tv-camera" class="nav-link" data-scroll-target="#refractive-index---tv-camera">12. Refractive index - TV camera</a></li>
+  <li><a href="#a-floating-image" id="toc-a-floating-image" class="nav-link" data-scroll-target="#a-floating-image">13. A floating image</a></li>
+  <li><a href="#christmas-tree-balls" id="toc-christmas-tree-balls" class="nav-link" data-scroll-target="#christmas-tree-balls">14. Christmas tree balls</a></li>
+  <li><a href="#defects-of-lenses" id="toc-defects-of-lenses" class="nav-link" data-scroll-target="#defects-of-lenses">15. Defects of lenses</a></li>
+  <li><a href="#non-lateral-inversion---mirrors-at-900" id="toc-non-lateral-inversion---mirrors-at-900" class="nav-link" data-scroll-target="#non-lateral-inversion---mirrors-at-900">16. Non-lateral inversion - mirrors at 90<sup>0</sup></a></li>
+  <li><a href="#image-position" id="toc-image-position" class="nav-link" data-scroll-target="#image-position">17. Image position</a></li>
+  <li><a href="#bending-of-wood---measurement-with-a-light-beam-the-optical-lever" id="toc-bending-of-wood---measurement-with-a-light-beam-the-optical-lever" class="nav-link" data-scroll-target="#bending-of-wood---measurement-with-a-light-beam-the-optical-lever">18. Bending of wood - measurement with a light beam — the optical lever</a></li>
+  <li><a href="#real-and-apparent-depth---sidewavs-block" id="toc-real-and-apparent-depth---sidewavs-block" class="nav-link" data-scroll-target="#real-and-apparent-depth---sidewavs-block">19. Real and apparent depth - sidewavs block!</a></li>
+  <li><a href="#pinhole-camera---3600" id="toc-pinhole-camera---3600" class="nav-link" data-scroll-target="#pinhole-camera---3600">20. Pinhole camera - 360<sup>0</sup>!</a></li>
+  <li><a href="#interesting-refractive-indices" id="toc-interesting-refractive-indices" class="nav-link" data-scroll-target="#interesting-refractive-indices">21. Interesting refractive indices</a></li>
+  <li><a href="#kaleidoscope" id="toc-kaleidoscope" class="nav-link" data-scroll-target="#kaleidoscope">22. Kaleidoscope</a></li>
+  <li><a href="#shadow-films" id="toc-shadow-films" class="nav-link" data-scroll-target="#shadow-films">23. Shadow films</a></li>
+  <li><a href="#refraction-and-romance" id="toc-refraction-and-romance" class="nav-link" data-scroll-target="#refraction-and-romance">24. Refraction and romance</a></li>
+  <li><a href="#the-mirage-machine" id="toc-the-mirage-machine" class="nav-link" data-scroll-target="#the-mirage-machine">25. The Mirage machine</a></li>
+  <li><a href="#colour-of-tanned-legs-under-water" id="toc-colour-of-tanned-legs-under-water" class="nav-link" data-scroll-target="#colour-of-tanned-legs-under-water">26. Colour of tanned legs under water</a></li>
+  <li><a href="#critical-angle---semicircular-block" id="toc-critical-angle---semicircular-block" class="nav-link" data-scroll-target="#critical-angle---semicircular-block">27. Critical angle - semicircular block</a></li>
+  <li><a href="#total-internal-reflection-and-the-tv-camera" id="toc-total-internal-reflection-and-the-tv-camera" class="nav-link" data-scroll-target="#total-internal-reflection-and-the-tv-camera">28. Total internal reflection and the TV camera</a></li>
+  <li><a href="#cats-eyes" id="toc-cats-eyes" class="nav-link" data-scroll-target="#cats-eyes">29. Cats eyes</a></li>
+  <li><a href="#fibre-optics" id="toc-fibre-optics" class="nav-link" data-scroll-target="#fibre-optics">30. Fibre optics</a></li>
+  <li><a href="#total-internal-reflection---corner-of-a-glass-block" id="toc-total-internal-reflection---corner-of-a-glass-block" class="nav-link" data-scroll-target="#total-internal-reflection---corner-of-a-glass-block">Total internal reflection - corner of a glass block</a></li>
+  <li><a href="#light-along-a-water-jet" id="toc-light-along-a-water-jet" class="nav-link" data-scroll-target="#light-along-a-water-jet">32. Light along a water jet</a></li>
+  <li><a href="#mirage" id="toc-mirage" class="nav-link" data-scroll-target="#mirage">33. Mirage</a></li>
+  <li><a href="#optical-wave-guide---prism-entry" id="toc-optical-wave-guide---prism-entry" class="nav-link" data-scroll-target="#optical-wave-guide---prism-entry">35. Optical wave-guide - prism entry</a></li>
+  <li><a href="#the-floating-coin" id="toc-the-floating-coin" class="nav-link" data-scroll-target="#the-floating-coin">36. The floating coin</a></li>
+  <li><a href="#mirror-in-tank-refraction-and-total-internal-reflection" id="toc-mirror-in-tank-refraction-and-total-internal-reflection" class="nav-link" data-scroll-target="#mirror-in-tank-refraction-and-total-internal-reflection">37. Mirror in tank — refraction and total internal reflection</a></li>
+  </ul></li>
+  <li><a href="#diffraction-1" id="toc-diffraction-1" class="nav-link" data-scroll-target="#diffraction-1"><span class="header-section-number">22.1.11</span> DIFFRACTION</a>
+  <ul>
+  <li><a href="#cd-and-dvd-diffraction" id="toc-cd-and-dvd-diffraction" class="nav-link" data-scroll-target="#cd-and-dvd-diffraction">1. CD and DVD diffraction</a></li>
+  <li><a href="#diffraction-through-fork-prongs" id="toc-diffraction-through-fork-prongs" class="nav-link" data-scroll-target="#diffraction-through-fork-prongs">3. Diffraction through fork prongs</a></li>
+  <li><a href="#acoustic-diffraction-grating" id="toc-acoustic-diffraction-grating" class="nav-link" data-scroll-target="#acoustic-diffraction-grating">4. Acoustic diffraction grating</a></li>
+  <li><a href="#diffraction-with-sound-1" id="toc-diffraction-with-sound-1" class="nav-link" data-scroll-target="#diffraction-with-sound-1">5. Diffraction with sound (1)</a></li>
+  <li><a href="#diffraction-with-sound-2" id="toc-diffraction-with-sound-2" class="nav-link" data-scroll-target="#diffraction-with-sound-2">6. Diffraction with sound (2)</a></li>
+  <li><a href="#reflection-diffraction-grating" id="toc-reflection-diffraction-grating" class="nav-link" data-scroll-target="#reflection-diffraction-grating">8. Reflection diffraction grating</a></li>
+  <li><a href="#diffraction-through-tights" id="toc-diffraction-through-tights" class="nav-link" data-scroll-target="#diffraction-through-tights">9. Diffraction through tights</a></li>
+  <li><a href="#resolving-power" id="toc-resolving-power" class="nav-link" data-scroll-target="#resolving-power">10. Resolving power</a></li>
+  <li><a href="#scattering-of-light-in-wet-and-dry-smoke" id="toc-scattering-of-light-in-wet-and-dry-smoke" class="nav-link" data-scroll-target="#scattering-of-light-in-wet-and-dry-smoke">11. Scattering of light in ‘wet’ and ‘dry’ smoke</a></li>
+  <li><a href="#diffraction-and-a-fan" id="toc-diffraction-and-a-fan" class="nav-link" data-scroll-target="#diffraction-and-a-fan">12. Diffraction and a fan</a></li>
+  </ul></li>
+  <li><a href="#interference" id="toc-interference" class="nav-link" data-scroll-target="#interference"><span class="header-section-number">22.1.12</span> INTERFERENCE</a>
+  <ul>
+  <li><a href="#hologram" id="toc-hologram" class="nav-link" data-scroll-target="#hologram">1. Hologram</a>
+  <ul class="collapse">
+  <li><a href="#interference-and-distance-measurement" id="toc-interference-and-distance-measurement" class="nav-link" data-scroll-target="#interference-and-distance-measurement">2. Interference and distance measurement</a></li>
+  <li><a href="#interference-with-sound" id="toc-interference-with-sound" class="nav-link" data-scroll-target="#interference-with-sound">3. Interference with sound</a></li>
+  </ul></li>
+  <li><a href="#interference-and-butterflies-wings" id="toc-interference-and-butterflies-wings" class="nav-link" data-scroll-target="#interference-and-butterflies-wings">4. Interference and butterflies’ wings</a></li>
+  </ul></li>
+  <li><a href="#polarisation" id="toc-polarisation" class="nav-link" data-scroll-target="#polarisation"><span class="header-section-number">22.1.13</span> POLARISATION</a>
+  <ul>
+  <li><a href="#polaroid-and-photoelastic-stress-with-the-overhead-projector" id="toc-polaroid-and-photoelastic-stress-with-the-overhead-projector" class="nav-link" data-scroll-target="#polaroid-and-photoelastic-stress-with-the-overhead-projector">1. Polaroid and Photoelastic stress with the Overhead Projector</a></li>
+  <li><a href="#polarisation-by-reflection" id="toc-polarisation-by-reflection" class="nav-link" data-scroll-target="#polarisation-by-reflection">2. Polarisation by reflection</a></li>
+  <li><a href="#polarisation-of-a-tv-signal" id="toc-polarisation-of-a-tv-signal" class="nav-link" data-scroll-target="#polarisation-of-a-tv-signal">3. Polarisation of a TV signal</a></li>
+  <li><a href="#polarisation-and-a-calculator" id="toc-polarisation-and-a-calculator" class="nav-link" data-scroll-target="#polarisation-and-a-calculator">4. Polarisation and a calculator</a></li>
+  <li><a href="#rotation-of-the-plane-of-polarisation" id="toc-rotation-of-the-plane-of-polarisation" class="nav-link" data-scroll-target="#rotation-of-the-plane-of-polarisation">5. Rotation of the plane of polarisation</a></li>
+  <li><a href="#sunset-in-milk-in-water" id="toc-sunset-in-milk-in-water" class="nav-link" data-scroll-target="#sunset-in-milk-in-water">6. Sunset in milk in water</a></li>
+  </ul></li>
+  <li><a href="#miscellaneous-waves-sound-lieu-it" id="toc-miscellaneous-waves-sound-lieu-it" class="nav-link" data-scroll-target="#miscellaneous-waves-sound-lieu-it"><span class="header-section-number">22.1.14</span> MISCELLANEOUS WAVES, SOUND &amp; Lieu-IT</a>
+  <ul>
+  <li><a href="#coloured-flames" id="toc-coloured-flames" class="nav-link" data-scroll-target="#coloured-flames">1. Coloured flames</a></li>
+  <li><a href="#tape-recorders-in-physics" id="toc-tape-recorders-in-physics" class="nav-link" data-scroll-target="#tape-recorders-in-physics">2. Tape recorders in Physics</a></li>
+  <li><a href="#cross-and-spot-for-the-blind-spot" id="toc-cross-and-spot-for-the-blind-spot" class="nav-link" data-scroll-target="#cross-and-spot-for-the-blind-spot">3. Cross and spot for the blind spot</a></li>
+  <li><a href="#sodium-lamp-and-youngs-slits" id="toc-sodium-lamp-and-youngs-slits" class="nav-link" data-scroll-target="#sodium-lamp-and-youngs-slits">Sodium lamp and Young’s slits</a>
+  <ul class="collapse">
+  <li><a href="#painting-a-corridor" id="toc-painting-a-corridor" class="nav-link" data-scroll-target="#painting-a-corridor">5. Painting a corridor</a></li>
+  <li><a href="#absorption-spectrum-of-sodium" id="toc-absorption-spectrum-of-sodium" class="nav-link" data-scroll-target="#absorption-spectrum-of-sodium">8. Absorption spectrum of sodium!</a></li>
+  <li><a href="#laser-model---hand" id="toc-laser-model---hand" class="nav-link" data-scroll-target="#laser-model---hand">9. Laser model - hand</a></li>
+  <li><a href="#singing-flames-and-beats" id="toc-singing-flames-and-beats" class="nav-link" data-scroll-target="#singing-flames-and-beats">10. Singing flames and beats</a></li>
+  <li><a href="#appearance-of-objects-in-different-coloured-light" id="toc-appearance-of-objects-in-different-coloured-light" class="nav-link" data-scroll-target="#appearance-of-objects-in-different-coloured-light">11. Appearance of objects in different coloured light</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#red-blue-green" id="toc-red-blue-green" class="nav-link" data-scroll-target="#red-blue-green"><span class="header-section-number">23</span> R<u>E</u>D BLUE GREEN</a>
+  <ul>
+  <li><a href="#laser-light-and-the-60-w-bulb" id="toc-laser-light-and-the-60-w-bulb" class="nav-link" data-scroll-target="#laser-light-and-the-60-w-bulb"><span class="header-section-number">23.1</span> <u>12. Laser light and the 60 W bulb</u></a></li>
+  <li><a href="#binocular-vision" id="toc-binocular-vision" class="nav-link" data-scroll-target="#binocular-vision"><span class="header-section-number">23.2</span> <u>13. Binocular vision</u></a></li>
+  <li><a href="#a-shadow-photometer" id="toc-a-shadow-photometer" class="nav-link" data-scroll-target="#a-shadow-photometer"><span class="header-section-number">23.3</span> <u>14. A shadow photometer</u></a></li>
+  <li><a href="#ribena-lime" id="toc-ribena-lime" class="nav-link" data-scroll-target="#ribena-lime"><span class="header-section-number">23.4</span> <u>15. Ribena lime</u></a></li>
+  <li><a href="#colour-subtraction" id="toc-colour-subtraction" class="nav-link" data-scroll-target="#colour-subtraction"><span class="header-section-number">23.5</span> <u>16. Colour subtraction</u></a>
+  <ul>
+  <li><a href="#phase-angle" id="toc-phase-angle" class="nav-link" data-scroll-target="#phase-angle"><span class="header-section-number">23.5.1</span> 19. Phase angle!</a></li>
+  </ul></li>
+  <li><a href="#ultraviolet-experiments---safety-considerations-vital-here" id="toc-ultraviolet-experiments---safety-considerations-vital-here" class="nav-link" data-scroll-target="#ultraviolet-experiments---safety-considerations-vital-here"><span class="header-section-number">23.6</span> 20. Ultraviolet experiments - safety considerations vital here</a></li>
+  <li><a href="#p-and-s-waves-simulation" id="toc-p-and-s-waves-simulation" class="nav-link" data-scroll-target="#p-and-s-waves-simulation"><span class="header-section-number">23.7</span> 21. P and S waves simulation</a>
+  <ul>
+  <li><a href="#sensitive-flames" id="toc-sensitive-flames" class="nav-link" data-scroll-target="#sensitive-flames"><span class="header-section-number">23.7.1</span> 22. Sensitive flames</a></li>
+  <li><a href="#the-eve" id="toc-the-eve" class="nav-link" data-scroll-target="#the-eve"><span class="header-section-number">23.7.2</span> 23. The eve</a></li>
+  <li><a href="#aberration-of-light---rain" id="toc-aberration-of-light---rain" class="nav-link" data-scroll-target="#aberration-of-light---rain"><span class="header-section-number">23.7.3</span> 24. Aberration of light - rain</a></li>
+  </ul></li>
+  <li><a href="#coloured-shadows" id="toc-coloured-shadows" class="nav-link" data-scroll-target="#coloured-shadows"><span class="header-section-number">23.8</span> 25. Coloured shadows</a>
+  <ul>
+  <li><a href="#corrugated-cardboard-and-wave-motion" id="toc-corrugated-cardboard-and-wave-motion" class="nav-link" data-scroll-target="#corrugated-cardboard-and-wave-motion"><span class="header-section-number">23.8.1</span> 26. Corrugated cardboard and wave motion</a></li>
+  <li><a href="#using-a-pinhole-to-help-vou-read-without-glasses" id="toc-using-a-pinhole-to-help-vou-read-without-glasses" class="nav-link" data-scroll-target="#using-a-pinhole-to-help-vou-read-without-glasses"><span class="header-section-number">23.8.2</span> 27. Using a pinhole to help vou read without glasses</a></li>
+  <li><a href="#standing-waves" id="toc-standing-waves" class="nav-link" data-scroll-target="#standing-waves"><span class="header-section-number">23.8.3</span> 28. Standing waves</a></li>
+  <li><a href="#moiré-fringes-in-a-net-curtain-or-night-dress" id="toc-moiré-fringes-in-a-net-curtain-or-night-dress" class="nav-link" data-scroll-target="#moiré-fringes-in-a-net-curtain-or-night-dress"><span class="header-section-number">23.8.4</span> 29. Moiré fringes in a net curtain or night dress</a>
+  <ul class="collapse">
+  <li><a href="#stroboscopic-effect-with-a-television" id="toc-stroboscopic-effect-with-a-television" class="nav-link" data-scroll-target="#stroboscopic-effect-with-a-television">30. Stroboscopic effect with a television</a></li>
+  </ul></li>
+  <li><a href="#apparent-bending-of-a-vibrating-stick-in-a-spectrum" id="toc-apparent-bending-of-a-vibrating-stick-in-a-spectrum" class="nav-link" data-scroll-target="#apparent-bending-of-a-vibrating-stick-in-a-spectrum"><span class="header-section-number">23.8.5</span> 31. Apparent bending of a vibrating stick in a spectrum</a></li>
+  <li><a href="#colour-filters-on-the-overhead-projector" id="toc-colour-filters-on-the-overhead-projector" class="nav-link" data-scroll-target="#colour-filters-on-the-overhead-projector"><span class="header-section-number">23.8.6</span> 32. Colour filters on the overhead projector</a></li>
+  <li><a href="#path-of-the-sun-with-a-pinhole-camera" id="toc-path-of-the-sun-with-a-pinhole-camera" class="nav-link" data-scroll-target="#path-of-the-sun-with-a-pinhole-camera"><span class="header-section-number">23.8.7</span> 33. Path of the Sun with a pinhole camera</a></li>
+  </ul></li>
+  <li><a href="#patterned-glass-and-syrup" id="toc-patterned-glass-and-syrup" class="nav-link" data-scroll-target="#patterned-glass-and-syrup"><span class="header-section-number">23.9</span> 35. Patterned glass and syrup</a>
+  <ul>
+  <li><a href="#mirror-writing" id="toc-mirror-writing" class="nav-link" data-scroll-target="#mirror-writing"><span class="header-section-number">23.9.1</span> 36. Mirror writing</a></li>
+  <li><a href="#silhouettes" id="toc-silhouettes" class="nav-link" data-scroll-target="#silhouettes"><span class="header-section-number">23.9.2</span> 38. Silhouettes</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">23.10</span> 34</a>
+  <ul>
+  <li><a href="#diffraction-through-a-night-dress" id="toc-diffraction-through-a-night-dress" class="nav-link" data-scroll-target="#diffraction-through-a-night-dress"><span class="header-section-number">23.10.1</span> 40. Diffraction through a night dress</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./optics.html">Waves &amp; Optics</a></li><li class="breadcrumb-item"><a href="./optics.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="basic-theory" class="level2" data-number="22.1">
+<h2 data-number="22.1" class="anchored" data-anchor-id="basic-theory"><span class="header-section-number">22.1</span> Basic Theory</h2>
+<section id="nature-of-light" class="level3" data-number="22.1.1">
+<h3 data-number="22.1.1" class="anchored" data-anchor-id="nature-of-light"><span class="header-section-number">22.1.1</span> Nature of Light</h3>
+<ul>
+<li><strong>Light</strong> is an electromagnetic wave: transverse, travels at speed <span class="math inline">\(c = 3.0 \times 10^8\)</span> m/s in a vacuum.</li>
+<li>Light shows <strong>wave-like</strong> behaviour (diffraction, interference) and <strong>particle-like</strong> behaviour (photoelectric effect).</li>
+</ul>
+<p><strong>Wave equation:</strong> <span class="math display">\[
+v = f \lambda
+\]</span> Where: - <span class="math inline">\(v\)</span> = wave speed - <span class="math inline">\(f\)</span> = frequency - <span class="math inline">\(\lambda\)</span> = wavelength</p>
+</section>
+<section id="reflection-and-refraction" class="level3" data-number="22.1.2">
+<h3 data-number="22.1.2" class="anchored" data-anchor-id="reflection-and-refraction"><span class="header-section-number">22.1.2</span> Reflection and Refraction</h3>
+<section id="reflection" class="level4">
+<h4 class="anchored" data-anchor-id="reflection">Reflection:</h4>
+<ul>
+<li><strong>Law of reflection</strong>: angle of incidence = angle of reflection <span class="math display">\[
+\theta_i = \theta_r
+\]</span></li>
+</ul>
+</section>
+<section id="refraction" class="level4">
+<h4 class="anchored" data-anchor-id="refraction">Refraction:</h4>
+<ul>
+<li>Occurs when light passes between media of different optical densities.</li>
+</ul>
+<p><strong>Snell’s Law:</strong> <span class="math display">\[
+n_1 \sin\theta_1 = n_2 \sin\theta_2
+\]</span> Where: - <span class="math inline">\(n\)</span> = refractive index - <span class="math inline">\(\theta\)</span> = angle to the normal</p>
+<p><strong>Refractive index (absolute):</strong> <span class="math display">\[
+n = \frac{c}{v}
+\]</span> Where: - <span class="math inline">\(v\)</span> = speed of light in the medium</p>
+</section>
+</section>
+<section id="total-internal-reflection" class="level3" data-number="22.1.3">
+<h3 data-number="22.1.3" class="anchored" data-anchor-id="total-internal-reflection"><span class="header-section-number">22.1.3</span> Total Internal Reflection</h3>
+<p>Occurs when: - Light travels from <strong>higher</strong> to <strong>lower</strong> refractive index - Angle of incidence &gt; <strong>critical angle</strong></p>
+<p><strong>Critical angle:</strong> <span class="math display">\[
+\sin\theta_c = \frac{n_2}{n_1} \quad (n_1 &gt; n_2)
+\]</span></p>
+<p>Used in <strong>optical fibres</strong> and <strong>endoscopes</strong>.</p>
+</section>
+<section id="lenses" class="level3" data-number="22.1.4">
+<h3 data-number="22.1.4" class="anchored" data-anchor-id="lenses"><span class="header-section-number">22.1.4</span> Lenses</h3>
+<section id="converging-lens-convex" class="level4">
+<h4 class="anchored" data-anchor-id="converging-lens-convex">Converging lens (convex):</h4>
+<ul>
+<li>Brings parallel rays to a <strong>focus</strong></li>
+<li>Focal length (<span class="math inline">\(f\)</span>) is <strong>positive</strong></li>
+</ul>
+</section>
+<section id="diverging-lens-concave" class="level4">
+<h4 class="anchored" data-anchor-id="diverging-lens-concave">Diverging lens (concave):</h4>
+<ul>
+<li>Spreads out parallel rays</li>
+<li>Focal length (<span class="math inline">\(f\)</span>) is <strong>negative</strong></li>
+</ul>
+<p><strong>Lens formula:</strong> <span class="math display">\[
+\frac{1}{f} = \frac{1}{v} - \frac{1}{u}
+\]</span> Where: - <span class="math inline">\(f\)</span> = focal length - <span class="math inline">\(v\)</span> = image distance - <span class="math inline">\(u\)</span> = object distance<br>
+(sign convention: distances measured from the lens)</p>
+<p><strong>Magnification:</strong> <span class="math display">\[
+M = \frac{h_i}{h_o} = \frac{v}{u}
+\]</span> Where: - <span class="math inline">\(h_i\)</span> = image height - <span class="math inline">\(h_o\)</span> = object height</p>
+</section>
+</section>
+<section id="ray-diagrams" class="level3" data-number="22.1.5">
+<h3 data-number="22.1.5" class="anchored" data-anchor-id="ray-diagrams"><span class="header-section-number">22.1.5</span> Ray Diagrams</h3>
+<section id="converging-lens" class="level4">
+<h4 class="anchored" data-anchor-id="converging-lens">Converging lens:</h4>
+<ul>
+<li>Rays parallel to axis go through <strong>focus</strong></li>
+<li>Rays through centre of lens pass straight</li>
+<li>Rays through focus exit parallel</li>
+</ul>
+</section>
+<section id="image-characteristics" class="level4">
+<h4 class="anchored" data-anchor-id="image-characteristics">Image characteristics:</h4>
+<ul>
+<li><strong>Real</strong> image: formed on opposite side of lens, can be projected</li>
+<li><strong>Virtual</strong> image: appears on same side, cannot be projected</li>
+</ul>
+</section>
+</section>
+<section id="diffraction" class="level3" data-number="22.1.6">
+<h3 data-number="22.1.6" class="anchored" data-anchor-id="diffraction"><span class="header-section-number">22.1.6</span> Diffraction</h3>
+<ul>
+<li>Diffraction is the spreading of waves around obstacles or through slits.</li>
+<li>Most noticeable when slit width <span class="math inline">\(\approx \lambda\)</span></li>
+</ul>
+</section>
+<section id="youngs-double-slit-experiment" class="level3" data-number="22.1.7">
+<h3 data-number="22.1.7" class="anchored" data-anchor-id="youngs-double-slit-experiment"><span class="header-section-number">22.1.7</span> Young’s Double Slit Experiment</h3>
+<p>Shows <strong>interference</strong>: bright and dark fringes formed due to path difference.</p>
+<p><strong>Fringe spacing:</strong> <span class="math display">\[
+w = \frac{\lambda D}{s}
+\]</span> Where: - <span class="math inline">\(w\)</span> = fringe spacing - <span class="math inline">\(\lambda\)</span> = wavelength of light - <span class="math inline">\(D\)</span> = distance to screen - <span class="math inline">\(s\)</span> = slit separation</p>
+</section>
+<section id="single-slit-diffraction" class="level3" data-number="22.1.8">
+<h3 data-number="22.1.8" class="anchored" data-anchor-id="single-slit-diffraction"><span class="header-section-number">22.1.8</span> Single Slit Diffraction</h3>
+<ul>
+<li>Central maximum is the brightest and widest.</li>
+<li>Increasing slit width <strong>narrows</strong> the central fringe.</li>
+<li>Increasing wavelength <strong>widens</strong> the fringes.</li>
+</ul>
+</section>
+<section id="diffraction-grating" class="level3" data-number="22.1.9">
+<h3 data-number="22.1.9" class="anchored" data-anchor-id="diffraction-grating"><span class="header-section-number">22.1.9</span> Diffraction Grating</h3>
+<p><strong>Grating equation:</strong> <span class="math display">\[
+n\lambda = d \sin\theta
+\]</span> Where: - <span class="math inline">\(n\)</span> = order number - <span class="math inline">\(d\)</span> = slit spacing (inverse of number of lines per metre) - <span class="math inline">\(\theta\)</span> = diffraction angle</p>
+<p>Higher order fringes are <strong>further apart</strong> for larger <span class="math inline">\(\lambda\)</span> or smaller <span class="math inline">\(d\)</span>.</p>
+</section>
+<section id="applications-of-optics" class="level3" data-number="22.1.10">
+<h3 data-number="22.1.10" class="anchored" data-anchor-id="applications-of-optics"><span class="header-section-number">22.1.10</span> Applications of Optics</h3>
+<ul>
+<li><strong>Lenses</strong>: glasses, cameras, microscopes, telescopes</li>
+<li><strong>Interference</strong>: anti-reflective coatings, holography</li>
+<li><strong>Fibre optics</strong>: medical imaging, telecommunications</li>
+<li><strong>Diffraction gratings</strong>: spectroscopy, wavelength measurement</li>
+</ul>
+<p>GENERAL OPTICS</p>
+<p>GENERAL OPTICS</p>
+<section id="optics-and-the-smoke-box" class="level4">
+<h4 class="anchored" data-anchor-id="optics-and-the-smoke-box">1. Optics and the smoke box</h4>
+<p>Shine light through a plate with holes in it into a glass-fronted box full of smoke. The path of the rays through various lenses placed in the box can easily be followed. Smoke can easily be made by burning a piece of sacking, rag or corrugated cardboard in a smoke generator available from beekeepers.</p>
+<blockquote class="blockquote">
+<p>Age range: 13-16</p>
+<p>Apparatus required:</p>
+<p>•Smoke-tight box with one glass side •Smoke generator •Large (10 cm diameter) lenses</p>
+</blockquote>
+<section id="sources-of-light-demonstration-lesson" class="level5">
+<h5 class="anchored" data-anchor-id="sources-of-light-demonstration-lesson">2. Sources of light demonstration lesson</h5>
+<p>I have found this an attractive way of introducing the topic of optics. We “look” at a number of different sources of light such as the Sun, matches, a Bunsen flame, iron filings and magnesium in the flame, a sodium chloride stick in the flame, a glowing wire, an electric light bulb, a low energy discharge tube, gas discharge tubes (hydrogen, cadmium, sodium, neon, xenon, and helium), an LED, a laser and an ultra violet light. The different colours of the sources, the time for which they shine and the energy losses can all be considered.</p>
+<p>Impressive effects using ultraviolet light can be obtained from shining it on the following:</p>
+<p>Silly putty, washing powder, nails, stage make-up, luminous watches and toys, security pens.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Laser •Matches •Bunsen •Iron filings •Magnesium •Electric light bulb</p>
+<p>•Gas discharge tubes •Low energy lamp •LED •Ultraviolet light</p>
+</blockquote>
+<p>•1 /1 4</p>
+</section>
+</section>
+<section id="the-camera-obscura" class="level4">
+<h4 class="anchored" data-anchor-id="the-camera-obscura">3. The camera obscura</h4>
+<p>Small holes in shutters or blinds can give amazing views of outside scenes on the wall. It is really a pinhole camera on a very large scale. It is usually just the round disc of the Sun that can be seen, but actual views can sometimes be obtained. I have seen one formed through a small hole in a blind in a hotel room in Sorrento in Italy. An inverted image of a whole mountainside was formed on my bedroom wall as the sun “rose” over the hills near Vesuvius. Images of the Sun can often be seen in a wood where the sunlight reaches the ground after passing through small holes between overlapping leaves. The photograph shows this happening.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13 Apparatus required: •Sunlight •Room with a fine hole in a blind</p>
+</blockquote>
+</section>
+<section id="distorted-drawing" class="level4">
+<h4 class="anchored" data-anchor-id="distorted-drawing">4. Distorted drawing</h4>
+<p>Two interesting phenomena:</p>
+<ol type="a">
+<li><p>Reflection from a curved surface. Make a drawing of an object by looking at its reflection in a curved surface, such as a polished tin can, and then view the drawing the same way.</p></li>
+<li><p>Make a distorted drawing so that it is only clear when viewed from an angle to the picture. A very good example of this is the skull in Holbein <sup>l</sup>s painting ‘The Ambassadors’ which is in the National Gallery in London.</p></li>
+</ol>
+</section>
+<section id="absorption-in-glass---long-pieces" class="level4">
+<h4 class="anchored" data-anchor-id="absorption-in-glass---long-pieces">5. Absorption in glass - long pieces</h4>
+<p>To demonstrate the absorption of light in glass get a series of ‘off cuts’ of different length from your local glazier. Shine light through the glass in the plane of the strip, and measure the change of intensity with length using a light dependent resistor (LDR). Use this to discuss the attenuation of light in glass fibres.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18 depending on treatment</p>
+<p>Apparatus required: •Long strips of glass with rounded edges <sup>O</sup> LDR •Light source •Ohm meter</p>
+</blockquote>
+</section>
+<section id="metallised-film---one-wav-mirrors" class="level4">
+<h4 class="anchored" data-anchor-id="metallised-film---one-wav-mirrors">6. Metallised film - one wav mirrors</h4>
+<p>This reflective film has a number of uses. The best source of it is in shops selling wrapping paper - they often have some in a variety of colours and I have even seen some with reflection diffraction gratings. In optics it makes a very good one-way mirror depending on which side is illuminated more strongly. When viewed from the highly illuminated side it looks like a mirror, but when viewed from the less well-illuminated side it is possible to see through it to the brightly lit area.</p>
+<p>It is also used by marathon runners to conserve heat after a race and so could also be part of the chapter on heat radiation experiments.</p>
+<p>Age range: 11-18 depending on treatment &gt; &gt; Apparatus required: •Sheet of metallised plastic •LDR for light transmission experiments</p>
+</section>
+<section id="object-and-image" class="level4">
+<h4 class="anchored" data-anchor-id="object-and-image">7. Object and Image</h4>
+<p>To show lateral inversion in a plane mirror use a pair of model cars - one British and one Continental with their steering wheels on different sides. Reflect them in a plane mirror to show that they appear laterally inverted.</p>
+</section>
+<section id="variable-power-lens" class="level4">
+<h4 class="anchored" data-anchor-id="variable-power-lens">8. Variable power lens</h4>
+<p>Use a plastic bag containing liquid, the curvature of which can be varied by squashing and stretching to simulate the way the muscles of the eye change the shape of the eye lens. Experiments will suggest the correct sort of radius of curvature to give you a reasonable focal length.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>The focal length (f) of a lens with spherical surfaces of radius rl and r2 and of material of refractive index n placed in air is given by the equation:</p>
+<p>l/f= (n-l)[l/rl + 1/r2].</p>
+<p>A very large version of this can be made by using a piece of transparent plastic or rubber sheet stretched tightly over the rim of a bicycle wheel. Pouring water into the top makes the plastic sag and if a lamp is put below the sheet an image can be formed on the ceiling of the lab. The sheet needs to be thin enough to distend with a relatively small amount of water otherwise the focal length is too great for any room but a high hall - like a sports hall!</p>
+<p>Age range: 11- 18 depending on treatment Apparatus required:</p>
+<p>•Plastic bag •Bicycle wheel without spokes •Thin rubber sheet (as clear as possible) ’Lamp</p>
+</blockquote>
+</section>
+<section id="the-silvered-bicycle-reflector" class="level4">
+<h4 class="anchored" data-anchor-id="the-silvered-bicycle-reflector">9. The silvered bicycle reflector</h4>
+<p>Get a clear plastic bicycle reflector made of pyramids of plastic, and silver paint one side (spraying it with aluminium paint is fine). Look into it - you see a completely black reflector. This is simply the reflection of your retina. Since each “hole” between the pyramids acts like a corner of a reflecting cube the light is simply reversed in direction. (l am grateful to Roy for this fascinating demonstration.)</p>
+</section>
+<section id="light-reflection-in-a-cube" class="level4">
+<h4 class="anchored" data-anchor-id="light-reflection-in-a-cube">10. Light reflection in a cube</h4>
+<p>Note how light behaves when reflected from the inside of the corner of a cube. It is reversed in direction irrespective of the original direction of the incident ray of light. Three plane mirrors can easily be fixed together to give a right-angled corner. This explains why reflectors on bikes are made like this - the light from a car’s headlamps is reflected back to the driver no matter from what angle it hits the reflector.</p>
+</section>
+<section id="bent-pencil-in-water" class="level4">
+<h4 class="anchored" data-anchor-id="bent-pencil-in-water">11. Bent pencil in water</h4>
+<p>One of the simplest methods of showing refraction in a liquid is to put a pencil in a glass of water and look at it from the top. The effect of refraction is clearly seen. The pencil appears to be bent - the end of the pencil seeming much nearer the surface than it should be. This can be used to explain the difficulty of reaching into water to pick something out - your judgement of direction is impaired by the refraction.</p>
+<p>Age range: 11-13 Apparatus required: •Beaker of water •Pencil</p>
+<blockquote class="blockquote">
+<p>Geometrical optics</p>
+</blockquote>
+</section>
+<section id="refractive-index---tv-camera" class="level4">
+<h4 class="anchored" data-anchor-id="refractive-index---tv-camera">12. Refractive index - TV camera</h4>
+<p>Float an object in water in a flat-sided plastic tank, and view from outside with the TV camera placed so that it looks precisely along the water surface. Some of the block will be seen through the air and some through the water. The refractive index may be worked out by measuring the dimensions of the two views of the block from the TV screen. (Refractive index = Real depth (in this case in air)/Apparent depth (in this case through the water.)</p>
+<blockquote class="blockquote">
+<p>Age range: 13-18 depending on treatment</p>
+<p>Apparatus required: •Rectangular plastic tank •TV camera •Wooden block to float in the tank</p>
+</blockquote>
+</section>
+<section id="a-floating-image" class="level4">
+<h4 class="anchored" data-anchor-id="a-floating-image">13. A floating image</h4>
+<p>Wave a white stick in mid air at the focal plane of a slide projector. The image on the slide will appear to be hanging in space, demonstrating the persistence of vision of the human eye.</p>
+</section>
+<section id="christmas-tree-balls" class="level4">
+<h4 class="anchored" data-anchor-id="christmas-tree-balls">14. Christmas tree balls</h4>
+<p>It is well known that the formulae for curved mirrors only apply if the reflecting surface is restricted to the centre of the mirror — i.e.&nbsp;to rays close to the axis. A good example of the distortion produced if this condition is not fulfilled, and when there is a reflection from a large part of a spherical surface, can be seen by using the coloured balls used for Christmas tree decorations. Using a TV camera would show the effects to a large audience.</p>
+<p>Age range: 16-18 Apparatus required: •Christmas tree balls <sup>o</sup> TV camera if available</p>
+</section>
+<section id="defects-of-lenses" class="level4">
+<h4 class="anchored" data-anchor-id="defects-of-lenses">15. Defects of lenses</h4>
+<p>Use a lens of large diameter (10 cm if possible) and plot the image position as the lens is rotated about a vertical axis with respect to the object.</p>
+<p>Age range: 16-18 Apparatus required: •Large lens with a diameter of at least 10 cm</p>
+</section>
+<section id="non-lateral-inversion---mirrors-at-900" class="level4">
+<h4 class="anchored" data-anchor-id="non-lateral-inversion---mirrors-at-900">16. Non-lateral inversion - mirrors at 90<sup>0</sup></h4>
+<p>If you look at the image across the join of two mirrors that have been placed at 90<sup>0</sup> to each other you will not see any lateral inversion.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-16</p>
+<p>Apparatus required: •Two plane mirrors fixed at 90<sup>0</sup> to each other •TV camera if available</p>
+</blockquote>
+</section>
+<section id="image-position" class="level4">
+<h4 class="anchored" data-anchor-id="image-position">17. Image position</h4>
+<p>Mount a small plane mirror vertically on the bench with a board writer standing in front of it. (The board writers should be a cm or two higher than the mirror.) You will see the image of the board writer in the mirror. Move a second board writer behind the mirror until the top of it seems to coincide with the image of the first one from whatever direction it is viewed (There is no parallax between them.) The second board writer is now at the image position of the first.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13 Apparatus required: •Plane mirror mounted vertically •Two board writers or pencils</p>
+</blockquote>
+</section>
+<section id="bending-of-wood---measurement-with-a-light-beam-the-optical-lever" class="level4">
+<h4 class="anchored" data-anchor-id="bending-of-wood---measurement-with-a-light-beam-the-optical-lever">18. Bending of wood - measurement with a light beam — the optical lever</h4>
+<p>Use an optical lever to detect the bending of a bench. This can be done by fixing a small mirror to the bench and then reflecting a beam of light from it so that a spot is formed on the wall. It works especially well if the scale is on the other side of the lab. Now lean on the bench. The beam of light is deflected through twice the angle of deflection of the table and the spot moves. This method can also be used to detect the bending of walls if someone leans on them or the deflection of some ceilings if somebody walks overhead. The use of a light beam as a pointer is especially good since it has “zero” mass.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment Apparatus required: •Plane mirror ’Fine beam of light</p>
+<p>•Ruler</p>
+</blockquote>
+</section>
+<section id="real-and-apparent-depth---sidewavs-block" class="level4">
+<h4 class="anchored" data-anchor-id="real-and-apparent-depth---sidewavs-block">19. Real and apparent depth - sidewavs block!</h4>
+<p>This experiment uses the real and apparent depth principle in a simple way to determine the refractive index of a block. Lay a glass or acrylic block on its side on a sheet of paper, and look at the base of the block through one side. It is then easy to mark the apparent depth of the block by measuring the length of the shiny part on the sheet of paper under the block.</p>
+<blockquote class="blockquote">
+<p>Theory: Refractive index of the glass block = Real depth/Apparent depth</p>
+</blockquote>
+<p>Age range: 11-13 Apparatus required: •Glass block •Sheet of paper •Pencil</p>
+</section>
+<section id="pinhole-camera---3600" class="level4">
+<h4 class="anchored" data-anchor-id="pinhole-camera---3600">20. Pinhole camera - 360<sup>0</sup>!</h4>
+<p>It is simple to take a photograph with a pinhole camera by substituting the paper screen with a piece of photographic paper. However an interesting extension of this is to take an ‘all round’ photograph. Mount a toilet roll in the middle of a box with a pinhole in each of the four vertical faces of the box. In the dark room, or in a light proof bag, wrap photographic paper around the toilet roll tube.</p>
+<p>Expose the film outdoors by uncovering the holes for up to 30s in overcast conditions but around IOS in sunlight. Develop and print the paper, A 360 <sup>0</sup> picture should be obtained. A positive print can be formed by placing the negative print face downwards on the bench in the dark room (using only the safe light) on top of another sheet of photographic paper with its sensitive side uppermost. Then switch on the ordinary light for about 30 seconds and print as normal.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Pinhole camera with centre mounted cylinder •Photographic paper •Dark room and chemicals</p>
+</blockquote>
+</section>
+<section id="interesting-refractive-indices" class="level4">
+<h4 class="anchored" data-anchor-id="interesting-refractive-indices">21. Interesting refractive indices</h4>
+<p>Some liquids have a refractive index almost equal to that of glass (about 1.5). Glass objects put in these liquids will seem to disappear.</p>
+<p>Glycerine n = 1.47, castor oil n = 1.48, xylene n = 1.51, bath and body works shower gel = 1.51</p>
+<blockquote class="blockquote">
+<p>Dimethlybenzene (xylene) is flammable, harmful by inhalation and, in contact with the skin, will cause skin irritation so contact should be avoided.</p>
+</blockquote>
+</section>
+<section id="kaleidoscope" class="level4">
+<h4 class="anchored" data-anchor-id="kaleidoscope">22. Kaleidoscope</h4>
+<p>Two mirrors in a tube. Put two slices of pre-cut mirror in a cardboard tube, which can be a toilet roll. (It might even be worth trying to make your own mirrors from cards and kitchen foil.) Paint the inside of the tube matt black.</p>
+<p>Fix the two mirrors together first along their long edges and then slide them into the tube.</p>
+<p>The cover with the viewing hole is then fixed on the top of the tube, leaving the ‘bottom’ of the tube open.</p>
+<p>A few small objects such as beads should be scattered on the paper and then viewed from above.</p>
+<p>You can buy one of these but it is a useful exercise for the children to make one.</p>
+<p>Alternatively use two strips of mirror and a strip of thick card or hardboard the same size as the mirror strips and bind them together in a triangular shape with an elastic band. You should first paint your piece of wood with matt black paint.</p>
+<p>Age range: 7-14 Apparatus required: •Two rectangular plane mirrors •Cardboard tube •Glue</p>
+</section>
+<section id="shadow-films" class="level4">
+<h4 class="anchored" data-anchor-id="shadow-films">23. Shadow films</h4>
+<p>A really good and wide-ranging activity is to make a shadow film. There will be many skills involved — painting the screens, designing and cutting out the characters, choosing the thickness of the paper for the screen, choosing the right light source, writing the script, mounting the characters and understanding why we need to hold the characters AGAINST the screen.</p>
+<p>The cut-out cardboard characters are fixed to thin dowel rods with either glue or a drawing</p>
+<p>pin.</p>
+<p>audience</p>
+</section>
+<section id="refraction-and-romance" class="level4">
+<h4 class="anchored" data-anchor-id="refraction-and-romance">24. Refraction and romance</h4>
+<p>Imagine that a young couple are sitting at a table on a far off beach. He asks her to marry him and gives her a gold ring with a large mounted diamond. She does not immediately accept but drops the ring into her glass of water — the diamond disappears, but she can still see the gold ring. She refuses his offer — why?</p>
+<p>The ‘diamond’ is not diamond at all but glass. The refractive index of glass is similar to that of water and so the ‘diamond’ disappears. A real diamond has a refractive index that is very different from water and so would remain visible.</p>
+<p>If you can’t get a diamond the following experiment is even better because the solid and liquid suggested have a much closer refractive index. You can just see the word PYREX in the third photograph.</p>
+<p>Get a flat sided plastic bottle and fill it with cooking oil. Float a pyrex test tube in the top. Then, using a thin wooden rod, push the tube down so that it fills with oil and sinks. It will disappear because the refractive index of pyrex and cooking oil are almost identical! (Clear baby oil also works well.)</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18 Apparatus required: •Flat sided plastic bottle •Cooking oil or clear baby oil •Pyrex test tube •Thin wooden rod</p>
+</blockquote>
+</section>
+<section id="the-mirage-machine" class="level4">
+<h4 class="anchored" data-anchor-id="the-mirage-machine">25. The Mirage machine</h4>
+<p>This fascinating double mirror demonstrates the production of an image in space. You reach down to try and pick up the space shuttle, toy animal or car and find that although you can see it you can’t touch it! The lower photo is a close up showing both the object (the smaller space shuttle) and its image (the larger space shuttle).</p>
+<p>Shine a fine beam of light from a torch on to the image. The image seems to be illuminated although there is ‘nothing there’. The light actually goes through the image and is reflected back by the mirrors.</p>
+<blockquote class="blockquote">
+<p>Theory and teaching notes</p>
+<p>What you actually see is the image of the object formed in space by the double curved interior of the mirror box. This real image appears to be sitting on the top of the box.</p>
+</blockquote>
+<p>Age range: 7-18 Apparatus required: •Mirage machine</p>
+<p>•oeu111eL1 upLIC&gt;</p>
+<p>TOTAL INTERNAL REFLECTION</p>
+<p>The following series of experiments deal with the critical angle and total internal reflection.</p>
+<blockquote class="blockquote">
+<p>General theory for this section:</p>
+<p>When light meets the boundary between two transparent materials it will be refracted, but if it is travelling in the material with the greater refractive index and the angle of incidence is greater than the critical angle (c) it will be reflected back into the first material.</p>
+<p>The critical angle is defined by the equation n = l/sin c where n is the refractive index of the first medium. (This simplified equation assumes the second material to be air)</p>
+</blockquote>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><ol start="26" type="1">
+<li><p>Colour of tanned legs under water</p></li>
+<li><p>Critical angle - semicircular block</p></li>
+<li><p>Total internal reflection - TV camera</p></li>
+<li><p>Cat’s eyes</p></li>
+<li><p>Fibre optics</p></li>
+</ol>
+<p>310 Corner of a glass block</p></th>
+<th><ol start="32" type="1">
+<li><p>Light along a water jet</p></li>
+<li><p>Mirage</p></li>
+<li><p>Total internal reflection and soot!</p></li>
+<li><p>Optical wave-guide - prism entry</p></li>
+<li><p>The floating coin</p></li>
+<li><p>Mirror in tank - refraction</p></li>
+</ol></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="colour-of-tanned-legs-under-water" class="level4">
+<h4 class="anchored" data-anchor-id="colour-of-tanned-legs-under-water">26. Colour of tanned legs under water</h4>
+<p>Have you ever noticed why tanned legs look less tanned as they go from air to water? Is this a layer of air bubbles on them? The light is continually reflected internally within the water, making objects in it look brighter.</p>
+</section>
+<section id="critical-angle---semicircular-block" class="level4">
+<h4 class="anchored" data-anchor-id="critical-angle---semicircular-block">27. Critical angle - semicircular block</h4>
+<p>Shine the light from a ray box or a laser into a semicircular block towards the centre of the flat side. It therefore enters at right angles to the curved side and so suffers no refraction at this point. Twist the block about the centre of the flat side so as to increase the angle of incidence of the light within the block with this side and so find the critical angle. Further increase will give total internal reflection.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Ray box •Semicircular perspex block</p>
+</blockquote>
+</section>
+<section id="total-internal-reflection-and-the-tv-camera" class="level4">
+<h4 class="anchored" data-anchor-id="total-internal-reflection-and-the-tv-camera">28. Total internal reflection and the TV camera</h4>
+<p>Use a rectangular straight-sided plastic tank with some water in it (the one used for wave demonstrations is ideal). Point the camera upwards towards the underside of the water surface from outside of the tank. A splendid silvery surface can be seen.</p>
+<blockquote class="blockquote">
+<p>Apparatus required: •Rectangular straight sided plastic box <sup>o</sup> TV camera •Laboratory jack •TV</p>
+</blockquote>
+</section>
+<section id="cats-eyes" class="level4">
+<h4 class="anchored" data-anchor-id="cats-eyes">29. Cats eyes</h4>
+<p>This is an excellent example of total internal reflection. They are visible from all directions like the corner of a reflecting cube. This also explains how bicycle reflectors work. If the bike reflector was simply a flat mirror then the beam would only reflect into their eyes for one position of the car — in fact you would only see the bike if it was directly in front of you. If the bike was to one side the reflection would not meet their eyes and the bike and rider would effectively disappear.</p>
+<p>However, real bike reflectors are not plane. The back of the reflector is made of a large number of small tetrahedrons set together so that there are dips in between, in the shape of a corner of a right angled cube.</p>
+</section>
+<section id="fibre-optics" class="level4">
+<h4 class="anchored" data-anchor-id="fibre-optics">30. Fibre optics</h4>
+<p>Some uses of fibre optics - communications, endoscopy, security fences (you can’t cut the optical fibre without the security guard knowing about it if they are watching a TV programme which has been transmitted down the fibre), lighting models. A torch or lamp using strands of glass or plastic is a simple and cheap way of demonstrating the use of fibre optics.</p>
+</section>
+<section id="total-internal-reflection---corner-of-a-glass-block" class="level4">
+<h4 class="anchored" data-anchor-id="total-internal-reflection---corner-of-a-glass-block">Total internal reflection - corner of a glass block</h4>
+<p>Use a beam of light from a ray box to show that you cannot get light to cross the corner of a right-angled glass block. Looking across it will simply show you the apparently silvered surface at the other face.</p>
+<p>The photograph of the fish tank in my dentist’s waiting room shows the internal reflection in a fish tank clearly.</p>
+</section>
+<section id="light-along-a-water-jet" class="level4">
+<h4 class="anchored" data-anchor-id="light-along-a-water-jet">32. Light along a water jet</h4>
+<p>This is a pretty example of total internal reflection. Get a piece of glass tube bent into a right angle to use as a water jet. Mount it in a clamp and attach it to a water tap by a length of rubber tubing. Set up a small lamp just behind the bend, and switch on both the flow of water and the lamp. The light will flow along the water path giving a gleaming patch where the water hits the base of the sink. It behaves just the same as the internal reflection along an optical fibre.</p>
+<p>Age range: 11-13 &gt; &gt; Apparatus required: •Light source •Clamp •Sink or bucket ’Water jet from L shaped glass tube</p>
+</section>
+<section id="mirage" class="level4">
+<h4 class="anchored" data-anchor-id="mirage">33. Mirage</h4>
+<p>A good demonstration of a mirage can be obtained by burying a few (up to six) immersion heaters in a tray of sand. Switching these on will give a mirage in the hot air above the sand.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-16 Apparatus required: •Six low voltage immersion heaters •Six power supplies ’oeornetncal optics</p>
+<p><u>34. Total internal reflection and soot!</u></p>
+</blockquote>
+<ol type="a">
+<li><p>This can be demonstrated by using a test tube immersed in water. The sides of the tube look silvery. A better and more controllable version is to use a glass tube. Put the tube in the water while holding your finger over the upper end to prevent the tube filling with water. It is full of air and so looks silvery just like the test tube, but when you take your finger off the water flows in and the silvery effect disappears.</p></li>
+<li><p>A further example of total internal reflection can be shown by blackening an egg with soot from a candle flame. Immerse the egg in water - it looks silvery because of the thin film of air that is trapped within the soot, only to be seen to be black when it is lifted out.</p></li>
+<li><p>An alternative demonstration is to use a table tennis ball and cover it with soot. When placed in water it will appear silvery due to the air film that clings to the soot giving total internal reflection.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: (a) •Beaker ’Test tube •Glass tube (b) ’Egg ’Beaker of water •Candle</p>
+</blockquote>
+</section>
+<section id="optical-wave-guide---prism-entry" class="level4">
+<h4 class="anchored" data-anchor-id="optical-wave-guide---prism-entry">35. Optical wave-guide - prism entry</h4>
+<p>A prism fixed to the side of a plastic tube or piece of glass makes an easy way of demonstrating how light may be introduced into an optical wave-guide.</p>
+</section>
+<section id="the-floating-coin" class="level4">
+<h4 class="anchored" data-anchor-id="the-floating-coin">36. The floating coin</h4>
+<p>Put a coin in the bottom of a bowl and fix a cardboard tube at an angle so that it points above the coin and so that the coin cannot be seen through it (alternatively direct a TV camera to view over the coin).</p>
+<blockquote class="blockquote">
+<p>Now add water to the bowl - the coin will mysteriously float up into view due to the refraction of light as it emerges from the water into the air.</p>
+<p>Age range: 11 — 13 Apparatus required: •Coin •Bowl •Cardboard tube and stand <sup>o</sup>TV camera</p>
+</blockquote>
+</section>
+<section id="mirror-in-tank-refraction-and-total-internal-reflection" class="level4">
+<h4 class="anchored" data-anchor-id="mirror-in-tank-refraction-and-total-internal-reflection">37. Mirror in tank — refraction and total internal reflection</h4>
+<p>The following experiment is a good method of demonstrating both refraction and total internal reflection. You will need a rectangular tank with water in it to which some fluorescein has been added to make the light beams visible. Have a mirror held by a thread mounted under water in one end of a rectangular tank.</p>
+<p>A second mirror fixed above the tank enables you to direct a ray down onto the immersed mirror. The angle at which the ray of light hits the underneath of the water surface can easily be altered by pulling on the thread.</p>
+<p>Refraction at the air-water surface can be shown by using only the second mirror while both are required for total internal reflection.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Rectangular plastic tank •Two plane mirrors •Fluorescein •Fine beam of light from a high intensity light source or a laser</p>
+<p>•Thread •Water •Plasticine</p>
+</blockquote>
+</section>
+</section>
+<section id="diffraction-1" class="level3" data-number="22.1.11">
+<h3 data-number="22.1.11" class="anchored" data-anchor-id="diffraction-1"><span class="header-section-number">22.1.11</span> DIFFRACTION</h3>
+<blockquote class="blockquote">
+<p>General theory for this section</p>
+<p>Diffraction is the bending of radiation around obstacles or through apertures. Diffraction can also occur when waves reflect from an uneven surface. The greater the wavelength, or the smaller the obstacle or aperture, the greater the diffraction.</p>
+</blockquote>
+<section id="cd-and-dvd-diffraction" class="level4">
+<h4 class="anchored" data-anchor-id="cd-and-dvd-diffraction">1. CD and DVD diffraction</h4>
+<ol type="a">
+<li><p>A CD will give a lovely diffraction pattern due to the tracks on it acting as a reflection diffraction grating. The same effects may be obtained from a peacock’s wing, a dragonfly’s wing and iridescent beetles. There is no colour at all - the peacock feathers split up white light to make the brilliant colours!</p></li>
+<li><p>If you use a DVD the width of the diffraction pattern is increased. This occurs because the narrower tracks on the higher density DVD act as smaller obstacles and so give broader diffraction patterns. Take a piece of DVD or CD and use it to observe the spectral lines in the light from a fluorescent tube or the absorption lines in sunlight.</p></li>
+<li><p>An extension of experiment I(b) is to use a laser with the CD placed on the bench. Direct the laser so that it hits the CD at grazing incidence. Take special care of beams that may be reflected in various directions.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>X = dsin0, for a smaller grating spacing (d) the greater the value of the angle of diffraction 0 for a given wavelength (X)</p>
+<p>Age range: 14-18 depending on treatment Apparatus required:</p>
+<p>•CD or DVD •White light source such as the laboratory lights</p>
+<p>•Gas discharge tube •Laser</p>
+</blockquote>
+<blockquote class="blockquote">
+<ol start="2" type="1">
+<li>Fingers and</li>
+</ol>
+</blockquote>
+<p>Diffraction can be observed using nothing more than your fingers! Put two fingers together, hold them upright in front of your eyes and look at a light source through the small gap between them. Fine dark diffraction lines can be seen because of the light spreading due to diffraction in the narrow slit. It works best using a straight fluorescent tube.</p>
+<blockquote class="blockquote">
+<p>depending on treatment</p>
+<p>Apparatus required: •Light source</p>
+</blockquote>
+</section>
+<section id="diffraction-through-fork-prongs" class="level4">
+<h4 class="anchored" data-anchor-id="diffraction-through-fork-prongs">3. Diffraction through fork prongs</h4>
+<p>This is another very simple demonstration of diffraction, using the same principle as that described in experiment 2. Hold up a fork and look at a light through the prongs - dark diffraction lines can be seen in the spaces between the prongs. Rotate the fork parallel to the prongs to give an effectively smaller gap and so wider fringes.</p>
+<p>Age range: 15-18 Apparatus required: ’Fork</p>
+</section>
+<section id="acoustic-diffraction-grating" class="level4">
+<h4 class="anchored" data-anchor-id="acoustic-diffraction-grating">4. Acoustic diffraction grating</h4>
+<p>An acoustic diffraction grating will show diffraction of sound. One of these can be made using a large cardboard tube with a row of 1 cm diameter holes running from end to end. Put a small loudspeaker at one end and adjust it to give a frequency of say 500 Hz. Now move a microphone along parallel to the tube and observe the rise and fall in sound intensity by looking at the microphone output on an oscilloscope.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Cardboard tube •Loudspeaker and amplifier •Microphone and oscilloscope</p>
+</blockquote>
+</section>
+<section id="diffraction-with-sound-1" class="level4">
+<h4 class="anchored" data-anchor-id="diffraction-with-sound-1">5. Diffraction with sound (1)</h4>
+<p>Diffraction with sound waves can be shown easily by using a loudspeaker to produce a sound wave and then getting one of the students to align himself or herself behind another’s head. The diffraction effects can then be observed by moving their own head from side to side. The sound waves spread round the obstacle (the pupil’s head) and maxima and minima can be detected. Using a wavelength of about 10 cm (a frequency of 3 kHz) shows the diffraction round the head really well.</p>
+<p>Age range: 15-18 Apparatus required: •Pupils •Signal generator •Loudspeaker</p>
+</section>
+<section id="diffraction-with-sound-2" class="level4">
+<h4 class="anchored" data-anchor-id="diffraction-with-sound-2">6. Diffraction with sound (2)</h4>
+<p>The diffraction of sound can also be shown by using the single slit technique. The slit is an aperture about 10 cm wide between two boards. Sound of frequency about 10 kHz is emitted by a loudspeaker placed behind the gap, and the diffraction can be observed by moving a microphone across in front of the gap. Feeding the output to an oscilloscope or meter can give a measure of intensity against position.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18 Apparatus required: •Two boards •Loudspeaker •Signal generator •Oscilloscope Diffraction</p>
+</blockquote>
+<p>Misted-up glasses give good diffraction effects! I discovered this while trying to read a book in the bath with a cold pair of glasses. Viewing a light bulb through the fine mist of water vapour on the glasses showed coloured diffraction rings.</p>
+<p>The physics of condensation is also demonstrated here! Hot air can contain more moisture than cold air and so when someone puts on a pair of cold glasses in a hot bath the air near the glasses is cooled and some of the water vapour it contained condenses on the glasses. I have also noticed the effect in my car, which was left outside on a cold night after being used the previous day with the heater on. The air in the car had been warm and so could contain a reasonable amount of water vapour, but overnight it cooled, and this water condensed out onto the inside of the windscreen.</p>
+<p>Age range: 16-18 Apparatus required: •Glasses •Kettle</p>
+</section>
+<section id="reflection-diffraction-grating" class="level4">
+<h4 class="anchored" data-anchor-id="reflection-diffraction-grating">8. Reflection diffraction grating</h4>
+<p>This simple experiment was suggested by a Physics degree practical examination. Students }were given a lamp, a filter and slit, a metal ruler graduated in half millimetres and a metre rule and asked to make an estimate of the wavelength of light. The idea is to lay the metal ruler on the bench and use it as a reflection diffraction grating. The effective size of the rulings can be calculated by knowing the angle at which the light hit the ruler. Diffraction images can be produced that rise vertically on the wall of the lab. Using a pen pointer laser here makes the experiment simpler.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: ’Sodium lamp <sup>0</sup> 30 cm Metal ruler •Metre ruler ’Pen pointer laser (optional)</p>
+</blockquote>
+</section>
+<section id="diffraction-through-tights" class="level4">
+<h4 class="anchored" data-anchor-id="diffraction-through-tights">9. Diffraction through tights</h4>
+<p>This is a very good example of diffraction from an irregular obstacle giving circular diffraction rings. Take a section of the tights, stretch it between your hands and then view a small torch bulb through them. Lovely coloured diffraction rings can be observed due to the diffraction from the irregular weave of the tights of the light from a white light torch bulb. Moving the tights towards and away from your eyes helps to make the coloured rings more easily visible.</p>
+<p>Compare the effect with the regular diffraction pattern that you get from a clean, finely woven handkerchief. You can produce your own obstacles for this experiment by photographing a set of irregular dots (drawing shading film is ideal) and a set of regular dots.</p>
+<p>The negatives are then used with the light. The initial size of the pattern can be altered using a computer or a photocopier to scale the image.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18 depending on treatment</p>
+<p>Apparatus required: ’Small torch bulb •Tights ’Handkerchief</p>
+</blockquote>
+</section>
+<section id="resolving-power" class="level4">
+<h4 class="anchored" data-anchor-id="resolving-power">10. Resolving power</h4>
+<p>To show the resolving power of the human eye draw two dots about 2 mm apart on a sheet of paper stuck to the board. View them from various distances, calculate the angle subtended by them at the eye when they appear to merge into one, and also study the effect of dim light on the ability to resolve fine detail.</p>
+<p>In theory, as long as the light level is not too low you should do better in dim light because the resolving power of a circular aperture (your pupil) depends on its diameter, and in dim light the diameter of your pupil will be larger.</p>
+<p>Theory:</p>
+<p>The smallest angle (+) that can be resolved in light of wavelength by a circular aperture of diameter a is given by (t) = 1.22X/a</p>
+<p>Age range: 13-18 Apparatus required: •Two small dots drawn close together on a piece of paper</p>
+</section>
+<section id="scattering-of-light-in-wet-and-dry-smoke" class="level4">
+<h4 class="anchored" data-anchor-id="scattering-of-light-in-wet-and-dry-smoke">11. Scattering of light in ‘wet’ and ‘dry’ smoke</h4>
+<p>This shows interesting scattering effects. The effect of moisture on the scattering of light in smoke can be simulated by introducing water vapour into a bell jar containing smoke. The smoke is blue in the dry air but white after introduction in the bell jar. The droplet size has been increased due to water vapour and so the scattering has been reduced.</p>
+<p>Theory</p>
+<p>The scattering of light by particles is inversely proportional to the particle size - smaller size gives greater scattering.</p>
+</section>
+<section id="diffraction-and-a-fan" class="level4">
+<h4 class="anchored" data-anchor-id="diffraction-and-a-fan">12. Diffraction and a fan</h4>
+<p>A normal household fan can be used to demonstrate that sound is a wave motion. Set up a signal generator and a loudspeaker behind a household fan and turn on both the fan and the sound source.</p>
+<p>Put your head on the other side of the fan from the loudspeaker and listen to the sound.</p>
+<p>If the frequency of the sound source is varied, diffraction may be heard as the sound waves pass between the rotating blades of the fan. Depending on the speed of rotation of the fan there will more or less diffraction. When there is little diffraction the sound will be ‘chopped up’ into pulses, and you will hear a warbling sound. However, if there is considerable diffraction around the blades of the fan the sound that you hear will be almost continuous.</p>
+<p>Age range: 16-18 Apparatus required: •Signal generator •Loudspeaker •Fan</p>
+</section>
+</section>
+<section id="interference" class="level3" data-number="22.1.12">
+<h3 data-number="22.1.12" class="anchored" data-anchor-id="interference"><span class="header-section-number">22.1.12</span> INTERFERENCE</h3>
+<p>General theory for this section: &gt; &gt; When two groups of waves (called wave trains) meet and overlap they interfere with each other. The resulting amplitude will depend on the amplitudes of both the waves at that point. The photograph shows some waves overlapping in a fountain. &gt; &gt; To make things simple let’s just consider two waves overlapping and assume that both the waves have the same amplitude. &gt; &gt; If the crest of one wave meets the crest of the other the waves are said to be in step (or in phase). The two sets of waves ‘add together’ and the resulting intensity will be large. This is known as constructive interference. &gt; &gt; If the crest of one wave meets the trough of the other they are said to be out of step (or out of phase). The two sets of waves cancel each other out and the resulting intensity will be zero. This is known as destructive interference. &gt; &gt; A phase change of It occurs at a reflection with an optically more dense boundary,e.g.&nbsp;air to glass.</p>
+<section id="hologram" class="level4">
+<h4 class="anchored" data-anchor-id="hologram">1. Hologram</h4>
+<p>Every Physics department should have at least one white light hologram for demonstration, I have collected a number of simple ones from cereal packets. Good ones can also be bought on their own.</p>
+<section id="interference-and-distance-measurement" class="level5">
+<h5 class="anchored" data-anchor-id="interference-and-distance-measurement">2. Interference and distance measurement</h5>
+<p>Use a pair of glass plates illuminated by sodium light to show the interference patterns due to the gap between the plates. Place the plates on top of each other on the bench and illuminate them from above with light from a sodium lamp. Irregular interference fringes can be seen due to the changing separation between the plates. Pressing on the top plate will alter these patterns, especially if the two plates are separated at one end by a piece of tissue paper. A tiny piece of grit between the plates will show circular interference rings. A TV camera is especially useful here to show the experiment to the whole class.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>The path difference between light reflected at the lower surface of the upper plate and the upper surface of the lower plate is 2dn where d is the separation of the plates and n is the refractive index of the air.</p>
+<p>Age range: 16-18 Apparatus required: ’Sodium lamp •Two glass plates <sup>o</sup>Tissue paper Interference</p>
+</blockquote>
+</section>
+<section id="interference-with-sound" class="level5">
+<h5 class="anchored" data-anchor-id="interference-with-sound">3. Interference with sound</h5>
+<p>Interference with sound can be demonstrated by setting up two loud speakers connected to the same signal generator. Get the pupils to walk round the lab passing the speakers as they do so - a good interference pattern will be observed. They will notice that there are some places where the sound is loud and others where it is relatively soft. A wavelength of about 0.75 m (frequency 440 Hz) is quite good. Smaller wavelengths give good effects if you simply sit still and move your head from side to side. The experiment would be better outside, where the results would not be affected by reflection from the lab walls.</p>
+<p>An alternative is to detect the maxima and minima using a microphone that can be moved in front of the speakers on a long rod such as a metre rule. The output of the microphone can be fed through an amplifier to a CRO and the amplitude of the resulting trace measured.</p>
+<p>As an extension of this take two stereo speakers, reverse the phase of one and point them towards each other — the bass tends to cancel.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>If the path difference between the speakers and the student’s ear is a whole number of wavelengths the waves will add up and the student will hear a maximum. If it is an odd number of half wavelengths destructive interference will take place and the sound will be much quieter.</p>
+<p>Age range: 14-18</p>
+<p>Apparatus required: •Signal generator •Two loud speakers •Microphone •Oscilloscope •Amplifier</p>
+</blockquote>
+</section>
+</section>
+<section id="interference-and-butterflies-wings" class="level4">
+<h4 class="anchored" data-anchor-id="interference-and-butterflies-wings">4. Interference and butterflies’ wings</h4>
+<p>The beautiful colours on a butterfly’s wings are due to the interference of light reflected from their surface. That these colours really are due to this effect can be shown by placing a few drops of a clear liquid such as acetone onto the wing surface. The liquid will fill up the gaps between the ridges on the scales and so change the colour. Viewing the wings with different colours of light also shows some interesting effects.</p>
+<p>The Christmas tree structure in the morpho group of butterfly wings is especially spectacular — iridescent blue colours being formed. Do not kill a butterfly deliberately to use in this experiment.</p>
+<p>You might also try similar experiments using feathers - peacock’s tail feathers are particularly good.</p>
+<blockquote class="blockquote">
+<p>Propanone (acetone) is highly flammable, irritating when in contact with both the eyes and skin. Propanone vapour inhalation should be avoided. Eye protection should be worn.</p>
+</blockquote>
+<p>Age range: 16-18 Apparatus required: •Butterfly wing •Acetone and dropper •White light source</p>
+<blockquote class="blockquote">
+<p>•Filters</p>
+</blockquote>
+</section>
+</section>
+<section id="polarisation" class="level3" data-number="22.1.13">
+<h3 data-number="22.1.13" class="anchored" data-anchor-id="polarisation"><span class="header-section-number">22.1.13</span> POLARISATION</h3>
+<p>General theory for this section:</p>
+<blockquote class="blockquote">
+<p>A polarised wave is one where the vibrations are in one direction only. The human eye cannot distinguish between polarised and unpolarised light.</p>
+<p>Malus <sup>l</sup> Law: This is an equation that gives the intensity of light (l) transmitted by a piece of Polaroid:</p>
+<p>I = locos<sup>2</sup> 0 where 0 is the angle between the planes of polarisation of the polariser and analyser.</p>
+<p>Brewster’s Law: tan p = n where p is the polarising angle and n is the refractive index of the material. At this angle of incidence the reflected beam is completely plane polarised.</p>
+<p>Polarisation is a way of distinguishing between longitudinal and transverse waves - transverse waves can be polarised while longitudinal waves cannot.</p>
+</blockquote>
+<section id="polaroid-and-photoelastic-stress-with-the-overhead-projector" class="level4">
+<h4 class="anchored" data-anchor-id="polaroid-and-photoelastic-stress-with-the-overhead-projector">1. Polaroid and Photoelastic stress with the Overhead Projector</h4>
+<ol type="a">
+<li><p>To demonstrate the effect of polarisation two overlapping pieces of polaroid should be placed on the overhead projector. It only works using the type of projector where the light comes from underneath the transparency. Rotating one will show how the light intensity varies with angle and if this is measured with a light meter it is possible to get a verification of Malus <sup>l</sup> Law.</p></li>
+<li><p>A beautiful extension to this is to put a piece of plastic bag or a clear plastic ruler or protractor between the two crossed polaroids to shows photoelastic stress. One piece of polaroid should be placed on the glass of the projector with the plastic ruler on top of it, and with the second piece of polaroid put on top of the ruler.</p></li>
+</ol>
+<p>The plastic rotates the plane of polarisation of the light and different wavelengths are rotated different amounts by the stressed areas of the plastic, giving beautiful coloured areas. A small cut in the plastic also shows localised stress patterns.!</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Overhead projector •Two pieces of polaroid ’Plastic bag •Protractor and/or clear plastic ruler</p>
+</blockquote>
+</section>
+<section id="polarisation-by-reflection" class="level4">
+<h4 class="anchored" data-anchor-id="polarisation-by-reflection">2. Polarisation by reflection</h4>
+<p>View the glare from desks or roads through either a piece of polaroid or a pair of polaroid sunglasses. Rotation of the polaroid will cut down the glare - hence the use of the polaroid glasses for driving. Reflection from a glass-fronted cupboard also shows the effect very well. The existence of a polarising angle (p) which for glass is about 57 <sup>0</sup> is easy to show. Use a TV camera if possible to show the effect to the whole class at once.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Polaroid sheets or polaroid sunglasses ’Glass fronted cupboard <sup>o</sup> TV camera if available</p>
+</blockquote>
+</section>
+<section id="polarisation-of-a-tv-signal" class="level4">
+<h4 class="anchored" data-anchor-id="polarisation-of-a-tv-signal">3. Polarisation of a TV signal</h4>
+<p>It is easy to show the plane of polarisation of a TV signal by simply rotating the aerial. The outdoor type is the best with the rod and a number of half wave bars mounted across it. Are all the TV stations in your area polarised the same way and what would happen if they weren’t?</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18</p>
+<p>Apparatus required: <sup>o</sup> TV set <sup>o</sup> TV aerial</p>
+</blockquote>
+</section>
+<section id="polarisation-and-a-calculator" class="level4">
+<h4 class="anchored" data-anchor-id="polarisation-and-a-calculator">4. Polarisation and a calculator</h4>
+<p>The liquid crystal display on a calculator (or lap top computer) is polarised. This fact leads to yet another very impressive, yet simple demonstration. Put a piece of polaroid in front of the calculator screen and just rotate it until the display disappears. Using the TV camera to show the effect to a class is especially helpful.</p>
+<p>Age range: 14-18 Apparatus required: ’Calculator ’Piece of polaroid •TV camera if available</p>
+</section>
+<section id="rotation-of-the-plane-of-polarisation" class="level4">
+<h4 class="anchored" data-anchor-id="rotation-of-the-plane-of-polarisation">5. Rotation of the plane of polarisation</h4>
+<p>An extension of experiment 1 is to use a flat piece of plastic on which is stuck a number of small pieces of clear adhesive tape. Some areas can be just one piece thick while others have pieces stuck one on top of the other. Some really nice patterns are observed on the OHP reminiscent of the crystal structure of a metal.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-19 Apparatus required: <sup>0</sup> 0HP •Clear adhesive tape <sup>o</sup>Two pieces of polaroid •Scissors</p>
+<p>Flat piece of plastic</p>
+</blockquote>
+</section>
+<section id="sunset-in-milk-in-water" class="level4">
+<h4 class="anchored" data-anchor-id="sunset-in-milk-in-water">6. Sunset in milk in water</h4>
+<p>Sunsets, the scattering of light by small particles and the polarisation of scattered light can all be demonstrated by the following two experiments.</p>
+<ol type="a">
+<li>Get a rectangular plastic tank and fill it about three-quarters full with water. Then add a few drops of milk. Mix the milk in, and then shine a light through it - a projector is ideal.</li>
+</ol>
+<p>Viewed from the opposite end the lamp looks red like a sunset while when looked at from the side it looks blue - tending to green. This difference in colour is due to the tiny fat particles in the milk scattering the light - blue is scattered more than red, so as you look through the tank, most of the blue has been scattered out, leaving red light. Testing the light scattered from the sides will show that it is also polarised!</p>
+<p>Don’t add too much milk - a drop or two is enough to start with. This explains why the sky is blue (light scattered from the particles in the atmosphere and why the sunset is red - only the red is left after the light has passed through a large thickness of atmosphere, other colours having been scattered out). Superb sunsets have occurred after major volcanic eruptions.</p>
+<p>Polarisation</p>
+<p>Speculate what the colour of the sky would be on planets with denser atmospheres than that of the Earth.</p>
+<p>(b) Drops of Dettol (antiseptic liquid) also work well.</p>
+<p>I gather that the colour of the iris in the eye is due to scattering. Babies are usually born with blue-grey eyes - the molecules are not linked into large chains. As they grow up the chains join and so the scattering is reduced and the iris colour often turns to brown.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Scattering is proportional to the fourth power of the frequency.</p>
+<p>Age range: 16-18</p>
+<p>Apparatus required: ’Rectangular plastic tank •Projector •Polaroid sheets •Milk •Dropper</p>
+<p>Further information - The action of a polarizer and an analyser</p>
+</blockquote>
+<p>If the vibrations of a transverse wave are in one plane only then that wave is said to be planepolarised. (Longitudinal waves cannot be plane-polarised.)</p>
+</section>
+</section>
+<section id="miscellaneous-waves-sound-lieu-it" class="level3" data-number="22.1.14">
+<h3 data-number="22.1.14" class="anchored" data-anchor-id="miscellaneous-waves-sound-lieu-it"><span class="header-section-number">22.1.14</span> MISCELLANEOUS WAVES, SOUND &amp; Lieu-IT</h3>
+<section id="coloured-flames" class="level4">
+<h4 class="anchored" data-anchor-id="coloured-flames">1. Coloured flames</h4>
+<p>Burn pages of a colour magazine to give coloured flames.</p>
+<blockquote class="blockquote">
+<p>Cut samples from coloured pages and use tongs to hold these while they are burnt. Warn pupils not to inhale the smoke and/or fumes from the burning paper.</p>
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Bunsen •Coloured magazine pages</p>
+</blockquote>
+</section>
+<section id="tape-recorders-in-physics" class="level4">
+<h4 class="anchored" data-anchor-id="tape-recorders-in-physics">2. Tape recorders in Physics</h4>
+<p>A variable speed reel-to-reel tape recorder is useful for the demonstration of the change of pitch when the tape speed is changed. Recording a note at one speed and then doubling the tape speed will increase the pitch of the note and musicians may realise that it has in fact gone up by one octave. The reverse is true of course if you slow the tape down.</p>
+<p>Age range: 11-13 Apparatus required: •Variable speed tape recorder</p>
+</section>
+<section id="cross-and-spot-for-the-blind-spot" class="level4">
+<h4 class="anchored" data-anchor-id="cross-and-spot-for-the-blind-spot">3. Cross and spot for the blind spot</h4>
+<p>Draw a cross and a spot on a piece of paper 12 cm apart. Hold the paper up with the cross in front of your left eye and about half a metre away. Look at the cross with the right eye while closing the left. If the paper is moved backwards and forwards a place will be found where the spot will disappear as the image of it is falling on the blind spot of the right eye.</p>
+<p>Age range: 11-14 Apparatus required: •Copy of the cross and dot — retain the same separation</p>
+</section>
+<section id="sodium-lamp-and-youngs-slits" class="level4">
+<h4 class="anchored" data-anchor-id="sodium-lamp-and-youngs-slits">Sodium lamp and Young’s slits</h4>
+<p>The classical double slits experiment may be performed using a set of double slits and a spectrometer. Mount a pair of double slits (separation about 0.8 mm and width about 0.2 mm) in a holder on the spectrometer table. Point the collimator at a sodium discharge lamp, remove the objective lens of the telescope and adjust the eyepiece. Good interference fringes should result. Compare this result with the experiment with a laser which shows large interference fringes across the lab! The laser fringes are sharper due to the monochromatic nature of the laser light and its greater coherence.</p>
+<blockquote class="blockquote">
+<p>Pupils should be told not to look along the line of the laser beam, and care should be taken to ensure that beams cannot be reflected into the eye.</p>
+<p>Theory</p>
+<p>Width of the fringes = Xd/D where d is the distance between the slits, D is the distance of the slits from the fringes and the wavelength of the light.</p>
+<p>Age range: 16-18 Apparatus required: •Spectrometer <sup>o</sup> Sodium lamp <sup>o</sup> Laser</p>
+</blockquote>
+<section id="painting-a-corridor" class="level5">
+<h5 class="anchored" data-anchor-id="painting-a-corridor">5. Painting a corridor</h5>
+<p>The most reflective colour for painting a room/corridor can be investigated by using an LDR and various coloured sheets of paper. Light is simply shone on the paper and the intensity of the reflected (scattered) light measured using an LDR. For a more detailed investigation include the data sheets from RS components on the ORP12 which give the variation of resistance of the LDR with illumination measured in lux.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18 depending on treatment</p>
+<p>Apparatus required: •LDR •Coloured paper ’Ohm meter •Power supply ’Lamp ’Leads</p>
+</blockquote>
+<section id="grease-spot-photometer" class="level6">
+<h6 class="anchored" data-anchor-id="grease-spot-photometer">6. Grease spot photometer</h6>
+<p>It is simple to measure the brightness of a lamp, or indeed the Sun, using the old-fashioned grease spot photometer. This is simply a spot of molten candle wax (or oil) dropped on to a piece of paper. If the illumination of the spot is the same on both sides then the spot virtually disappears. However, if it is not and you view the spot from the side where the illumination is greater the spot will look darker than the surrounding paper. Compare a candle with a 12 V bulb, varying the brightness of the bulb, and plot a graph of power against brightness. This traditional method avoids the calibration curve of the ORP12 LDR.</p>
+<p>An extension of this experiment is to write a message on a large sheet of paper using melting wax. Mount the paper vertically with a light behind it. As the intensity of the light on one side is increased or decreased the writing will appear and disappear.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18</p>
+<p>Apparatus required: •Prepared grease spot on a sheet of white paper in a support •Light bulb •Candle ’Power supply ’Voltmeter and ammeter •Leads</p>
+</blockquote>
+</section>
+<section id="persistence-of-vision" class="level6">
+<h6 class="anchored" data-anchor-id="persistence-of-vision">7. Persistence of vision</h6>
+<p>In a TV set the screen is scanned 25 times per second. The human eye is unable to detect any variation much faster than this due to persistence of vision. This can be demonstrated by using a card with a double thread fixed to each end and with a jumping horse on one side and a gate on the other. As the card is spun by tightening and slackening the threads it looks as if the horse is jumping the gate!</p>
+<blockquote class="blockquote">
+<p>Age range: 7-13 Apparatus required: •Card with horse on one side and gate on the other •Thread</p>
+</blockquote>
+</section>
+</section>
+<section id="absorption-spectrum-of-sodium" class="level5">
+<h5 class="anchored" data-anchor-id="absorption-spectrum-of-sodium">8. Absorption spectrum of sodium!</h5>
+<p>Set up a sodium discharge lamp in line with a Bunsen burner and a white screen. Light the Bunsen and shine light from the discharge lamp onto the Bunsen flame (blue). On the screen you can see some convection shadows but little else. Now hold a stick of sodium chloride in the flame.</p>
+<p>A superb black shadow should be seen on the screen. Holding a wooden splint in the flame until it burns shows no shadow. The dark shadow produced when the sodium chloride stick is held in the flame is due to the sodium within it absorbing the photons of just the right energy from the light emitted by the sodium lamp. The bright flame is due to the emission of photons and the re-emission of the absorbed photons in all directions.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18!</p>
+<p>Apparatus required: ’Sodium lamp •Stick of sodium chloride •Bunsen and board •Retort stand, boss and clamp</p>
+</blockquote>
+</section>
+<section id="laser-model---hand" class="level5">
+<h5 class="anchored" data-anchor-id="laser-model---hand">9. Laser model - hand</h5>
+<p>The stimulated emission from a laser can be simulated as follows. Suspend a piece of card from a rod by two threads with a pendulum bob on the end. Get an electric fan and blow a jet of air at the card. Now move your other hand up and down in the air stream. If you get the frequency right the oscillations of the card will build up in just the same way as a beam of light along the axis of a laser increases in intensity as it reflects backwards and forwards between the ends of the tube.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18</p>
+<p>Apparatus required: •Card •Small electric fan with plastic blades a hair dryer set to cool</p>
+</blockquote>
+</section>
+<section id="singing-flames-and-beats" class="level5">
+<h5 class="anchored" data-anchor-id="singing-flames-and-beats">10. Singing flames and beats</h5>
+<p>Draw out a 1 cm glass tube to give a bore with a diameter of 0.5 mm. Connect it to a gas supply, light the gas emerging from the fine end of the tube, and put it in a glass tube of diameter 3.5 cm and 83 cm long. A loud noise results. Now try another with a length of tube one or two cm shorter. When both flames are lit, beats are produced between the different</p>
+<p>pitched notes.</p>
+<p>Age range: 16-18 Apparatus required: ’Glass tube •Bunsen!</p>
+</section>
+<section id="appearance-of-objects-in-different-coloured-light" class="level5">
+<h5 class="anchored" data-anchor-id="appearance-of-objects-in-different-coloured-light">11. Appearance of objects in different coloured light</h5>
+<p>Coloured objects appear different colours when viewed with light of different wavelengths. This can be demonstrated by sticking three discs of coloured paper onto a board and then illuminating them with light from a projector. (Alternatively print out coloured words like those below). First use white light, and then green, red or blue filters.</p>
+<p>This can be done either by using prepared coloured slides or by simply holding pieces of acetate colour filters in front of the projector. Relate this effect to the difficulty of buying of clothes under artificial light. (If you have large pieces of film they can be mounted in card frames and placed on the overhead projector.)</p>
+<p>View the coloured writing prepared below through different coloured filters and see what colours you can see.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="red-blue-green" class="level1" data-number="23">
+<h1 data-number="23"><span class="header-section-number">23</span> R<u>E</u>D BLUE GREEN</h1>
+<blockquote class="blockquote">
+<p>Age range: 9-14 Apparatus required: •Coloured filters •Projector ’Sheet of paper with a disc of red, green and blue paper fixed to it</p>
+</blockquote>
+<section id="laser-light-and-the-60-w-bulb" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="laser-light-and-the-60-w-bulb"><span class="header-section-number">23.1</span> <u>12. Laser light and the 60 W bulb</u></h2>
+<p>It is instructive to compare the intensity of illumination of these two lights as a source of potential danger to the eye. Consider the 60W light bulb. Assuming that all the electrical energy is converted to light and that it is all radiated uniformly then at a distance of 1 m from the bulb the power density is 4.8 Wrn-2 . Compare this with the laser. Although the power of a laser of the type used in schools is only 1 mw the area of the laser beam is some 2 mm2 remaining fairly constant with increasing distance and so giving a power density of 500 Wm -2, over a hundred times greater.</p>
+</section>
+<section id="binocular-vision" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="binocular-vision"><span class="header-section-number">23.2</span> <u>13. Binocular vision</u></h2>
+<p>The slightly different appearance of a view from your two eyes that gives us the perception of depth can be shown by this simple experiment. Put your two index fingers together and look past them into the distance. The ends seem to join together to make a finger sausage!</p>
+<blockquote class="blockquote">
+<p>Age: 10-14</p>
+</blockquote>
+</section>
+<section id="a-shadow-photometer" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="a-shadow-photometer"><span class="header-section-number">23.3</span> <u>14. A shadow photometer</u></h2>
+<p>This is a method of comparing the brightness of two sources of light by using the “density” of the shadows that they give. A board marker pen is stood in front of a white screen and a lamp is set up to cast a shadow of the marker on the screen. A second lamp is placed by the first, so giving another shadow. The two lamps are equally bright when the two shadows are of equal depth and the two lamps are the same distance from the screen.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Board marker or pencil •Two lamps •Power supplies and meters •Leads</p>
+</blockquote>
+</section>
+<section id="ribena-lime" class="level2" data-number="23.4">
+<h2 data-number="23.4" class="anchored" data-anchor-id="ribena-lime"><span class="header-section-number">23.4</span> <u>15. Ribena lime</u></h2>
+<p>Partly fill a clear straight-sided glass with a blackcurrant drink. Then gently pour a 1 cm thick layer of limejuice on to the top. After some time the green colour of the lime will have diffused into the red of the blackcurrant drink giving a spectrum effect from green to red.</p>
+<blockquote class="blockquote">
+<p>Age range: 7-14 Apparatus required: •Straight sided glass •Blackcurrant drink •Lime juice</p>
+</blockquote>
+</section>
+<section id="colour-subtraction" class="level2" data-number="23.5">
+<h2 data-number="23.5" class="anchored" data-anchor-id="colour-subtraction"><span class="header-section-number">23.5</span> <u>16. Colour subtraction</u></h2>
+<p>Three filters, one red, one green and one blue placed on an overhead projector and overlapped is an easy way to show the subtraction of colours.</p>
+<p>Age range: 11-13 Apparatus required: •Overhead projector •Colour filters!</p>
+<p><u>18. Chaotic systems</u></p>
+<ol type="a">
+<li><p>Chaotic systems have a number of stable states and this can be shown by using a long flexible strip of metal rather like a giant hacksaw blade. This is mounted vertically and held at the base by a clamp. If the strip is pulled sideways it oscillates but always comes to rest in the vertical position. If a lump of plasticine is fixed to the top it now has three stable states - one vertical as before but now two more, one on either side of the vertical. You can never be sure in which of these states it will finally come to rest if disturbed from its original position. (Bristol University demonstration)</p></li>
+<li><p>A further demonstration of chaos and the sensitive dependence of the outcome on the initial conditions is to suspend a steel ball bearing over two magnets. When it is swung the ball bearing exhibits a chaotic path and the point where it finally comes to rest depends critically on its point of release. Doing this experiment on an overhead projector makes the motion clearly visible to a class.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required:</p>
+<p>•Long whippy piece of steel with a holder fixed to the top ’Ball bearings <sup>o</sup>Thread •Overhead projector</p>
+</blockquote>
+<section id="phase-angle" class="level3" data-number="23.5.1">
+<h3 data-number="23.5.1" class="anchored" data-anchor-id="phase-angle"><span class="header-section-number">23.5.1</span> 19. Phase angle!</h3>
+<p>Mount a ball on a rotating table, and use a lamp to cast a shadow of the ball on a screen. (The lamp should be a long way from the table and the table relatively close to the screen.) Rotate the table and record the position of the ball and the angle through which the table has turned the zero could be taken when the shadow of the ball is either in the centre of its traverse or at one end. Plot a graph of the displacement of the shadow against the sine (or cosine) of the angle turned by the table.</p>
+</section>
+</section>
+<section id="ultraviolet-experiments---safety-considerations-vital-here" class="level2" data-number="23.6">
+<h2 data-number="23.6" class="anchored" data-anchor-id="ultraviolet-experiments---safety-considerations-vital-here"><span class="header-section-number">23.6</span> 20. Ultraviolet experiments - safety considerations vital here</h2>
+<p>Some very nice effects can be shown with ultraviolet light as long as the correct safety precautions are followed. Clean hair shows a greenish hue, teeth gleam, and fluorescein glows green. I have collected a set of other objects, mostly from gift shops - fluorescent T-shirts, silly putty, rocks (the correct wavelength of UV light is needed here), a star chart, security markers, an advent calendar and so om</p>
+<blockquote class="blockquote">
+<p>Lamps emitting short-wave ultraviolet have clear quartz envelopes and must only be used when the eyes are screened by a sheet of glass. Lamps with dark glass envelopes pose a minimal hazard to the eyes, but exposure to all ultraviolet must be minimised because of the risk of melanoma.</p>
+</blockquote>
+</section>
+<section id="p-and-s-waves-simulation" class="level2" data-number="23.7">
+<h2 data-number="23.7" class="anchored" data-anchor-id="p-and-s-waves-simulation"><span class="header-section-number">23.7</span> 21. P and S waves simulation</h2>
+<p>In an earthquake two forms of wave are transmitted through earth - the Primary or P wave (a longitudinal or push vibration) and the Secondary or S wave (a transverse or shaking vibration). The differing properties of these two types of vibration can be shown by the following experiment. Use a plastic beaker with tracing paper stuck round it and with a small bulb fixed on one side. Place a beaker of water inside, and observe the passage of light through the system.</p>
+<p>A bulb on one side represents the epicentre of the earthquake and the paths of light through the double beaker represent the paths of the P and S waves.</p>
+<section id="sensitive-flames" class="level3" data-number="23.7.1">
+<h3 data-number="23.7.1" class="anchored" data-anchor-id="sensitive-flames"><span class="header-section-number">23.7.1</span> 22. Sensitive flames</h3>
+<p>The effect of sound waves on a fine flame can be shown by this experiment. Draw a glass tube out from a diameter of 1 cm to a diameter of 1 mm. Connect it to the gas supply, and light the end of the tube - a long fine flame should be produced. This can now be used to investigate sound levels such as nodes and antinodes in standing waves. Modern versions use a sound level meter but are perhaps not so visually impressive.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18</p>
+<p>Apparatus required: •Glass tube •Gas supply</p>
+</blockquote>
+</section>
+<section id="the-eve" class="level3" data-number="23.7.2">
+<h3 data-number="23.7.2" class="anchored" data-anchor-id="the-eve"><span class="header-section-number">23.7.2</span> 23. The eve</h3>
+<p>The following series of simple experiments can be performed to study the physics of the eye. (a) The ability to resolve fine detail. Draw two dots about a millimetre apart on a piece of paper, Fix this to a wall, and see how far away pupils have to stand until they can only see it as one dot.</p>
+<ol start="2" type="a">
+<li>Look at newspaper pictures and actual photographs using a lens and compare the two. This book has been printed using dots but they are so fine that you can’t separate them with a lens.</li>
+</ol>
+<p>(c) Help with a lens. See how the use of a lens enables you to read print very close up. (d) Optical illusions. Show some of these just for interest.</p>
+</section>
+<section id="aberration-of-light---rain" class="level3" data-number="23.7.3">
+<h3 data-number="23.7.3" class="anchored" data-anchor-id="aberration-of-light---rain"><span class="header-section-number">23.7.3</span> 24. Aberration of light - rain</h3>
+<p>An analogy of the aberration of light can easily be demonstrated by walking through vertically falling rain under an umbrella. You are dry when you are standing still but you get wet when you move!</p>
+</section>
+</section>
+<section id="coloured-shadows" class="level2" data-number="23.8">
+<h2 data-number="23.8" class="anchored" data-anchor-id="coloured-shadows"><span class="header-section-number">23.8</span> 25. Coloured shadows</h2>
+<p>The addition of colours can be seen clearly if light from three ray boxes each containing a different coloured filter (red, blue or green) is shone on to a white sheet of paper. Varying the intensity of each will give any colour of the spectrum. Standing three board markers in the way gives three superb coloured shadows. Each individual shadow is the sum of the colours from only two of the ray boxes.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: ’Three board writers •Three ray boxes and power supplies <sup>o</sup> Three coloured filters</p>
+</blockquote>
+<section id="corrugated-cardboard-and-wave-motion" class="level3" data-number="23.8.1">
+<h3 data-number="23.8.1" class="anchored" data-anchor-id="corrugated-cardboard-and-wave-motion"><span class="header-section-number">23.8.1</span> 26. Corrugated cardboard and wave motion</h3>
+<p>Using a square of corrugated cardboard or plastic, which has been cut at an angle to the corrugations, gives two axes of sine waves. This can be used as an aid when teaching the wave equation y = Asin2Tc(ft - x/X)</p>
+<p>The wave like corrugated edge on one side of the square gives the x variation and the other right angles to it the t variation while the height at any point represents the y value or displacement of the wave.</p>
+<p>Theory:</p>
+<p>y = Asin2Tt(ft - x/X) one side gives varying t for fixed x (say x = O) y = Asin2Ttft and the other varying x for fixed t (say t = O) y = Asin21tx/X</p>
+<p>Age range: 16-18</p>
+<blockquote class="blockquote">
+<p>Apparatus required: ’Sheet of corrugated plastic or cardboard (plastic is better - the corrugations can be bigger)</p>
+</blockquote>
+</section>
+<section id="using-a-pinhole-to-help-vou-read-without-glasses" class="level3" data-number="23.8.2">
+<h3 data-number="23.8.2" class="anchored" data-anchor-id="using-a-pinhole-to-help-vou-read-without-glasses"><span class="header-section-number">23.8.2</span> 27. Using a pinhole to help vou read without glasses</h3>
+<p>An amazingly simple experiment but of great help to anyone who forgets their glasses! Make a pinhole, and look through it at print - you can read it without glasses! This works for both long and short-sighted people. An alternative version is to look through the small hole made between the tips of your first and second finger and the side of your thumb. The advantages of this method are that you always carry your fingers with you and that the size of the hole is variable,</p>
+<p>The phenomenon is explained by understanding that as the aperture is reduced the depth of focus is increased.</p>
+<blockquote class="blockquote">
+<p>Age range: 7-19</p>
+<p>Apparatus required: ’Fingers</p>
+</blockquote>
+</section>
+<section id="standing-waves" class="level3" data-number="23.8.3">
+<h3 data-number="23.8.3" class="anchored" data-anchor-id="standing-waves"><span class="header-section-number">23.8.3</span> 28. Standing waves</h3>
+<p>The effect of the length of a cord, rather than its tension, on the standing waves that can be produced on it can be shown very simply by this experiment. Fix the end of a string to an off centre hole in a wheel on an electric motor (or the top of a vibration generator). Hold the other end, but have it passing through a short length of plastic tube or bung to allow it to rotate freely. Switch on and move, your hand towards and away from the motor. Large standing waves result.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Frequency of the fundamental standing wave on a cord of length L, tension T and mass per unit length m is given by the equation f = so the frequency is inversely proportional to the length of the cord.</p>
+<p>Age range: 16-18</p>
+<p>Apparatus required: ’Cord •Motor and power supply or vibration generator and signal generator.</p>
+</blockquote>
+</section>
+<section id="moiré-fringes-in-a-net-curtain-or-night-dress" class="level3" data-number="23.8.4">
+<h3 data-number="23.8.4" class="anchored" data-anchor-id="moiré-fringes-in-a-net-curtain-or-night-dress"><span class="header-section-number">23.8.4</span> 29. Moiré fringes in a net curtain or night dress</h3>
+<p>The overlapping of the fine weave of two net curtains or two layers of a fine night dress show good Moiré fringes. Interference can also be simulated by two transparent plastic discs with circles drawn on them placed on the overhead projector. (See also page 171).</p>
+<p>Age range: 16-18 Apparatus required: •Net curtain or night dress ’Overhead projector useful</p>
+<section id="stroboscopic-effect-with-a-television" class="level4">
+<h4 class="anchored" data-anchor-id="stroboscopic-effect-with-a-television">30. Stroboscopic effect with a television</h4>
+<p>A wonderful example of both the stroboscopic effect and the motion of waves on a stretched string can be obtained using a television and a rubber band. Switch on the television and if possible tune to static clear screen, or else connect a TV camera to the television and point the camera to a blank board. Now stretch the rubber band in front of the screen and pluck it, You will see waves travelling slowly along the band — the scanning property of the television acts like a stroboscope. By suitable experimenting with the length and tension of the band the waves can be made almost stationary.</p>
+<p>I have tried both suspending a weight from the band and also using a screw thread to vary the tension.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18</p>
+<p>Apparatus required: •Television ’Rubber band •Set of slotted masses •Retort stand ’TV camera if possible</p>
+</blockquote>
+</section>
+</section>
+<section id="apparent-bending-of-a-vibrating-stick-in-a-spectrum" class="level3" data-number="23.8.5">
+<h3 data-number="23.8.5" class="anchored" data-anchor-id="apparent-bending-of-a-vibrating-stick-in-a-spectrum"><span class="header-section-number">23.8.5</span> 31. Apparent bending of a vibrating stick in a spectrum</h3>
+<p>You can show the apparent bending of a stick (a pencil will do) when it is oscillated across a spectrum. As the stick is vibrated it appears to be bent. The effect only appears when the stick is illuminated by the coloured light. It is due to the persistence of vision of the eye in different regions of the spectrum. The cones take different times to reset when illuminated by different colours.</p>
+<blockquote class="blockquote">
+<p>Age range: 14— 19</p>
+<p>Apparatus required: •Device for producing a spectrum ’Stick or pencil</p>
+</blockquote>
+</section>
+<section id="colour-filters-on-the-overhead-projector" class="level3" data-number="23.8.6">
+<h3 data-number="23.8.6" class="anchored" data-anchor-id="colour-filters-on-the-overhead-projector"><span class="header-section-number">23.8.6</span> 32. Colour filters on the overhead projector</h3>
+<p>Show disappearing writing by shining light through a filter on the overhead projector which is overlapping a transparency with writing on it. For example if a red filter is used beneath some red writing the writing should disappear if a suitable colour of red is used.</p>
+</section>
+<section id="path-of-the-sun-with-a-pinhole-camera" class="level3" data-number="23.8.7">
+<h3 data-number="23.8.7" class="anchored" data-anchor-id="path-of-the-sun-with-a-pinhole-camera"><span class="header-section-number">23.8.7</span> 33. Path of the Sun with a pinhole camera</h3>
+<p>Set up a cylindrical pinhole camera with a piece of photographic paper taped inside it opposite the pinhole. Take the camera outside on a sunny day with the pinhole covered. Uncover the pinhole and leave the camera for a few hours. When the paper is developed a dark line will be seen showing the path of the Sun during the day.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-14</p>
+<p>Apparatus required: •Pinhole camera ’Photographic paper •Access to a dark room and chemicals</p>
+</blockquote>
+</section>
+</section>
+<section id="patterned-glass-and-syrup" class="level2" data-number="23.9">
+<h2 data-number="23.9" class="anchored" data-anchor-id="patterned-glass-and-syrup"><span class="header-section-number">23.9</span> 35. Patterned glass and syrup</h2>
+<p>Get a piece of patterned glass and mount it horizontally about 5 cm above some printed material such as a newspaper. When you look down the print will be distorted and you won’t be able to read it. Now pour some golden syrup onto the top of the glass (l used a teaspoonful for the photo).</p>
+<p>Now you will able to read the text through the part of glass covered in syrup but still not through the glass on its own. The refractive index of syrup is similar to that of glass, so you are effectively ending up with a roughly parallel-sided block. Corn oil works as well, but it is rather runny.</p>
+<p>Age range: 11-18 depending on treatment Apparatus required: &gt; &gt; <sup>o</sup> Two strips of wood for mounting glass &gt; &gt; •Piece of patterned glass (off-cut, say 10 cm square) &gt; &gt; •Sheet of newspaper &gt; &gt; •A little golden syrup</p>
+<section id="mirror-writing" class="level3" data-number="23.9.1">
+<h3 data-number="23.9.1" class="anchored" data-anchor-id="mirror-writing"><span class="header-section-number">23.9.1</span> 36. Mirror writing</h3>
+<p>Test the skill of the pupils at drawing a line between the two lines of the double triangle, double rectangle and then the double star when you can only see them by reflection in a mirror.</p>
+<p>Arrangement of the apparatus.</p>
+<blockquote class="blockquote">
+<p>mirror held vertically ‘double shape’ drawn on paper</p>
+<p>masking card</p>
+</blockquote>
+<p>The idea is to draw a line between the lines of the two shapes on a sheet of paper. The masking card is held in the way so that you can only see the point of your pencil and the two shapes by reflection in the mirror. The rectangle is difficult, the triangle is harder still and the star is really hard!</p>
+<blockquote class="blockquote">
+<p>Age range: 5-14</p>
+<p>Apparatus required: ’Prepared shapes drawn on paper as shown ’Pencil ’Masking card •Plane mirror ### 37. Pepper’s Ghost</p>
+</blockquote>
+<p>This is a very old experiment but great fun to do. It used to be used on stage to make a ghostly figure appear, but we can construct a modern ‘school’ version by making a candle appear to be burning inside a glass of water. In fact it is simply that the virtual image of the candle flame is at the same position as the water-filled beaker. The cleaner and bigger the glass sheet available for this the better. A suitably edged piece of window glass is ideal</p>
+<p>A wonderful example of this effect could be seen in the production of the stage show “Phantom of the Opera” where lighted candles appeared to rise from the stage. It was purely an illusion. I was told that the whole image was just a reflection from a mirror set off stage!</p>
+<p>beaker</p>
+<blockquote class="blockquote">
+<p>Age range: 7-14</p>
+<p>Apparatus required: •Glass sheet (with rounded edges) •Candle •Beaker of water!</p>
+</blockquote>
+</section>
+<section id="silhouettes" class="level3" data-number="23.9.2">
+<h3 data-number="23.9.2" class="anchored" data-anchor-id="silhouettes"><span class="header-section-number">23.9.2</span> 38. Silhouettes</h3>
+<p>Use a large sheet of lining paper and a projector or OHP to make silhouette pictures of members of the class. Draw round the shadow of their heads. Then have an ‘identification parade’ to try and guess who the people are. Once again, although the science is just the formation of shadows, there are all kinds of other skills involved in producing the silhouettes and then identifying them.</p>
+<p>Age range: 7-14 Apparatus required: •Cardboard •Scissors •Light source</p>
+<blockquote class="blockquote">
+
+</blockquote>
+</section>
+</section>
+<section id="section" class="level2" data-number="23.10">
+<h2 data-number="23.10" class="anchored" data-anchor-id="section"><span class="header-section-number">23.10</span> 34</h2>
+<p>This is a mirror that seems to be able to tell the difference between red and blue!</p>
+<p>Put cards one and two in front of the mirror and look at the reflection of the cards in the mirror. Now put the mirror alongside cards three and four, and see what they look like in the mirror. (See diagrams.)</p>
+<p>Can you work out what is happening? Think about the axes of symmetry of the different letters and numbers.</p>
+<p>(Many thanks to Colin for the idea for this experiment)</p>
+<blockquote class="blockquote">
+<p>Apparatus required: ’Prepared cards as shown •Plane mirror</p>
+</blockquote>
+<section id="diffraction-through-a-night-dress" class="level3" data-number="23.10.1">
+<h3 data-number="23.10.1" class="anchored" data-anchor-id="diffraction-through-a-night-dress"><span class="header-section-number">23.10.1</span> 40. Diffraction through a night dress</h3>
+<p>A lovely example of diffraction can be seen through a night dress or a fine net curtain like the one shown in the photograph. (See also page 167)</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+</blockquote>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ThermalPhysics.html" class="pagination-link" aria-label="ThermalPhysics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./VibrationsWaves.html" class="pagination-link" aria-label="VibrationsWaves">
+        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">VibrationsWaves</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2025, Joe Rowing</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jrowing">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/jrowing.com">
+      <i class="bi bi-megaphone" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.jrowing.com">
+      <i class="bi bi-file-earmark" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

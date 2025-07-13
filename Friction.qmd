@@ -3,6 +3,8 @@ title: "Friction"
 format: html
 ---
 
+Many school physics courses teach friction in a way that inadvertently fosters confusion. In one lesson, students are told to “ignore air resistance” when solving problems about falling objects or moving cars, treating the world as if friction only exists between solid surfaces. Yet in the very next lesson, they’re taught about parachutists whose survival depends entirely on air resistance, suddenly elevating it from negligible to crucial. This abrupt switch can make friction—and forces in general—seem like arbitrary, context-dependent rules rather than consistent physical principles. Instead of helping students see friction as a family of forces (including air resistance) that always oppose motion, we often isolate topics in a fragmented way, leaving learners unsure when and why certain forces matter...
+
 ## Basic Theory
 
 ### What is Friction?
@@ -63,65 +65,36 @@ If an object of weight $W$ rests on a horizontal surface:
 
 ### Summary Table
 
-+-------------------------+----------------+----------------------+----------------------------------+
-| Quantity                | Symbol         | Formula              | Notes                            |
-+=========================+================+======================+==================================+
-| Static friction force   | $F_s$          | $F_s \leq \mu_s N$   | Max value before motion starts   |
-+-------------------------+----------------+----------------------+----------------------------------+
-| Kinetic friction force  | $F_k$          | $F_k = \mu_k N$      | During sliding motion            |
-+-------------------------+----------------+----------------------+----------------------------------+
-| Coefficient of friction | $\mu_s, \mu_k$ | Dimensionless        | Depends on surfaces              |
-+-------------------------+----------------+----------------------+----------------------------------+
-| Normal force            | $N$            | Depends on situation | Usually $N = mg$ on flat surface |
-+-------------------------+----------------+----------------------+----------------------------------+
+| Quantity | Symbol | Formula | Notes |
+|-----------------|-----------------|-----------------|---------------------|
+| Static friction force | $F_s$ | $F_s \leq \mu_s N$ | Max value before motion starts |
+| Kinetic friction force | $F_k$ | $F_k = \mu_k N$ | During sliding motion |
+| Coefficient of friction | $\mu_s, \mu_k$ | Dimensionless | Depends on surfaces |
+| Normal force | $N$ | Depends on situation | Usually $N = mg$ on flat surface |
 
-+----------------------------------------+-----------------------------------------------------+
-| > 1\. Glass fibre.                     | > 7\. Falling matchbox                              |
-+:=======================================+:====================================================+
-| 2\. Styrocell beads                    | > 8\. Escalado                                      |
-+----------------------------------------+-----------------------------------------------------+
-| 3\. Polystyrene ball falling in a tube | > 9\. Rolling dog food and baked bean cans          |
-+----------------------------------------+-----------------------------------------------------+
-| 4\. Lowering friction with magnets     | 10\. Friction between books \|                      |
-+----------------------------------------+-----------------------------------------------------+
-| 5.  Stick-slip motion                  | 11\. Friction and sliding cups                      |
-|                                        |                                                     |
-| 6.  Two simple hovercraft              |                                                     |
-+----------------------------------------+-----------------------------------------------------+
-
-## Stories to enritch
+## Stories to enrich
 
 ### The Tragedy on the Rails: The Tay Bridge Disaster (1879)
 
-One stormy night in Scotland, a passenger train attempted to cross the Tay Bridge. A violent gust struck, and the bridge collapsed beneath it. Investigators later found that oscillations and lack of lateral frictional damping in the bridge design had allowed the wind to amplify motion until the structure gave way. The disaster shocked Victorian engineers. The need to understand not just force, but friction and resistance within joints and tracks, became a central lesson in civil engineering.
+![](images/clipboard-3717432636.png){fig-align="center" width="50%"}
 
-Reflection: How can a lack of internal friction—often seen as wasteful—be deadly?
+One stormy night in Scotland, a passenger train attempted to cross the Tay Bridge. A violent gust struck, and the bridge collapsed beneath it. Investigators later found that oscillations and lack of lateral frictional damping in the bridge design had allowed the wind to amplify motion until the structure gave way. The disaster shocked Victorian engineers. The need to understand not just force, but friction and resistance within joints and tracks, became a central lesson in civil engineering.
 
 ### The Match That Changed the World
 
-In 1826, John Walker invented the friction match—by accident. Stirring a mixture of chemicals with a stick, he noticed the dry blob at the end flared when scraped on stone. This wasn’t heat from fire—it was the mechanical friction of scraping. The invention allowed for easy fire-making for the first time in history. Friction, once a nuisance to be avoided, became a tool for ignition and survival.
+![](images/clipboard-88334733.png){fig-align="center" width="50%"}
 
-Reflection: How does this story show friction’s creative power?
+In 1826, John Walker invented the friction match—by accident. Stirring a mixture of chemicals with a stick, he noticed the dry blob at the end flared when scraped on stone. This wasn’t heat from fire—it was the mechanical friction of scraping. The invention allowed for easy fire-making for the first time in history. Friction, normally a nuisance to be avoided, became a tool for ignition and survival.
 
 ### The Ice of the Battle of Stalingrad
 
+![](images/clipboard-320888596.png){fig-align="center" width="50%"}
+
 During WWII, German tanks bogged down outside Stalingrad, partly because of brutal cold. The steel tank treads, designed for European mud, couldn’t grip the icy roads. Soviet engineers had reinforced their own equipment with roughened track pads and sandbags for added grip. The frictionless Russian winter became a weapon, turning mobility into paralysis.
 
-Reflection: How did control of friction shape the outcome of a battle?
-
-### The Apollo Moon Lander’s Unexpected Slide
-
-When the Apollo 11 lunar module touched down, engineers had assumed the Moon’s surface would provide moderate resistance. But it was finer than talcum powder—highly variable friction. Neil Armstrong reported a slight slide before coming to rest. This helped NASA redesign later landers to include broader, crushable landing pads, ensuring enough friction to avoid tipping or skidding.
-
-Reflection: What does friction mean in a place with no atmosphere or weather?
-
-### The Bobsledding Black Ice Mystery
-
-During the 1964 Winter Olympics, a favored bobsled team wiped out on a turn. The cause? Black ice—a barely visible glaze with drastically lower friction. Engineers began applying tiny etched grooves to the bobsled runners and modifying the track’s curvature to adjust normal force and maintain grip. Sports science embraced friction like never before—not to stop motion, but to keep it stable and predictable.
-
-Reflection: How can too little friction turn speed into danger?
-
 ### Da Vinci’s Secret Notes on Friction
+
+![](images/clipboard-4283182773.png)
 
 Long before Newton, Leonardo da Vinci discovered fundamental laws of friction while sketching machines. He wrote (in mirrored script!) that the force of friction is proportional to the load and independent of contact area—ideas later attributed to Amontons. He even created diagrams of inclined planes and sliding blocks. But his findings weren’t published for centuries.
 
@@ -129,57 +102,57 @@ Reflection: How might physics history have changed if da Vinci’s friction laws
 
 ### The Ancient Egyptian Sled and the Water Trick
 
-Wall paintings show Egyptians hauling giant statues on sleds. Archaeologists puzzled over how they moved such loads. Then, a modern experiment revealed: adding small amounts of water to the sand increased friction’s efficiency by reducing sand displacement and increasing cohesion—making the sled slide more easily. They weren’t just brute-forcing it. They had mastered frictional control.
+![](images/clipboard-1785206215.png)
+
+Wall paintings show Egyptians hauling giant statues on sleds. Archaeologists puzzled over how they moved such loads. Then, a modern experiment revealed: adding small amounts of water to the sand increased friction’s efficiency by reducing sand displacement and increasing cohesion—making the sled slide more easily. They weren’t just brute-forcing it. They had mastered frictional control. A painting from the tomb of Djehutihotep also depicts someone pouring liquid in front of a sled, supporting this theory. 
 
 Reflection: How can more friction sometimes make things slide more easily?
 
-### The Skating Rink That Was Too Smooth
+### The Ice That Was Too Smooth
 
-In the early days of synthetic ice rinks, engineers crafted ultra-slick plastic surfaces. But skaters couldn’t control their movement. It turned out real ice works because of micro-friction and thin meltwater films that allow edge control. Designers had to roughen synthetic surfaces slightly and develop lubricant sprays to simulate the subtle friction of real skating.
+A group of Gentoo penguins at an aquarium in Hull had to be temporarily removed from their exhibit because new fake ice flooring proved too slippery. 
 
-Reflection: What does this tell us about the balance between grip and glide?
+Staff at The Deep have since installed special anti-slip covering for the seven resident penguins.A staff member said:
+
+>The penguins were taken out of the display on January 6 (2014) to do some routine maintenance work but, when we put them back, the covering did not have enough grip in it for them to stick on to and we had a bit of a skidding situation.
 
 ### The Mystery of the Climbing Gecko
 
-Geckos can walk across ceilings, and for years no one knew how. It wasn’t suction or glue—it was molecular friction. Tiny hairs on their feet use van der Waals forces to generate friction at the atomic scale. Engineers now study geckos to make biomimetic pads that let robots and humans stick to glass walls.
+![](images/clipboard-954966952.png){fig-align="center" width="32%"}
 
-Reflection: What if friction isn’t just a bulk property, but something that happens molecule by molecule?
+Geckos can walk across ceilings, and for years no one knew how. It wasn’t suction or glue—it was molecular friction. Tiny hairs on their feet use van der Waals forces to generate friction at the atomic scale. Engineers now study geckos to make biomimetic pads that let robots and humans stick to glass walls.
 
 ### The Violinist’s Rosin
 
 String players rub rosin onto their bows—not to reduce friction, but to create just the right amount. The bow must grip and release the string rapidly to make it vibrate. Too little friction, and there's no sound. Too much, and it scratches. Musicians become masters of microscopic friction control.
 
-Reflection: How do artists develop an intuitive sense of physics through practice?
-
 ## Practical work and Demos
 
-### Glass fibre
+### Ball falling in a tube
 
-Many years ago I did a piece of research into the strength of glass fibre laminates. The problem was to measure how much friction there was between the glass fibres and the laminate itself. This could be found by measuring the friction as a piece of fibre was pulled over a section of laminate mounted on a rod. The amount of twist gave a measure of the frictional force.
-
-### Styrocell beads
-
-Friction - or the lack of it - can be demonstrated when a crystalljsing dish is slid along over some styrocell beads that have been poured into a tray. These beads are hard plastic spheres about a millimetre in diameter and so act like ball bearings. Spinning the dish makes a good demonstration and the whole experiment can be done in the base of a small ripple tank placed on an overhead projector to make it easily visible to the whole class.
-
-> Do not let the pupils take any of the beads away ---they are dangerous if spread on the floor.
->
-> Age range: 14-18 Apparatus required: •Styrocell beads •Ripple tank •Tray •Glass beaker
-
-### Polystyrene ball falling in a tube
-
-Set up a vertical tube and drop a polystyrene ball into it. The diameter of the ball should be just a little smaller than the diameter of the tube. The ball falls really slowly due to air friction in the tube and it may be possible to get it to reach a terminal velocity where Weight = Drag!
+Not the most exciting titoe but a great demo. Set up a vertical tube and drop a ping-pong ball into it. The diameter of the tube should be just a little larger than the diameter of the ball. As close as possible is most effective. The ball falls really slowly due to air friction in the tube and quickly reaches terminal velocity.
 
 > Age range: 14-18
 >
 > Apparatus required: •Large diameter glass tube up to two metres long •Polystyrene balls of various diameters up to almost that of the internal diameter of the glass tube •Stop clock •Ruler
 
+### Glass syringe air bearing
+
+A gas syringe can act like an air bearing when its plunger is fixed and the outer barrel is rotated. By trapping a thin layer of air between the plunger and the barrel wall, the syringe creates a cushion that reduces friction, allowing the barrel to spin smoothly around the stationary plunger. This effect mimics an air bearing’s principle, where pressurized air supports and separates moving parts, enabling low-friction, low-wear rotation. Such a setup can be a useful classroom demonstration of how air bearings work in precision engineering and machinery.
+
 ### Lowering friction with magnets
 
-Take a bar magnet and mount it in a clamp with the poles vertically above each other. Take one or two clean ball bearings and attach them to the magnet so that they hang in a line from the lower end. Then attach a steel disc about 3 cm in diameter to the lower ball bearing. It should just be held on but not too tightly - if the attraction is too strong add another ball bearing. Blow on the side of the disc to set it rotating. Adjusting the number and size of the ball bearings and the mass of the disc will give a situation where the disc is only just supported and the friction between it and the lower ball bearing is then very low. An old account of this experiment suggests that the disc could be made to rotate for over fifteen minutes.
+Take a magnet and mount it in a clamp with the poles vertically above each other. Take several clean ball bearings and attach them to the magnet so that they hang in a line from the lower end. Hang enough such that a large washer or other steel disc of about 3 cm in diameter only just able to hang from the end. The disc is supported with minimal friction and by blowing on the side of the disc to set it rotating the disc can be set spinning. With some care in the setup, the disc will spin for over 10 minutes.
 
 > Age range: 11-13
 >
 > Apparatus required: •Retort stand and clamp •Two or three ball bearings (diameter about 0.8 mm depending on magnet strength) •Strong bar magnet •Steel disc
+
+### Spinning Eggs
+
+Setup: Spin a hardboiled egg and a raw egg horizontally on a table. Touch each to stop it, then release.
+
+Observation: The hardboiled egg stops; the raw egg restarts spinning due to the fluid inside continuing to rotate and dragging on the inside of the shell.
 
 ### Stick-slip motion
 
@@ -219,14 +192,6 @@ Age range: 14-18 1 2
 >
 > •Matchbox full of matches
 
-61
-
-### Escalado
-
-There was a superb horse racing game called Escalado which worked on the stick-slip principle. The horses were lead and stood on a cloth track, one end of which was securely fixed to the table by a spring while the other was attached to a rod and ratchet. As the ratchet was turned by a handle the track was pulled forward slowly and then released - the spring pulling it back rapidly --- but the horses stayed where they were due to inertia. As a result they moved along the track at every rotation.
-
-Age range: 11-18 Apparatus required: •Escalado horse racing game
-
 ### Rolling cans of dog food and baked beans
 
 Get two cans of equal mass --- one containing dog food (or cat food for cat lovers) and the other containing baked beans.
@@ -253,16 +218,30 @@ Then get two people to hold the books by their spines and try and pull them apar
 >
 > Apparatus required: •Two paper-backed books
 
-### Friction and sliding cups
+Lifting a 1kg Mass with Rope on a Cylinder
 
-The aim of this experiment is to give you an idea of the friction needed to slow things down.
+Setup: Tie a 1kg mass (or tin of beans) to thick string. Wrap the string a few times around a rolling pin (or wine bottle).
 
-Take a small plastic pot and put some weights in it. Gently slide it across the floor of your classroom.
+Question: What happens when the rod is lifted?
 
-Measure how far it has gone from where you let it go to where it stopped. Change the weights in the pot and try the experiment again.
+Answer: A few turns of rope hold the mass without slipping - this leads onto the next one beautifully…
 
-Some of you may have watched the curling in the Winter
+16. The Falling Cup
 
-Olympics --- the stones they use behave in the same way as your pots on the floor.
+Setup: About 1m of string is placed over a pencil with a china cup at one end, close to the pencil. The other longer end is tied to a cork. The string is held just below horizontal.
 
-Age range: 7-11 Apparatus required: •Tape measure •Plastic cups •Masses
+Question: Will the cup reach the ground when released?
+
+Answer: It stops before it reaches the ground, if the string is measured just right. Conservation of inertia causes the cork to increase in angular velocity as the string shortens. The increased velocity causes the cork to wrap the string round the pencil and thereby provide the friction to slow and stop the cup’s descent.
+
+18. Coin and Paper Drop
+
+Drop separately, then drop with paper side-on and next to coin, finally drop with coin on top of paper, but close.
+
+Observations:
+
+Coin lands first - it has a higher terminal velocity.
+
+Both land together, if paper continues to fall edge-on.
+
+Coin first, paper slips off.

@@ -118,11 +118,7 @@ Question: What happens to the egg?
 
 Answer: It keeps moving forward if not secured… - Newton’s first law.
 
-## 13. Spinning Eggs
-
-Setup: Spin a hardboiled egg and a raw egg horizontally on a table. Touch each to stop it, then release.
-
-Observation: The hardboiled egg stops; the raw egg restarts spinning due to the fluid inside continuing to rotate and dragging on the inside of the shell.
+## 13. 
 
 ## 14. Tablecloth Trick
 
@@ -132,21 +128,7 @@ Question: Will the objects stay put?
 
 Answer: Yes, they stay put if the cloth is pulled quickly -due to their inertia.
 
-## 15. Lifting a 1kg Mass with Rope on a Cylinder
-
-Setup: Tie a 1kg mass (or tin of beans) to thick string. Wrap the string a few times around a rolling pin (or wine bottle).
-
-Question: What happens when the rod is lifted?
-
-Answer: A few turns of rope hold the mass without slipping - this leads onto the next one beautifully…
-
-## 16. The Falling Cup
-
-Setup: About 1m of string is placed over a pencil with a china cup at one end, close to the pencil. The other longer end is tied to a cork. The string is held just below horizontal.
-
-Question: Will the cup reach the ground when released?
-
-Answer: It stops before it reaches the ground, if the string is measured just right. Conservation of inertia causes the cork to increase in angular velocity as the string shortens. The increased velocity causes the cork to wrap the string round the pencil and thereby provide the friction to slow and stop the cup’s descent.
+## 15. 
 
 ## 17. Ball Drop Test
 
@@ -155,18 +137,6 @@ Setup: Drop a table tennis ball and a golf ball.
 Question: Which hits the ground first?
 
 Answer: Both at the same time. Unless you drop them from high enough that the lower terminal velocity of the table-tennis ball can come into play.
-
-## 18. Coin and Paper Drop
-
-Drop separately, then drop with paper side-on and next to coin, finally drop with coin on top of paper, but close.
-
-Observations:
-
-a)  Coin lands first - it has a higher terminal velocity.
-
-b)  Both land together, if paper continues to fall edge-on.
-
-c)  Coin first, paper slips off.
 
 ## 19. Water Jet in Free Fall
 

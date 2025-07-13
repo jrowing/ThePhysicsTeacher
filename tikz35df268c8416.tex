@@ -1,0 +1,34 @@
+\documentclass[
+%% TIKZ_CLASSOPTION %%
+tikz
+]{standalone}
+\usepackage{amsmath}
+\usetikzlibrary{matrix}
+%% EXTRA_TIKZ_PREAMBLE_CODE %%
+\begin{document}
+%% TIKZ_CODE %%
+\begin{tikzpicture}
+  \def\L{1.2}  % handle length
+  \def\w{0.3}  % mass width
+  \def\h{0.45} % mass height
+  \def\r{0.02} % rope radius
+  \coordinate (O) at (0,0);
+  \coordinate (SL) at (-\L/2,0.42*\H); % stick left
+  \coordinate (SR) at ( \L/2,0.42*\H); % stick right
+  \coordinate (ML) at (-\L/2,-0.2*\H); % mass left
+  \coordinate (MR) at ( \L/2,-0.2*\H); % mass right
+  \draw[rope] (O) circle (0.08);
+  \draw[thick] (0,\H) circle(0.3) coordinate (H);
+  \draw[thick] (H)++(-90:0.3) coordinate (N) to[out=-91,in=92]++ (0,-0.40*\H) coordinate (P);
+  \draw[limb] (P) to[out=-95,in=95] (96:0.1); % left leg
+  \draw[limb] (P) to[out=-85,in=88] (84:0.1); % right leg
+  \draw[myred,line width=1.5,line cap=round] (SL)++(-0.05,0) -- (SR) --++ (0.05,0);
+  \draw[limb] (N)++(-95:0.03) to[out=-120,in=85]++ (-0.14*\H,-0.44*\H); % right arm
+  \draw[limb] (N)++(-85:0.03) to[out=-60,in=95]++ (0.14*\H,-0.44*\H);   % left arm
+  \draw[CM] (0,-0.15*\H) circle(\CM) node[below=2,scale=0.8] {CM};
+  \draw[rope] (SL)++(-\r,0.02) arc(180:0:\r) -- ($(ML)+(\r,0)$) --++ (-2*\r,0) -- cycle;
+  \draw[rope] (SR)++(-\r,0.02) arc(180:0:\r) -- ($(MR)+(\r,0)$) --++ (-2*\r,0) -- cycle;
+  \draw[mass] (ML)++(-\w/2,-\h) rectangle++ (\w,\h);
+  \draw[mass] (MR)++(-\w/2,-\h) rectangle++ (\w,\h);
+\end{tikzpicture}
+\end{document}

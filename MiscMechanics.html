@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>12&nbsp; MiscMechanics – The Physics Teacher</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Astronomy.html" rel="next">
+<link href="./Statics.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-604c3d4c4a4e540f9ea15e4aba1a9bab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Physics Teacher</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://buymeacoffee.com/jrowing" target="_blank"> 
+<span class="menu-text">Buy Me a Coffee</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./The-Physics-Teacher.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CircularMotion.html">Mechanics</a></li><li class="breadcrumb-item"><a href="./MiscMechanics.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introductions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liniver.com</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhyPhox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Phy-Phox: Physics Phone Experiments</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhET.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PhET Interactive Simulations: Bringing Physics to Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Basics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BasicPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Physics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WorkEnergyPower.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mechanics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CircularMotion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ForcesNewton.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Inertia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Inertia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Momentum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Momentum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fluids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fluids</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MiscMechanics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Earth and Beyond</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Astronomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Astronomy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Electricity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Capacitors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CurrentElectricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">CurrentElectricity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electromagnetism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Electromagnetism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fields</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electrostatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Electrostatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Gravity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Thermal Physics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GasLaws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GasLaws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ThermalPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Waves &amp; Optics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./optics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./VibrationsWaves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">VibrationsWaves</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Nuclear &amp; Quantum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./NuclearPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NuclearPhysics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quanta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Quanta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Radioactivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Radioactivity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MoreResources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">MoreResources</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#miscellaneous-mechanics" id="toc-miscellaneous-mechanics" class="nav-link active" data-scroll-target="#miscellaneous-mechanics"><span class="header-section-number">12.0.1</span> MISCELLANEOUS MECHANICS</a></li>
+  <li><a href="#basic-theory" id="toc-basic-theory" class="nav-link" data-scroll-target="#basic-theory"><span class="header-section-number">12.1</span> Basic Theory</a>
+  <ul>
+  <li><a href="#scalars-and-vectors" id="toc-scalars-and-vectors" class="nav-link" data-scroll-target="#scalars-and-vectors"><span class="header-section-number">12.1.1</span> Scalars and Vectors</a></li>
+  <li><a href="#displacement-velocity-and-acceleration" id="toc-displacement-velocity-and-acceleration" class="nav-link" data-scroll-target="#displacement-velocity-and-acceleration"><span class="header-section-number">12.1.2</span> Displacement, Velocity, and Acceleration</a></li>
+  <li><a href="#equations-of-motion-constant-acceleration" id="toc-equations-of-motion-constant-acceleration" class="nav-link" data-scroll-target="#equations-of-motion-constant-acceleration"><span class="header-section-number">12.1.3</span> Equations of Motion (Constant Acceleration)</a></li>
+  <li><a href="#forces-and-newtons-laws" id="toc-forces-and-newtons-laws" class="nav-link" data-scroll-target="#forces-and-newtons-laws"><span class="header-section-number">12.1.4</span> Forces and Newton’s Laws</a></li>
+  <li><a href="#work-energy-and-power" id="toc-work-energy-and-power" class="nav-link" data-scroll-target="#work-energy-and-power"><span class="header-section-number">12.1.5</span> Work, Energy, and Power</a></li>
+  <li><a href="#conservation-of-energy" id="toc-conservation-of-energy" class="nav-link" data-scroll-target="#conservation-of-energy"><span class="header-section-number">12.1.6</span> Conservation of Energy</a></li>
+  <li><a href="#momentum-and-impulse" id="toc-momentum-and-impulse" class="nav-link" data-scroll-target="#momentum-and-impulse"><span class="header-section-number">12.1.7</span> Momentum and Impulse</a></li>
+  <li><a href="#circular-motion" id="toc-circular-motion" class="nav-link" data-scroll-target="#circular-motion"><span class="header-section-number">12.1.8</span> Circular Motion</a></li>
+  <li><a href="#friction" id="toc-friction" class="nav-link" data-scroll-target="#friction"><span class="header-section-number">12.1.9</span> Friction</a></li>
+  <li><a href="#elasticity-and-hookes-law" id="toc-elasticity-and-hookes-law" class="nav-link" data-scroll-target="#elasticity-and-hookes-law"><span class="header-section-number">12.1.10</span> Elasticity and Hooke’s Law</a></li>
+  <li><a href="#moments-and-equilibrium" id="toc-moments-and-equilibrium" class="nav-link" data-scroll-target="#moments-and-equilibrium"><span class="header-section-number">12.1.11</span> Moments and Equilibrium</a></li>
+  <li><a href="#simple-harmonic-motion-shm" id="toc-simple-harmonic-motion-shm" class="nav-link" data-scroll-target="#simple-harmonic-motion-shm"><span class="header-section-number">12.1.12</span> Simple Harmonic Motion (SHM)</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">12.1.13</span> Summary Table</a>
+  <ul>
+  <li><a href="#strength" id="toc-strength" class="nav-link" data-scroll-target="#strength">1. Strength</a></li>
+  <li><a href="#bi-filar-suspension" id="toc-bi-filar-suspension" class="nav-link" data-scroll-target="#bi-filar-suspension">2. Bi-filar suspension</a></li>
+  <li><a href="#sycamore-seed-propeller" id="toc-sycamore-seed-propeller" class="nav-link" data-scroll-target="#sycamore-seed-propeller">3. Sycamore seed propeller</a></li>
+  <li><a href="#unrolling-a-carpet---whiplash" id="toc-unrolling-a-carpet---whiplash" class="nav-link" data-scroll-target="#unrolling-a-carpet---whiplash">4. Unrolling a carpet - whiplash</a></li>
+  <li><a href="#cotton-reel-tank" id="toc-cotton-reel-tank" class="nav-link" data-scroll-target="#cotton-reel-tank">Cotton reel tank</a></li>
+  <li><a href="#energy-in-a-balloon" id="toc-energy-in-a-balloon" class="nav-link" data-scroll-target="#energy-in-a-balloon">6. Energy in a balloon</a></li>
+  <li><a href="#viscosity-of-air-with-an-oscillating-table-tennis-ball" id="toc-viscosity-of-air-with-an-oscillating-table-tennis-ball" class="nav-link" data-scroll-target="#viscosity-of-air-with-an-oscillating-table-tennis-ball">7. Viscosity of air with an oscillating table tennis ball</a></li>
+  <li><a href="#satellite-orbits" id="toc-satellite-orbits" class="nav-link" data-scroll-target="#satellite-orbits">8. Satellite orbits</a></li>
+  <li><a href="#an-interesting-pair-of-pulleys" id="toc-an-interesting-pair-of-pulleys" class="nav-link" data-scroll-target="#an-interesting-pair-of-pulleys">9. An interesting pair of pulleys</a></li>
+  <li><a href="#boomerang" id="toc-boomerang" class="nav-link" data-scroll-target="#boomerang">10. Boomerang</a>
+  <ul class="collapse">
+  <li><a href="#yo-yo" id="toc-yo-yo" class="nav-link" data-scroll-target="#yo-yo">Yo Yo</a></li>
+  </ul></li>
+  <li><a href="#tops" id="toc-tops" class="nav-link" data-scroll-target="#tops">12. Tops</a></li>
+  <li><a href="#party-popper" id="toc-party-popper" class="nav-link" data-scroll-target="#party-popper">13. Party popper</a></li>
+  <li><a href="#planetary-orbit" id="toc-planetary-orbit" class="nav-link" data-scroll-target="#planetary-orbit">14. Planetary orbit</a></li>
+  <li><a href="#straw-and-potato" id="toc-straw-and-potato" class="nav-link" data-scroll-target="#straw-and-potato">15. Straw and potato</a></li>
+  <li><a href="#hoffnung-the-bucket-of-bricks" id="toc-hoffnung-the-bucket-of-bricks" class="nav-link" data-scroll-target="#hoffnung-the-bucket-of-bricks">16. Hoffnung — the bucket of bricks</a></li>
+  <li><a href="#racing-car-wres---different-kinds-of-rubber" id="toc-racing-car-wres---different-kinds-of-rubber" class="nav-link" data-scroll-target="#racing-car-wres---different-kinds-of-rubber">17. Racing-car Wres - different kinds of rubber</a></li>
+  <li><a href="#lung-volume" id="toc-lung-volume" class="nav-link" data-scroll-target="#lung-volume">18. Lung volume</a></li>
+  <li><a href="#weight-suspended-from-a-wheel---shm" id="toc-weight-suspended-from-a-wheel---shm" class="nav-link" data-scroll-target="#weight-suspended-from-a-wheel---shm">19. Weight suspended from a wheel - SHM</a></li>
+  <li><a href="#creaking-furniture---plastic-cups" id="toc-creaking-furniture---plastic-cups" class="nav-link" data-scroll-target="#creaking-furniture---plastic-cups">20. Creaking furniture - plastic cups</a></li>
+  <li><a href="#rollers" id="toc-rollers" class="nav-link" data-scroll-target="#rollers">21. Rollers</a></li>
+  <li><a href="#monkey-and-bananas" id="toc-monkey-and-bananas" class="nav-link" data-scroll-target="#monkey-and-bananas">22. Monkey and bananas</a></li>
+  <li><a href="#the-torsion-balance" id="toc-the-torsion-balance" class="nav-link" data-scroll-target="#the-torsion-balance">23. The torsion balance</a></li>
+  <li><a href="#rotating-soap-film" id="toc-rotating-soap-film" class="nav-link" data-scroll-target="#rotating-soap-film">24. Rotating soap film</a></li>
+  <li><a href="#ropes" id="toc-ropes" class="nav-link" data-scroll-target="#ropes">25. Ropes</a></li>
+  <li><a href="#propeller-on-a-wooden-stick" id="toc-propeller-on-a-wooden-stick" class="nav-link" data-scroll-target="#propeller-on-a-wooden-stick">Propeller on a wooden stick</a></li>
+  <li><a href="#three-coins" id="toc-three-coins" class="nav-link" data-scroll-target="#three-coins">27. Three coins</a></li>
+  <li><a href="#horseshoe-and-cocktail-stick" id="toc-horseshoe-and-cocktail-stick" class="nav-link" data-scroll-target="#horseshoe-and-cocktail-stick">Horseshoe and cocktail stick</a></li>
+  <li><a href="#toy-divers" id="toc-toy-divers" class="nav-link" data-scroll-target="#toy-divers">29. Toy divers</a></li>
+  <li><a href="#building-bridges-competitions" id="toc-building-bridges-competitions" class="nav-link" data-scroll-target="#building-bridges-competitions">30. Building bridges competitions</a></li>
+  <li><a href="#a-rubber-sheet-for-gravitational-fields" id="toc-a-rubber-sheet-for-gravitational-fields" class="nav-link" data-scroll-target="#a-rubber-sheet-for-gravitational-fields">31. A rubber sheet for gravitational fields</a></li>
+  <li><a href="#air-brakes---trolley-with-card-sail" id="toc-air-brakes---trolley-with-card-sail" class="nav-link" data-scroll-target="#air-brakes---trolley-with-card-sail">32. Air brakes - trolley with card sail</a></li>
+  <li><a href="#a-simple-clamp" id="toc-a-simple-clamp" class="nav-link" data-scroll-target="#a-simple-clamp">33. A simple clamp</a></li>
+  <li><a href="#simple-pulley-model" id="toc-simple-pulley-model" class="nav-link" data-scroll-target="#simple-pulley-model">34. Simple pulley model</a></li>
+  <li><a href="#centre-of-percussion-of-an-object" id="toc-centre-of-percussion-of-an-object" class="nav-link" data-scroll-target="#centre-of-percussion-of-an-object">35. Centre of percussion of an object</a></li>
+  <li><a href="#perpetual-motion" id="toc-perpetual-motion" class="nav-link" data-scroll-target="#perpetual-motion">36. Perpetual motion</a></li>
+  <li><a href="#hunter-on-ice" id="toc-hunter-on-ice" class="nav-link" data-scroll-target="#hunter-on-ice">37. Hunter on ice</a></li>
+  <li><a href="#picking-up-obiects-with-your-back-to-the-wall" id="toc-picking-up-obiects-with-your-back-to-the-wall" class="nav-link" data-scroll-target="#picking-up-obiects-with-your-back-to-the-wall">38. Picking up obiects with your back to the wall</a></li>
+  <li><a href="#large-balloon---mass-of-air" id="toc-large-balloon---mass-of-air" class="nav-link" data-scroll-target="#large-balloon---mass-of-air">39. Large balloon - mass of air</a></li>
+  <li><a href="#keys-and-matchbox-over-a-dowel" id="toc-keys-and-matchbox-over-a-dowel" class="nav-link" data-scroll-target="#keys-and-matchbox-over-a-dowel">40. Keys and matchbox over a dowel</a></li>
+  <li><a href="#air-brakes-and-a-propeller" id="toc-air-brakes-and-a-propeller" class="nav-link" data-scroll-target="#air-brakes-and-a-propeller">41. Air brakes and a propeller</a></li>
+  <li><a href="#collisions---ball-bearings" id="toc-collisions---ball-bearings" class="nav-link" data-scroll-target="#collisions---ball-bearings">42. Collisions - ball bearings</a></li>
+  <li><a href="#water-divining---unstable-equilibrium" id="toc-water-divining---unstable-equilibrium" class="nav-link" data-scroll-target="#water-divining---unstable-equilibrium">43. Water divining - unstable equilibrium</a></li>
+  <li><a href="#efficiency-of-a-bicycle" id="toc-efficiency-of-a-bicycle" class="nav-link" data-scroll-target="#efficiency-of-a-bicycle">44. Efficiency of a bicycle</a></li>
+  <li><a href="#conservation-of-angular-momentum" id="toc-conservation-of-angular-momentum" class="nav-link" data-scroll-target="#conservation-of-angular-momentum">45. Conservation of angular momentum</a></li>
+  <li><a href="#the-reflection-of-a-power-ball" id="toc-the-reflection-of-a-power-ball" class="nav-link" data-scroll-target="#the-reflection-of-a-power-ball">46. The reflection of a power ball</a></li>
+  <li><a href="#marble-tracks" id="toc-marble-tracks" class="nav-link" data-scroll-target="#marble-tracks">48. Marble tracks</a></li>
+  <li><a href="#defying-gravity-a-rolling-double-cone" id="toc-defying-gravity-a-rolling-double-cone" class="nav-link" data-scroll-target="#defying-gravity-a-rolling-double-cone">49. Defying gravity — a rolling double cone</a></li>
+  <li><a href="#whirlywings" id="toc-whirlywings" class="nav-link" data-scroll-target="#whirlywings">50. Whirlywings</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CircularMotion.html">Mechanics</a></li><li class="breadcrumb-item"><a href="./MiscMechanics.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="miscellaneous-mechanics" class="level3" data-number="12.0.1">
+<h3 data-number="12.0.1" class="anchored" data-anchor-id="miscellaneous-mechanics"><span class="header-section-number">12.0.1</span> MISCELLANEOUS MECHANICS</h3>
+</section>
+<section id="basic-theory" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="basic-theory"><span class="header-section-number">12.1</span> Basic Theory</h2>
+<section id="scalars-and-vectors" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="scalars-and-vectors"><span class="header-section-number">12.1.1</span> Scalars and Vectors</h3>
+<ul>
+<li><strong>Scalars:</strong> Quantities with magnitude only (e.g., speed, mass, time).</li>
+<li><strong>Vectors:</strong> Quantities with magnitude and direction (e.g., velocity, displacement, force).</li>
+</ul>
+</section>
+<section id="displacement-velocity-and-acceleration" class="level3" data-number="12.1.2">
+<h3 data-number="12.1.2" class="anchored" data-anchor-id="displacement-velocity-and-acceleration"><span class="header-section-number">12.1.2</span> Displacement, Velocity, and Acceleration</h3>
+<ul>
+<li><strong>Displacement (</strong><span class="math inline">\(\vec{s}\)</span>): Vector from start to end point.</li>
+<li><strong>Velocity (</strong><span class="math inline">\(\vec{v}\)</span>): Rate of change of displacement, <span class="math display">\[
+\vec{v} = \frac{d\vec{s}}{dt}
+\]</span></li>
+<li><strong>Acceleration (</strong><span class="math inline">\(\vec{a}\)</span>): Rate of change of velocity, <span class="math display">\[
+\vec{a} = \frac{d\vec{v}}{dt}
+\]</span></li>
+</ul>
+</section>
+<section id="equations-of-motion-constant-acceleration" class="level3" data-number="12.1.3">
+<h3 data-number="12.1.3" class="anchored" data-anchor-id="equations-of-motion-constant-acceleration"><span class="header-section-number">12.1.3</span> Equations of Motion (Constant Acceleration)</h3>
+<p>For one-dimensional motion: <span class="math display">\[
+v = u + at
+\]</span> <span class="math display">\[
+s = ut + \frac{1}{2}at^2
+\]</span> <span class="math display">\[
+v^2 = u^2 + 2as
+\]</span></p>
+<p>Where: - <span class="math inline">\(u\)</span> = initial velocity - <span class="math inline">\(v\)</span> = final velocity - <span class="math inline">\(a\)</span> = acceleration - <span class="math inline">\(t\)</span> = time - <span class="math inline">\(s\)</span> = displacement</p>
+</section>
+<section id="forces-and-newtons-laws" class="level3" data-number="12.1.4">
+<h3 data-number="12.1.4" class="anchored" data-anchor-id="forces-and-newtons-laws"><span class="header-section-number">12.1.4</span> Forces and Newton’s Laws</h3>
+<ul>
+<li><strong>First Law:</strong> Object remains at rest or uniform velocity unless acted on by net force.</li>
+<li><strong>Second Law:</strong> <span class="math inline">\(F = ma\)</span> (force equals mass times acceleration).</li>
+<li><strong>Third Law:</strong> Every action has equal and opposite reaction.</li>
+</ul>
+</section>
+<section id="work-energy-and-power" class="level3" data-number="12.1.5">
+<h3 data-number="12.1.5" class="anchored" data-anchor-id="work-energy-and-power"><span class="header-section-number">12.1.5</span> Work, Energy, and Power</h3>
+<ul>
+<li><strong>Work done (</strong><span class="math inline">\(W\)</span>): <span class="math display">\[
+W = F d \cos \theta
+\]</span></li>
+<li><strong>Kinetic Energy (KE):</strong> <span class="math display">\[
+KE = \frac{1}{2} m v^2
+\]</span></li>
+<li><strong>Potential Energy (PE):</strong> <span class="math display">\[
+PE = mgh
+\]</span></li>
+<li><strong>Power (</strong><span class="math inline">\(P\)</span>): <span class="math display">\[
+P = \frac{W}{t}
+\]</span></li>
+</ul>
+</section>
+<section id="conservation-of-energy" class="level3" data-number="12.1.6">
+<h3 data-number="12.1.6" class="anchored" data-anchor-id="conservation-of-energy"><span class="header-section-number">12.1.6</span> Conservation of Energy</h3>
+<ul>
+<li>Total mechanical energy remains constant if only conservative forces act: <span class="math display">\[
+KE_i + PE_i = KE_f + PE_f
+\]</span></li>
+</ul>
+</section>
+<section id="momentum-and-impulse" class="level3" data-number="12.1.7">
+<h3 data-number="12.1.7" class="anchored" data-anchor-id="momentum-and-impulse"><span class="header-section-number">12.1.7</span> Momentum and Impulse</h3>
+<ul>
+<li>Momentum: <span class="math display">\[
+p = mv
+\]</span></li>
+<li>Impulse: <span class="math display">\[
+J = F \Delta t = \Delta p
+\]</span></li>
+</ul>
+</section>
+<section id="circular-motion" class="level3" data-number="12.1.8">
+<h3 data-number="12.1.8" class="anchored" data-anchor-id="circular-motion"><span class="header-section-number">12.1.8</span> Circular Motion</h3>
+<ul>
+<li>Centripetal acceleration: <span class="math display">\[
+a_c = \frac{v^2}{r}
+\]</span></li>
+<li>Centripetal force: <span class="math display">\[
+F_c = m a_c = \frac{mv^2}{r}
+\]</span></li>
+</ul>
+</section>
+<section id="friction" class="level3" data-number="12.1.9">
+<h3 data-number="12.1.9" class="anchored" data-anchor-id="friction"><span class="header-section-number">12.1.9</span> Friction</h3>
+<ul>
+<li>Force opposing motion.</li>
+<li>Maximum static friction: <span class="math display">\[
+F_{\text{max}} = \mu_s N
+\]</span></li>
+<li>Kinetic friction: <span class="math display">\[
+F_k = \mu_k N
+\]</span> Where:</li>
+<li><span class="math inline">\(\mu_s\)</span> = coefficient of static friction</li>
+<li><span class="math inline">\(\mu_k\)</span> = coefficient of kinetic friction</li>
+<li><span class="math inline">\(N\)</span> = normal force</li>
+</ul>
+</section>
+<section id="elasticity-and-hookes-law" class="level3" data-number="12.1.10">
+<h3 data-number="12.1.10" class="anchored" data-anchor-id="elasticity-and-hookes-law"><span class="header-section-number">12.1.10</span> Elasticity and Hooke’s Law</h3>
+<ul>
+<li>Force applied to a spring is proportional to extension (within elastic limit): <span class="math display">\[
+F = k x
+\]</span> Where:</li>
+<li><span class="math inline">\(k\)</span> = spring constant</li>
+<li><span class="math inline">\(x\)</span> = extension</li>
+</ul>
+</section>
+<section id="moments-and-equilibrium" class="level3" data-number="12.1.11">
+<h3 data-number="12.1.11" class="anchored" data-anchor-id="moments-and-equilibrium"><span class="header-section-number">12.1.11</span> Moments and Equilibrium</h3>
+<ul>
+<li><p>Moment (torque): <span class="math display">\[
+\tau = F d
+\]</span> Where <span class="math inline">\(d\)</span> is perpendicular distance from pivot.</p></li>
+<li><p>Conditions for equilibrium:</p>
+<ul>
+<li>Net force = 0</li>
+<li>Net moment = 0</li>
+</ul></li>
+</ul>
+</section>
+<section id="simple-harmonic-motion-shm" class="level3" data-number="12.1.12">
+<h3 data-number="12.1.12" class="anchored" data-anchor-id="simple-harmonic-motion-shm"><span class="header-section-number">12.1.12</span> Simple Harmonic Motion (SHM)</h3>
+<ul>
+<li>Displacement varies sinusoidally: <span class="math display">\[
+x = A \cos(\omega t + \phi)
+\]</span></li>
+<li>Angular frequency: <span class="math display">\[
+\omega = 2\pi f = \sqrt{\frac{k}{m}}
+\]</span></li>
+</ul>
+</section>
+<section id="summary-table" class="level3" data-number="12.1.13">
+<h3 data-number="12.1.13" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">12.1.13</span> Summary Table</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Formula</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Velocity</td>
+<td><span class="math inline">\(v = \frac{ds}{dt}\)</span></td>
+<td>Vector</td>
+</tr>
+<tr class="even">
+<td>Acceleration</td>
+<td><span class="math inline">\(a = \frac{dv}{dt}\)</span></td>
+<td>Vector</td>
+</tr>
+<tr class="odd">
+<td>Newton’s Second Law</td>
+<td><span class="math inline">\(F = ma\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Work</td>
+<td><span class="math inline">\(W = F d \cos \theta\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Kinetic Energy</td>
+<td><span class="math inline">\(KE = \frac{1}{2} m v^2\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Potential Energy</td>
+<td><span class="math inline">\(PE = mgh\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Momentum</td>
+<td><span class="math inline">\(p = mv\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Impulse</td>
+<td><span class="math inline">\(J = F \Delta t\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Centripetal Force</td>
+<td><span class="math inline">\(F_c = \frac{mv^2}{r}\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Friction</td>
+<td><span class="math inline">\(F = \mu N\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Hooke’s Law</td>
+<td><span class="math inline">\(F = k x\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Moment (Torque)</td>
+<td><span class="math inline">\(\tau = F d\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>SHM</td>
+<td><span class="math inline">\(x = A \cos(\omega t + \phi)\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><p>Strength</p></li>
+<li><p>Bi-filar suspension</p></li>
+<li><p>Sycamore seed propeller</p></li>
+<li><p>Unrolling a carpet - whiplash</p></li>
+<li><p>Cotton reel tank</p></li>
+<li><p>Energy in a balloon</p></li>
+<li><p>Viscosity of air - oscillating table tennis ball</p></li>
+<li><p>Satellite orbits</p></li>
+<li><p>An interesting double pulley</p></li>
+<li><p>Boomerang</p></li>
+<li><p>Yo Yo</p></li>
+<li><p>Tops</p></li>
+<li><p>Party popper</p></li>
+<li><p>Planetary orbit</p></li>
+<li><p>Straw and potato</p></li>
+<li><p>Hoffnung —the bucket of bricks</p></li>
+<li><p>Racing-car tyres - different kinds of rubber</p></li>
+<li><p>Lung volume</p></li>
+<li><p>Weight suspended from a wheel - SHM</p></li>
+<li><p>Creaking furniture - plastic cups</p></li>
+<li><p>Rollers</p></li>
+<li><p>Monkey and bananas</p></li>
+<li><p>The torsion balance</p></li>
+<li><p>Rotating soap film</p></li>
+<li><p>Ropes</p></li>
+<li><p>Propeller on a wooden stick</p></li>
+</ol>
+<section id="strength" class="level4">
+<h4 class="anchored" data-anchor-id="strength">1. Strength</h4>
+<ol start="27" type="1">
+<li><p>Three coins</p></li>
+<li><p>Horseshoe and cocktail stick</p></li>
+<li><p>Toy divers</p></li>
+<li><p>Building bridges competitions</p></li>
+<li><p>A rubber sheet for gravitational fields</p></li>
+<li><p>Air brakes - trolley with card sail</p></li>
+<li><p>A simple clamp</p></li>
+<li><p>Simple pulley model</p></li>
+<li><p>Centre of percussion of an object</p></li>
+<li><p>Perpetual motion</p></li>
+<li><p>Hunter on ice</p></li>
+<li><p>Picking up objects - back to the wall</p></li>
+<li><p>Large balloon — mass of air</p></li>
+<li><p>Keys and matchbox over a dowel</p></li>
+<li><p>Air brakes and a propeller</p></li>
+<li><p>Collisions - ball bearings</p></li>
+<li><p>Water diving - unstable equilibrium</p></li>
+<li><p>Efficiency of a bicycle</p></li>
+<li><p>Conservation of angular momentum</p></li>
+<li><p>The reflection of a power ball</p></li>
+<li><p>Air pressure and marshmallows</p></li>
+<li><p>Marble tracks</p></li>
+<li><p>Rolling double cone</p></li>
+<li><p>Whirlywings</p></li>
+<li><p>Human energy demands</p></li>
+</ol>
+<p>Squeeze a set of bathroom scales to find the strength of your hands. Don’t lean on it.</p>
+<blockquote class="blockquote">
+<p>Age range: 8-13</p>
+<p>Apparatus required: •Bathroom scales</p>
+</blockquote>
+</section>
+<section id="bi-filar-suspension" class="level4">
+<h4 class="anchored" data-anchor-id="bi-filar-suspension">2. Bi-filar suspension</h4>
+<p>rod</p>
+<p>This is a useful oscillation experiment for students at higher level. A metal rod is suspended horizontally by a thread at each end and is made to oscillate in a horizontal plane by displacing one end.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Two retort stands •Thread ’Metal rod</p>
+<p>•Stop clock •Ruler</p>
+</blockquote>
+</section>
+<section id="sycamore-seed-propeller" class="level4">
+<h4 class="anchored" data-anchor-id="sycamore-seed-propeller">3. Sycamore seed propeller</h4>
+<p>This is simply a plastic propeller on a short stick. It demonstrates the principle of a propeller very well. Spinning it the right way by moving it between the palms of your hands makes it fly across the lab.</p>
+</section>
+<section id="unrolling-a-carpet---whiplash" class="level4">
+<h4 class="anchored" data-anchor-id="unrolling-a-carpet---whiplash">4. Unrolling a carpet - whiplash</h4>
+<p>A roll of carpet can be made to give a whiplash effect as you unroll it. It makes a useful introduction to the effects of whiplash of a head in car crashes, and hence the need for head rests in cars.</p>
+<p>rubber band through cotton reel</p>
+</section>
+<section id="cotton-reel-tank" class="level4">
+<h4 class="anchored" data-anchor-id="cotton-reel-tank">Cotton reel tank</h4>
+<p>This is a very old toy that can be made from a cotton reel, a slice of candle, an elastic band and a couple of matchsticks. A picture is shown in the diagram. It makes a useful example of energy conversion - stored energy in the rubber band is converted to kinetic energy in the cotton reel tank.</p>
+<blockquote class="blockquote">
+<p>long</p>
+</blockquote>
+<p>Age range: 11-14 matchstick</p>
+<blockquote class="blockquote">
+<p>Apparatus required: •Cotton reel •Match sticks (one long one) •Rubber band •Lolly stick</p>
+</blockquote>
+</section>
+<section id="energy-in-a-balloon" class="level4">
+<h4 class="anchored" data-anchor-id="energy-in-a-balloon">6. Energy in a balloon</h4>
+<p>Work out the energy in a blown up balloon either by calculation or by the energy released and converted to kinetic energy on a linear air track. Or by how much it takes to pump it up. If you pop it, how much energy goes into the kinetic energy of the fragments and how much into the sound?</p>
+<p>What is the energy in a stretched rubber sheet? How much energy is stored in a gas when its volume and pressure change?</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on the treatment</p>
+<p>Apparatus required: •Balloons •Linear air track etc.</p>
+</blockquote>
+</section>
+<section id="viscosity-of-air-with-an-oscillating-table-tennis-ball" class="level4">
+<h4 class="anchored" data-anchor-id="viscosity-of-air-with-an-oscillating-table-tennis-ball">7. Viscosity of air with an oscillating table tennis ball</h4>
+<p>The viscosity of air and its damping nature can be investigated by using a table tennis ball fixed to a length of thread and used as a pendulum.</p>
+</section>
+<section id="satellite-orbits" class="level4">
+<h4 class="anchored" data-anchor-id="satellite-orbits">8. Satellite orbits</h4>
+<p>The idea of this experiment is to draw a scale diagram for a satellite in orbit 200 km above the Earth’s surface (with 1 mm representing 2 km) - that is with an orbit radius of 6600 km, 3.3 m when scaled down. A section of orbit is drawn using a pencil fixed to a 3.3m length of string and the tangent to the arc is drawn at one point.</p>
+<p>The distance that the satellite would fall in 120 s is found using s = 1/2gt <sup>2</sup> (using t = 120 s and assuming that g is constant up to 200 km above the Earth’s surface). The distance round the orbit where such a drop occurs is measured and then the fraction of a whole orbit is worked out. The time for one whole orbit can then be found.</p>
+<p>It is important for the students to realise that the only piece of data that turns this into a real value for the satellite orbit from just a large drawing is the value for g.</p>
+<blockquote class="blockquote">
+<p>Age range: 15-18</p>
+<p>Apparatus •Pencil <sup>0</sup> 3.5 m of string •Large sheet of paper such a drawer lining paper •Metre ruler</p>
+<p>WI 13’vc11a11cvuo IvtcL11a111V&gt;</p>
+</blockquote>
+</section>
+<section id="an-interesting-pair-of-pulleys" class="level4">
+<h4 class="anchored" data-anchor-id="an-interesting-pair-of-pulleys">9. An interesting pair of pulleys</h4>
+<p>This intriguing problem uses two single pulleys. The lower pulley has a thread hung over it with a 100g on one end and a 200g mass on the other. This pulley is attached via a second thread over a second and upper pulley, which is fixed to a retort stand, to a mass of 300 g (with a little plasticine added to compensate for the mass of the first pulley). Since the masses at the two ends of the thread over the upper pulley are equal, ask the students what happens when the masses are allowed to move. With the masses quoted here the large mass moves downwards with an acceleration of g/17.</p>
+<p>To demonstrate this it is better to start off with the small masses being almost equal, otherwise their acceleration is too great.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>The theory for the general case is surprisingly complex. It can be shown that the large mass will descend if -(rm-rn2) &gt; O, which is never true, therefore al &lt; O.</p>
+<p>Using the values for the masses given above:</p>
+<p>Let the acceleration of the lower masses be +a and —a and the acceleration of the 300g mass be A. For simplicity we will take g as 10 ms-2</p>
+<p>300 gm mass: 3 - 2T= O.3A 200 gm mass: 2 -T = O.2(a-A) 100 gm mass: T - 1 = 0.1(a+A) From these three equations we can show that:</p>
+<p>A<sup>Z</sup> 0.5/0.85 = 0.588 ms <sup>2</sup></p>
+<p>Remember that we have taken g = 10 ms-2, 10/17 = 0.588 so the acceleration is g/17. If you take g = 9.81 ms-2 the acceleration becomes 0.577 ms-2</p>
+<p>Age range: 16-18, the analysis being suitable for mathematicians taking Mechanics at A level</p>
+<p>Apparatus required: <sup>o</sup> Two single pulleys •Set of slotted masses with three hangers •Thread</p>
+<p>•Retort stand •Clamp •Nail •TV and video to record the motion for later analysis or three light gates</p>
+</blockquote>
+</section>
+<section id="boomerang" class="level4">
+<h4 class="anchored" data-anchor-id="boomerang">10. Boomerang</h4>
+<p>It is not safe to throw a wooden boomerang inside the lab, but it makes a superb demonstration for the discussion of fluid flow when thrown outside. Hold it vertically with the concave side facing away from you. Polystyrene boomerangs can be used inside the school in a hall or gym.</p>
+<section id="yo-yo" class="level5">
+<h5 class="anchored" data-anchor-id="yo-yo">Yo Yo</h5>
+<p>This is a good example of conservation of angular momentum and its transfer to linear momentum. The analysis of the motion is quite complex.</p>
+</section>
+</section>
+<section id="tops" class="level4">
+<h4 class="anchored" data-anchor-id="tops">12. Tops</h4>
+<p>These are just rather nice. They can be used to demonstrate rotational motion or energy conversions - many of them will either play a tune or turn upside down! The theory of the inverting top should provoke some useful discussion.</p>
+</section>
+<section id="party-popper" class="level4">
+<h4 class="anchored" data-anchor-id="party-popper">13. Party popper</h4>
+<p>This is a good example of energy conversion - and is just a bit of fun! You can use one to demonstrate various types of energy conversion.</p>
+</section>
+<section id="planetary-orbit" class="level4">
+<h4 class="anchored" data-anchor-id="planetary-orbit">14. Planetary orbit</h4>
+<p>Use a conical pendulum to simulate a planetary orbit or better still the decay of a satellite orbit when it encounters the friction of the upper atmosphere.</p>
+<p>The decay of an orbit can also be demonstrated by using a large glass funnel. The satellite is represented by a marble spiralling in - analogous to the action of a satellite being affected by air friction in the atmosphere.</p>
+</section>
+<section id="straw-and-potato" class="level4">
+<h4 class="anchored" data-anchor-id="straw-and-potato">15. Straw and potato</h4>
+<p>Get a potato and cut it in half. Then try and push a plastic straw through one of the halves from the flat side. It’s no good - the straw just bends. Now drive the straw sharply into the flat side of the potato - it should now go straight through. A shout as you drive the straw through usually wakes up a sleepy class!</p>
+<p>Age range: 13-18 depending on treatment Apparatus required: •Potato •Plastic straw</p>
+</section>
+<section id="hoffnung-the-bucket-of-bricks" class="level4">
+<h4 class="anchored" data-anchor-id="hoffnung-the-bucket-of-bricks">16. Hoffnung — the bucket of bricks</h4>
+<p>The recording of Gerald Hoffnung at the Oxford union has a wonderful account of a bricklayer. He has a bucket of bricks at the top of some scaffolding and tries to get it to the ground. The resulting account as the bucket, initially heavier than him so pulling him off the ground and then splitting open as it lands, spilling out the bricks is fascinating and hilarious. It makes superbly entertaining material for the resultant forces and pulleys section of any 16-19 course.</p>
+</section>
+<section id="racing-car-wres---different-kinds-of-rubber" class="level4">
+<h4 class="anchored" data-anchor-id="racing-car-wres---different-kinds-of-rubber">17. Racing-car Wres - different kinds of rubber</h4>
+<p>On a dry racetrack racing cars use slick tyres. They are smooth and so before the start they are warmed up by using heated jackets and then by repeated swerves on the track to create heat from friction. This melts a small quantity of rubber and so they feel sticky to the touch. While the track stays dry this ‘stickiness’ gives them a good grip. Not so effective on a wet track!</p>
+</section>
+<section id="lung-volume" class="level4">
+<h4 class="anchored" data-anchor-id="lung-volume">18. Lung volume</h4>
+<p>It is possible to get an estimate of your lung volume by blowing into water filled measuring cylinders that have been inverted over a tank of water. The amount of water blown out gives an approximate value for your lung volume.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-13</p>
+<p>Apparatus required: •Sink full of water •A number of large measuring cylinders or cans</p>
+</blockquote>
+</section>
+<section id="weight-suspended-from-a-wheel---shm" class="level4">
+<h4 class="anchored" data-anchor-id="weight-suspended-from-a-wheel---shm">19. Weight suspended from a wheel - SHM</h4>
+<p>Suspend a weight by a long string from the rim of a bike wheel. Rotate the wheel and use the distance from the ground as a measure of the SHM. Measurements of the sideways movement of the weight are also worth taking.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus •Bicycle wheel mounted on an axle •Thread •Weight (such as a pendulum bob) Wilscellaneous Wiecnarucs</p>
+</blockquote>
+</section>
+<section id="creaking-furniture---plastic-cups" class="level4">
+<h4 class="anchored" data-anchor-id="creaking-furniture---plastic-cups">20. Creaking furniture - plastic cups</h4>
+<p>This demonstrates the expansion and contraction of furniture at night as the house cools down. We do the reverse - a warming up. Get two plastic cups and glue them together in the fridge with their tops together. Take them from the fridge to the lab - they should warm up and creak as they expand!</p>
+</section>
+<section id="rollers" class="level4">
+<h4 class="anchored" data-anchor-id="rollers">21. Rollers</h4>
+<p>This experiment involving rolling two cylinders down a plane, one with a heavy axle and one with a heavy rim (both the same total mass), can be used as either an interesting demonstration for the younger pupils to make them think, or as an analysis of moments of inertia for the older students. The can with a heavy centre accelerates faster than one with a heavy rim. Use tins loaded with extra mass at different points.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+<p>Moment of inertia of a solid cylinder (the heavy axle) = Mr<sup>2</sup>/2 where r is the radius of the axle Moment of inertia of the heavy rim = Mr where r is the radius of the can</p>
+<p>Age range: 13-18 depending on treatment</p>
+<p>Apparatus required: •Ramp •Two cans loaded one at the centre and one at the rim</p>
+</blockquote>
+</section>
+<section id="monkey-and-bananas" class="level4">
+<h4 class="anchored" data-anchor-id="monkey-and-bananas">22. Monkey and bananas</h4>
+<p>A monkey hangs on to a weightless rope that is passing over a frictionless pulley. On the other end of the rope is a bunch of bananas of exactly the same mass as the monkey. What happens if the monkey begins to climb the rope towards the bananas?</p>
+<p>The bananas also move upwards with the same acceleration as the monkey. If the monkey now lets go of the rope both the bananas and the monkey fall - the distance between them remaining the same. If the monkey now grabs hold of the rope again - it may burn its hands they both come to rest.</p>
+<p>I am grateful to a colleague who suggested a further twist to this problem. What happens if the monkey reaches across and starts to eat the bananas?</p>
+</section>
+<section id="the-torsion-balance" class="level4">
+<h4 class="anchored" data-anchor-id="the-torsion-balance">23. The torsion balance</h4>
+<p>A home-made torsion balance made by a wire stretched between two supports with a light rod such as a plastic straw fixed to it at right angles can be used as an accurate balance. (A clamp can be a useful way of tensioning the wire.) It can also be used to demonstrate an accurate method of force measurement or investigation of the shear modulus of a metal</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Wire •Two retort stands bosses and clamps •G clamps •Light rod or plastic straw</p>
+<p>•Slotted masses (light)</p>
+</blockquote>
+</section>
+<section id="rotating-soap-film" class="level4">
+<h4 class="anchored" data-anchor-id="rotating-soap-film">24. Rotating soap film</h4>
+<p>Use a tin can with a soap film across the end and with its axis horizontal so that the soap film is vertical. Fix the can to an electric drill and spin it. The film should be illuminated by a 100 W lamp from behind a translucent screen.</p>
+<p>Age range: 11-18 Apparatus required: •Soap solution •Electric drill •Tin can •Lamp •Screen</p>
+</section>
+<section id="ropes" class="level4">
+<h4 class="anchored" data-anchor-id="ropes">25. Ropes</h4>
+<p>You are asked to remove two ropes from a warehouse. The problem is that the two ropes are suspended through two small holes in the ceiling. The idea is to cut down as much rope as possible - the holes are too small for you to get your hands through and the height of the holes above the ground is too great for you to jump down from there without serious injury!</p>
+<p>One possible solution: Climb up one rope - cut the other near the ceiling, tying the piece that you cut off to your rope near the top. Make a loop in the remaining piece of the other rope and then feed the cut off piece through it. Hold on to this piece and your rope together, and then cut your rope near the ceiling. Holding onto both ropes, slide down and then pull the double rope down through the loop!</p>
+</section>
+<section id="propeller-on-a-wooden-stick" class="level4">
+<h4 class="anchored" data-anchor-id="propeller-on-a-wooden-stick">Propeller on a wooden stick</h4>
+<p>This wonderfully simple toy is just a serrated edged stick of about lcm cross section, about 20 cm long and with a thin wooden propeller nailed to one end, but the Physics in it is fairly complex. Rub a small piece of dowel along one edge of the serrated part of the stick, and the propeller will rotate. Rubbing it along the other side can make the propeller rotate the other way.</p>
+<blockquote class="blockquote">
+<p>Theory</p>
+<p>Elliptical standing waves are set up in the rod caused by the asymmetric vibrations due to the serrated edge.</p>
+</blockquote>
+</section>
+<section id="three-coins" class="level4">
+<h4 class="anchored" data-anchor-id="three-coins">27. Three coins</h4>
+<p>The conservation of momentum and Newton’s cradle can also be demonstrated by three coins on the table. Place two together, holding one down with your finger. Slide the third coin towards this coin so that a collision takes place. The third coin comes to rest while the first coin flies off.</p>
+<p>A larger scale version of this can be demonstrated in a game of croquet. Place two croquet balls in contact with each other and put your foot on top of one of them. Then strike this ball with the mallet — the free ball moves off.</p>
+</section>
+<section id="horseshoe-and-cocktail-stick" class="level4">
+<h4 class="anchored" data-anchor-id="horseshoe-and-cocktail-stick">Horseshoe and cocktail stick</h4>
+<p>A cardboard horseshoe stands leaning against a cocktail stick as shown in the diagram. The problem is to pick up the horseshoe and the cocktail stick with just the other cocktail stick without touching anything with your hands except the second stick.</p>
+<p>One possible solution: Push the second stick between the inclined one and the horseshoe. Allow the horseshoe to fall forwards slightly so that the supporting stick protrudes below it, resting on the other stick. Then use this to pick up both the first cocktail stick and the horseshoe.</p>
+<blockquote class="blockquote">
+<p>Age range: 11- Adult</p>
+</blockquote>
+<p>Apparatus •Cardboard horseshoe shape •Two cocktail sticks</p>
+<blockquote class="blockquote">
+<p>Wilscelldneous lwecnantcs</p>
+</blockquote>
+</section>
+<section id="toy-divers" class="level4">
+<h4 class="anchored" data-anchor-id="toy-divers">29. Toy divers</h4>
+<p>Some toyshops sell plastic toy divers which you can blow into via a tube to make them rise, or suck to make them sink. They are rather like variable Cartesian divers.</p>
+</section>
+<section id="building-bridges-competitions" class="level4">
+<h4 class="anchored" data-anchor-id="building-bridges-competitions">30. Building bridges competitions</h4>
+<p>This is worth doing both for general interest and for a study of the structures sections of syllabuses. It is a useful way of getting the students to think about moments and vector analysis. Plastic straws are quite good. Fixing them together is a problem - we have even sewn them together with thread!</p>
+</section>
+<section id="a-rubber-sheet-for-gravitational-fields" class="level4">
+<h4 class="anchored" data-anchor-id="a-rubber-sheet-for-gravitational-fields">31. A rubber sheet for gravitational fields</h4>
+<p>A rubber sheet fixed over an old bike wheel (with the spokes removed) makes a very good demonstration of a simulated gravitational field. The sheet should be fixed to the wheel by a piece of string tied tightly around the rim.</p>
+<p>A set of slotted weights hanging from the centre of the sheet allows you to simulate the change in mass of the central object (planet or star) very easily. Then just roll in a ball bearing (to represent an orbiting satellite or planet), and try to get it to move along a tangent to a circle about the central mass. Using a single heavy ball bearing in the centre rather than the slotted masses shows an effect on both the central mass and that approaching from the outside since the central mass moves because it is not so massive as the weights.</p>
+<p>The depression of the sheet as a heavy ball bearing rolls across it simulates the curvature of space formed by the gravitational field of a massive object.</p>
+<p>An alternative method is to use a large coffee tin with the bottom cut out and with one end covered with a sheet of cling film. The whole apparatus can then be placed on an OHP so that it can be seen by the whole class.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-18</p>
+<p>Apparatus required: •Bicycle wheel with the spokes removed <sup>o</sup>Thin rubber sheet ’Set of slotted masses •Various ball bearings</p>
+</blockquote>
+</section>
+<section id="air-brakes---trolley-with-card-sail" class="level4">
+<h4 class="anchored" data-anchor-id="air-brakes---trolley-with-card-sail">32. Air brakes - trolley with card sail</h4>
+<p>As an extension to the investigation of a toy car running down a ramp try using air brakes. Tie a piece of thread to the car and wrap the other end round a glass rod that stands in a test tube. Fix a piece of card (postcards are ideal) to the top of the rod to act as an air brake. As the car runs down the ramp the rod rotates, so rotating the card. Investigate the effect of different sized pieces of card on the acceleration of the car. Suggest plotting a graph of the square of the velocity after a given distance against the inverse of the area of the card.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment</p>
+<p>Apparatus required: •Toy car •Cardboard •Timing mechanisms •Wooden board to act as a slope</p>
+</blockquote>
+</section>
+<section id="a-simple-clamp" class="level4">
+<h4 class="anchored" data-anchor-id="a-simple-clamp">33. A simple clamp</h4>
+<p>We have used two small blocks of wood joined with a bolt and wing nut as holders for all sorts of small items they are especially useful for pendulum threads and hacksaw blades. The pressure on the item held can be altered by tightening or loosening the nut, so enabling a thread to be pulled through while still supporting a pendulum bob.</p>
+</section>
+<section id="simple-pulley-model" class="level4">
+<h4 class="anchored" data-anchor-id="simple-pulley-model">34. Simple pulley model</h4>
+<p>An interesting and surprising example of the mechanical advantage of a pulley system can be shown by the following demonstration. Two rods are held parallel by two people (a couple of retort stand rods will do fine for this). A piece of string is tied to one and then looped a few times round both.</p>
+<p>If you hold the other end of the string you will be able to pull the rods together no matter how hard the people holding the rods try to prevent you. If there is little friction between the rods and the string, the more loops you can make the better it will work.</p>
+<p>You should see that the result is exactly analogous to a real pulley system with a large velocity ratio and hence a large mechanical advantage for a given efficiency.</p>
+<blockquote class="blockquote">
+<p>Theory:</p>
+</blockquote>
+<p>For a pulley system Efficiency = Mechanical advantage/Velocity ratio</p>
+<blockquote class="blockquote">
+<p>Age range: 11-16 depending on treatment</p>
+<p>Apparatus required: •Two pieces of broom handle, towel rail or retort stand rods •Smooth string</p>
+</blockquote>
+</section>
+<section id="centre-of-percussion-of-an-object" class="level4">
+<h4 class="anchored" data-anchor-id="centre-of-percussion-of-an-object">35. Centre of percussion of an object</h4>
+<p>Suspend a 1 m ruler from the 5 cm mark on a matchstick. Hit it sharply with a hammer two thirds of the way down the ruler from the match. What happens?</p>
+<p>Try this at a variety of points and relate to the forces felt by games players in cricket, baseball and rounders.</p>
+<blockquote class="blockquote">
+<p>Age range: 14-18</p>
+<p>Apparatus required: <sup>0</sup> 1m ruler •Retort stand, boss and clamp •Match stick •Hammer</p>
+</blockquote>
+</section>
+<section id="perpetual-motion" class="level4">
+<h4 class="anchored" data-anchor-id="perpetual-motion">36. Perpetual motion</h4>
+<p>A disc of wood is mounted so that its centre is held by an axle in the wall of a tank of water, half the disc being in air and the other half in water. The side in the water experiences an upthrust. (We will assume that there is a perfect frictionless seal so that no water leaks out!) Why doesn’t the disc rotate?</p>
+</section>
+<section id="hunter-on-ice" class="level4">
+<h4 class="anchored" data-anchor-id="hunter-on-ice">37. Hunter on ice</h4>
+<p>This is an interesting example of equal and opposite forces. Imagine that you are standing on a frozen lake holding a rope, the other end of which is tied to a sleepy polar bear!</p>
+<p>You pull on the rope and if there is negligible friction you and the bear both move - as you would expect. Because of its greater mass the bear accelerates less rapidly than you do, but where do you meet? In fact it can be proved that if there is no friction you and the bear will always meet at the same place where mdl = Md2. Your mass is m and you move dl,• the bear, mass M, moves d2.</p>
+</section>
+<section id="picking-up-obiects-with-your-back-to-the-wall" class="level4">
+<h4 class="anchored" data-anchor-id="picking-up-obiects-with-your-back-to-the-wall">38. Picking up obiects with your back to the wall</h4>
+<p>An interesting example of balancing and the centre of mass of the human body can be shown by getting a pupil to stand with their heels against a wall and then asking them to pick up an object placed say half a metre in front of them. This is not possible because of the position of the body’s centre of mass. You cannot counterbalance the ‘forward lean’.</p>
+</section>
+<section id="large-balloon---mass-of-air" class="level4">
+<h4 class="anchored" data-anchor-id="large-balloon---mass-of-air">39. Large balloon - mass of air</h4>
+<p>Use a large rubber balloon - one that you can blow up to a diameter of over 30 cm - to measure the mass. (One with a volume about 0.03 m <sup>3</sup> contains about 36 g of air.) There may be a problem here, however. What about the change of pressure as the balloon is inflated?</p>
+</section>
+<section id="keys-and-matchbox-over-a-dowel" class="level4">
+<h4 class="anchored" data-anchor-id="keys-and-matchbox-over-a-dowel">40. Keys and matchbox over a dowel</h4>
+<p>Tie a bunch of keys to one end of a length of thread and a matchbox to the other. Loop the thread over a piece of dowel rod fixed horizontally in a boss. Hold the matchbox so that it is on the same level as the dowel rod with the keys hanging vertically down wards. Let go. The keys fall and the matchbox swings down, but the thread wraps itself around the dowel rod.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18 depending on treatment</p>
+<p>Apparatus required: •Retort stand and boss •Wooden dowel rod •Match box •Thread •Bunch of keys or 50g mass</p>
+</blockquote>
+</section>
+<section id="air-brakes-and-a-propeller" class="level4">
+<h4 class="anchored" data-anchor-id="air-brakes-and-a-propeller">41. Air brakes and a propeller</h4>
+<p>A very good demonstration of air brakes is to make a windmill from a set of card vanes fixed in a cork which is then mounted over a glass tube with a closed end. This tube is fitted loosely on a glass rod. A thread wrapped round this is hung over a pulley and fixed to an accelerating mass or to a car on a ramp. Differing damping effects can be produced by changing the size of the vanes.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-15</p>
+<p>Apparatus required: ’Cork •Cardboard •Glass tube •Glass rod and pivot •Thread •Car •Ramp •Pulley</p>
+</blockquote>
+</section>
+<section id="collisions---ball-bearings" class="level4">
+<h4 class="anchored" data-anchor-id="collisions---ball-bearings">42. Collisions - ball bearings</h4>
+<p>Use a magnet and two ball bearings - one large and one small. Roll them together towards the magnet with the large one in the lead. A ‘magnetic gun’ results. (See the magnetic accelerator)</p>
+</section>
+<section id="water-divining---unstable-equilibrium" class="level4">
+<h4 class="anchored" data-anchor-id="water-divining---unstable-equilibrium">43. Water divining - unstable equilibrium</h4>
+<p>Is this really all it is - unstable twigs? A fascinating investigation could result here.</p>
+</section>
+<section id="efficiency-of-a-bicycle" class="level4">
+<h4 class="anchored" data-anchor-id="efficiency-of-a-bicycle">44. Efficiency of a bicycle</h4>
+<p>Mount the bicycle upside down and by measuring the mechanical advantage and its velocity ratio work out the efficiency of the bike. The mechanical advantage is found by hanging a mass on one of the pedals while finding out the force applied at the rim of the wheel to counteract the weight of the mass using a Newton meter.</p>
+<p>The velocity ratio is calculated by measuring the distance moved by a point on the rim of the wheel for one rotation of the pedal.</p>
+<blockquote class="blockquote">
+<p>Theory</p>
+<p>Efficiency of the bike = [Mechanical advantage/Velocity ratio] x 100</p>
+<p>Age range: 14-16</p>
+<p>Apparatus required: •Bicycle •Sets of large slotted masses •Newton meter •String •Retort stands and clamps</p>
+</blockquote>
+</section>
+<section id="conservation-of-angular-momentum" class="level4">
+<h4 class="anchored" data-anchor-id="conservation-of-angular-momentum">45. Conservation of angular momentum</h4>
+<p>This can be demonstrated by a number of simple experiments.</p>
+<ol type="a">
+<li><p>Stand someone on a rotatable table with their arms outstretched. Give them a gentle push so that they start rotating and then ask them to pull their arms into their sides - the rate of spin increases since their moment of inertia has decreased, and the spin rate must get larger to conserve angular momentum. (It works even better if they hold a kilogram mass in each hand!)</p></li>
+<li><p>Use a conical pendulum fixed to the top of a broomstick. The pendulum bob is given a push so that it begins to move in a circle, the string wrapping itself round the stick and the rotation rate increasing as the radius of the orbit gets less.</p></li>
+<li><p>A cylinder is fixed to a string that is suspended from a beam. The cylinder is held on its side !and spun round. As it falls with its axis vertical the rate of spin increases.</p></li>
+<li><p>Stand a pupil on the rotating table outside the laboratory and get them to throw a 1 kg sandbag. They will rotate in the opposite direction to that in which the sandbag is thrown.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Always stand the rotating table on the floor. Make sure that the sandbag is thrown gently, and that the rest of the class stand well back.</p>
+<p>Age range: 11-16 Apparatus required: •Rotating table <sup>0</sup> 1 kg sandbag ’Cylinder •String</p>
+</blockquote>
+</section>
+<section id="the-reflection-of-a-power-ball" class="level4">
+<h4 class="anchored" data-anchor-id="the-reflection-of-a-power-ball">46. The reflection of a power ball</h4>
+<p>Find a hard floor and a flat topped table. Throw a power ball (without spinning it) so that it hits the floor just outside the table and then bounces up under the table and hits the underneath of the table top (see diagram).</p>
+<p>There is nothing unusual about this, but it is when the ball hits the underneath of the table top that something rather strange happens. Instead of reflecting off at the same angle the ball returns along its original path!</p>
+<p>This can be explained by thinking about the spin of the ball. When it hits the ground at an angle the frictional force between the ball and the ground makes the ball spin (as shown in the inset). As it hits the underneath of the tabletop it is this very spin coupled with another frictional force that returns the ball along its original path.</p>
+<p>Now try wetting the ball. This lowers the friction, reduces the spin and the ball bounces out at the far end of the table!</p>
+<p>This is a fascinating experiment on collisions. I have yet to experiment using different balls such as table tennis balls, hockey balls and tennis balls.</p>
+<blockquote class="blockquote">
+<p>Age range: 16-19</p>
+<p>Apparatus required: •Flat topped table •Power ball •Hard floor</p>
+<p><u>47. Air pressure and marshmallows.</u></p>
+</blockquote>
+<p>Put some cylindrical marshmallows in an empty wine bottle. Then use a ‘vacuvin’ and stopper to reduce the air pressure in the bottle. As you do so the marshmallows will expand because the air within them is at a greater pressure than the air in the bottle.When air is allowed back into the bottle by taking out the stopper they will ‘re-inflate’. This is a good example of the change in the volume of a gas with pressure.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-16</p>
+<p>Apparatus required: •Wine bottle •Vacuvin and stopper •Cylindrical marshmallows</p>
+</blockquote>
+</section>
+<section id="marble-tracks" class="level4">
+<h4 class="anchored" data-anchor-id="marble-tracks">48. Marble tracks</h4>
+<p>There are a number of mechanics experiments where you will need to roll marbles down a track — to investigate collisions, to measure g, to check the best shaped path to give the shortest transition time between two points and so on. Two possible tracks are:</p>
+<ol type="a">
+<li><p>a length of plastic tubing with an internal diameter a bit larger than a marble</p></li>
+<li><p>a piece of plastic electrical trunking (either the base or the clip-on cover) —the width of this could be either a bit bigger or a bit smaller than a marble depending on whether you want the marble to sit in the track or roll along the top</p></li>
+</ol>
+<p>Both these items can be bought really cheaply from most DIY shops.</p>
+<p>Age range: 11-19 Apparatus required: •Plastic tubing ’Electrical trunking</p>
+</section>
+<section id="defying-gravity-a-rolling-double-cone" class="level4">
+<h4 class="anchored" data-anchor-id="defying-gravity-a-rolling-double-cone">49. Defying gravity — a rolling double cone</h4>
+<p>Make a double cone out of wood by fixing two funnels together ‘face to face’. Make two slanted and tapering support ramps so that you have the arrangement shown in the diagram. When the double cone is put on the lower end of the ramp it seems to roll uphill — apparently defying gravity.</p>
+<p>This can be explained by thinking about what is happening to the centre of gravity of the rolling double cone. At the bottom of the ramp the cone is supported near its centre and so its centre of gravity is high (See diagram 1). At the top of the ramp the cones are supported nearer their tops and so their centre of gravity is lower (See diagram 2). The double cone has actually rolled so that its centre of gravity is nearer the ground.</p>
+<blockquote class="blockquote">
+<p>Age range: 11-18</p>
+<p>Apparatus required: ’Double cone •Ramp</p>
+</blockquote>
+</section>
+<section id="whirlywings" class="level4">
+<h4 class="anchored" data-anchor-id="whirlywings">50. Whirlywings</h4>
+<p>These make a fascinating basis for an investigation for pupils and teachers of almost any age — from six to sixty years of age! A whirlywing is simply a rectangular piece of paper or card. You hold it with the long side horizontal and with the plane of the whirlywing almost vertical and then drop it. As it falls it spins about its long axis.</p>
+<p>Investigations can include the effect of size, shape or material on the distance flown, the time of flight or the shape of the path. The aerodynamics of the whirlywing can be investigated by older students.</p>
+<p>Interested students might try making a revojet — a plane with each wing a rotating whirlywing. I am grateful to Bob for this idea.</p>
+<blockquote class="blockquote">
+<p>Age range: 6— 60</p>
+<p>Apparatus required: •Rectangular piece of paper or card •Scissors •Ruler or tape ’Stopwatch</p>
+</blockquote>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Statics.html" class="pagination-link" aria-label="Statics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Astronomy.html" class="pagination-link" aria-label="Astronomy">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Astronomy</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2025, Joe Rowing</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jrowing">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/jrowing.com">
+      <i class="bi bi-megaphone" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.jrowing.com">
+      <i class="bi bi-file-earmark" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

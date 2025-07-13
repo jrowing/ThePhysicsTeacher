@@ -22,6 +22,7 @@ book:
        - index.qmd
        - PhyPhox.qmd
        - PhET.qmd
+       - Scientific.qmd
     - part: "The Basics"
       chapters:
         - BasicPhysics.qmd

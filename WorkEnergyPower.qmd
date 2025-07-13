@@ -82,7 +82,7 @@ General theory for this section:
 ### Summary Table
 
 | Concept | Formula | Units |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Work | $W = F d \cos \theta$ | joule (J) |
 | Kinetic Energy | $E_k = \frac{1}{2} m v^2$ | joule (J) |
 | Gravitational Potential | $E_p = m g h$ | joule (J) |
@@ -90,7 +90,7 @@ General theory for this section:
 | Power | $P = \frac{E}{t}$ or $P = F v$ | watt (W) |
 | Efficiency | $\frac{\text{useful}}{\text{input}} \times 100\%$ | percent (%) |
 
-## Stories to enritch
+## Stories to enrich
 
 ### Hero’s Steam Engine: The First Work Done by Steam
 
@@ -124,18 +124,22 @@ James Prescott Joule carefully measured how much work was done by falling weight
 
 The paddle-wheel experiment seems to be straightforward, but attempts to replicate it from Joule’s methodological description highlight either his prowess as an experimental scientist or his talents for inventive description. Joule’s instructions require an experimenter to use pulleys to raise and then drop two 13 kg masses 20 times within a 35-minute period. Between each winding, the experimenter must pause to take temperature readings from behind a wooden shield to prevent heating by their body affecting the experiment.
 
-His gravestone, in Sale, Greater Manchester, has the number 772.55 engraved on it, the magnitude of work required to heat a pound of water by one degree in foot-pounds
+His gravestone, in Sale, Greater Manchester, has the number 772.55 engraved on it, the magnitude of work required to heat a pound of water by one degree in foot-pounds.
+
+![](images/clipboard-4279738797.png){fig-align="center"}
 
 ### The Boiling Amazon
 
 For hundreds of years, legends spoke of a boiling river in the Amazonian jungle. In 2011, geoscientist Andrés Ruzo rediscovered and began studying the river. The average temperature of the water is 86°C and is heated by hot springs powered by geological fault lines.
+
+{{< video https://www.youtube.com/watch?v=k4N2SxUZwiU >}}
 
 ### The Human Body: A Power Plant
 
 The average human at rest produces about 100 watts of power—roughly the same as a light bulb. But a sprinter can output over 1,000 watts in a short burst. Our bodies convert chemical energy from food into mechanical work and heat. Understanding this helped develop sports science and ergonomics.
 
 | **Activity** | **Energy expenditure (kJ per hour per kg of body mass)** |
-|----|----|
+|------------------------------------|------------------------------------|
 | Talking or talking on the phone, reclining | 4 |
 | Occupation, office work in general | 6 |
 | Studying, general, including reading and/or writing (sitting) | 7.5 |
@@ -157,6 +161,8 @@ One of the misconceptions that appears commonly is the need to push an object to
 
 Simmilar things can be done by comparing the height drop of the cresta-run with the final velocity of the sledders. In many parts of the UK you'll see escape lanes filled with gravel at the sides of steep hills to stop runaway traffic. There are some spectacular videos of these in action on youtube.
 
+{{< video https://www.youtube.com/watch?v=C0BxORWTD7s >}}
+
 For a car of mass m travelling down a ramp from a height h and reaching a speed v at the bottom:
 
 Loss of kinetic energy as it brakes to a stop on the carpet = Braking force (F) x Braking distance (d)
@@ -169,21 +175,92 @@ If we use the velocity and therefore the kinetic energy at the base of the ramp 
 
 $$ \text{Kinetic energy} = 1/2 mv^{2} = Fd$$
 
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+- Traditional lab trolleys or some larger toy cars work best
+- Ramps 
+- Squares of carpet/a carpeted room
+- Rulers
+
+Optional:
+- Lightgates
+- Stopwatches
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
+
 ### Crumple zones
 
-I like to illustrate the crumple-zone with a little competition. I place a solid block at the base of a ramp down which cars can be rolled. Students have eg. 20 minutes, a meter of tape and 5 sheets of A4 paper with which to reduce the impact of the car on the block. It's fun to measure this with an accelerometer (you could use a phone and phy-phox) or challenge students to protect an egg passenger on the top of the cart.
+I like to illustrate the crumple-zone with a little competition. I place a solid block at the base of a ramp down which cars can be rolled. Students have eg. 20 minutes, a meter of tape and 5 sheets of A4 paper with which to reduce the impact of the car on the block. It's fun to measure this with an accelerometer (you could use a phone and phy-phox) or a force meter. For a less precise (but more fun version) challenge students to protect an egg passenger on the top of the cart.
 
 Either way there's lots of opportunity to relate GPE to KE to work done and link these ideas with impulse and newton's second law.
 
 The speed ($v$) at which the cylinder (crumple zone) hits the floor (a solid block) can be found from: $$ v = \sqrt{2gh} $$
 
-where: - $h$ is the high fallen and - $g$ is the acceleration due to gravity (10 $ms^{-2}$).
+where: 
+
+ - $h$ is the high fallen and 
+ - $g$ is the acceleration due to gravity (9.81 $ms^{-2}$).
+
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+- Traditional lab trolleys or some larger toy cars work best
+- Ramps 
+- Materials for crash barriers/crumple zones
+- Egg
+
+Optional:
+- Datalogging forcemeter
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::
 
 ### Are you more powerful than Yoda?
 
 The core of this investiagation is a classic experiment to measure a pupil's power - they carry their own mass (themselves) up a known height. The pupils run up a flight of stairs of known height and measure the time that they take to do it. They then can measure their own weight or use "the international standard physicist mass[^workenergypower-1]" of 80Kg and so calculate the work done and the power that they developed. Carrying a rucksack loaded with books will increase their weight.
 
-[^workenergypower-1]: Yes, I made it up but it's good to allow students to avoid mass/self image issues
+[^workenergypower-1]: Yes, I made it up but it's good to allow students to avoid mass/self image issues.
 
 The second part of this was inspired by the wonderful <https://what-if.xkcd.com/3/>. In turn that was inspired by the great SMBC comic exploring the geopolitical consequences of having Superman turn a crank to provide an unlimited source of energy.
 
@@ -201,8 +278,38 @@ We go over footage of the scene (lots of sources on youtube) and we time the X-W
 
 Lastly, we need to know the strength of gravity on Dagobah. Wookieepeedia has a catalog of such things and informs us that the surface gravity on Dagobah is 0.9g. Combining this with the X-Wing mass and lift rate gives us our peak power output:
 
-Note that in the experiment it's advisable to only allow one pupil at a time to run up the stairs. A slope is better if you have one available. I always give a good warning about taking care, wearing sensible footwear etc. If you think your class are likely to be over entheusiastic which would lead to falls and injuries, please skip this. An accessible alternative is to lift a heavy mass through a measured distance with one or two hands, again the mass should be light enough to not cause injury and no pupil should lift a weight higher than their own shoulders. Warn of back damage here.
+Note that in the experiment it's advisable to only allow one pupil at a time to run up the stairs. A slope is better if you have one available. I always give a good warning about taking care, wearing sensible footwear etc. If you think your class are likely to be over enthusiastic which would lead to falls and injuries, please skip this. An accessible alternative is to lift a heavy mass through a measured distance with one or two hands, again the mass should be light enough to not cause injury and no pupil should lift a weight higher than their own shoulders. Warn of back damage here.
 
-> Age range: 13-16
->
-> Apparatus required: •Bathroom scales 'Flight of stairs •Stop watch •Measuring tape or ruler •Heavy mass such as a bucket of sand
+
+
+::::::: {.callout-note collapse="true"}
+## Practical Info:
+
+:::::: columns
+::: {.column width="45%"}
+**Equipment**
+
+- Stairs
+- Rulers
+- Stopwatches
+
+Optional:
+- Scales (you can buy scales that read in Newtons which can help get past the issues of mass-sensitivity)
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Age range / Keystage**
+
+KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+
+KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+
+KS5: {{< fa star >}} {{< fa star >}} {{< fa star >}}
+:::
+::::::
+:::::::

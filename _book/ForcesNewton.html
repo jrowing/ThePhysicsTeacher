@@ -41,6 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-604c3d4c4a4e540f9ea15e4aba1a9bab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -436,13 +438,15 @@ window.Quarto = {
   <ul>
   <li><a href="#basic-theory" id="toc-basic-theory" class="nav-link active" data-scroll-target="#basic-theory"><span class="header-section-number">6.1</span> Basic Theory</a>
   <ul>
-  <li><a href="#newtons-first-law-law-of-inertia" id="toc-newtons-first-law-law-of-inertia" class="nav-link" data-scroll-target="#newtons-first-law-law-of-inertia"><span class="header-section-number">6.1.1</span> Newton’s First Law (Law of Inertia)</a></li>
-  <li><a href="#newtons-second-law-law-of-acceleration" id="toc-newtons-second-law-law-of-acceleration" class="nav-link" data-scroll-target="#newtons-second-law-law-of-acceleration"><span class="header-section-number">6.1.2</span> Newton’s Second Law (Law of Acceleration)</a></li>
-  <li><a href="#newtons-third-law-action-reaction" id="toc-newtons-third-law-action-reaction" class="nav-link" data-scroll-target="#newtons-third-law-action-reaction"><span class="header-section-number">6.1.3</span> Newton’s Third Law (Action-Reaction)</a></li>
-  <li><a href="#implications-and-applications" id="toc-implications-and-applications" class="nav-link" data-scroll-target="#implications-and-applications"><span class="header-section-number">6.1.4</span> Implications and Applications</a></li>
-  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">6.1.5</span> Summary Table</a></li>
+  <li><a href="#mass" id="toc-mass" class="nav-link" data-scroll-target="#mass"><span class="header-section-number">6.1.1</span> Mass</a></li>
+  <li><a href="#weight" id="toc-weight" class="nav-link" data-scroll-target="#weight"><span class="header-section-number">6.1.2</span> Weight</a></li>
+  <li><a href="#newtons-first-law-law-of-inertia" id="toc-newtons-first-law-law-of-inertia" class="nav-link" data-scroll-target="#newtons-first-law-law-of-inertia"><span class="header-section-number">6.1.3</span> Newton’s First Law (Law of Inertia)</a></li>
+  <li><a href="#newtons-second-law-law-of-acceleration" id="toc-newtons-second-law-law-of-acceleration" class="nav-link" data-scroll-target="#newtons-second-law-law-of-acceleration"><span class="header-section-number">6.1.4</span> Newton’s Second Law (Law of Acceleration)</a></li>
+  <li><a href="#newtons-third-law-action-reaction" id="toc-newtons-third-law-action-reaction" class="nav-link" data-scroll-target="#newtons-third-law-action-reaction"><span class="header-section-number">6.1.5</span> Newton’s Third Law (Action-Reaction)</a></li>
+  <li><a href="#implications-and-applications" id="toc-implications-and-applications" class="nav-link" data-scroll-target="#implications-and-applications"><span class="header-section-number">6.1.6</span> Implications and Applications</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">6.1.7</span> Summary Table</a></li>
   </ul></li>
-  <li><a href="#stories-to-enritch" id="toc-stories-to-enritch" class="nav-link" data-scroll-target="#stories-to-enritch"><span class="header-section-number">6.2</span> Stories to enritch</a>
+  <li><a href="#stories-to-enrich" id="toc-stories-to-enrich" class="nav-link" data-scroll-target="#stories-to-enrich"><span class="header-section-number">6.2</span> Stories to enrich</a>
   <ul>
   <li><a href="#newtons-apple-a-story-of-stillness-and-insight" id="toc-newtons-apple-a-story-of-stillness-and-insight" class="nav-link" data-scroll-target="#newtons-apple-a-story-of-stillness-and-insight"><span class="header-section-number">6.2.1</span> Newton’s Apple: A Story of Stillness and Insight</a></li>
   <li><a href="#the-horse-and-cart-debate-that-divided-philosophers" id="toc-the-horse-and-cart-debate-that-divided-philosophers" class="nav-link" data-scroll-target="#the-horse-and-cart-debate-that-divided-philosophers"><span class="header-section-number">6.2.2</span> The Horse and Cart Debate That Divided Philosophers</a></li>
@@ -453,24 +457,28 @@ window.Quarto = {
   <ul>
   <li><a href="#newtons-2nd-law-experiment" id="toc-newtons-2nd-law-experiment" class="nav-link" data-scroll-target="#newtons-2nd-law-experiment"><span class="header-section-number">6.3.1</span> Newton’s 2nd Law experiment</a></li>
   <li><a href="#sling-shot-theory" id="toc-sling-shot-theory" class="nav-link" data-scroll-target="#sling-shot-theory"><span class="header-section-number">6.3.2</span> Sling shot theory</a></li>
-  <li><a href="#pushing-and-newtons-third-law" id="toc-pushing-and-newtons-third-law" class="nav-link" data-scroll-target="#pushing-and-newtons-third-law"><span class="header-section-number">6.3.3</span> Pushing and Newton’s Third Law</a></li>
-  <li><a href="#newtons-third-law" id="toc-newtons-third-law" class="nav-link" data-scroll-target="#newtons-third-law"><span class="header-section-number">6.3.4</span> Newton’s Third Law</a></li>
-  <li><a href="#knees-bend-on-bathroom-scales" id="toc-knees-bend-on-bathroom-scales" class="nav-link" data-scroll-target="#knees-bend-on-bathroom-scales"><span class="header-section-number">6.3.5</span> Knees bend on bathroom scales</a></li>
-  <li><a href="#the-lift-problem" id="toc-the-lift-problem" class="nav-link" data-scroll-target="#the-lift-problem"><span class="header-section-number">6.3.6</span> The lift problem</a></li>
-  <li><a href="#simple-experiments-with-forces" id="toc-simple-experiments-with-forces" class="nav-link" data-scroll-target="#simple-experiments-with-forces"><span class="header-section-number">6.3.7</span> Simple experiments with forces</a></li>
-  <li><a href="#newton-meters-and-a-tug-of-war" id="toc-newton-meters-and-a-tug-of-war" class="nav-link" data-scroll-target="#newton-meters-and-a-tug-of-war"><span class="header-section-number">6.3.8</span> Newton meters and a tug of war</a></li>
-  <li><a href="#linear-air-track-and-two-pulleys" id="toc-linear-air-track-and-two-pulleys" class="nav-link" data-scroll-target="#linear-air-track-and-two-pulleys"><span class="header-section-number">6.3.9</span> Linear air track and two pulleys</a></li>
-  <li><a href="#shopping-bag-and-old-lady---acceleration" id="toc-shopping-bag-and-old-lady---acceleration" class="nav-link" data-scroll-target="#shopping-bag-and-old-lady---acceleration"><span class="header-section-number">6.3.10</span> Shopping bag and old lady - acceleration</a></li>
+  <li><a href="#skateboards-and-newtons-third-law" id="toc-skateboards-and-newtons-third-law" class="nav-link" data-scroll-target="#skateboards-and-newtons-third-law"><span class="header-section-number">6.3.3</span> Skateboards and Newton’s Third Law</a></li>
+  <li><a href="#jumping-on-bathroom-scales" id="toc-jumping-on-bathroom-scales" class="nav-link" data-scroll-target="#jumping-on-bathroom-scales"><span class="header-section-number">6.3.4</span> Jumping on bathroom scales</a></li>
+  <li><a href="#the-lift" id="toc-the-lift" class="nav-link" data-scroll-target="#the-lift"><span class="header-section-number">6.3.5</span> The lift</a></li>
+  <li><a href="#simple-experiments-with-forces" id="toc-simple-experiments-with-forces" class="nav-link" data-scroll-target="#simple-experiments-with-forces"><span class="header-section-number">6.3.6</span> Simple experiments with forces</a></li>
+  <li><a href="#newton-meters-and-a-tug-of-war" id="toc-newton-meters-and-a-tug-of-war" class="nav-link" data-scroll-target="#newton-meters-and-a-tug-of-war"><span class="header-section-number">6.3.7</span> Newton meters and a tug of war</a></li>
+  <li><a href="#linear-air-track-and-two-pulleys" id="toc-linear-air-track-and-two-pulleys" class="nav-link" data-scroll-target="#linear-air-track-and-two-pulleys"><span class="header-section-number">6.3.8</span> Linear air track and two pulleys</a></li>
+  <li><a href="#inertia-demos" id="toc-inertia-demos" class="nav-link" data-scroll-target="#inertia-demos"><span class="header-section-number">6.3.9</span> Inertia Demos:</a></li>
   </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">7</span> </a>
+  <li><a href="#st-law-3rd-law-pairs." id="toc-st-law-3rd-law-pairs." class="nav-link" data-scroll-target="#st-law-3rd-law-pairs."><span class="header-section-number">6.4</span> 1st law &amp; 3rd law pairs.</a></li>
+  <li><a href="#rockets" id="toc-rockets" class="nav-link" data-scroll-target="#rockets"><span class="header-section-number">6.5</span> Rockets</a>
   <ul>
-  <li><a href="#rockets" id="toc-rockets" class="nav-link" data-scroll-target="#rockets"><span class="header-section-number">7.1</span> Rockets</a>
+  <li><a href="#calculating-rocket-velocity-with-changing-mass-gravity-and-air-resistance" id="toc-calculating-rocket-velocity-with-changing-mass-gravity-and-air-resistance" class="nav-link" data-scroll-target="#calculating-rocket-velocity-with-changing-mass-gravity-and-air-resistance"><span class="header-section-number">6.5.1</span> Calculating Rocket Velocity with Changing Mass, Gravity, and Air Resistance</a>
   <ul>
-  <li><a href="#carbon-dioxide-rocket" id="toc-carbon-dioxide-rocket" class="nav-link" data-scroll-target="#carbon-dioxide-rocket"><span class="header-section-number">7.1.1</span> Carbon dioxide rocket</a></li>
-  <li><a href="#water-powered-rockets" id="toc-water-powered-rockets" class="nav-link" data-scroll-target="#water-powered-rockets"><span class="header-section-number">7.1.2</span> Water-powered rockets</a></li>
-  <li><a href="#the-firework-rocket---upside-down" id="toc-the-firework-rocket---upside-down" class="nav-link" data-scroll-target="#the-firework-rocket---upside-down"><span class="header-section-number">7.1.3</span> The firework rocket - upside down!</a></li>
-  <li><a href="#balloon-rocket" id="toc-balloon-rocket" class="nav-link" data-scroll-target="#balloon-rocket"><span class="header-section-number">7.1.4</span> Balloon rocket</a></li>
+  <li><a href="#ideal-rocket-equation-no-air-resistance" id="toc-ideal-rocket-equation-no-air-resistance" class="nav-link" data-scroll-target="#ideal-rocket-equation-no-air-resistance">1. Ideal Rocket Equation (No Air Resistance)</a></li>
+  <li><a href="#including-gravity" id="toc-including-gravity" class="nav-link" data-scroll-target="#including-gravity">2. Including Gravity</a></li>
+  <li><a href="#air-resistance-drag" id="toc-air-resistance-drag" class="nav-link" data-scroll-target="#air-resistance-drag">3. Air Resistance (Drag)</a></li>
+  <li><a href="#full-differential-equation" id="toc-full-differential-equation" class="nav-link" data-scroll-target="#full-differential-equation">4. Full Differential Equation</a></li>
   </ul></li>
+  <li><a href="#water-powered-rockets" id="toc-water-powered-rockets" class="nav-link" data-scroll-target="#water-powered-rockets"><span class="header-section-number">6.5.2</span> Water-powered rockets</a></li>
+  <li><a href="#fizzy-tablet-rockets" id="toc-fizzy-tablet-rockets" class="nav-link" data-scroll-target="#fizzy-tablet-rockets"><span class="header-section-number">6.5.3</span> Fizzy tablet rockets</a></li>
+  <li><a href="#the-firework-rocket---upside-down" id="toc-the-firework-rocket---upside-down" class="nav-link" data-scroll-target="#the-firework-rocket---upside-down"><span class="header-section-number">6.5.4</span> The firework rocket - upside down!</a></li>
+  <li><a href="#balloon-rocket" id="toc-balloon-rocket" class="nav-link" data-scroll-target="#balloon-rocket"><span class="header-section-number">6.5.5</span> Balloon rocket</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -499,8 +507,17 @@ window.Quarto = {
 
 <section id="basic-theory" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="basic-theory"><span class="header-section-number">6.1</span> Basic Theory</h2>
-<section id="newtons-first-law-law-of-inertia" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="newtons-first-law-law-of-inertia"><span class="header-section-number">6.1.1</span> Newton’s First Law (Law of Inertia)</h3>
+<p>The size of a force is measured in units called Newtons (N). You can get a rough idea of a force’s size by thinking about the pull of the Earth on us.</p>
+<section id="mass" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="mass"><span class="header-section-number">6.1.1</span> Mass</h3>
+<p>This is the amount of stuff (matter) in an object. It is measured in kilograms (kg) and is always the same wherever the object is. The only way to change the mass of something is to chip a bit off! (Ignoring relativistic effects of course.)</p>
+</section>
+<section id="weight" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="weight"><span class="header-section-number">6.1.2</span> Weight</h3>
+<p>The force of attraction of the Earth on us is our WEIGHT. The more massive we are the bigger is the force of attraction and the bigger is our weight. This also gives us a rough definition of the Newton. A Newton is the pull of the Earth on about 100 g. The pull of the Earth on 1 kg is about 10 N.</p>
+</section>
+<section id="newtons-first-law-law-of-inertia" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="newtons-first-law-law-of-inertia"><span class="header-section-number">6.1.3</span> Newton’s First Law (Law of Inertia)</h3>
 <ul>
 <li>An object remains at rest or moves with constant velocity unless acted upon by a <strong>net external force</strong>.</li>
 <li>This means: <span class="math display">\[
@@ -508,8 +525,8 @@ window.Quarto = {
 \]</span></li>
 </ul>
 </section>
-<section id="newtons-second-law-law-of-acceleration" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="newtons-second-law-law-of-acceleration"><span class="header-section-number">6.1.2</span> Newton’s Second Law (Law of Acceleration)</h3>
+<section id="newtons-second-law-law-of-acceleration" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="newtons-second-law-law-of-acceleration"><span class="header-section-number">6.1.4</span> Newton’s Second Law (Law of Acceleration)</h3>
 <ul>
 <li>The acceleration <span class="math inline">\(\vec{a}\)</span> of an object is proportional to the net force <span class="math inline">\(\sum \vec{F}\)</span> acting on it and inversely proportional to its mass <span class="math inline">\(m\)</span>: <span class="math display">\[
 \sum \vec{F} = m \vec{a}
@@ -517,8 +534,8 @@ window.Quarto = {
 <li>This law quantifies how forces change motion.</li>
 </ul>
 </section>
-<section id="newtons-third-law-action-reaction" class="level3" data-number="6.1.3">
-<h3 data-number="6.1.3" class="anchored" data-anchor-id="newtons-third-law-action-reaction"><span class="header-section-number">6.1.3</span> Newton’s Third Law (Action-Reaction)</h3>
+<section id="newtons-third-law-action-reaction" class="level3" data-number="6.1.5">
+<h3 data-number="6.1.5" class="anchored" data-anchor-id="newtons-third-law-action-reaction"><span class="header-section-number">6.1.5</span> Newton’s Third Law (Action-Reaction)</h3>
 <ul>
 <li>For every action force, there is an equal and opposite reaction force: <span class="math display">\[
 \vec{F}_{\text{AB}} = - \vec{F}_{\text{BA}}
@@ -526,8 +543,8 @@ window.Quarto = {
 <li>Forces always come in pairs acting on two different objects.</li>
 </ul>
 </section>
-<section id="implications-and-applications" class="level3" data-number="6.1.4">
-<h3 data-number="6.1.4" class="anchored" data-anchor-id="implications-and-applications"><span class="header-section-number">6.1.4</span> Implications and Applications</h3>
+<section id="implications-and-applications" class="level3" data-number="6.1.6">
+<h3 data-number="6.1.6" class="anchored" data-anchor-id="implications-and-applications"><span class="header-section-number">6.1.6</span> Implications and Applications</h3>
 <ul>
 <li>Objects at rest or moving uniformly have zero net force.</li>
 <li>To change motion, a force must be applied.</li>
@@ -535,13 +552,13 @@ window.Quarto = {
 <li>Reaction forces explain propulsion, walking, rocket thrust, etc.</li>
 </ul>
 </section>
-<section id="summary-table" class="level3" data-number="6.1.5">
-<h3 data-number="6.1.5" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">6.1.5</span> Summary Table</h3>
+<section id="summary-table" class="level3" data-number="6.1.7">
+<h3 data-number="6.1.7" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">6.1.7</span> Summary Table</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 11%">
-<col style="width: 41%">
-<col style="width: 46%">
+<col style="width: 26%">
+<col style="width: 36%">
+<col style="width: 37%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -568,22 +585,23 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<blockquote class="blockquote">
 <p>To change the way an object is moving you need a force.</p>
 <p>This force can either:</p>
-<p>(a) speed up the object, like a sprinter at the start of a race (b) slow down the object, like a motorbike slowing down as it approaches a red traffic signal</p>
-<p>(c) change the direction in which the object is moving, like a car turning a corner</p>
+<ul>
+<li>speed up the object, like a sprinter at the start of a race or..</li>
+<li>slow down the object, like a motorbike slowing down as it approaches a red traffic signal or..</li>
+<li>change the direction in which the object is moving, like a car turning a corner</li>
+</ul>
 <p>Newton’s three laws of motion may be summarised as follows:</p>
-</blockquote>
 <ol type="1">
 <li><p>A body remains at rest or in a state of uniform motion unless acted on by a force. What is still stays still and what is moving stays moving at a steady speed in a straight line unless a force acts on it.</p></li>
-<li><p>The resultant force on a body causes an acceleration which depends on both the size of the force and the mass of the body, i.e.&nbsp;Force = Mass x Acceleration</p></li>
+<li><p>The resultant force on a body causes an acceleration which depends on both the size of the force and the mass of the body, i.e.&nbsp;<span class="math inline">\(\text{Force} = \text{Mass} \times  \text{Acceleration}\)</span></p></li>
 <li><p>If a force acts on one body an equal and opposite force acts on another body.</p></li>
 </ol>
 </section>
 </section>
-<section id="stories-to-enritch" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="stories-to-enritch"><span class="header-section-number">6.2</span> Stories to enritch</h2>
+<section id="stories-to-enrich" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="stories-to-enrich"><span class="header-section-number">6.2</span> Stories to enrich</h2>
 <section id="newtons-apple-a-story-of-stillness-and-insight" class="level3" data-number="6.2.1">
 <h3 data-number="6.2.1" class="anchored" data-anchor-id="newtons-apple-a-story-of-stillness-and-insight"><span class="header-section-number">6.2.1</span> Newton’s Apple: A Story of Stillness and Insight</h3>
 <p>The famous apple story is actually true, at least according to the Memoirs of Sir Isaac Newton’s Life, written by William Stukeley, an archaeologist and one of Newton’s first biographers. Stukeley records his conversation with Newton as follows:</p>
@@ -591,7 +609,11 @@ window.Quarto = {
 <p>“After dinner, the weather being warm, we went into the garden and drank tea, under the shade of some apple trees…he told me, he was just in the same situation, as when formerly, the notion of gravitation came into his mind. It was occasion’d by the fall of an apple, as he sat in contemplative mood. Why should that apple always descend perpendicularly to the ground, thought he to himself…”</p>
 </blockquote>
 <p>you can read the book, published in 1752 here:</p>
-<p>https://ttp.royalsociety.org/ttp/ttp.html?id=1807da00-909a-4abf-b9c1-0279a08e4bf2&amp;type=book&amp;_ga=2.243449797.1115929948.1704188280-1209525634.1700154565&amp;_gl=1<em>ixz8c9</em>_gcl_au*NDA1NjMzNzgxLjE3NTEzMTAwMzc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://ttp.royalsociety.org/ttp/ttp.html?id=1807da00-909a-4abf-b9c1-0279a08e4bf2&amp;type=book&amp;_ga=2.243449797.1115929948.1704188280-1209525634.1700154565&amp;_gl=1ixz8c9_gcl_au*NDA1NjMzNzgxLjE3NTEzMTAwMzc."><img src="images/clipboard-3417108030.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+</figure>
+</div>
 <p>Rather brilliantly, a piece of Newton’s apple tree was taken into space by British-born astronaut Piers Sellers as part of the 350 year celebrations.</p>
 </section>
 <section id="the-horse-and-cart-debate-that-divided-philosophers" class="level3" data-number="6.2.2">
@@ -602,6 +624,12 @@ window.Quarto = {
 <section id="the-duel-of-masks-and-the-vacuum-chamber" class="level3" data-number="6.2.3">
 <h3 data-number="6.2.3" class="anchored" data-anchor-id="the-duel-of-masks-and-the-vacuum-chamber"><span class="header-section-number">6.2.3</span> The Duel of Masks and the Vacuum Chamber</h3>
 <p>In 1654, Otto von Guericke, mayor of Magdeburg, staged a spectacle to demonstrate the force of air pressure and inertia. He created two large copper hemispheres, evacuated the air from within, and then hitched teams of horses to either side. Despite their efforts, the hemispheres could not be pulled apart. What amazed the public was not just the demonstration of pressure, but the indirect implication of Newton’s First Law: the air (or lack of it) was exerting a massive force, even though nothing visible was “pushing.”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3414963400.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>The original Magdeburg hemispheres.</figcaption>
+</figure>
+</div>
 </section>
 <section id="the-nuclear-cannon" class="level3" data-number="6.2.4">
 <h3 data-number="6.2.4" class="anchored" data-anchor-id="the-nuclear-cannon"><span class="header-section-number">6.2.4</span> The Nuclear Cannon</h3>
@@ -612,170 +640,577 @@ window.Quarto = {
 <h2 data-number="6.3" class="anchored" data-anchor-id="practical-work-and-demos"><span class="header-section-number">6.3</span> Practical work and Demos</h2>
 <section id="newtons-2nd-law-experiment" class="level3" data-number="6.3.1">
 <h3 data-number="6.3.1" class="anchored" data-anchor-id="newtons-2nd-law-experiment"><span class="header-section-number">6.3.1</span> Newton’s 2nd Law experiment</h3>
-<p>A simple experiment for the verification of Newton’s Second Law uses a small trolley which is accelerated along a friction-compensated track by a number of washers tied to a thread which is fixed to the trolley after passing over a pulley. A way of ensuring the constancy of mass when studying Newton’s Laws is to transfer the washers from the trolley to the accelerating mass or vice versa. This is a useful tip when plotting graphs of acceleration against force. (The total mass of all objects accelerating is thus kept constant.)</p>
-<p>Notice that there is a degree of circularity in this ‘proof’ as we take the accelerating force as mg which is using the law that we are trying to verify.</p>
-<blockquote class="blockquote">
-<p>Theory:</p>
-<p>Equation of motion: Accelerating force (F) = mg = Total mass x acceleration = (M+m)a where m is the mass of the washers accelerating the trolley and M is the total mass of the trolley and all the washers.</p>
-<p>Age range: 14-16</p>
-<p>Apparatus required: ’Trolley ’Runway •Bench pulley •Washers •Ruler and stop clock or light gate assembly and timer •Leads</p>
-</blockquote>
+<p><strong><em>The</em></strong> classic physics experiment is the N2 experiment in which a small trolley which is accelerated along a friction-compensated track by a number of small masses (washers are ideal) tied to a thread which is fixed to the trolley after passing over a pulley.The friction compensated track removes the effect of the work done against friction by the cart and is achieved by simply tilting the track until the cart, pushed lightly, continues to roll down the slope at steady speed.</p>
+<p>We usually use lightgates to measure the acceleration by measuring the difference in velocity at two points a measured time interval apart. You can also directly measure acceleration with lightgates or accelerometers (phyphox is great for this).</p>
+<p>If you don’t have any such technology available, or if you want to do it a bit differently you can time the trolley from a standing start over a known distance and then use: <span class="math display">\[s = ut + 0.5 at^{2}\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(t\)</span> is the time period measured</li>
+<li><span class="math inline">\(u\)</span> is the initial velocity (0)</li>
+<li><span class="math inline">\(a\)</span> is the acceleration to be calculated</li>
+<li><span class="math inline">\(s\)</span> is the measured distance</li>
+</ul>
+<p>to calculate the average acceleration. Another variation with a speed only sensor would be to use: <span class="math display">\[v^{2}=u^{2} + 2as\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(v\)</span> is the final velocity measured</li>
+<li><span class="math inline">\(u\)</span> is the initial velocity (0)</li>
+<li><span class="math inline">\(a\)</span> is the acceleration to be calculated</li>
+<li><span class="math inline">\(s\)</span> is the measured distance</li>
+</ul>
+<p>Despite being <strong><em>the</em></strong> experiment, an awful lot of students conduct it incorrectly. In order to get meaningful results it’s important to ensure mass being accelerated is constant. This means it’s critical to transfer the weights from the trolley to the accelerating mass or vice versa. In other words, when you plot graphs of acceleration against force The total mass of all objects accelerating is the constant gradient.</p>
+<p>One of the odd issues with this experiment that you can get round with modern technology is that we take the accelerating force as mg - using the very law that we are trying to verify. If you have accelerometer and force meter available you can measure the quantities directly. Plotting the values against each other should validate N2 although if you have a very able class you could use an elastic attachment from the force meter to the car and have some fun…</p>
+<p>Theory: <span class="math display">\[ \text{Accelerating force (F)}  = mg = \text{ Total mass }\times \text{ acceleration} = (M+m)a\]</span> Where:</p>
+<ul>
+<li><span class="math inline">\(m\)</span> is the mass of the accelerating mass acting on the trolley and</li>
+<li><span class="math inline">\(M\)</span> is the total mass of the trolley and the accelerating mass.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Ramps</li>
+<li>Trolleys</li>
+<li>Small masses or washers</li>
+<li>Lightgates or stopwatches</li>
+<li>String</li>
+<li>Pulleys</li>
+<li>Wedge to make the ramp “friction compensated”</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="sling-shot-theory" class="level3" data-number="6.3.2">
 <h3 data-number="6.3.2" class="anchored" data-anchor-id="sling-shot-theory"><span class="header-section-number">6.3.2</span> Sling shot theory</h3>
 <p>When a spacecraft approaches a planet that is moving through space the spacecraft experiences a sling shot effect due to the motion of the planet. As the spacecraft approaches the planet the gravitational attraction between them will increase the velocity of the spacecraft so that when it passes the planet it is moving with a greater velocity relative to the planet. Since the planet itself is also moving through space the absolute velocity of the spacecraft is also increased. The mass of the planet is enormous compared with that of the spacecraft and so the effect on the planet’s motion is infinitesimal.</p>
+<p>You can demonstrate this neatly with the brilliant sim from PhET:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://phet.colorado.edu/sims/html/my-solar-system/latest/my-solar-system_all.html"><img src="images/clipboard-3285692418.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+</figure>
+</div>
 </section>
-<section id="pushing-and-newtons-third-law" class="level3" data-number="6.3.3">
-<h3 data-number="6.3.3" class="anchored" data-anchor-id="pushing-and-newtons-third-law"><span class="header-section-number">6.3.3</span> Pushing and Newton’s Third Law</h3>
-<p>This is a very simple example of Newton’s Third Law. Get two pupils of similar size to stand facing each other. Tell them to raise their hands so that the pairs of hands are touching. Then tell one pupil to push the other over. They will both be pushed backwards. This example of Newton’s Third Law confirms that when a force acts on one body an equal and opposite force acts on another body. Trying the same thing with both pupils on skateboards may be even more impressive.</p>
+<section id="skateboards-and-newtons-third-law" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="skateboards-and-newtons-third-law"><span class="header-section-number">6.3.3</span> Skateboards and Newton’s Third Law</h3>
+<p>A very simple and effective demonstration of Newton’s Third Law. Stand two students of approximately equal mass on skateboards (you could make a pair of wheeled trolleys for the purpose). Tell them to raise their hands so that the pairs of hands are touching and push!. They will both be pushed backwards. Follow this up by giving each the end of a rope and asking them to reel the other in. With well maintained bearings in the trolleys/skateboards the pair should end up back in the starting place. This example of Newton’s Third Law confirms that when a force acts on one body an equal and opposite force acts on another body.</p>
+<p><img src="images/clipboard-3427755575.png" class="img-fluid"></p>
+<p>If you have capable skateboarders or are confident yourself you can extend the demo by standing on the wheeled board and propelling it by throwing or catching heavy masses such as bowlingballs or sandbags.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Rope</li>
+<li>2 <span class="math inline">\(\times\)</span> Skateboard or sturdy wheeled trolley</li>
+<li>Willing students! - Joking aside, please take care with the trolleys, there’s an obvious slip/fall hazzard here that needs managing</li>
+</ul>
+<p>optional:</p>
+<ul>
+<li>Bowling ball/sandbag</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="jumping-on-bathroom-scales" class="level3" data-number="6.3.4">
+<h3 data-number="6.3.4" class="anchored" data-anchor-id="jumping-on-bathroom-scales"><span class="header-section-number">6.3.4</span> Jumping on bathroom scales</h3>
+<p>A lovely way to segue into impulse from relatively static Newtonian physics is to use the tactile feedback from some bathroom scales. Students can easily predict the outcome of the display movements after a few moments play and you can quickly link this to the accelerations. The reading goes down as you bend your knees but increases as you straighten your legs to accelerate yourself upwards to a standing position. A much more sedate version has you standing on the scales holding a heavy mass and asking how the display will change as you lift and lower the mass.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3941722952.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Scales</li>
+<li>Phone/Video camera if you want to take video of the scale reading changing over the jump</li>
+</ul>
+<p>optional:</p>
+<ul>
+<li>Bowling ball/sandbag/weights</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-lift" class="level3" data-number="6.3.5">
+<h3 data-number="6.3.5" class="anchored" data-anchor-id="the-lift"><span class="header-section-number">6.3.5</span> The lift</h3>
+<p>If you have a lift in your building and something like Phyphox on a mobile then you can get some really good acceleration/weight data to show how acceleration and force are linked. You can build this into an excellent extension problem with the following:</p>
 <blockquote class="blockquote">
-<p>Age range: 14-16</p>
-<p>Apparatus required: •Two pupils •Maybe two skateboards as well</p>
+<p>You’re involved in a new 1km tall high-rise building project. The people would like to get to their destination floor as quickly as possible. What’s the fastest that the lift could convey people to the top floor without causing damage or causing the passengers to leave the floor of the lift carrige? What about from the top floor to the ground floor? Are they the same?</p>
 </blockquote>
 </section>
-<section id="newtons-third-law" class="level3" data-number="6.3.4">
-<h3 data-number="6.3.4" class="anchored" data-anchor-id="newtons-third-law"><span class="header-section-number">6.3.4</span> Newton’s Third Law</h3>
-<p>Mount a small bow on a dynamics trolley and fire a rubber tipped arrow from it. As the arrow goes forward the bow and frame accelerate backwards. This is an interesting and useful model with which to demonstrate both Newton’s Third Law and the transfer of energy from that stored in the stretched bow string to the kinetic energy of the trolley and the arrow.</p>
-<blockquote class="blockquote">
-<p>Age range: 14-18</p>
-<p>Apparatus required: ’Dynamics trolley •Toy bow •Rubber tipped arrow</p>
-</blockquote>
-</section>
-<section id="knees-bend-on-bathroom-scales" class="level3" data-number="6.3.5">
-<h3 data-number="6.3.5" class="anchored" data-anchor-id="knees-bend-on-bathroom-scales"><span class="header-section-number">6.3.5</span> Knees bend on bathroom scales</h3>
-<p>You can observe some very interesting effects by standing on a set of bathroom scales and then watching the reading as you bend your knees. The reading goes down as you bend your knees but increases as you straighten your legs to accelerate yourself upwards to a standing position. An alternative version is to stand on the scales holding a pair of dumbbells in your hands and watch the reading as you raise and lower them.</p>
-<blockquote class="blockquote">
-<p>Age range: 14-18</p>
-<p>Apparatus required: ’Bathroom scales •Two dumbbells or weights on a bar</p>
-</blockquote>
-<p>Forces and Newton’s Laws</p>
-</section>
-<section id="the-lift-problem" class="level3" data-number="6.3.6">
-<h3 data-number="6.3.6" class="anchored" data-anchor-id="the-lift-problem"><span class="header-section-number">6.3.6</span> The lift problem</h3>
-<p>Make a table to discuss what happens to your mass, weight and reaction when you are in a lift that stays still, moves with constant velocity up or down, accelerates up or down or falls freely. Remember that as long as the gravitational field does not change, your weight does not alter it is only the reaction of the floor that may change if you accelerate up or down.</p>
-<p>Think about people travelling in a lift in a high-rise building. They would like to get to their destination floor as quickly as possible, but there clearly has to be a limit put on the lift’s acceleration. Can you find out what this is?</p>
-</section>
-<section id="simple-experiments-with-forces" class="level3" data-number="6.3.7">
-<h3 data-number="6.3.7" class="anchored" data-anchor-id="simple-experiments-with-forces"><span class="header-section-number">6.3.7</span> Simple experiments with forces</h3>
+<section id="simple-experiments-with-forces" class="level3" data-number="6.3.6">
+<h3 data-number="6.3.6" class="anchored" data-anchor-id="simple-experiments-with-forces"><span class="header-section-number">6.3.6</span> Simple experiments with forces</h3>
 <p>Use the Newton spring balances or Newton scales to find the force in Newtons needed to:</p>
 <ul>
 <li>Open a drawer</li>
-<li>Pull down the board projector screen</li>
-<li>Turn twenty pages of your text book</li>
 <li>Rip a piece of paper</li>
 <li>Push a drawing pin into a piece of wood</li>
-<li>Pull apart two pieces of glued paper.</li>
 <li>Pull a small stool across the floor</li>
-<li>Open a door (see if you can find one without a door closer fitted)</li>
+<li>Open a door</li>
 <li>Pull a wheeled chair across the room</li>
 <li>Stretch an elastic band</li>
 <li>Pull some sellotape off its reel</li>
 <li>Push two repelling magnets together</li>
-<li>Throw a shuttlecock</li>
 <li>Use one magnet to pick up some paper clips — see how far above them you can move the magnet before it cannot pick up a paper clip</li>
-<li>Turn on a water tap</li>
-<li>Open a pair of scissors</li>
-<li>Open a pencil case</li>
-<li>Pull the top off a ball point pen</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1830812909.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Forcemeters</li>
+<li>String</li>
+<li>Sticky tape</li>
+<li>Selection of things to do</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="newton-meters-and-a-tug-of-war" class="level3" data-number="6.3.8">
-<h3 data-number="6.3.8" class="anchored" data-anchor-id="newton-meters-and-a-tug-of-war"><span class="header-section-number">6.3.8</span> Newton meters and a tug of war</h3>
-<p>This example shows some misconceptions about the sizes of forces.</p>
+<section id="newton-meters-and-a-tug-of-war" class="level3" data-number="6.3.7">
+<h3 data-number="6.3.7" class="anchored" data-anchor-id="newton-meters-and-a-tug-of-war"><span class="header-section-number">6.3.7</span> Newton meters and a tug of war</h3>
+<p>There are many misconceptions about tension in ropes and the like that mainly boil down to getting the following wrong:</p>
 <p>Set up the two sets of apparatus as shown in the diagrams and ask the students what they think will be the readings on the Newton meters.</p>
+<p><img src="images/clipboard-2605776983.png" class="img-fluid"></p>
 <p>The point is that they are all the same and read W — the weight of ONE of the masses. (You need a lightweight Newton meter so that it does not affect the result significantly.)</p>
-<blockquote class="blockquote">
-<p>Age range: 14-19</p>
-<p>Apparatus required: •Three bench pulleys ’Three Newton meters <sup>o</sup>Three masses of about Ikg each</p>
-<p>•String or cord •Mounting point on a wall</p>
-</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Three bench pulleys</li>
+<li>’Three Newton meters</li>
+<li>Three masses of about 1kg each</li>
+<li>String or cord</li>
+<li>Mounting point on a wall</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="linear-air-track-and-two-pulleys" class="level3" data-number="6.3.9">
-<h3 data-number="6.3.9" class="anchored" data-anchor-id="linear-air-track-and-two-pulleys"><span class="header-section-number">6.3.9</span> Linear air track and two pulleys</h3>
+<section id="linear-air-track-and-two-pulleys" class="level3" data-number="6.3.8">
+<h3 data-number="6.3.8" class="anchored" data-anchor-id="linear-air-track-and-two-pulleys"><span class="header-section-number">6.3.8</span> Linear air track and two pulleys</h3>
 <p>The effect of two unbalanced forces is very well demonstrated by having a trolley attached to two masses each hanging over the opposite ends of a linear air track. The resulting acceleration due to the resultant force can therefore be found. (To avoid the air hose, pass one thread over a pulley on an adjacent bench.)</p>
 <p>A simplified version is to use two dissimilar masses (M and m) hanging by a thread over two pulleys fixed to retort stands with a central mass held in mid air. If this mass is not too great the string will be more or less horizontal and the applied forces will then be horizontal also.</p>
-<blockquote class="blockquote">
 <p>Theory:</p>
-<p>The resultant accelerating force (F) is given by the equation: Accelerating force F = Mg - mg = (M+m)a</p>
-<p>Age range: 16-18</p>
-<p>Apparatus required: •Linear air track •Blower and trolley •Two pulleys •Two retort stands •Two sets of slotted masses</p>
-</blockquote>
+<p>The resultant accelerating force (F) is given by the equation: <span class="math display">\[\text{Accelerating force }F = Mg - mg = (M+m)a\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Linear air track or other low-friction track</li>
+<li>Blower and trolley or low friction car</li>
+<li>Two pulleys</li>
+<li>Two retort stands</li>
+<li>Two sets of slotted masses</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="shopping-bag-and-old-lady---acceleration" class="level3" data-number="6.3.10">
-<h3 data-number="6.3.10" class="anchored" data-anchor-id="shopping-bag-and-old-lady---acceleration"><span class="header-section-number">6.3.10</span> Shopping bag and old lady - acceleration</h3>
+<section id="inertia-demos" class="level3" data-number="6.3.9">
+<h3 data-number="6.3.9" class="anchored" data-anchor-id="inertia-demos"><span class="header-section-number">6.3.9</span> Inertia Demos:</h3>
 <p>Why is it that you can lift a shopping bag full of shopping slowly without a problem but if you lift it quickly the handles break? Think about what would happen if the lady in the diagram picked up her shopping bag quickly. The handles might break because they have to produce an acceleration as well as support the weight of the bag. This can easily be demonstrated by putting a heavy weight inside a plastic shopping bag and showing that it will just support the load, but that it breaks - usually at the bottom - when accelerated briskly upwards.</p>
 <p>Another example of this is the maximum acceleration allowed by a pilot of a rescue helicopter when lifting a stretcher from a hillside. Too great an acceleration will cause the supporting ropes to break.</p>
-<blockquote class="blockquote">
 <p>Theory:</p>
-<p>Force in handles = Weight of shopping + Force to accelerate the bag upwards. (F = mg + ma)</p>
-</blockquote>
-<p>Age range: 16-18 Apparatus required: •Two 5 kg masses •Plastic shopping bag</p>
-<blockquote class="blockquote">
-<p>Forces, mass and weight</p>
-<p>The size of a force is measured in units called NEWTONS (N). You can get a rough idea of a force’s size by thinking about the pull of the Earth on us.</p>
-<p>Mass</p>
-<p>This is the amount of stuff (matter) in an object. It is measured in kilograms (kg) and is always the same wherever the object is. The only way to change the mass of something is to chip a bit off! (Ignoring relativistic effects of course.)</p>
-<p>Weight</p>
-<p>The force of attraction of the Earth on us is our WEIGHT. The more massive we are the bigger is the force of attraction and the bigger is our weight. This also gives us a rough definition of the Newton.</p>
-<p>A Newton is the pull of the Earth on about 100 g. The pull of the Earth on 1 kg is about 10 N.</p>
-</blockquote>
+<p>Force in handles = Weight of shopping + Force to accelerate the bag upwards. <span class="math display">\[F = mg + ma\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Two 5 kg masses</li>
+<li>Plastic shopping bag</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="section" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> </h1>
-<section id="rockets" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="rockets"><span class="header-section-number">7.1</span> Rockets</h2>
-<p>General theory for this section</p>
-<blockquote class="blockquote">
-<p>The propulsion systems of rockets depend on the laws of momentum conservation. For a solid or liquid fuel rocket, the greater the velocity of the exhaust gases the greater is their momentum and hence the greater the momentum of the rocket.</p>
-<p>The calculation of the velocity of a rocket some time after its launch is a difficult problem, since the mass of the rocket is constantly changing and therefore even with a constant thrust the acceleration will not be constant. The velocity of the rocket when its mass is M can be shown to be: Velocity of rocket (v) = u —w In(M/M0) where u and MO are the initial velocity and mass of the rocket and w is the velocity of the exhaust gases relative to the rocket.</p>
-</blockquote>
-<section id="carbon-dioxide-rocket" class="level3" data-number="7.1.1">
-<h3 data-number="7.1.1" class="anchored" data-anchor-id="carbon-dioxide-rocket"><span class="header-section-number">7.1.1</span> Carbon dioxide rocket</h3>
-<p>The carbon dioxide rocket trolley is a superb piece of apparatus for the study of momentum. It is simply a ‘sparklet’ soda siphon bulb mounted horizontally on a small trolley. The side of the trolley is fixed to a piece of string that is looped round a retort stand on the floor. The idea is to use a pair of compasses with a short point to puncture the ‘sparklet’ bulb and allow the carbon dioxide gas to rush out, the reaction on the bulb making the trolley move off in the opposite direction - “orbiting” the retort stand at high speed!</p>
-<p>The size of the hole is critical. If it is too big, the gas comes out rapidly and it is all over too soon; too small and the result is a rather pathetic movement. Measuring the rotation rate in a circle of known radius can give the average velocity of the trolley.</p>
-<p>Putting the trolley on a set of rails along the lab has produced some spectacular accelerations, but safety must be considered in case it leaves the track!</p>
-<blockquote class="blockquote">
-<p>It is very important to mount the cylinder securely on the trolley and to ensure that the pupils stand at a safe distance from the experiment.</p>
-<p>Age range: 14-18 depending on treatment Apparatus required:</p>
-<p>•Carbon dioxide rocket trolley •Sparklet soda siphon bulbs •Pair of compasses or dividers •String</p>
-<p>•Retort stand •Rulers •Stop clock</p>
-<p>tsoce«ets</p>
-</blockquote>
+<section id="st-law-3rd-law-pairs." class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="st-law-3rd-law-pairs."><span class="header-section-number">6.4</span> 1st law &amp; 3rd law pairs.</h2>
+<p>A common misconception arises when people confuse Newton’s First Law with the action-reaction pairs described in Newton’s Third Law. Newton’s First Law states that an object remains at rest or in uniform motion unless acted on by a net external force, emphasizing how motion changes only when forces are unbalanced. In contrast, Newton’s Third Law states that for every action, there is an equal and opposite reaction — forces always come in pairs acting on different objects. The confusion often lies in thinking that these action-reaction forces cancel each other out and thus prevent motion, but this is incorrect because they act on separate bodies. For example, when you push a wall, the wall pushes back on you equally, but these forces act on different objects and do not cancel in the sense of preventing movement altogether; whether motion occurs depends on other forces acting on each object. Understanding that First Law forces sum on a single object while Third Law pairs act on different objects is key to resolving this confusion.</p>
 </section>
-<section id="water-powered-rockets" class="level3" data-number="7.1.2">
-<h3 data-number="7.1.2" class="anchored" data-anchor-id="water-powered-rockets"><span class="header-section-number">7.1.2</span> Water-powered rockets</h3>
-<p>There are two types, and both provide excellent demonstrations:</p>
-<ol type="a">
-<li><p>A small plastic rocket that is filled with a little water, mounted on its pump mechanism and the air is pumped in. When sufficient air has been put in the rocket is launched - the high air pressure within the rocket ejects a stream of water and the rocket flies up.</p></li>
-<li><p>The second, and rather better version is simply a plastic drinks bottle with a set of fins and a valve - again air is pumped in, but this time the valve automatically releases the rocket when the pressure inside the bottle reaches a certain amount.</p></li>
-</ol>
-<blockquote class="blockquote">
-<p>This must be done in the open air. Beware of where the spent rocket will fall, and make sure that the rocket is not launched horizontally.</p>
-<p>Age range: 14-18 depending on treatment</p>
-<p>Apparatus required: (a) ’Water rocket and pump mechanism</p>
-<ol start="2" type="a">
-<li>•Plastic drinks bottle •Valve and fins assembly •Bicycle pump</li>
-</ol>
-</blockquote>
+<section id="rockets" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="rockets"><span class="header-section-number">6.5</span> Rockets</h2>
+<p>The propulsion systems of rockets depend on the laws of momentum conservation and are well explained by the three newtonian laws. For a solid or liquid fuel rocket, the greater the velocity of the exhaust gases the greater is their momentum and hence the greater the momentum of the rocket.</p>
+<p>When fuel burns in the rocket’s combustion chamber it creates hot, high-pressure gas made of billions of fast-moving particles. These particles zoom around randomly and collide with the chamber walls in all directions.Particles hit all the walls equally (left, right, top, bottom). Were these forces to balance, as they do perpendicular to the rocket, there’d be no resultant force/</p>
+<p>At the nozzle opening however, the gas particles escape out the nozzle at high speed. This means that there’s fewer collisions on the nozzle side’s wall compared to the front wall. This imbalance of pressure inside the chamber creates a net force pushing the rocket forward.</p>
+<section id="calculating-rocket-velocity-with-changing-mass-gravity-and-air-resistance" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="calculating-rocket-velocity-with-changing-mass-gravity-and-air-resistance"><span class="header-section-number">6.5.1</span> Calculating Rocket Velocity with Changing Mass, Gravity, and Air Resistance</h3>
+<p>Calculating the velocity of a rocket properly is mathematically demanding - Let’s take a very crude model as an example:</p>
+<ul>
+<li>Changing mass</li>
+<li>Gravity</li>
+<li>Air resistance (drag)</li>
+</ul>
+<section id="ideal-rocket-equation-no-air-resistance" class="level4">
+<h4 class="anchored" data-anchor-id="ideal-rocket-equation-no-air-resistance">1. Ideal Rocket Equation (No Air Resistance)</h4>
+<p>In space (no gravity, no air), we start with the <strong>Tsiolkovsky Rocket Equation</strong>:</p>
+<p><span class="math display">\[
+\Delta v = v_e \ln\left(\frac{m_0}{m_f}\right)
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\Delta v\)</span> = change in velocity<br>
+</li>
+<li><span class="math inline">\(v_e\)</span> = exhaust velocity of the gases<br>
+</li>
+<li><span class="math inline">\(m_0\)</span> = initial mass (rocket + fuel)<br>
+</li>
+<li><span class="math inline">\(m_f\)</span> = final mass (after fuel burned)</li>
+</ul>
 </section>
-<section id="the-firework-rocket---upside-down" class="level3" data-number="7.1.3">
-<h3 data-number="7.1.3" class="anchored" data-anchor-id="the-firework-rocket---upside-down"><span class="header-section-number">7.1.3</span> The firework rocket - upside down!</h3>
-<blockquote class="blockquote">
-<p>This teacher demonstration should only be done in the open air using safety screens. All present should wear safety spectacles and should stand well back. Never use a rocket containing star shells.</p>
-</blockquote>
-<p>Mount a small firework rocket, one without star shells, pointing downwards and held loosely in a tube in a clamp on the top of a cheap top pan balance reading to an accuracy of one gram.</p>
-<p>Light the rocket and stand well back behind the safety screen. The thrust of the rocket acts downwards and the reading on the top pan balance gives the thrust of the rocket during the firing. Use a TV camera if possible to record this for later analysis. The “toy” chemical rockets that are produced are sold with data sheets that give good force against time curves, and these can be used for analysis if you do not wish to do the rocket experiment yourselves!</p>
-<p>Some safer alternatives would be to use a balloon, a soda siphon bulb or a plastic bottle containing dilute acid and chalk.</p>
-<blockquote class="blockquote">
-<p>Age range: 16-18</p>
-<p>Apparatus required:</p>
-<p>•Firework rocket (small - without star shells) •Top pan balance •Small metal tin lid ’Piece of hardboard to protect balance ’Safety screen •Retort stand and two clamps ’Launch tube to hold rocket</p>
-</blockquote>
-<p>Rockets</p>
+<section id="including-gravity" class="level4">
+<h4 class="anchored" data-anchor-id="including-gravity">2. Including Gravity</h4>
+<p>If launching vertically near Earth, gravity subtracts velocity, note that this assumes that we dont stray far enough to consider Earth’s gravitational field as anything other than uniform:</p>
+<p><span class="math display">\[
+v(t) = v_e \ln\left(\frac{m_0}{m(t)}\right) - g \, t
+\]</span></p>
+<p>where <span class="math inline">\(g\)</span> is the acceleration due to gravity (≈ 9.81 m/s²).</p>
 </section>
-<section id="balloon-rocket" class="level3" data-number="7.1.4">
-<h3 data-number="7.1.4" class="anchored" data-anchor-id="balloon-rocket"><span class="header-section-number">7.1.4</span> Balloon rocket</h3>
+<section id="air-resistance-drag" class="level4">
+<h4 class="anchored" data-anchor-id="air-resistance-drag">3. Air Resistance (Drag)</h4>
+<p>Drag force is given by:</p>
+<p><span class="math display">\[
+F_{\text{drag}} = \frac{1}{2} \, \rho \, v^2 \, C_D \, A
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\rho\)</span> = air density<br>
+</li>
+<li><span class="math inline">\(v\)</span> = rocket velocity<br>
+</li>
+<li><span class="math inline">\(C_D\)</span> = drag coefficient (shape-dependent)<br>
+</li>
+<li><span class="math inline">\(A\)</span> = cross-sectional area</li>
+</ul>
+<p>Drag reduces the rocket’s net acceleration:</p>
+<p><span class="math display">\[
+a = \frac{T - F_{\text{drag}} - m \, g}{m}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(T\)</span> = thrust force<br>
+</li>
+<li><span class="math inline">\(m\)</span> = rocket mass at time <span class="math inline">\(t\)</span></li>
+</ul>
+<p>Since <span class="math inline">\(m\)</span> changes as fuel burns, we get a differential equation:</p>
+<p><span class="math display">\[
+m(t) \, \frac{dv}{dt}
+=
+T
+-
+\frac{1}{2} \, \rho \, v^2 \, C_D \, A
+-
+m(t) \, g
+\]</span></p>
+</section>
+<section id="full-differential-equation" class="level4">
+<h4 class="anchored" data-anchor-id="full-differential-equation">4. Full Differential Equation</h4>
+<p>We can express the velocity change as:</p>
+<p><span class="math display">\[
+\boxed{
+\frac{dv}{dt}
+=
+\frac{T}{m(t)}
+-
+\frac{1}{2} \frac{\rho \, v^2 \, C_D \, A}{m(t)}
+-
+g
+}
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+m(t) = m_0 - \dot{m} \cdot t
+\]</span></p>
+<p>where <span class="math inline">\(\dot{m}\)</span> is the mass flow rate (fuel used per second).</p>
+<p>Because drag depends on <span class="math inline">\(v\)</span>, and <span class="math inline">\(\rho\)</span> changes with altitude, we usually solve this <strong>numerically</strong>.</p>
+</section>
+</section>
+<section id="water-powered-rockets" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="water-powered-rockets"><span class="header-section-number">6.5.2</span> Water-powered rockets</h3>
+<p>The best of the waterbottle rockets, luckily for impoverished departments, is a plastic drinks bottle with a set of fins and a valve.</p>
+<p>The launcher can be built very cheaply and easily - take a look here:</p>
+<p>http://www.uswaterrockets.com/construction_&amp;_tutorials/cable_tie_release_mechanism/tutorial.htm</p>
+<p>As well as demonstrating;</p>
+<ul>
+<li>Energy transfer</li>
+<li>Energy Stores</li>
+<li>Newton’s 3 laws</li>
+<li>Momentum</li>
+</ul>
+<p>Just beware that this must be launched in the open air &amp; there needs to be some consideration of where the spent rocket will fall.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>launch platform</li>
+<li>Plastic bottles</li>
+<li>Air pump</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="fizzy-tablet-rockets" class="level3" data-number="6.5.3">
+<h3 data-number="6.5.3" class="anchored" data-anchor-id="fizzy-tablet-rockets"><span class="header-section-number">6.5.3</span> Fizzy tablet rockets</h3>
+<p>A fantastic outreach activity or open-ended investigative task can be made from the use of a few effervescent vitamin C tablets and some film canisters. Unlike the above, this is entirely suited to indoor use. The use of a tray as a launch platform will keep the place tidy.</p>
+<p>Note that it might be tempting to use other “fizzy” tablets <strong><em>be careful</em></strong> and don’t use painkillers or other things that might be misappropriated or trigger allergies.</p>
+<p>Blue-tack about a quater of a fizzy tablet to the inside of the lid. Partially fill the capsule with hot/cold water, mild acid etc. Gently(!) attach the lid and invert, retire a short distance.</p>
+<p>The temperature, volume and acidity of water (use lemon juice or simmilar for safety, the participants will get splashed!) all make excellent variables for an open-ended investigation.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Film canister</li>
+<li>Vitamin C “Fizzy” tablets</li>
+<li>“Gratnell” type trays</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-firework-rocket---upside-down" class="level3" data-number="6.5.4">
+<h3 data-number="6.5.4" class="anchored" data-anchor-id="the-firework-rocket---upside-down"><span class="header-section-number">6.5.4</span> The firework rocket - upside down!</h3>
+<p>This teacher demonstration should only be done in the open air using safety screens. I have done this in a fume cabinet but you need to check that it is capable of dealing with the rapid flow of hot gas.</p>
+<p>All present should wear safety spectacles and should stand well back. Never use a rocket containing an ejection charge.</p>
+<p>Mount a small estes-type rocket (I suggest “A” class), one without ejection charge, pointing downwards and held loosely in a tube (22mm plumbing pipe works well) in a clamp on the top of either a datalogging top pan balance or force sensor.</p>
+<p>Light the rocket and stand well back behind the safety screen. The thrust of the rocket acts downwards and the reading on the meter or balance gives the thrust of the rocket during the firing.</p>
+<p>If you don’t have a datalogging tool you can film the reading on the scale for manual analysis.</p>
+<p>With a little care you can produce a fantastic impulse graph:</p>
+<p><img src="images/clipboard-1681133638.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Solid fuel rocket (A class &amp; without ejection charge if possible)</li>
+<li>Top pan balance</li>
+<li>Small metal tin lid ’Piece of hardboard to protect balance ’Safety screen</li>
+<li>Retort stand and two clamps ’Launch tube to hold rocket</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="balloon-rocket" class="level3" data-number="6.5.5">
+<h3 data-number="6.5.5" class="anchored" data-anchor-id="balloon-rocket"><span class="header-section-number">6.5.5</span> Balloon rocket</h3>
 <p>(a) Blow up a balloon and then release it so that it flies around the lab.</p>
 <p>This is a classic demonstration of Newton’s Third Law and the conservation of momentum. The momentum of the exhaust air is equal and opposite to that of the rubber of the balloon. The momentum of the complete system before release is zero and that after release must therefore also be zero.</p>
 <p>tion</p>
@@ -783,17 +1218,42 @@ window.Quarto = {
 <ol start="2" type="a">
 <li><p>A variation of this simple experiment is to use a “tethered” rocket by fixing the balloon to a plastic straw which is threaded on a taut line across the lab. Keep the balloon closed with a clothes peg while you prepare the mount.</p></li>
 <li><p>The principle of action and reaction can be demonstrated by a variation of the balloon rocket. You will need two balloons - one with a short length of plastic tube (a centimetre or so) fitted in its neck. Now blow up the other balloon, close off its neck with a clip and fix it to the other end of the tube. Now open the clip. The inflated balloon does not fly around the lab - the emitted air produces a force on the other balloon which prevents it from moving.</p></li>
-<li><p>Another demonstration of this principle is to take a plastic straw - one with a flexible section - and bend it into an L shape. Pivot the top and blow into it through a tube - the emitted air will make the straw turn. Now fit a small plastic bag or a piece of cling film over the end. No air escapes - there is a force on the bag and the straw does not turn.</p></li>
 </ol>
-<blockquote class="blockquote">
-<p>Age range: 11-14</p>
-<p>Apparatus required:</p>
-<p>•Balloons - at least one sausage shaped one •Plastic straw •Tight wire mounting •Clothes peg</p>
-<p>•Plastic tube ’Plastic straw</p>
-</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Balloons - at least one sausage shaped one</li>
+<li>Plastic straw</li>
+<li>Tight wire mounting</li>
+<li>Clothes peg</li>
+</ul>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
-</section>
 </section>
 </section>
 

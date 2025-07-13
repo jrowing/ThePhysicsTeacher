@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Work, Energy, &amp; Power – The Physics Teacher</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./CircularMotion.html" rel="next">
+<link href="./BasicPhysics.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-604c3d4c4a4e540f9ea15e4aba1a9bab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Physics Teacher</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://buymeacoffee.com/jrowing" target="_blank"> 
+<span class="menu-text">Buy Me a Coffee</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./The-Physics-Teacher.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasicPhysics.html">The Basics</a></li><li class="breadcrumb-item"><a href="./WorkEnergyPower.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introductions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liniver.com</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhyPhox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Phy-Phox: Physics Phone Experiments</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PhET.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PhET Interactive Simulations: Bringing Physics to Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Basics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BasicPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Physics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WorkEnergyPower.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mechanics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CircularMotion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ForcesNewton.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Forces and Newton’s Laws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Friction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Inertia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Inertia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Momentum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Momentum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fluids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fluids</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Statics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Statics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MiscMechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">MiscMechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">The Earth and Beyond</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Astronomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Astronomy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Electricity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Capacitors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CurrentElectricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">CurrentElectricity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Elasticity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electromagnetism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Electromagnetism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fields</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Electrostatics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Electrostatics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Gravity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Thermal Physics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GasLaws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GasLaws</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ThermalPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">ThermalPhysics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Waves &amp; Optics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./optics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">optics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./VibrationsWaves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">VibrationsWaves</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Nuclear &amp; Quantum</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./NuclearPhysics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NuclearPhysics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quanta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Quanta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Radioactivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Radioactivity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MoreResources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">MoreResources</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#work-energy-and-power-basic-theory" id="toc-work-energy-and-power-basic-theory" class="nav-link active" data-scroll-target="#work-energy-and-power-basic-theory"><span class="header-section-number">4.1</span> Work, Energy, and Power: Basic Theory</a>
+  <ul>
+  <li><a href="#work-w" id="toc-work-w" class="nav-link" data-scroll-target="#work-w"><span class="header-section-number">4.1.1</span> Work (<span class="math inline">\(W\)</span>)</a></li>
+  <li><a href="#energy" id="toc-energy" class="nav-link" data-scroll-target="#energy"><span class="header-section-number">4.1.2</span> Energy</a>
+  <ul>
+  <li><a href="#kinetic-energy-e_k" id="toc-kinetic-energy-e_k" class="nav-link" data-scroll-target="#kinetic-energy-e_k">Kinetic Energy (<span class="math inline">\(E_k\)</span>)</a></li>
+  <li><a href="#gravitational-potential-energy-e_p" id="toc-gravitational-potential-energy-e_p" class="nav-link" data-scroll-target="#gravitational-potential-energy-e_p">Gravitational Potential Energy (<span class="math inline">\(E_p\)</span>)</a></li>
+  <li><a href="#elastic-potential-energy" id="toc-elastic-potential-energy" class="nav-link" data-scroll-target="#elastic-potential-energy">Elastic Potential Energy</a></li>
+  </ul></li>
+  <li><a href="#conservation-of-energy" id="toc-conservation-of-energy" class="nav-link" data-scroll-target="#conservation-of-energy"><span class="header-section-number">4.1.3</span> Conservation of Energy</a></li>
+  <li><a href="#power-p" id="toc-power-p" class="nav-link" data-scroll-target="#power-p"><span class="header-section-number">4.1.4</span> Power (<span class="math inline">\(P\)</span>)</a></li>
+  <li><a href="#alternative-expressions" id="toc-alternative-expressions" class="nav-link" data-scroll-target="#alternative-expressions"><span class="header-section-number">4.1.5</span> Alternative expressions:</a></li>
+  <li><a href="#efficiency" id="toc-efficiency" class="nav-link" data-scroll-target="#efficiency"><span class="header-section-number">4.1.6</span> Efficiency</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">4.1.7</span> Summary Table</a></li>
+  </ul></li>
+  <li><a href="#stories-to-enrich" id="toc-stories-to-enrich" class="nav-link" data-scroll-target="#stories-to-enrich"><span class="header-section-number">4.2</span> Stories to enrich</a>
+  <ul>
+  <li><a href="#heros-steam-engine-the-first-work-done-by-steam" id="toc-heros-steam-engine-the-first-work-done-by-steam" class="nav-link" data-scroll-target="#heros-steam-engine-the-first-work-done-by-steam"><span class="header-section-number">4.2.1</span> Hero’s Steam Engine: The First Work Done by Steam</a></li>
+  <li><a href="#james-joules-honeymoon" id="toc-james-joules-honeymoon" class="nav-link" data-scroll-target="#james-joules-honeymoon"><span class="header-section-number">4.2.2</span> James Joule’s Honeymoon</a></li>
+  <li><a href="#james-watt-and-the-horsepower-revolution" id="toc-james-watt-and-the-horsepower-revolution" class="nav-link" data-scroll-target="#james-watt-and-the-horsepower-revolution"><span class="header-section-number">4.2.3</span> James Watt and the Horsepower Revolution</a></li>
+  <li><a href="#the-falling-weight-joules-paddle-wheel-experiment" id="toc-the-falling-weight-joules-paddle-wheel-experiment" class="nav-link" data-scroll-target="#the-falling-weight-joules-paddle-wheel-experiment"><span class="header-section-number">4.2.4</span> The Falling Weight: Joule’s Paddle Wheel Experiment</a></li>
+  <li><a href="#the-boiling-amazon" id="toc-the-boiling-amazon" class="nav-link" data-scroll-target="#the-boiling-amazon"><span class="header-section-number">4.2.5</span> The Boiling Amazon</a></li>
+  <li><a href="#the-human-body-a-power-plant" id="toc-the-human-body-a-power-plant" class="nav-link" data-scroll-target="#the-human-body-a-power-plant"><span class="header-section-number">4.2.6</span> The Human Body: A Power Plant</a></li>
+  </ul></li>
+  <li><a href="#practical-work-and-demos" id="toc-practical-work-and-demos" class="nav-link" data-scroll-target="#practical-work-and-demos"><span class="header-section-number">4.3</span> Practical work and Demos</a>
+  <ul>
+  <li><a href="#cars-and-carpet" id="toc-cars-and-carpet" class="nav-link" data-scroll-target="#cars-and-carpet"><span class="header-section-number">4.3.1</span> Cars and carpet</a></li>
+  <li><a href="#crumple-zones" id="toc-crumple-zones" class="nav-link" data-scroll-target="#crumple-zones"><span class="header-section-number">4.3.2</span> Crumple zones</a></li>
+  <li><a href="#are-you-more-powerful-than-yoda" id="toc-are-you-more-powerful-than-yoda" class="nav-link" data-scroll-target="#are-you-more-powerful-than-yoda"><span class="header-section-number">4.3.3</span> Are you more powerful than Yoda?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasicPhysics.html">The Basics</a></li><li class="breadcrumb-item"><a href="./WorkEnergyPower.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Work, Energy, &amp; Power</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>General theory for this section:</p>
+<section id="work-energy-and-power-basic-theory" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="work-energy-and-power-basic-theory"><span class="header-section-number">4.1</span> Work, Energy, and Power: Basic Theory</h2>
+<section id="work-w" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="work-w"><span class="header-section-number">4.1.1</span> Work (<span class="math inline">\(W\)</span>)</h3>
+<ul>
+<li><p>Work is done when a force causes displacement: <span class="math display">\[
+W = F d \cos \theta
+\]</span> Where:</p></li>
+<li><p><span class="math inline">\(F\)</span> = applied force (N)</p></li>
+<li><p><span class="math inline">\(d\)</span> = displacement (m)</p></li>
+<li><p><span class="math inline">\(\theta\)</span> = angle between force and displacement</p></li>
+<li><p>Units: joules (J), where <span class="math inline">\(1\,\text{J} = 1\,\text{N·m}\)</span></p></li>
+<li><p><strong>No work is done</strong> if there is:</p>
+<ul>
+<li>No displacement</li>
+<li>Force perpendicular to displacement (e.g.&nbsp;circular motion)</li>
+</ul></li>
+</ul>
+</section>
+<section id="energy" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="energy"><span class="header-section-number">4.1.2</span> Energy</h3>
+<ul>
+<li><strong>Energy</strong> is the capacity to do work.</li>
+</ul>
+<section id="kinetic-energy-e_k" class="level4">
+<h4 class="anchored" data-anchor-id="kinetic-energy-e_k">Kinetic Energy (<span class="math inline">\(E_k\)</span>)</h4>
+<ul>
+<li>Energy of a moving object: <span class="math display">\[
+E_k = \frac{1}{2} m v^2
+\]</span> Where <span class="math inline">\(m\)</span> is mass (kg) and <span class="math inline">\(v\)</span> is speed (m/s)</li>
+</ul>
+</section>
+<section id="gravitational-potential-energy-e_p" class="level4">
+<h4 class="anchored" data-anchor-id="gravitational-potential-energy-e_p">Gravitational Potential Energy (<span class="math inline">\(E_p\)</span>)</h4>
+<ul>
+<li>Energy due to position in a gravitational field: <span class="math display">\[
+E_p = m g h
+\]</span> Where <span class="math inline">\(g = 9.8\,\text{m/s}^2\)</span> (on Earth), <span class="math inline">\(h\)</span> is height (m)</li>
+</ul>
+</section>
+<section id="elastic-potential-energy" class="level4">
+<h4 class="anchored" data-anchor-id="elastic-potential-energy">Elastic Potential Energy</h4>
+<ul>
+<li>Stored in stretched/compressed springs: <span class="math display">\[
+E = \frac{1}{2} k x^2
+\]</span> Where <span class="math inline">\(k\)</span> is spring constant (N/m), <span class="math inline">\(x\)</span> is extension/compression (m)</li>
+</ul>
+</section>
+</section>
+<section id="conservation-of-energy" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="conservation-of-energy"><span class="header-section-number">4.1.3</span> Conservation of Energy</h3>
+<ul>
+<li><strong>Total energy is conserved</strong> in a closed system: <span class="math display">\[
+\text{Total energy in} = \text{Total energy out}
+\]</span></li>
+<li>Energy can be transformed (e.g.&nbsp;potential ↔︎ kinetic) but not created or destroyed.</li>
+</ul>
+</section>
+<section id="power-p" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="power-p"><span class="header-section-number">4.1.4</span> Power (<span class="math inline">\(P\)</span>)</h3>
+<ul>
+<li><p>Power is the rate of doing work or transferring energy: <span class="math display">\[
+P = \frac{W}{t} = \frac{E}{t}
+\]</span> Where:</p></li>
+<li><p><span class="math inline">\(W\)</span> = work done (J)</p></li>
+<li><p><span class="math inline">\(t\)</span> = time (s)</p></li>
+<li><p>Units: watts (W), where <span class="math inline">\(1\,\text{W} = 1\,\text{J/s}\)</span></p></li>
+</ul>
+</section>
+<section id="alternative-expressions" class="level3" data-number="4.1.5">
+<h3 data-number="4.1.5" class="anchored" data-anchor-id="alternative-expressions"><span class="header-section-number">4.1.5</span> Alternative expressions:</h3>
+<ul>
+<li>If an object is moving at constant speed under constant force: <span class="math display">\[
+P = F v
+\]</span></li>
+</ul>
+</section>
+<section id="efficiency" class="level3" data-number="4.1.6">
+<h3 data-number="4.1.6" class="anchored" data-anchor-id="efficiency"><span class="header-section-number">4.1.6</span> Efficiency</h3>
+<ul>
+<li>A measure of how much input energy is usefully transferred: <span class="math display">\[
+\text{Efficiency} = \frac{\text{useful output energy}}{\text{input energy}} \times 100\%
+\]</span></li>
+</ul>
+</section>
+<section id="summary-table" class="level3" data-number="4.1.7">
+<h3 data-number="4.1.7" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">4.1.7</span> Summary Table</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Formula</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Work</td>
+<td><span class="math inline">\(W = F d \cos \theta\)</span></td>
+<td>joule (J)</td>
+</tr>
+<tr class="even">
+<td>Kinetic Energy</td>
+<td><span class="math inline">\(E_k = \frac{1}{2} m v^2\)</span></td>
+<td>joule (J)</td>
+</tr>
+<tr class="odd">
+<td>Gravitational Potential</td>
+<td><span class="math inline">\(E_p = m g h\)</span></td>
+<td>joule (J)</td>
+</tr>
+<tr class="even">
+<td>Elastic Potential Energy</td>
+<td><span class="math inline">\(E = \frac{1}{2} k x^2\)</span></td>
+<td>joule (J)</td>
+</tr>
+<tr class="odd">
+<td>Power</td>
+<td><span class="math inline">\(P = \frac{E}{t}\)</span> or <span class="math inline">\(P = F v\)</span></td>
+<td>watt (W)</td>
+</tr>
+<tr class="even">
+<td>Efficiency</td>
+<td><span class="math inline">\(\frac{\text{useful}}{\text{input}} \times 100\%\)</span></td>
+<td>percent (%)</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="stories-to-enrich" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="stories-to-enrich"><span class="header-section-number">4.2</span> Stories to enrich</h2>
+<section id="heros-steam-engine-the-first-work-done-by-steam" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="heros-steam-engine-the-first-work-done-by-steam"><span class="header-section-number">4.2.1</span> Hero’s Steam Engine: The First Work Done by Steam</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4220194481.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<p>Though called Hero’s engine, Vitruvius’s (c.&nbsp;80 BC – c.&nbsp;15 BC) was the first to mention aeolipiles by name:</p>
+<blockquote class="blockquote">
+<p>Aeolipilae are hollow brazen vessels, which have an opening or mouth of small size, by means of which they can be filled with water. Prior to the water being heated over the fire, but little wind is emitted. As soon, however, as the water begins to boil, a violent wind issues forth.[6]</p>
+</blockquote>
+<p>Hero (c.&nbsp;10–70 AD) takes a more practical approach, in that he gives instructions how to make one:</p>
+<blockquote class="blockquote">
+<p>PLACE a cauldron over a fire: a ball shall revolve on a pivot. A fire is ignited under a cauldron, A B, (fig.&nbsp;50), containing water, and covered at the mouth by the lid C D; with this the bent tube E F G communicates, the extremity of the tube being fitted into a hollow ball, H K. Opposite to the extremity G place a pivot, L M, resting on the lid C D; and let the ball contain two bent pipes, communicating with it at the opposite extremities of a diameter, and bent in opposite directions, the bends being at right angles and across the lines F G, L M. As the cauldron gets hot it will be found that the steam, entering the ball through E F G, passes out through the bent tubes towards the lid, and causes the ball to revolve, as in the case of the dancing figures.</p>
+</blockquote>
+<p>Rather oddly it appears that nobody thought to do anything with these machines for <em>centuries</em> after this. Their main use appears to have been a curio displayed in temples.</p>
+</section>
+<section id="james-joules-honeymoon" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="james-joules-honeymoon"><span class="header-section-number">4.2.2</span> James Joule’s Honeymoon</h3>
+<p>James Joule, whose name we use for the unit of energy, was so passionate about energy conservation that he ran an experiment on his honeymoon. While visiting the Alps in 1847, Joule measured the temperature rise of water at the bottom of a waterfall, testing whether the mechanical energy of the falling water converted to heat. His findings supported the idea that mechanical work and heat were two forms of the same thing — energy. His new bride, according to some accounts, may not have been quite as enthusiastic about the experiment.</p>
+</section>
+<section id="james-watt-and-the-horsepower-revolution" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="james-watt-and-the-horsepower-revolution"><span class="header-section-number">4.2.3</span> James Watt and the Horsepower Revolution</h3>
+<p>James Watt improved the steam engine in the 18th century and coined the term horsepower to describe engine power relative to draft horses. His work transformed energy from a natural force into a measurable quantity used in industry. This idea helped quantify how much work engines could do, fueling the Industrial Revolution. His improvements were so successful that, along with his commercial partner, Watt quickly built a thriving company that supplied steam-driven pumps to mines.</p>
+<p>Amusingly the volume of paperwork he was faced with increased hugely and Watt struggled to find enough clerks to copy the documents of buisness. He did what any frustrated inventor would do and, along with Joseph Black, Watt invented the first copier.</p>
+<p>The first copy of a document was written in a gelatinous ink which was then dampened and pressed against another thin sheet by passing the two documents between two rollers. Tough the copy was only legible if read through the back of the copied sheet it produced a usable “photocopy”. Watt patented the device and sold 200 of the copiers in their first year of manufacture including a number to Thomas Jefferson</p>
+</section>
+<section id="the-falling-weight-joules-paddle-wheel-experiment" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="the-falling-weight-joules-paddle-wheel-experiment"><span class="header-section-number">4.2.4</span> The Falling Weight: Joule’s Paddle Wheel Experiment</h3>
+<p>James Prescott Joule carefully measured how much work was done by falling weights to stir water, observing temperature changes. This experiment linked mechanical work with heat energy, laying the foundation for the conservation of energy principle. It showed that energy could be transformed but not destroyed.</p>
+<p>The paddle-wheel experiment seems to be straightforward, but attempts to replicate it from Joule’s methodological description highlight either his prowess as an experimental scientist or his talents for inventive description. Joule’s instructions require an experimenter to use pulleys to raise and then drop two 13 kg masses 20 times within a 35-minute period. Between each winding, the experimenter must pause to take temperature readings from behind a wooden shield to prevent heating by their body affecting the experiment.</p>
+<p>His gravestone, in Sale, Greater Manchester, has the number 772.55 engraved on it, the magnitude of work required to heat a pound of water by one degree in foot-pounds.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4279738797.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="the-boiling-amazon" class="level3" data-number="4.2.5">
+<h3 data-number="4.2.5" class="anchored" data-anchor-id="the-boiling-amazon"><span class="header-section-number">4.2.5</span> The Boiling Amazon</h3>
+<p>For hundreds of years, legends spoke of a boiling river in the Amazonian jungle. In 2011, geoscientist Andrés Ruzo rediscovered and began studying the river. The average temperature of the water is 86°C and is heated by hot springs powered by geological fault lines.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/k4N2SxUZwiU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="the-human-body-a-power-plant" class="level3" data-number="4.2.6">
+<h3 data-number="4.2.6" class="anchored" data-anchor-id="the-human-body-a-power-plant"><span class="header-section-number">4.2.6</span> The Human Body: A Power Plant</h3>
+<p>The average human at rest produces about 100 watts of power—roughly the same as a light bulb. But a sprinter can output over 1,000 watts in a short burst. Our bodies convert chemical energy from food into mechanical work and heat. Understanding this helped develop sports science and ergonomics.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Activity</strong></th>
+<th><strong>Energy expenditure (kJ per hour per kg of body mass)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Talking or talking on the phone, reclining</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>Occupation, office work in general</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>Studying, general, including reading and/or writing (sitting)</td>
+<td>7.5</td>
+</tr>
+<tr class="even">
+<td>Washing dishes</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>Shopping (non-grocery shopping, walking)</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Playing snooker/pool</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Walking using crutches</td>
+<td>17</td>
+</tr>
+<tr class="even">
+<td>Playing drums</td>
+<td>17</td>
+</tr>
+<tr class="odd">
+<td>Table tennis, ping pong</td>
+<td>17</td>
+</tr>
+<tr class="even">
+<td>Swimming, backstoke</td>
+<td>33</td>
+</tr>
+<tr class="odd">
+<td>Football, competitive</td>
+<td>42</td>
+</tr>
+<tr class="even">
+<td>Swimming, crawl, fast</td>
+<td>46</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="practical-work-and-demos" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="practical-work-and-demos"><span class="header-section-number">4.3</span> Practical work and Demos</h2>
+<section id="cars-and-carpet" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="cars-and-carpet"><span class="header-section-number">4.3.1</span> Cars and carpet</h3>
+<p>One of the misconceptions that appears commonly is the need to push an object to cause it to move, as opposed to accelerating it. This comes about principally due to our experience of everything suffering friction. A very nice demonstration of work done against friction is in the braking of a toy car or trolley as it rolls down a ramp on to a piece of carpet. By measuring the stopping distance, and the energy involved, one can find the braking force. This can be done by either measuring the loss of potential energy as it runs down the ramp and on to the carpet or finding the loss of kinetic energy by measuring its speed with a light gate as it reaches the carpet.</p>
+<p>Simmilar things can be done by comparing the height drop of the cresta-run with the final velocity of the sledders. In many parts of the UK you’ll see escape lanes filled with gravel at the sides of steep hills to stop runaway traffic. There are some spectacular videos of these in action on youtube.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/C0BxORWTD7s" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>For a car of mass m travelling down a ramp from a height h and reaching a speed v at the bottom:</p>
+<p>Loss of kinetic energy as it brakes to a stop on the carpet = Braking force (F) x Braking distance (d)</p>
+<p>Potential energy lost in travelling down the ramp = mgh</p>
+<p>If we assume that this is all converted to kinetic energy then mgh = Fd</p>
+<p>If we use the velocity and therefore the kinetic energy at the base of the ramp then we can ignore the effect of friction on the the ramp.</p>
+<p><span class="math display">\[ \text{Kinetic energy} = 1/2 mv^{2} = Fd\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Traditional lab trolleys or some larger toy cars work best</li>
+<li>Ramps</li>
+<li>Squares of carpet/a carpeted room</li>
+<li>Rulers</li>
+</ul>
+<p>Optional: - Lightgates - Stopwatches</p>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="crumple-zones" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="crumple-zones"><span class="header-section-number">4.3.2</span> Crumple zones</h3>
+<p>I like to illustrate the crumple-zone with a little competition. I place a solid block at the base of a ramp down which cars can be rolled. Students have eg. 20 minutes, a meter of tape and 5 sheets of A4 paper with which to reduce the impact of the car on the block. It’s fun to measure this with an accelerometer (you could use a phone and phy-phox) or a force meter. For a less precise (but more fun version) challenge students to protect an egg passenger on the top of the cart.</p>
+<p>Either way there’s lots of opportunity to relate GPE to KE to work done and link these ideas with impulse and newton’s second law.</p>
+<p>The speed (<span class="math inline">\(v\)</span>) at which the cylinder (crumple zone) hits the floor (a solid block) can be found from: <span class="math display">\[ v = \sqrt{2gh} \]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(h\)</span> is the high fallen and</li>
+<li><span class="math inline">\(g\)</span> is the acceleration due to gravity (9.81 <span class="math inline">\(ms^{-2}\)</span>).</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Traditional lab trolleys or some larger toy cars work best</li>
+<li>Ramps</li>
+<li>Materials for crash barriers/crumple zones</li>
+<li>Egg</li>
+</ul>
+<p>Optional: - Datalogging forcemeter</p>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="are-you-more-powerful-than-yoda" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="are-you-more-powerful-than-yoda"><span class="header-section-number">4.3.3</span> Are you more powerful than Yoda?</h3>
+<p>The core of this investiagation is a classic experiment to measure a pupil’s power - they carry their own mass (themselves) up a known height. The pupils run up a flight of stairs of known height and measure the time that they take to do it. They then can measure their own weight or use “the international standard physicist mass<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>” of 80Kg and so calculate the work done and the power that they developed. Carrying a rucksack loaded with books will increase their weight.</p>
+<p>The second part of this was inspired by the wonderful <a href="https://what-if.xkcd.com/3/" class="uri">https://what-if.xkcd.com/3/</a>. In turn that was inspired by the great SMBC comic exploring the geopolitical consequences of having Superman turn a crank to provide an unlimited source of energy.</p>
+<p>Yoda’s greatest display of raw power in the original trilogy came when he lifted Luke’s X-Wing from the swamp. As far as physically moving objects around goes, this was easily the biggest expenditure of energy through the Force we saw from anyone in the trilogy.</p>
+<p>I tend to walk the students through the following fermi-problem:</p>
+<p>The energy it takes to lift an object to height h is equal to the object’s mass times the force of gravity times the height it’s lifted. The X-Wing scene lets us use this to put a lower limit on Yoda’s peak power output.</p>
+<p>First we need to know how heavy the ship was. The X-Wing’s mass has never been canonically established, but its length has—12.5 meters. An F-22 is 19 meters long and weighs 19,700 kg, so scaling down from this gives an estimate for the X-Wing of about 12,000 lbs (5 metric tons).</p>
+<p>Next, we need to know how fast it was rising…</p>
+<p>We go over footage of the scene (lots of sources on youtube) and we time the X-Wing’s rate of ascent as it was emerging from the water. The front landing strut rises out of the water in about three and a half seconds, and I estimate the strut to be 1.4 meters long (based on a scene in A New Hope where a crew member squeezes past it), which tells us the X-Wing was rising at 0.39 m/s.</p>
+<p>Lastly, we need to know the strength of gravity on Dagobah. Wookieepeedia has a catalog of such things and informs us that the surface gravity on Dagobah is 0.9g. Combining this with the X-Wing mass and lift rate gives us our peak power output:</p>
+<p>Note that in the experiment it’s advisable to only allow one pupil at a time to run up the stairs. A slope is better if you have one available. I always give a good warning about taking care, wearing sensible footwear etc. If you think your class are likely to be over enthusiastic which would lead to falls and injuries, please skip this. An accessible alternative is to lift a heavy mass through a measured distance with one or two hands, again the mass should be light enough to not cause injury and no pupil should lift a weight higher than their own shoulders. Warn of back damage here.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practical Info:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><strong>Equipment</strong></p>
+<ul>
+<li>Stairs</li>
+<li>Rulers</li>
+<li>Stopwatches</li>
+</ul>
+<p>Optional: - Scales (you can buy scales that read in Newtons which can help get past the issues of mass-sensitivity)</p>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<p><strong>Age range / Keystage</strong></p>
+<p>KS3: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i><i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS4: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+<p>KS5: <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i> <i class="fa-solid fa-star" aria-label="star"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Yes, I made it up but it’s good to allow students to avoid mass/self image issues.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./BasicPhysics.html" class="pagination-link" aria-label="Basic Physics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Basic Physics</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./CircularMotion.html" class="pagination-link" aria-label="Circular Motion">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Circular Motion</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2025, Joe Rowing</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jrowing">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/jrowing.com">
+      <i class="bi bi-megaphone" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.jrowing.com">
+      <i class="bi bi-file-earmark" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
