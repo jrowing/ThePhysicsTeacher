@@ -3,8 +3,8 @@ title: "Scientific Enquiry"
 format: html
 ---
 
-
 ## Introduction
+
 We often hear people speak of “the scientific method” as though it’s a single, polished tool, like a microscope or a telescope, sitting ready for use on a laboratory shelf. In truth, the scientific method is less an object than a way of thinking — a process that humanity has painstakingly shaped over centuries, driven by our curiosity about the world and our desire to separate truth from illusion.
 
 At its core, the scientific method is a systematic approach to understanding reality. It begins with observation: noticing something in the world that sparks a question. From there, scientists formulate hypotheses — tentative explanations or predictions that can be tested. Experiments and further observations follow, designed specifically to challenge these hypotheses. Data is gathered, analyzed, and conclusions are drawn. Importantly, these conclusions are always provisional, ready to be revised or discarded in light of new evidence.
@@ -21,167 +21,169 @@ Since those early days, the scientific method has continued to evolve. Statistic
 
 Despite its power, the scientific method is not perfect. It is a human endeavor, vulnerable to mistakes, misinterpretations, and even misconduct. But its genius lies in its self-correcting nature. Bad ideas, over time, are weeded out when they fail to withstand scrutiny or cannot be replicated. Good ideas grow stronger as evidence accumulates.
 
-
-
 ## Classic Scientific Method Demos
 
 ### Paper Helicopter Investigation
-- **Question:** What factors affect how long a paper helicopter stays in the air?
-- **Instructions:**
-  - Fold paper helicopters with different wing lengths.
-  - Drop each from the same height.
-  - Measure time to fall.
-  - Discuss variables, fair tests, repeated trials, and analysis.
+
+-   **Question:** What factors affect how long a paper helicopter stays in the air?
+-   **Instructions:**
+    -   Fold paper helicopters with different wing lengths.
+    -   Drop each from the same height.
+    -   Measure time to fall.
+    -   Discuss variables, fair tests, repeated trials, and analysis.
 
 ### Pendulum Length and Time
-- **Question:** Does pendulum length affect the period?
-- **Instructions:**
-  - Hang a mass from different string lengths.
-  - Time multiple swings.
-  - Plot period vs length.
-  - Highlight prediction and analysis.
 
+-   **Question:** Does pendulum length affect the period?
+-   **Instructions:**
+    -   Hang a mass from different string lengths.
+    -   Time multiple swings.
+    -   Plot period vs length.
+    -   Highlight prediction and analysis.
 
 ### 3. Dissolving Rate of Sugar
-- **Question:** Does temperature affect dissolving speed?
-- **Instructions:**
-  - Use the same amount of sugar in cold, warm, hot water.
-  - Stir consistently.
-  - Time dissolution.
-  - Graph results; emphasise controlled testing.
 
+-   **Question:** Does temperature affect dissolving speed?
+-   **Instructions:**
+    -   Use the same amount of sugar in cold, warm, hot water.
+    -   Stir consistently.
+    -   Time dissolution.
+    -   Graph results; emphasise controlled testing.
 
 ### Plant Growth Under Different Light Colors
-- **Question:** Do plants grow better under certain light colors?
-- **Instructions:**
-  - Grow small plants in transparent cups.
-  - Cover with different color cellophane.
-  - Measure height weekly.
-  - Record and discuss.
 
+-   **Question:** Do plants grow better under certain light colors?
+-   **Instructions:**
+    -   Grow small plants in transparent cups.
+    -   Cover with different color cellophane.
+    -   Measure height weekly.
+    -   Record and discuss.
 
 ### Paper Towel Absorbency Test
-- **Question:** Which paper towel absorbs most water?
-- **Instructions:**
-  - Dip equal-sized pieces into water for a fixed time.
-  - Weigh before and after.
-  - Compare brands.
-  - Emphasise fair testing and bias.
 
+-   **Question:** Which paper towel absorbs most water?
+-   **Instructions:**
+    -   Dip equal-sized pieces into water for a fixed time.
+    -   Weigh before and after.
+    -   Compare brands.
+    -   Emphasise fair testing and bias.
 
 ### Friction of Different Surfaces
-- **Question:** Does surface type affect sliding distance?
-- **Instructions:**
-  - Use block and ramp with different surfaces.
-  - Release block from the same height.
-  - Measure how far it slides.
-  - Record repeat data.
 
-
+-   **Question:** Does surface type affect sliding distance?
+-   **Instructions:**
+    -   Use block and ramp with different surfaces.
+    -   Release block from the same height.
+    -   Measure how far it slides.
+    -   Record repeat data.
 
 ### Reaction Times with Ruler Drop
-- **Question:** Do reaction times vary?
-- **Instructions:**
-  - Hold ruler vertically over a student’s hand.
-  - Drop without warning.
-  - Measure distance fallen before caught.
-  - Convert to time and plot results.
 
+-   **Question:** Do reaction times vary?
+-   **Instructions:**
+    -   Hold ruler vertically over a student’s hand.
+    -   Drop without warning.
+    -   Measure distance fallen before caught.
+    -   Convert to time and plot results.
 
 ### Rusting of Iron
-- **Question:** What conditions cause faster rusting?
-- **Instructions:**
-  - Set up test tubes with iron nails in:
-    - Air
-    - Water
-    - Salt water
-    - Oil covering water
-  - Observe changes over days.
-  - Discuss hypothesis and evidence.
 
----
+-   **Question:** What conditions cause faster rusting?
+-   **Instructions:**
+    -   Set up test tubes with iron nails in:
+        -   Air
+        -   Water
+        -   Salt water
+        -   Oil covering water
+    -   Observe changes over days.
+    -   Discuss hypothesis and evidence.
+
+------------------------------------------------------------------------
 
 ### Insulation Effectiveness
-- **Question:** Which materials insulate best?
-- **Instructions:**
-  - Wrap hot water in different materials.
-  - Measure temperature drop each minute.
-  - Plot graphs.
-  - Discuss control of variables.
 
-
+-   **Question:** Which materials insulate best?
+-   **Instructions:**
+    -   Wrap hot water in different materials.
+    -   Measure temperature drop each minute.
+    -   Plot graphs.
+    -   Discuss control of variables.
 
 ### Floating and Sinking – Density
-- **Question:** Why do some objects float?
-- **Instructions:**
-  - Drop objects into water.
-  - Predict and record results.
-  - Discuss density.
-  - Encourage hypothesis testing.
 
+-   **Question:** Why do some objects float?
+-   **Instructions:**
+    -   Drop objects into water.
+    -   Predict and record results.
+    -   Discuss density.
+    -   Encourage hypothesis testing.
 
-###  Melting Ice Blocks
-- **Question:** Which material melts ice fastest?
-- **Instructions:**
-  - Place ice on various surfaces.
-  - Time melting rate.
-  - Compare conductivity.
-  - Emphasise forming hypotheses.
+### Melting Ice Blocks
+
+-   **Question:** Which material melts ice fastest?
+-   **Instructions:**
+    -   Place ice on various surfaces.
+    -   Time melting rate.
+    -   Compare conductivity.
+    -   Emphasise forming hypotheses.
 
 ### Balloon Rocket Experiment
-- **Question:** Does balloon size affect speed?
-- **Instructions:**
-  - Inflate balloons of different sizes.
-  - Release along string track.
-  - Time their travel.
-  - Analyse data.
+
+-   **Question:** Does balloon size affect speed?
+-   **Instructions:**
+    -   Inflate balloons of different sizes.
+    -   Release along string track.
+    -   Time their travel.
+    -   Analyse data.
 
 ### Bread Mould Growth
-- **Question:** What conditions promote mould growth?
-- **Instructions:**
-  - Place damp bread in sealed bags:
-    - Warm/dark
-    - Cool/light
-    - Fridge
-  - Observe daily.
-  - Record changes.
-  - Highlight scientific record keeping.
 
+-   **Question:** What conditions promote mould growth?
+-   **Instructions:**
+    -   Place damp bread in sealed bags:
+        -   Warm/dark
+        -   Cool/light
+        -   Fridge
+    -   Observe daily.
+    -   Record changes.
+    -   Highlight scientific record keeping.
 
 ### Soundproofing Test
-- **Question:** What materials block sound best?
-- **Instructions:**
-  - Place a ticking clock inside boxes lined with different materials.
-  - Listen or measure sound level.
-  - Compare results.
-  - Discuss conclusions.
+
+-   **Question:** What materials block sound best?
+-   **Instructions:**
+    -   Place a ticking clock inside boxes lined with different materials.
+    -   Listen or measure sound level.
+    -   Compare results.
+    -   Discuss conclusions.
 
 ### Paper Strength Test
-- **Question:** Which paper type is strongest?
-- **Instructions:**
-  - Hang weights from strips of different paper.
-  - Record max weight each holds.
-  - Compare brands.
-  - Discuss fair testing.
+
+-   **Question:** Which paper type is strongest?
+-   **Instructions:**
+    -   Hang weights from strips of different paper.
+    -   Record max weight each holds.
+    -   Compare brands.
+    -   Discuss fair testing.
 
 ### Hero's Fountain
-- **Concept:** Hidden siphon
-- **Source:** [Mysterious Fountain Demo](https://interactivetextbooks.tudelft.nl/showthephysics/demos/demo91/demo91.html)
-- **Instructions:**
-  - Assemble two bottles hidden inside a box, connected via a tube.
-  - Pour liquid into funnel—fountain flows unaided.
-  - Students propose explanations.
-  - Guide hypotheses and tests.
-  - Reveal siphon effect.
+
+-   **Concept:** Hidden siphon
+-   **Source:** [Mysterious Fountain Demo](https://interactivetextbooks.tudelft.nl/showthephysics/demos/demo91/demo91.html)
+-   **Instructions:**
+    -   Assemble two bottles hidden inside a box, connected via a tube.
+    -   Pour liquid into funnel—fountain flows unaided.
+    -   Students propose explanations.
+    -   Guide hypotheses and tests.
+    -   Reveal siphon effect.
 
 ### Roll and Stop Cylinder
-- **Concept:** Viscous torque
-- **Source:** [Roll and Stop Demo](https://interactivetextbooks.tudelft.nl/showthephysics/demos/demo72/demo72.html)
-- **Instructions:**
-  - Use sealed cylinder partly filled with viscous fluid and weight.
-  - Place on inclined plane.
-  - Observe rolling → stopping → rolling.
-  - Students suggest internal mechanisms.
-  - Reveal viscous torque causes lag.
 
-
+-   **Concept:** Viscous torque
+-   **Source:** [Roll and Stop Demo](https://interactivetextbooks.tudelft.nl/showthephysics/demos/demo72/demo72.html)
+-   **Instructions:**
+    -   Use sealed cylinder partly filled with viscous fluid and weight.
+    -   Place on inclined plane.
+    -   Observe rolling → stopping → rolling.
+    -   Students suggest internal mechanisms.
+    -   Reveal viscous torque causes lag.

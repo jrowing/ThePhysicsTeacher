@@ -22,7 +22,7 @@ book:
        - index.qmd
        - PhyPhox.qmd
        - PhET.qmd
-       - Scientific.qmd
+   #    - Scientific.qmd
     - part: "The Basics"
       chapters:
         - BasicPhysics.qmd
@@ -31,39 +31,39 @@ book:
       chapters:
         - CircularMotion.qmd
         - ForcesNewton.qmd
-        - Friction.qmd
-        - Inertia.qmd
-        - Momentum.qmd
-        - Fluids.qmd
-        - Statics.qmd
-        - MiscMechanics.qmd
-    - part: "The Earth and Beyond"
-      chapters:
-        - Astronomy.qmd
-    - part: "Electricity"
-      chapters:       
-        - Capacitors.qmd
-        - CurrentElectricity.qmd
-        - Elasticity.qmd
-        - Electromagnetism.qmd
-    - part: "Fields"
-      chapters: 
-        - Electrostatics.qmd
-        - Gravity.qmd
-    - part: "Thermal Physics"
-      chapters:    
-        - GasLaws.qmd
-        - ThermalPhysics.qmd
-    - part: "Waves & Optics"
-      chapters:
-        - optics.qmd
-        - VibrationsWaves.qmd
-    - part: "Nuclear & Quantum"
-      chapters:        
-        - NuclearPhysics.qmd
-        - Quanta.qmd
-        - Radioactivity.qmd
-  appendices:  
+  #       - Friction.qmd
+  #       - Inertia.qmd
+  #       - Momentum.qmd
+  #       - Fluids.qmd
+  #       - Statics.qmd
+  #       - MiscMechanics.qmd
+  #   - part: "The Earth and Beyond"
+  #     chapters:
+  #       - Astronomy.qmd
+  #   - part: "Electricity"
+  #     chapters:       
+  #       - Capacitors.qmd
+  #       - CurrentElectricity.qmd
+  #       - Elasticity.qmd
+  #       - Electromagnetism.qmd
+  #   - part: "Fields"
+  #     chapters: 
+  #       - Electrostatics.qmd
+  #       - Gravity.qmd
+  #   - part: "Thermal Physics"
+  #     chapters:    
+  #       - GasLaws.qmd
+  #       - ThermalPhysics.qmd
+  #   - part: "Waves & Optics"
+  #     chapters:
+  #       - optics.qmd
+  #       - VibrationsWaves.qmd
+  #   - part: "Nuclear & Quantum"
+  #     chapters:        
+  #       - NuclearPhysics.qmd
+  #       - Quanta.qmd
+  #       - Radioactivity.qmd
+  # appendices:  
     - MoreResources.qmd
 #    - intro.qmd
 #    - summary.qmd
