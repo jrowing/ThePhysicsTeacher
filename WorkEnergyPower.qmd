@@ -82,7 +82,7 @@ General theory for this section:
 ### Summary Table
 
 | Concept | Formula | Units |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Work | $W = F d \cos \theta$ | joule (J) |
 | Kinetic Energy | $E_k = \frac{1}{2} m v^2$ | joule (J) |
 | Gravitational Potential | $E_p = m g h$ | joule (J) |
@@ -139,7 +139,7 @@ For hundreds of years, legends spoke of a boiling river in the Amazonian jungle.
 The average human at rest produces about 100 watts of power—roughly the same as a light bulb. But a sprinter can output over 1,000 watts in a short burst. Our bodies convert chemical energy from food into mechanical work and heat. Understanding this helped develop sports science and ergonomics.
 
 | **Activity** | **Energy expenditure (kJ per hour per kg of body mass)** |
-|------------------------------------|------------------------------------|
+|----|----|
 | Talking or talking on the phone, reclining | 4 |
 | Occupation, office work in general | 6 |
 | Studying, general, including reading and/or writing (sitting) | 7.5 |
@@ -182,15 +182,12 @@ $$ \text{Kinetic energy} = 1/2 mv^{2} = Fd$$
 ::: {.column width="45%"}
 **Equipment**
 
-- Traditional lab trolleys or some larger toy cars work best
-- Ramps 
-- Squares of carpet/a carpeted room
-- Rulers
+-   Traditional lab trolleys or some larger toy cars work best
+-   Ramps
+-   Squares of carpet/a carpeted room
+-   Rulers
 
-Optional:
-- Lightgates
-- Stopwatches
-
+Optional: - Lightgates - Stopwatches
 :::
 
 ::: {.column width="10%"}
@@ -200,7 +197,7 @@ Optional:
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -217,11 +214,10 @@ Either way there's lots of opportunity to relate GPE to KE to work done and link
 
 The speed ($v$) at which the cylinder (crumple zone) hits the floor (a solid block) can be found from: $$ v = \sqrt{2gh} $$
 
-where: 
+where:
 
- - $h$ is the high fallen and 
- - $g$ is the acceleration due to gravity (9.81 $ms^{-2}$).
-
+-   $h$ is the high fallen and
+-   $g$ is the acceleration due to gravity (9.81 $ms^{-2}$).
 
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
@@ -230,14 +226,12 @@ where:
 ::: {.column width="45%"}
 **Equipment**
 
-- Traditional lab trolleys or some larger toy cars work best
-- Ramps 
-- Materials for crash barriers/crumple zones
-- Egg
+-   Traditional lab trolleys or some larger toy cars work best
+-   Ramps
+-   Materials for crash barriers/crumple zones
+-   Egg
 
-Optional:
-- Datalogging forcemeter
-
+Optional: - Datalogging forcemeter
 :::
 
 ::: {.column width="10%"}
@@ -247,7 +241,7 @@ Optional:
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 
@@ -280,8 +274,6 @@ Lastly, we need to know the strength of gravity on Dagobah. Wookieepeedia has a 
 
 Note that in the experiment it's advisable to only allow one pupil at a time to run up the stairs. A slope is better if you have one available. I always give a good warning about taking care, wearing sensible footwear etc. If you think your class are likely to be over enthusiastic which would lead to falls and injuries, please skip this. An accessible alternative is to lift a heavy mass through a measured distance with one or two hands, again the mass should be light enough to not cause injury and no pupil should lift a weight higher than their own shoulders. Warn of back damage here.
 
-
-
 ::::::: {.callout-note collapse="true"}
 ## Practical Info:
 
@@ -289,13 +281,11 @@ Note that in the experiment it's advisable to only allow one pupil at a time to 
 ::: {.column width="45%"}
 **Equipment**
 
-- Stairs
-- Rulers
-- Stopwatches
+-   Stairs
+-   Rulers
+-   Stopwatches
 
-Optional:
-- Scales (you can buy scales that read in Newtons which can help get past the issues of mass-sensitivity)
-
+Optional: - Scales (you can buy scales that read in Newtons which can help get past the issues of mass-sensitivity)
 :::
 
 ::: {.column width="10%"}
@@ -305,7 +295,7 @@ Optional:
 ::: {.column width="45%"}
 **Age range / Keystage**
 
-KS3: {{< fa star >}} {{< fa star >}}{{< fa star >}}
+KS3: {{< fa star >}} {{< fa star >}}{{\< fa star \>}}
 
 KS4: {{< fa star >}} {{< fa star >}} {{< fa star >}}
 

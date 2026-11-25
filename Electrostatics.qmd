@@ -75,7 +75,7 @@ format: html
 ### Summary Table
 
 | Quantity | Symbol | Formula | Units |
-|--------------|--------------|----------------------------|--------------|
+|----|----|----|----|
 | Charge | $q$ | — | Coulomb (C) |
 | Coulomb’s force | $F$ | $F = k_e \frac{|q_1 q_2|}{r^2}$ | Newton (N) |
 | Electric field | $E$ | $E = \frac{F}{q} = k_e \frac{|Q|}{r^2}$ | N/C or V/m |
@@ -200,7 +200,7 @@ Age range: 16-18 Apparatus required: •Pico coulomb meter 'Suitable output mete
 
 ### Drawing pin on the Van de Graaff generator - dust/smoke collector
 
-Fix a drawing pin with its point facing upwards in the bottom of a perspex can on top of the  Van de Graaff generator, and blow some smoke into the can. Switch on the generator, and observe what happens. The discharge from the drawing pin point collects the smoke into a column. It is due to the concentration of charge at the point, and hence the large electric field there. This demonstration also works well without the can - simply using a pin mounted vertically on the dome.
+Fix a drawing pin with its point facing upwards in the bottom of a perspex can on top of the Van de Graaff generator, and blow some smoke into the can. Switch on the generator, and observe what happens. The discharge from the drawing pin point collects the smoke into a column. It is due to the concentration of charge at the point, and hence the large electric field there. This demonstration also works well without the can - simply using a pin mounted vertically on the dome.
 
 > The Van de Graaff generator may give unexpected electric shocks. Staff should be prepared for this.
 >

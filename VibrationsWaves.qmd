@@ -17,19 +17,13 @@ format: html
 
 ### Wave Properties
 
-+------------+-----------+-------------------------------------------------+-------------+
-| Property   | Symbol    | Definition                                      | Units       |
-+============+===========+=================================================+=============+
-| Wavelength | $\lambda$ | Distance between two identical points on a wave | meters (m)  |
-+------------+-----------+-------------------------------------------------+-------------+
-| Frequency  | $f$       | Number of oscillations per second               | hertz (Hz)  |
-+------------+-----------+-------------------------------------------------+-------------+
-| Period     | $T$       | Time for one full oscillation                   | seconds (s) |
-+------------+-----------+-------------------------------------------------+-------------+
-| Wave Speed | $v$       | Speed at which the wave travels                 | m/s         |
-+------------+-----------+-------------------------------------------------+-------------+
-| Amplitude  | $A$       | Maximum displacement from equilibrium           | meters (m)  |
-+------------+-----------+-------------------------------------------------+-------------+
+| Property | Symbol | Definition | Units |
+|----|----|----|----|
+| Wavelength | $\lambda$ | Distance between two identical points on a wave | meters (m) |
+| Frequency | $f$ | Number of oscillations per second | hertz (Hz) |
+| Period | $T$ | Time for one full oscillation | seconds (s) |
+| Wave Speed | $v$ | Speed at which the wave travels | m/s |
+| Amplitude | $A$ | Maximum displacement from equilibrium | meters (m) |
 
 Relationship between wave speed, frequency and wavelength: $$
 v = f \lambda
@@ -155,13 +149,9 @@ General theory for this section:
 
 ### Skipping rope - only certain frequencies
 
-Two people stand opposite each other and try swinging a skipping rope, or wobbling a  stretched rubber tube. They will find that are only certain frequencies that are allowed. No matter how hard they try, not all frequencies are possible.
+Two people stand opposite each other and try swinging a skipping rope, or wobbling a stretched rubber tube. They will find that are only certain frequencies that are allowed. No matter how hard they try, not all frequencies are possible.
 
-The fundamental frequency and two additional harmonics are shown in the diagram. These harmonics are easier to produce if the rubber tube is moved in a slightly circular way - rather like actual skipping. (l have found the rubber tubing easier to control than the rope.)! 
->
-> When the rope or cord vibrates with its fundamental frequency (the lowest) the length of the cord is  one half of one wavelength. For higher modes of oscillation the length is equal to a whole number of half wavelengths.
->
-> Age range: 14-18 Apparatus required: 'Skipping rope •Rubber tubing (Bunsen burner tubing is fine) 
+The fundamental frequency and two additional harmonics are shown in the diagram. These harmonics are easier to produce if the rubber tube is moved in a slightly circular way - rather like actual skipping. (l have found the rubber tubing easier to control than the rope.)! \> \> When the rope or cord vibrates with its fundamental frequency (the lowest) the length of the cord is one half of one wavelength. For higher modes of oscillation the length is equal to a whole number of half wavelengths. \> \> Age range: 14-18 Apparatus required: 'Skipping rope •Rubber tubing (Bunsen burner tubing is fine)
 
 ### Standing waves on plates - the drum
 
@@ -241,7 +231,8 @@ Plotting log T against either log M or log L where M is the mass on the ruler, L
 
 Age range: 13-16 Apparatus required: •Rulers of different thicknesses and materials
 
-### Standing waves on a vertical slinky 
+### Standing waves on a vertical slinky
+
 Hang a metal slinky spring from a beam and fix the lower end to a vibration generator. By adjustment of the frequency of the vibration generator very good standing waves may be set up in the slinky. It is helpful to mark the nodes with coloured tape.
 
 The frequency required is usually a few Hertz. As an extension try the experiment using a plastic slinky. Compare the frequencies needed to set up standing waves in the steel and the plastic.
@@ -253,7 +244,6 @@ The frequency required is usually a few Hertz. As an extension try the experimen
 > Apparatus required: •Vibration generator •Signal generator
 >
 > •Slinky spring •Coloured sticky tape
->
 
 ### Speed of waves along a rope
 
@@ -349,8 +339,6 @@ You could also try using a mobile phone with a suitable ring tone held in your h
 >
 > Age range: 16-19 Apparatus required: •Piezoelectric buzzer 'Power supply or battery pack •String •Two 2m leads •Electrical tape
 
-
-
 #### Doppler velocity with microwaves
 
 The frequency shift due to the reflection of a wave from a moving object (due to the Doppler Effect) is very easy to show using the 2.8 cm microwave apparatus. Set up the transmitter and receiver side by side, pointing the same way, with the receiver connected to an amplifier and speaker. Put a sheet of cardboard mounted vertically in a base clamp in front of the amplifier and receiver. Now move a sheet of metal backwards and forwards on the other side of the card. The Doppler shift is easily heard as a note from the loudspeaker.
@@ -409,7 +397,6 @@ The Doppler change of pitch can be used to give beats between two signals. For t
 
 6.  Speed of blood flow in the body --- shift in frequency of signal reflected from moving blood
 
-
 #### 7. The Moving Tuning Fork
 
 A very simple demonstration of the Doppler Effect is to use a tuning fork mounted on a small sounding box. You simply hold the box in your hand, strike the tuning fork and then move it towards or away from the class. They will easily be able to hear the change of pitch.
@@ -420,12 +407,9 @@ Good musicians may be able to estimate the change of pitch and so a rough measur
 >
 > Apparatus required: •Mounted tuning fork •Striker
 
-
-
 ### RESONANCE AND DAMPING
 
-> General theory for this section:
-Resonance
+> General theory for this section: Resonance
 
 > Any object, such a child's swing can be made to vibrate if it is given a push, but you find that if the frequency of the push has one particular value the amplitude of the oscillation of the swing builds up - this is known as resonance. Put another way, if the driving frequency is equal to the natural frequency of the oscillating system then resonance results.
 >
@@ -523,7 +507,7 @@ An alternative version of this experiment is to have the weight hanging from the
 >
 > •Slotted masses and hanger •Retort stand and clamps
 
-######  Resonance in a rod
+###### Resonance in a rod
 
 Take a metal rod; one about a metre long and with a diameter of 0.5 cm is about right. Hold the rod in the centre with one hand and then stroke the rod with the thumb and forefinger of the other hand, having rubbed them with rosin. The rod will then "sing". To get a good resonance you will have to grip the rod quite tightly.
 
@@ -570,7 +554,6 @@ The nature of sound that can be made by blowing across the top of a milk bottle 
 > Age range: 16-18
 >
 > Apparatus required: 'Milk bottles ^o^Tuning fork mounted on a resonant box •Microphone •Storage oscilloscope or computer sensor
->
 
 ###### 12. Coupled pendulums - two SHM
 
@@ -618,7 +601,6 @@ A man walks across a field carrying a long plank on his shoulder. At each step t
 >
 > On the Moon where there is almost no air, sound would not travel from one place to another. You could see an explosion but not hear it.
 
-
 #### 1. Wine glass
 
 Playing a wine glass makes an interesting introduction to sound and resonance. Partly fill a wine glass with water and moisten your finger with a little meths to get rid of any grease. Rub your finger round the rim of the glass to make it sing. (If you put wine in the glass you can moisten your finger in the wine.) The water writhes and shakes because of the vibrations which you can actually feel in your finger. (Don't press too hard --- you don't want to break the glass.)
@@ -657,7 +639,7 @@ The dependence of the length of a pipe on the fundamental pitch that it emits wh
 >
 > Apparatus required: •Length of marked hose pipe
 >
-•Clarinet mouthpiece •Loppers
+> •Clarinet mouthpiece •Loppers
 
 ##### 6. Playing a saw
 
@@ -667,7 +649,7 @@ It is worth emphasising that there is no need for amplification - the large surf
 
 > Reduce the hazard of cuts from the saw teeth by sticking a length of thick carpet tape over them.
 >
-> Age range: 11-13![
+> Age range: 11-13\![
 >
 > Apparatus required: 'Saw •Cello bow •Towel as protection for your legs •Rosin!
 
@@ -697,8 +679,6 @@ An interesting extension is to use a cooling collar used for wine and wrap it ro
 >
 > As the copper gauze cools, the air around it contracts sharply and a shock wave is set up in the tube, thus forcing the air within the tube into oscillation. Usually the fundamental note for the tube is produced (L = 1/2), but I have obtained harmonics (L = X). The position of the copper gauze is fairly important - no effects being produced if it is too close to the end of the tube.
 >
->
->
 > Age range: 11-18 depending on treatment.
 >
 > Apparatus required: (a) •Plastic tube (b) •Glass tube •Copper gauze •Bunsen 'Retort stand and clamp
@@ -718,15 +698,15 @@ The effect of the volume of a musical instrument on the pitch can be shown very 
 > Age range: 11-13
 >
 > Apparatus required: 'Milk bottle and a supply of water
->
 
-#### 10. Sharp and flat!]
+#### 10. Sharp and flat!\]
 
 The tendency of wind instruments to go sharp when taken into a warm concert hall is also due to this effect, since the fundamental frequency of a pipe increases as the speed of sound in air increases, and this happens when the temperature of the air rises.
 
 Notice that the density of the gas has no effect on the sounds heard from stringed instruments.
 
 ##### 11. Chicken resonance with rubbed string
+
 Take about 5 cm of cardboard tube (diameter also about 5 cm) and cover one end with stretched tracing paper. Fix a piece of thread through this. Make a chicken cut out that fits into the other end of the tube. Put rosin on your thumb and forefinger and gripping fairly tightly pull them down along the thread - a reasonable clucking and squawking sound can be made with practice! It is a very good example of resonance and amplification.
 
 If you are ever in Prague these are sold by the street sellers in the castle (2002).
@@ -863,7 +843,6 @@ This can be clearly demonstrated using a signal generator, a balloon filled with
 
 Dominoes can be used as an analogy to show that sound travels faster in a solid than in a liquid. Stand two lines of dominoes, one with the dominoes close together (this is the solid) and one with the dominoes further apart (this is the liquid). Knock over the first domino of each line, and watch the speed at which the 'pulse' travels down the two lines. It will move faster down the line with the dominoes close together. Sound travels faster in a solid than it does in a liquid.
 
-
 'Solid' 'Liquid'
 
 Age range: 11 --- 16 Apparatus required: •Set of dominoes
@@ -910,7 +889,7 @@ They could be done as a circus for the pupils or by the teacher demonstrating th
 
 7.  Hold a ruler down on the table with your hand so that it sticks out over the edge of the table, and then twang the ruler with your other hand. You can see the ruler vibrating, and as you make the ruler shorter you can hear the sound change. The shorter the ruler, the higher the pitch.
 
-8. Hold your hand in front of a powerful disco type speaker. You should be able to feel the vibrations in the air. If you have an old speaker with no covering lay it down with the cone facing upwards and put some small polystyrene balls in it. Now connect it to a radio or CD player and turn it on. Loud music or speech will make the balls jump around.
+8.  Hold your hand in front of a powerful disco type speaker. You should be able to feel the vibrations in the air. If you have an old speaker with no covering lay it down with the cone facing upwards and put some small polystyrene balls in it. Now connect it to a radio or CD player and turn it on. Loud music or speech will make the balls jump around.
 
 9.  Put your hand against the body of a cello, double bass or a piano while it is being played. You can feel the vibrations in the wood.
 
@@ -924,7 +903,7 @@ They could be done as a circus for the pupils or by the teacher demonstrating th
 
 14. If anyone in the school has a brass instrument get them to play it. They feel the vibrations in their lips as they make a sound, Even just using the mouthpiece on its own is good enough.
 
-15. Get the children to walk away from a source of sound and stop when they can't hear it any 
+15. Get the children to walk away from a source of sound and stop when they can't hear it any
 
 16. Whispering shows that quiet sounds are more difficult to hear than loud ones.
 
@@ -938,7 +917,7 @@ They could be done as a circus for the pupils or by the teacher demonstrating th
 
 > Try playing a small musical box on its own and then hold it against the base of an empty tin can. The sound is much louder because all the air in the tin can is vibrating as well rather than just that against the 'prongs' of the musical box.
 >
->It might be worth actually fixing a musical box to the base of the tin with small bolts. It makes it much easier to hold.
+> It might be worth actually fixing a musical box to the base of the tin with small bolts. It makes it much easier to hold.
 >
 > Putting the musical box on a table or a wood panelled wall also works very well. The whole table and panelling vibrates, giving a much louder sound. (Thanks to Ruth for this idea)
 >

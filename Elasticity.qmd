@@ -63,7 +63,7 @@ format: html
 ### Summary Table
 
 | Quantity | Symbol | Formula | Units |
-|-----------------|---------------|-------------------------|---------------|
+|----|----|----|----|
 | Stress | $\sigma$ | $\sigma = \frac{F}{A}$ | Pascal (Pa) |
 | Strain | $\varepsilon$ | $\varepsilon = \frac{\Delta L}{L_0}$ | Dimensionless |
 | Young’s Modulus | $E$ | $E = \frac{\sigma}{\varepsilon}$ | Pascal (Pa) |

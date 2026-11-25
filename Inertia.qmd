@@ -51,20 +51,14 @@ $$ Where: - $m_i$ = mass of each particle - $r_i$ = distance from rotation axis
 
 ### Summary
 
-+-------------------------+------------------------------------------------+
 | Concept                 | Description                                    |
-+=========================+================================================+
+|-------------------------|------------------------------------------------|
 | Inertia                 | Resistance to change in motion                 |
-+-------------------------+------------------------------------------------+
 | Mass ($m$)              | Measure of linear inertia                      |
-+-------------------------+------------------------------------------------+
 | Moment of inertia ($I$) | Measure of rotational inertia                  |
-+-------------------------+------------------------------------------------+
 | Newton’s 1st Law        | Object stays in uniform motion unless acted on |
-+-------------------------+------------------------------------------------+
 
-> The inertia of an object can be described as its reluctance to change the way it is moving. Bodies with 
-high inertia (large mass) are difficult to move and stop. The Apollo astronauts found their own inertia a problem when walking on the Moon. The lower gravitational pull meant lower friction between their feet and the ground, so it was more difficult for them to overcome their inertia and stop. Heavy objects "floating" in orbiting spacecraft are similarly difficult to control.
+> The inertia of an object can be described as its reluctance to change the way it is moving. Bodies with high inertia (large mass) are difficult to move and stop. The Apollo astronauts found their own inertia a problem when walking on the Moon. The lower gravitational pull meant lower friction between their feet and the ground, so it was more difficult for them to overcome their inertia and stop. Heavy objects "floating" in orbiting spacecraft are similarly difficult to control.
 
 +--------------------------------------------+---------------------------------------+
 | 1.  Inertia --- large mass and two threads | 6.  Wig wag--- or the inertia balance |
